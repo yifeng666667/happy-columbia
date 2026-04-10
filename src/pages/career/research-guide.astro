@@ -26,8 +26,8 @@ import Base from '../../layouts/Base.astro';
       券商研究所深度解析
     </h1>
     <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
-      研究员、机构销售、中后台——研究所的三条赛道各有怎样的生态？分仓佣金怎么运转？
-      公募费率新规之后研究所的钱从哪来？结合 2026 年市场真实行情，把这行说清楚。
+      研究员、机构销售、中后台——研究所三条赛道的真实生态是什么样的？钱从哪来、往哪去？
+      费率新规之后行业格局又发生了什么变化？结合 2026 年市场现状，做一次完整梳理。
     </p>
     <div class="flex flex-wrap items-center gap-3">
       <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-200 font-medium px-3 py-1 rounded-full">
@@ -46,13 +46,13 @@ import Base from '../../layouts/Base.astro';
   <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-6">
     <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">目录</p>
     <ol class="space-y-2 text-sm text-stone-600">
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">01</span><a href="#overview" class="hover:text-columbia-navy transition-colors no-underline">研究所在券商体系里是什么位置</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">02</span><a href="#model" class="hover:text-columbia-navy transition-colors no-underline">商业模式：分仓佣金是怎么运转的</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">03</span><a href="#analyst" class="hover:text-columbia-navy transition-colors no-underline">研究员：做研究这条路的真实画像</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">04</span><a href="#sales" class="hover:text-columbia-navy transition-colors no-underline">机构销售：桥梁角色的生存法则</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">05</span><a href="#backoffice" class="hover:text-columbia-navy transition-colors no-underline">中后台：质控、合规与产品岗</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">06</span><a href="#2026" class="hover:text-columbia-navy transition-colors no-underline">2026 年行情：新规冲击、AI 渗透与马太效应</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">07</span><a href="#choose" class="hover:text-columbia-navy transition-colors no-underline">适合进研究所的人是什么样的</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">01</span><a href="#overview" class="hover:text-columbia-navy transition-colors no-underline">研究所在券商版图中扮演什么角色</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">02</span><a href="#model" class="hover:text-columbia-navy transition-colors no-underline">商业模式：一笔交易里有多少钱流向研究所</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">03</span><a href="#analyst" class="hover:text-columbia-navy transition-colors no-underline">研究员：这条路长什么样</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">04</span><a href="#sales" class="hover:text-columbia-navy transition-colors no-underline">机构销售：在研究员和基金经理之间穿梭</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">05</span><a href="#backoffice" class="hover:text-columbia-navy transition-colors no-underline">中后台：合规、质控与产品运营</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">06</span><a href="#2026" class="hover:text-columbia-navy transition-colors no-underline">2026 年：三重压力叠加下的行业现状</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">07</span><a href="#choose" class="hover:text-columbia-navy transition-colors no-underline">进研究所之前，需要想清楚什么</a></li>
     </ol>
   </nav>
 
@@ -62,31 +62,33 @@ import Base from '../../layouts/Base.astro';
     <!-- ═══ 01 概览 ══════════════════════════════════ -->
     <section id="overview" class="mb-20 scroll-mt-24">
       <div class="section-label">01 · 基本定位</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">研究所在券商体系里是什么位置</h2>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">研究所在券商版图中扮演什么角色</h2>
 
       <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
-        券商的核心业务是：投行、经纪、自营、资管、研究。前四项都直接产生营收，研究是个例外——
-        它服务的对象是外部机构客户（公募、私募、保险），通过帮客户做投资决策赚取"研究服务费"，
-        收费方式是 <strong>分仓佣金</strong>，不是直接开票收款。
+        一家券商的核心业务线大致可以分成：经纪、投行、自营、资管、研究。
+        前四条线都有直接的营收账单，研究这条线有点特殊——它的"客户"不是普通散户，
+        而是公募基金、保险资管、私募这类机构投资者，收费方式也不是订阅制，而是和交易佣金绑定的
+        <strong>分仓佣金</strong>。
       </p>
 
       <div class="bg-columbia-navy rounded-2xl p-6 text-white mb-8">
-        <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">研究所的核心定义</div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">一句话定义</div>
         <p class="text-white/85 text-sm leading-relaxed">
-          研究所本质上是券商的<strong class="text-white">轻资产业务</strong>，不需要大量自有资金，靠"牌照+服务"赚钱。
-          它的商业模式与欧美成熟市场最大的不同，在于收费方式与交易佣金强绑定——
-          客户不是直接付研究订阅费，而是通过在你这里打交易量来"支付"研究服务费。
-          这套机制叫<strong class="text-columbia-blue">派点制</strong>，也是理解这个行业的钥匙。
+          研究所是券商里少数不需要大量资本金就能运转的业务线——靠牌照和服务赚钱，
+          属于<strong class="text-white">轻资产、高人力密度</strong>的模式。
+          它的商业逻辑与欧美市场最大的差异在于：国内客户不直接付研究订阅费，
+          而是通过把交易量"打"到对应券商席位上来间接买单——这套机制叫
+          <strong class="text-columbia-blue">分仓佣金制</strong>，也是理解这个行业一切问题的钥匙。
         </p>
       </div>
 
       <!-- 三大块组织结构 -->
-      <h3 class="font-semibold text-stone-800 mb-4 text-sm">研究所的三大业务块</h3>
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">研究所内部的三条业务线</h3>
       <div class="grid md:grid-cols-3 gap-4 mb-4">
         {[
-          { title: '研究', sub: '前台 · 产品生产', color: 'bg-columbia-navy', textColor: 'text-white', desc: '行业组+总量组，负责生产报告、路演、电话会议等研究产品。是研究所对外服务价值的核心载体。' },
-          { title: '机构销售', sub: '前台 · 产品推广', color: 'bg-stone-700', textColor: 'text-white', desc: '华北/华东/华南三地团队，负责把研究员和产品推给公募、私募、保险等买方机构。维护分仓关系。' },
-          { title: '中后台', sub: '支持 · 运营内控', color: 'bg-stone-100', textColor: 'text-stone-700', desc: '合规、质控、产品、营销、行政。大所专人专岗，小所一人多岗。保证研究所正常运转和合规。' },
+          { title: '研究', sub: '前台 · 内容生产', color: 'bg-columbia-navy', textColor: 'text-white', desc: '行业组和总量组（宏观/策略/固收等）负责生产报告和投资观点，是研究所对外服务的核心载体。' },
+          { title: '机构销售', sub: '前台 · 推广触达', color: 'bg-stone-700', textColor: 'text-white', desc: '通常按华北/华东/华南划分战区，负责把分析师的研究产品推给买方机构客户，同时维系分仓关系。' },
+          { title: '中后台', sub: '支持 · 运营合规', color: 'bg-stone-100', textColor: 'text-stone-700', desc: '涵盖合规、质控、产品、营销、行政等岗位。头部机构专人专岗，中小机构一岗多责。' },
         ].map(b => (
           <div class={`${b.color} rounded-2xl p-5`}>
             <div class={`font-display font-bold text-lg ${b.textColor} mb-1`}>{b.title}</div>
@@ -97,32 +99,32 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <div class="bg-stone-50 rounded-xl p-4 text-xs text-stone-500 leading-relaxed">
-        <strong class="text-stone-700">头部机构补充：</strong>
-        部分头部券商（如广发、中信）还设有<strong class="text-stone-700">产业研究院</strong>，
-        聚焦区域性产业战略，服务内部投行/投资和地方政府，与卖方研究所的逻辑不同——
-        前者是"造火箭"（战略价值），后者是"造汽车"（经济价值）。
+        <strong class="text-stone-700">补充说明：</strong>
+        部分头部券商（如广发、中信）另设有<strong class="text-stone-700">产业研究院</strong>，
+        主要服务内部投行/投资业务和地方政府战略需求，逻辑与卖方研究所不同——
+        卖方研究所是外向型的，靠服务机构客户赚分仓；产业研究院是内向型的，服务自身业务条线。
       </div>
     </section>
 
     <!-- ═══ 02 商业模式 ════════════════════════════════ -->
     <section id="model" class="mb-20 scroll-mt-24">
       <div class="section-label">02 · 商业模式</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">分仓佣金是怎么运转的</h2>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">一笔交易里有多少钱流向研究所</h2>
 
       <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
-        不理解分仓佣金，就无法理解研究员为什么要疯狂路演、机构销售为什么要"极致缩小自我"、
-        以及为什么新规之后整个行业都在焦虑。
+        理解研究所的收入逻辑，就能理解为什么分析师要反复路演、为什么销售的工作本质上是"维护关系"、
+        以及为什么2024年以来整个行业都处于焦虑状态。
       </p>
 
       <!-- 运转机制 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
-        <h3 class="font-semibold text-stone-800 mb-5 text-sm">分仓佣金的运转逻辑</h3>
+        <h3 class="font-semibold text-stone-800 mb-5 text-sm">从一笔股票成交到研究所账上：四步走</h3>
         <div class="space-y-4">
           {[
-            { step: '1', title: '基础前提：基金公司没有交易所席位', desc: '公募、保险等机构不能直接在交易所买卖股票，必须租用券商的交易席位/单元才能进行交易。每笔成交的0.5‰（万五）左右会以佣金形式给到券商。' },
-            { step: '2', title: '核心机制：用交易量换研究服务', desc: '研究所提供报告、路演、电话会议等服务。基金公司如果认为某家研究所服务好，就会多在这家券商席位上打交易量——这就是在"付研究费"。这部分佣金分给研究所，就叫分仓佣金。' },
-            { step: '3', title: '打分制度：每季度评分决定下季交易量', desc: '基金公司每季度对服务的券商研究所打分（投资部、研究部、专户等各自打分，权重不同），分数决定下一季度在哪家券商打多少交易量。分数排名靠后的券商颗粒无收。' },
-            { step: '4', title: '二次派点：内部再分配给研究员', desc: '研究所拿到分仓佣金后，通过内部派点制分配给具体研究员。客户打分+销售评分共同决定研究员最终的派点排名，派点排名直接影响年终奖分配。' },
+            { step: '1', title: '公募基金没有直接入市的席位', desc: '基金公司不能自行在交易所下单，必须租用券商席位来完成股票买卖。每笔成交，固定比例的佣金会流向提供席位的券商。' },
+            { step: '2', title: '交易量成了支付研究服务的"货币"', desc: '研究所提供报告、电话会议、路演等服务；如果某家基金觉得服务有价值，就会多把交易量打到这家券商席位——这就是在"付研究费"。流向研究所的那部分，叫分仓佣金。' },
+            { step: '3', title: '打分机制决定下季流量分配', desc: '公募基金每季度对各家券商研究所评分（投资部、研究部、专户等各自有权重），分数排名直接决定下季度在哪家券商打多少交易量。排名靠后的研究所，可能这季度白忙活了。' },
+            { step: '4', title: '内部再分配：派点给到具体分析师', desc: '研究所拿到分仓佣金后，通过内部机制分配给研究员——结合客户打分和机构销售的推荐评分，最终形成每个研究员的派点排名，直接影响年终奖。' },
           ].map(s => (
             <div class="flex items-start gap-4">
               <div class="shrink-0 w-7 h-7 rounded-full bg-columbia-navy flex items-center justify-center text-white text-xs font-bold">{s.step}</div>
@@ -135,14 +137,38 @@ import Base from '../../layouts/Base.astro';
         </div>
       </div>
 
-      <!-- 派点制三大问题 -->
+      <!-- 佣金结构 -->
+      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <h3 class="font-semibold text-stone-800 mb-4 text-sm">佣金收入的内部结构</h3>
+        <p class="text-stone-500 text-xs leading-relaxed mb-4">
+          历史上，一笔分仓佣金往往不是100%用于研究服务费——通常只有约 30%–40% 真正流向投研条线，
+          其余部分会通过不同渠道覆盖代销返佣和其他股东利益相关方。
+          2024年新规要求佣金只能用于研究服务，不得与销售挂钩，这个结构因此被重构。
+        </p>
+        <div class="grid grid-cols-3 gap-3 text-center text-xs">
+          {[
+            { label: '投研服务', pct: '40%', note: '新规后占比↑', color: 'bg-columbia-light text-columbia-navy' },
+            { label: '渠道代销（旧）', pct: '40%', note: '新规后被禁止', color: 'bg-red-50 text-red-700' },
+            { label: '股东倾斜（旧）', pct: '20%', note: '新规后被收紧', color: 'bg-stone-100 text-stone-500' },
+          ].map(c => (
+            <div class={`${c.color} rounded-xl p-3`}>
+              <div class="font-bold text-lg mb-0.5">{c.pct}</div>
+              <div class="font-medium text-[11px] mb-1">{c.label}</div>
+              <div class="text-[10px] opacity-75">{c.note}</div>
+            </div>
+          ))}
+        </div>
+        <p class="mt-3 text-[11px] text-stone-400">数据来源：行业公开报道，实际比例因机构而异</p>
+      </div>
+
+      <!-- 派点制问题 -->
       <div class="border border-amber-200 bg-amber-50 rounded-2xl p-6 mb-6">
-        <h3 class="font-semibold text-amber-900 mb-4 text-sm">派点制的三大内在缺陷（行业公认）</h3>
+        <h3 class="font-semibold text-amber-900 mb-4 text-sm">这套机制内置的三个矛盾（行业公认）</h3>
         <div class="space-y-3">
           {[
-            { title: '无法真实反映研究价值', desc: '研究员的派点来自客户打分，而客户打分往往与"是否给了其他资源/关系"挂钩，真正的研究质量只是其中一个维度。中小券商尤其如此——分析师"存在"即可，不在乎研究深度。' },
-            { title: '收益滞后带来极大不确定性', desc: '本季度服务，下季度才打交易量兑现。一个分析师辛苦一季度，但如果研究所整体排名不够，这季度的服务颗粒无收。博弈性极强，像拆盲盒。' },
-            { title: '人情世故大于业务逻辑', desc: '内部派点分配中存在"领导分配给嫡系"、"强势首席截流销售派点"等灰色地带。所谓"派点失真"，说的就是派点已经无法客观反映分析师产生的实际价值。' },
+            { title: '打分不等于研究价值', desc: '客户对研究员的评分掺杂了很多非研究因素：有没有给调研渠道、销售关系深不深、有没有帮忙"做了其他事"。中小研究所尤甚——分析师在不在都差不多，拼的是关系不是研究。' },
+            { title: '收益与付出之间有一个季度的时差', desc: '本季度服务好，下季度才能兑现交易量。如果这期间研究所整体排名滑落，分析师个人的努力可能颗粒无收——风险暴露高，但缺乏对冲机制。' },
+            { title: '内部派点本身也不透明', desc: '"领导分给嫡系"、"强势首席截留销售派点"在行业内是公开的秘密。派点数字背后的分配逻辑，往往比客户打分本身更混乱。' },
           ].map(d => (
             <div class="flex items-start gap-3">
               <span class="text-amber-500 shrink-0 mt-0.5 text-sm">▸</span>
@@ -159,15 +185,16 @@ import Base from '../../layouts/Base.astro';
       <div class="bg-white border border-columbia-blue/30 rounded-2xl p-6">
         <div class="flex items-center gap-2 mb-4">
           <span class="text-[10px] bg-columbia-light text-columbia-navy font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">2024年7月起实施</span>
-          <h3 class="font-semibold text-stone-800 text-sm">公募费率改革新规五大要点</h3>
+          <h3 class="font-semibold text-stone-800 text-sm">公募费率新规：改了什么、影响有多大</h3>
         </div>
-        <div class="space-y-2.5">
+
+        <div class="space-y-2.5 mb-5">
           {[
-            { key: '费率下降', val: '主动权益基金交易佣金不超过市场平均值（约万2.62）；其他非被动基金不超过两倍（约万5.24）。被动型ETF不得用佣金支付研究费。' },
-            { key: '15%上限', val: '基金公司向同一家券商支付的年度佣金，不得超过其所有基金总佣金的15%（此前为30%）。彻底结束了母子公司佣金输送的灰色地带。' },
-            { key: '禁止挂钩销售', val: '严禁用交易佣金支付基金销售费用。佣金只能用于研究服务，不得与基金销售挂钩——这是对过去"用佣金换渠道代销"乱象的直接整治。' },
-            { key: '信息披露强化', val: '基金公司须每年3月前公开披露佣金支出明细，包含券商选择标准、交易量及分配依据，倒逼研究所提升服务透明度。' },
-            { key: '券结模式激励', val: '允许采用券结模式（基金直接托管在券商）的基金豁免15%上限，推动券商发展差异化托管+研究服务一体化模式。' },
+            { key: '费率上限', val: '主动权益基金佣金上限约万分之5.24，被动ETF则不得用佣金支付研究费。2024年实际平均费率约万5.19，相比2023年的万7.37已大幅压缩。' },
+            { key: '15%集中度', val: '基金公司给同一券商支付的年度佣金，不得超过全年总佣金的15%（此前上限30%）。母子公司之间的佣金输送就此被正式堵住。' },
+            { key: '销售解绑', val: '交易佣金不再允许支付基金销售相关费用。过去营业部可以凭借代销能力分一杯羹，新规后必须由研究所主导，营业部无法再签分仓合同。' },
+            { key: '信息披露', val: '基金公司须在每年3月前公开披露佣金支出明细，说明券商选择依据和交易量分配逻辑，把过去不透明的地方摊在阳光下。' },
+            { key: '券结激励', val: '选择券结模式（基金托管在券商）的基金可豁免15%上限，鼓励券商发展"研究+托管"一体化服务。' },
           ].map(r => (
             <div class="flex items-start gap-3 text-xs">
               <span class="shrink-0 bg-columbia-navy text-white font-medium px-2 py-0.5 rounded-md text-[10px] mt-0.5">{r.key}</span>
@@ -175,8 +202,14 @@ import Base from '../../layouts/Base.astro';
             </div>
           ))}
         </div>
-        <div class="mt-4 pt-4 border-t border-stone-100 text-[11px] text-stone-400">
-          新规核心影响：研究所可分的"蛋糕"变小了，但要服务的竞争者更多了。头部所吃得更多，中小所生存空间被进一步压缩。
+
+        <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+          <p class="text-xs text-red-800 leading-relaxed">
+            <strong>数字说话：</strong>2024年全行业分仓佣金总额为 <strong>106.52亿元</strong>，
+            较2023年的164.66亿元下降约 <strong>35%</strong>，已连续第三年收缩。
+            光大证券、银河证券降幅超过50%；华泰、广发等头部降幅相对可控（17%–24%）。
+            行业分化已经相当剧烈。
+          </p>
         </div>
       </div>
     </section>
@@ -184,25 +217,25 @@ import Base from '../../layouts/Base.astro';
     <!-- ═══ 03 研究员 ══════════════════════════════════ -->
     <section id="analyst" class="mb-20 scroll-mt-24">
       <div class="section-label">03 · 研究员</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">研究员：做研究这条路的真实画像</h2>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">研究员：这条路长什么样</h2>
 
       <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
-        研究员是研究所的"前台产品生产者"。表面上是在写报告、研究公司，
-        本质上是在生产"投资建议"这个产品，然后通过路演卖给买方机构——
-        帮他们在对的时间买对的票，换来他们的交易量。
+        研究员表面上在写报告、分析公司，本质上是在生产一种叫"投资建议"的产品，
+        然后通过路演把这个产品卖给公募基金经理——让他们在对的时间做出对的决策，
+        换取他们的交易量。这是一门判断力和传播力都要过硬的职业。
       </p>
 
       <!-- 职级晋升 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
-        <h3 class="font-semibold text-stone-800 mb-5 text-sm">职级体系与成长路径</h3>
+        <h3 class="font-semibold text-stone-800 mb-5 text-sm">四级台阶：从零到首席</h3>
         <div class="relative">
           <div class="absolute left-4 top-5 bottom-5 w-0.5 bg-stone-200"></div>
           <div class="space-y-5">
             {[
-              { level: '助理分析师', eng: 'Research Associate', years: '0–2年', pay: '月薪约1–1.5万，奖金难兑现', duty: '写会议纪要、整理数据、维护模型、协助首席完成报告。俗称"卷生卷死"阶段——凌晨改报告、随时响应首席和销售是常态。这个阶段工作量最大但话语权最低。' },
-              { level: '分析师', eng: 'Analyst', years: '2–5年', pay: '年包30–60万，头部机构更高', duty: '开始独立覆盖股票、发布报告、出席路演。逐渐形成自己的研究框架和市场影响力。是否能从助理升到这一级，往往是这条路能不能走下去的关键节点。' },
-              { level: '高级分析师', eng: 'Senior Analyst', years: '5年+', pay: '年包60–150万', duty: '覆盖更多标的，开始有自己的行业影响力。在机构客户心中有一定知名度，路演邀约增多，奖金与派点排名强相关。' },
-              { level: '首席分析师', eng: 'Chief Analyst', years: '8–10年+', pay: '年包100–300万甚至更高', duty: '行业意见领袖，带团队，上财经媒体，参加政府/企业战略咨询。年度新财富最佳分析师的名号是通往这一级的重要敲门砖（或曾经是）。' },
+              { level: '助理分析师', eng: 'Research Associate', years: '0–2年', pay: '年薪低于20万，奖金变数大', duty: '协助首席整理数据、写会议纪要、维护模型。这阶段最累：凌晨改报告、随时响应是常态，但话语权最低。知乎上的形容是"半夜可能被叫起"——不是比喻。' },
+              { level: '分析师', eng: 'Analyst', years: '2–5年', pay: '年薪20–40万', duty: '开始独立署名发报告、主持路演、形成自己的研究框架。能不能从助理晋到这一级，是做不做得下去的关键分水岭。' },
+              { level: '高级分析师', eng: 'Senior Analyst', years: '5年+', pay: '年薪40–60万', duty: '覆盖的标的更多，在机构客户间开始有知名度。路演邀约明显增加，年终奖与派点排名直接挂钩，收入波动也更大。' },
+              { level: '首席分析师', eng: 'Chief Analyst', years: '8–10年+', pay: '年薪100万以上，顶级超300万', duty: '行业代言人角色，带团队、上媒体、参与政府/企业战略咨询。"新财富最佳分析师"称号是这个级别的历史敲门砖（现在已不如从前）。' },
             ].map((r, i) => (
               <div class="flex items-start gap-5 relative">
                 <div class="shrink-0 w-8 h-8 rounded-full bg-columbia-navy flex items-center justify-center text-white text-xs font-bold z-10">{i + 1}</div>
@@ -223,17 +256,18 @@ import Base from '../../layouts/Base.astro';
 
       <!-- 一天的工作 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
-        <h3 class="font-semibold text-stone-800 mb-4 text-sm">普通分析师一天的真实时间线</h3>
+        <h3 class="font-semibold text-stone-800 mb-4 text-sm">一天的真实节奏（根据多位从业者描述整理）</h3>
         <div class="space-y-2">
           {[
-            ['8:30', '参加晨会，轮流发言，汇报最新市场情况、更新观点'],
-            ['9:00', '开盘，开始处理早上任务：消化研报、跟踪标的动态、回复客户消息'],
-            ['11:30', '午休（如果没有午间路演的话）'],
-            ['13:00', '继续上班：写报告、更新模型、准备下午路演材料'],
-            ['17:00', '下班——如果没有客户活动的话'],
-            ['19:00', '继续工作：写报告、做深度研究、自己学习补充知识'],
-            ['22:00', '可能有首席或销售发起的临时组会'],
-            ['23:30', '终于可以休息了'],
+            ['5:30', '醒来确认国际市场有没有大动静，如有重大事件须提前准备材料'],
+            ['8:30', '晨会，各组轮流发言更新行业动态和最新观点'],
+            ['9:00', '开盘，处理早上任务：消化研报、跟踪标的、回复客户消息'],
+            ['12:00', '午餐路演（如果有的话），和基金经理在饭桌上聊观点'],
+            ['13:30', '继续：写报告、更新财务模型、准备下午路演或电话会议材料'],
+            ['17:00', '名义下班——但往往只是换个地方继续工作'],
+            ['19:00', '深度研究时段：写深度报告、做行业调研整理、自我学习'],
+            ['22:00', '首席或销售可能发起临时碰头或电话会'],
+            ['23:30', '收工'],
           ].map(([time, desc]) => (
             <div class="flex items-start gap-4 text-xs">
               <span class="shrink-0 w-10 text-columbia-blue font-medium">{time}</span>
@@ -242,19 +276,20 @@ import Base from '../../layouts/Base.astro';
           ))}
         </div>
         <div class="mt-4 pt-4 border-t border-stone-100 text-[11px] text-stone-400">
-          以上是"没有大差旅"的版本。首席级别的分析师，三轮路演出差（北京→上海→深圳）是每周常规动作，差旅频率远高于销售。
+          遇到年报季、半年报发布期，有从业者描述过"连续两周每天只睡三小时"。差旅多时，
+          北京→上海→深圳三轮路演是周期性的固定动作，首席级分析师的出差频率甚至高于机构销售。
         </div>
       </div>
 
       <!-- 行业分布 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
-        <h3 class="font-semibold text-stone-800 mb-4 text-sm">行业分布：进哪个组，决定你的市场价值</h3>
+        <h3 class="font-semibold text-stone-800 mb-4 text-sm">进哪个行业组，很大程度上决定你的市场价值</h3>
         <div class="grid md:grid-cols-2 gap-4">
           {[
-            { label: '长期热门', color: 'bg-red-50 border-red-100', badge: 'bg-red-100 text-red-700', items: ['电子/半导体', '医药生物', '食品饮料', '电力设备/新能源', '计算机/AI', '宏观/固收/策略'] },
-            { label: '间歇热门', color: 'bg-orange-50 border-orange-100', badge: 'bg-orange-100 text-orange-700', items: ['汽车/新能源车', '军工', '有色金属', '化工', '农业', '家电'] },
-            { label: '服务型', color: 'bg-blue-50 border-blue-100', badge: 'bg-blue-100 text-blue-700', items: ['银行/非银金融', '房地产', '建筑建材', '传媒', '通信'] },
-            { label: '冷门', color: 'bg-stone-50 border-stone-100', badge: 'bg-stone-100 text-stone-600', items: ['煤炭/钢铁', '纺织服装', '商贸零售', '轻工', '公共事业'] },
+            { label: '长期热门', color: 'bg-red-50 border-red-100', badge: 'bg-red-100 text-red-700', items: ['电子/半导体', '医药生物', '食品饮料', '电力设备/新能源', 'AI/计算机', '宏观/固收/策略'] },
+            { label: '周期性热门', color: 'bg-orange-50 border-orange-100', badge: 'bg-orange-100 text-orange-700', items: ['汽车/新能源车', '军工', '有色金属', '化工', '农业', '家电'] },
+            { label: '服务型稳定', color: 'bg-blue-50 border-blue-100', badge: 'bg-blue-100 text-blue-700', items: ['银行/非银金融', '房地产', '建筑建材', '传媒', '通信'] },
+            { label: '相对冷门', color: 'bg-stone-50 border-stone-100', badge: 'bg-stone-100 text-stone-600', items: ['煤炭/钢铁', '纺织服装', '商贸零售', '轻工制造', '公共事业'] },
           ].map(g => (
             <div class={`${g.color} border rounded-xl p-4`}>
               <span class={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${g.badge} mb-3 inline-block`}>{g.label}</span>
@@ -265,29 +300,30 @@ import Base from '../../layouts/Base.astro';
           ))}
         </div>
         <p class="mt-4 text-[11px] text-stone-400 leading-relaxed">
-          行业热门程度直接决定你能接触多少客户、参与多少路演、积累多少圈子——进入"冷门"赛道的研究员，市场价值和跳槽选择面都会受到制约。
-          2026年，<strong class="text-stone-600">AI/计算机</strong> 和 <strong class="text-stone-600">低空经济/机器人</strong> 是最热门增量方向。
+          行业热门程度直接影响路演邀约频率、客户资源积累速度，以及未来跳买方的选择空间。
+          2026年来看，<strong class="text-stone-600">低空经济、机器人、AI应用</strong> 是新的增量热点方向，
+          但也意味着对应赛道竞争更激烈，从业者的分析框架迭代要求更高。
         </p>
       </div>
 
       <!-- 入行要求 -->
       <div class="grid md:grid-cols-2 gap-4">
         <div class="bg-white border border-stone-200 rounded-2xl p-5">
-          <h3 class="font-semibold text-stone-800 mb-3 text-sm">Hard Skills</h3>
+          <h3 class="font-semibold text-stone-800 mb-3 text-sm">硬性条件</h3>
           <div class="space-y-2 text-xs text-stone-500 leading-relaxed">
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">证券从业资格</strong>（一般证券从业）+<strong class="text-stone-700">发布证券研究报告资格</strong>（必须持有才能署名发报告）</span></div>
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span>数据处理：Excel/Wind/Choice/Bloomberg 熟练操作</span></div>
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span>财务建模与估值：DCF、DDM、PE/PB相对估值</span></div>
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span>简单编程（Python/VBA）加分，量化方向必备</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">证券从业资格</strong> + <strong class="text-stone-700">发布证券研究报告资格</strong>（两证分开，署名发报告必须持后者）</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span>Wind / Choice / Bloomberg 数据工具的熟练使用是基础门槛</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span>财务建模与估值方法：DCF / DDM / 相对估值（PE、PB、EV/EBITDA）</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span>Python 或 VBA 编程能力加分，量化/大数据方向已成必备</span></div>
           </div>
         </div>
         <div class="bg-white border border-stone-200 rounded-2xl p-5">
-          <h3 class="font-semibold text-stone-800 mb-3 text-sm">Soft Skills</h3>
+          <h3 class="font-semibold text-stone-800 mb-3 text-sm">软性素质</h3>
           <div class="space-y-2 text-xs text-stone-500 leading-relaxed">
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">沟通能力：</strong>路演要能讲得清楚，电话会议要言之有物</span></div>
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">强烈好奇心：</strong>能深入钻研行业细节，愿意持续学习跨界知识</span></div>
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">批判性思维：</strong>能构建独立的逻辑框架，不人云亦云</span></div>
-            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">抗压能力：</strong>这个不多说，非常高</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">表达清晰：</strong>路演要能说清楚，电话会议要有干货，这是最基础的要求</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">真实好奇心：</strong>能钻进一个行业反复研究，而不是把研究当作写作业</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">独立判断：</strong>形成自己的逻辑框架，而不是追随市场共识——"预期差"是研究员最核心的价值</span></div>
+            <div class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span><span><strong class="text-stone-700">抗压耐力：</strong>可以说是这行的第一门槛</span></div>
           </div>
         </div>
       </div>
@@ -296,22 +332,22 @@ import Base from '../../layouts/Base.astro';
     <!-- ═══ 04 机构销售 ════════════════════════════════ -->
     <section id="sales" class="mb-20 scroll-mt-24">
       <div class="section-label">04 · 机构销售</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">机构销售：桥梁角色的生存法则</h2>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">机构销售：在研究员和基金经理之间穿梭</h2>
 
       <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
-        机构销售是研究所与买方机构之间的"桥梁"，本质上是在卖研究产品——
-        把分析师的报告和观点推给基金经理，帮他们找到有价值的投资线索。
-        比起研究员，机构销售的工作更"社交化"，更依赖关系维护和信息嗅觉。
+        机构销售的核心工作是把分析师的研究产品推到买方机构的投资决策流程里，
+        同时把买方的需求和反馈传回给研究员。听起来像中间人，
+        但这个角色做好了，是真正掌握客户资源和行业人脉网络的关键节点。
       </p>
 
       <!-- 一天的工作 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
-        <h3 class="font-semibold text-stone-800 mb-5 text-sm">机构销售一天的工作节奏</h3>
+        <h3 class="font-semibold text-stone-800 mb-5 text-sm">机构销售的一天：三段节奏</h3>
         <div class="space-y-4">
           {[
-            { time: '开盘前', icon: '☀', title: '早准备', desc: '消化最新研报和晨会纪要→掌握国际市场动态→制定当日服务计划（今天主推哪个分析师、哪份报告、主攻哪个客户）' },
-            { time: '交易时段', icon: '📊', title: '日中推广', desc: '安排路演、组织电话会议→向客户发送重要报告→接收买方定制研究需求并反馈给研究员→维护交易佣金关系' },
-            { time: '收盘后', icon: '🌙', title: '复盘协调', desc: '向研究员同步客户反馈→追踪当日佣金贡献情况→规划下周路演和调研计划' },
+            { time: '开盘前', icon: '☀', title: '信息消化与计划制定', desc: '通读最新研报和晨会纪要→梳理国际市场动态→规划当日行动（今天主推哪个分析师、哪份报告、主攻哪个客户）' },
+            { time: '交易时段', icon: '📊', title: '服务推进与佣金维护', desc: '安排路演、组织电话会议→向客户推送重要研究→收集买方定制需求并传递给研究员→持续跟踪交易佣金分配动态' },
+            { time: '收盘后', icon: '🌙', title: '复盘与协调规划', desc: '将客户反馈同步给研究员→盘点当日佣金贡献→规划下周路演行程和客户拜访计划' },
           ].map(t => (
             <div class="flex items-start gap-4">
               <div class="shrink-0 w-16 text-[10px] text-stone-400 font-medium mt-1 text-right">{t.time}</div>
@@ -328,45 +364,45 @@ import Base from '../../layouts/Base.astro';
       <!-- 两个核心任务 -->
       <div class="grid md:grid-cols-2 gap-4 mb-6">
         <div class="bg-columbia-light rounded-2xl p-5">
-          <h3 class="font-semibold text-columbia-navy mb-3 text-sm">对客户：极致服务</h3>
+          <h3 class="font-semibold text-columbia-navy mb-3 text-sm">对客户这侧：极致服务导向</h3>
           <p class="text-stone-600 text-xs leading-relaxed">
-            刚入行的销售往往需要"蹲守"在客户机构前台等机会。
-            经过3–6个月积累，才能在客户那里混个脸熟，了解客户偏好，开始推对的报告和路演。
-            做这行需要极致缩小ego——研究过剩的环境下，抢占客户注意力才能拿到更多派点。
+            刚入行的销售往往要"泡"在客户机构门口，用3–6个月时间才能在对方的联系人列表里站稳脚。
+            这个阶段需要把自己的需求感降到最低——研究产品过剩的环境下，
+            能争取到客户注意力本身就是竞争力。
           </p>
         </div>
         <div class="bg-stone-50 rounded-2xl p-5">
-          <h3 class="font-semibold text-stone-700 mb-3 text-sm">对内部：信息枢纽</h3>
+          <h3 class="font-semibold text-stone-700 mb-3 text-sm">对内部这侧：信息中枢角色</h3>
           <p class="text-stone-500 text-xs leading-relaxed">
-            销售是研究所触达客户的第一人，需要把客户需求准确传递给研究员。
-            同时需要和分析师保持高频互动，及时掌握重点推荐标的——
-            平台资源、领导资源、自己积累的客户资源，才是销售真正的核心竞争力。
+            销售是研究所与外部市场之间的信号接收器，需要把客户的真实需求准确翻译给研究员，
+            同时保持与分析师的高频互动——平台资源、领导资源和自己攒起来的客户网络，
+            才是机构销售真正的护城河。
           </p>
         </div>
       </div>
 
       <!-- 开户 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-5 mb-6">
-        <h3 class="font-semibold text-stone-800 mb-3 text-sm">开户：机构销售最重要的任务之一</h3>
+        <h3 class="font-semibold text-stone-800 mb-3 text-sm">开户：比看起来难得多</h3>
         <p class="text-stone-500 text-xs leading-relaxed mb-3">
-          "开户"指的是说服公募基金在你家券商的交易席位上开通交易权限。
-          没有这个户，就没有后续的佣金收入。
-          2024年新规后，基金公司须把券商列入白名单，对券商的综合实力（合规、研究、交易系统稳定性）要求更高。
+          让基金公司在你家券商的席位上开通交易权限（"开户"），是机构销售最核心的业务目标之一。
+          2024年新规要求基金公司维护严格的白名单，对券商的合规、研究覆盖、系统稳定性有更高要求。
         </p>
         <div class="bg-amber-50 border border-amber-100 rounded-lg p-3 text-xs text-amber-800">
-          <strong>开户难在哪：</strong>头部公募动辄与100家以上券商有席位，新增开户意味着替换或减少其他机构的份额。
-          2024年各大公募年报显示，广发基金有112家券商产生了交易佣金——基金公司真的不缺券商，新开户极难。
+          <strong>难在哪里：</strong>头部公募往往已经与100家以上券商有席位——2024年年报数据显示，
+          广发基金当年产生交易佣金的券商超过112家。对一家已经"够用"的基金来说，
+          新增开户意味着要从已有名单里压缩别人的份额，谈判难度极高。
         </div>
       </div>
 
       <!-- 职业发展与出路 -->
       <div class="bg-white border border-stone-200 rounded-2xl p-5">
-        <h3 class="font-semibold text-stone-800 mb-3 text-sm">职业发展与出路</h3>
+        <h3 class="font-semibold text-stone-800 mb-3 text-sm">长期发展路径</h3>
         <div class="text-xs text-stone-500 leading-relaxed space-y-2">
-          <p>· 机构销售是高度依赖客户评价的岗位，跳槽往往能带来明显的薪酬涨幅——前提是你能把客户带走。</p>
-          <p>· 未来有竞争力的机构销售是"大机构销售"——能提供多元金融解决方案（减持、资金对接、投融资），而不只是卖研究报告。</p>
-          <p>· 平台很重要：去大所。马太效应严重，中小所的机构销售奖金激励往往难以兑现，是非常大的沉没成本。</p>
-          <p>· 曲线进研究员的路径概率极低——销售做好了，领导不会轻易让你转岗。</p>
+          <p>· 跳槽是机构销售涨薪的主要通道，前提是能把客户带走——这是谈判筹码，也是风险所在。</p>
+          <p>· 有竞争力的下一代机构销售不只是"卖研究报告的"，而是能提供减持方案、资金对接、投融资顾问等综合金融服务的"大销售"。</p>
+          <p>· 平台决定天花板：马太效应下，中小券商研究所的奖金激励兑现能力越来越弱，等于在用时间成本换一张价值缩水的未来期权。</p>
+          <p>· 从销售转研究员的路径存在，但领导不会轻易放——你做好了销售，他为什么让你去写报告？</p>
         </div>
       </div>
     </section>
@@ -374,48 +410,59 @@ import Base from '../../layouts/Base.astro';
     <!-- ═══ 05 中后台 ══════════════════════════════════ -->
     <section id="backoffice" class="mb-20 scroll-mt-24">
       <div class="section-label">05 · 中后台</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">中后台：质控、合规与产品岗</h2>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">中后台：合规、质控与产品运营</h2>
 
       <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
-        中后台包含合规、质控、产品、营销、行政等岗位。大所专人专岗，小所一人多岗。
-        从长期发展来看，<strong>质控和合规</strong>是中后台里壁垒最高、可流动性最强的岗位。
+        研究所的中后台岗位往往被低估，但在监管趋严的大环境下，
+        合规和质控的重要性实际上在上升。这两个岗位对专业背景有较高要求，
+        流动性也比产品和营销岗更强。
       </p>
 
       <div class="grid md:grid-cols-2 gap-4 mb-6">
         <div class="border border-stone-200 rounded-2xl p-5 bg-white">
           <h3 class="font-semibold text-stone-800 mb-2 text-sm">质控岗</h3>
-          <div class="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full inline-block mb-3">需持分析师资格</div>
-          <p class="text-stone-500 text-xs leading-relaxed mb-3">对研究报告进行质量审核，核查数据逻辑、模型结构、论证严谨性。研销平台一旦提交报告，质控需在1小时内完成审核——上下班时间几乎没有界限。</p>
+          <div class="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full inline-block mb-3">需持分析师资格证</div>
+          <p class="text-stone-500 text-xs leading-relaxed mb-3">
+            对分析师提交的报告进行审核，核查数据逻辑、估值模型和论证链条。
+            报告提交后通常有1小时内完成审核的要求——意味着节假日、报告季的晚上都难以完全脱网。
+            专业壁垒高，做好了在行业内有不错的流动性。
+          </p>
           <div class="text-xs text-stone-400 space-y-1">
-            <div class="flex justify-between"><span>薪资天花板</span><span class="text-stone-600">低于前台，但稳定性更好</span></div>
-            <div class="flex justify-between"><span>专业壁垒</span><span class="text-stone-600">深度行业积累，可流动性强</span></div>
+            <div class="flex justify-between"><span>收入天花板</span><span class="text-stone-600">低于前台，但稳定性更好</span></div>
+            <div class="flex justify-between"><span>可迁移性</span><span class="text-stone-600">行业积累扎实，可转其他机构</span></div>
           </div>
         </div>
         <div class="border border-stone-200 rounded-2xl p-5 bg-white">
           <h3 class="font-semibold text-stone-800 mb-2 text-sm">合规岗</h3>
-          <div class="text-[10px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full inline-block mb-3">需了解证监会监管要求</div>
-          <p class="text-stone-500 text-xs leading-relaxed mb-3">涵盖报告格式校准、路演流程审批、合作协议法审等业务合规审查，以及日常合规管理、监管检查应对。人事归属总部合规部，但日常成本挂在研究所业务线——"夹心饼干"处境。</p>
+          <div class="text-[10px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full inline-block mb-3">需熟悉证监会监管框架</div>
+          <p class="text-stone-500 text-xs leading-relaxed mb-3">
+            负责报告格式校核、路演流程合规审批、协议法律审查，以及应对监管检查。
+            人事关系归属总部合规部，但日常成本挂研究所业务线——
+            两头都要负责，处境是真实的"夹心饼干"。
+          </p>
           <div class="text-xs text-stone-400 space-y-1">
-            <div class="flex justify-between"><span>压力来源</span><span class="text-stone-600">业务部门+监管双重压力</span></div>
-            <div class="flex justify-between"><span>出路</span><span class="text-stone-600">合规总监、法律咨询</span></div>
+            <div class="flex justify-between"><span>压力来源</span><span class="text-stone-600">业务线要快、监管要合规，矛盾天然存在</span></div>
+            <div class="flex justify-between"><span>出路</span><span class="text-stone-600">合规总监、律所金融团队</span></div>
           </div>
         </div>
       </div>
 
       <div class="bg-stone-50 rounded-xl p-4 text-xs text-stone-500 leading-relaxed">
-        <strong class="text-stone-700">产品岗和营销岗</strong>：负责研究产品的设计和研究所各类活动的组织，偏运营性质，技能迁移性较弱。
-        如果研究所换了所长，这些岗位往往会随新团队被替换，且市场上可迁移的坑位较少——进中小所尤其需要谨慎。
+        <strong class="text-stone-700">产品岗和营销岗：</strong>
+        偏运营性质，负责研究产品设计和各类品牌活动。技能迁移性相对较弱——
+        一旦研究所换了带头人，这些岗位往往随新团队一起被替换，且市场上能横向流动的坑位本来就少。
+        进中小所的这两个岗位，需要对平台稳定性有较清醒的判断。
       </div>
     </section>
 
     <!-- ═══ 06 2026年行情 ════════════════════════════════ -->
     <section id="2026" class="mb-20 scroll-mt-24">
       <div class="section-label">06 · 2026年行情</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">2026 年：新规冲击、AI 渗透与马太效应</h2>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">2026 年：三重压力叠加下的行业现状</h2>
 
       <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
-        不了解当前市场环境就贸然进研究所，是很多人事后后悔的原因。
-        2024–2026年，研究所行业正在经历三重冲击同时叠加的压力周期。
+        不了解当前市场环境就贸然进研究所，很容易踩坑。
+        2024–2026年，这个行业正在同时承受三个方向的结构性压力。
       </p>
 
       <div class="space-y-5">
@@ -423,55 +470,55 @@ import Base from '../../layouts/Base.astro';
         <!-- 冲击一 -->
         <div class="border-l-4 border-red-400 bg-white rounded-2xl p-6 border border-stone-200">
           <div class="flex items-center gap-2 mb-3">
-            <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 font-medium px-2.5 py-1 rounded-full">冲击一</span>
-            <h3 class="font-semibold text-stone-800 text-sm">公募费率改革：蛋糕变小，但竞争者更多</h3>
+            <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 font-medium px-2.5 py-1 rounded-full">压力一</span>
+            <h3 class="font-semibold text-stone-800 text-sm">收入蛋糕在缩小，但场内选手没有减少</h3>
           </div>
           <p class="text-stone-500 text-xs leading-relaxed mb-3">
-            2024年7月1日新规落地，研究佣金费率从万8降至万5以下，且禁止用于支付销售软件费。
-            全行业可分的研究佣金总盘子显著收缩。
-            与此同时，基金公司的白名单准入门槛抬高，大量中小券商研究所被直接排除在外。
+            2024年新规把分仓佣金费率压至万五水平，全行业可分的总盘子从164亿收缩到106亿。
+            但研究所的数量和分析师的总供给并没有同步收缩——意味着每个人能分到的份额在下降。
+            同时，基金公司的白名单准入门槛抬高，很多中小券商连分蛋糕的资格都丢了。
           </p>
           <div class="bg-red-50 rounded-xl p-3 text-xs text-red-800">
-            <strong>对求职者的影响：</strong>
-            中小券商研究所的招聘明显收缩，应届生的坑位减少。头部所（中信、中金、华泰、国君等）仍在招聘，但要求更高。
-            进研究所，要么进头部，要么想好退路。
+            <strong>对求职者的含义：</strong>
+            中小券商研究所的应届生招募明显收缩，新坑位主要集中在头部机构。
+            进研究所，要么进得了头部，要么在进之前就想好出路。
           </div>
         </div>
 
         <!-- 冲击二 -->
         <div class="border-l-4 border-amber-400 bg-white rounded-2xl p-6 border border-stone-200">
           <div class="flex items-center gap-2 mb-3">
-            <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-100 font-medium px-2.5 py-1 rounded-full">冲击二</span>
-            <h3 class="font-semibold text-stone-800 text-sm">AI 渗透：助理研究员的工作正在被部分替代</h3>
+            <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-100 font-medium px-2.5 py-1 rounded-full">压力二</span>
+            <h3 class="font-semibold text-stone-800 text-sm">AI 正在接管助理的工作，但这件事比想象中复杂</h3>
           </div>
           <p class="text-stone-500 text-xs leading-relaxed mb-3">
-            2025–2026年，AI大模型已经能够快速完成：会议纪要整理、财报数据提取、初步行业梳理、格式化报告生成。
-            这些恰恰是助理研究员花费大量时间的基础工作。
-            多家头部券商已开始试点AI研报辅助系统，助理级岗位的招聘需求正在收缩。
+            大模型已经能快速完成财报数据提取、会议纪要整理、初步行业梳理和格式化报告生成——
+            而这些恰恰是助理研究员花最多时间的基础工作。
+            多家头部券商在2025年前后已试点 AI 研报辅助系统，助理岗的招聘需求在收缩。
           </p>
           <div class="bg-amber-50 rounded-xl p-3 text-xs text-amber-800">
-            <strong>对求职者的影响：</strong>
-            AI替代的是"机械性整理工作"，真正难以替代的是：独特的调研渠道、对产业趋势的直觉判断、路演中的互动沟通。
-            会用AI工具的分析师，会淘汰不会用AI的分析师——而不是AI淘汰所有分析师。
-            但助理岗的性价比确实在下降。
+            <strong>对求职者的含义：</strong>
+            AI 替代的是流程性、整理性的工作。真正难以替代的是：
+            独特的一手调研渠道、对产业趋势的直觉判断、和基金经理的互动沟通能力。
+            会用 AI 的分析师会淘汰不会用 AI 的分析师——但助理岗的性价比确实在下降。
           </div>
         </div>
 
         <!-- 冲击三 -->
         <div class="border-l-4 border-columbia-navy bg-white rounded-2xl p-6 border border-stone-200">
           <div class="flex items-center gap-2 mb-3">
-            <span class="text-[10px] bg-columbia-light text-columbia-navy border border-columbia-blue/20 font-medium px-2.5 py-1 rounded-full">冲击三</span>
-            <h3 class="font-semibold text-stone-800 text-sm">马太效应加剧：头部越来越强，中小越来越难</h3>
+            <span class="text-[10px] bg-columbia-light text-columbia-navy border border-columbia-blue/20 font-medium px-2.5 py-1 rounded-full">压力三</span>
+            <h3 class="font-semibold text-stone-800 text-sm">马太效应加速：强者越来越强，弱者出清加快</h3>
           </div>
           <p class="text-stone-500 text-xs leading-relaxed mb-3">
-            新规下，公募基金因为15%上限和白名单要求，天然倾向于把有限的佣金集中给少数头部券商——
-            他们综合实力强、合规风控好、研究覆盖广。
-            头部券商的研究所还在合并重组（2025年国泰海通合并是代表性事件），规模更大、资源更集中。
-            中小券商研究所的人力成本在压缩，对年轻人的激励愈发难以兑现。
+            新规的15%集中度上限 + 白名单机制，天然推动公募把有限的佣金向头部券商倾斜——
+            因为他们合规稳定、研究覆盖广、系统可靠。头部机构还在通过兼并重组进一步扩大规模
+            （2025年国泰君安与海通合并是典型事件）。中小所的人力成本正在被压缩，
+            对年轻人的激励承诺越来越难以兑现。
           </p>
           <div class="grid md:grid-cols-2 gap-3">
             <div class="bg-columbia-light rounded-lg p-3 text-xs">
-              <div class="font-medium text-columbia-navy mb-1">头部所（值得考虑）</div>
+              <div class="font-medium text-columbia-navy mb-1">国内头部（值得考虑）</div>
               <div class="text-stone-600 space-y-0.5">
                 <p>中信证券、中信建投</p>
                 <p>中金公司、华泰证券</p>
@@ -480,12 +527,12 @@ import Base from '../../layouts/Base.astro';
               </div>
             </div>
             <div class="bg-stone-50 rounded-lg p-3 text-xs">
-              <div class="font-medium text-stone-600 mb-1">外资所（香港）</div>
+              <div class="font-medium text-stone-600 mb-1">外资所（香港方向）</div>
               <div class="text-stone-500 space-y-0.5">
                 <p>Goldman Sachs Research</p>
                 <p>Morgan Stanley Asia Research</p>
                 <p>UBS、CLSA、麦格理</p>
-                <p>覆盖港股/ADR，侧重外资视角</p>
+                <p>侧重港股/ADR，门槛高，外资视角</p>
               </div>
             </div>
           </div>
@@ -496,45 +543,46 @@ import Base from '../../layouts/Base.astro';
 
     <!-- ═══ 07 怎么选 ══════════════════════════════════ -->
     <section id="choose" class="mb-20 scroll-mt-24">
-      <div class="section-label">07 · 适合谁</div>
-      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">适合进研究所的人是什么样的</h2>
+      <div class="section-label">07 · 进来之前</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">进研究所之前，需要想清楚什么</h2>
 
       <div class="grid md:grid-cols-2 gap-4 mb-8">
         <div class="bg-white border border-emerald-200 rounded-2xl p-5">
-          <h3 class="font-semibold text-emerald-800 mb-3 text-sm">更适合做研究员，如果你……</h3>
+          <h3 class="font-semibold text-emerald-800 mb-3 text-sm">研究员路径更适合你，如果……</h3>
           <div class="space-y-2 text-xs text-stone-500">
-            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>对某个行业（尤其是电子/医药/计算机等热门赛道）有真实的兴趣和积累</div>
-            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>享受深入研究一件事、找到别人没发现的"预期差"</div>
-            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>能接受高强度工作，且不介意"成就感延迟兑现"</div>
-            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>希望未来跳去公募基金做投资——研究员是最经典的跳板</div>
+            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>对某个行业有真实的持续兴趣，不是因为"这个方向热"</div>
+            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>享受独立钻研和寻找"预期差"的过程，能接受成就感延迟兑现</div>
+            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>可以承受高强度长时间工作，且对此有相对清醒的预期</div>
+            <div class="flex items-start gap-2"><span class="text-emerald-500 shrink-0 mt-0.5">✓</span>目标是跳去公募做投资——研究员是这条路最经典的跳板</div>
           </div>
         </div>
         <div class="bg-white border border-blue-200 rounded-2xl p-5">
-          <h3 class="font-semibold text-blue-800 mb-3 text-sm">更适合做机构销售，如果你……</h3>
+          <h3 class="font-semibold text-blue-800 mb-3 text-sm">机构销售路径更适合你，如果……</h3>
           <div class="space-y-2 text-xs text-stone-500">
-            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>天生擅长社交，喜欢和人打交道、建立关系</div>
-            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>对市场动态极度敏感，能快速消化信息并精准传递</div>
-            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>不介意大量差旅（但比研究员少），接受服务导向的工作性质</div>
-            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>有长期经营客户关系的耐心（初期可能3–6个月都没有明显结果）</div>
+            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>擅长社交，喜欢通过人际关系解决问题</div>
+            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>对市场信息极其敏锐，能快速提炼并精准传递</div>
+            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>有经营长期客户关系的耐心，不需要短期即时反馈</div>
+            <div class="flex items-start gap-2"><span class="text-blue-500 shrink-0 mt-0.5">✓</span>不抵触服务性质的工作，愿意把客户满意度作为核心衡量指标</div>
           </div>
         </div>
       </div>
 
-      <!-- 两个关键建议 -->
+      <!-- 关键建议 -->
       <div class="space-y-4 mb-8">
         <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
-          <h3 class="font-semibold text-stone-800 mb-2 text-sm">平台选择比方向选择更重要</h3>
+          <h3 class="font-semibold text-stone-800 mb-2 text-sm">在哪家，比做什么更重要</h3>
           <p class="text-stone-500 text-xs leading-relaxed">
-            在研究所，你在哪家机构工作，决定了你能接触什么样的客户、获得什么样的资源、参与什么质量的路演。
-            去头部所做助理，比去中小所做"首席"有更好的长期发展——因为你积累的是头部所的客户网络，而不是一家正在消亡的研究所的派点。
+            研究所的价值很大程度上来自平台背书——你在哪里积累客户关系、参与什么质量的路演、
+            和什么样的研究员共事，决定了你三年后的市场价值。
+            在头部机构做助理，比在一家边缘化的中小所挂个"首席"头衔，长期来看前者的路要宽得多。
           </p>
         </div>
         <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
-          <h3 class="font-semibold text-stone-800 mb-2 text-sm">先实习，再决策</h3>
+          <h3 class="font-semibold text-stone-800 mb-2 text-sm">实习先于决策</h3>
           <p class="text-stone-500 text-xs leading-relaxed">
-            研究员的工作强度、机构销售的客户关系生态——这些都是需要亲身体验的。
-            建议在决定是否入行之前，先做1–2段实习：一段在研究端（写报告、参与调研），一段在销售端（随销售拜访客户）。
-            三个月的真实体验，胜过所有的职业分析文章，包括这篇。
+            分析研究所的文章再多，都比不上自己去经历一段实习。
+            建议在决定是否以这行作为方向之前，分别在研究端（写报告、跟调研）和销售端（随销售拜访客户）
+            各做一段实习。三个月的第一手体验，能回答的问题是所有职业分析文章加在一起都回答不了的。
           </p>
         </div>
       </div>
@@ -553,6 +601,94 @@ import Base from '../../layouts/Base.astro';
               在任何金融机构任职，请严格遵守所在机构合规要求及相关法律法规，<strong>合规优先</strong>。
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Citations ══════════════════════════════════ -->
+    <section id="citations" class="mb-12 scroll-mt-24">
+      <div class="section-label">参考来源</div>
+      <h2 class="font-display font-bold text-xl text-stone-900 mb-5 mt-2">数据来源与延伸阅读</h2>
+
+      <div class="space-y-3">
+        <!-- 新闻 -->
+        <div class="bg-white border border-stone-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-stone-700 mb-3 text-xs uppercase tracking-wider">行业数据与新闻报道</h3>
+          <ul class="space-y-2 text-xs text-stone-500">
+            <li>
+              <a href="https://www.chnfund.com/article/ARa35b4147-03d5-ca7d-7687-3a1c123db8db" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                基金交易额增加23% 但佣金费率大降——上半年券商分仓佣金下滑35%
+              </a>
+              <span class="text-stone-400 ml-1">· 中国基金报</span>
+            </li>
+            <li>
+              <a href="https://www.sfccn.com/2025/4-4/4MMDE0MDRfMjAyMDY4Mg.html" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                降佣后券商分仓下降：光大、银河降幅超5成，券商研究所如何转型
+              </a>
+              <span class="text-stone-400 ml-1">· 南方财经网</span>
+            </li>
+            <li>
+              <a href="https://finance.sina.com.cn/jjxw/2025-04-08/doc-inesmkuu0671530.shtml" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                2024年券商分仓佣金收入下降35%，光大、银河降超5成
+              </a>
+              <span class="text-stone-400 ml-1">· 新浪财经</span>
+            </li>
+            <li>
+              <a href="https://m.jiemian.com/article/10939209.html" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                【深度】分析师"转会"忙，券商研究所变局将至
+              </a>
+              <span class="text-stone-400 ml-1">· 界面新闻</span>
+            </li>
+            <li>
+              <a href="https://www.21jingji.com/article/20240903/herald/0e34f9a659026455adccfd224e6d0723.html" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                分仓佣金大降三成，券商中报透露研究所三大转型路径
+              </a>
+              <span class="text-stone-400 ml-1">· 21经济网</span>
+            </li>
+            <li>
+              <a href="https://finance.sina.com.cn/roll/2024-09-02/doc-incmsusw4551109.shtml" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                公募费率改革见效，管理费和交易佣金显著缩减
+              </a>
+              <span class="text-stone-400 ml-1">· 新浪财经</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 知乎 -->
+        <div class="bg-white border border-stone-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-stone-700 mb-3 text-xs uppercase tracking-wider">从业者第一手视角（知乎）</h3>
+          <ul class="space-y-2 text-xs text-stone-500">
+            <li>
+              <a href="https://zhuanlan.zhihu.com/p/75247769" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                高压高薪，你想做券商研究员吗
+              </a>
+              <span class="text-stone-400 ml-1">· 知乎专栏</span>
+            </li>
+            <li>
+              <a href="https://zhuanlan.zhihu.com/p/33963944" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                关于券商行业研究员的N个问题（如何入行？挣多少？日常工作？）
+              </a>
+              <span class="text-stone-400 ml-1">· 知乎专栏</span>
+            </li>
+            <li>
+              <a href="https://zhuanlan.zhihu.com/p/81927130" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                券商行研这么苦，为什么还有那么多人去？
+              </a>
+              <span class="text-stone-400 ml-1">· 知乎专栏</span>
+            </li>
+            <li>
+              <a href="https://zhuanlan.zhihu.com/p/65248307" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                券商行业研究员的职业发展问题（入行N年后该如何进阶？）
+              </a>
+              <span class="text-stone-400 ml-1">· 知乎专栏</span>
+            </li>
+            <li>
+              <a href="https://zhuanlan.zhihu.com/p/370891838" class="text-columbia-navy hover:underline" target="_blank" rel="noopener noreferrer">
+                在券商研究所实习是一种什么体验？
+              </a>
+              <span class="text-stone-400 ml-1">· 知乎专栏</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
