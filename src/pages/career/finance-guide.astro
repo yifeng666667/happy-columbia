@@ -1,0 +1,781 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="金融行业方向与岗位深度解析"
+  description="一级市场 vs 二级市场，买方 vs 卖方，投行内部结构，PE/VC/公募/私募——从薪酬、压力到招聘难度的全景指南。"
+>
+
+  <!-- ── Breadcrumb ─────────────────────────────────── -->
+  <a href="/career/"
+     class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    求职经验分享
+  </a>
+
+  <!-- ── Article Header ─────────────────────────────── -->
+  <header class="mb-14 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-5">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-columbia-light text-columbia-navy font-semibold px-3 py-1 rounded-full">
+        Career Guide
+      </span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">Finance Industry</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
+      金融行业方向与岗位深度解析
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      一级 vs 二级市场、买方 vs 卖方、商业银行 vs 投资银行——从全局地图到每个岗位的日常、薪酬、压力与进入难度，帮你在第一份工作前看清这个行业的全貌。
+    </p>
+    <div class="flex flex-wrap items-center gap-3">
+      <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-200 font-medium px-3 py-1 rounded-full">
+        ⚠ 仅供参考，合规优先
+      </span>
+      <span class="text-[10px] bg-stone-100 text-stone-500 font-medium px-3 py-1 rounded-full">
+        薪酬数据为市场公开信息，个体差异极大
+      </span>
+    </div>
+  </header>
+
+  <!-- ── Table of Contents ──────────────────────────── -->
+  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-6">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">目录</p>
+    <ol class="space-y-2 text-sm text-stone-600">
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">01</span>
+        <a href="#map" class="hover:text-columbia-navy transition-colors no-underline">金融行业全局地图：先搞清楚你在哪</a>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">02</span>
+        <a href="#sellside" class="hover:text-columbia-navy transition-colors no-underline">卖方（Sell-Side）：投行、销售交易、研究</a>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">03</span>
+        <a href="#ibd" class="hover:text-columbia-navy transition-colors no-underline">投行内部结构：IBD / ECM / DCM / S&T / Research</a>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">04</span>
+        <a href="#buyside" class="hover:text-columbia-navy transition-colors no-underline">买方（Buy-Side）：PE / VC / 公募 / 对冲基金</a>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">05</span>
+        <a href="#bank" class="hover:text-columbia-navy transition-colors no-underline">商业银行：稳健但内卷的另一条路</a>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">06</span>
+        <a href="#compare" class="hover:text-columbia-navy transition-colors no-underline">横向对比：薪酬 · 压力 · 招聘难度</a>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="text-columbia-blue font-medium shrink-0 w-5">07</span>
+        <a href="#choose" class="hover:text-columbia-navy transition-colors no-underline">怎么选：三个底层问题帮你定位</a>
+      </li>
+    </ol>
+  </nav>
+
+  <!-- ── Article Body ───────────────────────────────── -->
+  <article class="max-w-3xl">
+
+    <!-- ═══ 01 全局地图 ══════════════════════════════ -->
+    <section id="map" class="mb-20 scroll-mt-24">
+      <div class="section-label">01 · 全局地图</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">金融行业全局地图：先搞清楚你在哪</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        大多数人第一次看金融求职帖，都会被一堆缩写搞晕——IBD、S&T、PE、VC、公募……
+        在深入每个方向之前，我们先用两个维度把整个行业拆清楚：
+        <strong>一级 vs 二级市场</strong>，以及<strong>买方 vs 卖方</strong>。
+      </p>
+
+      <!-- 一级 vs 二级市场 -->
+      <div class="grid md:grid-cols-2 gap-4 mb-10">
+        <div class="bg-columbia-navy rounded-2xl p-6 text-white">
+          <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">Primary Market</div>
+          <h3 class="font-display font-bold text-xl mb-3">一级市场</h3>
+          <p class="text-white/75 text-sm leading-relaxed mb-4">
+            企业首次把股权或债权卖给投资者、募集资金的市场。钱从投资者流向企业。
+          </p>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>IPO（首次公开募股）</li>
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>定向增发、债券发行</li>
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>PE/VC 对未上市公司投资</li>
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>企业并购（M&A）</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-white/10 text-[11px] text-white/50">
+            主要玩家：投行 IBD · PE · VC · 企业融资部门
+          </div>
+        </div>
+
+        <div class="bg-stone-800 rounded-2xl p-6 text-white">
+          <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">Secondary Market</div>
+          <h3 class="font-display font-bold text-xl mb-3">二级市场</h3>
+          <p class="text-white/75 text-sm leading-relaxed mb-4">
+            已经发行的股票、债券在投资者之间买卖的市场。钱在投资者之间流动，不进入企业。
+          </p>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>沪深交易所、纽交所日常交易</li>
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>公募基金买卖股票</li>
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>对冲基金做多/做空策略</li>
+            <li class="flex items-start gap-2"><span class="text-columbia-blue mt-0.5 shrink-0">▸</span>债券二级交易、衍生品</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-white/10 text-[11px] text-white/50">
+            主要玩家：公募基金 · 对冲基金 · 投行 S&T · 证券公司
+          </div>
+        </div>
+      </div>
+
+      <!-- 买方 vs 卖方 -->
+      <div class="bg-white border border-stone-200 rounded-2xl p-7 mb-8">
+        <h3 class="font-display font-bold text-lg text-stone-900 mb-5">买方 vs 卖方：最重要的一条分界线</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="w-2 h-2 rounded-full bg-columbia-navy shrink-0"></span>
+              <span class="font-semibold text-stone-800 text-sm">卖方（Sell-Side）</span>
+            </div>
+            <p class="text-stone-500 text-sm leading-relaxed mb-3">
+              为客户提供服务并收取费用。本质是"中间人"——帮企业发股票、帮基金买卖证券、提供研究报告。
+            </p>
+            <div class="space-y-1.5">
+              {[
+                '高盛、摩根士丹利、花旗、JPMorgan',
+                '中金公司、中信证券、华泰证券',
+                '独立精品投行：Evercore、Houlihan Lokey',
+              ].map(c => (
+                <div class="text-[12px] bg-columbia-light text-columbia-navy px-3 py-1.5 rounded-lg">{c}</div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+              <span class="font-semibold text-stone-800 text-sm">买方（Buy-Side）</span>
+            </div>
+            <p class="text-stone-500 text-sm leading-relaxed mb-3">
+              用自己管理的资金直接投资，赚取投资回报。本质是"投资人"——管钱，为出资人（LP/基民）赚收益。
+            </p>
+            <div class="space-y-1.5">
+              {[
+                'PE/VC：黑石、KKR、中金资本、红杉',
+                '公募基金：易方达、富达（Fidelity）',
+                '对冲基金：桥水、Two Sigma、景林',
+              ].map(c => (
+                <div class="text-[12px] bg-emerald-50 text-emerald-800 px-3 py-1.5 rounded-lg">{c}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 pt-5 border-t border-stone-100 text-[12px] text-stone-400 leading-relaxed">
+          <strong class="text-stone-600">一句话记忆：</strong>卖方卖服务，靠佣金/手续费赚钱；买方买资产，靠投资回报（和管理费/超额收益分成）赚钱。
+          很多人从卖方起步，积累经验后跳去买方——这是金融圈最经典的职业路径。
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 02 卖方 ══════════════════════════════════ -->
+    <section id="sellside" class="mb-20 scroll-mt-24">
+      <div class="section-label">02 · 卖方机构</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">卖方（Sell-Side）：投行、销售交易、研究</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        卖方机构的核心是<strong>大型投资银行</strong>（Bulge Bracket）和<strong>精品投行</strong>（Boutique）。
+        它们内部结构复杂，但主要分为几条业务线，进入方向和职业发展路径差异很大。
+      </p>
+
+      <!-- 头部公司分类 -->
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 mb-10">
+        <h3 class="font-semibold text-stone-800 text-sm mb-5">头部卖方机构分类</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-2 font-medium">国际顶级投行（Bulge Bracket）</div>
+            <div class="flex flex-wrap gap-2">
+              {['Goldman Sachs', 'Morgan Stanley', 'JPMorgan', 'Citi', 'Bank of America', 'Deutsche Bank', 'UBS'].map(b => (
+                <span class="text-[11px] bg-columbia-navy text-white font-medium px-3 py-1 rounded-full">{b}</span>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div class="text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-2 font-medium">精品投行（Boutique / Elite Boutique）</div>
+            <div class="flex flex-wrap gap-2">
+              {['Evercore', 'Houlihan Lokey', 'Lazard', 'Moelis', 'Centerview'].map(b => (
+                <span class="text-[11px] bg-stone-700 text-white font-medium px-3 py-1 rounded-full">{b}</span>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div class="text-[10px] uppercase tracking-[0.15em] text-stone-400 mb-2 font-medium">中资头部券商（境内+香港）</div>
+            <div class="flex flex-wrap gap-2">
+              {['中金公司 CICC', '中信证券', '中信建投', '华泰联合', '海通证券', '国泰君安'].map(b => (
+                <span class="text-[11px] bg-columbia-blue text-white font-medium px-3 py-1 rounded-full">{b}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 03 投行内部结构 ══════════════════════════ -->
+    <section id="ibd" class="mb-20 scroll-mt-24">
+      <div class="section-label">03 · 投行内部</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">投行内部结构：六条主要业务线</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        "进投行"只是一个笼统的说法——投行内部有多条差异极大的业务线，工作内容、节奏、薪酬和出路各不相同。
+      </p>
+
+      <!-- IBD -->
+      <div class="border border-stone-200 rounded-2xl overflow-hidden mb-6">
+        <div class="bg-columbia-navy px-6 py-4 flex items-center justify-between">
+          <div>
+            <span class="text-white font-display font-bold text-lg">投资银行部 IBD</span>
+            <span class="text-white/50 text-xs ml-3">Investment Banking Division</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-[10px] bg-red-500/20 text-red-300 px-2.5 py-0.5 rounded-full border border-red-500/30 font-medium">压力极高</span>
+            <span class="text-[10px] bg-yellow-400/20 text-yellow-200 px-2.5 py-0.5 rounded-full border border-yellow-400/30 font-medium">进入极难</span>
+          </div>
+        </div>
+        <div class="p-6 bg-white">
+          <p class="text-stone-600 text-sm leading-relaxed mb-5">
+            投行的"核心"部门，也是最苦、最光鲜的地方。主要业务是帮助企业做 IPO、并购（M&A）、融资（ECM/DCM）。
+            一年级 Analyst 的绰号是"光鲜的打工人"——熬夜做 PPT、建模型、改数字是日常。
+          </p>
+
+          <!-- 子部门 -->
+          <div class="grid md:grid-cols-3 gap-3 mb-5">
+            {[
+              { name: 'ECM', full: '股权资本市场', desc: '股票发行、IPO、定增。与上市公司打交道最多。' },
+              { name: 'DCM', full: '债务资本市场', desc: '债券发行、贷款安排。更依赖信用分析能力。' },
+              { name: 'M&A', full: '并购重组', desc: '帮买家/卖家完成并购，技术含量最高，出路最好。' },
+            ].map(d => (
+              <div class="bg-columbia-light rounded-xl p-4">
+                <div class="flex items-baseline gap-2 mb-1.5">
+                  <span class="font-bold text-columbia-navy text-sm">{d.name}</span>
+                  <span class="text-[10px] text-columbia-navy/60">{d.full}</span>
+                </div>
+                <p class="text-stone-600 text-xs leading-relaxed">{d.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 text-sm border-t border-stone-100 pt-5">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">薪酬参考</div>
+              <div class="text-stone-800 font-medium text-sm">应届 Analyst</div>
+              <div class="text-stone-500 text-xs leading-relaxed mt-1">
+                国内头部：月薪1.5–3万，年终奖3–10万+<br/>
+                香港外资：底薪 HKD 2–3万，年终奖差异巨大<br/>
+                纽约：$85K–$110K base，奖金80–120%
+              </div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">真实压力</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                周工作时长 80–100h 是常态，尤其在项目执行期。
+                深夜改 Pitch Book、周末待命随时响应客户是"入行须知"。
+                很多人2–3年后主动跳出或转型。
+              </div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">出路</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                PE/VC（最经典）、企业并购部门、公募基金、创业。
+                2年IBD经历在买方市场非常吃香。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- S&T -->
+      <div class="border border-stone-200 rounded-2xl overflow-hidden mb-6">
+        <div class="bg-stone-800 px-6 py-4 flex items-center justify-between">
+          <div>
+            <span class="text-white font-display font-bold text-lg">销售与交易 S&T</span>
+            <span class="text-white/50 text-xs ml-3">Sales & Trading</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-[10px] bg-orange-500/20 text-orange-300 px-2.5 py-0.5 rounded-full border border-orange-500/30 font-medium">压力高</span>
+            <span class="text-[10px] bg-yellow-400/20 text-yellow-200 px-2.5 py-0.5 rounded-full border border-yellow-400/30 font-medium">进入难</span>
+          </div>
+        </div>
+        <div class="p-6 bg-white">
+          <p class="text-stone-600 text-sm leading-relaxed mb-5">
+            S&T 负责在二级市场为机构客户执行交易，提供流动性。
+            Sales 是联系客户的"前台"，Trading 是在市场上执行买卖的"中台"。
+            节奏快，靠 PnL（盈亏）说话，与IBD的"长周期项目"风格完全不同——交易台的人凌晨开盘，下午市场关闭就可以回家。
+          </p>
+          <div class="grid md:grid-cols-3 gap-4 text-sm border-t border-stone-100 pt-5">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">薪酬参考</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                入门底薪与IBD相近，但奖金高度依赖个人/部门业绩。
+                优秀 Trader 3–5年后薪酬可远超IBD同级。
+              </div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">真实压力</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                工作时长比IBD短，但市场压力大。
+                亏钱就是亏钱，无处可藏。近年算法交易挤压传统S&T岗位数量。
+              </div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">出路</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                对冲基金、自营交易（Prop Trading）、量化基金。
+                技术型背景（数学/CS）优势明显。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="border border-stone-200 rounded-2xl overflow-hidden mb-6">
+        <div class="bg-emerald-800 px-6 py-4 flex items-center justify-between">
+          <div>
+            <span class="text-white font-display font-bold text-lg">研究部 Research</span>
+            <span class="text-white/50 text-xs ml-3">Equity / Fixed Income Research</span>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-[10px] bg-green-500/20 text-green-300 px-2.5 py-0.5 rounded-full border border-green-500/30 font-medium">压力中等</span>
+            <span class="text-[10px] bg-blue-400/20 text-blue-200 px-2.5 py-0.5 rounded-full border border-blue-400/30 font-medium">进入中等</span>
+          </div>
+        </div>
+        <div class="p-6 bg-white">
+          <p class="text-stone-600 text-sm leading-relaxed mb-5">
+            写分析报告，给机构客户提供投资建议。覆盖特定行业（如互联网、新能源、消费）或固定收益类产品。
+            国内中资券商研究所体量庞大，应届生进入相对容易；外资投行的 Research 岗位较少且门槛高。
+          </p>
+          <div class="grid md:grid-cols-3 gap-4 text-sm border-t border-stone-100 pt-5">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">薪酬参考</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                国内券商研究所应届：月薪1–2万，年总包20–40万。
+                头部明星分析师（首席级）年包可达百万+。
+              </div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">真实压力</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                财报季集中加班，日常需要跟踪大量信息。
+                调研出差频繁，对行业深度要求极高。
+              </div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 font-medium">出路</div>
+              <div class="text-stone-500 text-xs leading-relaxed">
+                买方基金（行业研究员→投资经理），是最经典的晋升路径之一。
+                媒体、咨询也是常见转型方向。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 其他部门 -->
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <!-- Corporate Banking -->
+        <div class="border border-stone-200 rounded-2xl p-5 bg-white">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-semibold text-stone-800">企业金融 Corporate Banking</h3>
+            <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-100 px-2 py-0.5 rounded-full">进入相对容易</span>
+          </div>
+          <p class="text-stone-500 text-xs leading-relaxed mb-4">
+            为企业客户提供贷款、信用额度、现金管理等综合银行服务。
+            与IBD不同，Corporate Banking 更像"关系管理"，靠维护长期客户关系赚取利差和手续费。
+          </p>
+          <div class="text-xs text-stone-400 space-y-1">
+            <div class="flex justify-between"><span>薪酬</span><span class="text-stone-600">略低于IBD，稳定性更好</span></div>
+            <div class="flex justify-between"><span>工作时长</span><span class="text-stone-600">60–80h/周，相对可预期</span></div>
+            <div class="flex justify-between"><span>出路</span><span class="text-stone-600">信贷风控、企业财务、商业银行</span></div>
+          </div>
+        </div>
+        <!-- Private Banking -->
+        <div class="border border-stone-200 rounded-2xl p-5 bg-white">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-semibold text-stone-800">私人银行 Private Banking</h3>
+            <span class="text-[10px] bg-purple-50 text-purple-700 border border-purple-100 px-2 py-0.5 rounded-full">人脉要求高</span>
+          </div>
+          <p class="text-stone-500 text-xs leading-relaxed mb-4">
+            服务高净值和超高净值个人客户（一般门槛1000万+人民币），提供资产配置、财富传承、家族信托等定制化服务。
+            本质是"卖产品"，薪酬高度依赖业绩提成。
+          </p>
+          <div class="text-xs text-stone-400 space-y-1">
+            <div class="flex justify-between"><span>薪酬</span><span class="text-stone-600">底薪中等，提成上不封顶</span></div>
+            <div class="flex justify-between"><span>挑战</span><span class="text-stone-600">需要有客户资源或快速积累</span></div>
+            <div class="flex justify-between"><span>出路</span><span class="text-stone-600">独立财富顾问、家族办公室</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asset Management within bank -->
+      <div class="border border-stone-200 rounded-2xl p-5 bg-white mb-2">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-semibold text-stone-800">资产管理 Asset Management（投行旗下）</h3>
+          <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5 rounded-full">偏买方性质</span>
+        </div>
+        <p class="text-stone-500 text-xs leading-relaxed">
+          很多大投行旗下有独立的资管部门（如高盛资管 GSAM、摩根资管 JPMAM）。
+          这类岗位更偏买方逻辑，工作节奏和文化与IBD差异较大，是大平台内少数"工作强度合理"的岗位之一。
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ 04 买方 ══════════════════════════════════ -->
+    <section id="buyside" class="mb-20 scroll-mt-24">
+      <div class="section-label">04 · 买方机构</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">买方（Buy-Side）：PE / VC / 公募 / 对冲基金</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        买方的诱惑在于：你管的是真实的钱，决策影响直接、收益与你强绑定。
+        但入门门槛也往往更高——大多数人需要先在卖方积累几年，再"跳去买方"。
+      </p>
+
+      <!-- PE -->
+      <div class="border-l-4 border-columbia-navy bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
+          <div>
+            <h3 class="font-display font-bold text-xl text-stone-900">私募股权 PE</h3>
+            <p class="text-xs text-stone-400 mt-0.5">Private Equity</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 px-2.5 py-1 rounded-full font-medium">进入极难</span>
+            <span class="text-[10px] bg-orange-50 text-orange-700 border border-orange-100 px-2.5 py-1 rounded-full font-medium">压力高</span>
+            <span class="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-100 px-2.5 py-1 rounded-full font-medium">长期回报最高</span>
+          </div>
+        </div>
+        <p class="text-stone-600 text-sm leading-relaxed mb-5">
+          用有限合伙人（LP）的钱，对未上市公司（或上市公司私有化）进行股权投资，持有5–10年后退出获利。
+          分为并购基金（Buyout）、成长期基金（Growth Equity）、不良资产（Distressed）等细分方向。
+          中国市场以成长期和并购为主，国际大行（黑石、KKR、凯雷）也在港/陆有团队。
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-5 mb-5">
+          <div class="bg-stone-50 rounded-xl p-4">
+            <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">薪酬结构</div>
+            <div class="text-stone-600 text-xs leading-relaxed space-y-1">
+              <p>· 应届/Junior Associate：年包50–100万（境内），HK更高</p>
+              <p>· 中高级别：底薪+Carry（超额收益分成）——真正的财富在Carry，通常基金退出后才兑现</p>
+              <p>· 合伙人级别：Carry可达数千万，但需等待5–10年投资周期</p>
+            </div>
+          </div>
+          <div class="bg-stone-50 rounded-xl p-4">
+            <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">进入路径</div>
+            <div class="text-stone-600 text-xs leading-relaxed space-y-1">
+              <p>· 最主流：2年IBD经验后跳槽（On-Cycle/Off-Cycle Recruiting）</p>
+              <p>· 直招：顶尖名校直接招应届生，名额极少</p>
+              <p>· 创业者/行业专家：部分专注行业的VC/PE更看重产业背景</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">头部机构</div>
+        <div class="flex flex-wrap gap-2">
+          {['黑石 Blackstone', 'KKR', '凯雷 Carlyle', '中金资本', '高瓴资本', '厚朴投资', '淡马锡 Temasek', 'PAG 太盟', 'MBK Partners'].map(f => (
+            <span class="text-[11px] bg-columbia-navy text-white px-3 py-1 rounded-full font-medium">{f}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- VC -->
+      <div class="border-l-4 border-columbia-blue bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
+          <div>
+            <h3 class="font-display font-bold text-xl text-stone-900">风险投资 VC</h3>
+            <p class="text-xs text-stone-400 mt-0.5">Venture Capital</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 px-2.5 py-1 rounded-full font-medium">进入极难</span>
+            <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-100 px-2.5 py-1 rounded-full font-medium">压力中高</span>
+          </div>
+        </div>
+        <p class="text-stone-600 text-sm leading-relaxed mb-5">
+          投资处于早期/成长期的创业公司，押注未来。
+          VC 的逻辑是"10个项目，1个成功就够了"——容忍高失败率，追求超额回报。
+          近两年中国VC市场受IPO收紧和经济周期影响明显降温，退出难度加大。
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mb-5">
+          <div class="bg-columbia-light rounded-xl p-4">
+            <div class="text-[10px] uppercase tracking-widest text-stone-500 mb-2 font-medium">VC vs PE 最大区别</div>
+            <div class="text-stone-600 text-xs leading-relaxed">
+              PE投成熟企业、靠财务工程和运营改善赚钱；VC投早期初创，靠判断赛道和创始人赚钱。
+              前者更偏"金融技能"，后者更偏"行业判断力+人脉网络"。
+            </div>
+          </div>
+          <div class="bg-columbia-light rounded-xl p-4">
+            <div class="text-[10px] uppercase tracking-widest text-stone-500 mb-2 font-medium">薪酬参考</div>
+            <div class="text-stone-600 text-xs leading-relaxed">
+              初级员工年包30–80万不等，成名机构溢价明显。
+              Carry是核心激励，但对早期员工兑现周期可达10年+，流动性差。
+            </div>
+          </div>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">头部机构</div>
+        <div class="flex flex-wrap gap-2">
+          {['红杉中国', '高榕资本', '源码资本', '光速中国', 'IDG资本', 'GGV纪源资本', '经纬创投', 'Andreessen Horowitz（a16z）', 'Sequoia Global'].map(f => (
+            <span class="text-[11px] bg-columbia-blue text-white px-3 py-1 rounded-full font-medium">{f}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- 公募基金 -->
+      <div class="border-l-4 border-emerald-600 bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
+          <div>
+            <h3 class="font-display font-bold text-xl text-stone-900">公募基金</h3>
+            <p class="text-xs text-stone-400 mt-0.5">Mutual Fund / Public Fund</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[10px] bg-yellow-50 text-yellow-700 border border-yellow-100 px-2.5 py-1 rounded-full font-medium">进入较难</span>
+            <span class="text-[10px] bg-orange-50 text-orange-700 border border-orange-100 px-2.5 py-1 rounded-full font-medium">压力中高</span>
+          </div>
+        </div>
+        <p class="text-stone-600 text-sm leading-relaxed mb-5">
+          向社会大众募资、在二级市场投资的基金（股票基金、债券基金、混合基金等）。
+          大多数岗位从<strong>研究员</strong>起步，逐步成长为<strong>基金经理</strong>，管理规模可达数十亿至数百亿人民币。
+          国内头部公募（易方达、天弘、富达）规模庞大，但近年随市场波动分红缩水，招聘也趋于谨慎。
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 text-xs text-stone-500 mb-5">
+          <div class="bg-stone-50 rounded-xl p-3">
+            <div class="font-medium text-stone-700 mb-1">应届研究员</div>
+            月薪1.5–3万，奖金依赖市场行情，国内一线公募总包40–80万
+          </div>
+          <div class="bg-stone-50 rounded-xl p-3">
+            <div class="font-medium text-stone-700 mb-1">基金经理</div>
+            年包百万起，顶级基金经理可达千万级，但需10年+积累
+          </div>
+          <div class="bg-stone-50 rounded-xl p-3">
+            <div class="font-medium text-stone-700 mb-1">工作节奏</div>
+            财报季忙，市场波动时高压。研究员出差调研频繁
+          </div>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest text-stone-400 mb-2 font-medium">头部机构</div>
+        <div class="flex flex-wrap gap-2">
+          {['易方达基金', '天弘基金', '华夏基金', '富达 Fidelity', '路博迈 Neuberger', '中欧基金', '景顺长城', 'BlackRock 贝莱德'].map(f => (
+            <span class="text-[11px] bg-emerald-700 text-white px-3 py-1 rounded-full font-medium">{f}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- 对冲基金/私募 -->
+      <div class="border-l-4 border-stone-700 bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
+          <div>
+            <h3 class="font-display font-bold text-xl text-stone-900">对冲基金 / 私募证券</h3>
+            <p class="text-xs text-stone-400 mt-0.5">Hedge Fund / Private Securities</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 px-2.5 py-1 rounded-full font-medium">进入极难</span>
+            <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 px-2.5 py-1 rounded-full font-medium">压力极高</span>
+          </div>
+        </div>
+        <p class="text-stone-600 text-sm leading-relaxed mb-4">
+          追求绝对收益（不管市场涨跌都要赚钱），策略包括多空股票、量化、宏观对冲、套利等。
+          门槛最高、淘汰率最高，但成功者的薪酬也最高。
+          国内私募证券基金（景林、幻方量化、九坤投资等）近年高速发展。
+        </p>
+        <div class="bg-stone-50 rounded-xl p-4 text-xs text-stone-500 leading-relaxed">
+          <strong class="text-stone-700">薪酬逻辑：</strong>
+          底薪可能并不高（与顶级PE相比），但超额收益提成（通常20%+）是核心。
+          一个量化策略年回报30%、管理规模10亿，团队可提成6000万——这是对冲基金的魔力，也是其高淘汰率的根本原因。
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 05 商业银行 ══════════════════════════════ -->
+    <section id="bank" class="mb-20 scroll-mt-24">
+      <div class="section-label">05 · 商业银行</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">商业银行：稳健但内卷的另一条路</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
+        商业银行（招行、工行、建行、中行、农行等）和投行在本质上是两种不同的商业模式：
+        <strong>银行靠"利差"赚钱</strong>（吸收低息存款，放出高息贷款）；
+        <strong>投行靠"手续费"赚钱</strong>（提供服务收佣金）。
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-5 mb-8">
+        <div class="bg-white border border-stone-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-stone-800 mb-3 text-sm">对应岗位类型</h3>
+          <div class="space-y-2 text-xs text-stone-500">
+            <div class="flex items-start gap-2">
+              <span class="text-columbia-blue mt-0.5">▸</span>
+              <span><strong class="text-stone-700">对公业务：</strong>服务企业客户，贷款、结算、债券承销联动</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-columbia-blue mt-0.5">▸</span>
+              <span><strong class="text-stone-700">零售银行：</strong>服务个人客户，理财、信贷</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-columbia-blue mt-0.5">▸</span>
+              <span><strong class="text-stone-700">金融市场/资管：</strong>银行自营投资、同业业务，偏买方性质</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-columbia-blue mt-0.5">▸</span>
+              <span><strong class="text-stone-700">风险合规：</strong>信用评估、内控合规，稳定但晋升慢</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-stone-800 mb-3 text-sm">真实情况</h3>
+          <div class="space-y-2 text-xs text-stone-500 leading-relaxed">
+            <p>· 应届生总行管培生年包约20–35万（国有大行偏低，股份制银行如招行、平安稍高）</p>
+            <p>· 分行/支行岗位地区差异大，但绩效考核以"拉存款/卖产品"为核心，内卷严重</p>
+            <p>· 工作时长相对可控，但业务指标压力不小</p>
+            <p>· 国有大行晋升路径漫长（熬年资），股份制银行市场化更强</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-amber-800 leading-relaxed">
+        <strong class="block mb-1">与投行的核心区别</strong>
+        商业银行更稳定、更"体制内"，适合看重工作生活平衡的人；
+        投行节奏快、晋升快、出路多，但代价是高强度的工作压力。
+        两者并非孰优孰劣——取决于你更想要哪种生活方式。
+      </div>
+    </section>
+
+    <!-- ═══ 06 横向对比 ══════════════════════════════ -->
+    <section id="compare" class="mb-20 scroll-mt-24">
+      <div class="section-label">06 · 横向对比</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">一张表看懂各方向差异</h2>
+
+      <p class="text-stone-500 text-sm leading-relaxed mb-6">
+        以下数据为中国市场（含香港）主流机构的参考区间，个体差异极大，仅作方向性参考。
+      </p>
+
+      <div class="overflow-x-auto rounded-2xl border border-stone-200 mb-6">
+        <table class="w-full text-xs">
+          <thead>
+            <tr class="bg-columbia-navy text-white">
+              <th class="text-left px-4 py-3 font-semibold rounded-tl-2xl">方向/岗位</th>
+              <th class="text-left px-4 py-3 font-semibold">应届年包参考</th>
+              <th class="text-left px-4 py-3 font-semibold">工作压力</th>
+              <th class="text-left px-4 py-3 font-semibold">招聘竞争度</th>
+              <th class="text-left px-4 py-3 font-semibold rounded-tr-2xl">主要出路</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-100">
+            {[
+              { role: '投行 IBD（境内）', pay: '30–70万', pressure: '★★★★★', hard: '★★★★★', exit: 'PE / VC / 企业融资' },
+              { role: '投行 IBD（香港外资）', pay: 'HKD 50–100万', pressure: '★★★★★', hard: '★★★★★', exit: 'PE / 对冲基金' },
+              { role: '投行 S&T', pay: '25–60万（+高浮动）', pressure: '★★★★☆', hard: '★★★★☆', exit: '对冲基金 / Prop Trading' },
+              { role: '券商研究所', pay: '20–40万', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '公募基金 / 行业分析' },
+              { role: 'PE（应届/直招）', pay: '50–120万', pressure: '★★★★★', hard: '★★★★★', exit: '基金合伙人 / 企业高管' },
+              { role: 'VC（初级）', pay: '30–80万', pressure: '★★★★☆', hard: '★★★★★', exit: '高级投资人 / 创业' },
+              { role: '公募基金研究员', pay: '30–70万', pressure: '★★★★☆', hard: '★★★★☆', exit: '基金经理 / 私募' },
+              { role: '商业银行管培生', pay: '20–35万', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '银行管理层 / 金融机构' },
+              { role: '私人银行', pay: '20–50万（+提成）', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '独立顾问 / 家办' },
+            ].map((r, i) => (
+              <tr class={i % 2 === 0 ? 'bg-white' : 'bg-stone-50/50'}>
+                <td class="px-4 py-3 font-medium text-stone-800">{r.role}</td>
+                <td class="px-4 py-3 text-stone-600">{r.pay}</td>
+                <td class="px-4 py-3 text-stone-500">{r.pressure}</td>
+                <td class="px-4 py-3 text-stone-500">{r.hard}</td>
+                <td class="px-4 py-3 text-stone-500">{r.exit}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-stone-100 rounded-xl p-4 text-[11px] text-stone-500 leading-relaxed">
+        <strong class="text-stone-600">免责说明：</strong>
+        以上薪酬数据来源于公开信息及行业交流，仅供参考，不代表任何特定机构的招聘标准。
+        实际薪酬受机构规模、职能、个人背景、市场周期等多重因素影响，差异可能极大。
+        请以各机构官方渠道及 offer 为准。
+      </div>
+    </section>
+
+    <!-- ═══ 07 怎么选 ══════════════════════════════ -->
+    <section id="choose" class="mb-20 scroll-mt-24">
+      <div class="section-label">07 · 怎么选</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">三个底层问题帮你定位</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        不必一开始就想清楚所有事。但这三个问题，能帮你缩小范围，避免盲目海投。
+      </p>
+
+      <div class="space-y-4 mb-10">
+        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-10 h-10 rounded-full bg-columbia-light flex items-center justify-center font-display font-bold text-columbia-navy">1</div>
+            <div>
+              <h3 class="font-semibold text-stone-800 mb-2">你更享受"分析决策"还是"执行服务"？</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">
+                买方的核心是"决策"——你最终要自己判断这笔钱投不投、怎么投，结果由你负责。
+                卖方的核心是"服务"——你为客户提供分析、执行、建议，客户做最终判断。
+                两种工作都有价值，但适合的人格特质不同。
+                如果你喜欢独立判断、对结果有强烈的掌控欲，买方更适合你；
+                如果你享受与客户合作、建立关系，卖方也很好。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-10 h-10 rounded-full bg-columbia-light flex items-center justify-center font-display font-bold text-columbia-navy">2</div>
+            <div>
+              <h3 class="font-semibold text-stone-800 mb-2">你能接受多高强度的工作节奏？</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">
+                金融行业普遍工作时间长，但差异很大。
+                IBD 的前三年几乎是把生活"押"进去的；
+                公募研究员、商业银行的节奏相对可控；
+                S&T 朝九晚五但精神高度紧绷。
+                没有好坏之分，关键是你愿意用什么来换什么。
+                建议去做实习，亲身感受——任何人说的都不如你自己一个月的亲身体验。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-10 h-10 rounded-full bg-columbia-light flex items-center justify-center font-display font-bold text-columbia-navy">3</div>
+            <div>
+              <h3 class="font-semibold text-stone-800 mb-2">你的目标市场是哪里——北京/上海、香港还是纽约？</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">
+                同一个"投行 IBD"，在北京、香港、纽约的文化、薪酬、出路差异极大。
+                境内市场以IPO（A股）和债券承销为主，节奏跟随监管周期；
+                香港是国际化平台，外资投行亚太总部聚集，但竞争激烈；
+                纽约是全球金融中心，要求最高但资源最丰富。
+                建议根据语言能力、签证状态、长期规划来定，而不是单纯"哪里薪酬高"。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 免责声明卡片 -->
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="text-xl shrink-0 mt-0.5">⚠</span>
+          <div>
+            <h4 class="font-semibold text-amber-900 mb-2 text-sm">重要声明</h4>
+            <p class="text-amber-800 text-xs leading-relaxed">
+              本文内容基于公开市场信息整理，<strong>仅供参考，不构成任何投资、求职或职业决策建议</strong>。
+              金融行业招聘流程、薪酬结构随市场环境变化较大，以上所有数字均为市场公开参考区间，
+              请以各招聘机构的官方信息和实际 offer 为准。
+              合规优先——在任何金融机构任职，请严格遵守所在机构的合规要求和相关法律法规。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+  <style>
+    .section-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #9ca3af;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+  </style>
+
+</Base>
