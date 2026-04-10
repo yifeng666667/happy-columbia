@@ -125,10 +125,25 @@ import Base from '../../layouts/Base.astro';
   .path-year { flex-shrink: 0; width: 5.5rem; font-size: 0.72rem; font-weight: 700; color: #B8860B; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 0.1rem; }
   .path-text { font-size: 0.83rem; color: #444; line-height: 1.6; }
 
+  /* ── table scroll wrapper ── */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.2rem 0; border-radius: 8px; }
+  .table-scroll .report-table { margin: 0; min-width: 480px; }
+
   @media (max-width: 640px) {
-    .report-h1 { font-size: 1.55rem; }
+    .report-h1 { font-size: 1.45rem; line-height: 1.3; }
+    .report-h2 { font-size: 1.2rem; }
+    .report-body { padding: 0 0.25rem; }
     .stat-bar { grid-template-columns: 1fr 1fr; }
-    .matrix { font-size: 0.72rem; }
+    .stat-num  { font-size: 1.3rem; }
+    .matrix {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+    .matrix-label { writing-mode: horizontal-tb; padding: 0.4rem 0.8rem; border-radius: 4px; justify-content: flex-start; }
+    .matrix-header { text-align: left; }
+    .toc { padding: 1.1rem 1.2rem; }
+    .path-year { width: 4.5rem; font-size: 0.68rem; }
+    .dir-card { padding: 1rem 1.1rem; }
   }
 </style>
 
