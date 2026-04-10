@@ -51,8 +51,9 @@ import Base from '../../layouts/Base.astro';
       <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">03</span><a href="#analyst" class="hover:text-columbia-navy transition-colors no-underline">研究员：这条路长什么样</a></li>
       <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">04</span><a href="#sales" class="hover:text-columbia-navy transition-colors no-underline">机构销售：在研究员和基金经理之间穿梭</a></li>
       <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">05</span><a href="#backoffice" class="hover:text-columbia-navy transition-colors no-underline">中后台：合规、质控与产品运营</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">06</span><a href="#2026" class="hover:text-columbia-navy transition-colors no-underline">2026 年：三重压力叠加下的行业现状</a></li>
-      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">07</span><a href="#choose" class="hover:text-columbia-navy transition-colors no-underline">进研究所之前，需要想清楚什么</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">06</span><a href="#compare" class="hover:text-columbia-navy transition-colors no-underline">一张表看懂各方向差异</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">07</span><a href="#2026" class="hover:text-columbia-navy transition-colors no-underline">2026 年：三重压力叠加下的行业现状</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">08</span><a href="#choose" class="hover:text-columbia-navy transition-colors no-underline">进研究所之前，需要想清楚什么</a></li>
     </ol>
   </nav>
 
@@ -493,9 +494,136 @@ import Base from '../../layouts/Base.astro';
       </div>
     </section>
 
-    <!-- ═══ 06 2026年行情 ════════════════════════════════ -->
+    <!-- ═══ 06 横向对比 ════════════════════════════════ -->
+    <section id="compare" class="mb-20 scroll-mt-24">
+      <div class="section-label">06 · 横向对比</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-3 mt-2">一张表看懂各方向差异</h2>
+      <p class="text-stone-500 text-sm leading-relaxed mb-6">
+        以下为研究所内部各岗位的横向对比，数据来源于行业公开资料，仅供方向性参考。
+        ★ 越多代表该维度越高/越强/越难。
+      </p>
+
+      <div class="overflow-x-auto rounded-2xl border border-stone-200 mb-4">
+        <table class="w-full text-xs">
+          <thead>
+            <tr class="bg-columbia-navy text-white">
+              <th class="text-left px-4 py-3 font-semibold rounded-tl-2xl min-w-[120px]">岗位</th>
+              <th class="text-left px-4 py-3 font-semibold min-w-[120px]">应届年包参考</th>
+              <th class="text-left px-4 py-3 font-semibold min-w-[100px]">工作强度</th>
+              <th class="text-left px-4 py-3 font-semibold min-w-[100px]">入行竞争度</th>
+              <th class="text-left px-4 py-3 font-semibold min-w-[100px]">薪酬天花板</th>
+              <th class="text-left px-4 py-3 font-semibold min-w-[100px]">AI 冲击风险</th>
+              <th class="text-left px-4 py-3 font-semibold rounded-tr-2xl min-w-[130px]">主要出路</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-100">
+            {[
+              {
+                role: '助理研究员',
+                tag: '前台·研究',
+                tagColor: 'bg-columbia-light text-columbia-navy',
+                pay: '10–20万',
+                intensity: '★★★★★',
+                hard: '★★★★☆',
+                ceiling: '★★☆☆☆',
+                ai: '★★★★★',
+                exit: '→ 分析师晋升 / 公募研究员',
+              },
+              {
+                role: '行业分析师（热门赛道）',
+                tag: '前台·研究',
+                tagColor: 'bg-columbia-light text-columbia-navy',
+                pay: '30–80万',
+                intensity: '★★★★★',
+                hard: '★★★★★',
+                ceiling: '★★★★☆',
+                ai: '★★★☆☆',
+                exit: '→ 公募基金经理 / 私募',
+              },
+              {
+                role: '首席分析师',
+                tag: '前台·研究',
+                tagColor: 'bg-columbia-light text-columbia-navy',
+                pay: '100–300万+',
+                intensity: '★★★★☆',
+                hard: '★★★★★',
+                ceiling: '★★★★★',
+                ai: '★★☆☆☆',
+                exit: '→ 买方合伙人 / 自媒体 / 企业战略',
+              },
+              {
+                role: '机构销售',
+                tag: '前台·销售',
+                tagColor: 'bg-stone-700 text-white',
+                pay: '20–50万（+浮动）',
+                intensity: '★★★★☆',
+                hard: '★★★☆☆',
+                ceiling: '★★★★☆',
+                ai: '★★★☆☆',
+                exit: '→ 大销售 / 财富管理 / 头部跳槽',
+              },
+              {
+                role: '质控岗',
+                tag: '中后台',
+                tagColor: 'bg-stone-100 text-stone-600',
+                pay: '25–60万',
+                intensity: '★★★☆☆',
+                hard: '★★★☆☆',
+                ceiling: '★★★☆☆',
+                ai: '★★★☆☆',
+                exit: '→ 高级质控 / 其他机构合规',
+              },
+              {
+                role: '合规岗',
+                tag: '中后台',
+                tagColor: 'bg-stone-100 text-stone-600',
+                pay: '25–55万',
+                intensity: '★★★☆☆',
+                hard: '★★★☆☆',
+                ceiling: '★★★☆☆',
+                ai: '★★☆☆☆',
+                exit: '→ 合规总监 / 律所金融组',
+              },
+              {
+                role: '产品 / 营销岗',
+                tag: '中后台',
+                tagColor: 'bg-stone-100 text-stone-600',
+                pay: '20–45万',
+                intensity: '★★★☆☆',
+                hard: '★★☆☆☆',
+                ceiling: '★★☆☆☆',
+                ai: '★★★★☆',
+                exit: '→ 金融媒体 / 品牌运营',
+              },
+            ].map((r, i) => (
+              <tr class={i % 2 === 0 ? 'bg-white' : 'bg-stone-50/50'}>
+                <td class="px-4 py-3">
+                  <div class="font-medium text-stone-800 mb-1">{r.role}</div>
+                  <span class={`text-[10px] font-medium px-1.5 py-0.5 rounded-full ${r.tagColor}`}>{r.tag}</span>
+                </td>
+                <td class="px-4 py-3 text-stone-700 font-medium">{r.pay}</td>
+                <td class="px-4 py-3 text-stone-500 tracking-tight">{r.intensity}</td>
+                <td class="px-4 py-3 text-stone-500 tracking-tight">{r.hard}</td>
+                <td class="px-4 py-3 text-stone-500 tracking-tight">{r.ceiling}</td>
+                <td class="px-4 py-3 text-stone-500 tracking-tight">{r.ai}</td>
+                <td class="px-4 py-3 text-stone-500 text-[11px] leading-relaxed">{r.exit}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-stone-50 rounded-xl p-4 text-[11px] text-stone-500 leading-relaxed">
+        <strong class="text-stone-600">说明：</strong>
+        薪酬区间为2024–2026年市场公开参考数据，头部机构与中小机构差异悬殊。
+        "AI冲击风险"★越多代表该岗位工作内容越容易被大模型替代；首席分析师靠判断力与人脉，风险最低。
+        所有数据仅供方向参考，以实际 offer 为准。
+      </div>
+    </section>
+
+    <!-- ═══ 07 2026年行情 ════════════════════════════════ -->
     <section id="2026" class="mb-20 scroll-mt-24">
-      <div class="section-label">06 · 2026年行情</div>
+      <div class="section-label">07 · 2026年行情</div>
       <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">2026 年：三重压力叠加下的行业现状</h2>
 
       <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
@@ -583,7 +711,7 @@ import Base from '../../layouts/Base.astro';
 
     <!-- ═══ 07 怎么选 ══════════════════════════════════ -->
     <section id="choose" class="mb-20 scroll-mt-24">
-      <div class="section-label">07 · 进来之前</div>
+      <div class="section-label">08 · 进来之前</div>
       <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">进研究所之前，需要想清楚什么</h2>
 
       <div class="grid md:grid-cols-2 gap-4 mb-8">
