@@ -1,0 +1,813 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="简历与实习：如何在最短时间内建立最有效的履历"
+  description="250份简历、60次面试、横跨中美与互联网金融咨询——从求职者和面试官双重视角，讲清楚校招求职的底层逻辑。"
+>
+
+  <!-- ── Breadcrumb ─────────────────────────────────── -->
+  <a href="/career/"
+     class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    求职经验分享
+  </a>
+
+  <!-- ── Article Header ─────────────────────────────── -->
+  <header class="mb-14 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-5">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-columbia-light text-columbia-navy font-semibold px-3 py-1 rounded-full">
+        Career Guide
+      </span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">Resume · Internship · Job Search</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
+      简历与实习<br/>
+      <span class="text-columbia-blue">如何在最短时间内建立最有效的履历</span>
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      250 份简历、60 次面试、横跨中美两个市场、覆盖互联网、金融、咨询三大行业——
+      这篇文章想做的，不是又一份"简历模板合集"，而是讲清楚校招这件事的底层逻辑。
+      同时，因为自己也当过全职员工和校招面试官，会从招聘方视角说说一份简历真正被怎么看待。
+    </p>
+    <div class="flex flex-wrap items-center gap-3">
+      <span class="text-[10px] bg-stone-100 text-stone-500 font-medium px-3 py-1 rounded-full">
+        适合：文科 / 商科 / SIPA 在读
+      </span>
+      <span class="text-[10px] bg-columbia-light text-columbia-navy font-medium px-3 py-1 rounded-full">
+        涵盖：中国 + 美国职场
+      </span>
+      <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-200 font-medium px-3 py-1 rounded-full">
+        求职者 + 面试官双重视角
+      </span>
+    </div>
+  </header>
+
+  <!-- ── Table of Contents ──────────────────────────── -->
+  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-6">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">目录</p>
+    <ol class="space-y-2 text-sm text-stone-600">
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">00</span><a href="#intro" class="hover:text-columbia-navy transition-colors no-underline">引言：250份简历之后，我学到的最重要一件事</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">01</span><a href="#reframe" class="hover:text-columbia-navy transition-colors no-underline">重新定义简历——它不是自我介绍，是一份销售提案</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">02</span><a href="#market" class="hover:text-columbia-navy transition-colors no-underline">行前研究：搞清楚你在投哪个市场</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">03</span><a href="#onejob" class="hover:text-columbia-navy transition-colors no-underline">核心方法：一份工作，一份简历</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">04</span><a href="#writing" class="hover:text-columbia-navy transition-colors no-underline">简历的结构与写法（中文 + 北美）</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">05</span><a href="#interviewer" class="hover:text-columbia-navy transition-colors no-underline">面试官视角：我在招人时看什么</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">06</span><a href="#strategy" class="hover:text-columbia-navy transition-colors no-underline">投递策略：如何系统性地最大化面试转化率</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">07</span><a href="#industry" class="hover:text-columbia-navy transition-colors no-underline">横跨中美、横跨行业的经验差异</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">08</span><a href="#checklist" class="hover:text-columbia-navy transition-colors no-underline">常见误区 & 投递前 Checklist</a></li>
+      <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">09</span><a href="#closing" class="hover:text-columbia-navy transition-colors no-underline">结语：履历是长期建设，不是临时突击</a></li>
+    </ol>
+  </nav>
+
+  <!-- ── Article Body ───────────────────────────────── -->
+  <article class="max-w-3xl">
+
+    <!-- ═══ 00 引言 ══════════════════════════════════ -->
+    <section id="intro" class="mb-20 scroll-mt-24">
+      <div class="section-label">00 · 引言</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">250份简历之后，我学到的最重要一件事</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-5 text-[0.9375rem]">
+        我在秋招里一共投出了超过 250 份简历，收到了 60 次以上的面试邀请。
+        这个过程横跨中美两个职场，覆盖互联网（产品、运营、战略）、金融（投行、基金、券商研究）、咨询三个行业。
+        后来全职工作后，自己也当过校招面试官，站到了桌子的另一侧。
+      </p>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        如果要把这段经历压缩成一句话，我会说：
+      </p>
+
+      <div class="bg-columbia-navy rounded-2xl p-7 text-white mb-8">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">核心结论</div>
+        <p class="text-white/90 text-lg leading-relaxed font-display font-semibold">
+          大多数人的问题不是简历写得不好，<br/>而是在用同一份简历打100场不同的仗。
+        </p>
+        <p class="text-white/55 text-sm mt-4 leading-relaxed">
+          广撒网不是策略，是在把稀缺的注意力资源均摊到所有机会上——结果每个都差一点。
+          真正有效的方法是：精准选择目标，然后用定制化的方式逐一攻克。
+        </p>
+      </div>
+
+      <p class="text-stone-600 leading-relaxed text-[0.9375rem]">
+        "但你不是也投了250份吗？"——是的。重点是：这250份不是同一份简历，而是针对不同赛道、
+        不同公司分批打磨的定制版本。每进入一个新行业、新类型的岗位，我会花时间重新研究JD、
+        重新组织叙事、重新选择关键词。这才是这篇文章想讲的事。
+      </p>
+    </section>
+
+    <!-- ═══ 01 重新定义简历 ════════════════════════════ -->
+    <section id="reframe" class="mb-20 scroll-mt-24">
+      <div class="section-label">01 · 底层逻辑</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">重新定义简历——它不是自我介绍，是一份销售提案</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
+        很多人写简历的心态是"把自己做过的事情记录下来"。这是错的起点。
+        简历的真实功能只有一个：在30秒内让对方产生"这个人值得花一小时面试"的念头。
+      </p>
+
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">投递漏斗：你能真正影响哪些环节</h3>
+
+      <!-- 漏斗 -->
+      <div class="mb-8 space-y-2">
+        {[
+          { stage: '投递', n: '100%', note: '这是你完全掌控的起点', color: 'bg-columbia-navy text-white', w: 'w-full' },
+          { stage: '初筛（HR / ATS 系统）', n: '20–30%', note: '关键词匹配 + 格式扫描，通常不超过30秒', color: 'bg-columbia-blue text-white', w: 'w-10/12' },
+          { stage: '业务面试', n: '10–15%', note: '到了这一步，简历已发挥完使命', color: 'bg-blue-400 text-white', w: 'w-8/12' },
+          { stage: 'Offer', n: '3–8%', note: '取决于面试表现与竞争情况', color: 'bg-stone-300 text-stone-700', w: 'w-5/12' },
+        ].map(f => (
+          <div class="flex items-center gap-4">
+            <div class={`${f.w} ${f.color} rounded-xl px-5 py-3 flex items-center justify-between transition-all`}>
+              <span class="text-sm font-medium">{f.stage}</span>
+              <span class="text-sm font-bold opacity-90">{f.n}</span>
+            </div>
+            <span class="text-xs text-stone-400 hidden md:block shrink-0 max-w-[200px] leading-tight">{f.note}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5 mb-6">
+        <p class="text-stone-600 text-sm leading-relaxed">
+          <strong class="text-stone-800">简历只负责前两步。</strong>
+          它的目标不是展示你有多优秀，而是通过初筛，拿到面试机会。
+          一旦坐到面试桌对面，简历就完成了它的使命——剩下的是你这个人。
+          这意味着：简历要为"通过初筛"而写，而不是为了"全面展示自我"而写。
+        </p>
+      </div>
+
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">精准 vs. 数量：不是非此即彼</h3>
+      <p class="text-stone-600 leading-relaxed text-[0.9375rem]">
+        有人会问：精准不是意味着投得少？那怎么保证机会数量？
+        这里有一个关键区分——"精准"指的是<strong class="text-stone-800">每一份简历针对岗位高度定制</strong>，
+        而不是投的数量少。你可以投很多，但每个细分赛道都有专门打磨过的版本。
+        准备一个"简历母版"，储备所有经历的多个版本，每次投递30分钟内完成定制——
+        这才是"既精准又量大"的可持续策略。
+      </p>
+    </section>
+
+    <!-- ═══ 02 行前研究 ════════════════════════════════ -->
+    <section id="market" class="mb-20 scroll-mt-24">
+      <div class="section-label">02 · 市场认知</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">行前研究：搞清楚你在投哪个市场</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        在动笔写简历之前，需要先回答一个问题：你面对的是哪种筛选逻辑？
+        不同市场、不同行业，HR看简历的方式差异极大——用错了格式，内容再好也可能第一关就被刷掉。
+      </p>
+
+      <!-- 四个维度 -->
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        {[
+          {
+            icon: '🌏',
+            title: '中国 vs. 美国职场',
+            items: [
+              '中文简历通常1页，北美 résumé 也是1页（实习）',
+              '国内HR常用系统自动扫描关键词；北美更依赖人工审阅',
+              '投递时机差异大：国内秋招集中8–11月，北美 full-time 可能12月前后',
+              '北美职场 networking 的权重远高于国内',
+            ]
+          },
+          {
+            icon: '🏦',
+            title: '互联网 vs. 金融 vs. 咨询',
+            items: [
+              '互联网重项目成果和数据感，金融重实习链条和工具技能',
+              '咨询最看重结构化表达与解决问题的逻辑链',
+              '金融（尤其投行）：实习背景有无"前序"至关重要',
+              '咨询海外岗：cover letter 几乎必写，需要独立准备',
+            ]
+          },
+          {
+            icon: '🎓',
+            title: '校招 vs. 社招',
+            items: [
+              '校招看潜力和可塑性，社招看即战力',
+              '校招可以用项目经历和校园经验弥补实习不足',
+              '社招简历若还在写"学生工作"，会被直接扣分',
+              '海外投递通常无固定窗口，全年滚动开放',
+            ]
+          },
+          {
+            icon: '📋',
+            title: '中文简历 vs. 北美 Résumé',
+            items: [
+              '中文简历：照片通常需要、有个人信息栏',
+              '北美简历：无照片、无生日、无性别（法律规避）',
+              '北美格式：动词开头的 bullet points，动词必须准确有力',
+              'GPA 要不要写：>3.5 写；<3.3 慎写；在中间视岗位而定',
+            ]
+          },
+        ].map(card => (
+          <div class="bg-white border border-stone-200 rounded-2xl p-5">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-lg">{card.icon}</span>
+              <h3 class="font-semibold text-stone-800 text-sm">{card.title}</h3>
+            </div>
+            <ul class="space-y-2">
+              {card.items.map(item => (
+                <li class="flex items-start gap-2 text-xs text-stone-500 leading-relaxed">
+                  <span class="text-columbia-blue shrink-0 mt-0.5">·</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <!-- 关键词库 -->
+      <div class="bg-stone-50 rounded-2xl p-6">
+        <h3 class="font-semibold text-stone-800 mb-4 text-sm">各行业关键词信号（初筛时HR扫描的词）</h3>
+        <div class="grid md:grid-cols-3 gap-4 text-xs">
+          {[
+            { label: '互联网 / 战略', color: 'bg-blue-50 text-blue-800', words: ['数据驱动', '用户增长', '产品迭代', 'A/B测试', 'PMF', '北极星指标', '转化率', '留存', '用户调研', '竞品分析'] },
+            { label: '金融 / 投行 / 基金', color: 'bg-columbia-light text-columbia-navy', words: ['财务建模', 'DCF估值', '三张报表', 'Wind/Bloomberg', '行业深度', 'Deal经历', '路演', '尽调', 'IRR', '资产配置'] },
+            { label: '咨询', color: 'bg-amber-50 text-amber-800', words: ['结构化分析', 'MECE', '议题树', '客户交付', 'Deck制作', '战略建议', '访谈', '数据分析', '跨部门协作', '可落地'] },
+          ].map(g => (
+            <div>
+              <div class={`${g.color} rounded-xl px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wide mb-3 inline-block`}>{g.label}</div>
+              <div class="flex flex-wrap gap-1.5">
+                {g.words.map(w => (
+                  <span class="bg-white border border-stone-200 text-stone-600 text-[11px] px-2 py-0.5 rounded-full">{w}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 03 一份工作一份简历 ═══════════════════════ -->
+    <section id="onejob" class="mb-20 scroll-mt-24">
+      <div class="section-label">03 · 核心方法</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">核心方法：一份工作，一份简历</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
+        这是整篇文章最重要的一节。听起来很费时间——但执行起来其实很高效，只要你建立正确的系统。
+      </p>
+
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">为什么一定要定制？HR是怎么看你的</h3>
+
+      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <div class="space-y-4">
+          {[
+            { n: '1', title: 'ATS系统的关键词过滤', desc: '大公司（尤其互联网大厂、外资行）普遍使用招聘管理系统，系统会自动扫描简历与JD的关键词匹配度。如果你的简历里没有出现岗位要求的核心词汇，人可能都看不到你的简历。' },
+            { n: '2', title: 'HR 30秒法则', desc: '人工初筛时，HR通常只花20–30秒扫描一份简历。他们在找的不是"这个人有多厉害"，而是"这个人和这个岗位有没有关联"。无关经历写得再好，也是噪音。' },
+            { n: '3', title: '叙事一致性', desc: '进入业务面试后，面试官会用简历问问题。如果你的简历主要是咨询经历，但在投金融岗，面试官会直接问"你为什么想来这里"——如果简历没有在这个方向上建立好叙事，很难回答清楚。' },
+          ].map(s => (
+            <div class="flex items-start gap-4">
+              <div class="shrink-0 w-7 h-7 rounded-full bg-columbia-navy flex items-center justify-center text-white text-xs font-bold">{s.n}</div>
+              <div>
+                <div class="font-medium text-stone-800 text-sm mb-1">{s.title}</div>
+                <p class="text-stone-500 text-xs leading-relaxed">{s.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">JD 分析三步法</h3>
+      <div class="grid md:grid-cols-3 gap-4 mb-8">
+        {[
+          { step: 'Step 1', title: '必要条件', color: 'bg-red-50 border-red-100 text-red-900', sub: '硬性门槛', desc: '学历要求、GPA、语言、特定证书。满足就过，不满足就不投（不要浪费时间）。' },
+          { step: 'Step 2', title: '偏好条件', color: 'bg-amber-50 border-amber-100 text-amber-900', sub: '加分项', desc: '"有XX经历优先"——这是你定制简历时重点突出的部分。你有这类经历就前置，没有就想办法用相近经历替代。' },
+          { step: 'Step 3', title: '隐性信号', color: 'bg-columbia-light border-blue-100 text-columbia-navy', sub: '公司文化与优先级', desc: 'JD里的语气和用词在暗示公司文化。强调"执行力"暗示节奏快；强调"strategic thinking"暗示需要独立判断。据此调整简历的整体tone。' },
+        ].map(c => (
+          <div class={`${c.color} border rounded-2xl p-5`}>
+            <div class="text-[10px] uppercase tracking-[0.15em] mb-1 opacity-60">{c.step}</div>
+            <div class="font-bold text-base mb-1">{c.title}</div>
+            <div class="text-[10px] uppercase tracking-wide mb-3 opacity-60">{c.sub}</div>
+            <p class="text-xs leading-relaxed opacity-80">{c.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">操作系统：简历母版 + 快速定制</h3>
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+        <div class="space-y-4">
+          {[
+            { icon: '🗂️', title: '建立简历母版', desc: '一个文件，按"能力维度"（分析能力/项目管理/研究写作/跨文化沟通……）把所有经历的多个描述版本都储备进去。每段经历写2–3个版本，分别侧重不同能力。' },
+            { icon: '⚡', title: '每次投递：20分钟内完成定制', desc: '第1步：读JD，圈出关键词。第2步：从母版里挑出与岗位最相关的经历。第3步：调整经历的排序，前置与岗位最相关的内容。第4步：把JD里的核心词汇自然嵌入描述中。' },
+            { icon: '📁', title: '文件命名要有版本管理', desc: '命名规则：姓名_公司_岗位_日期.pdf。既方便追踪投递情况，也能避免发错文件（这个低级失误比你想象中常见得多）。' },
+          ].map(tip => (
+            <div class="flex items-start gap-4">
+              <span class="text-xl shrink-0">{tip.icon}</span>
+              <div>
+                <div class="font-medium text-stone-800 text-sm mb-1">{tip.title}</div>
+                <p class="text-stone-500 text-xs leading-relaxed">{tip.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 04 写法 ══════════════════════════════════ -->
+    <section id="writing" class="mb-20 scroll-mt-24">
+      <div class="section-label">04 · 写法</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">简历的结构与写法</h2>
+
+      <!-- 中文 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">中文简历（国内秋招 / 实习投递）</h3>
+      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">推荐结构顺序</div>
+        <div class="grid md:grid-cols-2 gap-3 mb-6">
+          {[
+            { title: '基本信息', note: '姓名 · 联系方式 · 照片（建议）' },
+            { title: '教育背景', note: '逆序，最高学历在前，写GPA和相关课程' },
+            { title: '实习经历', note: '权重最高，逆时间序，1–3段最佳' },
+            { title: '项目经历', note: '无实习时的替代，或补充展示专业能力' },
+            { title: '专业技能', note: 'Excel / Python / 语言 / 行业工具' },
+            { title: '活动 & 获奖', note: '校级以上，有含金量才写' },
+          ].map(block => (
+            <div class="flex items-start gap-3 p-3 bg-stone-50 rounded-xl">
+              <span class="text-columbia-blue text-xs shrink-0 font-bold mt-0.5">▸</span>
+              <div>
+                <div class="font-medium text-stone-700 text-xs">{block.title}</div>
+                <div class="text-stone-400 text-[11px] mt-0.5">{block.note}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- STAR-C -->
+        <div class="border-t border-stone-100 pt-5">
+          <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">每条经历的写法：STAR-C框架</div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            {[
+              { l: 'S', t: 'Situation', d: '背景是什么' },
+              { l: 'T', t: 'Task', d: '你的任务是什么' },
+              { l: 'A', t: 'Action', d: '你具体做了什么' },
+              { l: 'R', t: 'Result', d: '产生了什么结果' },
+              { l: 'C', t: 'Connection', d: '与这份工作的关联' },
+            ].map(s => (
+              <div class="bg-columbia-light text-columbia-navy text-[11px] px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                <span class="font-bold">{s.l}</span>
+                <span class="text-columbia-navy/60">·</span>
+                <span>{s.t}</span>
+                <span class="text-columbia-navy/50 text-[10px]">— {s.d}</span>
+              </div>
+            ))}
+          </div>
+          <div class="bg-stone-50 rounded-xl p-4">
+            <div class="text-[10px] text-stone-400 mb-2 uppercase tracking-wide">改写示例</div>
+            <div class="space-y-2">
+              <div class="flex items-start gap-2">
+                <span class="text-red-400 text-xs shrink-0 font-medium mt-0.5">✗ 差</span>
+                <p class="text-xs text-stone-500 leading-relaxed">负责撰写行业研究报告，分析市场趋势。</p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-green-600 text-xs shrink-0 font-medium mt-0.5">✓ 好</span>
+                <p class="text-xs text-stone-600 leading-relaxed">独立撰写新能源汽车供应链深度报告（共8万字），梳理上中下游14家企业竞争格局，<strong>报告被团队用于两次LP路演</strong>，获主管评价"结构最清晰的新人报告之一"。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 量化 -->
+      <div class="border border-stone-200 rounded-2xl p-5 mb-6">
+        <h3 class="font-semibold text-stone-800 mb-3 text-sm">量化原则：没有数字怎么办？</h3>
+        <div class="grid md:grid-cols-2 gap-4 text-xs text-stone-500 leading-relaxed">
+          <div>
+            <div class="font-medium text-stone-700 mb-2">有数字就用数字</div>
+            <ul class="space-y-1.5">
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>规模：涉及N家/N人/N个市场</li>
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>增量：提升了X%、节省了X小时</li>
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>排名：部门前X名、全校X名</li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-stone-700 mb-2">没有数字的替代方案</div>
+            <ul class="space-y-1.5">
+              <li class="flex gap-2"><span class="text-stone-400 shrink-0">·</span>用"结果"替代数字：被采纳 / 落地执行 / 被引用</li>
+              <li class="flex gap-2"><span class="text-stone-400 shrink-0">·</span>用"受众"量化影响：服务X位客户 / 覆盖X个城市</li>
+              <li class="flex gap-2"><span class="text-stone-400 shrink-0">·</span>用"评价"替代数字：获主管认可 / 客户主动续约</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 北美 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">北美 Résumé（美国校招 / 海外投递）</h3>
+      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-2">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">格式要点</div>
+            <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>无照片、无生日、无婚姻状况</li>
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>每条 bullet 以动词原形开头（Led / Built / Analyzed / Designed）</li>
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>字体建议 Garamond / Palatino，10–11pt</li>
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>严格控制在1页（intern / new grad 阶段）</li>
+              <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>留白不要太挤，可读性第一</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">北美特有的加分项</div>
+            <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+              <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Leadership experience（学生会、社团负责人）权重远高于国内</li>
+              <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Extracurricular 可以独立成一节，尤其是体育、艺术等</li>
+              <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Volunteer experience 在咨询、公共政策类岗位有加分</li>
+              <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>GPA ≥3.5 要写，也可标注所在专业排名（Top 10%）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 格式红线 -->
+      <div class="bg-red-50 border border-red-100 rounded-2xl p-5 mt-4">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-red-400 mb-3 font-medium">格式红线（中英文通用）</div>
+        <div class="grid md:grid-cols-2 gap-2 text-xs text-red-700">
+          {[
+            '颜色太多、模板太花哨（视觉噪音）',
+            '字体小于9pt（不可读）',
+            '有错别字或语法错误（直接印象分减半）',
+            '用第一人称"我"开头（去主语）',
+            '每段经历超过4–5个bullet points',
+            '日期格式不统一（2023.6 vs Jun 2023）',
+            '发送 .doc 格式而非 PDF（排版可能跑版）',
+            '文件名为"简历.pdf"（显得毫无准备）',
+          ].map(r => (
+            <div class="flex gap-2 items-start">
+              <span class="shrink-0 mt-0.5">✗</span>
+              <span class="leading-relaxed">{r}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 05 面试官视角 ═══════════════════════════ -->
+    <section id="interviewer" class="mb-20 scroll-mt-24">
+      <div class="section-label">05 · 面试官视角</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">面试官视角：我在招人时看什么</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-8 text-[0.9375rem]">
+        大多数求职攻略都是候选人视角。下面这部分来自站在桌子另一侧的经验——
+        当你在写简历的时候，那个拿着你PDF的人，脑子里实际上在想什么。
+      </p>
+
+      <!-- 30秒定生死 -->
+      <div class="bg-columbia-navy rounded-2xl p-7 text-white mb-8">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">第一眼看什么（前5秒）</div>
+        <div class="grid md:grid-cols-3 gap-5">
+          {[
+            { title: '格式整洁度', desc: '先看排版。凌乱的格式会让我觉得这个人对细节不在乎——这在金融和咨询岗直接扣印象分。' },
+            { title: '学校 / 实习背景', desc: '第二眼扫教育背景和最近一段实习的公司名。背景相关度会影响接下来投入多少时间继续读。' },
+            { title: '有没有数字', desc: '没有任何数字的简历，说明候选人要么没有结果意识，要么结果不好意思写出来。两种都不加分。' },
+          ].map(c => (
+            <div>
+              <div class="font-semibold text-white/90 text-sm mb-2">{c.title}</div>
+              <p class="text-white/55 text-xs leading-relaxed">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- 被淘汰的真实原因 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">被淘汰的真实原因（不是能力不够）</h3>
+      <div class="space-y-3 mb-8">
+        {[
+          {
+            tag: '信号不清',
+            color: 'bg-red-50 border-red-100',
+            tagColor: 'bg-red-100 text-red-700',
+            desc: '经历很散，看不出这个人对这个岗位的定向。互联网、金融、公益全有，但没有一条清晰的叙事线告诉我"为什么是这个岗"。面试官的时间有限，不会帮你自己串联。'
+          },
+          {
+            tag: '执行不是结果',
+            color: 'bg-amber-50 border-amber-100',
+            tagColor: 'bg-amber-100 text-amber-700',
+            desc: '"负责了A，参与了B，协助了C"——这些全是执行描述，不是结果描述。所有人都在"负责"，我想看的是你的介入让这件事有什么不同。'
+          },
+          {
+            tag: '与岗位无关联',
+            color: 'bg-stone-50 border-stone-200',
+            tagColor: 'bg-stone-100 text-stone-600',
+            desc: '把同一份简历发给所有公司的候选人，在我翻开简历的前10秒就能感觉到。经历和岗位之间的关联太弱，会让人觉得这个人对这个机会并不认真。'
+          },
+          {
+            tag: '过度包装',
+            color: 'bg-purple-50 border-purple-100',
+            tagColor: 'bg-purple-100 text-purple-700',
+            desc: '把打了两个电话的"调研工作"写成"主导战略分析项目"，行业里的面试官大概率能分辨。夸大经历一旦在面试中被追问，后续会很难处理。'
+          },
+        ].map(item => (
+          <div class={`${item.color} border rounded-2xl p-5 flex items-start gap-4`}>
+            <span class={`${item.tagColor} text-[10px] font-semibold px-2.5 py-1 rounded-full shrink-0 whitespace-nowrap`}>{item.tag}</span>
+            <p class="text-stone-600 text-xs leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- 加分信号 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">真正的加分信号</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        {[
+          { icon: '🔗', title: '经历有逻辑链', desc: '不需要每段都和岗位直接相关，但从整体上能看出一条清晰的成长路径——候选人知道自己想去哪里。' },
+          { icon: '📊', title: '业务感 / 数字感', desc: '描述中自然出现具体数字和业务逻辑，说明候选人真正在做事，而不是在场边观察。' },
+          { icon: '🎯', title: '简历和岗位叙事自洽', desc: '看完简历，我能自然地理解"为什么这个人要来投这个岗位"——不需要在面试中再解释一遍。' },
+          { icon: '⚡', title: '有主动性的表述', desc: '"发现问题主动提出解决方案并落地执行"比"参与团队完成了X项目"含金量高出一个量级。' },
+        ].map(c => (
+          <div class="bg-white border border-stone-200 rounded-2xl p-5">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-lg">{c.icon}</span>
+              <div class="font-semibold text-stone-800 text-sm">{c.title}</div>
+            </div>
+            <p class="text-stone-500 text-xs leading-relaxed">{c.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- ═══ 06 投递策略 ══════════════════════════════ -->
+    <section id="strategy" class="mb-20 scroll-mt-24">
+      <div class="section-label">06 · 投递策略</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">投递策略：如何系统性地最大化面试转化率</h2>
+
+      <!-- 渠道优先级 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">渠道优先级</h3>
+      <div class="space-y-3 mb-8">
+        {[
+          { rank: '1st', label: '内推', color: 'bg-columbia-navy text-white', desc: '转化率是官网投递的3–5倍。内推本质上是一种信息不对称优势——你不需要认识高管，一个在该公司的学长/学姐发出的推荐邮件就足够让简历被认真对待。', note: '怎么拿到：校友群 / LinkedIn / 信息局 / 行业活动 / 主动cold email' },
+          { rank: '2nd', label: '官网直投', color: 'bg-columbia-blue text-white', desc: '大公司的ATS系统通常和官网对接，不会遗漏。中小公司官网有时比招聘平台更新更及时。', note: '注意：及时关注官网开放时间，部分岗位名额有限，早投早占优' },
+          { rank: '3rd', label: '第三方平台', color: 'bg-stone-200 text-stone-700', desc: '招聘平台（领英/智联/Boss直聘/实习僧等）竞争激烈，简历会被大量稀释。但对于中小公司或非结构化招聘，是重要补充渠道。', note: '关键：平台上的简历也要定制，不要用平台默认模板直接提交' },
+        ].map(c => (
+          <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden">
+            <div class="flex">
+              <div class={`${c.color} w-16 shrink-0 flex items-center justify-center text-xs font-bold`}>{c.rank}</div>
+              <div class="p-5 flex-1">
+                <div class="font-semibold text-stone-800 text-sm mb-1">{c.label}</div>
+                <p class="text-stone-500 text-xs leading-relaxed mb-2">{c.desc}</p>
+                <div class="text-[11px] text-columbia-blue">{c.note}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- 投递节奏 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">秋招时间窗口（国内）</h3>
+      <div class="bg-stone-50 rounded-2xl p-6 mb-8">
+        <div class="space-y-3">
+          {[
+            { period: '7月–8月', label: '提前批', color: 'text-amber-600', desc: '部分大厂和金融机构开放提前批，竞争相对小，但要求候选人准备充分。有相关实习经历务必先投提前批。' },
+            { period: '9月–10月', label: '秋招正批高峰', color: 'text-columbia-navy', desc: '最密集的投递窗口，大部分公司同时开放。需要提前做好优先级排序，防止笔试/面试时间撞车。' },
+            { period: '11月', label: '尾声补录', color: 'text-stone-500', desc: '部分岗位因候选人放弃offer而开放补录。此阶段竞争者少，但岗位也更零散，适合作为保底策略。' },
+            { period: '12月–次年3月', label: '春招 + 海外批', color: 'text-green-600', desc: '错过秋招的补救机会，岗位数量约为秋招的30–40%。美国部分公司全年滚动招聘，不存在固定窗口。' },
+          ].map(p => (
+            <div class="flex items-start gap-4">
+              <div class="shrink-0 text-right min-w-[80px]">
+                <div class={`font-bold text-sm ${p.color}`}>{p.period}</div>
+                <div class="text-[10px] text-stone-400">{p.label}</div>
+              </div>
+              <div class="border-l border-stone-200 pl-4">
+                <p class="text-stone-500 text-xs leading-relaxed">{p.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- 追踪系统 -->
+      <div class="bg-white border border-stone-200 rounded-2xl p-6">
+        <h3 class="font-semibold text-stone-800 mb-4 text-sm">失败数据管理：建一张投递追踪表</h3>
+        <p class="text-stone-500 text-xs leading-relaxed mb-4">
+          投递量上来之后，没有追踪系统会陷入混乱——不记得投过哪些、哪些到了面试、哪些被拒绝了都没反馈。
+          建议用 Notion 或 Excel 维护一张简单的追踪表：
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left">
+            <thead>
+              <tr class="border-b border-stone-100">
+                {['公司', '岗位', '投递渠道', '投递日期', '简历版本', '状态', '备注'].map(h => (
+                  <th class="pb-2 pr-4 text-stone-400 font-medium whitespace-nowrap">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody class="text-stone-500">
+              {[
+                ['高盛', 'IBD Analyst', '内推', '9/5', 'v3_金融', '✅ 面试中', '一面通过'],
+                ['麦肯锡', 'BA', '官网', '9/8', 'v2_咨询', '⏳ 等待', '—'],
+                ['字节跳动', '战略分析', '内推', '9/10', 'v4_互联网', '❌ 简历拒', '关键词不够'],
+              ].map(row => (
+                <tr class="border-b border-stone-50">
+                  {row.map(cell => (
+                    <td class="py-2 pr-4 whitespace-nowrap">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-[11px] text-stone-400">追踪"简历版本"和"状态"可以帮你分析哪类定制化简历转化率更高，及时优化策略。</p>
+      </div>
+    </section>
+
+    <!-- ═══ 07 行业差异 ══════════════════════════════ -->
+    <section id="industry" class="mb-20 scroll-mt-24">
+      <div class="section-label">07 · 行业 × 地区差异</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">横跨中美、横跨行业的经验差异</h2>
+
+      <div class="space-y-6">
+
+        <!-- 互联网 -->
+        <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden">
+          <div class="bg-stone-800 text-white px-6 py-4 flex items-center justify-between">
+            <div>
+              <div class="font-bold text-base">互联网 / 战略分析</div>
+              <div class="text-white/50 text-[11px] mt-0.5">中国大厂 · 美国科技公司</div>
+            </div>
+            <span class="text-2xl">🌐</span>
+          </div>
+          <div class="p-6 grid md:grid-cols-2 gap-6">
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3">中国市场</div>
+              <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>项目成果和数据感权重最高，要有"作品感"</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>秋招节奏快，笔试+面试可能压缩在2周内</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>有相关实习（哪怕1个月）远比没有强</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>提前批往往比正批机会更好，不要错过</li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3">美国市场</div>
+              <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Behavioral questions 权重高，需要单独准备STAR故事库</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Case + Behavioral 结合的面试结构更常见</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>LinkedIn 保持活跃，recruiter 主动接触的概率较高</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Referral 转化率极高，值得主动 reach out</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 金融 -->
+        <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden">
+          <div class="bg-columbia-navy text-white px-6 py-4 flex items-center justify-between">
+            <div>
+              <div class="font-bold text-base">金融（投行 / 基金 / 券商）</div>
+              <div class="text-white/50 text-[11px] mt-0.5">中国市场 · 美国 Wall Street</div>
+            </div>
+            <span class="text-2xl">🏦</span>
+          </div>
+          <div class="p-6 grid md:grid-cols-2 gap-6">
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3">中国市场</div>
+              <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>实习链条很重要：有没有"前序"金融实习决定了HR看你的时间</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>金融建模 / 三张报表 / Excel / Wind 是基础能力门槛</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>内资机构看重背景排名，外资机构更看重英语和国际化经历</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>研究报告经历（哪怕是学生写的）有助于券商研究岗</li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3">美国市场</div>
+              <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Networking 是核心——coffee chat 和信息访谈的重要性远超国内</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Cold email 真的有效，很多 analyst 会回复学生邮件</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Superday（集中面试日）模式：需要同时对抗十几个竞争者</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Technical + Fit 两类题型都需要系统准备</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 咨询 -->
+        <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden">
+          <div class="bg-amber-800 text-white px-6 py-4 flex items-center justify-between">
+            <div>
+              <div class="font-bold text-base">管理咨询</div>
+              <div class="text-white/50 text-[11px] mt-0.5">MBB · Big 4 · 精品所</div>
+            </div>
+            <span class="text-2xl">📊</span>
+          </div>
+          <div class="p-6 grid md:grid-cols-2 gap-6">
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3">简历重点</div>
+              <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>简历要体现"解决问题"而非"执行任务"——主语是你，动词要主动</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>框架感是核心：经历描述应有清晰的问题→分析→结论结构</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>多元化经历反而加分（体现出学习能力和适应性）</li>
+                <li class="flex gap-2"><span class="text-columbia-blue shrink-0">·</span>GPA 和学校背景在咨询校招中仍有较高权重</li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3">海外/国际投递特殊要求</div>
+              <ul class="space-y-2 text-xs text-stone-500 leading-relaxed">
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Cover letter 几乎必写，需要独立针对每家公司认真准备</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>写清楚为什么是这家公司、这个城市、这个实践（不能套模板）</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>Case面试需要大量练习，建议尽早开始找伙伴互练</li>
+                <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>SIPA 校友网络在咨询领域相当有效，值得主动联系</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 08 误区 + Checklist ══════════════════════ -->
+    <section id="checklist" class="mb-20 scroll-mt-24">
+      <div class="section-label">08 · 误区 & Checklist</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">常见误区 & 投递前 Checklist</h2>
+
+      <!-- 误区 -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">5个最常见的误区</h3>
+      <div class="space-y-3 mb-10">
+        {[
+          { n: '01', myth: '"先投着再说，不喜欢也没关系"', truth: '随便投会占用时间和精力，更重要的是——大公司的背调系统会记录你的投递记录。对某些机构来说，同一家公司被拒两次，下次门槛会更高。' },
+          { n: '02', myth: '"GPA不高所以简历要多包装一下"', truth: '包装的边界是"正确描述"，不是"夸大捏造"。GPA低可以用其他维度补（强实习、强项目、强推荐），但吹大的经历一旦被追问，后果比GPA低严重得多。' },
+          { n: '03', myth: '"实习不重要，面试时我能讲清楚自己的能力"', truth: '在初筛阶段，没有相关实习的候选人很可能在30秒内就被跳过了——根本没有机会到面试那一步。实习的核心价值是让你"有资格被考虑"。' },
+          { n: '04', myth: '"多投等于多机会"', truth: '用同一份简历广撒网=多次无效投递。投递数量应该建立在定制化基础上，而不是用量来对冲质量的不足。' },
+          { n: '05', myth: '"全职了就不需要再打磨简历了"', truth: '职业发展是持续的。社招时的简历逻辑和校招完全不同，需要提前建立"工作中积累结果"的意识，随时更新。' },
+        ].map(m => (
+          <div class="bg-white border border-stone-200 rounded-2xl p-5 flex gap-4">
+            <span class="font-display font-bold text-columbia-blue/30 text-xl shrink-0">{m.n}</span>
+            <div>
+              <div class="text-sm font-medium text-stone-700 mb-1.5 italic">"{m.myth}"</div>
+              <p class="text-xs text-stone-500 leading-relaxed">{m.truth}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Checklist -->
+      <h3 class="font-semibold text-stone-800 mb-4 text-sm">投递前 Checklist（10项）</h3>
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+        <div class="space-y-3">
+          {[
+            { done: true, item: '已仔细读完JD，圈出3–5个关键词', note: '必须' },
+            { done: true, item: '简历中出现了JD的核心关键词（自然嵌入，非堆砌）', note: '必须' },
+            { done: true, item: '最相关的经历排在最前面', note: '必须' },
+            { done: true, item: '每段经历至少有1个可量化的结果', note: '强烈建议' },
+            { done: true, item: '通篇没有错别字或语法错误', note: '必须' },
+            { done: true, item: '格式干净，字体统一，留白合理', note: '必须' },
+            { done: true, item: '文件保存为PDF格式，非.doc', note: '必须' },
+            { done: true, item: '文件命名包含公司和岗位信息', note: '建议' },
+            { done: true, item: '投递记录已更新到追踪表格', note: '建议' },
+            { done: true, item: '如有内推渠道，已优先走内推', note: '强烈建议' },
+          ].map((c, i) => (
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded border-2 border-stone-300 flex items-center justify-center shrink-0 text-stone-300 text-xs">
+                ✓
+              </div>
+              <span class="text-sm text-stone-600 flex-1">{c.item}</span>
+              <span class={`text-[10px] px-2 py-0.5 rounded-full shrink-0 ${c.note === '必须' ? 'bg-red-50 text-red-500' : 'bg-stone-100 text-stone-400'}`}>{c.note}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 09 结语 ══════════════════════════════════ -->
+    <section id="closing" class="mb-20 scroll-mt-24">
+      <div class="section-label">09 · 结语</div>
+      <h2 class="font-display font-bold text-2xl text-stone-900 mb-6 mt-2">履历是长期建设，不是临时突击</h2>
+
+      <p class="text-stone-600 leading-relaxed mb-6 text-[0.9375rem]">
+        每次秋招前三个月临时拼凑简历的感觉，很多人都有过。
+        但最后那些简历好看的候选人，往往不是因为秋招前突击了多久——而是在过去一两年里，
+        做每件事的时候心里始终有一根弦：<strong class="text-stone-800">这件事能不能给我的履历加一行有价值的内容？</strong>
+      </p>
+
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 mb-8">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">三条可以现在就开始的行动</div>
+        <div class="space-y-4">
+          {[
+            { icon: '📝', action: '建立你的简历母版', desc: '把过去所有经历整理进去，每段经历写2–3个方向的描述版本。这是一劳永逸的基础设施。' },
+            { icon: '🗓️', action: '在校期间规划实习路径', desc: '想进金融：尽量在大一/大二就开始做第一段相关实习，哪怕是小机构。实习链条的起点越早，选择越多。' },
+            { icon: '🤝', action: '主动积累人脉（不只是为了内推）', desc: '咖啡聊天、校友联系、行业活动——这些对你职业判断的帮助，远不只是一封内推邮件的价值。' },
+          ].map(a => (
+            <div class="flex gap-4 items-start">
+              <span class="text-xl shrink-0">{a.icon}</span>
+              <div>
+                <div class="font-semibold text-stone-800 text-sm mb-1">{a.action}</div>
+                <p class="text-stone-500 text-xs leading-relaxed">{a.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="bg-columbia-navy rounded-2xl p-7 text-white">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">最后一句话</div>
+        <p class="text-white/85 text-base leading-relaxed font-display">
+          简历是你过去经历的投影，面试是你当下状态的表达，offer是两者叠加之后的概率结果。
+          你能控制的只有前两项——把它们做到你能力范围内的最好，剩下的交给数量和运气。
+        </p>
+        <p class="text-white/45 text-xs mt-4">
+          250 份简历之后学到的最重要的事，大概就是这个。
+        </p>
+      </div>
+    </section>
+
+  </article>
+</Base>
+
+<style>
+  .section-label {
+    @apply text-[10px] uppercase tracking-[0.25em] text-columbia-blue font-semibold mb-2;
+  }
+</style>
