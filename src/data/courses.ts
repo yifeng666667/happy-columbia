@@ -97,6 +97,15 @@ export const courses: CourseMeta[] = [
       'GDP、通胀、利率、汇率——搞懂这些大词，你就能读懂新闻里 90% 的经济分析。',
     heroImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2560&q=95',
   },
+  {
+    slug: 'corporate-finance',
+    category: 'finance',
+    title: '公司金融',
+    titleEn: 'Corporate Finance',
+    description:
+      '从财务报表分析到 DCF 估值，系统掌握公司金融的五大核心模块：历史绩效分析、现金流预测、最优资本结构、WACC 与 DCF 估值——写给零基础同学的完整笔记。',
+    heroImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2560&q=95',
+  },
 ];
 
 export const getCourse = (slug: string): CourseMeta | undefined =>
