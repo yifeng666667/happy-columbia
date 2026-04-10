@@ -101,7 +101,7 @@ export const courses: CourseMeta[] = [
     titleEn: 'Macroeconomics',
     description:
       'GDP、通胀、利率、汇率——搞懂这些大词，你就能读懂新闻里 90% 的经济分析。',
-    heroImage: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1400&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1400&q=85',
     city: 'Tokyo',
   },
   {
