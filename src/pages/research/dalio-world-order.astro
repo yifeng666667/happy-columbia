@@ -1,0 +1,578 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="达利欧：世界秩序真的要崩了——大周期、混沌时代与SIPA毕业生的人生抉择">
+
+<style>
+  .report-body { max-width: 780px; margin: 0 auto; }
+
+  .report-h1 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.1rem; line-height: 1.25; color: #111; }
+  .report-h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.45rem; color: #0B2C56; margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e5e0d8; }
+  .report-h3 { font-weight: 700; font-size: 1.05rem; color: #1a1a1a; margin: 2rem 0 0.6rem; }
+  .report-p  { color: #3a3630; line-height: 1.9; margin: 0.9rem 0; font-size: 0.9375rem; }
+  .report-lead { font-size: 1.0625rem; color: #555; line-height: 1.85; }
+  .report-body strong { color: #111; }
+
+  /* ── hero ── */
+  .dalio-hero {
+    position: relative;
+    min-height: 72vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    background-image:
+      linear-gradient(170deg, rgba(4,14,35,0.92) 0%, rgba(8,26,60,0.84) 50%, rgba(4,14,35,0.90) 100%),
+      url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=2560&q=95');
+    background-size: cover;
+    background-position: center 40%;
+    overflow: hidden;
+  }
+  .dalio-hero::after {
+    content:'';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba(91,155,213,0.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  /* ── quote block ── */
+  .quote-block {
+    border-left: 4px solid #B8860B;
+    background: #fdf9ee;
+    border-radius: 0 12px 12px 0;
+    padding: 1.4rem 1.8rem;
+    margin: 2rem 0;
+  }
+  .quote-block blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.08rem;
+    color: #2a2418;
+    line-height: 1.8;
+    margin: 0 0 0.8rem;
+  }
+  .quote-src {
+    font-size: 0.78rem;
+    color: #888;
+    font-style: normal;
+  }
+  .quote-src a { color: #B8860B; text-decoration: none; }
+  .quote-src a:hover { text-decoration: underline; }
+
+  /* ── callout boxes ── */
+  .callout       { border-left: 4px solid #5B9BD5; background: #f0f6ff; border-radius: 0 10px 10px 0; padding: 1rem 1.3rem; margin: 1.5rem 0; }
+  .callout-gold  { border-left-color: #B8860B; background: #fdf9ee; }
+  .callout-red   { border-left-color: #c0392b; background: #fff2f0; }
+  .callout-dark  { border-left-color: #0B2C56; background: #f0f4fa; }
+  .callout p     { margin: 0; font-size: 0.9rem; color: #333; line-height: 1.7; }
+  .callout strong{ color: #0B2C56; }
+  .callout-gold strong { color: #8B6914; }
+  .callout-red strong  { color: #922B21; }
+  .callout-dark strong { color: #0B2C56; }
+
+  /* ── data tables ── */
+  .report-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin: 1.2rem 0; }
+  .report-table th { background: #0B2C56; color: #fff; padding: 0.6rem 0.8rem; text-align: left; font-weight: 600; }
+  .report-table td { padding: 0.55rem 0.8rem; border-bottom: 1px solid #eee; color: #333; vertical-align: top; line-height: 1.55; }
+  .report-table tr:last-child td { border-bottom: none; }
+  .report-table tr:nth-child(even) td { background: #fafaf8; }
+  .report-table .hi   { color: #c0392b; font-weight: 600; }
+
+  /* ── cycle diagram ── */
+  .cycle-steps { display: grid; gap: 1px; background: #e5e0d8; border-radius: 12px; overflow: hidden; margin: 1.5rem 0; }
+  .cycle-step { background: #fff; padding: 1rem 1.4rem; display: flex; gap: 1.2rem; align-items: flex-start; }
+  .step-num { flex-shrink: 0; width: 2rem; height: 2rem; background: #0B2C56; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; margin-top: 0.1rem; }
+  .step-num.active { background: #c0392b; }
+  .step-content h4 { font-size: 0.9rem; font-weight: 700; color: #111; margin: 0 0 0.25rem; }
+  .step-content p { font-size: 0.82rem; color: #555; margin: 0; line-height: 1.6; }
+
+  /* ── war types ── */
+  .war-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin: 1.5rem 0; }
+  .war-card { background: #fff; border: 1px solid #e5e0d8; border-radius: 10px; padding: 1rem 1.2rem; }
+  .war-num { font-size: 0.68rem; font-weight: 700; color: #B8860B; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+  .war-title { font-size: 0.92rem; font-weight: 700; color: #0B2C56; margin-bottom: 0.35rem; }
+  .war-desc { font-size: 0.8rem; color: #666; line-height: 1.55; }
+
+  /* ── toc ── */
+  .toc { background: #f5f3ef; border: 1px solid #e5e0d8; border-radius: 14px; padding: 1.5rem 1.8rem; }
+  .toc-title { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #aaa; margin-bottom: 1rem; }
+  .toc a { display: block; font-size: 0.85rem; color: #555; text-decoration: none; padding: 0.28rem 0; border-bottom: 1px solid transparent; transition: color .2s; }
+  .toc a:hover { color: #0B2C56; }
+  .toc-num { color: #B8860B; font-weight: 600; min-width: 1.8rem; display: inline-block; }
+
+  /* ── section badge ── */
+  .section-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: #0B2C56; color: #fff;
+    padding: 0.25rem 0.85rem; border-radius: 999px;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+
+  /* ── chart visual ── */
+  .chart-wrapper { background: #fff; border: 1px solid #e5e0d8; border-radius: 12px; overflow: hidden; margin: 1.5rem 0; }
+  .chart-header { background: #0B2C56; color: #fff; padding: 0.9rem 1.4rem; }
+  .chart-header h4 { font-size: 0.88rem; font-weight: 700; margin: 0 0 0.2rem; }
+  .chart-header p { font-size: 0.75rem; color: rgba(255,255,255,0.7); margin: 0; }
+  .chart-body { padding: 1.4rem; }
+  .chart-bar-row { display: flex; align-items: center; gap: 0.8rem; margin: 0.7rem 0; font-size: 0.83rem; }
+  .chart-label { flex-shrink: 0; width: 8rem; color: #555; font-size: 0.78rem; }
+  .chart-bar { height: 1.4rem; border-radius: 3px; display: flex; align-items: center; padding-left: 0.5rem; font-size: 0.72rem; font-weight: 700; color: #fff; }
+  .bar-war { background: #c0392b; }
+  .bar-peace { background: #27ae60; }
+  .bar-current { background: #B8860B; }
+  .chart-note { font-size: 0.75rem; color: #888; margin-top: 1rem; border-top: 1px solid #f0ece5; padding-top: 0.8rem; }
+
+  /* ── SIPA section ── */
+  .sipa-hero {
+    background: linear-gradient(135deg, #0B2C56 0%, #1a4e8a 60%, #0B2C56 100%);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    color: #fff;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .sipa-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -20%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(91,155,213,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .sipa-hero h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff; border: none; padding: 0; }
+  .sipa-hero .sub { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin: 0 0 1.8rem; }
+  .sipa-insight { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; padding: 1.2rem 1.5rem; margin: 1rem 0; }
+  .sipa-insight h4 { font-size: 0.88rem; font-weight: 700; color: #E8F3FC; margin: 0 0 0.4rem; }
+  .sipa-insight p { font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.65; margin: 0; }
+
+  /* ── path timeline ── */
+  .path-row { display: flex; gap: 0.8rem; padding: 0.7rem 0; border-bottom: 1px solid #f0ece5; align-items: flex-start; }
+  .path-year { flex-shrink: 0; width: 5.5rem; font-size: 0.72rem; font-weight: 700; color: #B8860B; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 0.1rem; }
+  .path-text { font-size: 0.83rem; color: #444; line-height: 1.6; }
+
+  /* ── wave transition ── */
+  .wave-top { display: block; width: 100%; }
+  .wave-bot { display: block; width: 100%; margin-top: -2px; }
+
+  /* ── source list ── */
+  .source-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .source-tag  { background: #f5f3ef; border: 1px solid #e5e0d8; border-radius: 6px; padding: 0.25rem 0.7rem; font-size: 0.72rem; color: #666; }
+
+  /* ── related articles ── */
+  .related-card { display: flex; gap: 1rem; background: #fff; border: 1px solid #e5e0d8; border-radius: 12px; padding: 1.2rem 1.5rem; text-decoration: none; color: inherit; transition: border-color .2s, box-shadow .2s; }
+  .related-card:hover { border-color: #5B9BD5; box-shadow: 0 4px 16px rgba(11,44,86,0.08); }
+  .related-tag { flex-shrink: 0; font-size: 0.7rem; font-weight: 700; color: #B8860B; text-transform: uppercase; letter-spacing: 0.1em; padding-top: 0.1rem; width: 4.5rem; }
+  .related-title { font-size: 0.9rem; font-weight: 700; color: #0B2C56; margin: 0 0 0.3rem; }
+  .related-desc { font-size: 0.8rem; color: #777; line-height: 1.55; margin: 0; }
+
+  /* table scroll */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.2rem 0; border-radius: 8px; }
+</style>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HERO                                                    -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="dalio-hero">
+  <div class="absolute bottom-[-2px] left-0 right-0" style="z-index:3;">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+      <path d="M0 60L1440 60L1440 24C1200 54 960 2 720 24C480 46 240 6 0 24L0 60Z" fill="#f8f7f4"/>
+    </svg>
+  </div>
+  <div class="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-32">
+    <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 mb-3">Research · My Thinking · 2026</p>
+    <h1 class="font-display font-bold text-white leading-tight mb-4" style="font-size: clamp(1.8rem, 4.5vw, 3rem);">
+      世界秩序真的要崩了
+    </h1>
+    <p class="text-white/70 text-base leading-relaxed mb-4 max-w-2xl">
+      达利欧《原则》第六章精读：大周期、混沌时代与历史的镜子——<br/>
+      以及，这一切对正要踏入职场的SIPA毕业生意味着什么。
+    </p>
+    <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/45 mb-6">
+      <span>原文：Ray Dalio</span>
+      <span class="text-white/20">·</span>
+      <span>译文：万事如译（Zed）</span>
+      <span class="text-white/20">·</span>
+      <span>解读：峰哥 · 2026-04-10</span>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {['大周期', '国际秩序', '中美博弈', '地缘政治', '职业规划'].map((tag) => (
+        <span class="text-[10px] bg-white/10 text-white/70 border border-white/15 font-medium px-2.5 py-0.5 rounded-full">{tag}</span>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- CONTENT                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="bg-[#f8f7f4] w-full">
+<div class="max-w-5xl mx-auto px-6 pt-14 pb-20">
+<div class="report-body">
+
+  <!-- TOC -->
+  <div class="toc mb-12">
+    <p class="toc-title">目录</p>
+    <a href="#dalio-quote"><span class="toc-num">01</span>达利欧的判断：我们正处于第六阶段</a>
+    <a href="#big-cycle"><span class="toc-num">02</span>外部大周期：从和平到战争的逻辑</a>
+    <a href="#five-wars"><span class="toc-num">03</span>国与国之间的五种博弈方式</a>
+    <a href="#history-chart"><span class="toc-num">04</span>500年的数据：冲突的周期性规律</a>
+    <a href="#eternal-forces"><span class="toc-num">05</span>塑造秩序的永恒力量：财富、实力与博弈</a>
+    <a href="#wwii-mirror"><span class="toc-num">06</span>历史的镜子：1930年代与今天</a>
+    <a href="#sipa-meaning"><span class="toc-num">07</span>人生注定是周期的产物——对我们意味着什么</a>
+  </div>
+
+  <!-- ── SECTION 01 ─────────────────────────────────── -->
+  <div id="dalio-quote">
+    <span class="section-badge">01 · Ray Dalio's Diagnosis</span>
+    <h2 class="report-h2" style="border:none; padding:0; margin-top:0.5rem;">我们正处于第六阶段</h2>
+  </div>
+
+  <p class="report-p report-lead">
+    2026年2月，慕尼黑安全会议。会场上，德国总理默茨说，「过去几十年的世界秩序已不复存在」；法国总统马克龙说，「欧洲旧的安全结构的基础就是旧的世界秩序，现在已不复存在，欧洲必须为战争做好准备」；美国国务卿鲁比奥说，「我们正处于新地缘政治时代，因为旧世界秩序已经结束了」。
+  </p>
+
+  <p class="report-p">
+    就在这之后，Ray Dalio在LinkedIn发表了这篇文章——<strong>《It's Official: The World Order Has Broken Down》</strong>（世界秩序真的要崩了）。他的判断直接且不留余地：
+  </p>
+
+  <div class="quote-block">
+    <blockquote>
+      「用我的话说，我们所处的时代，是世界大周期的第六阶段，这个阶段的特点是极度混乱，没有规则，强权即真理；这是大国冲突的时代。」
+    </blockquote>
+    <p class="quote-src">
+      — Ray Dalio，《原则：应对变化中的世界秩序》第六章 ·
+      <a href="https://www.linkedin.com/pulse/its-official-world-order-has-broken-down-ray-dalio-cuofe/" target="_blank" rel="noopener">英文原文（LinkedIn）</a> ·
+      中文翻译：<span style="color:#666;">Zed，万事如译</span>
+    </p>
+  </div>
+
+  <p class="report-p">
+    达利欧的「大周期」框架将每个帝国/国家的兴衰分为六个阶段。第一至三阶段是崛起期（建设制度、积累财富、稳固秩序），第四至六阶段是衰退期（财政失衡、内部分裂、秩序崩解）。每个周期大约持续150年，而我们正在经历的，是1945年战后秩序的终结。
+  </p>
+
+  <div class="callout callout-red">
+    <p><strong>关键信号：</strong>当既有霸权（美国）开始相对衰落，新兴大国（中国）的实力不断追近，而双方又存在不可调和的核心矛盾（台湾）时，达利欧认为军事冲突的风险就会急剧上升。截至本文发表时（2026年2月14日），他判断<strong>最有可能一触即发的军事冲突，就是中美围绕台湾问题的对抗</strong>。</p>
+  </div>
+
+  <!-- ── SECTION 02 ─────────────────────────────────── -->
+  <div id="big-cycle" style="margin-top: 3rem;">
+    <span class="section-badge">02 · The External Big Cycle</span>
+    <h2 class="report-h2" style="border:none; padding:0; margin-top:0.5rem;">外部大周期：从和平到战争的逻辑</h2>
+  </div>
+
+  <p class="report-p">
+    在第六章的开篇，达利欧指出一个根本性的现实：<strong>国家之间并不存在真正意义上的法律秩序。</strong>在一国之内，有1）法律法规，2）执法能力，3）司法能力，4）违法必究的后果——这四者共同维系内部秩序。但在国与国之间，这些机制要么缺失，要么无法有效执行。
+  </p>
+
+  <p class="report-p">
+    他直白地写道：「国际秩序更遵循丛林法则，而非国际法。」强国之间有分歧时，不会请律师找法官打官司，而是相互威胁，要么达成协议，要么兵戎相见。
+  </p>
+
+  <div class="quote-block" style="margin: 1.5rem 0;">
+    <blockquote>
+      「国际关系中其实没有什么规则可言，只不过是实力最强的国家给自己定的规则而已。」
+    </blockquote>
+    <p class="quote-src">— Ray Dalio</p>
+  </div>
+
+  <p class="report-p">
+    这一判断背后有深刻的历史依据。历史上，人类曾尝试建立联合国这样的国际组织，但在大国面前，这些机构的财富和实力都相形见绌。只要有哪个国家的实力超过国际组织内其他所有成员，话语权必然归属那个国家。
+  </p>
+
+  <p class="report-p">
+    大周期的外部秩序遵循一个规律性结构：
+  </p>
+
+  <div class="cycle-steps">
+    <div class="cycle-step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>和平繁荣期（较长）</h4>
+        <p>战争刚结束，秩序重建，各国专注发展。贸易增长，技术进步，生产力提升。</p>
+      </div>
+    </div>
+    <div class="cycle-step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>积累矛盾期</h4>
+        <p>随着财富和权力分配失衡，国内贫富差距拉大，债务累积，新兴强权崛起。矛盾开始积累，但尚未爆发。</p>
+      </div>
+    </div>
+    <div class="cycle-step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>冲突激化期</h4>
+        <p>既有霸权走向衰落，新兴大国追近，双方在贸易、技术、资本、地缘政治各层面展开博弈。</p>
+      </div>
+    </div>
+    <div class="cycle-step" style="background: #fff8f0;">
+      <div class="step-num active">4</div>
+      <div class="step-content">
+        <h4>混沌/热战期（短暂但极其惨烈）</h4>
+        <p>博弈失控，热战爆发。战争结束后，胜者奠定新秩序——下一个大周期就此开始。<em style="color:#c0392b;">（达利欧认为我们正在向这一阶段靠近）</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECTION 03 ─────────────────────────────────── -->
+  <div id="five-wars" style="margin-top: 3rem;">
+    <span class="section-badge">03 · Five Types of Warfare</span>
+    <h2 class="report-h2" style="border:none; padding:0; margin-top:0.5rem;">国与国之间的五种博弈方式</h2>
+  </div>
+
+  <p class="report-p">
+    达利欧将国家间的较量归纳为五种形式，它们往往同时发生，并随时间推移相互升级。
+  </p>
+
+  <div class="war-grid">
+    <div class="war-card">
+      <div class="war-num">01 · Trade War</div>
+      <div class="war-title">贸易 / 经济战</div>
+      <div class="war-desc">关税战、进出口限制、用经济手段打击对手。目前中美之间最显著的博弈层面。</div>
+    </div>
+    <div class="war-card">
+      <div class="war-num">02 · Tech War</div>
+      <div class="war-title">科技战</div>
+      <div class="war-desc">以国家安全为由，限制技术出口和共享。芯片战争是当前最典型的例证。</div>
+    </div>
+    <div class="war-card">
+      <div class="war-num">03 · Geopolitical</div>
+      <div class="war-title">地缘政治战</div>
+      <div class="war-desc">围绕领土和联盟展开的冲突，通过谈判或公开/秘密承诺来解决，一般不诉诸武力——但不总是如此。</div>
+    </div>
+    <div class="war-card">
+      <div class="war-num">04 · Capital War</div>
+      <div class="war-title">资本战</div>
+      <div class="war-desc">通过金融工具施压，包括制裁、切断资金和信贷，以及限制外资进入金融市场。</div>
+    </div>
+    <div class="war-card" style="border-color: #f5c6c0; background: #fff8f7;">
+      <div class="war-num" style="color:#c0392b;">05 · Hot War</div>
+      <div class="war-title" style="color:#c0392b;">军事热战</div>
+      <div class="war-desc">正式交火，通过军事力量开展的冲突。一旦开打，其他四种战争手段会被极致武器化，杀伤力倍增。</div>
+    </div>
+  </div>
+
+  <div class="callout callout-dark">
+    <p><strong>达利欧的判断：</strong>大多数国与国之间的较量，都可以归入上述五种类型，而且「几乎所有战争都会伴随网络战」。这些较量的核心，是争夺财富和权力，也是意识形态的斗争。前四种战争会随时间推移相互升级，直至军事热战爆发。</p>
+  </div>
+
+  <!-- ── SECTION 04 ─────────────────────────────────── -->
+  <div id="history-chart" style="margin-top: 3rem;">
+    <span class="section-badge">04 · 500 Years of Data</span>
+    <h2 class="report-h2" style="border:none; padding:0; margin-top:0.5rem;">500年的数据：冲突的周期性规律</h2>
+  </div>
+
+  <p class="report-p">
+    达利欧在文中引用了一张重要图表：<strong>1400年至2000年间欧洲因冲突导致的死亡率</strong>（占总人口比例，以15年移动平均平滑）。这张图揭示了历史上最重要的规律之一：
+  </p>
+
+  <div class="chart-wrapper">
+    <div class="chart-header">
+      <h4>欧洲冲突死亡率：1400–2000年的三个大周期</h4>
+      <p>数据来源：Ray Dalio《原则：应对变化中的世界秩序》，% of Population, 15yr Moving Average</p>
+    </div>
+    <div class="chart-body">
+      <div style="font-size: 0.82rem; color: #555; margin-bottom: 1.2rem; line-height: 1.7;">
+        图表呈现出典型的<strong style="color:#111;">「长时间低位 + 少数时期剧烈爆发」</strong>结构：绝大多数年份死亡率接近零，但在若干关键历史节点会出现陡峭高峰：
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">文艺复兴 ~1450</div>
+        <div class="chart-bar bar-peace" style="width: 30%;">相对和平</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">宗教战争/三十年战争 ~1600</div>
+        <div class="chart-bar bar-war" style="width: 62%;">第一次大冲突峰值</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">启蒙/工业革命 ~1700</div>
+        <div class="chart-bar bar-peace" style="width: 20%;">繁荣低谷</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">拿破仑战争 ~1800</div>
+        <div class="chart-bar bar-war" style="width: 48%;">第二次大冲突峰值</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">英国霸权/第二次工业革命</div>
+        <div class="chart-bar bar-peace" style="width: 15%;">繁荣低谷</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">两次世界大战 ~1915–1945</div>
+        <div class="chart-bar bar-war" style="width: 90%;">第三次（最强烈）峰值 0.4%</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-label">欧洲一体化至今 ~2000</div>
+        <div class="chart-bar bar-current" style="width: 10%;">战后最低位</div>
+      </div>
+      <p class="chart-note">蓝色=内部冲突（内战），红色=外部冲突（国家间战争），灰色线=合计总值。500年三个周期，平均约150年一次大冲突。</p>
+    </div>
+  </div>
+
+  <p class="report-p">
+    达利欧指出，<strong>和平与发展往往持续较久，但矛盾可能在长期累积后以短促而猛烈的方式集中释放。</strong>每个大周期都经历相对漫长的和平繁荣期（文艺复兴、启蒙运动、工业革命），而这些繁荣期往往又为后来血腥恐怖的对外战争埋下了种子。
+  </p>
+
+  <p class="report-p">
+    这一视角对理解「百年屈辱」有重要意义：中国从1840年到1949年的衰落，<strong>正是西方列强和日本处于周期上升段时，对中国进行的零和掠夺。</strong>在强国繁荣期，「我之所得，往往是彼之所失」——这是大周期逻辑中最残酷的一面。
+  </p>
+
+  <!-- ── SECTION 05 ─────────────────────────────────── -->
+  <div id="eternal-forces" style="margin-top: 3rem;">
+    <span class="section-badge">05 · Eternal Forces</span>
+    <h2 class="report-h2" style="border:none; padding:0; margin-top:0.5rem;">塑造秩序的永恒力量</h2>
+  </div>
+
+  <p class="report-p">
+    在分析大周期的驱动力时，达利欧提出了一个核心观点：<strong>财富等于权力</strong>。有钱可以建设军事力量、控制贸易、影响他国。国内执政实力与军事实力是相辅相成的。这也解释了为什么每个帝国的兴衰，都伴随着其财政能力的起伏。
+  </p>
+
+  <div class="quote-block">
+    <blockquote>
+      「财富雄厚，能在开支上压倒对手，是一个国家最重要的优势之一。美国就是这样在冷战中击败苏联的——只要能在对的地方花足够多的钱，就不必打热战。」
+    </blockquote>
+    <p class="quote-src">— Ray Dalio</p>
+  </div>
+
+  <p class="report-p">
+    他同时给出了关于实力运用的原则：
+  </p>
+
+  <div class="callout callout-gold">
+    <p><strong>最后一条原则——要有实力，尊重实力，明智地运用实力：</strong>有实力是好事，因为实力永远比协议、规则和法律更可靠。但明智地运用实力，不是逼别人就范，更不是恃强凌弱。<strong>慷慨大度和真诚相待，是实现双赢关系的强大力量。</strong>动用「硬实力」通常并非上策，运用「软实力」才更可取。</p>
+  </div>
+
+  <p class="report-p">
+    他还提出了一个关于时机的判断框架：<strong>如果自己的相对实力在走下坡路，那就趁早谈判或开战；如果相对实力还在爬坡，那就推迟决战，争取以最强姿态出牌。</strong>这一逻辑既是对历史的总结，也是对当下中美博弈节奏的隐喻。
+  </p>
+
+  <!-- ── SECTION 06 ─────────────────────────────────── -->
+  <div id="wwii-mirror" style="margin-top: 3rem;">
+    <span class="section-badge">06 · WWII as Mirror</span>
+    <h2 class="report-h2" style="border:none; padding:0; margin-top:0.5rem;">历史的镜子：1930年代与今天</h2>
+  </div>
+
+  <p class="report-p">
+    达利欧专门以第二次世界大战作为案例，分析三大周期共振叠加如何酿成灾难性战争：
+  </p>
+
+  <div class="table-scroll">
+    <table class="report-table">
+      <thead>
+        <tr>
+          <th>大周期</th>
+          <th>1929–1939年</th>
+          <th>2020年代（当下）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>货币与信贷周期</strong></td>
+          <td>1929年股市大崩盘，全球大萧条，资产贬值蒸发</td>
+          <td class="hi">2020年后天量货币宽松，通胀、债务激增，资产定价失真</td>
+        </tr>
+        <tr>
+          <td><strong>内部兴衰治乱周期</strong></td>
+          <td>各国贫富差距扩大，推举民粹主义/民族主义/军国主义领导人</td>
+          <td class="hi">西方民粹主义上升，美国内部极化加剧，「强人政治」回潮</td>
+        </tr>
+        <tr>
+          <td><strong>外部兴衰治乱周期</strong></td>
+          <td>老牌霸权（英、法）走向衰落，挑战者（德、日）崛起，新旧秩序冲突</td>
+          <td class="hi">美国霸权相对式微，中国崛起，中美在贸易/技术/台湾全面博弈</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="report-p">
+    达利欧警告，三大周期同时处于下行段时，灾难性冲突的概率会急剧上升。他明确写道：「<strong>借古鉴今，通过研究1930年代的往事，可以为我们当下提供宝贵的思路，帮助我们理解接下来可能发生什么，以及如何避免中美兵戎相见。</strong>」
+  </p>
+
+  <div class="callout callout-red">
+    <p><strong>两条铁律：</strong>达利欧说，只要发生战争，就有两件事板上钉钉——<strong>第一，战争绝不会按计划发展；第二，战争的残酷程度一定会始料未及。</strong>这是五百年历史给出的答案，也是他认为必须竭力避免热战的根本原因。</p>
+  </div>
+
+  <p class="report-p">
+    然而，在这片悲观之中，达利欧留下了一扇窗。他在结论中写道：
+  </p>
+
+  <div class="quote-block">
+    <blockquote>
+      「如果各国在富强阶段能够保持生产力，量入为出，让体制为大多数国民服务，并与主要竞争对手建立和维持互利共赢的关系，历史大周期未必要以这种方式演进。历史上有许多帝国和王朝延续了数百年之久，而美国建国245年，也证明了自己是最持久的国家之一。」
+    </blockquote>
+    <p class="quote-src">— Ray Dalio，结论</p>
+  </div>
+
+  <!-- ── SECTION 07 ─────────────────────────────────── -->
+  <div id="sipa-meaning" style="margin-top: 3rem;">
+    <div class="sipa-hero">
+      <h2>人生注定是周期的产物</h2>
+      <p class="sub">对SIPA毕业生意味着什么——关于时代、职业与人生的一点思考</p>
+
+      <p style="color: rgba(255,255,255,0.85); font-size: 0.9375rem; line-height: 1.85; margin: 0 0 1.5rem;">
+        读完达利欧这篇文章，我最强烈的感受不是恐慌，而是一种清醒。我们这一代人——读国际政治、学公共政策、研究金融市场的年轻人——很可能正在亲历一个历史的转折点。不是课本上描述的那种「转折点」，而是真实发生在我们求职、就业、做人生第一批重要决策的窗口期。
+      </p>
+
+      <div class="sipa-insight">
+        <h4>时代背景已经改变</h4>
+        <p>我们的父母那一代在「秩序红利期」入场——1978年之后的中国，1990年冷战结束之后的世界，全球化的顺风吹了三十年。我们入场的时候，这阵风变了方向。这不是抱怨，是事实。认清这一点，是做好一切决策的前提。</p>
+      </div>
+
+      <div class="sipa-insight">
+        <h4>职业选择要考虑「周期位置」</h4>
+        <p>达利欧说，在国家层面，要判断相对实力是在爬坡还是走下坡，来决定谈判还是开战的时机。在个人层面，选择在哪个行业、哪个地区、哪种体制下工作，也有类似的「周期判断」逻辑。有些行业在混沌期是护城河（能源、国防、本土服务），有些行业在混沌期高度脆弱（深度依赖全球化的供应链、外向型出口）。</p>
+      </div>
+
+      <div class="sipa-insight">
+        <h4>「回国 vs 留美」的框架需要升级</h4>
+        <p>如果我们用「哪里工资高、哪里机会多」来做这个决定，可能会错。更底层的问题是：在未来十年的大周期里，你想成为哪一边的「建设者」？中国正在经历痛苦的结构转型，但也有巨大的政策空间和内需潜力；美国在重塑制造业和战略产业，但内部极化严重。两边都有机会，关键是你对哪一边有更深的判断力和归属感。</p>
+      </div>
+
+      <div class="sipa-insight">
+        <h4>SIPA给的，是在混沌中思考的能力</h4>
+        <p>坦率说，SIPA的核心竞争力不是一张简历上的校名，而是它训练你用系统性视角看复杂问题的方式——这恰恰是混沌时代最稀缺的东西。达利欧写这篇文章，用的也是这套思维：不预测具体事件，而是理解驱动力、识别模式、做好不同情景下的准备。</p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.8; margin: 1.5rem 0 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.2rem;">
+        最后，达利欧没有给出「该怎么做」的具体答案——他给出的是理解框架。我也不知道正确答案，只是觉得，能够清醒地认识到自己站在哪个历史时刻，本身就是一种难得的优势。<br/><br/>
+        <strong style="color: rgba(255,255,255,0.9);">人生注定是周期的产物。但周期之内，仍然有选择。</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Sources ──────────────────────────────────── -->
+  <h2 class="report-h2">参考来源</h2>
+  <div class="source-list">
+    <span class="source-tag">Ray Dalio — LinkedIn原文（2026年2月）</span>
+    <span class="source-tag">万事如译 — 《世界秩序真的要崩了》中文译文（Zed，2026年3月）</span>
+    <span class="source-tag">Ray Dalio — 《原则：应对变化中的世界秩序》第六章</span>
+    <span class="source-tag">2026 Munich Security Report — Under Destruction</span>
+  </div>
+
+  <div class="callout" style="margin-top: 1.5rem;">
+    <p><strong>版权说明：</strong>本文引用内容均来自 Ray Dalio 原著及万事如译的授权中文译文。文中分析与观点为个人解读，不构成投资建议，亦不代表任何机构立场。</p>
+  </div>
+
+  <!-- ── Related ────────────────────────────────── -->
+  <h2 class="report-h2">相关阅读</h2>
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <a href="/research/china-2026/" class="related-card">
+      <div class="related-tag">My Thinking</div>
+      <div>
+        <p class="related-title">我的思考：2026年中国投资思路——百年变局与大周期转换</p>
+        <p class="related-desc">基于达利欧框架的中国市场分析：A股、政策周期与未来方向。</p>
+      </div>
+    </a>
+    <a href="/career/" class="related-card">
+      <div class="related-tag">Career</div>
+      <div>
+        <p class="related-title">求职经验分享 · Career Series</p>
+        <p class="related-desc">从SIPA到职场的真实路径——时间线、简历策略、行业选择与面试经验。</p>
+      </div>
+    </a>
+  </div>
+
+</div><!-- report-body -->
+</div><!-- inner -->
+</div><!-- bg -->
+
+</Base>
