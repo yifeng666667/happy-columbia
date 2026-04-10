@@ -1,0 +1,203 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="SIPA校友圈——建设中">
+
+<style>
+  .alumni-hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(91,155,213,0.12) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 20%, rgba(11,44,86,0.15) 0%, transparent 50%),
+      #f8f7f4;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* subtle grid texture */
+  .alumni-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(11,44,86,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(11,44,86,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    border: 1px solid #e5e0d8;
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #0B2C56;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(11,44,86,0.07);
+    margin-bottom: 2rem;
+  }
+  .badge .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B8860B;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+
+  .main-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    color: #0B2C56;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    position: relative;
+  }
+
+  .sub {
+    font-size: 1.0625rem;
+    color: #666;
+    line-height: 1.75;
+    max-width: 520px;
+    margin: 0 auto 3rem;
+  }
+
+  /* feature list */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: #e5e0d8;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto 3rem;
+    box-shadow: 0 4px 24px rgba(11,44,86,0.07);
+    position: relative;
+  }
+  .feature {
+    background: #fff;
+    padding: 1.6rem 1.5rem;
+    text-align: left;
+  }
+  .feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+  }
+  .feature-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #0B2C56;
+    margin-bottom: 0.35rem;
+  }
+  .feature-desc {
+    font-size: 0.8rem;
+    color: #888;
+    line-height: 1.6;
+  }
+
+  /* timeline hint */
+  .timeline-hint {
+    font-size: 0.82rem;
+    color: #aaa;
+    max-width: 400px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.65;
+  }
+  .timeline-hint strong {
+    color: #555;
+  }
+
+  /* back link */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: #5B9BD5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .2s;
+  }
+  .back-link:hover { color: #0B2C56; }
+</style>
+
+<section class="alumni-hero">
+  <div class="relative z-10 flex flex-col items-center w-full">
+
+    <div class="badge">
+      <span class="dot"></span>
+      即将上线 · Coming Soon
+    </div>
+
+    <h1 class="main-title">
+      SIPA 校友圈
+    </h1>
+
+    <p class="sub">
+      一个专属于 SIPA 学生与校友的社区——在这里找到同频的人，共同面对求职、职场和人生的岔路口。
+    </p>
+
+    <!-- Feature cards -->
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">🌆</span>
+        <div class="feature-title">城市聚会 & 活动</div>
+        <div class="feature-desc">纽约、北京、上海、香港……在你所在的城市找到 SIPA 的朋友</div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🤝</span>
+        <div class="feature-title">职场内推</div>
+        <div class="feature-desc">金融、咨询、政策、科技——校友互帮互助，让第一份工作更顺利</div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">💬</span>
+        <div class="feature-title">经验交流</div>
+        <div class="feature-desc">申请攻略、选课心得、求职复盘——少走弯路，多走直路</div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🌐</span>
+        <div class="feature-title">全球校友网络</div>
+        <div class="feature-desc">连接分布在世界各地的 SIPA 人，把校友资源真正用起来</div>
+      </div>
+    </div>
+
+    <p class="timeline-hint">
+      这个板块还在搭建中。如果你是 SIPA 在读生或校友，<br/>
+      <strong>欢迎联系我，一起把这个社区做起来。</strong>
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="/join/"
+         class="no-underline px-7 py-3 bg-columbia-navy text-white font-semibold text-sm rounded-full
+                hover:bg-[#0d3568] transition-all shadow-lg hover:-translate-y-0.5 active:translate-y-0">
+        联系我，参与建设 →
+      </a>
+      <a href="/" class="back-link">
+        ← 返回首页
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</Base>
