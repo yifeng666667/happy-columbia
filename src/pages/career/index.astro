@@ -45,37 +45,59 @@ const chapters = [
 ];
 ---
 
-<Base title="求职经验分享">
+<Base title="求职经验分享" hero={true}>
 
-  <a href="/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-8 group">
-    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
-    返回首页
-  </a>
+  <!-- ── Hero ──────────────────────────────────────── -->
+  <section class="career-hero relative min-h-[62vh] flex flex-col justify-end overflow-hidden">
 
-  <!-- ── Header ────────────────────────────────────── -->
-  <header class="mb-14 pb-10 border-b border-stone-200">
-    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-3">Career Series</p>
-    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight">
-      求职经验分享
-    </h1>
-    <p class="mt-5 text-stone-600 leading-loose text-[0.9375rem] max-w-2xl">
-      从 SIPA 到职场的真实路径——整理自己和同学们在求职路上的经验、教训、思路和资源。
-      写给经济学 / 商科背景、有海外留学经历、正在面对「回国还是留美」选择的年轻人。
-    </p>
-    <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-stone-400">
-      <span class="flex items-baseline gap-1.5">
-        <span class="text-columbia-navy font-bold text-xl">2</span>
-        <span>篇已发布</span>
-      </span>
-      <span class="text-stone-200">·</span>
-      <span class="flex items-baseline gap-1.5">
-        <span class="text-stone-400 font-bold text-xl">2</span>
-        <span>篇即将上线</span>
-      </span>
-      <span class="text-stone-200">·</span>
-      <span>持续更新中</span>
+    <!-- Background image + overlay -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85"
+        alt=""
+        class="w-full h-full object-cover object-center"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(160deg, rgba(6,24,40,0.82) 0%, rgba(11,44,86,0.78) 50%, rgba(4,16,32,0.88) 100%);"></div>
     </div>
-  </header>
+
+    <!-- Text -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-32">
+      <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 mb-3">Career Series</p>
+      <h1 class="font-display font-bold text-white leading-tight mb-4"
+          style="font-size: clamp(2rem, 5vw, 3.5rem);">
+        求职经验分享
+      </h1>
+      <p class="text-white/65 text-base leading-relaxed mb-7 max-w-xl">
+        从 SIPA 到职场的真实路径——整理自己和同学们在求职路上的经验、教训、思路和资源。<br/>
+        写给经济学 / 商科背景、有海外留学经历、正在面对「回国还是留美」选择的年轻人。
+      </p>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/40">
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-white/80 font-bold text-xl">2</span>
+          <span>篇已发布</span>
+        </span>
+        <span class="text-white/20">·</span>
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-white/40 font-bold text-xl">2</span>
+          <span>篇即将上线</span>
+        </span>
+        <span class="text-white/20">·</span>
+        <span>持续更新中</span>
+      </div>
+    </div>
+
+    <!-- Wave transition -->
+    <div class="absolute bottom-[-2px] left-0 right-0" style="z-index:3;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"
+           xmlns="http://www.w3.org/2000/svg" style="display:block;">
+        <path d="M0 60L1440 60L1440 24C1200 54 960 2 720 24C480 46 240 6 0 24L0 60Z"
+              fill="#f8f7f4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Content wrapper ───────────────────────────── -->
+  <div class="bg-[#f8f7f4] px-6 pt-14 pb-4 max-w-5xl mx-auto w-full">
 
   <!-- ── Chapter List ────────────────────────────── -->
   <div class="space-y-5 mb-16">
@@ -156,5 +178,7 @@ const chapters = [
       联系我 →
     </a>
   </section>
+
+  </div><!-- end content wrapper -->
 
 </Base>
