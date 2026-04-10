@@ -1,0 +1,139 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  return ['macro', 'policy', 'daily', 'thematic', 'articles'].map(category => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params as { category: string };
+
+let allResearch: any[] = [];
+try { allResearch = await getCollection('research'); } catch (_) {}
+
+const catMeta: Record<string, {
+  title: string; en: string; desc: string;
+  overlay: string; borderL: string; dot: string;
+}> = {
+  macro: {
+    title: '宏观经济分析', en: 'Macro Analysis',
+    desc: '深度宏观报告，解读全球经济趋势与周期变化',
+    overlay: 'linear-gradient(160deg, rgba(5,45,25,0.88) 0%, rgba(8,70,40,0.80) 100%)',
+    borderL: 'border-l-emerald-400', dot: 'bg-emerald-400',
+  },
+  policy: {
+    title: '政策追踪', en: 'Policy Watch',
+    desc: '国内外政策动态追踪，解读政策意图与市场影响',
+    overlay: 'linear-gradient(160deg, rgba(6,18,40,0.88) 0%, rgba(11,44,86,0.80) 100%)',
+    borderL: 'border-l-sky-400', dot: 'bg-sky-400',
+  },
+  daily: {
+    title: '热点追踪', en: 'Daily Hotspot',
+    desc: '每日经济热点精选，带投资视角的快速解读',
+    overlay: 'linear-gradient(160deg, rgba(80,45,0,0.88) 0%, rgba(120,65,0,0.80) 100%)',
+    borderL: 'border-l-amber-400', dot: 'bg-amber-400',
+  },
+  thematic: {
+    title: '主题深度', en: 'Thematic Research',
+    desc: '跨期事件聚合，同一议题的持续追踪与深度分析',
+    overlay: 'linear-gradient(160deg, rgba(35,15,80,0.88) 0%, rgba(60,20,120,0.80) 100%)',
+    borderL: 'border-l-violet-400', dot: 'bg-violet-400',
+  },
+  articles: {
+    title: '公众号文章', en: 'WeChat Articles',
+    desc: '金融话题大众化写作，推文草稿与存档',
+    overlay: 'linear-gradient(160deg, rgba(80,10,20,0.88) 0%, rgba(110,15,35,0.80) 100%)',
+    borderL: 'border-l-rose-400', dot: 'bg-rose-400',
+  },
+};
+
+const meta = catMeta[category] ?? catMeta.macro;
+
+const bgImage = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=80';
+
+const entries = allResearch
+  .filter(e => e.data.category === category)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const slugOf = (id: string) => id.split('/').slice(1).join('/').replace(/\.md$/, '');
+---
+
+<Base title={meta.title}>
+
+  <!-- Category hero banner -->
+  <div
+    class="-mx-6 -mt-14 mb-0 text-white px-6 pt-14 pb-12 relative overflow-hidden"
+    style={`background-image: ${meta.overlay}, url('${bgImage}'); background-size: cover; background-position: center;`}
+  >
+    <div class="relative z-10 max-w-3xl">
+      <a href="/research/"
+         class="inline-flex items-center gap-1.5 text-white/60 hover:text-white text-xs transition-colors no-underline mb-6 group">
+        <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+        金融投研
+      </a>
+
+      <p class="text-[11px] uppercase tracking-[0.25em] text-white/50 mb-3">{meta.en}</p>
+      <h1 class="font-display font-bold text-3xl md:text-4xl leading-tight text-white">
+        {meta.title}
+      </h1>
+      <p class="mt-3 text-white/65 leading-relaxed text-[0.9375rem] max-w-xl">
+        {meta.desc}
+      </p>
+
+      <div class="mt-5 flex items-center gap-4 text-sm">
+        <div>
+          <span class="text-white/40 text-xs uppercase tracking-wider">文章数量</span>
+          <p class="text-white font-medium mt-0.5">{entries.length} 篇</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="mt-8 mb-8 flex items-start gap-2 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
+    <svg viewBox="0 0 16 16" fill="currentColor" class="w-3.5 h-3.5 shrink-0 mt-0.5 text-amber-500">
+      <path d="M6.457 1.047c.659-.94 2.095-.94 2.754 0l6.302 8.994c.733 1.046-.051 2.459-1.377 2.459H1.535c-1.326 0-2.11-1.413-1.377-2.459L6.457 1.047zM8 5a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5A.75.75 0 018 5zm0 7a1 1 0 100-2 1 1 0 000 2z"/>
+    </svg>
+    <p class="text-xs text-amber-700">
+      以下内容均以个人<strong class="font-semibold">学习研究</strong>为目的，
+      <strong class="font-semibold">不构成任何投资建议</strong>。
+    </p>
+  </div>
+
+  <!-- Article TOC -->
+  <section>
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-5">
+      {entries.length > 0 ? `共 ${entries.length} 篇 · 按时间倒序` : '文章列表'}
+    </p>
+
+    {entries.length === 0 ? (
+      <div class="border border-dashed border-stone-200 rounded-xl px-5 py-16 text-xs text-stone-400 text-center">
+        <p class="font-medium mb-1">暂无文章</p>
+        <p class="text-stone-300">内容持续整理中，敬请期待</p>
+      </div>
+    ) : (
+      <div class="space-y-2">
+        {entries.map((entry, i) => (
+          <a
+            href={`/research/${category}/${slugOf(entry.id)}/`}
+            class={`card-lift flex items-center gap-5 bg-white border border-stone-200 border-l-4 ${meta.borderL} rounded-xl px-5 py-4 no-underline text-stone-900 group`}
+          >
+            <span class="shrink-0 w-8 h-8 rounded-full bg-stone-100 group-hover:bg-columbia-light flex items-center justify-center text-xs font-mono font-semibold text-stone-400 group-hover:text-columbia-navy transition-colors">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <span class="flex-1 font-medium leading-snug group-hover:text-columbia-navy transition-colors">
+              {entry.data.title}
+            </span>
+            <span class="shrink-0 text-xs text-stone-400">{entry.data.date}</span>
+            <span class="shrink-0 text-columbia-blue opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-sm">
+              阅读 →
+            </span>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+</Base>

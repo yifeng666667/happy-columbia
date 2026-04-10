@@ -1,0 +1,154 @@
+---
+import '../styles/global.css';
+interface Props {
+  title: string;
+  description?: string;
+  hero?: boolean;
+}
+const { title, description = '面向中文读者的经济金融政策知识博客，个人学习整理与原创评论', hero = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} · HappyColumbia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+  </head>
+
+  <body class={`min-h-screen antialiased font-sans text-stone-900 ${hero ? 'bg-[#061828]' : 'bg-stone-50'}`}>
+
+    <!-- ── Header ─────────────────────────────────────── -->
+    <header
+      id="site-header"
+      class={`sticky top-0 z-50 transition-all duration-300 ${
+        hero
+          ? 'bg-transparent border-b border-white/10'
+          : 'bg-white border-b border-stone-200'
+      }`}
+    >
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+
+        <!-- Logo -->
+        <a href="/" class="no-underline leading-tight group shrink-0">
+          <div class={`font-display font-semibold tracking-tight text-lg transition-colors ${
+            hero ? 'text-white group-hover:text-columbia-light' : 'text-stone-900 group-hover:text-columbia-navy'
+          }`}>
+            HappyColumbia
+          </div>
+          <div class={`hidden sm:block text-[10px] tracking-widest uppercase mt-0.5 ${
+            hero ? 'text-white/50' : 'text-stone-400'
+          }`}>
+            经济 · 金融 · 政策
+          </div>
+        </a>
+
+        <!-- Nav -->
+        <nav class={`flex items-center gap-1 text-sm shrink-0 ${
+          hero ? 'text-white/80' : 'text-stone-600'
+        }`}>
+          {[
+            { href: '/about-sipa/', label: '关于 SIPA' },
+            { href: '/#courses', label: '专题笔记' },
+            { href: '/career/', label: '求职分享' },
+            { href: '/research/', label: '金融投研' },
+            { href: '/join/',    label: '一起做这件事' },
+          ].map(({ href, label }) => (
+            <a
+              href={href}
+              class={`nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline ${
+                hero
+                  ? 'hover:bg-white/10 hover:text-white'
+                  : 'hover:bg-stone-100 hover:text-stone-900'
+              }`}
+            >
+              {label}
+            </a>
+          ))}
+          <a
+            href="/join/"
+            class={`ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline ${
+              hero
+                ? 'border-white/40 text-white hover:bg-white hover:text-columbia-navy'
+                : 'border-stone-300 text-stone-700 hover:border-columbia-navy hover:text-columbia-navy'
+            }`}
+          >
+            联系我
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ── Main ───────────────────────────────────────── -->
+    <main class={hero ? '' : 'max-w-5xl mx-auto px-6 py-14'}>
+      <slot />
+    </main>
+
+    <!-- ── Footer ────────────────────────────────────── -->
+    <footer class="bg-columbia-navy text-white/60 mt-0">
+      <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <p class="font-display font-semibold text-white text-lg">HappyColumbia</p>
+          <p class="mt-2 text-sm leading-relaxed">
+            经济 · 金融 · 政策<br />个人原创知识博客
+          </p>
+          <p class="mt-4 text-xs text-white/40 leading-relaxed">
+            纯公益，不盈利、不收费、无广告。<br />
+            内容为个人学习整理与原创评论，与任何机构无关联。
+          </p>
+        </div>
+        <div>
+          <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">导航</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about-sipa/" class="hover:text-white transition-colors no-underline">关于 SIPA</a></li>
+            <li><a href="/#courses" class="hover:text-white transition-colors no-underline">课程笔记</a></li>
+            <li><a href="/career/" class="hover:text-white transition-colors no-underline">求职经验分享</a></li>
+            <li><a href="/research/" class="hover:text-white transition-colors no-underline">金融投研</a></li>
+            <li><a href="/join/"   class="hover:text-white transition-colors no-underline">一起做这件事</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">联系</p>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="mailto:yh3811@columbia.edu" class="hover:text-white transition-colors no-underline">
+                yh3811@columbia.edu
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30">
+        <span>© 2025 HappyColumbia</span>
+        <span>内容受国际资深教授、著名投资家与银行家启发，由 AI 辅助整理，不代表任何机构立场。若内容涉及版权，请联系删除。</span>
+      </div>
+    </footer>
+
+  </body>
+
+  <!-- ── Header scroll effect ───────────────────────── -->
+  <script>
+    const header = document.getElementById('site-header');
+    if (header) {
+      const onScroll = () => {
+        if (window.scrollY > 60) {
+          header.classList.add('scrolled');
+          header.classList.remove('bg-transparent');
+          header.classList.add('bg-white/95', 'backdrop-blur-md');
+          // swap text colours when transitioning from hero
+          header.querySelectorAll('.text-white\\/80').forEach(el =>
+            el.classList.replace('text-white/80', 'text-stone-600'));
+          header.querySelectorAll('.text-white').forEach(el =>
+            el.classList.replace('text-white', 'text-stone-900'));
+          header.querySelectorAll('.hover\\:bg-white\\/10').forEach(el =>
+            el.classList.replace('hover:bg-white/10', 'hover:bg-stone-100'));
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+  </script>
+</html>

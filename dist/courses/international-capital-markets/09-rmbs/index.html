@@ -1,0 +1,672 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="面向中文读者的经济金融政策知识博客，个人学习整理与原创评论"><title>居民按揭贷款证券化（RMBS） · HappyColumbia</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="/_astro/index.BJiEgo8m.css"></head> <body class="min-h-screen antialiased font-sans text-stone-900 bg-stone-50"> <!-- ── Header ─────────────────────────────────────── --> <header id="site-header" class="sticky top-0 z-50 transition-all duration-300 bg-white border-b border-stone-200"> <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4"> <!-- Logo --> <a href="/" class="no-underline leading-tight group shrink-0"> <div class="font-display font-semibold tracking-tight text-lg transition-colors text-stone-900 group-hover:text-columbia-navy">
+HappyColumbia
+</div> <div class="hidden sm:block text-[10px] tracking-widest uppercase mt-0.5 text-stone-400">
+经济 · 金融 · 政策
+</div> </a> <!-- Nav --> <nav class="flex items-center gap-1 text-sm shrink-0 text-stone-600"> <a href="/about-sipa/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 关于 SIPA </a><a href="/#courses" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 专题笔记 </a><a href="/career/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 求职分享 </a><a href="/research/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 金融投研 </a><a href="/join/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 一起做这件事 </a> <a href="/join/" class="ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline border-stone-300 text-stone-700 hover:border-columbia-navy hover:text-columbia-navy">
+联系我
+</a> </nav> </div> </header> <!-- ── Main ───────────────────────────────────────── --> <main class="max-w-5xl mx-auto px-6 py-14">   <div class="-mx-6 -mt-14 mb-8 bg-white border-b border-stone-200 px-6 pt-14 pb-5"> <div class="max-w-3xl"> <a href="/courses/international-capital-markets/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-3 group"> <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 国际资本市场 </a> <h1 class="font-display font-bold text-2xl md:text-3xl text-stone-900 leading-tight"> 居民按揭贷款证券化（RMBS） </h1> <!-- progress bar --> <div class="mt-4 flex items-center gap-3"> <div class="flex-1 h-1 bg-stone-100 rounded-full overflow-hidden"> <div class="h-full bg-columbia-blue rounded-full transition-all" style="width: 83%"></div> </div> <span class="text-xs text-stone-400 shrink-0">10 / 12</span> </div> </div> </div>  <article class="prose-reading prose prose-stone max-w-3xl
+           prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+           prose-h1:text-3xl prose-h1:mb-6
+           prose-h2:text-xl prose-h2:mt-12 prose-h2:pb-2 prose-h2:border-b prose-h2:border-stone-200 prose-h2:text-columbia-navy
+           prose-h3:text-base prose-h3:mt-8 prose-h3:text-stone-800
+           prose-p:leading-[1.9]
+           prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline
+           prose-strong:text-stone-900
+           prose-code:before:content-none prose-code:after:content-none
+           prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+           prose-code:text-stone-800 prose-code:font-normal prose-code:text-[0.85em]
+           prose-pre:bg-stone-900
+           prose-blockquote:border-l-4 prose-blockquote:border-columbia-blue
+           prose-blockquote:bg-columbia-light/30 prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-lg
+           prose-blockquote:text-stone-700 prose-blockquote:not-italic
+           prose-li:leading-[1.85]
+           prose-table:text-sm
+           prose-th:bg-columbia-light prose-th:text-columbia-navy"> <h2 id="本文概述">本文概述</h2>
+<p>美国按揭贷款市场<strong>规模巨大</strong>——2023 年第四季度的数据显示，MBS（按揭贷款支持证券）存量<strong>12.2 万亿美元</strong>，比整个公司债市场（10.8 万亿）还大，接近美国国债市场（26.4 万亿）的一半。</p>
+<p>但规模只是表象。真正的核心问题是：</p>
+<ol>
+<li><strong>2008 年金融危机为什么从这里开始？</strong></li>
+<li><strong>MBS 这种工具本身有问题吗，还是只是被滥用了？</strong></li>
+<li><strong>美国的 RMBS 市场和欧洲、中国、日本有什么不同？</strong></li>
+<li><strong>Fannie Mae、Freddie Mac、Ginnie Mae 这三家”影子政府”机构到底在做什么？</strong></li>
+</ol>
+<p>这节课会把这个危机工具的结构、运作和历史讲清楚，让你理解 2008 年的 GFC 为什么必然指向这里。</p>
+<h2 id="一为什么需要-rmbs两种筹集住房贷款资金的方式">一、为什么需要 RMBS？两种筹集住房贷款资金的方式</h2>
+<h3 id="11-老派方式银行自己贷自己持有">1.1 老派方式：银行自己贷、自己持有</h3>
+<p><strong>流程</strong>：</p>
+<ol>
+<li>客户存款 → 银行</li>
+<li>银行把存款贷给买房的人</li>
+<li>贷款留在银行的资产负债表上</li>
+</ol>
+<p><strong>美国现在仍有约 20% 的按揭是这样做的</strong>。欧洲、日本、中国、大多数发展中国家<strong>这是主流方式</strong>。</p>
+<h3 id="12-两个根本缺陷">1.2 两个根本缺陷</h3>
+<p><strong>缺陷一：银行存款可能不够满足住房贷款需求</strong>。
+<strong>缺陷二：期限错配的流动性风险</strong>——银行用”随时可取的存款”去融资”30 年不能赎回的贷款”，这是<strong>典型的挤兑风险源</strong>。</p>
+<h3 id="13-风雨人生路的教学片段">1.3 《风雨人生路》的教学片段</h3>
+<p>教授引用了 1946 年电影 <em>It’s a Wonderful Life</em> 里的经典场景：</p>
+<blockquote>
+<p><strong>George Bailey</strong>（镇上小银行的老板）面对挤兑的居民说：</p>
+<p>“你们想错了。就好像我把钱放在保险柜里一样。钱不在这里。你们的钱在 Joe 家里——就在你家隔壁。在 Kennedy 家、在 Backlin 太太家，在另外一百多家。你们是在借钱给他们建房子，他们以后会尽最大努力还给你们。”</p>
+</blockquote>
+<p><strong>这是按揭银行业的本质</strong>——存款被转化为不可快速变现的按揭贷款。正常时候没问题，一旦有人喊挤兑就会崩塌。</p>
+<h3 id="14-资本市场的解决方案">1.4 资本市场的解决方案</h3>
+<p><strong>MBS 和 Covered Bonds 就是为了解决这两个问题</strong>：</p>
+<ul>
+<li>银行不用把贷款留在表上</li>
+<li>资金来源从”零售存款”扩展到”全球资本市场”</li>
+</ul>
+<h2 id="二资产支持证券abs的基本结构">二、资产支持证券（ABS）的基本结构</h2>
+<h3 id="21-六步流程必须记住">2.1 六步流程（必须记住）</h3>
+<ol>
+<li><strong>银行或金融公司发起资产</strong>（例如按揭贷款）</li>
+<li><strong>资产被转让给特殊目的实体（SPV）</strong>——SPV 是”破产隔离”的，法律上和发起人分开</li>
+<li><strong>SPV 发行债券</strong>（称为 ABS）</li>
+<li><strong>服务商（Servicer）收款并付给 SPV</strong>——服务商通常就是发起人，收取服务费（Mortgage Servicing Rights, MSR）</li>
+<li><strong>现金流用于支付 SPV 债券的利息和本金</strong>——**受托人（Trustee）**监督以保护债权人</li>
+<li><strong>服务商失职 → 受托人可以换人</strong></li>
+</ol>
+<h3 id="22-关键术语">2.2 关键术语</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>术语</th><th>含义</th></tr></thead><tbody><tr><td><strong>SPV</strong>（Special Purpose Vehicle）</td><td>法律独立的空壳公司，只为这一笔证券化而设立</td></tr><tr><td><strong>Collateral Pool</strong>（抵押品池）</td><td>支持 ABS 的基础资产集合</td></tr><tr><td><strong>Static vs Revolving</strong></td><td>静态（住房按揭）vs 循环（信用卡、应收账款）</td></tr><tr><td><strong>Tranches</strong>（分级）</td><td>SPV 发行的多档证券，按优先级吸收损失</td></tr><tr><td><strong>Senior / Mezzanine / Subordinated</strong></td><td>高级 / 中级 / 次级——吸收损失的顺序</td></tr><tr><td><strong>Overcollateralization</strong></td><td>资产池价值超过发行债券的部分，为高级档提供保护</td></tr></tbody></table>
+<h3 id="23-waterfall瀑布式现金流">2.3 “Waterfall”（瀑布式）现金流</h3>
+<p><strong>瀑布原理</strong>：现金流首先支付最高级（senior）档，然后依次下到 mezzanine，最后到 subordinated。</p>
+<p><strong>损失的承担顺序相反</strong>：次级档先吸收损失，然后中级档，最后才是高级档。</p>
+<h3 id="24-为什么垃圾抵押品能产生-aaa-债券">2.4 为什么垃圾抵押品能产生 AAA 债券？</h3>
+<p><strong>一个重要观察</strong>：CNN、MSNBC 和大众媒体常说”次贷 MBS 里竟然能造出 AAA 债券——太荒谬了！”</p>
+<p><strong>教授的反驳</strong>：<strong>如果超额抵押设置合理，这是完全合理的</strong>。</p>
+<p><strong>举例</strong>：假设抵押品池有 $100 次贷，每份次贷独立违约概率 30%，回收率 50%。</p>
+<ul>
+<li>那么平均损失是 15%</li>
+<li>如果最差情况也只会损失 20%</li>
+<li>那么高级档 $80 是完全安全的——AAA 合理</li>
+</ul>
+<p><strong>教授的真正观点</strong>：<strong>AAA 评级的次贷 MBS 绝大多数最终拿到了承诺的本金和利息</strong>。只有少数 2006-2008 年份的次贷 MBS 出了大问题——但即便那样，问题也主要集中在 mezzanine 和 subordinated 档。</p>
+<p><strong>数据证据</strong>：</p>
+<ul>
+<li>根据 S&#x26;P，<strong>欧洲 €7560 亿评级 RMBS 的累计违约率仅 0.10%</strong>（2007 年中）</li>
+<li>这是累计数据，从 AAA 到 B 全部包括</li>
+</ul>
+<h2 id="三abs-的经济价值-vs-负面影响">三、ABS 的经济价值 vs 负面影响</h2>
+<h3 id="31-正面价值">3.1 正面价值</h3>
+<ol>
+<li><strong>解决代理问题</strong>：投资者不用担心 SPV “背叛”——SPV 只有一个任务</li>
+<li><strong>降低信息不对称</strong>：ABS 比公司债券透明得多</li>
+<li><strong>分层让投资者专业化</strong>：AAA 投资者只看整体信用；次级投资者看具体抵押品</li>
+<li><strong>合成证券化</strong>（如 Sealane IV）可以打包银行想甩掉的风险</li>
+</ol>
+<h3 id="32-负面问题">3.2 负面问题</h3>
+<ol>
+<li><strong>“发起即卖”文化</strong> 让放贷标准松懈——反正贷款马上被转手</li>
+<li><strong>第三方服务商的利益</strong> 不如自有资产时那样对齐</li>
+<li><strong>评级机构的收入严重依赖结构化金融</strong> → 可能放松标准</li>
+</ol>
+<p><strong>一个震撼的数据</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>业务</th><th>1999 年收入（百万）</th><th>2006 年收入（百万）</th><th>增长</th></tr></thead><tbody><tr><td><strong>Structured Finance</strong></td><td><strong>$172.4</strong></td><td><strong>$886.7</strong></td><td><strong>+514%</strong></td></tr><tr><td>Corporate Bond</td><td>$165.5</td><td>$396.2</td><td>+239%</td></tr><tr><td>Financial Institution &#x26; Sovereign</td><td>$104.8</td><td>$266.8</td><td>+255%</td></tr><tr><td>Municipal Bond</td><td>$59.5</td><td>$85.9</td><td>+144%</td></tr><tr><td>Total</td><td>$502.2</td><td>$1,635.6</td><td>+228%</td></tr></tbody></table>
+<p><strong>Moody’s 的结构化金融收入在 7 年间增长了 5 倍多</strong>。这是危机后它们被指控”评级质量松懈”的数据基础——当一家评级机构的利润严重依赖单一业务线时，利益冲突不可避免。</p>
+<h2 id="四美国居民按揭市场的规模与结构">四、美国居民按揭市场的规模与结构</h2>
+<h3 id="41-规模和历史">4.1 规模和历史</h3>
+<ul>
+<li><strong>2024 年 Q2</strong>：美国住宅按揭债务 <strong>13.95 万亿美元</strong>，占 GDP 约 <strong>50%</strong></li>
+<li><strong>2009 年 Q2（历史峰值）</strong>：<strong>73.5%</strong> GDP——这是泡沫的顶点</li>
+<li><strong>1982 年</strong>：只占 31% GDP——这是泡沫前的水平</li>
+</ul>
+<p><strong>峰值到低点再反弹</strong>：从 2009 年 73.5% 降至今约 50%，主要是 GDP 扩大，而非按揭存量下降。</p>
+<h3 id="42-美国消费者债务构成2024-q2">4.2 美国消费者债务构成（2024 Q2）</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>类别</th><th>占比</th></tr></thead><tbody><tr><td><strong>按揭贷款</strong></td><td><strong>70%</strong></td></tr><tr><td>学生贷款</td><td>9%</td></tr><tr><td>汽车贷款</td><td>9.2%</td></tr><tr><td>信用卡</td><td>6%</td></tr><tr><td>HELOC</td><td>约 3%</td></tr><tr><td>其他</td><td>3%</td></tr></tbody></table>
+<p><strong>按揭占 70%</strong>——美国家庭债务的绝对主力。</p>
+<h2 id="五全球对比美国的按揭市场很独特">五、全球对比：美国的按揭市场很独特</h2>
+<h3 id="51-按揭债务--gdp2023">5.1 按揭债务 / GDP（2023）</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>国家</th><th>比率</th></tr></thead><tbody><tr><td>瑞典</td><td>87%</td></tr><tr><td>澳大利亚</td><td>86%</td></tr><tr><td>英国</td><td>82%</td></tr><tr><td><strong>荷兰</strong></td><td><strong>80%</strong>（独特的税务激励）</td></tr><tr><td>丹麦</td><td>74%</td></tr><tr><td>冰岛</td><td>70%</td></tr><tr><td>美国</td><td>51%</td></tr><tr><td>法国</td><td>46%</td></tr><tr><td>德国</td><td>45%</td></tr><tr><td>日本</td><td>38%</td></tr><tr><td>意大利</td><td>22%</td></tr><tr><td>希腊</td><td>13%</td></tr><tr><td>俄罗斯</td><td>8%</td></tr><tr><td>土耳其</td><td>1%</td></tr></tbody></table>
+<h3 id="52-法律执行效率违约后的回收速度">5.2 法律执行效率：违约后的回收速度</h3>
+<p><strong>支付到债权人手里需要多少个月</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>国家</th><th>时间</th><th>执行成本 / 贷款</th></tr></thead><tbody><tr><td>丹麦</td><td>6 个月</td><td><strong>0.5%</strong> ⭐</td></tr><tr><td>荷兰</td><td>6 个月</td><td>3%</td></tr><tr><td>德国</td><td>12-24 个月</td><td>4.2%</td></tr><tr><td>法国</td><td>15-25 个月</td><td>7%</td></tr><tr><td><strong>意大利</strong></td><td><strong>60-84 个月</strong> 😱</td><td>14-18%</td></tr><tr><td>美国</td><td>依州而定</td><td>11.5%</td></tr></tbody></table>
+<p><strong>美国 2024 Q1 的平均 foreclosure 完成时间 = 736 天</strong> —— 约 2 年。</p>
+<p><strong>意大利 60-84 个月（5-7 年）</strong> ：这就是为什么意大利按揭市场只占 GDP 22%——贷款人根本没法有效保护自己。</p>
+<h3 id="53-丹麦世界上最高效的按揭系统">5.3 丹麦：世界上最高效的按揭系统</h3>
+<p><strong>丹麦的特殊之处</strong>：</p>
+<ul>
+<li>按揭标准化、受监管严格</li>
+<li>违约后 6 个月即可拍卖</li>
+<li>执行成本仅 <strong>0.5%</strong></li>
+<li>有充足的社会住房 → 执行的社会代价较小</li>
+</ul>
+<p>这造就了丹麦发达的 covered bond 市场——<strong>100% 的按揭通过 covered bonds 融资</strong>。</p>
+<h2 id="六三大影子政府机构gse">六、三大”影子政府”机构：GSE</h2>
+<h3 id="61-美国住宅按揭债务的组成2022-q2">6.1 美国住宅按揭债务的组成（2022 Q2）</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>类别</th><th>2022 Q2</th><th>2007 年底</th></tr></thead><tbody><tr><td><strong>Agency MBS</strong></td><td><strong>73%</strong></td><td>36%</td></tr><tr><td>Fannie Mae</td><td>30%</td><td>19%</td></tr><tr><td>Freddie Mac</td><td>24%</td><td>13%</td></tr><tr><td>Ginnie Mae</td><td>19%</td><td>4%</td></tr><tr><td><strong>Non-Agency MBS</strong>（私募）</td><td><strong>3%</strong></td><td><strong>21%</strong> 🔥</td></tr><tr><td>Prime Jumbo</td><td>1%</td><td>6%</td></tr><tr><td>Alt-A</td><td>&#x3C;1%</td><td>6%</td></tr><tr><td><strong>Subprime</strong></td><td><strong>&#x3C;1%</strong></td><td><strong>8%</strong> 🔥</td></tr><tr><td>Other</td><td>&#x3C;1%</td><td>1%</td></tr><tr><td>Non-Securitized</td><td>23%</td><td>44%</td></tr></tbody></table>
+<p><strong>震撼对比</strong>：</p>
+<ul>
+<li><strong>2007 年</strong>：非机构 MBS（含次贷、Alt-A、Jumbo）占 <strong>21%</strong> —— 这是危机的核心</li>
+<li><strong>2022 年</strong>：几乎归零，降至 <strong>3%</strong></li>
+<li><strong>Ginnie Mae</strong> 份额从 4% → 19%，政府担保贷款的重要性大幅提升</li>
+</ul>
+<h3 id="62-ginnie-maegnma">6.2 Ginnie Mae（GNMA）</h3>
+<p><strong>Government National Mortgage Association</strong>：</p>
+<ul>
+<li><strong>完全政府所有</strong>，HUD 的一部分</li>
+<li>证券化 FHA（联邦住房管理局）和 VA（退伍军人管理局）担保的按揭</li>
+<li>面向<strong>低收入家庭和退伍军人</strong></li>
+<li>有**“美国政府完全信任”**的明确背书——等同于美国国债级别的信用</li>
+</ul>
+<h3 id="63-fannie-mae-和-freddie-mac">6.3 Fannie Mae 和 Freddie Mac</h3>
+<p><strong>Federal National Mortgage Association（Fannie Mae, 1938）</strong> 和 <strong>Federal Home Loan Mortgage Corporation（Freddie Mac, 1970）</strong>：</p>
+<ul>
+<li><strong>国会特许的上市公司</strong>（GSE）——<strong>不是</strong>政府机构</li>
+<li>但享有**“隐性政府担保”**</li>
+<li>2008 年 9 月被 FHFA <strong>接管（conservatorship）</strong> ——股价从 $67 暴跌至 $0.74</li>
+<li>从此由 FHFA 管理，至今未”私有化”</li>
+</ul>
+<p><strong>两者的业务</strong>：</p>
+<ul>
+<li>从银行买入符合标准的按揭</li>
+<li>打包成 MBS 出售给投资者</li>
+<li>保留<strong>信用风险</strong>，收取担保费</li>
+</ul>
+<p><strong>为什么存在争议</strong>：</p>
+<ul>
+<li>股东是<strong>私人</strong>，享受政府补贴</li>
+<li>风险是<strong>纳税人</strong>承担</li>
+<li>这是”社会化损失、私人化利润”的经典案例</li>
+</ul>
+<h3 id="64-agency-mbs-的独特市场结构">6.4 Agency MBS 的独特市场结构</h3>
+<p><strong>Agency MBS 的特点</strong>：</p>
+<ul>
+<li><strong>大部分是 pass-through</strong>：借款人的每月本金和利息直接”穿透”到投资者</li>
+<li><strong>提前还款风险（Prepayment Risk）</strong>：美国按揭没有提前还款罚金 → 利率下降时借款人重融资 → MBS 本金提前回笼</li>
+<li><strong>没有信用风险</strong>（政府担保）</li>
+<li><strong>但有提前还款风险</strong>——这是 Agency MBS 最复杂的定价问题</li>
+</ul>
+<h2 id="七fico-信用评分美国个人信用的标尺">七、FICO 信用评分：美国个人信用的标尺</h2>
+<h3 id="71-fico-的五大构成">7.1 FICO 的五大构成</h3>
+<p><strong>FICO</strong> 由 Fair, Isaac &#x26; Company 在 1980 年代初开发，由三大信用局（Experian、Equifax、TransUnion）使用：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>因素</th><th>权重</th></tr></thead><tbody><tr><td><strong>支付历史</strong></td><td><strong>35%</strong></td></tr><tr><td><strong>欠款金额</strong></td><td><strong>30%</strong></td></tr><tr><td>信用历史长度</td><td>15%</td></tr><tr><td>新信用账户</td><td>10%</td></tr><tr><td>信用类型多样性</td><td>10%</td></tr></tbody></table>
+<p><strong>不考虑的因素</strong>：收入、职业、教育、就业历史、银行存款或资产。<strong>法律禁止考虑</strong>：年龄、性别、地域。</p>
+<h3 id="72-fico-的替代品">7.2 FICO 的替代品</h3>
+<p><strong>2022 年</strong>：FHFA 宣布用 <strong>FICO 10T 和 VantageScore 4.0</strong> 取代传统 FICO，用于 Fannie Mae 和 Freddie Mac 的贷款。</p>
+<p><strong>新版本扩大数据源</strong>：纳入手机账单、水电费、房租——目标是让按揭贷款<strong>更准确、更包容</strong>。</p>
+<h3 id="73-平均分数的惊人变化">7.3 平均分数的惊人变化</h3>
+<ul>
+<li><strong>2020 年 4-10 月</strong>：FICO 分数出现<strong>史上最大的 6 个月改善</strong>——因为疫情救助和贷款延期</li>
+<li><strong>2023 年 10 月</strong>：平均分数创历史新高 <strong>718</strong></li>
+<li><strong>2024 年</strong>：仍维持在 <strong>717</strong></li>
+</ul>
+<h2 id="八covered-bonds欧洲的特色">八、Covered Bonds：欧洲的特色</h2>
+<h3 id="81-和-rmbs-的区别">8.1 和 RMBS 的区别</h3>
+<p><strong>Covered Bonds</strong>（担保债券）：</p>
+<ul>
+<li>由银行<strong>直接发行</strong>（不是 SPV）</li>
+<li>投资者对<strong>一个特定的资产池</strong>（“cover pool”）有优先索赔权</li>
+<li>但同时也是<strong>银行整体的普通债权人</strong></li>
+<li><strong>双重保护</strong>：资产池 + 银行本身</li>
+</ul>
+<p><strong>RMBS</strong>：</p>
+<ul>
+<li>由 <strong>SPV</strong> 发行</li>
+<li>只对 SPV 的资产有索赔权</li>
+<li>和原发行人<strong>完全隔离</strong></li>
+</ul>
+<h3 id="82-各国按揭融资来源2024">8.2 各国按揭融资来源（2024）</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>国家</th><th>RMBS</th><th>Covered Bonds</th><th>Bank Balance Sheet</th></tr></thead><tbody><tr><td><strong>美国</strong></td><td><strong>79%</strong></td><td>0%</td><td>21%</td></tr><tr><td>丹麦</td><td>0%</td><td><strong>100%</strong></td><td>0%</td></tr><tr><td>荷兰</td><td>31%</td><td>22%</td><td>47%</td></tr><tr><td>英国</td><td>31%</td><td>10%</td><td>59%</td></tr><tr><td>加拿大</td><td>31%</td><td>1%</td><td>68%</td></tr><tr><td>西班牙</td><td>24%</td><td>46%</td><td>30%</td></tr><tr><td>葡萄牙</td><td>15%</td><td><strong>50%</strong></td><td>35%</td></tr><tr><td>瑞典</td><td>0%</td><td><strong>54%</strong></td><td>46%</td></tr><tr><td>德国</td><td>2%</td><td>15%</td><td>83%</td></tr><tr><td>日本</td><td>4%</td><td>0%</td><td>96%</td></tr></tbody></table>
+<p><strong>观察</strong>：</p>
+<ul>
+<li><strong>美国 79% 靠 RMBS</strong> —— 几乎独一档</li>
+<li><strong>丹麦 100% 靠 covered bonds</strong> —— 完全相反</li>
+<li><strong>德国和日本</strong> 主要靠银行资产负债表</li>
+</ul>
+<h2 id="九中国的按揭市场">九、中国的按揭市场</h2>
+<h3 id="91-结构">9.1 结构</h3>
+<ul>
+<li><strong>几乎所有按揭都是多户公寓</strong>（美国是独栋房为主）</li>
+<li><strong>租赁所有权</strong>：房主拥有 70 年租赁权，<strong>不拥有土地</strong></li>
+<li><strong>六大银行占 69%</strong>：工行、建行、农行、中行、邮储、交通</li>
+<li><strong>房公基金（Housing Provident Fund）</strong> 提供廉价贷款给中低收入家庭</li>
+</ul>
+<h3 id="92-规则">9.2 规则</h3>
+<ul>
+<li><strong>LTV 上限 80%</strong>（第二套房 40%，大户型 20%）</li>
+<li><strong>贷款最长 30 年</strong>，但不能超过 65 − 借款人年龄</li>
+<li><strong>全部浮动利率</strong>——挂钩 LPR（贷款市场报价利率）</li>
+<li><strong>再融资极少</strong>——因为利率下降时老按揭自动下浮</li>
+</ul>
+<h3 id="93-rmbs-市场的起落">9.3 RMBS 市场的起落</h3>
+<p><strong>2018 年</strong>：中国曾是全球<strong>第二大</strong> RMBS 市场（仅次美国）
+<strong>2022 Q2 后</strong>：新发行归零</p>
+<p><strong>原因</strong>（Fitch 分析）：</p>
+<ul>
+<li>疫情封锁让买房情绪疲软</li>
+<li>项目延误</li>
+<li>房价下跌</li>
+<li>监管压力</li>
+</ul>
+<p><strong>这是中国房地产危机在资本市场的直接体现</strong>。</p>
+<h2 id="十2008-次贷危机简版回顾">十、2008 次贷危机：简版回顾</h2>
+<p>（本节课 only 触及核心——更深入在 Sovereign Debt 和 Credit 两节中）</p>
+<h3 id="101-关键因素链条">10.1 关键因素链条</h3>
+<ol>
+<li><strong>美联储低利率</strong>（2001-04）→ 压低借贷成本</li>
+<li><strong>“发起即卖”模式扩张</strong> → 放贷标准下降</li>
+<li><strong>非传统产品</strong>：ARM（可调整利率按揭）、负摊销、低文档贷款</li>
+<li><strong>房价预期持续上升</strong> → 贷款人和借款人都忽略违约风险</li>
+<li><strong>证券化链条过长</strong>：银行 → SPV → CDO → CDO of CDO → 投资者</li>
+<li><strong>评级机构松懈</strong>：Moody’s 结构化收入在 7 年内增长 5 倍</li>
+<li><strong>保险缺口</strong>：AIG 卖出数千亿的 CDS 保护，没有充分对冲</li>
+<li><strong>2006 年房价见顶</strong> → 违约上升 → 触发整个链条崩溃</li>
+</ol>
+<h3 id="102-危机后的改革">10.2 危机后的改革</h3>
+<ul>
+<li><strong>Fannie/Freddie 被接管</strong>（2008 年 9 月 7 日）</li>
+<li><strong>Dodd-Frank 法案</strong>（2010 年）——“skin in the game” 要求发起人保留 5%</li>
+<li><strong>QM（Qualified Mortgage）规则</strong>——限制非传统按揭产品</li>
+<li><strong>CFPB 成立</strong>——消费者金融保护局</li>
+<li><strong>评级机构改革</strong>——但利益冲突模型未根本改变</li>
+</ul>
+<h2 id="十一核心要点回顾">十一、核心要点回顾</h2>
+<ol>
+<li><strong>美国 MBS 市场（$12.2 万亿）比公司债市场还大</strong> —— 它不是可选话题，是资本市场的基石</li>
+<li><strong>“发起-转售”模式解决两个问题</strong>：存款不足 + 流动性风险</li>
+<li><strong>ABS 六步流程</strong> 必须背下来（资产→SPV→证券→服务商→瀑布→受托人）</li>
+<li><strong>AAA 次贷 MBS 大多数最终兑付</strong> —— 媒体的指责过度了，问题集中在 2006-08 年份的 mezzanine</li>
+<li><strong>Moody’s 结构化收入 7 年涨 5 倍</strong> —— 利益冲突是真实的</li>
+<li><strong>美国按揭债务 / GDP 从 73.5% 降至 50%</strong> —— 危机后去杠杆的证据</li>
+<li><strong>Agency MBS 份额从 36% 涨到 73%</strong> —— 政府担保在危机后的扩张</li>
+<li><strong>丹麦 vs 意大利的对比</strong> —— 法律执行效率决定按揭市场大小</li>
+<li><strong>Ginnie / Fannie / Freddie 的区别</strong> —— 完全政府 vs 隐性担保</li>
+<li><strong>中国按揭 = 多户公寓 + 租赁权 + 全浮动利率 + 六大行</strong> —— 完全不同的物种</li>
+</ol>
+<h2 id="延伸阅读">延伸阅读</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mortgage-backed_security">Wikipedia：Mortgage-backed security</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Residential_mortgage-backed_security">Wikipedia：Residential mortgage-backed security</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fannie_Mae">Wikipedia：Fannie Mae</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Freddie_Mac">Wikipedia：Freddie Mac</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ginnie_Mae">Wikipedia：Ginnie Mae</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Subprime_mortgage_crisis">Wikipedia：Subprime mortgage crisis</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Covered_bond">Wikipedia：Covered bond</a></li>
+<li>YouTube：搜索 “How mortgage-backed securities work”</li>
+<li>YouTube：搜索 “The Big Short explained”</li>
+<li>YouTube：搜索 “Fannie Mae Freddie Mac history”</li>
+<li>YouTube：搜索 “2008 mortgage crisis explained”</li>
+</ul> </article>  <nav class="mt-16 pt-8 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl"> <a href="/courses/international-capital-markets/08-sovereign-debt/" class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900"> <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1"> <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 上一篇
+</span> <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors"> 主权债务 </span> </a> <a href="/courses/international-capital-markets/10-public-equities/" class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900 sm:text-right sm:items-end"> <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1 sm:flex-row-reverse">
+下一篇 <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span> </span> <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors"> 公开股票市场 </span> </a> </nav>  <div class="mt-8 max-w-3xl text-center"> <a href="/courses/international-capital-markets/" class="inline-flex items-center gap-2 text-xs text-stone-400 hover:text-columbia-navy transition-colors no-underline">
+↑ 返回《国际资本市场》目录
+</a> </div>  </main> <!-- ── Footer ────────────────────────────────────── --> <footer class="bg-columbia-navy text-white/60 mt-0"> <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10"> <div> <p class="font-display font-semibold text-white text-lg">HappyColumbia</p> <p class="mt-2 text-sm leading-relaxed">
+经济 · 金融 · 政策<br>个人原创知识博客
+</p> <p class="mt-4 text-xs text-white/40 leading-relaxed">
+纯公益，不盈利、不收费、无广告。<br>
+内容为个人学习整理与原创评论，与任何机构无关联。
+</p> </div> <div> <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">导航</p> <ul class="space-y-2 text-sm"> <li><a href="/about-sipa/" class="hover:text-white transition-colors no-underline">关于 SIPA</a></li> <li><a href="/#courses" class="hover:text-white transition-colors no-underline">课程笔记</a></li> <li><a href="/career/" class="hover:text-white transition-colors no-underline">求职经验分享</a></li> <li><a href="/research/" class="hover:text-white transition-colors no-underline">金融投研</a></li> <li><a href="/join/" class="hover:text-white transition-colors no-underline">一起做这件事</a></li> </ul> </div> <div> <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">联系</p> <ul class="space-y-2 text-sm"> <li> <a href="mailto:yh3811@columbia.edu" class="hover:text-white transition-colors no-underline">
+yh3811@columbia.edu
+</a> </li> </ul> </div> </div> <div class="border-t border-white/10 max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30"> <span>© 2025 HappyColumbia</span> <span>内容受国际资深教授、著名投资家与银行家启发，由 AI 辅助整理，不代表任何机构立场。若内容涉及版权，请联系删除。</span> </div> </footer> <script type="module">const e=document.getElementById("site-header");if(e){const s=()=>{window.scrollY>60&&(e.classList.add("scrolled"),e.classList.remove("bg-transparent"),e.classList.add("bg-white/95","backdrop-blur-md"),e.querySelectorAll(".text-white\\/80").forEach(t=>t.classList.replace("text-white/80","text-stone-600")),e.querySelectorAll(".text-white").forEach(t=>t.classList.replace("text-white","text-stone-900")),e.querySelectorAll(".hover\\:bg-white\\/10").forEach(t=>t.classList.replace("hover:bg-white/10","hover:bg-stone-100")))};window.addEventListener("scroll",s,{passive:!0})}</script> </body><!-- ── Header scroll effect ───────────────────────── --></html>

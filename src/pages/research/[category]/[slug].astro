@@ -1,0 +1,210 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  let all: any[] = [];
+  try { all = await getCollection('research'); } catch (_) { return []; }
+
+  const publicCats = ['macro', 'policy', 'daily', 'thematic', 'articles'];
+  const entries = all.filter(e => publicCats.includes(e.data.category))
+    .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+  return entries.map((entry, i) => {
+    const parts = entry.id.split('/');
+    const category = parts[0];
+    const slug = parts.slice(1).join('/').replace(/\.md$/, '');
+    const sameCat = entries.filter(e => e.data.category === category);
+    const idx = sameCat.indexOf(entry);
+    return {
+      params: { category, slug },
+      props: {
+        entry,
+        prev: sameCat[idx + 1] ?? null,
+        next: sameCat[idx - 1] ?? null,
+        total: sameCat.length,
+        index: idx,
+      },
+    };
+  });
+}
+
+const { entry, prev, next, total, index } = Astro.props;
+const { category } = Astro.params as { category: string };
+const { Content } = await entry.render();
+
+const catTitle: Record<string, string> = {
+  macro:'宏观经济分析', policy:'政策追踪', daily:'热点追踪',
+  thematic:'主题深度', articles:'公众号文章',
+};
+const catBorderL: Record<string, string> = {
+  macro:'border-l-emerald-400', policy:'border-l-sky-400', daily:'border-l-amber-400',
+  thematic:'border-l-violet-400', articles:'border-l-rose-400',
+};
+
+const slugOf = (id: string) => id.split('/').slice(1).join('/').replace(/\.md$/, '');
+const title = catTitle[category] ?? category;
+const progress = Math.round(((index + 1) / total) * 100);
+---
+
+<Base title={entry.data.title}>
+
+  <!-- Reading header strip -->
+  <div class="-mx-6 -mt-14 mb-8 bg-white border-b border-stone-200 px-6 pt-14 pb-5">
+    <div class="max-w-3xl">
+      <a
+        href={`/research/${category}/`}
+        class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-3 group"
+      >
+        <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+        {title}
+      </a>
+      <h1 class="font-display font-bold text-2xl md:text-3xl text-stone-900 leading-tight">
+        {entry.data.title}
+      </h1>
+      {entry.data.summary && (
+        <p class="mt-2 text-stone-500 text-sm leading-relaxed">{entry.data.summary}</p>
+      )}
+      <!-- Progress + disclaimer -->
+      <div class="mt-4 flex items-center gap-3">
+        <div class="flex-1 h-1 bg-stone-100 rounded-full overflow-hidden">
+          <div class="h-full bg-columbia-blue rounded-full transition-all" style={`width:${progress}%`}></div>
+        </div>
+        <span class="text-xs text-stone-400 shrink-0">{index + 1} / {total}</span>
+      </div>
+      <p class="mt-3 text-[11px] text-amber-600 flex items-center gap-1.5">
+        <svg viewBox="0 0 12 12" fill="currentColor" class="w-3 h-3 shrink-0">
+          <path d="M5.23.745c.345-.79 1.425-.79 1.77 0l1.07 2.46 2.65.23c.85.074 1.192 1.133.538 1.696L9.2 6.87l.63 2.614c.2.836-.704 1.493-1.43 1.04L6 9.115l-2.4 1.41c-.726.453-1.63-.204-1.43-1.04L2.8 6.87.782 5.13c-.654-.563-.312-1.622.538-1.696l2.65-.23L5.23.745z"/>
+        </svg>
+        以学习研究为目的 · 不构成投资建议
+      </p>
+    </div>
+  </div>
+
+  <!-- Tags -->
+  {entry.data.tags && entry.data.tags.length > 0 && (
+    <div class="flex flex-wrap gap-2 mb-6 max-w-3xl">
+      {entry.data.tags.map((tag: string) => (
+        <span class="text-xs px-2.5 py-1 rounded-full bg-stone-100 text-stone-500">{tag}</span>
+      ))}
+    </div>
+  )}
+
+  <!-- Article body — exact same prose config as notes -->
+  <article
+    class="prose-reading prose prose-stone max-w-3xl
+           prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+           prose-h1:text-3xl prose-h1:mb-6
+           prose-h2:text-xl prose-h2:mt-12 prose-h2:pb-2 prose-h2:border-b prose-h2:border-stone-200 prose-h2:text-columbia-navy
+           prose-h3:text-base prose-h3:mt-8 prose-h3:text-stone-800
+           prose-p:leading-[1.9]
+           prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline
+           prose-strong:text-stone-900
+           prose-code:before:content-none prose-code:after:content-none
+           prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+           prose-code:text-stone-800 prose-code:font-normal prose-code:text-[0.85em]
+           prose-pre:bg-stone-900
+           prose-blockquote:border-l-4 prose-blockquote:border-columbia-blue
+           prose-blockquote:bg-columbia-light/30 prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-lg
+           prose-blockquote:text-stone-700 prose-blockquote:not-italic
+           prose-li:leading-[1.85]
+           prose-table:text-sm
+           prose-th:bg-columbia-light prose-th:text-columbia-navy"
+  >
+    <Content />
+  </article>
+
+  <!-- Bookmark button -->
+  <div class="mt-10 max-w-3xl">
+    <button
+      id="bookmark-btn"
+      data-title={entry.data.title}
+      data-url={`/research/${category}/${Astro.params.slug}/`}
+      data-category={category}
+      data-date={entry.data.date}
+      data-summary={entry.data.summary ?? ''}
+      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-stone-200 text-stone-500 text-sm hover:border-columbia-navy hover:text-columbia-navy transition-all"
+    >
+      <svg id="bookmark-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4">
+        <path d="M3 2h10v12l-5-3-5 3V2z"/>
+      </svg>
+      <span id="bookmark-label">收藏到我的思考</span>
+    </button>
+  </div>
+
+  <script>
+    (() => {
+      const btn = document.getElementById('bookmark-btn') as HTMLButtonElement;
+      if (!btn) return;
+      const icon = document.getElementById('bookmark-icon') as SVGElement;
+      const label = document.getElementById('bookmark-label') as HTMLElement;
+      const KEY = 'hc_bookmarks';
+      const { title, url, category, date, summary } = btn.dataset;
+
+      const getAll = (): any[] => JSON.parse(localStorage.getItem(KEY) ?? '[]');
+      const isSaved = () => getAll().some((b: any) => b.url === url);
+
+      const sync = () => {
+        const saved = isSaved();
+        icon.setAttribute('fill', saved ? 'currentColor' : 'none');
+        label.textContent = saved ? '已收藏 ✓' : '收藏到我的思考';
+        btn.classList.toggle('text-columbia-navy', saved);
+        btn.classList.toggle('border-columbia-navy', saved);
+      };
+
+      sync();
+
+      btn.addEventListener('click', () => {
+        const all = getAll();
+        if (isSaved()) {
+          localStorage.setItem(KEY, JSON.stringify(all.filter((b: any) => b.url !== url)));
+        } else {
+          all.unshift({ title, url, category, date, summary, note: '', savedAt: new Date().toISOString() });
+          localStorage.setItem(KEY, JSON.stringify(all));
+        }
+        sync();
+      });
+    })();
+  </script>
+
+  <!-- Prev / Next navigation -->
+  <nav class="mt-16 pt-8 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
+    {prev ? (
+      <a
+        href={`/research/${category}/${slugOf(prev.id)}/`}
+        class={`card-lift group flex flex-col bg-white border border-stone-200 border-l-4 ${catBorderL[category] ?? 'border-l-stone-300'} rounded-xl px-5 py-4 no-underline text-stone-900`}
+      >
+        <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1">
+          <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 上一篇
+        </span>
+        <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors">
+          {prev.data.title}
+        </span>
+      </a>
+    ) : <span />}
+
+    {next ? (
+      <a
+        href={`/research/${category}/${slugOf(next.id)}/`}
+        class={`card-lift group flex flex-col bg-white border border-stone-200 border-l-4 ${catBorderL[category] ?? 'border-l-stone-300'} rounded-xl px-5 py-4 no-underline text-stone-900 sm:text-right sm:items-end`}
+      >
+        <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1 sm:flex-row-reverse">
+          下一篇 <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span>
+        </span>
+        <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors">
+          {next.data.title}
+        </span>
+      </a>
+    ) : <span />}
+  </nav>
+
+  <div class="mt-8 max-w-3xl text-center">
+    <a
+      href={`/research/${category}/`}
+      class="inline-flex items-center gap-2 text-xs text-stone-400 hover:text-columbia-navy transition-colors no-underline"
+    >
+      ↑ 返回《{title}》列表
+    </a>
+  </div>
+
+</Base>

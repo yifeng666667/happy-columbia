@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+
+/* Header scroll shadow */
+header.scrolled {
+  box-shadow: 0 1px 20px rgba(0,0,0,0.08);
+}
+
+/* Hero image blend */
+.hero-img {
+  background-image:
+    linear-gradient(160deg, rgba(6,24,40,0.70) 0%, rgba(11,44,86,0.60) 50%, rgba(19,67,110,0.55) 100%),
+    url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2560&q=95');
+  background-size: cover;
+  background-position: center 40%;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(11,44,86,0.10);
+  border-color: #5B9BD5 !important;
+}
+
+/* Animated underline for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #0B2C56;
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after { width: 100%; }
+
+/* Category colour dots */
+.cat-core     { background: #8B5CF6; }
+.cat-economics { background: #10B981; }
+.cat-management { background: #F59E0B; }
+.cat-finance  { background: #3B82F6; }
+
+/* Prose reading improvements */
+.prose-reading {
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+/* Research page — Beijing Guomao night cityscape */
+.research-hero {
+  background-image:
+    radial-gradient(ellipse 180% 42% at 50% 108%, rgba(255,162,48,0.55) 0%, rgba(230,95,15,0.22) 42%, transparent 63%),
+    radial-gradient(ellipse 45% 65% at 18% 90%, rgba(55,95,195,0.4) 0%, transparent 58%),
+    radial-gradient(ellipse 45% 65% at 82% 85%, rgba(75,115,215,0.35) 0%, transparent 58%),
+    radial-gradient(ellipse 18% 45% at 38% 58%, rgba(110,155,245,0.22) 0%, transparent 55%),
+    linear-gradient(180deg, #020509 0%, #050a14 18%, #080f1e 48%, #0a1424 74%, #060d18 100%);
+}
+
+/* City lights flicker */
+@keyframes flicker {
+  0%, 100% { opacity: 0.7; }
+  45%       { opacity: 1; }
+  50%       { opacity: 0.5; }
+  55%       { opacity: 1; }
+}
+.city-flicker { animation: flicker 4s ease-in-out infinite; }
+.city-flicker-2 { animation: flicker 6s ease-in-out infinite 1.5s; }
+.city-flicker-3 { animation: flicker 5s ease-in-out infinite 3s; }
+
+/* Disclaimer banner */
+.disclaimer-bar {
+  background: linear-gradient(90deg, rgba(217,119,6,0.12) 0%, rgba(217,119,6,0.08) 50%, rgba(217,119,6,0.12) 100%);
+  border-top: 1px solid rgba(217,119,6,0.25);
+  border-bottom: 1px solid rgba(217,119,6,0.25);
+}
+
+/* Research category card */
+.research-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+}
+
+/* Stagger animation for hero children */
+.hero-child:nth-child(1) { animation-delay: 0.1s; }
+.hero-child:nth-child(2) { animation-delay: 0.25s; }
+.hero-child:nth-child(3) { animation-delay: 0.4s; }
+.hero-child:nth-child(4) { animation-delay: 0.55s; }
+.hero-child:nth-child(5) { animation-delay: 0.7s; }

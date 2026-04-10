@@ -1,0 +1,738 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="2026年中国投资思路：百年变局、大周期转换与未来方向">
+
+<style>
+  /* ── typography ── */
+  .report-body { max-width: 780px; margin: 0 auto; }
+
+  .report-h1 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.1rem; line-height: 1.25; color: #111; }
+  .report-h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.45rem; color: #0B2C56; margin: 3rem 0 1rem; padding-top: 2rem; border-top: 2px solid #e5e0d8; }
+  .report-h3 { font-weight: 700; font-size: 1.05rem; color: #1a1a1a; margin: 2rem 0 0.6rem; }
+  .report-p  { color: #3a3630; line-height: 1.9; margin: 0.9rem 0; font-size: 0.9375rem; }
+  .report-lead { font-size: 1.0625rem; color: #555; line-height: 1.85; }
+  .report-body strong { color: #111; }
+
+  /* ── hero ── */
+  .china-hero {
+    position: relative;
+    min-height: 72vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    background-image:
+      linear-gradient(170deg, rgba(60,10,10,0.88) 0%, rgba(120,25,25,0.78) 40%, rgba(10,20,45,0.82) 100%),
+      url('https://images.unsplash.com/photo-1508804052814-cd3ba865a116?auto=format&fit=crop&w=2560&q=95');
+    background-size: cover;
+    background-position: center 35%;
+    overflow: hidden;
+  }
+  .china-hero::after {
+    content:'';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 60% 30%, rgba(180,40,40,0.25) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  /* ── stat cards ── */
+  .stat-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 1px; background: #e5e0d8; }
+  .stat-item { background: #fff; padding: 1.2rem 1.4rem; }
+  .stat-num  { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #0B2C56; line-height: 1; }
+  .stat-label{ font-size: 0.72rem; color: #888; margin-top: 0.3rem; line-height: 1.35; }
+
+  /* ── toc ── */
+  .toc { background: #f5f3ef; border: 1px solid #e5e0d8; border-radius: 14px; padding: 1.5rem 1.8rem; }
+  .toc-title { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #aaa; margin-bottom: 1rem; }
+  .toc a { display: block; font-size: 0.85rem; color: #555; text-decoration: none; padding: 0.28rem 0; border-bottom: 1px solid transparent; transition: color .2s; }
+  .toc a:hover { color: #0B2C56; }
+  .toc-num { color: #B8860B; font-weight: 600; min-width: 1.8rem; display: inline-block; }
+
+  /* ── callout boxes ── */
+  .callout       { border-left: 4px solid #5B9BD5; background: #f0f6ff; border-radius: 0 10px 10px 0; padding: 1rem 1.3rem; margin: 1.5rem 0; }
+  .callout-gold  { border-left-color: #B8860B; background: #fdf9ee; }
+  .callout-red   { border-left-color: #c0392b; background: #fff2f0; }
+  .callout-green { border-left-color: #27ae60; background: #f0faf4; }
+  .callout p     { margin: 0; font-size: 0.9rem; color: #333; line-height: 1.7; }
+  .callout strong{ color: #0B2C56; }
+  .callout-gold strong { color: #8B6914; }
+  .callout-red strong  { color: #922B21; }
+
+  /* ── data tables ── */
+  .report-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin: 1.2rem 0; }
+  .report-table th { background: #0B2C56; color: #fff; padding: 0.6rem 0.8rem; text-align: left; font-weight: 600; }
+  .report-table td { padding: 0.55rem 0.8rem; border-bottom: 1px solid #eee; color: #333; vertical-align: top; line-height: 1.55; }
+  .report-table tr:last-child td { border-bottom: none; }
+  .report-table tr:nth-child(even) td { background: #fafaf8; }
+  .report-table .star { color: #B8860B; font-weight: 700; }
+  .report-table .hi   { color: #c0392b; font-weight: 600; }
+  .report-table .pos  { color: #27ae60; font-weight: 600; }
+
+  /* ── matrix grid ── */
+  .matrix { display: grid; grid-template-columns: auto 1fr 1fr; gap: 2px; font-size: 0.8rem; margin: 1.2rem 0; }
+  .matrix-label { background: #0B2C56; color: #fff; padding: 0.5rem 0.7rem; font-weight: 600; display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; text-orientation: mixed; border-radius: 4px; font-size: 0.72rem; }
+  .matrix-header { background: #1a3a6b; color: #fff; padding: 0.5rem 0.8rem; text-align: center; font-weight: 600; border-radius: 4px; }
+  .matrix-cell { padding: 0.9rem 1rem; border-radius: 4px; }
+  .matrix-s5 { background: #fef3cd; border: 1px solid #f0c040; }
+  .matrix-s4 { background: #e8f3fc; border: 1px solid #93c8e0; }
+  .matrix-s3 { background: #f0faf4; border: 1px solid #7ed9a0; }
+  .matrix-s2 { background: #fff8f0; border: 1px solid #f0b070; }
+  .matrix-cell .stars { font-size: 1rem; margin-bottom: 0.3rem; }
+  .matrix-cell .tag   { font-weight: 700; font-size: 0.78rem; color: #333; }
+  .matrix-cell .items { font-size: 0.75rem; color: #555; line-height: 1.6; margin-top: 0.2rem; }
+
+  /* ── section badge ── */
+  .section-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: #0B2C56; color: #fff;
+    padding: 0.25rem 0.85rem; border-radius: 999px;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+
+  /* ── risk list ── */
+  .risk-item { display: flex; gap: 1rem; padding: 0.9rem 0; border-bottom: 1px solid #eee; }
+  .risk-item:last-child { border-bottom: none; }
+  .risk-tag { flex-shrink: 0; background: #fff2f0; color: #c0392b; border: 1px solid #f5c6c0; border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.7rem; font-weight: 600; height: fit-content; white-space: nowrap; }
+  .risk-text { font-size: 0.85rem; color: #444; line-height: 1.6; }
+  .risk-data { font-size: 0.75rem; color: #c0392b; font-weight: 600; margin-top: 0.2rem; }
+
+  /* ── direction cards ── */
+  .dir-card { background: #fff; border: 1px solid #e5e0d8; border-radius: 12px; padding: 1.3rem 1.5rem; margin: 1rem 0; }
+  .dir-card .dir-num { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #B8860B; font-weight: 700; margin-bottom: 0.4rem; }
+  .dir-card h4 { font-size: 1rem; font-weight: 700; color: #0B2C56; margin: 0 0 0.6rem; }
+  .dir-card p  { font-size: 0.85rem; color: #555; line-height: 1.65; margin: 0; }
+
+  /* ── profit tier ── */
+  .profit-tier { border-left: 4px solid; padding: 1rem 1.2rem; margin: 1rem 0; border-radius: 0 10px 10px 0; }
+  .tier-high   { border-color: #27ae60; background: #f0faf4; }
+  .tier-mid    { border-color: #5B9BD5; background: #f0f6ff; }
+  .tier-low    { border-color: #e74c3c; background: #fff2f0; }
+  .tier-label  { font-weight: 700; font-size: 0.82rem; margin-bottom: 0.5rem; }
+  .tier-high .tier-label  { color: #1a7a40; }
+  .tier-mid  .tier-label  { color: #1a4e8a; }
+  .tier-low  .tier-label  { color: #8B1A1A; }
+
+  /* ── wave transition ── */
+  .wave-top { display: block; width: 100%; }
+  .wave-bot { display: block; width: 100%; margin-top: -2px; }
+
+  /* ── source list ── */
+  .source-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .source-tag  { background: #f5f3ef; border: 1px solid #e5e0d8; border-radius: 6px; padding: 0.25rem 0.7rem; font-size: 0.72rem; color: #666; }
+
+  /* ── career path ── */
+  .path-row { display: flex; gap: 0.8rem; padding: 0.7rem 0; border-bottom: 1px solid #f0ece5; align-items: flex-start; }
+  .path-year { flex-shrink: 0; width: 5.5rem; font-size: 0.72rem; font-weight: 700; color: #B8860B; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 0.1rem; }
+  .path-text { font-size: 0.83rem; color: #444; line-height: 1.6; }
+
+  @media (max-width: 640px) {
+    .report-h1 { font-size: 1.55rem; }
+    .stat-bar { grid-template-columns: 1fr 1fr; }
+    .matrix { font-size: 0.72rem; }
+  }
+</style>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  HERO — Great Wall                          -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="-mx-6 -mt-14 china-hero">
+
+  <div class="absolute inset-0 pointer-events-none" style="z-index:1;">
+    <!-- decorative red circle glow -->
+    <div style="position:absolute;top:18%;left:55%;width:420px;height:420px;background:radial-gradient(circle,rgba(200,40,40,0.18),transparent 70%);transform:translate(-50%,-50%);"></div>
+  </div>
+
+  <div class="relative px-6 pb-20 pt-32 max-w-5xl mx-auto w-full" style="z-index:2;">
+
+    <div class="flex flex-wrap items-center gap-3 mb-5">
+      <span style="background:rgba(184,134,11,0.25);border:1px solid rgba(184,134,11,0.55);color:#f5d060;font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;padding:0.3rem 1rem;border-radius:999px;">
+        我的思考 · My Thinking
+      </span>
+      <span style="color:rgba(255,255,255,0.4);font-size:0.78rem;">2026-04-08</span>
+    </div>
+
+    <h1 class="font-display font-bold text-white mb-5 leading-tight"
+        style="font-size:clamp(1.8rem,4.5vw,3.2rem);max-width:680px;text-shadow:0 2px 12px rgba(0,0,0,0.5);">
+      2026年中国投资思路
+    </h1>
+
+    <p style="color:rgba(255,255,255,0.65);font-size:1.05rem;line-height:1.75;max-width:520px;margin-bottom:2rem;">
+      百年变局、大周期转换与未来方向<br/>
+      <span style="font-size:0.9rem;color:rgba(255,255,255,0.4);">全面分析六条主线 · A股盈利扫描 · 五大投资方向 · AI时代职业路线图</span>
+    </p>
+
+    <div class="flex flex-wrap gap-x-6 gap-y-2" style="font-size:0.82rem;color:rgba(255,255,255,0.4);">
+      <span><span style="color:rgba(255,255,255,0.75);font-weight:600;">8</span> 个分析部分</span>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <span>约 15,000 字深度分析</span>
+      <span style="color:rgba(255,255,255,0.2);">·</span>
+      <span>数据截至 2026 年 4 月</span>
+    </div>
+
+  </div>
+
+  <!-- wave bottom -->
+  <svg class="wave-bot" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="z-index:3;position:relative;">
+    <path d="M0 56L1440 56L1440 22C1200 50 960 4 720 22C480 40 240 2 0 22L0 56Z" fill="#f8f7f4"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  STAT BAR                                   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="bg-[#f8f7f4] px-6 pb-0">
+  <div class="max-w-5xl mx-auto">
+    <div class="stat-bar rounded-xl overflow-hidden shadow-sm border border-[#e5e0d8]">
+      <div class="stat-item">
+        <div class="stat-num">5.0%</div>
+        <div class="stat-label">2025 GDP 增速<br/>分季度逐季递减</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">38%</div>
+        <div class="stat-label">消费占 GDP 比重<br/>美国为 68%</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">8.4万亿</div>
+        <div class="stat-label">2025 房产销售额<br/>较峰值腰斩 54%</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">$4,325</div>
+        <div class="stat-label">2025 金价 / 盎司<br/>全年涨幅 +66%</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">792万</div>
+        <div class="stat-label">2025 年出生人口<br/>历史新低，同比 −17%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  MAIN CONTENT                               -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="bg-[#f8f7f4] px-6 py-14">
+<div class="report-body">
+
+  <!-- Back link -->
+  <a href="/research/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    返回金融投研
+  </a>
+
+  <!-- TOC -->
+  <nav class="toc mb-14">
+    <p class="toc-title">目录 / Contents</p>
+    <div class="space-y-0.5">
+      <a href="#part1"><span class="toc-num">一</span>历史坐标——我们正站在什么样的节点</a>
+      <a href="#part2"><span class="toc-num">二</span>中国经济发展的六条主线</a>
+      <a href="#part3"><span class="toc-num">三</span>六大风险清单（2026 最新数据）</a>
+      <a href="#part4"><span class="toc-num">四</span>经济大周期的深层分析</a>
+      <a href="#part5"><span class="toc-num">五</span>投资方向的深层逻辑</a>
+      <a href="#part6"><span class="toc-num">六</span>A 股行业盈利扫描——钱在往哪里流</a>
+      <a href="#part7"><span class="toc-num">七</span>AI 时代的职业方向——文商科的路线图</a>
+      <a href="#part8"><span class="toc-num">八</span>总结——一句话和一张图</a>
+    </div>
+  </nav>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 1                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part1">
+    <div class="section-badge">第一部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">历史坐标——我们正站在什么样的节点</h2>
+
+    <h3 class="report-h3">1.1 百年变局的真正含义：不是隐喻，是结构性现实</h3>
+    <p class="report-p">"百年未有之大变局"不是口号。如果你把时间轴拉到 1914 年，会发现今天的世界和当时的结构性相似度极高。</p>
+
+    <div class="callout callout-gold">
+      <p><strong>关键历史教训：</strong>1914–1945 年的秩序转换期，是长达 30 年的反复震荡。在这个过程中，旧秩序的受益者（英国、欧洲旧贵族、农业地主）持续丧失财富，而新秩序的建设者（美国工业资本、石油寡头、技术创新者）持续积累财富。<strong>每一次国际秩序重构期，都是旧资产大幅贬值、新资产大幅升值的时期。</strong></p>
+    </div>
+
+    <div class="overflow-x-auto mt-4 mb-6">
+    <table class="report-table">
+      <thead><tr>
+        <th>维度</th><th>1910–1945</th><th>2020–2040（我们所在的位置）</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>霸权交替</td><td>英国衰落 → 美国崛起</td><td>美国相对衰落 → 中国/多极崛起</td></tr>
+        <tr><td>货币体系</td><td>金本位崩塌 → 美元体系建立</td><td>美元主导承压 → 多币种/数字货币/黄金回归</td></tr>
+        <tr><td>核心技术</td><td>钢铁、石油、化工、内燃机</td><td>半导体、AI、量子计算、能源转型</td></tr>
+        <tr><td>贸易体系</td><td>自由贸易瓦解 → 经济集团化</td><td>WTO碎片化 → 供应链脱钩、关税战</td></tr>
+        <tr><td>意识形态</td><td>自由主义 vs 法西斯 vs 共产主义</td><td>自由民主 vs 国家资本主义 vs 民粹主义</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 class="report-h3">1.2 康德拉季耶夫长波：我们在第六波的起点</h3>
+    <p class="report-p">经济大周期每 40–60 年经历一轮由重大技术革命驱动的"创造性毁灭"。我们正处在第五波的"冬季"和第六波的"春季"之间。</p>
+
+    <div class="overflow-x-auto">
+    <table class="report-table">
+      <thead><tr><th>波次</th><th>时期</th><th>核心技术</th><th>代表性财富形态</th></tr></thead>
+      <tbody>
+        <tr><td>第一波</td><td>1780–1840</td><td>纺织机械、水力</td><td>英国纺织厂主</td></tr>
+        <tr><td>第三波</td><td>1890–1940</td><td>电力、化工、内燃机</td><td>石油寡头、汽车工业</td></tr>
+        <tr><td>第五波</td><td>1990–2020</td><td>互联网、移动通信、ICT</td><td>硅谷科技巨头、平台经济</td></tr>
+        <tr style="background:#fffbe6;"><td class="star">第六波 ★</td><td class="star">2020–2060?</td><td class="star">AI、清洁能源、生物技术、机器人</td><td class="star">正在形成中…</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout mt-4">
+      <p><strong>中国竞逐第六波的三张底牌：</strong>① 硬制造底座——全球唯一起跑即完备的机电软硬件一体化供应链；② 能源基建——光伏、风电、储能网络已为第六波囤积最廉价的能源；③ 海量复杂场景——世界工厂+高密度城市，为 AI 进入物理世界提供独一无二的训练道场。</p>
+    </div>
+
+    <div class="callout callout-red mt-3">
+      <p><strong>三大生死考验：</strong>① 制度能不能给创新让路？② 资本能不能流向真正有生产率的方向？③ 人才能不能被激活而不是被内卷消耗？——2024 年国考报名 <strong>303 万人</strong>，录取比约 77:1，这是一场极端的智力错配。</p>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 2                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part2">
+    <div class="section-badge mt-10">第二部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">中国经济发展的六条主线</h2>
+
+    <h3 class="report-h3">主线一：从投资拉动转向消费拉动</h3>
+
+    <div class="overflow-x-auto mb-4">
+    <table class="report-table">
+      <thead><tr><th>维度</th><th>数据</th><th>解读</th></tr></thead>
+      <tbody>
+        <tr><td>2025 年 GDP</td><td class="hi">140.19 万亿，同比 +5.0%</td><td>分季度逐季递减：5.4→5.2→4.8→4.5</td></tr>
+        <tr><td>消费占 GDP</td><td class="hi">约 38%</td><td>美国 68%、德国 52%、日本 55%</td></tr>
+        <tr><td>居民储蓄率</td><td class="hi">33–35%</td><td>美国约 5%，全球极端值</td></tr>
+        <tr><td>2026 刺激包</td><td>1000 亿 + 2500 亿超长期特别国债</td><td>合计仅占社零 0.7%</td></tr>
+        <tr><td>IMF 2026 预测</td><td>4.5%（上调 0.3pp）</td><td>中期 2030 年降至约 3.5%</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout callout-gold">
+      <p><strong>核心判断：</strong>5% 是政策硬撑的结果，不是市场自发均衡。消费修复的真正拐点在家庭资产负债表，不在刺激政策。房价止跌（预计 2027 年企稳）→ 储蓄率拐头（每降 1pp 释放约 1.4 万亿增量）→ 就业改善，三个先决条件缺一不可。<strong>这是一个 5–15 年的结构性过程。</strong></p>
+    </div>
+
+    <h3 class="report-h3">主线二：房地产完成功能转型</h3>
+    <p class="report-p">2025 年商品房销售额约 <strong>8.4 万亿元</strong>，仅为 2021 年峰值（18.2 万亿元）的 <strong>46%</strong>。S&P 预测 2026 年再降 6–7%，房价再跌 1.5–2.5%，反弹可能要到 <strong>2027 年</strong>。</p>
+    <div class="callout callout-red">
+      <p><strong>投资含义：</strong>地产开发商不是投资标的。但地产下行创造的新机会——城市更新、物业服务、保障房建设、基础设施 REITs——是转型期的替代方向。地产触底（2027 年前后）后，核心城市优质资产可能迎来价值重估。</p>
+    </div>
+
+    <h3 class="report-h3">主线三：科技自立与产业升级</h3>
+    <p class="report-p">中国 2025 年研发支出约 <strong>3.6 万亿元</strong>，占 GDP 约 2.7%。中国 AI 专利全球占比约 <strong>40%</strong>，位居世界第一。</p>
+
+    <div class="overflow-x-auto mb-4">
+    <table class="report-table">
+      <thead><tr><th>维度</th><th>美国路径</th><th>中国路径</th></tr></thead>
+      <tbody>
+        <tr><td>起点</td><td>算力先行：Stargate $5000 亿</td><td>应用先行：算力受限倒逼效率创新</td></tr>
+        <tr><td>核心优势</td><td>前沿模型能力、芯片设计链</td><td>应用层规模、工程效率、数据主权</td></tr>
+        <tr><td>资本结构</td><td>OpenAI 2025 融资 $400 亿</td><td>BAT + 政府产业基金双轨</td></tr>
+        <tr><td>代表事件</td><td>GPT-4o/o3 为当前前沿</td><td>DeepSeek-R1：$600 万训练成本复现 o1 级能力</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout callout-gold">
+      <p><strong>DeepSeek 的深层意义：</strong>稀缺算力倒逼的工程效率创新，可以部分打破算力壁垒。这让市场重新评估了"算力垄断=AI垄断"的假设——也是 NVIDIA 2025 年 1 月单日蒸发约 <strong>$6000 亿</strong>市值的根本原因。</p>
+    </div>
+
+    <h3 class="report-h3">主线四：民营经济与服务业信心修复</h3>
+    <p class="report-p">民营经济贡献 GDP 约 <strong>60%</strong>、就业约 <strong>80%</strong>、技术创新约 <strong>70%</strong>。2025 年 4 月，全国人大通过中国首部《民营经济促进法》，是制度性突破。青年失业率（16–24 岁）2025 年 8 月峰值 <strong>18.9%</strong>，2026 年 2 月仍达 <strong>16.1%</strong>。</p>
+
+    <h3 class="report-h3">主线五：财政与地方债体系重构</h3>
+
+    <div class="overflow-x-auto mb-4">
+    <table class="report-table">
+      <thead><tr><th>类别</th><th>规模</th><th>占 GDP 比重</th></tr></thead>
+      <tbody>
+        <tr><td>地方政府显性债务</td><td>约 40 万亿元</td><td>~28%</td></tr>
+        <tr><td>城投隐性债务（LGFV）</td><td>IMF 估算约 58 万亿元</td><td>~40%</td></tr>
+        <tr style="font-weight:700;"><td>广义地方债务合计</td><td class="hi">约 100–120 万亿元</td><td class="hi">约 70–85%</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout callout-red">
+      <p><strong>核心矛盾：</strong>2021 年土地出让收入峰值 8.7 万亿元，2025 年仅 4.15 万亿元，较峰值减少 <strong>52.3%</strong>。中央化债 4 万亿对比隐性债务 60–80 万亿，仅覆盖约 5–7%。真正的解题钥匙在于财税体制改革——市场共识是这个过程需要 <strong>5–8 年</strong>才能基本完成。</p>
+    </div>
+
+    <h3 class="report-h3">主线六：开放升级——从"卖货"到"建体系"</h3>
+    <p class="report-p">2025 年外贸总额 45.47 万亿元，对一带一路国家贸易占比 <strong>51.7%</strong>，已超过半壁江山。人民币 SWIFT 占比 <strong>4.33%</strong>，美元在全球外储中占比降至 <strong>56.3%</strong>（1999 年为 71%）。黄金在全球外储中占比从 2017 年 13% 飙升至 <strong>30%</strong>。</p>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 3                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part3">
+    <div class="section-badge mt-10">第三部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">六大风险清单（2026 最新数据）</h2>
+
+    <div class="bg-white rounded-2xl border border-[#e5e0d8] p-5 mt-2">
+      <div class="risk-item">
+        <span class="risk-tag">房地产</span>
+        <div><p class="risk-text">房产销售额为 2021 年峰值的 46%，负循环持续</p><p class="risk-data">S&P：2026 年再降 6–7%，2027 年才可能企稳</p></div>
+      </div>
+      <div class="risk-item">
+        <span class="risk-tag">通缩</span>
+        <div><p class="risk-text">PPI 连续 40 个月负增长，企业去库存尚未结束</p><p class="risk-data">2025 全年 CPI 0.0%，PPI -2.6%</p></div>
+      </div>
+      <div class="risk-item">
+        <span class="risk-tag">地方债</span>
+        <div><p class="risk-text">仅 3% 的城投 ROE 达到 4% 以上，化债需 3–5 年以上</p><p class="risk-data">IMF 估算 LGFV 隐性债务约 58 万亿元</p></div>
+      </div>
+      <div class="risk-item">
+        <span class="risk-tag">贸易摩擦</span>
+        <div><p class="risk-text">美国关税历经 145%→10%→法律挑战→再加征 10%；欧盟 EV 关税最高 45.3%</p><p class="risk-data">2026 年 3 月新一轮 301 调查启动</p></div>
+      </div>
+      <div class="risk-item">
+        <span class="risk-tag">人口</span>
+        <div><p class="risk-text">生育率 1.09，2035 年前劳动年龄人口年均减少约 1000 万</p><p class="risk-data">2025 年出生人口仅 792 万，历史新低；总人口连续第四年负增长</p></div>
+      </div>
+      <div class="risk-item" style="border-bottom:none;">
+        <span class="risk-tag">动能切换</span>
+        <div><p class="risk-text">青年失业率高位、民间投资信心偏弱</p><p class="risk-data">2025 年 GDP 逐季走弱：Q1 5.4% → Q4 4.5%</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 4                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part4">
+    <div class="section-badge mt-10">第四部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">经济大周期的深层分析</h2>
+
+    <h3 class="report-h3">4.1 三个周期的叠加</h3>
+    <div class="space-y-3 mt-2">
+      <div class="dir-card">
+        <div class="dir-num">短周期 3–5 年</div>
+        <h4>库存 / 信用周期</h4>
+        <p>房地产去库存仍在进行，PPI 连续 40 个月负增长，信用脉冲偏弱</p>
+      </div>
+      <div class="dir-card">
+        <div class="dir-num">中周期 10–20 年</div>
+        <h4>资产负债表修复周期（类日本 1990s）</h4>
+        <p>居民、企业、地方政府同时经历资产端缩水与负债端刚性。解法：财政扩张替代私人部门需求不足，这正是 2026 年赤字率提高到 4% 的逻辑</p>
+      </div>
+      <div class="dir-card">
+        <div class="dir-num">超长周期 50–100 年</div>
+        <h4>国际秩序重构周期</h4>
+        <p>从"融入现有秩序的受益者"变成"参与重建新秩序的竞争者"，这个周期决定中国能否获得与经济体量匹配的规则制定权</p>
+      </div>
+    </div>
+
+    <h3 class="report-h3">4.2 中国会"日本化"吗？</h3>
+    <div class="overflow-x-auto">
+    <table class="report-table">
+      <thead><tr><th>维度</th><th>1990 年代日本</th><th>2020 年代中国</th></tr></thead>
+      <tbody>
+        <tr><td>人均 GDP（泡沫破裂时）</td><td>~$3.5 万（已是发达国家）</td><td class="pos">~$1.3 万（仍是中等收入）</td></tr>
+        <tr><td>产业升级空间</td><td>有限（已在前沿）</td><td class="pos">较大（AI/机器人/新能源仍在追赶和领先交替中）</td></tr>
+        <tr><td>内需市场规模</td><td>1.2 亿人</td><td class="pos">14 亿人</td></tr>
+        <tr><td>中央政府杠杆率</td><td>受限于已有高债务</td><td class="pos">约 24%，全球主要经济体中仍属低位</td></tr>
+        <tr><td>外部环境</td><td>美日同盟框架，无地缘对抗</td><td class="hi">美中战略竞争，技术脱钩</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout">
+      <p><strong>结论：</strong>中国不太可能完全"日本化"，但很可能经历 <strong>5–8 年</strong>的类日本调整期——增速中枢下移、通缩压力反复、房地产持续调整。走出这个调整期的关键变量：新产业能否足够快地替代旧产业成为增长引擎。</p>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 5                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part5">
+    <div class="section-badge mt-10">第五部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">投资方向的深层逻辑</h2>
+
+    <h3 class="report-h3">5.1 战略方向矩阵</h3>
+    <div class="matrix mt-4">
+      <div></div>
+      <div class="matrix-header">政策确定性高</div>
+      <div class="matrix-header">政策确定性低</div>
+      <div class="matrix-label">需求确定性高</div>
+      <div class="matrix-cell matrix-s5">
+        <div class="stars">★★★</div>
+        <div class="tag">科技自立</div>
+        <div class="items">AI / 半导体 / 人形机器人<br/>国家安全级需求 + 政策资源双驱动</div>
+      </div>
+      <div class="matrix-cell matrix-s4">
+        <div class="stars">★★</div>
+        <div class="tag">消费修复</div>
+        <div class="items">医疗 / 养老 / 服务消费<br/>结构性需求，但节奏不确定</div>
+      </div>
+      <div class="matrix-label">需求确定性低</div>
+      <div class="matrix-cell matrix-s3">
+        <div class="stars">★★</div>
+        <div class="tag">新能源 / 绿色</div>
+        <div class="items">政策强推但产能过剩风险<br/>需精选龙头</div>
+      </div>
+      <div class="matrix-cell matrix-s2">
+        <div class="stars">★</div>
+        <div class="tag">地产产业链</div>
+        <div class="items">需求萎缩 + 政策底不明<br/>等待 2027 年触底信号</div>
+      </div>
+    </div>
+
+    <h3 class="report-h3">5.2 五个最值得关注的投资方向</h3>
+
+    <div class="dir-card mt-4">
+      <div class="dir-num">方向一</div>
+      <h4>AI + 具身智能（人形机器人）</h4>
+      <p>同时被三股力量推动：技术成熟度跨过临界点 + 人口危机倒逼（2025 年出生仅 792 万，20 年后就是劳动力缺口）+ 国家战略顶层支持。2025 年全球人形机器人 <strong>90% 来自中国</strong>，BYD 计划 2026 年部署 20,000 台。</p>
+    </div>
+
+    <div class="dir-card">
+      <div class="dir-num">方向二</div>
+      <h4>出海企业（第二增长曲线）</h4>
+      <p>国内存量竞争太卷，全球南方增量太大。中国品牌 NEV 出口 2025 年激增 <strong>+139% 至 204 万辆</strong>，一带一路沿线贸易超 51.7%。出海质量升级：从"卖便宜货"到"输出品牌+技术+标准"。风险：贸易摩擦加剧，需要"去中心化布局"能力。</p>
+    </div>
+
+    <div class="dir-card">
+      <div class="dir-num">方向三</div>
+      <h4>内需消费修复（长坡厚雪，需耐心）</h4>
+      <p>消费/GDP 从 38%→55% 的追赶空间是万亿级别的。最确定的子赛道：医疗健康（老龄化+消费升级）、银发经济（60 岁以上近 3 亿）、国潮品牌替代外资（珀莱雅/安踏已验证）、服务消费（当前仅 44%，与发达国家差距大）。</p>
+    </div>
+
+    <div class="dir-card">
+      <div class="dir-num">方向四</div>
+      <h4>黄金与资源类资产（秩序重构期的"硬通货"）</h4>
+      <p>这一轮黄金牛市不是普通避险，而是货币秩序重构的体现。2025 年金价 <strong>+66% 至 $4,325/盎司</strong>，2026 年 1 月创历史新高 <strong>$5,595/盎司</strong>。全球央行连续三年购金超 1000 吨。中国央行黄金占外储仅 9.6%，与美/德/法的 60–70% 相比仍有大幅增持空间。</p>
+    </div>
+
+    <div class="dir-card">
+      <div class="dir-num">方向五</div>
+      <h4>财政重构受益方——利率债与央企</h4>
+      <p>中央加杠杆、地方去杠杆是大方向。2026 年赤字率创历史新高 4%，超长期特别国债规模扩大。央企在基建、能源、科技承担更多角色，A 股"中字头"估值折扣因政策逻辑变化而持续收敛。</p>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 6                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part6">
+    <div class="section-badge mt-10">第六部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">A 股行业盈利扫描——钱在往哪里流</h2>
+
+    <div class="callout">
+      <p><strong>整体画面：</strong>2025 年 H1 全部 A 股营业总收入 34.99 万亿元，同比 <strong>+0.34%</strong>；归母净利润 2.99 万亿元，同比 <strong>+3.1%</strong>。几乎原地踏步——但少数高景气赛道与大量存量竞争行业之间，分化极大。</p>
+    </div>
+
+    <h3 class="report-h3">营收增速 &amp; 净利润增速排行（2025 H1）</h3>
+    <div class="overflow-x-auto">
+    <table class="report-table">
+      <thead><tr><th>行业</th><th>营收增速</th><th>净利润增速</th><th>核心驱动</th></tr></thead>
+      <tbody>
+        <tr><td class="star">AI 相关</td><td>—</td><td class="star">+819%</td><td>利润基数极低，弹性极大</td></tr>
+        <tr><td class="star">半导体</td><td class="star">+14.21%</td><td class="star">+64%</td><td>国产替代 + AI 算力需求</td></tr>
+        <tr><td>信息技术</td><td>+9.4%</td><td>—</td><td>AI 应用爆发</td></tr>
+        <tr><td>创新药</td><td>—</td><td>Q1 同比 <strong>+21.5%</strong></td><td>出海逻辑兑现</td></tr>
+        <tr><td>医疗机器人</td><td>营收 +114%</td><td>毛利 +209%</td><td>手术机器人渗透率快速提升</td></tr>
+        <tr><td>农林牧渔</td><td>+9.03%</td><td>+149%</td><td>猪周期触底回升</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 class="report-h3">行业利润率全景——去有鱼的地方钓鱼</h3>
+    <div class="callout callout-gold mb-4">
+      <p>巴菲特说："去有鱼的地方钓鱼。"增速快不等于赚钱，营收大不等于利润厚。<strong>先看利润率确认"这里有没有鱼"，再看增速确认"鱼群在变大还是变小"，最后看估值确认"钓的人是不是已经太多了"。</strong></p>
+    </div>
+
+    <div class="profit-tier tier-high">
+      <div class="tier-label">高利润率行业（净利率 &gt;15%）——护城河深、定价权强</div>
+      <div class="overflow-x-auto">
+      <table class="report-table" style="margin:0;">
+        <thead><tr><th>行业</th><th>净利率</th><th>毛利率</th><th>ROE</th><th>护城河来源</th></tr></thead>
+        <tbody>
+          <tr><td>高端白酒</td><td class="star">30–35%</td><td>75–85%</td><td>25–30%</td><td>品牌即定价权（品牌税）</td></tr>
+          <tr><td>创新药/生物科技</td><td class="star">20–30%</td><td>80–90%</td><td>15–25%</td><td>专利保护期内的垄断定价</td></tr>
+          <tr><td>消费医疗（眼科/齿科/医美）</td><td class="star">20–28%</td><td>50–70%</td><td>20–30%</td><td>自费项目，不受医保控费</td></tr>
+          <tr><td>游戏（头部）</td><td class="star">25–35%</td><td>70–80%</td><td>20–35%</td><td>边际成本趋近于零</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="profit-tier tier-mid mt-4">
+      <div class="tier-label">中等利润率（5–15%）——规模效应驱动，龙头吃肉</div>
+      <div class="overflow-x-auto">
+      <table class="report-table" style="margin:0;">
+        <thead><tr><th>行业</th><th>净利率</th><th>关键逻辑</th></tr></thead>
+        <tbody>
+          <tr><td>半导体设计</td><td>12–20%</td><td>国产替代给了溢价窗口，但竞争加剧后承压</td></tr>
+          <tr><td>AI 软件/SaaS</td><td>8–15%</td><td>毛利率高但销售费用吃掉大量利润，头部差距悬殊</td></tr>
+          <tr><td>新能源车（整车）</td><td>5–8%</td><td>年销 100 万辆是盈利分水岭；多数新势力仍亏损</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="profit-tier tier-low mt-4">
+      <div class="tier-label">低利润率/亏损行业——卷到极致，慎入</div>
+      <div class="overflow-x-auto">
+      <table class="report-table" style="margin:0;">
+        <thead><tr><th>行业</th><th>净利率</th><th>为什么不赚钱</th></tr></thead>
+        <tbody>
+          <tr><td>光伏（组件/电池片）</td><td class="hi">-2% ~ 3%</td><td>产能是需求的 2 倍以上，价格战已打到成本线以下</td></tr>
+          <tr><td>地产开发</td><td class="hi">-5% ~ 2%</td><td>销售腰斩 + 高杠杆 + 减值计提，行业整体在出清</td></tr>
+          <tr><td>传统燃油车</td><td class="hi">1–3%</td><td>被 NEV 直接替代，价格战惨烈，利润趋近于零</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="callout callout-gold mt-4">
+      <p><strong>当前最优象限：利润率高 × 增速高</strong>——创新药出海、AI 应用头部、消费医疗、半导体国产替代。低利润率行业只在两个时点值得介入：① 行业出清到只剩 2–3 家龙头时；② 技术变革创造新的利润池时（如钙钛矿、固态电池）。在出清完成之前，这些行业是价值陷阱而非价值洼地。</p>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 7                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part7">
+    <div class="section-badge mt-10">第七部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">AI 时代的职业方向——文商科 / 金融人的路线图</h2>
+
+    <div class="callout callout-red">
+      <p><strong>一个残酷的现实：</strong>AI 首先替代的不是蓝领工人，而是白领知识工作者中做信息处理的那一层。PwC 2025 全球 AI 就业气压计：具备 AI 技能的工作者已享有 <strong>56% 的薪资溢价</strong>，AI 暴露度高的岗位数量增长是普通岗位的 <strong>3.5 倍</strong>。</p>
+    </div>
+
+    <h3 class="report-h3">文商科的"不可替代区"</h3>
+    <div class="space-y-3 mt-3">
+      <div class="dir-card">
+        <div class="dir-num">盲区一</div>
+        <h4>不确定性下的判断（Judgment Under Uncertainty）</h4>
+        <p>AI 面对"从未发生过的事"没有"直觉"，只有历史模式匹配。2025 年 4 月美国关税一夜升至 145%、DeepSeek 引发 NVIDIA 单日蒸发 $6000 亿——真正赚到钱的不是跑模型最快的人，而是理解政策博弈逻辑、提前预判方向的人。</p>
+      </div>
+      <div class="dir-card">
+        <div class="dir-num">盲区二</div>
+        <h4>跨文化信任与关系网络（Relational Capital）</h4>
+        <p>中国企业大规模出海（NEV 出口 +139%），但 AI 无法替你在雅加达建立信任、在利雅得理解监管潜规则、在华盛顿维护政策关系。信任的对象是人，不是机器。</p>
+      </div>
+      <div class="dir-card">
+        <div class="dir-num">盲区三</div>
+        <h4>叙事与说服（Narrative Power）</h4>
+        <p>投资备忘录、政策建议、董事会演示——核心不是"信息准确"（AI 已能做到），而是用什么框架讲故事、说服谁、推动什么决策。这是人文社科训练的核心产出。</p>
+      </div>
+    </div>
+
+    <h3 class="report-h3">五条高确信度的职业路径</h3>
+    <div class="overflow-x-auto mt-4">
+    <table class="report-table">
+      <thead><tr><th>路径</th><th>核心逻辑</th><th>具体方向</th></tr></thead>
+      <tbody>
+        <tr><td class="star">① 跨境投资/出海金融</td><td>中国资本出海是最确定的结构性趋势，技术壁垒在语言/制度理解</td><td>中金海外、PE 跨境基金、BYD/宁德海外战略团队、亚投行</td></tr>
+        <tr><td>② AI + 金融融合岗</td><td>纯金融被压缩，纯 AI 内卷，交叉点最稀缺</td><td>买方 AI-augmented 研究员、金融科技产品/策略、基本面量化</td></tr>
+        <tr><td>③ 宏观政策研究</td><td>中国政策的隐性知识是 AI 最难学习的</td><td>大型企业政府事务、CF40/中金研究院、券商宏观策略</td></tr>
+        <tr><td>④ 财富管理/家族办公室</td><td>中国 HNW 200 万人，可投资 80 万亿+，行业仍处早期</td><td>私人银行、独立财富管理机构、信托规划</td></tr>
+        <tr><td>⑤ 内容与影响力</td><td>专业知识 + 表达能力 + 个人品牌，是 AI 最难替代的组合</td><td>财经深度内容、知识付费、"一人媒体公司"</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 class="report-h3">深度拆解：机构销售作为职业起点</h3>
+    <div class="callout callout-gold">
+      <p><strong>为什么机构销售是好起点：</strong>站在信息流交汇点——上游（卖方研究观点）× 下游（买方真实持仓逻辑）× 横向（资金流向、交易台信号）。核心技能是"关系"，恰好落在 AI 的结构性盲区里。天然跳板：买方基金经理、对冲基金、出海金融、自立门户。</p>
+    </div>
+
+    <div class="bg-white border border-[#e5e0d8] rounded-xl p-5 mt-4">
+      <p class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-4">机构销售 5–10 年发展路线</p>
+      <div class="path-row">
+        <div class="path-year">Year 1–2</div>
+        <div class="path-text"><strong>打基础：</strong>建立客户信任、熟悉市场微观结构；用 AI 工具提升研报处理效率，把时间解放到面对面互动上；里程碑：独立覆盖 3–5 个中型机构客户</div>
+      </div>
+      <div class="path-row">
+        <div class="path-year">Year 3–4</div>
+        <div class="path-text"><strong>建立差异化：</strong>从"服务者"变成"有观点的人"；深耕一个方向：行业专家型 / 策略型 / 跨境型；里程碑：被 3–5 个核心客户视为"必须聊的人"</div>
+      </div>
+      <div class="path-row">
+        <div class="path-year">Year 5–7</div>
+        <div class="path-text"><strong>选择跳板：</strong>转买方 / 做大销售 / 出海 / 独立；关键判断：如果仍然只有"服务好、关系好"而没有独立投资判断力，后续路径会显著收窄</div>
+      </div>
+      <div class="path-row" style="border-bottom:none;">
+        <div class="path-year">Year 8–10</div>
+        <div class="path-text"><strong>终极护城河：</strong>投资判断力 + 客户信任 + AI 工具驾驭能力的三合一；个人品牌和影响力资产是 AI 最难替代的</div>
+      </div>
+    </div>
+
+    <div class="callout callout-red mt-4">
+      <p><strong>最大行业性风险：</strong>A 股交易佣金率已从 2015 年的万分之八持续降至约万分之二到三，监管趋势仍在压降。头部销售靠关系和判断力更值钱，中尾部销售被优化出局的压力加大。<strong>起点必须选头部券商——平台决定你能接触到的客户质量。</strong></p>
+    </div>
+
+    <div class="callout callout-gold mt-3">
+      <p><strong>AI 对机构销售的净影响：</strong>不会被消灭，但会两极分化。头部 20% 的销售——AI 工具让他们效率翻倍，一人覆盖过去三人的客户量，收入反而上升。中尾部 80%——被优化出局。<strong>生存法则：尽快从"信息搬运工"进化到"关系经营者 + 投资判断输出者"。</strong></p>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────── -->
+  <!-- PART 8                          -->
+  <!-- ─────────────────────────────── -->
+  <div id="part8">
+    <div class="section-badge mt-10">第八部分</div>
+    <h2 class="report-h2" style="border-top:none;padding-top:0;margin-top:0.5rem;">总结——一句话和一张图</h2>
+
+    <div class="bg-[#0B2C56] rounded-2xl p-7 mt-4 mb-6">
+      <p style="color:rgba(255,255,255,0.5);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.8rem;">核心判断</p>
+      <p style="color:#fff;font-size:1.05rem;line-height:1.75;font-weight:500;">
+        2026 年在中国做投资，不是在选"哪个行业景气"，而是在判断：<strong style="color:#f5d060;">哪些方向是国家战略意志 × 技术革命方向 × 真实市场需求的交叉点。</strong>
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3 md:grid-cols-4 mb-8">
+      <div class="bg-white border border-[#e5e0d8] rounded-xl p-4 text-center">
+        <div style="font-size:1.5rem;margin-bottom:0.4rem;">🤖</div>
+        <div style="font-size:0.75rem;font-weight:700;color:#0B2C56;margin-bottom:0.3rem;">最高确信度</div>
+        <div style="font-size:0.72rem;color:#555;">AI + 机器人<br/>人口危机的解药</div>
+      </div>
+      <div class="bg-white border border-[#e5e0d8] rounded-xl p-4 text-center">
+        <div style="font-size:1.5rem;margin-bottom:0.4rem;">🛍️</div>
+        <div style="font-size:0.75rem;font-weight:700;color:#0B2C56;margin-bottom:0.3rem;">最大弹性</div>
+        <div style="font-size:0.72rem;color:#555;">消费修复<br/>万亿级追赶空间</div>
+      </div>
+      <div class="bg-white border border-[#e5e0d8] rounded-xl p-4 text-center">
+        <div style="font-size:1.5rem;margin-bottom:0.4rem;">🥇</div>
+        <div style="font-size:0.75rem;font-weight:700;color:#0B2C56;margin-bottom:0.3rem;">最稳防守</div>
+        <div style="font-size:0.72rem;color:#555;">黄金<br/>秩序重构期硬通货</div>
+      </div>
+      <div class="bg-white border border-[#e5e0d8] rounded-xl p-4 text-center">
+        <div style="font-size:1.5rem;margin-bottom:0.4rem;">🌏</div>
+        <div style="font-size:0.75rem;font-weight:700;color:#0B2C56;margin-bottom:0.3rem;">最需耐心</div>
+        <div style="font-size:0.72rem;color:#555;">出海企业<br/>长期趋势确定</div>
+      </div>
+    </div>
+
+    <div class="callout callout-red">
+      <p><strong>最大的风险：</strong>不是某个单一事件，而是房地产调整 + 通缩 + 地方债务 + 贸易摩擦 + 人口下降这五条压力线同时收紧，导致新旧动能切换失速。这是一个需要持续跟踪的"灰犀牛群"。</p>
+    </div>
+
+    <div class="callout callout-gold mt-4">
+      <p><strong>历史启示：</strong>每一次国际秩序重构期，旧资产贬值，新资产升值。1914–1945 年，农业土地和贵族债券贬值，石油资产、军工产业、美国资本市场升值。今天的"新资产"，是<strong>算力、能源主权和供应链控制权</strong>。</p>
+    </div>
+
+    <!-- Data sources -->
+    <div class="mt-10 pt-6 border-t border-[#e5e0d8]">
+      <p class="text-xs text-stone-400 uppercase tracking-widest mb-3">数据来源</p>
+      <div class="source-list">
+        <span class="source-tag">IMF 2025 Article IV China</span>
+        <span class="source-tag">国家统计局 2025 全年数据</span>
+        <span class="source-tag">S&P Global 房地产预测</span>
+        <span class="source-tag">世界黄金协会 Gold Demand Trends</span>
+        <span class="source-tag">PwC 2025 AI Jobs Barometer</span>
+        <span class="source-tag">中国十五五规划（2026-03）</span>
+        <span class="source-tag">Tax Foundation Tariff Tracker</span>
+        <span class="source-tag">中国上市公司协会半年度报告</span>
+        <span class="source-tag">MacroPolo AI Talent Tracker</span>
+      </div>
+      <p class="text-xs text-stone-400 mt-4">📅 v1.0 初始建立：2026-04-08 ｜ 本文为个人学习记录，不构成投资建议</p>
+    </div>
+
+  </div><!-- /part8 -->
+
+</div><!-- /report-body -->
+</section>
+
+</Base>

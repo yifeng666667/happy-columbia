@@ -1,0 +1,546 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+let allResearch: any[] = [];
+try { allResearch = await getCollection('research'); } catch (_) {}
+
+const categories = [
+  {
+    id: 'macro', href: '/research/macro/',
+    title: '宏观经济分析', en: 'Macro Analysis',
+    desc: '深度宏观报告，解读全球经济趋势与周期变化',
+    borderL: 'border-l-emerald-400', dot: 'bg-emerald-400',
+  },
+  {
+    id: 'policy', href: '/research/policy/',
+    title: '政策追踪', en: 'Policy Watch',
+    desc: '国内外政策动态追踪，解读政策意图与市场影响',
+    borderL: 'border-l-sky-400', dot: 'bg-sky-400',
+  },
+  {
+    id: 'daily', href: '/research/daily/',
+    title: '热点追踪', en: 'Daily Hotspot',
+    desc: '每日经济热点精选，带投资视角的快速解读',
+    borderL: 'border-l-amber-400', dot: 'bg-amber-400',
+  },
+  {
+    id: 'thematic', href: '/research/thematic/',
+    title: '主题深度', en: 'Thematic Research',
+    desc: '跨期事件聚合，同一议题的持续追踪与深度分析',
+    borderL: 'border-l-violet-400', dot: 'bg-violet-400',
+  },
+  {
+    id: 'articles', href: '/research/articles/',
+    title: '公众号文章', en: 'WeChat Articles',
+    desc: '金融话题大众化写作，推文草稿与存档',
+    borderL: 'border-l-rose-400', dot: 'bg-rose-400',
+  },
+];
+
+const countOf = (id: string) => allResearch.filter(e => e.data.category === id).length;
+const stocksCount = allResearch.filter(e => e.data.category === 'stocks').length;
+const totalPublic = allResearch.filter(e => e.data.category !== 'stocks').length;
+
+const latest = allResearch
+  .filter(e => e.data.category !== 'stocks')
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 6);
+
+const catLabel: {[k:string]:string} = {
+  macro:'宏观', policy:'政策', daily:'热点', thematic:'深度', articles:'文章',
+};
+const dotColors: {[k:string]:string} = {
+  macro:'bg-emerald-400', policy:'bg-sky-400', daily:'bg-amber-400',
+  thematic:'bg-violet-400', articles:'bg-rose-400',
+};
+---
+
+<Base title="金融投研" hero={true}>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!--  HERO — Guomao night skyline                       -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section class="research-hero relative min-h-[68vh] flex flex-col justify-end overflow-hidden">
+
+    <!-- Text content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-32">
+      <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 mb-3">
+        Finance &amp; Research
+      </p>
+      <h1 class="font-display font-bold text-white leading-tight mb-4"
+          style="font-size: clamp(2.2rem, 5vw, 3.8rem);">
+        金融投研
+      </h1>
+      <p class="text-white/65 text-lg leading-relaxed mb-8 max-w-lg">
+        汇总宏观分析、政策追踪与个股研究<br/>
+        整理自在读期间的市场观察与学习积累
+      </p>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/40">
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-white/70 font-semibold text-xl">{totalPublic}</span>
+          <span>篇公开文章</span>
+        </span>
+        <span class="text-white/20">·</span>
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-white/70 font-semibold text-xl">6</span>
+          <span>个研究分类</span>
+        </span>
+        <span class="text-white/20">·</span>
+        <span>持续更新中</span>
+      </div>
+    </div>
+
+    <!-- Beijing CBD Skyline SVG -->
+    <div class="absolute bottom-0 left-0 w-full pointer-events-none" style="z-index:2;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"
+           preserveAspectRatio="none" class="w-full block" style="height:160px;">
+        <!-- Mid-distance buildings -->
+        <path fill="#111e32" opacity="0.9" d="
+          M0,160 L0,120 L60,120 L60,105 L110,105 L110,90
+          L155,90 L155,75 L200,75 L200,58 L250,58 L250,68
+          L290,68 L290,48 L330,48 L330,60 L370,60
+          L370,35 L395,35 L395,20 L420,20 L420,35
+          L445,35 L445,50 L480,50 L480,30 L510,30
+          L510,48 L545,48 L545,60 L580,60 L580,72
+          L615,72 L615,55 L650,55 L650,70 L690,70
+          L690,55 L730,55 L730,72 L770,72 L770,58
+          L810,58 L810,78 L855,78 L855,65 L895,65
+          L895,82 L940,82 L940,92 L985,92 L985,80
+          L1025,80 L1025,95 L1070,95 L1070,108
+          L1110,108 L1110,95 L1150,95 L1150,112
+          L1200,112 L1200,100 L1240,100 L1240,115
+          L1285,115 L1285,105 L1325,105 L1325,120
+          L1380,120 L1380,130 L1440,130 L1440,160 Z"/>
+
+        <!-- Window lights -->
+        <rect x="162" y="79"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="172" y="79"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-2"/>
+        <rect x="205" y="62"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="295" y="52"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-3"/>
+        <rect x="305" y="52"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="335" y="52"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-2"/>
+        <rect x="335" y="62"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="375" y="39"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-3"/>
+        <rect x="375" y="49"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="400" y="24"  width="5" height="3" fill="rgba(255,185,60,0.8)" class="city-flicker-2"/>
+        <rect x="400" y="34"  width="5" height="3" fill="rgba(255,185,60,0.8)" class="city-flicker"/>
+        <rect x="410" y="24"  width="5" height="3" fill="rgba(255,185,60,0.8)" class="city-flicker-3"/>
+        <rect x="487" y="34"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="487" y="44"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-2"/>
+        <rect x="497" y="34"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="620" y="59"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-3"/>
+        <rect x="695" y="59"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="735" y="59"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-2"/>
+        <rect x="862" y="69"  width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+        <rect x="1032" y="84" width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker-3"/>
+        <rect x="1117" y="99" width="5" height="3" fill="rgba(255,185,60,0.7)" class="city-flicker"/>
+
+        <!-- Antenna beacons -->
+        <circle cx="407" cy="17" r="2.5" fill="rgba(255,75,75,0.9)"  class="city-flicker"/>
+        <circle cx="493" cy="26" r="2"   fill="rgba(255,75,75,0.85)" class="city-flicker-2"/>
+
+        <!-- Foreground dark silhouette -->
+        <path fill="#070d18" d="
+          M0,160 L0,148 L90,148 L90,140 L180,140 L180,148
+          L270,148 L270,138 L360,138 L360,148 L450,148
+          L450,136 L540,136 L540,148 L630,148 L630,136
+          L720,136 L720,148 L810,148 L810,138 L900,138
+          L900,148 L990,148 L990,136 L1080,136 L1080,148
+          L1170,148 L1170,138 L1260,138 L1260,148
+          L1350,148 L1350,138 L1440,138 L1440,160 Z"/>
+      </svg>
+    </div>
+
+    <!-- Wave transition into stone-50 -->
+    <div class="absolute bottom-[-2px] left-0 right-0" style="z-index:3;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"
+           xmlns="http://www.w3.org/2000/svg" style="display:block;">
+        <path d="M0 60L1440 60L1440 24C1200 54 960 2 720 24C480 46 240 6 0 24L0 60Z"
+              fill="#f8f7f4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!--  CATEGORIES                                         -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section class="bg-[#f8f7f4] px-6 pt-16 pb-20">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- ── China 2026 Featured Article Banner ── -->
+      <a
+        href="/research/china-2026/"
+        class="china-banner-link block mb-10 rounded-2xl overflow-hidden no-underline"
+        aria-label="阅读：2026年中国投资思路分析"
+      >
+        <div class="china-banner">
+          <!-- overlay gradient -->
+          <div class="china-banner-overlay"></div>
+
+          <!-- content -->
+          <div class="china-banner-body">
+            <div class="china-banner-left">
+              <div class="china-banner-meta">
+                <span class="china-badge">我的思考</span>
+                <span class="china-date">2026 · 04 · 08</span>
+              </div>
+              <h2 class="china-banner-title">2026年中国投资思路分析</h2>
+              <p class="china-banner-desc">
+                从康波长波、资产负债表衰退到A股行业利润格局——用结构性框架拆解当下中国市场的真实逻辑，找到值得配置的方向。
+              </p>
+              <div class="china-banner-tags">
+                <span class="china-tag">宏观框架</span>
+                <span class="china-tag">行业分析</span>
+                <span class="china-tag">投资策略</span>
+                <span class="china-tag">AI时代转型</span>
+              </div>
+            </div>
+            <div class="china-banner-right">
+              <div class="china-cta">
+                阅读全文
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" style="display:inline-block;vertical-align:middle;margin-left:4px">
+                  <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <p class="china-word-count">全文约 7000 字 · 8 个章节</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Disclaimer -->
+      <div class="flex items-start gap-2.5 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3.5 mb-12">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 shrink-0 mt-0.5 text-amber-500">
+          <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+        </svg>
+        <p class="text-sm text-amber-800 leading-relaxed">
+          <strong class="font-semibold">免责声明：</strong>
+          本栏目所有内容均以个人学习研究为目的，记录在校期间的市场观察与思考，
+          <strong class="font-semibold">不构成任何投资建议</strong>，
+          亦不代表对任何证券或资产的买卖推荐。投资有风险，入市需谨慎。
+        </p>
+      </div>
+
+      <!-- Section header -->
+      <div class="mb-8 text-center">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-stone-400 mb-2">Research Categories</p>
+        <h2 class="font-display font-bold text-stone-900 text-3xl md:text-4xl">研究分类</h2>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+
+        <!-- Two public-category cards per row, grouped by... just flat list -->
+        <div class="space-y-3">
+          {categories.slice(0, 3).map(cat => (
+            <a
+              href={cat.href}
+              class={`card-lift block bg-white border border-stone-200 border-l-4 ${cat.borderL} rounded-xl p-5 no-underline text-stone-900 group`}
+            >
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class={`w-2 h-2 rounded-full shrink-0 ${cat.dot}`}></span>
+                    <span class="text-[11px] text-stone-400">{cat.en}</span>
+                  </div>
+                  <h3 class="font-semibold text-base leading-snug group-hover:text-columbia-navy transition-colors">
+                    {cat.title}
+                  </h3>
+                </div>
+                <span class="shrink-0 mt-0.5 text-xs bg-columbia-light text-columbia-navy font-medium px-2.5 py-1 rounded-full">
+                  {countOf(cat.id)} 篇
+                </span>
+              </div>
+              <p class="mt-2.5 text-xs text-stone-500 leading-relaxed">{cat.desc}</p>
+              <div class="mt-3 pt-3 border-t border-stone-100 flex items-center justify-end text-[11px] text-columbia-blue opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all">
+                查看全部 →
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="space-y-3">
+          {categories.slice(3).map(cat => (
+            <a
+              href={cat.href}
+              class={`card-lift block bg-white border border-stone-200 border-l-4 ${cat.borderL} rounded-xl p-5 no-underline text-stone-900 group`}
+            >
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class={`w-2 h-2 rounded-full shrink-0 ${cat.dot}`}></span>
+                    <span class="text-[11px] text-stone-400">{cat.en}</span>
+                  </div>
+                  <h3 class="font-semibold text-base leading-snug group-hover:text-columbia-navy transition-colors">
+                    {cat.title}
+                  </h3>
+                </div>
+                <span class="shrink-0 mt-0.5 text-xs bg-columbia-light text-columbia-navy font-medium px-2.5 py-1 rounded-full">
+                  {countOf(cat.id)} 篇
+                </span>
+              </div>
+              <p class="mt-2.5 text-xs text-stone-500 leading-relaxed">{cat.desc}</p>
+              <div class="mt-3 pt-3 border-t border-stone-100 flex items-center justify-end text-[11px] text-columbia-blue opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all">
+                查看全部 →
+              </div>
+            </a>
+          ))}
+
+          <!-- My Thoughts card -->
+          <a
+            href="/research/mythoughts/"
+            class="card-lift block bg-columbia-navy border border-columbia-navy rounded-xl p-5 no-underline text-white group"
+          >
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-2 h-2 rounded-full shrink-0 bg-columbia-light"></span>
+                  <span class="text-[11px] text-white/50">My Thoughts</span>
+                </div>
+                <h3 class="font-semibold text-base leading-snug">我的思考</h3>
+              </div>
+              <span class="shrink-0 mt-0.5 text-xs bg-white/10 text-white/70 font-medium px-2.5 py-1 rounded-full">
+                ⭐ 收藏夹
+              </span>
+            </div>
+            <p class="mt-2.5 text-xs text-white/60 leading-relaxed">收藏文章、记录笔记，沉淀自己的投资认知</p>
+            <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-end text-[11px] text-white/40 group-hover:text-white/70 transition-colors">
+              进入我的思考 →
+            </div>
+          </a>
+
+          <!-- Stocks card (locked) -->
+          <a
+            href="/research/stocks/"
+            class="card-lift block bg-white border border-stone-200 border-l-4 border-l-stone-200 rounded-xl p-5 no-underline text-stone-400 group"
+          >
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-2 h-2 rounded-full shrink-0 bg-stone-300"></span>
+                  <span class="text-[11px] text-stone-300">Stocks &amp; Sectors</span>
+                </div>
+                <h3 class="font-semibold text-base leading-snug text-stone-400">
+                  个股 &amp; 板块
+                </h3>
+              </div>
+              <span class="shrink-0 mt-0.5 flex items-center gap-1 text-xs bg-stone-100 text-stone-400 font-medium px-2.5 py-1 rounded-full">
+                <svg viewBox="0 0 14 14" fill="currentColor" class="w-2.5 h-2.5">
+                  <path d="M10 1a3 3 0 00-3 3v1.5H3.5a1 1 0 00-1 1V12a1 1 0 001 1H10.5a1 1 0 001-1V6.5a1 1 0 00-1-1H8.5V4a1.5 1.5 0 013 0 .75.75 0 001.5 0A3 3 0 0010 1z"/>
+                </svg>
+                仅本人
+              </span>
+            </div>
+            <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+              个股深度研究与板块追踪分析，需要验证身份访问
+            </p>
+            <div class="mt-3 pt-3 border-t border-stone-100 flex items-center justify-end text-[11px] text-stone-300">
+              {stocksCount} 篇 · 输入密码访问 →
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!--  LATEST ARTICLES                                    -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <section class="bg-white px-6 py-20">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="mb-10 text-center">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-stone-400 mb-2">Latest</p>
+        <h2 class="font-display font-bold text-stone-900 text-3xl md:text-4xl">最新文章</h2>
+      </div>
+
+      {latest.length === 0 ? (
+        <div class="border border-dashed border-stone-200 rounded-xl px-5 py-16 text-center">
+          <p class="text-sm text-stone-400 font-medium mb-1">内容整理中</p>
+          <p class="text-xs text-stone-300">文章将从研究笔记本同步至此，敬请期待</p>
+        </div>
+      ) : (
+        <div class="space-y-2">
+          {latest.map(entry => {
+            const cat = entry.data.category as string;
+            const [catId, ...rest] = entry.id.split('/');
+            const slug = rest.join('/').replace(/\.md$/, '');
+            return (
+              <a
+                href={`/research/${catId}/${slug}/`}
+                class="card-lift flex items-center gap-5 bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900 group"
+              >
+                <span class={`shrink-0 w-2 h-2 rounded-full ${dotColors[cat] ?? 'bg-stone-300'}`}></span>
+                <span class="flex-1 font-medium leading-snug group-hover:text-columbia-navy transition-colors text-sm">
+                  {entry.data.title}
+                </span>
+                <span class="shrink-0 text-xs text-stone-400">{catLabel[cat]}</span>
+                <span class="shrink-0 text-xs text-stone-300">{entry.data.date}</span>
+                <span class="shrink-0 text-columbia-blue opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-sm">→</span>
+              </a>
+            );
+          })}
+        </div>
+      )}
+
+    </div>
+  </section>
+
+</Base>
+
+<style>
+/* ── China 2026 Banner ── */
+.china-banner-link {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.china-banner-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 60px rgba(100, 15, 15, 0.28);
+}
+
+.china-banner {
+  position: relative;
+  min-height: 220px;
+  background-image: url('https://images.unsplash.com/photo-1508804052814-cd3ba865a116?auto=format&fit=crop&w=1800&q=90');
+  background-size: cover;
+  background-position: center 40%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.china-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(55, 8, 8, 0.92) 0%,
+    rgba(100, 18, 18, 0.85) 45%,
+    rgba(15, 22, 50, 0.80) 100%
+  );
+}
+
+.china-banner-body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.2rem 2.4rem;
+}
+
+.china-banner-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.china-banner-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.china-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(220, 38, 38, 0.85);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+.china-date {
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.08em;
+}
+
+.china-banner-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.25;
+  margin: 0 0 0.7rem;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.china-banner-desc {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.65;
+  max-width: 520px;
+  margin: 0 0 1rem;
+}
+
+.china-banner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.china-tag {
+  font-size: 10px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.04em;
+}
+
+.china-banner-right {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.china-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255,255,255,0.95);
+  color: #7f1d1d;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.china-banner-link:hover .china-cta {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.china-word-count {
+  font-size: 10px;
+  color: rgba(255,255,255,0.40);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .china-banner-body {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.6rem 1.4rem;
+  }
+  .china-banner-right {
+    align-items: flex-start;
+  }
+  .china-banner-title {
+    font-size: 1.25rem;
+  }
+}
+</style>

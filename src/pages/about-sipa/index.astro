@@ -1,0 +1,212 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="关于 SIPA">
+
+  <!-- Hero banner -->
+  <div class="-mx-6 -mt-14 mb-12 text-white px-6 pt-14 pb-14 relative overflow-hidden"
+       style="background-image: linear-gradient(160deg, rgba(6,18,40,0.80) 0%, rgba(11,44,86,0.70) 50%, rgba(19,67,110,0.65) 100%), url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=2560&q=95'); background-size: cover; background-position: center;">
+
+    <a href="/" class="inline-flex items-center gap-1.5 text-white/60 hover:text-white text-xs transition-colors no-underline mb-6 group">
+      <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+      返回首页
+    </a>
+
+    <p class="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-3">About SIPA</p>
+    <h1 class="font-display font-bold text-3xl md:text-4xl text-white leading-tight max-w-2xl">
+      关于 SIPA
+    </h1>
+    <p class="mt-4 text-white/75 leading-loose text-[0.9375rem] max-w-2xl">
+      哥伦比亚大学国际与公共事务学院（School of International and Public Affairs），
+      成立于 1946 年，坐落于纽约曼哈顿晨边高地，是全球顶尖的国际事务与公共政策学院之一。
+      学院汇聚来自全球 100 余个国家的学生，培养了无数活跃于联合国、世界银行、各国政府与华尔街的领导者。
+    </p>
+  </div>
+
+  <!-- Stats bar -->
+  <section class="mb-14">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {[
+        { num: '1946', label: '创立年份' },
+        { num: '1,400+', label: '在校学生' },
+        { num: '100+', label: '生源国家' },
+        { num: '17,000+', label: '全球校友' },
+      ].map(({ num, label }) => (
+        <div class="bg-white border border-stone-200 rounded-2xl p-5 text-center shadow-sm">
+          <p class="font-display font-bold text-columbia-navy text-2xl md:text-3xl">{num}</p>
+          <p class="text-xs text-stone-400 mt-1">{label}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 学院介绍 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">学院简介</h2>
+    <div class="space-y-4 text-stone-600 leading-loose text-[0.9375rem]">
+      <p>
+        SIPA 成立于二战结束后的 1946 年，最初的使命是"培养外交官与专业人士，
+        应对战后世界的复杂格局"。七十余年来，学院始终站在国际事务研究与政策实践的前沿，
+        培养了数万名活跃于政府、国际组织、金融机构与非营利领域的领导者。
+      </p>
+      <p>
+        学院设有<strong class="text-stone-900">国际事务硕士（MIA）</strong>、
+        <strong class="text-stone-900">公共行政硕士（MPA）</strong>、
+        <strong class="text-stone-900">全球领导力公共行政硕士（MPA-GL）</strong>
+        及<strong class="text-stone-900">可持续发展博士（PhD）</strong>四类学位项目，
+        学生来自全球 100 余个国家，国际学生占比超过 50%。
+      </p>
+      <p>
+        2018、2019 年连续两年被 <em>U.S. News & World Report</em> 评为
+        国际事务与全球政策方向<strong class="text-stone-900">全美第一</strong>。
+      </p>
+    </div>
+  </section>
+
+  <!-- 学位项目 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">学位项目</h2>
+    <div class="space-y-4">
+      {[
+        {
+          degree: 'MIA · 国际事务硕士',
+          en: 'Master of International Affairs',
+          duration: '2 年',
+          desc: '面向希望推动国际合作、从事外交与跨文化领域的学生。涵盖国际政治、法律制度、冲突解决与外交技能培养。',
+          color: 'border-l-violet-400',
+        },
+        {
+          degree: 'MPA · 公共行政硕士',
+          en: 'Master of Public Administration',
+          duration: '2 年',
+          desc: '面向希望主导政策制定过程的学生。以数据分析为核心，培养政策设计、执行与评估能力。',
+          color: 'border-l-columbia-blue',
+        },
+        {
+          degree: 'MPA-GL · 全球领导力公共行政硕士',
+          en: 'Master of Public Administration in Global Leadership',
+          duration: '10 个月',
+          desc: '面向有一定工作经验的中层管理者。强化领导力与职业发展，课程紧凑密集。',
+          color: 'border-l-emerald-400',
+        },
+        {
+          degree: 'PhD · 可持续发展博士',
+          en: 'Doctor of Philosophy in Sustainable Development',
+          duration: '4–6 年',
+          desc: '聚焦可持续发展领域的学术研究，毕业生广泛进入全美及欧洲顶尖高校担任博士后或助理教授，也有进入私营部门者。',
+          color: 'border-l-amber-400',
+        },
+      ].map(({ degree, en, duration, desc, color }) => (
+        <div class={`bg-white border border-stone-200 border-l-4 ${color} rounded-xl p-6 shadow-sm`}>
+          <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+            <div>
+              <h3 class="font-semibold text-stone-900">{degree}</h3>
+              <p class="text-xs text-stone-400 mt-0.5">{en}</p>
+            </div>
+            <span class="text-xs bg-stone-100 text-stone-500 px-2.5 py-1 rounded-full shrink-0">{duration}</span>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed">{desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 专业方向 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">专业方向（Concentrations）</h2>
+    <p class="text-sm text-stone-400 mb-5">以下为 2025 年秋季起新设方向</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {[
+        { name: '气候、能源与环境', en: 'Climate, Energy & Environment', dot: 'bg-emerald-400' },
+        { name: '政策数据科学', en: 'Data Science for Policy', dot: 'bg-columbia-blue' },
+        { name: '发展与治理', en: 'Development & Governance', dot: 'bg-amber-400' },
+        { name: '人权、性别与公平', en: 'Human Rights, Gender & Equity', dot: 'bg-rose-400' },
+        { name: '国际安全与外交', en: 'International Security & Diplomacy', dot: 'bg-violet-400' },
+        { name: '国际金融与政策', en: 'International Finance & Policy', dot: 'bg-sky-400' },
+        { name: '科技政策', en: 'Technology Policy', dot: 'bg-stone-400' },
+      ].map(({ name, en, dot }) => (
+        <div class="flex items-center gap-3 bg-white border border-stone-200 rounded-xl px-4 py-3.5 shadow-sm">
+          <span class={`w-2 h-2 rounded-full shrink-0 ${dot}`}></span>
+          <div>
+            <p class="text-sm font-medium text-stone-900">{name}</p>
+            <p class="text-xs text-stone-400">{en}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 就业去向 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">就业去向</h2>
+    <div class="bg-columbia-light/40 border border-columbia-blue/20 rounded-2xl p-6 sm:p-8 mb-6">
+      <p class="text-sm text-stone-500 mb-4">2025 届毕业生就业数据（毕业 6 个月后统计）</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        {[
+          { sector: '私营部门', pct: '46.9%', color: 'text-columbia-navy' },
+          { sector: '非营利组织', pct: '27.0%', color: 'text-emerald-600' },
+          { sector: '公共部门', pct: '24.8%', color: 'text-violet-600' },
+        ].map(({ sector, pct, color }) => (
+          <div class="text-center">
+            <p class={`font-display font-bold text-2xl ${color}`}>{pct}</p>
+            <p class="text-sm font-medium text-stone-900 mt-1">{sector}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-stone-400 mt-6 border-t border-stone-200 pt-4">
+        87.6% 的毕业生在统计时已就业或继续深造；数据来源：SIPA Career Advancement Center
+      </p>
+    </div>
+    <p class="text-sm text-stone-600 leading-relaxed">
+      SIPA 毕业生遍布全球，活跃于世界银行、IMF、联合国及其各专门机构、美国国务院、白宫、
+      各国财政部与中央银行，也有人进入高盛、麦肯锡、贝莱德等顶尖金融与咨询机构，
+      或在布鲁金斯学会、外交关系委员会（CFR）等全球顶尖智库从事研究与政策倡导工作。
+      超过 17,000 名校友分布在 150 余个国家，涵盖政策制定、国际金融、外交谈判、
+      人道主义援助、气候治理等几乎所有公共与国际事务领域。
+      无论你的目标是改变一项政策、推动一笔发展融资，还是在联合国发言——
+      这里都有人已经走在你前面。
+    </p>
+  </section>
+
+  <!-- 杰出校友 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">部分杰出校友</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {[
+        { name: 'Madeleine Albright', role: '美国前国务卿' },
+        { name: 'Karine Jean-Pierre', role: '白宫新闻秘书' },
+        { name: 'Letitia James', role: '纽约州司法部长' },
+        { name: 'Bill de Blasio', role: '纽约市第 109 任市长' },
+        { name: 'George Tenet', role: 'CIA 前局长' },
+        { name: 'Jose Ramos-Horta', role: '东帝汶总统、诺贝尔和平奖得主' },
+        { name: 'Roula Khalaf', role: '《金融时报》总编辑' },
+        { name: 'Mark A. Milley', role: '美国参谋长联席会议前主席' },
+      ].map(({ name, role }) => (
+        <div class="flex items-center gap-3 bg-white border border-stone-200 rounded-xl px-4 py-3.5 shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-columbia-blue shrink-0"></span>
+          <div>
+            <p class="text-sm font-medium text-stone-900">{name}</p>
+            <p class="text-xs text-stone-400">{role}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 官方链接 -->
+  <section>
+    <div class="bg-columbia-navy rounded-2xl px-8 py-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+      <div>
+        <p class="text-white font-semibold">想了解更多？</p>
+        <p class="text-white/60 text-sm mt-1">访问 SIPA 官方网站获取最新招生、课程及活动信息。</p>
+      </div>
+      <a href="https://www.sipa.columbia.edu"
+         target="_blank" rel="noopener"
+         class="no-underline shrink-0 px-6 py-2.5 bg-white text-columbia-navy font-semibold text-sm rounded-full hover:bg-columbia-light transition-all">
+        sipa.columbia.edu →
+      </a>
+    </div>
+  </section>
+
+</Base>

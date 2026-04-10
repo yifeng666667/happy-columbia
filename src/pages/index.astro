@@ -1,0 +1,248 @@
+---
+import Base from '../layouts/Base.astro';
+import { courses, categories } from '../data/courses';
+import { getCollection } from 'astro:content';
+
+const allNotes = await getCollection('notes');
+const noteCountOf = (slug: string) =>
+  allNotes.filter((n) => n.id.startsWith(slug + '/')).length;
+const totalNotes = allNotes.length;
+
+const grouped = categories.map((cat) => ({
+  category: cat,
+  items: courses.filter((c) => c.category === cat.id),
+}));
+
+const catDot: Record<string, string> = {
+  finance: 'cat-finance',
+  economics: 'cat-economics',
+  geopolitics: 'bg-rose-400',
+};
+---
+
+<Base title="首页" hero={true}>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--  HERO                                           -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="hero-img min-h-[92vh] flex flex-col justify-center items-center text-center px-6 relative">
+
+
+    <div class="relative z-10 max-w-3xl mx-auto space-y-8">
+
+      <!-- label -->
+      <p class="hero-child animate-fade-up text-sm uppercase tracking-[0.3em] text-white font-sans">
+        Economics · Finance · Policy
+      </p>
+
+      <!-- title -->
+      <h1 class="hero-child animate-fade-up font-display font-bold text-white leading-tight whitespace-nowrap"
+          style="font-size: clamp(1.8rem, 5vw, 4.2rem);">
+        经济金融 · 学习与分享
+      </h1>
+
+      <!-- quote -->
+      <figure class="hero-child animate-fade-up">
+        <blockquote class="font-display italic text-xl md:text-2xl text-white/90 leading-relaxed">
+          "比答案更重要的，是问题本身 🙋"
+        </blockquote>
+      </figure>
+
+      <!-- stats -->
+      <div class="hero-child animate-fade-up flex flex-wrap items-center justify-center gap-6 text-white/80 text-base font-sans">
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-columbia-light font-bold text-3xl">{courses.length}</span>
+          <span>门课程</span>
+        </span>
+        <span class="text-white/30 text-xl">·</span>
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-columbia-light font-bold text-3xl">{totalNotes}</span>
+          <span>篇学习笔记</span>
+        </span>
+        <span class="text-white/30 text-xl">·</span>
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-columbia-light font-bold text-3xl">10+</span>
+          <span>篇求职干货</span>
+        </span>
+        <span class="text-white/30 text-xl">·</span>
+        <span class="self-end pb-0.5">纯公益</span>
+      </div>
+
+      <!-- CTA -->
+      <div class="hero-child animate-fade-up flex items-center justify-center gap-4 pt-2">
+        <a href="#courses"
+           class="no-underline px-8 py-3 bg-white text-columbia-navy font-semibold text-sm rounded-full
+                  hover:bg-columbia-light transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0">
+          查看课程 →
+        </a>
+        <a href="/join/"
+           class="no-underline px-8 py-3 border border-white/30 text-white font-medium text-sm rounded-full
+                  hover:bg-white/10 transition-all">
+          一起做这件事
+        </a>
+      </div>
+    </div>
+
+    <!-- bottom wave -->
+    <div class="absolute bottom-[-2px] left-0 right-0">
+      <svg viewBox="0 0 1440 82" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+        <path d="M0 82L1440 82L1440 32C1200 72 960 2 720 32C480 62 240 12 0 32L0 82Z" fill="#f8f7f4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--  ABOUT                                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="bg-[#f8f7f4] px-6 pt-16 pb-20">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+
+        <!-- left: personal intro -->
+        <div class="md:col-span-3 space-y-5 text-stone-700 leading-loose text-[0.9375rem]">
+          <h2 class="font-display font-bold text-stone-900 text-2xl md:text-3xl">关于这个网站</h2>
+          <p>
+            大家好，我是<strong class="text-stone-900">峰哥</strong>，NYU 经济学本科，现就读于哥伦比亚大学
+            <strong class="text-stone-900">SIPA</strong>（国际与公共事务学院），国际金融方向。
+            在 SIPA 这两年边学边记，把课上听到的东西、自己读书时的困惑和理解，
+            慢慢整理成了这些笔记——不一定都对，但都是真实思考过的。
+          </p>
+          <p>
+            这个博客是我将这些整理公开分享的地方。内容<strong class="text-stone-900">受国际资深教授、著名投资家与银行家的启发，
+            由 AI 辅助整理</strong>——用中文梳理这些领域的核心知识框架，
+            结合真实案例与市场数据，帮助更多人读懂这个世界的运转逻辑、提升认知。
+          </p>
+          <p>
+            <strong class="text-stone-900">纯公益，不盈利、不收费、无广告。</strong>
+            不构成任何投资建议，亦不代表任何机构或课程的官方立场。
+            如果你对经济金融话题也有独到见解想分享，欢迎一起来做这件事。
+          </p>
+          <p>
+            让更多人读懂经济世界的运转逻辑，也帮助更多学弟学妹少走弯路——这是我做这件事最朴素的初心。🌹
+          </p>
+        </div>
+
+        <!-- right: topic highlights -->
+        <div class="md:col-span-2 space-y-4">
+          <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400">涵盖主题方向</p>
+
+          <div class="bg-white rounded-2xl border border-stone-200 p-5 shadow-sm">
+            <ul class="space-y-3">
+              {[
+                { name: '国际资本市场',     desc: '货币市场、债券、衍生品、股权与另类投资' },
+                { name: '宏观政策分析',     desc: '利率、汇率、量化宽松与央行决策' },
+                { name: '全球金融危机',     desc: '1989 至今七大危机的来龙去脉' },
+                { name: '新兴市场',         desc: '主权债务、资本流动与发展中国家投资' },
+                { name: '公司金融',         desc: 'LBO、PE、信用分析与 DCF' },
+                { name: '金融监管与政策',   desc: 'Dodd-Frank、巴塞尔协议与系统性风险' },
+                { name: '中国经济与市场',   desc: 'A 股、政策周期与宏观结构分析' },
+                { name: '国际政治经济学',   desc: '地缘政治、制裁与全球供应链重构' },
+              ].map(({ name, desc }) => (
+                <li class="flex gap-2.5 items-start text-sm">
+                  <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-columbia-blue shrink-0"></span>
+                  <span>
+                    <strong class="text-stone-900 font-medium">{name}</strong>
+                    <span class="block text-xs text-stone-400 mt-0.5">{desc}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--  COURSES                                        -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="courses" class="bg-white px-6 py-20 scroll-mt-16">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="mb-12 text-center">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-stone-400 mb-2">Learning Notes</p>
+        <h2 class="font-display font-bold text-stone-900 text-3xl md:text-4xl">专题笔记</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+        {grouped.map(({ category, items }) => (
+          <div>
+            <!-- category header -->
+            <div class="flex items-center gap-3 mb-5">
+              <span class={`w-2.5 h-2.5 rounded-full ${catDot[category.id]}`}></span>
+              <div>
+                <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400">{category.subtitle}</p>
+                <h3 class="font-semibold text-stone-900 text-base leading-tight">{category.title}</h3>
+              </div>
+            </div>
+
+            {items.length === 0 ? (
+              <div class="border border-dashed border-stone-200 rounded-xl px-5 py-10 text-xs text-stone-400 text-center">
+                整理中，敬请期待
+              </div>
+            ) : (
+              <div class="space-y-3">
+                {items.map((c) => (
+                  <a
+                    href={`/courses/${c.slug}/`}
+                    class="card-lift block bg-white border border-stone-200 rounded-xl p-5 no-underline text-stone-900 group"
+                  >
+                    <div class="flex items-start justify-between gap-3">
+                      <div class="flex-1 min-w-0">
+                        <h4 class="font-semibold text-base leading-snug group-hover:text-columbia-navy transition-colors">
+                          {c.title}
+                        </h4>
+                        <p class="text-[11px] text-stone-400 mt-0.5">
+                          {c.titleEn}
+                        </p>
+                      </div>
+                      <span class="shrink-0 mt-0.5 text-xs bg-columbia-light text-columbia-navy font-medium px-2.5 py-1 rounded-full">
+                        {noteCountOf(c.slug)} 篇
+                      </span>
+                    </div>
+                    <p class="mt-3 text-xs text-stone-500 leading-relaxed line-clamp-2">
+                      {c.description}
+                    </p>
+                    <div class="mt-3 pt-3 border-t border-stone-100 flex items-center justify-end text-[11px] text-stone-400">
+                      <span class="text-columbia-blue group-hover:translate-x-0.5 transition-transform inline-block">
+                        阅读笔记 →
+                      </span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--  CALL TO ACTION STRIP                           -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="bg-columbia-navy px-6 py-16">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h2 class="font-display font-bold text-white text-2xl">你也有学习笔记或见解想分享？</h2>
+        <p class="text-white/60 mt-2 text-sm leading-relaxed">
+          欢迎投稿学习笔记、求职经验、行业见解——一起把这件事做大。
+        </p>
+      </div>
+      <div class="flex gap-3 shrink-0">
+        <a href="/join/"
+           class="no-underline px-7 py-3 bg-white text-columbia-navy font-semibold text-sm rounded-full
+                  hover:bg-columbia-light transition-all shadow hover:shadow-md">
+          了解详情
+        </a>
+        <a href="mailto:yh3811@columbia.edu"
+           class="no-underline px-7 py-3 border border-white/30 text-white text-sm rounded-full
+                  hover:bg-white/10 transition-all">
+          发邮件
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Base>

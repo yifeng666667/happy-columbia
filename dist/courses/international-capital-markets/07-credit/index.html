@@ -1,0 +1,723 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="面向中文读者的经济金融政策知识博客，个人学习整理与原创评论"><title>公司信用风险 · HappyColumbia</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="/_astro/index.BJiEgo8m.css"></head> <body class="min-h-screen antialiased font-sans text-stone-900 bg-stone-50"> <!-- ── Header ─────────────────────────────────────── --> <header id="site-header" class="sticky top-0 z-50 transition-all duration-300 bg-white border-b border-stone-200"> <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4"> <!-- Logo --> <a href="/" class="no-underline leading-tight group shrink-0"> <div class="font-display font-semibold tracking-tight text-lg transition-colors text-stone-900 group-hover:text-columbia-navy">
+HappyColumbia
+</div> <div class="hidden sm:block text-[10px] tracking-widest uppercase mt-0.5 text-stone-400">
+经济 · 金融 · 政策
+</div> </a> <!-- Nav --> <nav class="flex items-center gap-1 text-sm shrink-0 text-stone-600"> <a href="/about-sipa/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 关于 SIPA </a><a href="/#courses" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 专题笔记 </a><a href="/career/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 求职分享 </a><a href="/research/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 金融投研 </a><a href="/join/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 一起做这件事 </a> <a href="/join/" class="ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline border-stone-300 text-stone-700 hover:border-columbia-navy hover:text-columbia-navy">
+联系我
+</a> </nav> </div> </header> <!-- ── Main ───────────────────────────────────────── --> <main class="max-w-5xl mx-auto px-6 py-14">   <div class="-mx-6 -mt-14 mb-8 bg-white border-b border-stone-200 px-6 pt-14 pb-5"> <div class="max-w-3xl"> <a href="/courses/international-capital-markets/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-3 group"> <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 国际资本市场 </a> <h1 class="font-display font-bold text-2xl md:text-3xl text-stone-900 leading-tight"> 公司信用风险 </h1> <!-- progress bar --> <div class="mt-4 flex items-center gap-3"> <div class="flex-1 h-1 bg-stone-100 rounded-full overflow-hidden"> <div class="h-full bg-columbia-blue rounded-full transition-all" style="width: 67%"></div> </div> <span class="text-xs text-stone-400 shrink-0">8 / 12</span> </div> </div> </div>  <article class="prose-reading prose prose-stone max-w-3xl
+           prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+           prose-h1:text-3xl prose-h1:mb-6
+           prose-h2:text-xl prose-h2:mt-12 prose-h2:pb-2 prose-h2:border-b prose-h2:border-stone-200 prose-h2:text-columbia-navy
+           prose-h3:text-base prose-h3:mt-8 prose-h3:text-stone-800
+           prose-p:leading-[1.9]
+           prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline
+           prose-strong:text-stone-900
+           prose-code:before:content-none prose-code:after:content-none
+           prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+           prose-code:text-stone-800 prose-code:font-normal prose-code:text-[0.85em]
+           prose-pre:bg-stone-900
+           prose-blockquote:border-l-4 prose-blockquote:border-columbia-blue
+           prose-blockquote:bg-columbia-light/30 prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-lg
+           prose-blockquote:text-stone-700 prose-blockquote:not-italic
+           prose-li:leading-[1.85]
+           prose-table:text-sm
+           prose-th:bg-columbia-light prose-th:text-columbia-navy"> <h2 id="本文概述">本文概述</h2>
+<p>前面几节讲的是<strong>债券、互换、衍生品</strong>的结构与价格。但一切定价的根子，是<strong>公司会不会违约，以及违约后能回收多少</strong>。这节课就是把这个问题讲清楚：</p>
+<ol>
+<li><strong>什么是公司违约？</strong> 官方定义是什么？</li>
+<li><strong>公司为什么会违约？</strong> 真实案例有哪些教训？</li>
+<li><strong>评级机构做什么？</strong> 它们的评级可信吗？</li>
+<li><strong>历史违约率和回收率是多少？</strong> 如何用这些数据估计信用风险？</li>
+</ol>
+<p>教授刻意选择了<strong>两家破产公司——Sears 和 Red Lobster</strong>——作为贯穿全课的案例，因为这两个故事里有信用分析最完整的戏剧：辉煌、衰落、错误决策、破产法庭、债权人博弈。</p>
+<h2 id="一信用风险的两块拼图pd--lgd">一、信用风险的两块拼图：PD × LGD</h2>
+<p>信用分析的公式非常简单：</p>
+<p>$$\text{Expected Loss} = \text{Probability of Default (PD)} \times \text{Loss Given Default (LGD)}$$</p>
+<p>其中：</p>
+<ul>
+<li><strong>PD（违约概率）</strong>：未来某段时间违约的可能性</li>
+<li><strong>LGD（违约损失率）</strong>= 1 − Recovery Rate（回收率）</li>
+</ul>
+<p>换句话说：<strong>你不但要估计违约概率，还要估计违约后能拿回多少。</strong></p>
+<h2 id="二案例一sears西尔斯美国零售业的百年辉煌与消亡">二、案例一：Sears（西尔斯）——美国零售业的百年辉煌与消亡</h2>
+<h3 id="21-辉煌的开始邮购目录颠覆美国农村零售">2.1 辉煌的开始：邮购目录颠覆美国农村零售</h3>
+<p><strong>1890 年代的故事</strong>：当时美国小镇的杂货店价格高、选择少。Sears 开创了<strong>邮购目录</strong>——一本厚达 500 多页的产品册，把几乎所有东西（鞋、女装、马车、渔具、家具、瓷器、乐器、枪支、自行车）送到美国农场家庭。</p>
+<p><strong>1908-1940 年</strong>：Sears 通过邮购卖出 70,000-75,000 套<strong>预制房屋</strong>——美国至今还有许多 Sears 房屋在使用。</p>
+<p><strong>1930 年代</strong>：第一本 <em>Sears Christmas Wish Book</em> 圣诞目录成为美国家庭的节日传统——孩子们盯着里面的玩具流口水，父母在上面选礼物。</p>
+<p><strong>1940-60 年代</strong>：Sears 又一次创新——<strong>郊区购物中心</strong>，远远早于沃尔玛和 Costco。</p>
+<p><strong>1990 年代前</strong>：Sears 还做了件大事——发现可以”顺便”卖保险给买商品的客户，催生了 <strong>Allstate 保险</strong>（1993 年分拆上市）。</p>
+<h3 id="22-衰落被各种对手各吃一块">2.2 衰落：被各种对手各吃一块</h3>
+<ul>
+<li><strong>家电市场</strong>：被 Lowe’s、Home Depot、Best Buy 超越</li>
+<li><strong>零售</strong>：被 Walmart 降维打击</li>
+<li><strong>电商</strong>：被 Amazon 彻底颠覆</li>
+<li><strong>1980 年代</strong>：试图转型金融服务公司（失败了）</li>
+<li><strong>2005 年</strong>：对冲基金经理 Eddie Lampert 收购，与 K-Mart 合并</li>
+</ul>
+<h3 id="23-破产2018-年-10-月-15-日">2.3 破产：2018 年 10 月 15 日</h3>
+<p><strong>Chapter 11 破产申请时的资产负债表</strong>：</p>
+<ul>
+<li>资产：69 亿美元</li>
+<li>负债：113 亿美元</li>
+<li><strong>当天到期 1.43 亿美元利息无力支付</strong></li>
+<li>供应商拒绝在圣诞季发货</li>
+</ul>
+<p><strong>最大的无担保债权人</strong>（这些是真实的数字，值得记住）：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>债权人</th><th>金额</th></tr></thead><tbody><tr><td>Whirlpool（家电供应商）</td><td>约 $23.4 M</td></tr><tr><td>Frigidaire（家电）</td><td>约 $18.6 M</td></tr><tr><td>Winia Daewoo（家电）</td><td>约 $15.2 M</td></tr><tr><td>Cardinal Health（医疗）</td><td>约 $13.9 M</td></tr></tbody></table>
+<h3 id="24-破产拍卖与回收">2.4 破产拍卖与回收</h3>
+<p>Sears 的资产按<strong>第 363 条</strong>拍卖（允许在正式重组计划之外出售资产，以保住”易腐”资产的价值）。<strong>胜出者是 ESL</strong>——Eddie Lampert 自己的对冲基金。</p>
+<p><strong>无担保债权人的回收</strong>：</p>
+<ul>
+<li>Sears 的高级无担保债券（2019 年 12 月到期的 8% 票息债）破产时价格 = <strong>5.54%</strong> 面值</li>
+<li>其他 Sears Roebuck Acceptance Corp 债券价格 ≈ 79.875%（因有子公司担保）</li>
+</ul>
+<p><strong>结果</strong>：</p>
+<ul>
+<li>ESL 放弃了 13 亿美元 Sears 欠它的债</li>
+<li>养老金保障公司（PBGC）接管了 90,000 名 Sears 员工的养老金（18 亿美元资金缺口 → 换取 8 亿美元破产后公司的无担保票据）</li>
+<li>其他债权人共获得 40 亿美元的破产后公司债务</li>
+</ul>
+<blockquote>
+<p><strong>教授的结论引用自 Josh Barro</strong>：“Blockbuster 买下 Netflix 18 年前能变成 Netflix 吗？这就是企业生命的循环。Sears 曾经很辉煌，但当市场基本面在脚下改变时，别人带着不同的能力崛起了。<strong>R.I.P.</strong>”</p>
+</blockquote>
+<h2 id="三案例二red-lobstergucci-老板上市私募拆楼无限虾毁掉一家公司">三、案例二：Red Lobster——Gucci 老板上市、私募拆楼、“无限虾”毁掉一家公司</h2>
+<p>Red Lobster 的故事比 Sears 更有戏剧性，因为它<strong>不是被债务拖垮的</strong>——而是被一连串奇葩管理决策和一个臭名昭著的营销活动毁掉的。</p>
+<h3 id="31-时间线">3.1 时间线</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>年份</th><th>事件</th></tr></thead><tbody><tr><td>1968</td><td>Bill Darden 在佛罗里达开第一家 Red Lobster</td></tr><tr><td>1970</td><td>被 General Mills（食品集团）收购</td></tr><tr><td>1983</td><td>发展到 350 家门店，36 个州——全美最大桌餐连锁</td></tr><tr><td>1995</td><td>分拆为 Darden Restaurants，在 NYSE 上市</td></tr><tr><td>2000-2014</td><td>”光环消退”——中国人对龙虾的胃口变大，运输、劳动力成本上涨</td></tr><tr><td><strong>2014</strong></td><td>Darden 在激进投资者的压力下<strong>以 21 亿美元卖给 Golden Gate Capital（PE 公司）</strong>。Golden Gate <strong>立刻把房产以 15 亿美元卖给 REIT</strong>，Red Lobster 从此变成租户。</td></tr><tr><td>2020 年 1 月</td><td>被泰国联盟（Thai Union）收购，这是一家冷冻海鲜上市公司——Red Lobster 是它的最大客户</td></tr><tr><td>2020 年 3 月</td><td>疫情。老年客群回流慢，海鲜不适合外带</td></tr><tr><td>2022 年</td><td>六位运营副总裁和首席运营官同时被解雇</td></tr><tr><td>2023 年 6 月</td><td><strong>”Endless Shrimp” 变成永久促销</strong></td></tr><tr><td>2024 年 5 月</td><td><strong>Chapter 11 破产</strong>，129 家门店关闭</td></tr></tbody></table>
+<h3 id="32-endless-shrimp商学院反面教材">3.2 “Endless Shrimp”：商学院反面教材</h3>
+<p><strong>机制</strong>：20 美元任吃虾。</p>
+<p><strong>问题</strong>：</p>
+<ul>
+<li>城市店的成本远高于 20 美元</li>
+<li>在高收入 ZIP code，每个”任吃虾”客人让公司<strong>亏 3 美元</strong></li>
+<li><strong>12 个月现金流下降 60%</strong></li>
+<li>现金从 1.1 亿美元缩水到 1300 万美元</li>
+</ul>
+<p><strong>教训</strong>：<strong>不要对任何食物做”任吃”——尤其是在中国人开始吃龙虾、运输成本飙升的时代。</strong></p>
+<h3 id="33-为什么-red-lobster-不是债务被压垮">3.3 为什么 Red Lobster 不是”债务被压垮”</h3>
+<p><strong>区别于 Sears</strong>，Red Lobster 的负债很小——大部分欠款是<strong>未付的供应商账单</strong>。Thai Union（上一任老板）经验不足，甚至可能有<strong>利益冲突</strong>（它既是供应商又是股东）。破产后 Fortress 等 PE 公司注入新资金，请来前 P.F. Chang’s CEO 接手——<strong>很可能能够挽救</strong>这个品牌。</p>
+<blockquote>
+<p><strong>教授的总结</strong>：Red Lobster 是一个完美的案例——<strong>它证明了公司不是因债务而死，而是因管理和战略错误而死</strong>。</p>
+</blockquote>
+<h2 id="四什么算违约moodys-的定义">四、什么算”违约”？Moody’s 的定义</h2>
+<p><strong>Moody’s 对违约的四条定义</strong>（和 S&#x26;P 类似）：</p>
+<ol>
+<li><strong>错过或延迟支付</strong>合同规定的利息或本金（除非在宽限期内解决）</li>
+<li><strong>破产申请</strong>或法律接管</li>
+<li><strong>“Distressed exchange”</strong>（困境交换）：发行人用一组价值更低的新债券换走旧债券，以<strong>避免</strong>正式违约</li>
+<li><strong>被主权国家强制改变条款</strong>：例如强制货币再计价</li>
+</ol>
+<h3 id="教授的重点">教授的重点</h3>
+<blockquote>
+<p><strong>“公司违约有三种主要方式：破产（bankruptcy）、无力支付（failure to pay）、重组（restructuring）。”</strong></p>
+</blockquote>
+<p>Credit Suisse 被瑞士监管强制关闭是一个罕见的”<strong>monetary</strong>”类别——但它很快变成了错过支付。</p>
+<h2 id="五违约的宏观规律">五、违约的宏观规律</h2>
+<h3 id="51-经济周期是最大的驱动因素">5.1 经济周期是最大的驱动因素</h3>
+<p><strong>公司违约率在经济下行期飙升</strong>。历史数据显示，过去 50 年里<strong>五次大的违约潮</strong>都和经济衰退同步：</p>
+<ul>
+<li>1970 年代初</li>
+<li>1980 年代初（大衰退）</li>
+<li>1990 年代初</li>
+<li>2001-02（互联网泡沫）</li>
+<li>2008-10（金融危机）</li>
+</ul>
+<h3 id="52-同行业公司会抱团违约">5.2 同行业公司会”抱团违约”</h3>
+<p>这是一个重要观察——<strong>同一行业的公司面临相同的外部冲击，所以会集体违约</strong>：</p>
+<ul>
+<li><strong>2008-2010</strong>：印刷、出版行业遭互联网冲击，大批公司违约</li>
+<li><strong>2016</strong>：低油气价格让高杠杆的能源公司集体违约</li>
+<li><strong>2020 疫情</strong>：虽有油价暴跌，但违约规模小于 2016，因为”弱者已经被 2016 那波清洗过了”</li>
+</ul>
+<h3 id="53-最大的违约lehman-brothers2008">5.3 最大的违约：Lehman Brothers（2008）</h3>
+<p><strong>1991-2023 年最大单笔违约金额</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>年份</th><th>公司</th><th>规模（百万美元）</th></tr></thead><tbody><tr><td>2008</td><td><strong>Lehman Brothers Holdings</strong></td><td><strong>144,000</strong></td></tr><tr><td>2002</td><td>WorldCom</td><td>30,000</td></tr><tr><td>2022</td><td>Endo International</td><td>25,365</td></tr><tr><td>2020</td><td>Frontier Communications</td><td>22,453</td></tr><tr><td>2017</td><td>Petroleos de Venezuela</td><td>20,400</td></tr><tr><td>2019</td><td>Pacific Gas &#x26; Electric</td><td>20,778</td></tr><tr><td>2018</td><td>iHeartCommunications</td><td>15,600</td></tr><tr><td>2016</td><td>Oi S.A.</td><td>13,700</td></tr><tr><td>2023</td><td>Community Health Systems</td><td>13,870</td></tr><tr><td>2001</td><td>Enron</td><td>10,800</td></tr><tr><td><strong>2021</strong></td><td><strong>China Evergrande Group</strong></td><td><strong>11,025</strong></td></tr></tbody></table>
+<p><strong>Lehman 的 1440 亿美元是其他任何违约案例的 3 倍以上</strong>——教授反复强调这一点。</p>
+<h2 id="六信用评级三巨头">六、信用评级：三巨头</h2>
+<h3 id="61-谁是评级机构">6.1 谁是评级机构</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>机构</th><th>背景</th></tr></thead><tbody><tr><td><strong>Moody’s</strong></td><td>上市公司</td></tr><tr><td><strong>S&#x26;P</strong>（Standard &#x26; Poor’s）</td><td>上市公司</td></tr><tr><td><strong>Fitch</strong></td><td>被 Hearst Corporation（传媒集团）私有化</td></tr><tr><td>DBRS（加拿大）</td><td>Morningstar 子公司，远远第四</td></tr></tbody></table>
+<p><strong>三巨头占全球市场约 95%</strong>。</p>
+<h3 id="62-评级等级对照表">6.2 评级等级对照表</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Moody’s</th><th>S&#x26;P</th><th>描述</th></tr></thead><tbody><tr><td>Aaa</td><td>AAA</td><td>顶级质量，本金和利息受到极强保护</td></tr><tr><td>Aa</td><td>AA</td><td>高质量</td></tr><tr><td>A</td><td>A</td><td>中上等</td></tr><tr><td><strong>Baa</strong></td><td><strong>BBB</strong></td><td><strong>中等——投资级和非投资级的分水岭</strong></td></tr><tr><td>Ba</td><td>BB</td><td>投机元素</td></tr><tr><td>B</td><td>B</td><td>普遍缺乏投资属性</td></tr><tr><td>Caa</td><td>CCC</td><td>质量差，可能已接近违约</td></tr><tr><td>Ca</td><td>CC</td><td>投机极强</td></tr><tr><td>C</td><td>C</td><td>最低评级</td></tr></tbody></table>
+<p><strong>关键分界线</strong>：</p>
+<ul>
+<li><strong>BBB-（S&#x26;P）或 Baa3（Moody’s）及以上</strong>：<strong>投资级（Investment Grade, IG）</strong></li>
+<li><strong>BB+ 或 Ba1 及以下</strong>：<strong>投机级 / 高收益 / “垃圾债”（Speculative Grade, HY, “Junk”）</strong></li>
+</ul>
+<h3 id="63-aaa-越来越稀有">6.3 “AAA 越来越稀有”</h3>
+<p><strong>1980 年代</strong>：S&#x26;P 评定 60+ 家美国非金融公司为 AAA。
+<strong>今天</strong>：只有两家工业公司保住了 AAA：<strong>Johnson &#x26; Johnson 和 Microsoft</strong>。</p>
+<p><strong>被降级的巨头</strong>：</p>
+<ul>
+<li>Berkshire Hathaway → AA+（2010）</li>
+<li>ADP → AA（2014）</li>
+<li>Exxon Mobil → AA+（2016 年，此前 AAA 从 1949 年保持到 2016 年）</li>
+</ul>
+<p><strong>J&#x26;J 的 AAA 也岌岌可危</strong>：2024 年 4 月，S&#x26;P 因其收购 Shockwave 把展望下调为”负面”。</p>
+<h3 id="64-评级是观点不是预测">6.4 评级是<strong>观点</strong>，不是预测</h3>
+<p><strong>评级机构用公式化模型得出”模型指示评级”</strong>，然后<strong>评级委员会可以进行人工覆盖</strong>。</p>
+<p><strong>例子：恒大（Evergrande）</strong></p>
+<ul>
+<li>2021 年 6 月 Moody’s 模型给出 <strong>B1</strong></li>
+<li>实际评级：<strong>Ca</strong>（比模型低 6 档！）</li>
+<li>原因：分析师担心流动性问题</li>
+</ul>
+<blockquote>
+<p><strong>教授的点评</strong>：“模型 + 判断。评级机构不是算法，是职业判断。“</p>
+</blockquote>
+<h2 id="七历史累积违约率非常重要">七、历史累积违约率（非常重要）</h2>
+<h3 id="71-sp-的累积违约率1981-2023">7.1 S&#x26;P 的累积违约率（1981-2023）</h3>
+<p><strong>这张表要记住</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>评级</th><th>Year 1</th><th>Year 5</th><th>Year 10</th></tr></thead><tbody><tr><td>AAA</td><td>0.00%</td><td>0.34%</td><td>0.68%</td></tr><tr><td>AA</td><td>0.02%</td><td>0.34%</td><td>0.84%</td></tr><tr><td>A</td><td>0.05%</td><td>0.40%</td><td>1.17%</td></tr><tr><td><strong>BBB</strong></td><td><strong>0.14%</strong></td><td><strong>1.14%</strong></td><td><strong>2.59%</strong></td></tr><tr><td>BB</td><td>0.45%</td><td>5.17%</td><td>9.57%</td></tr><tr><td>B</td><td>2.73%</td><td>14.88%</td><td>21.15%</td></tr><tr><td><strong>CCC/C</strong></td><td><strong>25.98%</strong></td><td><strong>46.65%</strong></td><td><strong>50.64%</strong></td></tr><tr><td><strong>投资级总计</strong></td><td><strong>0.08%</strong></td><td><strong>0.78%</strong></td><td><strong>1.72%</strong></td></tr><tr><td><strong>投机级总计</strong></td><td><strong>3.52%</strong></td><td><strong>13.70%</strong></td><td><strong>19.27%</strong></td></tr></tbody></table>
+<p><strong>两个关键观察</strong>：</p>
+<ol>
+<li><strong>评级越高，违约率越低</strong>——这条规律过去 40 年几乎从未失效</li>
+<li><strong>投机级 10 年违约率是投资级的 11 倍</strong>——这就是为什么要把它们分开</li>
+</ol>
+<h3 id="72-10-年累计违约率三家机构对比">7.2 10 年累计违约率：三家机构对比</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>评级</th><th>Moody’s</th><th>S&#x26;P</th><th>Fitch</th></tr></thead><tbody><tr><td>Aaa/AAA</td><td>0.02%</td><td>0.68%</td><td>1.32%</td></tr><tr><td>Baa1/BBB+</td><td>2.16%</td><td>1.90%</td><td>1.49%</td></tr><tr><td>Baa3/BBB-</td><td>4.87%</td><td>4.48%</td><td>3.59%</td></tr><tr><td>Ba1/BB+</td><td>8.66%</td><td>5.75%</td><td>6.93%</td></tr><tr><td>B2/B</td><td>32.87%</td><td>21.15%</td><td>15.97%</td></tr><tr><td>Caa-Ca/CCC-C</td><td>74.66%</td><td>50.64%</td><td>41.99%</td></tr><tr><td><strong>投资级总计</strong></td><td><strong>2.18%</strong></td><td><strong>1.72%</strong></td><td><strong>1.53%</strong></td></tr><tr><td><strong>非投资级总计</strong></td><td><strong>29.49%</strong></td><td><strong>19.27%</strong></td><td><strong>12.09%</strong></td></tr></tbody></table>
+<h2 id="八hazard-rate条件违约率信用的时间形状">八、Hazard Rate（条件违约率）：信用的”时间形状”</h2>
+<p><strong>Hazard rate</strong> 指”<strong>给定存活到某一时刻</strong>，该时刻单位时间内违约的概率”。</p>
+<h3 id="81-两个相反的形状">8.1 两个相反的形状</h3>
+<p><strong>投资级债券</strong>：Hazard rate <strong>随时间上升</strong></p>
+<ul>
+<li>原因：<strong>必须先积累损失，才能把一家投资级公司拖垮</strong></li>
+<li>例如：一只 Baa 债券如果熬过 8 年，第 9 年违约概率约为 0.41%</li>
+</ul>
+<p><strong>投机级债券</strong>：Hazard rate <strong>随时间下降</strong></p>
+<ul>
+<li>原因：<strong>能熬过头几年的公司大概率已经渡过难关了</strong></li>
+<li>例如：一只 B3 债券第 1 年违约概率约 6%，如果熬过 5 年，第 10 年的条件违约率反而降到 3% 左右</li>
+</ul>
+<h3 id="82-一个例外年份投资级公司一年内违约">8.2 一个例外年份：投资级公司一年内违约</h3>
+<p><strong>通常这非常罕见</strong>，但 2005、2008、2023 都打破了纪录：</p>
+<p><strong>2023 年的”投资级一年内违约”案例</strong>：</p>
+<ul>
+<li><strong>Silicon Valley Bank</strong>：2023 年 1 月 A1 → 3 月 8 日 Baa1 → 3 月 10 日 C → 3 月 17 日破产</li>
+<li><strong>Signature Bank</strong>：类似路径</li>
+<li><strong>First Republic Bank</strong>：2023 年 Baa1 → 5 月破产</li>
+<li><strong>Credit Suisse</strong>：2023 年 3 月被瑞士监管强制并入 UBS</li>
+</ul>
+<p><strong>教训</strong>：<strong>“投资级极少违约” 的规律会失效</strong>——尤其在银行系统危机时。</p>
+<h2 id="九评级迁移矩阵">九、评级迁移矩阵</h2>
+<p><strong>S&#x26;P 平均一年迁移矩阵（1981-2023）</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>起始评级 \ 年末</th><th>AAA</th><th>AA</th><th>A</th><th>BBB</th><th>BB</th><th>B</th><th>CCC/C</th><th>违约</th><th>NR</th></tr></thead><tbody><tr><td>AAA</td><td><strong>87.26</strong></td><td>8.94</td><td>0.51</td><td>0.03</td><td>0.10</td><td>0.03</td><td>0.05</td><td>0.00</td><td>3.08</td></tr><tr><td>AA</td><td>0.46</td><td><strong>87.63</strong></td><td>7.57</td><td>0.45</td><td>0.05</td><td>0.06</td><td>0.02</td><td>0.02</td><td>3.76</td></tr><tr><td>A</td><td>0.02</td><td>1.50</td><td><strong>89.21</strong></td><td>4.72</td><td>0.24</td><td>0.10</td><td>0.01</td><td>0.05</td><td>4.14</td></tr><tr><td>BBB</td><td>0.00</td><td>0.07</td><td>3.08</td><td><strong>87.13</strong></td><td>3.28</td><td>0.41</td><td>0.09</td><td>0.14</td><td>5.80</td></tr><tr><td>BB</td><td>0.01</td><td>0.02</td><td>0.10</td><td>4.46</td><td><strong>78.59</strong></td><td>6.40</td><td>0.51</td><td>0.57</td><td>9.33</td></tr><tr><td>B</td><td>0.00</td><td>0.02</td><td>0.06</td><td>0.15</td><td>4.46</td><td><strong>75.03</strong></td><td>4.85</td><td>2.98</td><td>12.46</td></tr><tr><td>CCC/C</td><td>0.00</td><td>0.00</td><td>0.08</td><td>0.14</td><td>0.43</td><td>13.34</td><td><strong>44.95</strong></td><td><strong>25.98</strong></td><td>15.08</td></tr></tbody></table>
+<p><strong>三个观察</strong>：</p>
+<ol>
+<li><strong>AAA 一年留在 AAA 的概率 = 87%</strong>（87% 保持，但也有 9% 降到 AA）</li>
+<li><strong>CCC/C 一年违约概率 = 26%</strong>——高度不稳定</li>
+<li><strong>升降级一般只动 1-2 档</strong>，大幅调整罕见</li>
+</ol>
+<h2 id="十lehman-的评级轨迹警钟">十、Lehman 的评级轨迹：警钟</h2>
+<p><strong>Lehman Brothers Holdings 的 Moody’s 评级历史</strong>：</p>
+<ul>
+<li>1995-2003：Baa1-A3</li>
+<li>2000 年底：A2</li>
+<li>2003 年 10 月：<strong>A1</strong></li>
+<li><strong>2008 年 9 月 10 日</strong>：A2（“不确定”展望）</li>
+<li><strong>2008 年 9 月 15 日</strong>：申请破产</li>
+</ul>
+<blockquote>
+<p><strong>直到破产前 5 天，Moody’s 和 S&#x26;P 还评 Lehman 为 single A</strong>。</p>
+</blockquote>
+<p><strong>教授的冷酷结论</strong>：</p>
+<blockquote>
+<p>**“评级机构调整评级很慢。**评级没有反映评级机构可获得的全部信息。分析师需要注意这一点。“</p>
+</blockquote>
+<h2 id="十一简单的债券价格隐含违约估计">十一、简单的债券价格隐含违约估计</h2>
+<p><strong>一个很有用的公式</strong>：如果一只 5 年期债券现在价格是 <strong>2%</strong> 面值，那市场在说什么？</p>
+<p><strong>假设 0% 回收</strong>：2% = e^(−5h)，解得 h ≈ 78%/年 违约率。</p>
+<p><strong>假设 10% 回收</strong>：稍微降低。</p>
+<p><strong>实战应用</strong>：2024 年恒大（Evergrande）债券价格 ≈ 2%——市场认为几乎 0 回收。事后看，这个估计还过于乐观——恒大仍在清算中。</p>
+<h2 id="十二关于信用的几个不直觉的事实">十二、关于信用的几个”不直觉”的事实</h2>
+<ol>
+<li><strong>地区之间违约率相似</strong>——给定同等评级，美国、欧洲、新兴市场的违约率相差不大</li>
+<li><strong>欧洲整体违约次数较少</strong>，仅因为欧洲评级发行人本身少（2024 年欧洲 1500 家 vs 北美 2749 家）</li>
+<li><strong>回收率近年在下降</strong>——公司现在”战斗到最后一刻”才破产，留给债权人的资产越来越少</li>
+<li><strong>国家评级 vs 外币评级可以不同</strong>——恒大的国内评级和外币评级差了一档，国内被认为略好</li>
+<li><strong>CDS spread 经常比评级更灵敏</strong>——当市场开始定价风险时，CDS 往往领先评级调整 3-6 个月</li>
+</ol>
+<h2 id="十三核心要点回顾">十三、核心要点回顾</h2>
+<ol>
+<li><strong>Expected Loss = PD × LGD</strong> — 这是信用分析的总公式</li>
+<li><strong>Sears 和 Red Lobster</strong> — 两种不同的死法：结构性衰退 vs 管理失误</li>
+<li><strong>Moody’s / S&#x26;P / Fitch</strong> 占市场 95%；Big 3 评级的差异有时很大</li>
+<li><strong>投资级 10 年违约率 ≈ 2%，投机级 ≈ 19%</strong>（差 10 倍以上）</li>
+<li><strong>Hazard rate 对投资级上升、对投机级下降</strong> — 反直觉但重要</li>
+<li><strong>评级迁移矩阵</strong> 揭示评级稳定性的真实模式</li>
+<li><strong>评级机构慢于市场</strong> — Lehman 破产前 5 天还是 single-A</li>
+<li><strong>同行业公司会抱团违约</strong>——信用风险有显著的行业聚类</li>
+<li><strong>“高评级越来越稀有”</strong>——今天只有 2 家工业公司保住 AAA</li>
+<li><strong>Silicon Valley Bank 案</strong> 提醒我们”投资级不违约”的规律有例外</li>
+</ol>
+<h2 id="延伸阅读">延伸阅读</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Credit_rating_agency">Wikipedia：Credit rating agency</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sears">Wikipedia：Sears bankruptcy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Red_Lobster">Wikipedia：Red Lobster</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bond_credit_rating">Wikipedia：Bond credit rating</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Silicon_Valley_Bank">Wikipedia：Silicon Valley Bank</a></li>
+<li>YouTube：搜索 “How credit ratings work”</li>
+<li>YouTube：搜索 “Sears bankruptcy story”</li>
+<li>YouTube：搜索 “Red Lobster endless shrimp bankruptcy”</li>
+<li>YouTube：搜索 “Lehman Brothers rating downgrade”</li>
+</ul> </article>  <nav class="mt-16 pt-8 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl"> <a href="/courses/international-capital-markets/06-swaps/" class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900"> <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1"> <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 上一篇
+</span> <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors"> CDS、利率互换与外汇互换 </span> </a> <a href="/courses/international-capital-markets/08-sovereign-debt/" class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900 sm:text-right sm:items-end"> <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1 sm:flex-row-reverse">
+下一篇 <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span> </span> <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors"> 主权债务 </span> </a> </nav>  <div class="mt-8 max-w-3xl text-center"> <a href="/courses/international-capital-markets/" class="inline-flex items-center gap-2 text-xs text-stone-400 hover:text-columbia-navy transition-colors no-underline">
+↑ 返回《国际资本市场》目录
+</a> </div>  </main> <!-- ── Footer ────────────────────────────────────── --> <footer class="bg-columbia-navy text-white/60 mt-0"> <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10"> <div> <p class="font-display font-semibold text-white text-lg">HappyColumbia</p> <p class="mt-2 text-sm leading-relaxed">
+经济 · 金融 · 政策<br>个人原创知识博客
+</p> <p class="mt-4 text-xs text-white/40 leading-relaxed">
+纯公益，不盈利、不收费、无广告。<br>
+内容为个人学习整理与原创评论，与任何机构无关联。
+</p> </div> <div> <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">导航</p> <ul class="space-y-2 text-sm"> <li><a href="/about-sipa/" class="hover:text-white transition-colors no-underline">关于 SIPA</a></li> <li><a href="/#courses" class="hover:text-white transition-colors no-underline">课程笔记</a></li> <li><a href="/career/" class="hover:text-white transition-colors no-underline">求职经验分享</a></li> <li><a href="/research/" class="hover:text-white transition-colors no-underline">金融投研</a></li> <li><a href="/join/" class="hover:text-white transition-colors no-underline">一起做这件事</a></li> </ul> </div> <div> <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">联系</p> <ul class="space-y-2 text-sm"> <li> <a href="mailto:yh3811@columbia.edu" class="hover:text-white transition-colors no-underline">
+yh3811@columbia.edu
+</a> </li> </ul> </div> </div> <div class="border-t border-white/10 max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30"> <span>© 2025 HappyColumbia</span> <span>内容受国际资深教授、著名投资家与银行家启发，由 AI 辅助整理，不代表任何机构立场。若内容涉及版权，请联系删除。</span> </div> </footer> <script type="module">const e=document.getElementById("site-header");if(e){const s=()=>{window.scrollY>60&&(e.classList.add("scrolled"),e.classList.remove("bg-transparent"),e.classList.add("bg-white/95","backdrop-blur-md"),e.querySelectorAll(".text-white\\/80").forEach(t=>t.classList.replace("text-white/80","text-stone-600")),e.querySelectorAll(".text-white").forEach(t=>t.classList.replace("text-white","text-stone-900")),e.querySelectorAll(".hover\\:bg-white\\/10").forEach(t=>t.classList.replace("hover:bg-white/10","hover:bg-stone-100")))};window.addEventListener("scroll",s,{passive:!0})}</script> </body><!-- ── Header scroll effect ───────────────────────── --></html>

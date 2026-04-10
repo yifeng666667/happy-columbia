@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="面向中文读者的经济金融政策知识博客，个人学习整理与原创评论"><title>全球金融危机与 EM——反向传染与 DSA 框架 · HappyColumbia</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="/_astro/index.BJiEgo8m.css"></head> <body class="min-h-screen antialiased font-sans text-stone-900 bg-stone-50"> <!-- ── Header ─────────────────────────────────────── --> <header id="site-header" class="sticky top-0 z-50 transition-all duration-300 bg-white border-b border-stone-200"> <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4"> <!-- Logo --> <a href="/" class="no-underline leading-tight group shrink-0"> <div class="font-display font-semibold tracking-tight text-lg transition-colors text-stone-900 group-hover:text-columbia-navy">
+HappyColumbia
+</div> <div class="hidden sm:block text-[10px] tracking-widest uppercase mt-0.5 text-stone-400">
+经济 · 金融 · 政策
+</div> </a> <!-- Nav --> <nav class="flex items-center gap-1 text-sm shrink-0 text-stone-600"> <a href="/about-sipa/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 关于 SIPA </a><a href="/#courses" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 专题笔记 </a><a href="/career/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 求职分享 </a><a href="/research/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 金融投研 </a><a href="/join/" class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline hover:bg-stone-100 hover:text-stone-900"> 一起做这件事 </a> <a href="/join/" class="ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline border-stone-300 text-stone-700 hover:border-columbia-navy hover:text-columbia-navy">
+联系我
+</a> </nav> </div> </header> <!-- ── Main ───────────────────────────────────────── --> <main class="max-w-5xl mx-auto px-6 py-14">   <div class="-mx-6 -mt-14 mb-8 bg-white border-b border-stone-200 px-6 pt-14 pb-5"> <div class="max-w-3xl"> <a href="/courses/emerging-capital-markets/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-3 group"> <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 新兴资本市场 </a> <h1 class="font-display font-bold text-2xl md:text-3xl text-stone-900 leading-tight"> 全球金融危机与 EM——反向传染与 DSA 框架 </h1> <!-- progress bar --> <div class="mt-4 flex items-center gap-3"> <div class="flex-1 h-1 bg-stone-100 rounded-full overflow-hidden"> <div class="h-full bg-columbia-blue rounded-full transition-all" style="width: 70%"></div> </div> <span class="text-xs text-stone-400 shrink-0">7 / 10</span> </div> </div> </div>  <article class="prose-reading prose prose-stone max-w-3xl
+           prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+           prose-h1:text-3xl prose-h1:mb-6
+           prose-h2:text-xl prose-h2:mt-12 prose-h2:pb-2 prose-h2:border-b prose-h2:border-stone-200 prose-h2:text-columbia-navy
+           prose-h3:text-base prose-h3:mt-8 prose-h3:text-stone-800
+           prose-p:leading-[1.9]
+           prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline
+           prose-strong:text-stone-900
+           prose-code:before:content-none prose-code:after:content-none
+           prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+           prose-code:text-stone-800 prose-code:font-normal prose-code:text-[0.85em]
+           prose-pre:bg-stone-900
+           prose-blockquote:border-l-4 prose-blockquote:border-columbia-blue
+           prose-blockquote:bg-columbia-light/30 prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-lg
+           prose-blockquote:text-stone-700 prose-blockquote:not-italic
+           prose-li:leading-[1.85]
+           prose-table:text-sm
+           prose-th:bg-columbia-light prose-th:text-columbia-navy"> <h2 id="本文概述">本文概述</h2>
+<p>2008 年全球金融危机（Global Financial Crisis, GFC）是对整门课所有理论的一次”反向压力测试”。这节课要回答两个问题：</p>
+<ol>
+<li><strong>为什么这次危机的传导方向和以往完全相反——发达国家成为危机源头，EM 反而表现出惊人的韧性？</strong></li>
+<li><strong>怎么量化一个国家的债务是否可持续？——引入 DSA（Debt Sustainability Analysis，债务可持续性分析）框架。</strong></li>
+</ol>
+<h2 id="一反向传染有毒资产来自发达国家">一、“反向传染”——有毒资产来自发达国家</h2>
+<h3 id="11-gfc-的颠覆性">1.1 GFC 的颠覆性</h3>
+<p>从 1820s 到 1990s 的几乎所有金融危机，模式都是一样的：<strong>危机从 EM 爆发，然后向发达国家传导，发达国家金融系统受冲击</strong>。这个模式在观察者心里根深蒂固，以至于 2007-08 年当问题开始浮现时，很多人以为这又是一次”新兴市场危机”。</p>
+<p>GFC 打破了这个假设。这次：</p>
+<ul>
+<li><strong>有毒资产（toxic assets）不来自 EM 贷款</strong>——而是来自 <strong>美国的次级抵押贷款证券化产品</strong></li>
+<li><strong>危机源头是发达国家的监管失败</strong></li>
+<li><strong>EM 反而是受害者，而不是制造者</strong></li>
+</ul>
+<p>这种”反向传染”在历史上极为罕见，它从根本上挑战了”EM 永远是风险的来源”这个偏见。</p>
+<h3 id="12-gfc-的因果链条">1.2 GFC 的因果链条</h3>
+<pre class="astro-code github-light" style="background-color:#fff;color:#24292e; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;" tabindex="0" data-language="plaintext"><code><span class="line"><span>Greenspan 低利率（2001-2004）</span></span>
+<span class="line"><span>  → 房地产泡沫 + 金融创新（次级抵押贷款、CDO、CDS）</span></span>
+<span class="line"><span>  + 监管缺失（"轻触监管"哲学）</span></span>
+<span class="line"><span>  + 金融全球化（有毒资产通过证券化扩散到全球）</span></span>
+<span class="line"><span>  → 2006-07 年美联储加息</span></span>
+<span class="line"><span>  → 次贷违约 → CDO 评级崩溃 → 银行资产负债表危机</span></span>
+<span class="line"><span>  → 2008 年 9 月雷曼兄弟倒闭</span></span>
+<span class="line"><span>  → 全球信贷市场冻结</span></span></code></pre>
+<p><strong>与 EM 危机的关键区别</strong>：</p>
+<ul>
+<li>1990s EM 危机的有毒资产是 EM 国家的外债</li>
+<li>2008 GFC 的有毒资产是 <strong>美国住宅抵押贷款</strong> 打包出来的衍生品</li>
+<li>EM 金融机构持有的这些产品相对较少——<strong>EM 反而因为资本账户没有完全开放而避免了直接损失</strong></li>
+</ul>
+<h2 id="二em-的惊人韧性为什么这次不一样">二、EM 的惊人韧性——为什么这次不一样？</h2>
+<h3 id="21-五个原因">2.1 五个原因</h3>
+<p>2008 年 GFC 期间，EM 金融市场虽然也出现了短期波动（资本流出、汇率承压），但 <strong>没有出现 1990s 式的系统性崩溃</strong>。原因有五个：</p>
+<p><strong>① 强劲的外汇储备缓冲</strong>
+2000s 积累的大量外汇储备发挥了关键作用。当资本短暂撤出时，EM 央行可以用储备来稳定汇率，而不是像 1990s 那样被迫任由货币崩溃。</p>
+<p><strong>② 更低的外债水平</strong>
+吸取了 1990s 的教训，2000s 的 EM 借了更多 <strong>本币债</strong>、更少的 <strong>外币短期债</strong>。Pettis 所说的四个脆弱特征都有明显改善。</p>
+<p><strong>③ 更好的资本结构</strong>
+外汇储备覆盖短期外债的比率大幅提升，货币错配减少，期限结构改善。</p>
+<p><strong>④ 中国的 4 万亿人民币刺激计划</strong>
+中国政府在 2008-09 年推出规模巨大的财政刺激（约 4 万亿人民币 / 约 5860 亿美元），直接支撑了大宗商品需求。这对资源出口型 EM 是一个巨大的”外部救援”。</p>
+<p><strong>⑤ 更健全的银行体系</strong>
+1990s 危机迫使很多 EM 进行了银行业改革，到 2008 年时，不良贷款率更低，资本充足率更高。</p>
+<h3 id="22-gfc-后的lower-for-longer">2.2 GFC 后的”Lower for Longer”</h3>
+<p>为应对 GFC，发达国家实施了前所未有的 <strong>量化宽松（Quantitative Easing, QE）</strong>：</p>
+<ul>
+<li>美联储、欧央行、日本央行把利率压至零甚至负值</li>
+<li>大规模购买债券，向市场注入流动性</li>
+<li>这持续了整整十多年（直到 2022 年通胀飙升才结束）</li>
+</ul>
+<p><strong>对 EM 的含义</strong>：这是又一次 Pettis 流动性扩张——大量资本再次涌入 EM 追逐收益。EM 债券和股票受到追捧，利差压缩至极低水平。但与此同时，<strong>新的脆弱性也在积累</strong>：企业借了大量美元债，一旦美联储开始加息（2013 年 Taper Tantrum 就是预告），这些脆弱性就会暴露。</p>
+<h2 id="三债务可持续性分析dsadebt-sustainability-analysis">三、债务可持续性分析（DSA，Debt Sustainability Analysis）</h2>
+<p>这是 Session 7 最重要的工具性内容——学会看懂 IMF 的 DSA 报告，是进入主权信用分析领域的基本门槛。</p>
+<h3 id="31-dsa-要回答什么问题">3.1 DSA 要回答什么问题</h3>
+<blockquote>
+<p><strong>在给定的宏观经济假设下，一个国家的政府债务轨迹是否可持续？</strong></p>
+</blockquote>
+<p>具体来说：政府的债务 / GDP 比率会稳定下来还是持续上升？如果持续上升，会上升到什么水平？需要多少财政调整才能让债务轨迹回到可持续的路径上？</p>
+<h3 id="32-dsa-的五个核心要素必记">3.2 DSA 的五个核心要素（<strong>必记</strong>）</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>要素</th><th>含义</th></tr></thead><tbody><tr><td><strong>债务 / GDP 比率轨迹</strong></td><td>是在上升还是在下降？上升到什么水平？</td></tr><tr><td><strong>初级财政平衡（Primary Balance）</strong></td><td>财政收入减去支出（不含利息）。需要多少盈余才能稳定债务？</td></tr><tr><td><strong>利率 - 增长差（r − g）</strong></td><td>r = 有效利率，g = GDP 增长率。当 r > g 时，即使初级平衡为零，债务 / GDP 也会自动上升</td></tr><tr><td><strong>外部融资需求</strong></td><td>到期债务 + 经常账户赤字 = 需要从外部筹集多少资金</td></tr><tr><td><strong>汇率风险</strong></td><td>外币债务占比越高，汇率贬值对债务可持续性的冲击越大</td></tr></tbody></table>
+<h3 id="33-dsa-核心公式需要理解">3.3 DSA 核心公式（<strong>需要理解</strong>）</h3>
+<p>$$\Delta\left(\frac{Debt}{GDP}\right) = (r - g) \times \frac{Debt}{GDP} - PB + SFA$$</p>
+<p>其中：</p>
+<ul>
+<li><strong>r</strong> = 有效利率（政府债务的平均利息成本）</li>
+<li><strong>g</strong> = GDP 增长率（名义增长率）</li>
+<li><strong>PB</strong> = Primary Balance（初级财政平衡），正数为盈余</li>
+<li><strong>SFA</strong> = Stock-Flow Adjustments（存量 - 流量调整，包括汇率变动、银行纾困等一次性因素）</li>
+</ul>
+<p><strong>解读这个公式</strong>：</p>
+<ul>
+<li>如果 <strong>r > g</strong>（利率高于增长率）且 <strong>PB 为负</strong>（财政赤字），债务 / GDP 会 <strong>加速上升</strong></li>
+<li>要 <strong>稳定</strong> 债务 / GDP，需要：<code>PB = (r − g) × Debt/GDP</code></li>
+<li>如果一个国家的 r - g 是 2%，债务 / GDP 是 80%，那么需要 1.6% GDP 的初级财政盈余才能稳定债务</li>
+<li>如果 r &#x3C; g（名义增长率超过利率），政府可以在轻微赤字下仍然让债务 / GDP 下降——这正是 2020s 初美国的情况，也是很多人支持政府借钱投资的依据</li>
+</ul>
+<h3 id="34-dsa-的三种场景分析">3.4 DSA 的三种场景分析</h3>
+<p>IMF 在做 DSA 时，通常构建三个场景：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>场景</th><th>说明</th></tr></thead><tbody><tr><td><strong>基准（Baseline）</strong></td><td>基于官方的经济假设（增长率、通胀、利率等）下的债务轨迹</td></tr><tr><td><strong>上行（Upside）</strong></td><td>经济表现超预期，政策执行顺利</td></tr><tr><td><strong>下行（Downside）</strong></td><td>经济下行、外部冲击、利率上升等不利情境</td></tr></tbody></table>
+<p><strong>关键</strong>：真正有价值的信息在下行场景——如果下行情景下债务轨迹仍然可控，说明国家有一定抗冲击能力；如果下行情景直接推入”债务不可持续”区域，说明国家极为脆弱。</p>
+<h3 id="35-dsa-的实际用途">3.5 DSA 的实际用途</h3>
+<ul>
+<li><strong>IMF</strong>：在审批贷款、设计救援方案时，DSA 是核心工具——要不要救？救援条件怎么设计？</li>
+<li><strong>信用评级机构</strong>：主权债评级背后有大量 DSA 式的计算</li>
+<li><strong>主权债投资者</strong>（比如 UBS 框架，Session 附录会讲）：判断某个主权信用是否被市场高估 / 低估</li>
+<li><strong>学术研究</strong>：评估政策建议对债务可持续性的影响</li>
+</ul>
+<h2 id="四gfc-后的监管变革">四、GFC 后的监管变革</h2>
+<p>GFC 倒逼了全球范围内的金融监管改革，这对 EM 也有影响：</p>
+<ul>
+<li><strong>巴塞尔 III（Basel III）</strong>：更严格的银行资本充足率要求（CET1 资本要求提高），流动性覆盖率（LCR）要求，杠杆率限制</li>
+<li><strong>系统重要性金融机构（SIFIs）</strong>：对”大而不倒”的机构实施附加资本要求</li>
+<li><strong>衍生品市场透明度</strong>：要求通过中央对手方（CCP）清算的衍生品比例提高</li>
+<li><strong>对 EM 银行的影响</strong>：巴塞尔 III 提高了对风险资产（包括 EM 债务）的资本要求，短期内减少了西方银行对 EM 的贷款意愿</li>
+</ul>
+<h2 id="五主权财富基金的战略性机会">五、主权财富基金的战略性机会</h2>
+<p>GFC 期间，发达国家资产价格暴跌，EM 的主权财富基金（SWF）面临了一个历史性的低价入场机会：</p>
+<ul>
+<li>中国 CIC、新加坡 GIC / Temasek、科威特 KIA 等 SWF 在 2008-09 年抄底了多家西方金融机构</li>
+<li>但这也引发了 <strong>地缘政治审查</strong>：EM 国家的主权基金收购西方战略性资产（银行、基础设施、科技公司），触发了美国 CFIUS（外国投资委员会）的审查机制</li>
+<li>这种紧张关系在此后十年里不断升级，到 2020s 已经变成了更广泛的投资审查体系</li>
+</ul>
+<h2 id="为什么重要">为什么重要</h2>
+<p>Session 7 有两个最重要的实践价值：</p>
+<p><strong>第一：DSA 是进入主权信用分析的门票。</strong> 如果你要做 EM 固收研究、IMF / World Bank 工作，DSA 是日常工具，不是可选内容。理解 r - g 差、初级平衡、外部融资需求这几个要素，才能有意义地讨论”XX 国的债务可不可持续”。</p>
+<p><strong>第二：EM 在 GFC 中的韧性证明了——制度建设和资本结构改善是真正有价值的。</strong> 这对 EM 投资者是一个至关重要的信号：2000s EM 发展的成果不是泡沫，而是实质性的结构改善。投了十年时间建立外汇储备、改善银行监管、延长债务期限——这些在 2008 年关键时刻救了很多国家。<strong>制度建设的回报，在危机中才看得到。</strong></p>
+<p>反过来说，“Lower for Longer”在 2010s 创造的新一轮资本流入，是下一次脆弱性积累的过程。那次收缩（2013 年 Taper Tantrum、2018 年美联储加息、2022 年激进加息）中受冲击最重的，又是那些没有用 2010s 好时候改善资本结构的国家——<strong>历史还在押韵</strong>。</p>
+<h2 id="延伸阅读--公开资源">延伸阅读 / 公开资源</h2>
+<p><strong>GFC 全景</strong></p>
+<ul>
+<li><strong>Wikipedia - <a href="https://en.wikipedia.org/wiki/2007%E2%80%932008_financial_crisis">2007–2008 financial crisis</a></strong>：全景综述，注释丰富。</li>
+<li><strong>PBS Frontline - “<a href="https://www.pbs.org/wgbh/frontline/documentary/money-power-wall-street/">Money, Power and Wall Street</a>”</strong>（4 集纪录片，免费在线观看）：最好的 GFC 叙事纪录片之一。</li>
+<li><strong>Ray Dalio, “<a href="https://www.youtube.com/watch?v=PHe0bXAIuk0">How the Economic Machine Works</a>”</strong>（30 分钟）：信贷周期和去杠杆的经典动画解释。</li>
+</ul>
+<p><strong>DSA 框架</strong></p>
+<ul>
+<li><strong>IMF - “<a href="https://www.imf.org/en/Publications/policy-papers/Issues/2021/12/18/Review-of-the-Debt-Sustainability-Framework-for-Market-Access-Countries-511057">Debt Sustainability Analysis for Market-Access Countries”</a></strong>：IMF 官方 DSA 框架说明（免费）。</li>
+<li><strong>IMF - “Global Debt Monitor”</strong>（半年度报告）：实时跟踪全球主权债务动态。</li>
+<li><strong>Olivier Blanchard (2019), “Public Debt and Low Interest Rates”</strong>（American Economic Review）：r &#x3C; g 的现代意义——当增长率超过利率时，政府债务逻辑发生什么变化。</li>
+</ul>
+<p><strong>EM 韧性与 GFC</strong></p>
+<ul>
+<li><strong>World Bank - “<a href="https://openknowledge.worldbank.org">Resilience in Emerging Market Countries”</a></strong>（可在 World Bank 网站搜索）</li>
+<li><strong>IMF Working Paper - “Emerging Markets Resilience and World Economy”</strong>（可在 IMF.org 搜索）</li>
+</ul>
+<p><strong>视频</strong></p>
+<ul>
+<li><strong>YouTube - Patrick Boyle, “<a href="https://www.youtube.com/results?search_query=patrick+boyle+2008+financial+crisis">The 2008 Financial Crisis Explained</a>”</strong>：机构视角，质量很高。</li>
+<li><strong>Khan Academy - “<a href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking">2008 Financial Crisis</a>”</strong>：基础入门。</li>
+<li><strong>BIS - Basel III 官方说明</strong>：<a href="https://www.bis.org/basel_framework/">bis.org/basel_framework</a></li>
+</ul> </article>  <nav class="mt-16 pt-8 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl"> <a href="/courses/emerging-capital-markets/05-session-6/" class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900"> <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1"> <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> 上一篇
+</span> <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors"> 21 世纪——BRICs 崛起与北京共识 </span> </a> <a href="/courses/emerging-capital-markets/07-session-8/" class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900 sm:text-right sm:items-end"> <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1 sm:flex-row-reverse">
+下一篇 <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span> </span> <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors"> 后 GFC 世界、COVID 与主权债重组的新挑战 </span> </a> </nav>  <div class="mt-8 max-w-3xl text-center"> <a href="/courses/emerging-capital-markets/" class="inline-flex items-center gap-2 text-xs text-stone-400 hover:text-columbia-navy transition-colors no-underline">
+↑ 返回《新兴资本市场》目录
+</a> </div>  </main> <!-- ── Footer ────────────────────────────────────── --> <footer class="bg-columbia-navy text-white/60 mt-0"> <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10"> <div> <p class="font-display font-semibold text-white text-lg">HappyColumbia</p> <p class="mt-2 text-sm leading-relaxed">
+经济 · 金融 · 政策<br>个人原创知识博客
+</p> <p class="mt-4 text-xs text-white/40 leading-relaxed">
+纯公益，不盈利、不收费、无广告。<br>
+内容为个人学习整理与原创评论，与任何机构无关联。
+</p> </div> <div> <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">导航</p> <ul class="space-y-2 text-sm"> <li><a href="/about-sipa/" class="hover:text-white transition-colors no-underline">关于 SIPA</a></li> <li><a href="/#courses" class="hover:text-white transition-colors no-underline">课程笔记</a></li> <li><a href="/career/" class="hover:text-white transition-colors no-underline">求职经验分享</a></li> <li><a href="/research/" class="hover:text-white transition-colors no-underline">金融投研</a></li> <li><a href="/join/" class="hover:text-white transition-colors no-underline">一起做这件事</a></li> </ul> </div> <div> <p class="text-white font-medium text-sm uppercase tracking-widest mb-4">联系</p> <ul class="space-y-2 text-sm"> <li> <a href="mailto:yh3811@columbia.edu" class="hover:text-white transition-colors no-underline">
+yh3811@columbia.edu
+</a> </li> </ul> </div> </div> <div class="border-t border-white/10 max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/30"> <span>© 2025 HappyColumbia</span> <span>内容受国际资深教授、著名投资家与银行家启发，由 AI 辅助整理，不代表任何机构立场。若内容涉及版权，请联系删除。</span> </div> </footer> <script type="module">const e=document.getElementById("site-header");if(e){const s=()=>{window.scrollY>60&&(e.classList.add("scrolled"),e.classList.remove("bg-transparent"),e.classList.add("bg-white/95","backdrop-blur-md"),e.querySelectorAll(".text-white\\/80").forEach(t=>t.classList.replace("text-white/80","text-stone-600")),e.querySelectorAll(".text-white").forEach(t=>t.classList.replace("text-white","text-stone-900")),e.querySelectorAll(".hover\\:bg-white\\/10").forEach(t=>t.classList.replace("hover:bg-white/10","hover:bg-stone-100")))};window.addEventListener("scroll",s,{passive:!0})}</script> </body><!-- ── Header scroll effect ───────────────────────── --></html>

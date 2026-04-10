@@ -1,0 +1,167 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="我的思考">
+
+  <!-- Header strip -->
+  <div class="-mx-6 -mt-14 mb-10 bg-columbia-navy text-white px-6 pt-14 pb-10">
+    <div class="max-w-3xl">
+      <a href="/research/" class="inline-flex items-center gap-1.5 text-white/50 hover:text-white text-xs transition-colors no-underline mb-5 group">
+        <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+        金融投研
+      </a>
+      <h1 class="font-display font-bold text-3xl text-white">我的思考</h1>
+      <p class="mt-2 text-white/60 text-sm">从每日热点和深度文章中收藏的内容，加上自己的笔记</p>
+    </div>
+  </div>
+
+  <!-- Controls bar -->
+  <div class="max-w-3xl flex items-center justify-between mb-6">
+    <p class="text-xs text-stone-400">
+      已收藏 <span id="count" class="font-semibold text-stone-700">0</span> 篇
+    </p>
+    <div class="flex gap-2">
+      <button id="export-btn"
+        class="text-xs px-3 py-1.5 rounded-full border border-stone-200 text-stone-500 hover:border-columbia-navy hover:text-columbia-navy transition-all">
+        导出 Markdown
+      </button>
+      <button id="clear-btn"
+        class="text-xs px-3 py-1.5 rounded-full border border-stone-200 text-stone-500 hover:border-red-400 hover:text-red-500 transition-all">
+        清空全部
+      </button>
+    </div>
+  </div>
+
+  <!-- Empty state -->
+  <div id="empty-state" class="max-w-3xl border border-dashed border-stone-200 rounded-2xl py-16 text-center hidden">
+    <p class="text-stone-400 text-sm">还没有收藏任何内容</p>
+    <p class="text-stone-300 text-xs mt-2">在文章页点击「收藏到我的思考」即可保存</p>
+    <a href="/research/" class="inline-block mt-6 text-xs text-columbia-blue hover:underline no-underline">去看看文章 →</a>
+  </div>
+
+  <!-- Bookmarks list -->
+  <div id="bookmarks-list" class="max-w-3xl space-y-4"></div>
+
+</Base>
+
+<script>
+  (() => {
+    const KEY = 'hc_bookmarks';
+    const catLabel: Record<string, string> = {
+      macro: '宏观经济分析', policy: '政策追踪', daily: '热点追踪',
+      thematic: '主题深度', articles: '公众号文章',
+    };
+    const catColor: Record<string, string> = {
+      macro: 'bg-emerald-100 text-emerald-700',
+      policy: 'bg-sky-100 text-sky-700',
+      daily: 'bg-amber-100 text-amber-700',
+      thematic: 'bg-violet-100 text-violet-700',
+      articles: 'bg-rose-100 text-rose-700',
+    };
+
+    const getAll = (): any[] => JSON.parse(localStorage.getItem(KEY) ?? '[]');
+    const save = (all: any[]) => localStorage.setItem(KEY, JSON.stringify(all));
+
+    const render = () => {
+      const all = getAll();
+      const list = document.getElementById('bookmarks-list')!;
+      const empty = document.getElementById('empty-state')!;
+      const countEl = document.getElementById('count')!;
+
+      countEl.textContent = String(all.length);
+      list.innerHTML = '';
+
+      if (all.length === 0) {
+        empty.classList.remove('hidden');
+        return;
+      }
+      empty.classList.add('hidden');
+
+      all.forEach((bm: any, i: number) => {
+        const card = document.createElement('div');
+        card.className = 'bg-white border border-stone-200 rounded-xl p-5 space-y-3';
+        card.innerHTML = `
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="text-[11px] px-2 py-0.5 rounded-full font-medium ${catColor[bm.category] ?? 'bg-stone-100 text-stone-500'}">
+                  ${catLabel[bm.category] ?? bm.category}
+                </span>
+                <span class="text-[11px] text-stone-400">${bm.date}</span>
+              </div>
+              <a href="${bm.url}" class="font-semibold text-stone-900 hover:text-columbia-navy transition-colors no-underline text-base leading-snug">
+                ${bm.title}
+              </a>
+              ${bm.summary ? `<p class="text-xs text-stone-400 mt-1 leading-relaxed">${bm.summary}</p>` : ''}
+            </div>
+            <button class="remove-btn shrink-0 text-stone-300 hover:text-red-400 transition-colors text-lg leading-none" data-index="${i}" title="取消收藏">×</button>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[11px] text-stone-400 uppercase tracking-wider">我的笔记</p>
+            <textarea
+              class="note-area w-full text-sm text-stone-700 bg-stone-50 border border-stone-100 rounded-lg px-3 py-2 resize-none focus:outline-none focus:border-columbia-blue transition-colors leading-relaxed"
+              rows="3"
+              placeholder="写下你的想法、投资洞察或学习笔记..."
+              data-index="${i}"
+            >${bm.note ?? ''}</textarea>
+          </div>
+          <div class="text-[11px] text-stone-300">收藏于 ${new Date(bm.savedAt).toLocaleString('zh-CN', {month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}</div>
+        `;
+        list.appendChild(card);
+      });
+
+      // Remove buttons
+      list.querySelectorAll('.remove-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt((btn as HTMLElement).dataset.index!);
+          const all = getAll();
+          all.splice(idx, 1);
+          save(all);
+          render();
+        });
+      });
+
+      // Note textareas — debounced save
+      list.querySelectorAll('.note-area').forEach(ta => {
+        let t: ReturnType<typeof setTimeout>;
+        ta.addEventListener('input', () => {
+          clearTimeout(t);
+          t = setTimeout(() => {
+            const idx = parseInt((ta as HTMLTextAreaElement).dataset.index!);
+            const all = getAll();
+            all[idx].note = (ta as HTMLTextAreaElement).value;
+            save(all);
+          }, 400);
+        });
+      });
+    };
+
+    // Export to markdown
+    document.getElementById('export-btn')?.addEventListener('click', () => {
+      const all = getAll();
+      if (!all.length) return;
+      const lines = [`# 我的思考 — 收藏笔记\n\n导出时间：${new Date().toLocaleString('zh-CN')}\n`];
+      all.forEach((bm: any) => {
+        lines.push(`\n---\n\n## ${bm.title}`);
+        lines.push(`- 来源：[${catLabel[bm.category] ?? bm.category}](https://happycolumbia.com${bm.url})`);
+        lines.push(`- 日期：${bm.date}`);
+        if (bm.summary) lines.push(`- 摘要：${bm.summary}`);
+        if (bm.note?.trim()) lines.push(`\n**我的笔记：**\n\n${bm.note.trim()}`);
+      });
+      navigator.clipboard.writeText(lines.join('\n')).then(() => {
+        const btn = document.getElementById('export-btn')!;
+        btn.textContent = '已复制到剪贴板 ✓';
+        setTimeout(() => { btn.textContent = '导出 Markdown'; }, 2000);
+      });
+    });
+
+    // Clear all
+    document.getElementById('clear-btn')?.addEventListener('click', () => {
+      if (!getAll().length) return;
+      if (confirm('确认清空所有收藏？')) { save([]); render(); }
+    });
+
+    render();
+  })();
+</script>

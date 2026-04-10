@@ -1,0 +1,110 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="一起做这件事">
+
+  <a href="/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-8 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    返回首页
+  </a>
+
+  <header class="mb-14 pb-10 border-b border-stone-200">
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-3">Join Us</p>
+    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight">
+      一起做这件事
+    </h1>
+    <p class="mt-5 text-stone-600 leading-loose text-[0.9375rem] max-w-2xl">
+      SIPA 两年，给了我很多——好老师、好朋友，还有很多认知上的冲击与成长。
+      快毕业了，总觉得这些东西不该只留在自己的笔记本里。
+      如果能有更多人一起来做这件事，把各自走过的路记录下来，那就更好了。
+    </p>
+  </header>
+
+  <!-- What we welcome -->
+  <section class="mb-14">
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-6">欢迎什么样的分享</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {[
+        {
+          title: '课程笔记',
+          body: '你上过的任何一门 SIPA 课程（或任何你认为值得分享的好课）。不需要完美、不需要系统——哪怕只是几页 key takeaways、一张课程框架图、一份 reading list 的读后感，都欢迎。',
+          dot: 'bg-violet-500',
+        },
+        {
+          title: '求职经验',
+          body: '从暑期实习到 return offer，从投行、咨询到联合国、NGO、智库——SIPA 人的职业路径极其多元。你走过的路，可能正是另一个人正在摸索的方向。',
+          dot: 'bg-emerald-500',
+        },
+        {
+          title: '求学心得',
+          body: '选课策略、时间管理、如何和教授建立关系、纽约生活、英语学习……任何你觉得"当年要是有人告诉我就好了"的事。',
+          dot: 'bg-amber-500',
+        },
+        {
+          title: '翻译 · 校对 · 排版',
+          body: '如果你不写原创内容，但愿意帮忙把现有笔记翻译成英文、校对错字、优化排版——同样重要，同样欢迎。',
+          dot: 'bg-columbia-blue',
+        },
+      ].map(({ title, body, dot }) => (
+        <div class="bg-white border border-stone-200 rounded-xl p-6 space-y-2">
+          <div class="flex items-center gap-2.5">
+            <span class={`w-2 h-2 rounded-full shrink-0 ${dot}`}></span>
+            <h3 class="font-semibold text-stone-900">{title}</h3>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed">{body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Commitments -->
+  <section class="mb-14">
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-6">我的承诺</p>
+    <div class="bg-columbia-light/40 border border-columbia-blue/20 rounded-2xl p-6 sm:p-8 space-y-4">
+      {[
+        { label: '完全公益', body: '所有内容免费开放，不设付费墙，不接广告，永远。' },
+        { label: '署名权', body: '贡献者保留署名权，也可选择匿名发布。' },
+        { label: '版权尊重', body: '只收录原创或合法授权的内容，不转载受版权保护的讲义原文。' },
+        { label: '随时可撤回', body: '你贡献的内容，任何时候想撤下都可以，一句话的事。' },
+      ].map(({ label, body }) => (
+        <div class="flex gap-4 items-start">
+          <span class="mt-0.5 w-1.5 h-1.5 rounded-full bg-columbia-blue shrink-0 mt-2"></span>
+          <p class="text-sm text-stone-700 leading-relaxed">
+            <strong class="text-columbia-navy font-semibold">{label}</strong>
+            <span class="text-stone-500">：</span>
+            {body}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-6">怎么开始</p>
+    <p class="text-stone-600 leading-loose text-[0.9375rem] mb-8 max-w-2xl">
+      最简单的方式就是发一封邮件或加个微信，先聊两句你想分享什么。
+      不需要正式的"申请"，也不需要先写好完整稿件——
+      我们可以一起决定怎么呈现最好。
+    </p>
+
+    <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
+      <div class="px-8 py-7 border-b border-stone-200">
+        <p class="text-stone-400 text-[11px] uppercase tracking-[0.2em] mb-1">Contact</p>
+        <h3 class="font-display font-bold text-stone-900 text-xl">联系峰哥</h3>
+        <p class="mt-1.5 text-stone-500 text-sm">一般 24 小时内回复，欢迎随时打扰。</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-stone-200">
+        <div class="px-8 py-5">
+          <p class="text-stone-400 text-[10px] uppercase tracking-widest mb-1">邮箱</p>
+          <a href="mailto:yh3811@columbia.edu"
+             class="text-stone-900 hover:text-columbia-navy font-mono text-sm transition-colors no-underline">
+            yh3811@columbia.edu
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

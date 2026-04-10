@@ -1,0 +1,160 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const chapters = [
+  {
+    num: '01',
+    href: '/career/chapter-1/',
+    title: '如何找到自己热爱的方向',
+    desc: 'AI 时代 + 留学生身份 + 回国或留美——在投出第一份简历之前，先建立一套完整的坐标系。写给经济学/商科本科 + 海外名校金融硕士背景的毕业生。',
+    tags: ['AI 时代', '回国 vs 留美', '行业选择', '热爱'],
+    date: '2026-04-09',
+    readTime: '约 25 分钟',
+    status: 'published',
+  },
+  {
+    num: '02',
+    href: '/career/chapter-2/',
+    title: '求职时间线——什么时候做什么，一步都不能错',
+    desc: '美国最早，香港居中，大陆最晚。三条时间轴、三套节奏——从暑期实习到秋招春招的完整作战地图，结合 2025–2026 年市场真实状况写给 SIPA 的你。',
+    tags: ['时间线', '秋招', '美国 / 香港 / 大陆', '暑期转正'],
+    date: '2026-04-09',
+    readTime: '约 20 分钟',
+    status: 'published',
+  },
+  {
+    num: '03',
+    href: '#',
+    title: '简历与实习——如何在最短时间内建立最有效的履历',
+    desc: '从零开始构建履历的底层逻辑，实习选择的优先级排序，以及如何在一两段经历中讲出完整的故事。',
+    tags: ['简历', '实习策略', '履历构建'],
+    date: '',
+    readTime: '',
+    status: 'coming',
+  },
+  {
+    num: '04',
+    href: '#',
+    title: '面试与笔试——如何在高压环境中展示真实的自己',
+    desc: '技术面、行为面、案例面的准备方法，以及如何在面试中既展示能力，又保持真实。',
+    tags: ['面试', '笔试', '案例分析'],
+    date: '',
+    readTime: '',
+    status: 'coming',
+  },
+];
+---
+
+<Base title="求职经验分享">
+
+  <a href="/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-8 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    返回首页
+  </a>
+
+  <!-- ── Header ────────────────────────────────────── -->
+  <header class="mb-14 pb-10 border-b border-stone-200">
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-3">Career Series</p>
+    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight">
+      求职经验分享
+    </h1>
+    <p class="mt-5 text-stone-600 leading-loose text-[0.9375rem] max-w-2xl">
+      从 SIPA 到职场的真实路径——整理自己和同学们在求职路上的经验、教训、思路和资源。
+      写给经济学 / 商科背景、有海外留学经历、正在面对「回国还是留美」选择的年轻人。
+    </p>
+    <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-stone-400">
+      <span class="flex items-baseline gap-1.5">
+        <span class="text-columbia-navy font-bold text-xl">2</span>
+        <span>篇已发布</span>
+      </span>
+      <span class="text-stone-200">·</span>
+      <span class="flex items-baseline gap-1.5">
+        <span class="text-stone-400 font-bold text-xl">2</span>
+        <span>篇即将上线</span>
+      </span>
+      <span class="text-stone-200">·</span>
+      <span>持续更新中</span>
+    </div>
+  </header>
+
+  <!-- ── Chapter List ────────────────────────────── -->
+  <div class="space-y-5 mb-16">
+    {chapters.map((ch) => (
+      <div class={`relative group ${ch.status === 'coming' ? 'opacity-55' : ''}`}>
+        {ch.status === 'published' ? (
+          <a
+            href={ch.href}
+            class="card-lift block bg-white border border-stone-200 rounded-2xl p-7 no-underline text-stone-900 hover:border-columbia-blue transition-all"
+          >
+            <div class="flex items-start gap-5">
+              <div class="shrink-0 w-12 h-12 rounded-xl bg-columbia-navy flex items-center justify-center">
+                <span class="font-display font-bold text-white text-sm">{ch.num}</span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-start justify-between gap-4 flex-wrap">
+                  <h2 class="font-display font-bold text-lg text-stone-900 group-hover:text-columbia-navy transition-colors leading-snug">
+                    {ch.title}
+                  </h2>
+                  {ch.date && (
+                    <span class="shrink-0 text-[11px] text-stone-400 mt-0.5">{ch.date}</span>
+                  )}
+                </div>
+                <p class="mt-2 text-sm text-stone-500 leading-relaxed max-w-2xl">{ch.desc}</p>
+                <div class="mt-3 flex flex-wrap items-center gap-2">
+                  {ch.tags.map((tag) => (
+                    <span class="text-[10px] bg-columbia-light text-columbia-navy font-medium px-2.5 py-0.5 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                  {ch.readTime && (
+                    <span class="text-[11px] text-stone-400 ml-1">{ch.readTime}</span>
+                  )}
+                </div>
+              </div>
+              <span class="shrink-0 text-columbia-blue opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-xl mt-2">→</span>
+            </div>
+          </a>
+        ) : (
+          <div class="bg-white border border-dashed border-stone-200 rounded-2xl p-7">
+            <div class="flex items-start gap-5">
+              <div class="shrink-0 w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center">
+                <span class="font-display font-bold text-stone-400 text-sm">{ch.num}</span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h2 class="font-display font-bold text-lg text-stone-400 leading-snug">{ch.title}</h2>
+                  <span class="text-[10px] bg-stone-100 text-stone-400 font-medium px-2.5 py-0.5 rounded-full">
+                    即将上线
+                  </span>
+                </div>
+                <p class="mt-2 text-sm text-stone-400 leading-relaxed max-w-2xl">{ch.desc}</p>
+                <div class="mt-3 flex flex-wrap items-center gap-2">
+                  {ch.tags.map((tag) => (
+                    <span class="text-[10px] bg-stone-100 text-stone-400 font-medium px-2.5 py-0.5 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+
+  <!-- ── Contribute CTA ─────────────────────────────── -->
+  <section class="bg-columbia-navy rounded-2xl p-8 text-white text-center">
+    <p class="font-display font-semibold text-lg mb-2">有你自己的求职故事？</p>
+    <p class="text-white/60 text-sm leading-relaxed mb-5 max-w-md mx-auto">
+      无论是成功还是失败的经验，都可能对后来者有巨大帮助。欢迎联系一起完善这个系列。
+    </p>
+    <a
+      href="mailto:yh3811@columbia.edu"
+      class="inline-block no-underline px-6 py-2.5 bg-white text-columbia-navy font-semibold text-sm rounded-full hover:bg-columbia-light transition-colors"
+    >
+      联系我 →
+    </a>
+  </section>
+
+</Base>
