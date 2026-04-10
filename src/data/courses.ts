@@ -40,6 +40,7 @@ export interface CourseMeta {
   titleEn: string;
   description: string;
   heroImage?: string; // Unsplash photo URL, falls back to category default
+  city?: string;      // City name shown on card
 }
 
 export const courses: CourseMeta[] = [
@@ -50,7 +51,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'International Capital Markets',
     description:
       '系统梳理全球资本市场的运作机制——从货币市场、债券、衍生品到信用、股权与另类投资，理解利率曲线、风险管理工具与 2008 危机的来龙去脉。',
-    heroImage: 'https://images.unsplash.com/photo-1604594849809-dfedbc827105?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1400&q=85',
+    city: 'New York',
   },
   {
     slug: 'macro-policy-global-finance',
@@ -59,7 +61,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'Macroeconomic Policy and Global Financial Markets',
     description:
       '以1989年柏林墙倒塌为起点，通过七大历史危机案例，理解宏观政策与全球金融市场的相互作用——兼顾政策制定者与投资者的双重视角。',
-    heroImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=85',
+    city: 'London',
   },
   {
     slug: 'emerging-capital-markets',
@@ -68,7 +71,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'Emerging Capital Markets',
     description:
       '从 180 年全球资本流动周期的视角，理解新兴市场的脆弱性、危机模式与投资逻辑。',
-    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?auto=format&fit=crop&w=1400&q=85',
+    city: 'Shanghai',
   },
   {
     slug: 'microeconomics',
@@ -77,7 +81,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'Microeconomics',
     description:
       '从供需到市场结构，用经济学的眼光理解价格、选择与激励——个人与企业决策背后的底层逻辑。',
-    heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1400&q=85',
+    city: 'Chicago',
   },
   {
     slug: 'political-risk-analysis',
@@ -86,7 +91,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'Political Risk Analysis',
     description:
       '用三层框架（G-Zero、J-Curve、国家资本主义）与五种分析工具，系统解读当下的中美博弈、俄乌战争、中东与伊朗冲突——让地缘政治可分析、可比较、可定价。',
-    heroImage: 'https://images.unsplash.com/photo-1541726260-e6b6d4e94285?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1400&q=85',
+    city: 'Beijing',
   },
   {
     slug: 'macroeconomics',
@@ -95,7 +101,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'Macroeconomics',
     description:
       'GDP、通胀、利率、汇率——搞懂这些大词，你就能读懂新闻里 90% 的经济分析。',
-    heroImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1400&q=85',
+    city: 'Tokyo',
   },
   {
     slug: 'corporate-finance',
@@ -104,7 +111,18 @@ export const courses: CourseMeta[] = [
     titleEn: 'Corporate Finance',
     description:
       '从财务报表分析到 DCF 估值，系统掌握公司金融的五大核心模块：历史绩效分析、现金流预测、最优资本结构、WACC 与 DCF 估值——写给零基础同学的完整笔记。',
-    heroImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2560&q=95',
+    heroImage: 'https://images.unsplash.com/photo-1532280360559-7474a37c8b97?auto=format&fit=crop&w=1400&q=85',
+    city: 'Hong Kong',
+  },
+  {
+    slug: 'global-payments',
+    category: 'finance',
+    title: '全球支付体系',
+    titleEn: 'The Global Payments Ecosystem',
+    description:
+      '每天数以万亿计的资金在全球流转——SWIFT、CHIPS、CLS、央行数字货币、孟加拉国10亿网络盗窃案、俄罗斯制裁、人民币国际化……读懂支付体系，就读懂了现代金融的底层管道。',
+    heroImage: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1400&q=85',
+    city: 'Singapore',
   },
 ];
 
