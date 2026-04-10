@@ -111,7 +111,7 @@ export const courses: CourseMeta[] = [
     titleEn: 'Corporate Finance',
     description:
       '从财务报表分析到 DCF 估值，系统掌握公司金融的五大核心模块：历史绩效分析、现金流预测、最优资本结构、WACC 与 DCF 估值——写给零基础同学的完整笔记。',
-    heroImage: 'https://images.unsplash.com/photo-1532280360559-7474a37c8b97?auto=format&fit=crop&w=1400&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1400&q=85',
     city: 'Hong Kong',
   },
   {

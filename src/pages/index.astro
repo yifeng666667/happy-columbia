@@ -207,11 +207,8 @@ const catDot: Record<string, string> = {
                     {/* subtle top vignette for badges */}
                     <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent h-16" />
 
-                    {/* top badges */}
-                    <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
-                      <span class="text-[10px] text-white/65 uppercase tracking-[0.18em] font-sans">
-                        {c.city ?? ''}
-                      </span>
+                    {/* top badge — note count only */}
+                    <div class="absolute top-3 right-3">
                       <span class="text-[11px] bg-white/15 backdrop-blur-sm text-white font-medium px-2.5 py-0.5 rounded-full border border-white/20">
                         {noteCountOf(c.slug)} 篇
                       </span>
@@ -219,17 +216,17 @@ const catDot: Record<string, string> = {
 
                     {/* bottom content */}
                     <div class="absolute bottom-0 left-0 right-0 p-4">
-                      <h4 class="font-display font-bold text-white text-[1.05rem] leading-snug">
+                      <h4 class="font-display font-bold text-white text-[1.3rem] leading-snug">
                         {c.title}
                       </h4>
-                      <p class="text-[10.5px] text-white/45 mt-0.5 font-sans tracking-wide">
+                      <p class="text-[11px] text-white/50 mt-0.5 font-sans tracking-wide">
                         {c.titleEn}
                       </p>
-                      <p class="mt-2 text-[11.5px] text-white/65 leading-relaxed line-clamp-2">
+                      <p class="mt-2 text-[13px] text-white/85 leading-relaxed line-clamp-2">
                         {c.description}
                       </p>
-                      <div class="mt-2.5 flex items-center justify-end text-[11px] text-white/50">
-                        <span class="group-hover:translate-x-0.5 group-hover:text-white/80 transition-all inline-block">
+                      <div class="mt-2.5 flex items-center justify-end text-[11px] text-white/60">
+                        <span class="group-hover:translate-x-0.5 group-hover:text-white/90 transition-all inline-block">
                           阅读笔记 →
                         </span>
                       </div>
