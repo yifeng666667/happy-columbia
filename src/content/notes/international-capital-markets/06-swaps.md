@@ -30,6 +30,16 @@ session: "6"
 
 ## 二、CDS：把信用风险转手
 
+可以把 CDS 理解成一种保险合同，只不过买保险的人不需要真的持有被保险的债券——就像你可以买邻居房子的火险一样。卖方收保费，发生"火灾"（违约）时赔款。
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CDS-nodefault.PNG/500px-CDS-nodefault.PNG" alt="CDS 正常情况下的现金流" style="width:100%;max-width:500px;border-radius:8px;margin:1rem 0;" />
+
+*CDS 在没有违约时：买方定期支付"保费"（spread），卖方无需支付任何款项。*
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/CDS-default.PNG/500px-CDS-default.PNG" alt="CDS 违约时的现金流" style="width:100%;max-width:500px;border-radius:8px;margin:1rem 0;" />
+
+*CDS 发生违约时：卖方向买方支付（名义本金 × 违约损失率），合约随即终止。*
+
 ### 2.1 基本机制
 
 **CDS 是一份私下合同**：
@@ -52,7 +62,7 @@ session: "6"
 
 **运作方式**：
 - **正常时期**：买方每季度支付 193 bps × €10M / 4 = €48,250
-- **信用事件发生后**：卖方支付 €10M × (1 − 回收率)，例如回收率 40%，卖方付 €6M
+- **信用事件发生后**：卖方支付 €10M × (1 - 回收率)，例如回收率 40%，卖方付 €6M
 
 ### 2.3 CDS 市场的规模演变
 
@@ -94,13 +104,13 @@ session: "6"
 1. ISDA **决议委员会**（由主要 CDS 交易商组成）决定是否发生了信用事件
 2. Markit / S&P Global 组织**拍卖**
 3. 一组银行投标参考实体的债券价格（"最终价格"）
-4. 卖方支付买方 (100% − 最终价格) × 名义本金
+4. 卖方支付买方 (100% - 最终价格) × 名义本金
 
 ### 2.6 实战案例：2022 年乌克兰 CDS 拍卖
 
 **2022 年 9 月 28 日**，乌克兰冻结海外债务支付，CDS 拍卖结果：
 - 最终价格 = **17.875%**
-- 保护卖方支付 (100% − 17.875%) × 名义本金 = **82.125% × 名义本金**
+- 保护卖方支付 (100% - 17.875%) × 名义本金 = **82.125% × 名义本金**
 
 ### 2.7 Europcar 的"零赔付"奇闻
 
@@ -185,6 +195,12 @@ session: "6"
 
 ## 三、利率互换（IRS）：把固定换成浮动
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/IRSflows.png" alt="利率互换现金流示意图" style="width:100%;max-width:600px;border-radius:8px;margin:1rem 0;" />
+
+*利率互换：两方交换利率现金流，但本金不发生转移。一方付固定，一方付浮动。*
+
+利率互换的本质其实很简单——想象两个人交换贷款条件：一个人有固定利率贷款但想要浮动，另一个人有浮动利率贷款但想要固定，互换之后两人都满足了需求，本金一分钱都不动。
+
 ### 3.1 一个真实问题：Lockheed Martin 想借浮动利率
 
 **背景**：Lockheed Martin 需要 **1 亿美元、5 年、浮动利率**融资。
@@ -214,8 +230,8 @@ session: "6"
 | 名义本金 | $100,000,000 |
 | 币种 | USD |
 
-**每半年**，Citibank 付 Lockheed：3.40% × $100M × ½ = **$1,700,000**
-**每季度**，Lockheed 付 Citibank：SOFR × $100M × ¼
+**每半年**，Citibank 付 Lockheed：3.40% × $100M × 1/2 = **$1,700,000**
+**每季度**，Lockheed 付 Citibank：SOFR × $100M × 1/4
 
 **本金不交换**——只有利差现金流。
 
@@ -227,7 +243,7 @@ Lockheed ← Citibank：3.40% 固定（IRS）
 Lockheed → Citibank：SOFR 浮动（IRS）
 ```
 
-**净效果**：Lockheed 每年净支付 **SOFR + 45 bps**（= 3.85% − 3.40% + SOFR）
+**净效果**：Lockheed 每年净支付 **SOFR + 45 bps**（= 3.85% - 3.40% + SOFR）
 
 **相比直接发 FRN（SOFR + 100 bps）**，每年**节省 55 bps × $100M = $550,000**，五年总共节省 $2.75M。
 
@@ -293,6 +309,8 @@ Citibank 作为 **做市商**，它的 book 大致对冲——一头做多，一
 ## 四、外汇互换（FX Swap / Currency Swap）
 
 ### 4.1 机制：和 IRS 最大的区别
+
+外汇互换最关键的地方在于：**本金会在开始和结束时真实交换**。想象一下，一家法国公司想借美元，一家美国公司想借欧元，双方通过互换"分享"各自在本国市场的融资优势，一手换一手，利息也跟着换，到期再换回来。
 
 **FX Swap 交换本金**（IRS 不交换）：
 
