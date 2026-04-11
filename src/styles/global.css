@@ -7,12 +7,26 @@
 html { scroll-behavior: smooth; overflow-x: hidden; }
 body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
-/* Mobile: make all prose tables scrollable */
+/* Mobile: all scrollable table containers */
 @media (max-width: 768px) {
   .prose table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  /* Ensure smooth native scroll on iOS for career article tables */
+  .table-wrapper,
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Mobile (≤640px): career article tables go full-width */
+@media (max-width: 640px) {
+  /* Base layout: tighten side padding slightly */
+  main > .max-w-3xl,
+  main > article {
+    overflow-x: hidden;
   }
 }
 

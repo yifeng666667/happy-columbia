@@ -776,6 +776,21 @@ import Base from '../../layouts/Base.astro';
       font-weight: 600;
       margin-bottom: 4px;
     }
+
+    /* ── Mobile: tables extend to edges ─── */
+    @media (max-width: 640px) {
+      .overflow-x-auto {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+      }
+      table th, table td {
+        padding: 0.4rem 0.55rem;
+        font-size: 0.72rem;
+      }
+    }
   </style>
 
 </Base>

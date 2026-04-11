@@ -938,4 +938,33 @@ import Base from '../../layouts/Base.astro';
   .conclusion-row:last-child { border-bottom: none; }
   .conclusion-key { font-weight: 700; color: #0B2C56; white-space: nowrap; min-width: 8rem; flex-shrink: 0; font-size: 0.85rem; }
   .conclusion-val { color: #44403c; font-size: 0.85rem; line-height: 1.65; }
+
+  /* ── Mobile Responsive ─── */
+  @media (max-width: 640px) {
+    .article-h2 { font-size: 1.25rem; }
+
+    /* Tables: extend to viewport edges */
+    .table-wrapper {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+    }
+    .table-wrapper table { font-size: 0.76rem; }
+    .table-wrapper th { padding: 0.45rem 0.65rem; font-size: 0.68rem; white-space: nowrap; }
+    .table-wrapper td { padding: 0.45rem 0.65rem; }
+
+    /* Conclusion rows: stack key above value */
+    .conclusion-box { padding: 1.25rem 1rem; }
+    .conclusion-row { flex-direction: column; gap: 0.15rem; padding: 0.5rem 0; }
+    .conclusion-key { min-width: unset; white-space: normal; }
+    .conclusion-val { font-size: 0.82rem; }
+
+    /* Timeline */
+    .timeline-item { gap: 0.5rem; }
+    .timeline-content { padding: 0.7rem 0.85rem; }
+    .timeline-phase { font-size: 0.6rem; padding: 0.18rem 0.5rem; }
+    .timeline-title { font-size: 0.85rem; }
+  }
 </style>
