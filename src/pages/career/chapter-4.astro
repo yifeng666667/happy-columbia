@@ -106,7 +106,7 @@ import Base from '../../layouts/Base.astro';
       <p>投递之后，大多数机构的第一关都是某种形式的测评。了解每种类型的逻辑，有助于提前做针对性准备。</p>
 
       <!-- SHL -->
-      <h3 class="article-h3">SHL / Korn Ferry 网测（外资行标配）</h3>
+      <h3 class="article-h3">SHL 网测（外资行标配）</h3>
       <p>外资银行、资管机构几乎全线使用。核心三类：<strong>数字推理</strong>（表格数据计算）、<strong>言语推理</strong>（True / False / Cannot Say 判断）、<strong>归纳推理</strong>（图形规律）。</p>
 
       <div class="callout-info">
@@ -206,7 +206,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- 三表联动 -->
       <h3 class="article-h3">最高频的题：三表联动</h3>
-      <p>几乎所有金融岗位都会考。标准题型：<strong>"折旧增加 100 万，对三张报表各有什么影响？"</strong></p>
+      <p>所有的投行前台岗位都会考。标准题型：<strong>"折旧增加 100 万，对三张报表各有什么影响？"</strong></p>
 
       <div class="table-wrapper">
         <table>
@@ -270,7 +270,45 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <p>面试时常被追问的点：<strong>WACC 是什么、如何计算？</strong></p>
-      <p>WACC = 股权成本 × 股权占比 + 债务成本 × (1−税率) × 债务占比。股权成本用 CAPM 估算，债务成本要乘以 (1−税率) 是因为利息可以抵税。能说清楚这两点，面试就够了。</p>
+      <p>WACC = 股权成本 × 股权占比 + 债务成本 × (1−税率) × 债务占比。股权成本用 CAPM 估算，债务成本要乘以 (1−税率) 是因为利息可以抵税。</p>
+
+      <p>但面试里 DCF 的追问往往比这深得多——面试官真正想考的，是你对每一个假设背后逻辑的理解：</p>
+
+      <div class="space-y-2 mb-4 mt-3">
+        <div class="factor-item">
+          <div class="factor-num">1</div>
+          <div>
+            <div class="factor-title">收入增长假设怎么来的？</div>
+            <div class="factor-desc">不能说"参考历史均值"就完了。要能解释驱动因素：是量的增长还是价的提升？行业天花板在哪？你用的是自上而下还是自下而上的方式？</div>
+          </div>
+        </div>
+        <div class="factor-item">
+          <div class="factor-num">2</div>
+          <div>
+            <div class="factor-title">Terminal Value 占整个估值多少？</div>
+            <div class="factor-desc">实际操作中 Terminal Value 经常占总价值的 60–80%。用 Gordon Growth 还是 Exit Multiple？Terminal growth rate 取多少、依据是什么？面试官会对这个数字非常敏感。</div>
+          </div>
+        </div>
+        <div class="factor-item">
+          <div class="factor-num">3</div>
+          <div>
+            <div class="factor-title">WACC 里的 Beta 怎么处理？</div>
+            <div class="factor-desc">直接用 levered beta 还是先 unlever 再 relever？可比公司资本结构不同时怎么调整？Beta 的选取区间对 WACC 影响几个 bps，你心里有数吗？</div>
+          </div>
+        </div>
+        <div class="factor-item">
+          <div class="factor-num">4</div>
+          <div>
+            <div class="factor-title">敏感性分析说明什么？</div>
+            <div class="factor-desc">跑完 sensitivity table 后，哪个变量对估值影响最大？如果换一组假设，结论会反转吗？能不能用一句话总结这个公司估值的核心风险在哪。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout-warning">
+        <div class="callout-icon">⚠️</div>
+        <div>DCF 本身不难，难的是为每个假设自圆其说。面试时被追问"你这个数字怎么来的"，能答出具体逻辑，才是真正过关。</div>
+      </div>
 
       <!-- 2025 新增 -->
       <h3 class="article-h3">2025–2026 新增高频题：AI 与宏观环境</h3>
