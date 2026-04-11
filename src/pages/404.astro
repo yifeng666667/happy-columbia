@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="页面不存在" description="你访问的页面不存在，请返回首页" hero={true}>
+
+  <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+
+    <!-- Background -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0" style="background: linear-gradient(160deg, rgba(6,18,40,0.96) 0%, rgba(11,44,86,0.92) 50%, rgba(4,14,32,0.97) 100%);"></div>
+      <!-- subtle grid pattern -->
+      <div class="absolute inset-0 opacity-[0.04]"
+           style="background-image: linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px); background-size: 48px 48px;"></div>
+    </div>
+
+    <div class="relative z-10 max-w-lg">
+      <!-- 404 number -->
+      <p class="font-display font-bold text-columbia-blue/30 leading-none mb-6 select-none"
+         style="font-size: clamp(6rem, 20vw, 10rem);">
+        404
+      </p>
+
+      <h1 class="font-display font-bold text-white mb-4"
+          style="font-size: clamp(1.4rem, 4vw, 2rem);">
+        这个页面不见了
+      </h1>
+
+      <p class="text-white/55 text-sm sm:text-base leading-relaxed mb-10">
+        你访问的地址不存在，可能是链接失效或地址拼写有误。<br class="hidden sm:block"/>
+        不用担心，从这里可以找到你想要的内容 👇
+      </p>
+
+      <!-- Quick links -->
+      <div class="grid grid-cols-2 gap-3 mb-10 text-sm">
+        {[
+          { href: '/',           label: '🏠 返回首页' },
+          { href: '/career/',    label: '💼 求职分享' },
+          { href: '/research/',  label: '📈 金融投研' },
+          { href: '/about-sipa/', label: '🎓 关于 SIPA' },
+        ].map(({ href, label }) => (
+          <a
+            href={href}
+            class="block px-4 py-3 rounded-xl border border-white/15 text-white/70 hover:text-white hover:border-white/35 hover:bg-white/8 transition-all no-underline text-center"
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-columbia-blue text-white font-semibold text-sm hover:bg-blue-500 transition-colors no-underline"
+      >
+        ← 回到首页
+      </a>
+    </div>
+
+  </section>
+
+</Base>
