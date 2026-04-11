@@ -100,31 +100,9 @@ import Base from '../../layouts/Base.astro';
         {[
           { icon: '📒', title: '课程笔记库', body: '持续更新 SIPA 核心课程笔记，目前已上线 8 门课，计划覆盖更多方向。' },
           { icon: '🧭', title: '求职系列文章', body: '从「找到热爱的方向」到简历、面试、选公司，逐章更新中。' },
-        ].map(({ icon, title, body }) => (
-          <div class="bg-white border border-stone-200 rounded-xl p-5 flex gap-4">
-            <span class="text-xl shrink-0 mt-0.5">{icon}</span>
-            <div>
-              <p class="font-semibold text-stone-900 text-sm mb-1">{title}</p>
-              <p class="text-stone-500 text-xs leading-relaxed">{body}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <!-- Phase 2: Planned -->
-    <div class="mb-8">
-      <div class="flex items-center gap-3 mb-4">
-        <span class="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] bg-columbia-light text-columbia-navy border border-columbia-blue/20 px-3 py-1 rounded-full">
-          <span class="w-1.5 h-1.5 rounded-full bg-columbia-blue"></span>
-          计划中
-        </span>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {[
           {
             icon: '🎙️',
-            title: '50位校友采访计划',
+            title: '100位校友采访计划',
             body: '采访来自不同行业的在职 SIPA 校友——投行、买方、卖方、咨询、公共部门、创业……真实的职业路径，真实的感受，发布在这里。',
           },
           {
