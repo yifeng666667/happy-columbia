@@ -124,6 +124,16 @@ export const courses: CourseMeta[] = [
     heroImage: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1400&q=85',
     city: 'Singapore',
   },
+  {
+    slug: 'deglobalization',
+    category: 'geopolitics',
+    title: '逆全球化',
+    titleEn: 'Deglobalisation: Trade, Politics and the Retreat from Integration',
+    description:
+      '从19世纪自由贸易的黄金年代到2025年的关税战——全球化为什么兴起、为什么放缓、又为什么正在倒退？以英国脱欧和特朗普关税为核心案例，理解贸易、政治与国家主权之间不可调和的张力。',
+    heroImage: 'https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?auto=format&fit=crop&w=1400&q=85',
+    city: 'Brussels',
+  },
 ];
 
 export const getCourse = (slug: string): CourseMeta | undefined =>
