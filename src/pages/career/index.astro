@@ -176,6 +176,20 @@ const chapters = [
   </div>
 
   <!-- ── Chapter List ────────────────────────────── -->
+
+  <!-- Section header -->
+  <div class="flex items-center gap-4 mb-7">
+    <div class="flex items-center gap-3">
+      <div class="w-1 h-7 rounded-full bg-columbia-navy"></div>
+      <div>
+        <h2 class="font-display font-bold text-xl text-stone-900 leading-none">求职规划指南篇</h2>
+        <p class="text-[11px] uppercase tracking-[0.22em] text-stone-400 mt-1">Career Planning Series</p>
+      </div>
+    </div>
+    <div class="flex-1 h-px bg-stone-200"></div>
+    <span class="shrink-0 text-[11px] text-stone-400 bg-stone-100 px-3 py-1 rounded-full">4 篇</span>
+  </div>
+
   <div class="space-y-5 mb-16">
     {chapters.map((ch) => (
       <div class={`relative group ${ch.status === 'coming' ? 'opacity-55' : ''}`}>
