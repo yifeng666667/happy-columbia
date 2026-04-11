@@ -10,7 +10,7 @@ session: "3"
 
 ## 一、失业率是怎么算的
 
-![美国失业率历史趋势](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/US_Unemployment_Rate.svg/500px-US_Unemployment_Rate.svg.png)
+![美国失业率历史趋势](https://upload.wikimedia.org/wikipedia/commons/a/a5/2025-_Unemployment_rate_-_US.svg)
 
 *美国历史失业率：每一个峰值都对应一次经济衰退——2008 年金融危机和 2020 年疫情冲击尤为显著。*
 

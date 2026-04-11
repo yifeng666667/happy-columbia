@@ -10,7 +10,7 @@ session: "6"
 
 ## 一、为什么要贸易：比较优势
 
-![全球贸易航运路线](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Shipping_routes_red_black.png/600px-Shipping_routes_red_black.png)
+![全球贸易航运路线](https://upload.wikimedia.org/wikipedia/commons/3/39/Shipping_routes_red_black.png)
 
 *全球航运路线密度图——国际贸易的物理基础设施。亮度越高代表航运流量越大。*
 

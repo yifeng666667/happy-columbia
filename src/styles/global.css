@@ -83,6 +83,32 @@ header.scrolled {
   line-height: 1.85;
 }
 
+/* ── In-article images ──────────────────────────────────── */
+.prose img {
+  border-radius: 0.75rem;
+  max-height: 440px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 1.75rem auto 0;
+  display: block;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.10);
+  background: #f5f4f1;  /* warm placeholder while loading */
+}
+
+/* Caption: the <em>-only paragraph immediately after an image */
+.prose p:has(img) + p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #a8a29e;        /* stone-400 */
+  font-style: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
 /* Research page — Beijing Guomao night cityscape */
 .research-hero {
   background-image:

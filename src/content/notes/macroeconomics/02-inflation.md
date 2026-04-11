@@ -8,9 +8,9 @@ session: "2"
 
 通货膨胀是宏观经济学里被讨论最多、也最容易被误解的议题之一。它是购买力的无声侵蚀者，是央行政策的主要标靶，也是关系每个人真实生活水平的核心变量。这篇笔记从"通胀是什么"出发，拆解它的测量方式、形成机制，以及两个极端——恶性通胀和通缩陷阱——如何摧毁一个经济体。
 
-![魏玛共和国的恶性通胀](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Bundesarchiv_Bild_102-00104%2C_Inflation%2C_Banknotenbündel.jpg/400px-Bundesarchiv_Bild_102-00104%2C_Inflation%2C_Banknotenbündel.jpg)
+![1923年德国恶性通胀纸币](https://upload.wikimedia.org/wikipedia/commons/1/15/German_Railways_Banknote_500000000000_Mark_1923_Hyperinflation_Notgeld_Stuttgart%2C_obverse.jpg)
 
-*1923 年德国魏玛共和国恶性通胀期间的纸币捆——货币失去价值的极端案例。*
+*1923 年德国恶性通胀期间面值 5000 亿马克的铁路纸币——当货币彻底失去信任，印刷厂跟不上物价上涨的速度。*
 
 ## 一、通货膨胀是什么
 
