@@ -658,15 +658,15 @@ import Base from '../../layouts/Base.astro';
           </thead>
           <tbody class="divide-y divide-stone-100">
             {[
-              { role: '投行 IBD（境内）', pay: '30–70万', pressure: '★★★★★', hard: '★★★★★', exit: 'PE / VC / 企业融资' },
-              { role: '投行 IBD（香港外资）', pay: 'HKD 50–100万', pressure: '★★★★★', hard: '★★★★★', exit: 'PE / 对冲基金' },
-              { role: '投行 S&T', pay: '25–60万（+高浮动）', pressure: '★★★★☆', hard: '★★★★☆', exit: '对冲基金 / Prop Trading' },
-              { role: '券商研究所', pay: '20–40万', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '公募基金 / 行业分析' },
-              { role: 'PE（应届/直招）', pay: '50–120万', pressure: '★★★★★', hard: '★★★★★', exit: '基金合伙人 / 企业高管' },
-              { role: 'VC（初级）', pay: '30–80万', pressure: '★★★★☆', hard: '★★★★★', exit: '高级投资人 / 创业' },
-              { role: '公募基金研究员', pay: '30–70万', pressure: '★★★★☆', hard: '★★★★☆', exit: '基金经理 / 私募' },
-              { role: '商业银行管培生', pay: '20–35万', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '银行管理层 / 金融机构' },
-              { role: '私人银行', pay: '20–50万（+提成）', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '独立顾问 / 家办' },
+              { role: '投行 IBD（境内）', pay: '较高', pressure: '★★★★★', hard: '★★★★★', exit: 'PE / VC / 企业融资' },
+              { role: '投行 IBD（香港外资）', pay: '高', pressure: '★★★★★', hard: '★★★★★', exit: 'PE / 对冲基金' },
+              { role: '投行 S&T', pay: '中等（+高浮动）', pressure: '★★★★☆', hard: '★★★★☆', exit: '对冲基金 / Prop Trading' },
+              { role: '券商研究所', pay: '中等偏低', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '公募基金 / 行业分析' },
+              { role: 'PE（应届/直招）', pay: '高', pressure: '★★★★★', hard: '★★★★★', exit: '基金合伙人 / 企业高管' },
+              { role: 'VC（初级）', pay: '中等偏高', pressure: '★★★★☆', hard: '★★★★★', exit: '高级投资人 / 创业' },
+              { role: '公募基金研究员', pay: '中等偏高', pressure: '★★★★☆', hard: '★★★★☆', exit: '基金经理 / 私募' },
+              { role: '商业银行管培生', pay: '中等偏低', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '银行管理层 / 金融机构' },
+              { role: '私人银行', pay: '中等（+提成）', pressure: '★★★☆☆', hard: '★★★☆☆', exit: '独立顾问 / 家办' },
             ].map((r, i) => (
               <tr class={i % 2 === 0 ? 'bg-white' : 'bg-stone-50/50'}>
                 <td class="px-4 py-3 font-medium text-stone-800">{r.role}</td>
