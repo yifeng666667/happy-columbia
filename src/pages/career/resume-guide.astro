@@ -352,16 +352,70 @@ import Base from '../../layouts/Base.astro';
               </div>
             ))}
           </div>
+          <!-- 真实案例改写 -->
           <div class="bg-stone-50 rounded-xl p-4">
-            <div class="text-[10px] text-stone-400 mb-2 uppercase tracking-wide">改写示例</div>
-            <div class="space-y-2">
-              <div class="flex items-start gap-2">
-                <span class="text-red-400 text-xs shrink-0 font-medium mt-0.5">✗ 差</span>
-                <p class="text-xs text-stone-500 leading-relaxed">负责撰写行业研究报告，分析市场趋势。</p>
+            <div class="flex items-center gap-2 mb-3">
+              <div class="text-[10px] text-stone-400 uppercase tracking-wide">真实案例改写</div>
+              <span class="text-[10px] bg-columbia-light text-columbia-navy px-2 py-0.5 rounded-full font-medium">买方实习 × AI 研究方向</span>
+            </div>
+
+            <!-- ① 研究报告 -->
+            <div class="mb-4">
+              <div class="text-[10px] text-stone-400 font-medium mb-2">① 研究报告类</div>
+              <div class="flex items-start gap-2 mb-2">
+                <span class="text-red-400 text-[11px] shrink-0 font-bold mt-0.5">✗</span>
+                <p class="text-xs text-stone-400 leading-relaxed">负责撰写英伟达行业研究报告，研究AI市场。</p>
               </div>
               <div class="flex items-start gap-2">
-                <span class="text-green-600 text-xs shrink-0 font-medium mt-0.5">✓ 好</span>
-                <p class="text-xs text-stone-600 leading-relaxed">独立撰写新能源汽车供应链深度报告（共8万字），梳理上中下游14家企业竞争格局，<strong>报告被团队用于两次LP路演</strong>，获主管评价"结构最清晰的新人报告之一"。</p>
+                <span class="text-emerald-600 text-[11px] shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-xs text-stone-700 leading-relaxed">独立完成英伟达 AI 赛道深度研究报告（58 页），系统分析 GPU 芯片竞争壁垒与 CUDA 生态协同优势，结合三年财报复盘与同业对比，<strong class="text-stone-900">直接支持团队投资决策，最终实现 40%+ 投资收益</strong>。</p>
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">量化规模：58页</span>
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">具体方法：财报+同业对比</span>
+                    <span class="text-[10px] bg-emerald-50 text-emerald-700 px-1.5 py-0.5 rounded font-semibold">结果：40%+ 收益</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ② 建模估值 -->
+            <div class="mb-4 border-t border-stone-200 pt-3">
+              <div class="text-[10px] text-stone-400 font-medium mb-2">② 估值建模类</div>
+              <div class="flex items-start gap-2 mb-2">
+                <span class="text-red-400 text-[11px] shrink-0 font-bold mt-0.5">✗</span>
+                <p class="text-xs text-stone-400 leading-relaxed">搭建了 DCF 模型，对英伟达进行估值分析。</p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-600 text-[11px] shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-xs text-stone-700 leading-relaxed">基于英伟达近三年财务数据复盘，分析收入增长与毛利率趋势，独立搭建 DCF 估值模型并完成关键假设敏感性分析，预测未来 5 年财务报表及现金流，<strong class="text-stone-900">研判估值处于合理区间，为团队投资决策提供核心依据</strong>。</p>
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">数据范围：3年复盘 + 5年预测</span>
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">方法深度：敏感性分析</span>
+                    <span class="text-[10px] bg-emerald-50 text-emerald-700 px-1.5 py-0.5 rounded font-semibold">结果：决策依据</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ③ 客户覆盖 -->
+            <div class="border-t border-stone-200 pt-3">
+              <div class="text-[10px] text-stone-400 font-medium mb-2">③ 客户覆盖类</div>
+              <div class="flex items-start gap-2 mb-2">
+                <span class="text-red-400 text-[11px] shrink-0 font-bold mt-0.5">✗</span>
+                <p class="text-xs text-stone-400 leading-relaxed">分析基金产品，为客户提供投资建议。</p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-600 text-[11px] shrink-0 font-bold mt-0.5">✓</span>
+                <div>
+                  <p class="text-xs text-stone-700 leading-relaxed">深度拆解主动型基金收益率、最大回撤、夏普比率等核心指标，从市场筛选 15–20 只优质基金，定制个性化配置方案，<strong class="text-stone-900">协助推动客户累计投资 200 万美元</strong>，实现资产优化配置。</p>
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">具体指标：收益率/回撤/夏普</span>
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">工作量：15–20只</span>
+                    <span class="text-[10px] bg-emerald-50 text-emerald-700 px-1.5 py-0.5 rounded font-semibold">结果：$200万投资</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
