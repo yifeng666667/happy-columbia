@@ -735,7 +735,7 @@ import Base from '../../layouts/Base.astro';
   .bt-years-grid, .bt-months-grid {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
+    grid-template-columns: repeat(22, minmax(0, 1fr));
     gap: 3px;
   }
 
@@ -785,7 +785,7 @@ import Base from '../../layouts/Base.astro';
     text-align: center;
     font-size: 0.62rem;
     color: rgba(255,255,255,0.35);
-    min-width: 2.8rem;
+    overflow: hidden;
   }
   .bt-month.first-y1 { color: #93c5fd; font-weight: 600; }
   .bt-month.first-y2 { color: #93c5fd; font-weight: 600; }
@@ -812,7 +812,7 @@ import Base from '../../layouts/Base.astro';
   .bt-bars-grid {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
+    grid-template-columns: repeat(22, minmax(0, 1fr));
     gap: 3px;
     height: 3.4rem;
   }
@@ -871,8 +871,8 @@ import Base from '../../layouts/Base.astro';
   .bt-divider-grid {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
-    gap: 2px;
+    grid-template-columns: repeat(22, minmax(0, 1fr));
+    gap: 3px;
   }
   .bt-div-label {
     font-size: 0.55rem;
