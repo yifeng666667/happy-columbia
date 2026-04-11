@@ -8,7 +8,7 @@ session: "5"
 
 2016年的公投只是回答了"走还是留"——但"怎么走"这个更复杂的问题，英国又花了四年半才勉强回答。在漫长的谈判、三次延期、两次大选和一场宪法危机之后，英国于2020年1月31日正式脱离欧盟。这节课追踪脱欧的实际后果：谈判过程中的重大选择、对投资和经济的影响、以及经济学家的预测在多大程度上被验证了。
 
-![白崖多佛——英国与欧洲大陆的地理分隔线](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/White_Cliffs_of_Dover_02.JPG/600px-White_Cliffs_of_Dover_02.JPG)
+![白崖多佛——英国与欧洲大陆的地理分隔线](https://upload.wikimedia.org/wikipedia/commons/7/74/White_Cliffs_of_Dover_02.JPG)
 
 *多佛白崖：英吉利海峡最窄处仅34公里，但脱欧后这道海峡重新成为了贸易壁垒——卡车在多佛港排队等待海关检查成为脱欧后的日常景象。*
 

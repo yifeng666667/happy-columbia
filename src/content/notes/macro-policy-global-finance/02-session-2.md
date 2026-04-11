@@ -8,7 +8,7 @@ session: "2"
 
 芬兰和瑞典在1990年代初几乎同时经历了严重的货币与银行危机，但两国的汇率挂钩**设计不同**，危机的**时间点不同**，危机后的**政策应对路径**也不同。这个"双案例"极为珍贵——它让我们在控制地理与文化变量的前提下，比较不同的政策选择如何导致不同的结果，以及危机后的财政整顿如何成为今天北欧福利模式的基础。
 
-![赫尔辛基参议院广场](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Helsinki_Senate_Square_and_Cathedral_-_July_2008.jpg/600px-Helsinki_Senate_Square_and_Cathedral_-_July_2008.jpg)
+![赫尔辛基大教堂](https://upload.wikimedia.org/wikipedia/commons/b/b7/Helsinki_Cathedral.jpg)
 
 *赫尔辛基参议院广场与大教堂：芬兰在1990-1993年经历了二战以来西方世界最严重的经济衰退之一，GDP 累计下降约13%，失业率从3%飙升至20%——随后却完成了令人瞩目的结构性复苏。*
 

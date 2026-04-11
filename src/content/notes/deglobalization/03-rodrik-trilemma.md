@@ -8,7 +8,7 @@ session: "3"
 
 1999年，哈佛大学政治经济学教授 Dani Rodrik 发表了一篇不到25页的论文——*"How Far Will International Economic Integration Go?"*（国际经济一体化能走多远？）。这篇文章提出了一个至今无人推翻的核心框架：**全球化、国家主权、民主——三者最多只能同时拥有两个。** 这个"不可能三角"不仅解释了过去三十年发生的几乎所有重大政治经济事件——从亚洲金融危机到英国脱欧到特朗普关税——更为我们理解未来世界走向提供了最稳定的归因框架。
 
-![Dani Rodrik](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dani_Rodrik_-_World_Economic_Forum_Annual_Meeting_2012.jpg/400px-Dani_Rodrik_-_World_Economic_Forum_Annual_Meeting_2012.jpg)
+![Dani Rodrik](https://upload.wikimedia.org/wikipedia/commons/d/d4/Dani_Rodrik%2C_2012_%28cropped%29.jpg)
 
 *Dani Rodrik（摄于2012年世界经济论坛）：这位哈佛教授在1999年就预言了全球化的政治反噬——当时的世界正沉浸在"历史终结"的乐观中，几乎没人愿意听。*
 

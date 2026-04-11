@@ -8,7 +8,7 @@ session: "1"
 
 今天我们觉得"全球化"是理所当然的——超市里有新西兰的奇异果，手机里有台湾的芯片，衣柜里有孟加拉的T恤。但全球贸易的扩张并不是一条直线，它经历了两个世纪的起伏——自由贸易的黄金年代、两次世界大战的毁灭性中断、大萧条的保护主义灾难、以及战后在美国主导下的缓慢重建。理解这段历史，是理解今天逆全球化浪潮的起点。
 
-![19世纪的全球贸易网络——帆船时代的港口](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Clipper_Ship_Southern_Cross_Leaving_Boston_Harbor_1851.jpeg/600px-Clipper_Ship_Southern_Cross_Leaving_Boston_Harbor_1851.jpeg)
+![19世纪的全球贸易网络——帆船时代的港口](https://upload.wikimedia.org/wikipedia/commons/f/f4/Clipper_Ship_Southern_Cross_Leaving_Boston_Harbor_1851.jpeg)
 
 *1851年的波士顿港：19世纪是第一次全球化的黄金时代，廉价的海运、金本位和自由贸易思想共同推动了前所未有的跨国贸易扩张。*
 

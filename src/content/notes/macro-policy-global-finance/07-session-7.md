@@ -8,7 +8,7 @@ session: "7"
 
 2020年8月，美联储宣布了一项在技术上看似平淡的政策调整——**平均通胀目标制（Average Inflation Targeting, AIT）**。但它的含义和后果远不平淡：这次调整直接塑造了随后数年的全球低利率环境，并为2021-2022年的通胀大爆发埋下了伏笔。这节课要理解这次调整的逻辑、它为什么发生、以及它如何改变了宏观与市场的运行轨迹。
 
-![怀俄明州大提顿国家公园——杰克逊霍尔年会举办地附近](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Grand_Teton_from_Signal_Mountain.jpg/600px-Grand_Teton_from_Signal_Mountain.jpg)
+![怀俄明州大提顿国家公园——杰克逊霍尔年会举办地附近](https://upload.wikimedia.org/wikipedia/commons/2/21/Adams_The_Tetons_and_the_Snake_River.jpg)
 
 *怀俄明州大提顿国家公园：美联储杰克逊霍尔年会每年在此附近举行。2020年8月27日，鲍威尔在这里宣布了平均通胀目标制新框架，这句话随后被写入教科书——也直接为两年后的通胀大爆发埋下了伏笔。*
 

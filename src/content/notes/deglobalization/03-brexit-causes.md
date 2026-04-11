@@ -8,7 +8,7 @@ session: "4"
 
 2016年6月23日，英国以51.9%对48.1%的微弱多数投票决定退出欧盟——这是二战以来欧洲一体化遭受的最大挫折，也是逆全球化浪潮最具标志性的事件。但"为什么英国投票脱欧"这个问题没有简单答案——它的根源可以追溯到几个世纪的岛国心态、半个世纪的政客不诚实、以及十年间累积的经济不安全感和移民焦虑。
 
-![英国议会大厦——脱欧辩论的中心舞台](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/600px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg)
+![英国议会大厦——脱欧辩论的中心舞台](https://upload.wikimedia.org/wikipedia/commons/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg)
 
 *威斯敏斯特宫（英国议会大厦）：英国脱欧从公投到正式脱离，几乎撕裂了这座有千年历史的议会民主殿堂——首相辞职、政党分裂、三次延期、两次大选，全都围绕一个问题：如何脱离欧盟。*
 

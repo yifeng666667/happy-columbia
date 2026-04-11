@@ -8,7 +8,7 @@ session: "5"
 
 2008年的全球金融危机（Global Financial Crisis, GFC）是大萧条以来最严重的金融危机，几乎让全球金融体系在一个周末内彻底崩溃。这节课不只是在讲"次贷危机"——它要追问一个更深的问题：**一场发源于美国部分地区的房价下跌，为什么能在数周内摧毁全球银行体系？** 答案指向一个鲜为人知却至关重要的机制：**跨太平洋的资本流动**。
 
-![雷曼兄弟时代广场总部](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/400px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg)
+![雷曼兄弟时代广场总部](https://upload.wikimedia.org/wikipedia/commons/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg)
 
 *雷曼兄弟时代广场总部（摄于2008年破产前）：2008年9月14日，雷曼兄弟申请破产，成为有史以来最大规模的公司破产案，这一事件将局部的金融压力变成了全球性的系统崩溃。*
 

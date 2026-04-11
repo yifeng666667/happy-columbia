@@ -8,7 +8,7 @@ session: "3"
 
 1994年底，墨西哥比索在短短数天内崩溃，随之引发整个拉丁美洲的金融动荡——史称"龙舌兰效应"（Tequila Effect）。这个案例的核心问题是：**一个经济改革成效显著、外资持续流入的"明星新兴市场"，为什么会突然崩溃？** 答案揭示了资本账户开放的深层风险，以及短期外债结构如何成为致命弱点。
 
-![墨西哥城改革大道](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Paseo_de_la_Reforma.jpg/600px-Paseo_de_la_Reforma.jpg)
+![墨西哥城改革大道](https://upload.wikimedia.org/wikipedia/commons/1/12/Reforma_buildings1704.jpg)
 
 *墨西哥城改革大道（Paseo de la Reforma）：1994年的比索危机在数天内将这个被华尔街视为"华盛顿共识样板"的新兴市场打回原形，随之引发整个拉丁美洲的金融动荡。*
 

@@ -8,7 +8,7 @@ session: "6"
 
 如果说英国脱欧是逆全球化在一个国家的具体表达，那么2017年以来的**新保护主义浪潮**则是逆全球化在全球层面的系统性展开。特朗普的关税战、对俄罗斯的全面制裁、产业补贴的大规模回归——战后数十年建立的自由贸易秩序正在以前所未有的速度被侵蚀。这节课要回答三个问题：**新保护主义为什么发生？它有效吗？谁在承担代价？**
 
-![集装箱港口——全球贸易的生命线](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Maersk_Mc-Kinney_Moller.jpg/600px-Maersk_Mc-Kinney_Moller.jpg)
+![马士基集装箱船——全球贸易的生命线](https://upload.wikimedia.org/wikipedia/commons/c/c8/MAERSK_HANOI_Container_Ship_%28Port_Koper_SIKOP%2C_2023%29.jpg)
 
 *马士基集装箱船：全球贸易每年运输价值超过25万亿美元的商品。当关税壁垒升高、制裁切断贸易通道，这条生命线的每一个节点都面临重新定价。*
 

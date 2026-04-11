@@ -8,7 +8,7 @@ session: "2"
 
 1990年代到2008年金融危机前，全球贸易经历了前所未有的加速——经济学家称之为**"超级全球化"（Hyper-globalisation）**。中国入世、全球价值链扩张、技术革命三大力量叠加，将全球贸易占GDP比重推到了历史新高。但这场繁荣也制造了赢家和输家——发展中国家数亿人脱贫的同时，发达国家的蓝领工人却经历了真实的就业流失和工资停滞。理解这些不满的来源，是理解脱欧、特朗普和逆全球化浪潮的关键。
 
-![中国深圳——超级全球化的缩影](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Shenzhen_CBD_and_Futian_District.jpg/600px-Shenzhen_CBD_and_Futian_District.jpg)
+![中国深圳——超级全球化的缩影](https://upload.wikimedia.org/wikipedia/commons/9/91/Skyline_of_Shenzhen_from_Hong_Kong.jpg)
 
 *深圳天际线：这座40年前的小渔村，如今是全球电子产品制造和出口的核心枢纽。中国的崛起是超级全球化最深刻的经济事件——也是引发政治反弹最直接的原因。*
 
