@@ -80,6 +80,113 @@ import Base from '../../layouts/Base.astro';
     </div>
   </section>
 
+  <!-- Roadmap -->
+  <section class="mb-14">
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-2">Roadmap</p>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">接下来想做的事</h2>
+    <p class="text-stone-500 text-sm leading-relaxed mb-8 max-w-2xl">
+      这个网站刚起步，很多想法还在脑子里。把它写出来，也是一种承诺。
+    </p>
+
+    <!-- Phase 1: Now -->
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] bg-emerald-50 text-emerald-600 border border-emerald-200 px-3 py-1 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          进行中
+        </span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {[
+          { icon: '📒', title: '课程笔记库', body: '持续更新 SIPA 核心课程笔记，目前已上线 8 门课，计划覆盖更多方向。' },
+          { icon: '🧭', title: '求职系列文章', body: '从「找到热爱的方向」到简历、面试、选公司，逐章更新中。' },
+        ].map(({ icon, title, body }) => (
+          <div class="bg-white border border-stone-200 rounded-xl p-5 flex gap-4">
+            <span class="text-xl shrink-0 mt-0.5">{icon}</span>
+            <div>
+              <p class="font-semibold text-stone-900 text-sm mb-1">{title}</p>
+              <p class="text-stone-500 text-xs leading-relaxed">{body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Phase 2: Planned -->
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] bg-columbia-light text-columbia-navy border border-columbia-blue/20 px-3 py-1 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-columbia-blue"></span>
+          计划中
+        </span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {[
+          {
+            icon: '🎙️',
+            title: '50位校友采访计划',
+            body: '采访来自不同行业的在职 SIPA 校友——投行、买方、卖方、咨询、公共部门、创业……真实的职业路径，真实的感受，发布在这里。',
+          },
+          {
+            icon: '🎧',
+            title: '小宇宙播客',
+            body: '聊求职、聊求学，也聊生活里那些说不清楚的迷茫。不做干货节目，只聊真实的人和真实的事。',
+          },
+        ].map(({ icon, title, body }) => (
+          <div class="bg-white border border-stone-200 rounded-xl p-5 flex gap-4">
+            <span class="text-xl shrink-0 mt-0.5">{icon}</span>
+            <div>
+              <p class="font-semibold text-stone-900 text-sm mb-1">{title}</p>
+              <p class="text-stone-500 text-xs leading-relaxed">{body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Phase 3: Future -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] bg-stone-100 text-stone-500 border border-stone-200 px-3 py-1 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-stone-400"></span>
+          想象中
+        </span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {[
+          {
+            icon: '🏙️',
+            title: '城市线下聚会',
+            body: '纽约、北京、上海、香港——小型桌游局、校友见面、非正式论坛。不做大型活动，只做真实的连接。',
+          },
+          {
+            icon: '🗺️',
+            title: '校友职业地图',
+            body: '可视化 SIPA 毕业生的去向分布：哪个城市、哪个行业、哪家公司——让「SIPA 能去哪」有一个真实的答案。',
+          },
+          {
+            icon: '⭐',
+            title: '选课众包指南',
+            body: '每门课的真实评价：教授风格、workload、考核方式、性价比——从校友视角重写一份选课手册。',
+          },
+          {
+            icon: '💬',
+            title: '校友问答专栏',
+            body: '在职校友在线答疑。你有问题，有人真的走过那条路，一问一答，发布在这里。',
+          },
+        ].map(({ icon, title, body }) => (
+          <div class="bg-stone-50 border border-stone-200 rounded-xl p-5 flex gap-4">
+            <span class="text-xl shrink-0 mt-0.5">{icon}</span>
+            <div>
+              <p class="font-semibold text-stone-700 text-sm mb-1">{title}</p>
+              <p class="text-stone-400 text-xs leading-relaxed">{body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section>
     <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-6">怎么开始</p>
