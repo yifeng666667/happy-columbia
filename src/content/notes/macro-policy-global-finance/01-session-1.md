@@ -124,6 +124,6 @@ ERM 不只是一个技术安排，它背后有深刻的政治意涵：
 - [Wikipedia：欧洲汇率机制](https://en.wikipedia.org/wiki/European_Exchange_Rate_Mechanism)
 - [Wikipedia：黑色星期三](https://en.wikipedia.org/wiki/Black_Wednesday)
 - [Wikipedia：欧洲货币体系](https://en.wikipedia.org/wiki/European_Monetary_System)
-- YouTube：搜索 "Black Wednesday 1992 Soros pound"
-- YouTube：搜索 "ERM crisis explained"
-- YouTube：搜索 "George Soros breaking the Bank of England"
+- [YouTube：索罗斯 60 Minutes 经典访谈（CBS）](https://www.youtube.com/watch?v=QSyczwuTQfo)
+- [YouTube：Black Wednesday 1992 相关视频](https://www.youtube.com/results?search_query=Black+Wednesday+1992+Soros+Bank+of+England)
+- [YouTube：George Soros - 打败英格兰银行的人](https://www.youtube.com/results?search_query=George+Soros+broke+Bank+of+England+documentary)

@@ -139,6 +139,6 @@ session: "5"
 - [Wikipedia：2007-2008年全球金融危机](https://en.wikipedia.org/wiki/2007%E2%80%932008_financial_crisis)
 - [Wikipedia：雷曼兄弟破产](https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers)
 - [Wikipedia：次贷危机](https://en.wikipedia.org/wiki/Subprime_mortgage_crisis)
-- YouTube：搜索 "2008 financial crisis explained"
-- YouTube：搜索 "Lehman Brothers collapse documentary"
-- YouTube：搜索 "Big Short explained subprime mortgage"
+- [YouTube：Ray Dalio - 经济机器如何运转（30分钟经典）](https://www.youtube.com/watch?v=PHe0bXAIuk0)
+- [YouTube：2008 金融危机纪录片合集](https://www.youtube.com/results?search_query=2008+financial+crisis+explained+documentary)
+- [YouTube：次贷危机与 CDO 机制解析](https://www.youtube.com/results?search_query=subprime+mortgage+crisis+CDO+explained+Big+Short)

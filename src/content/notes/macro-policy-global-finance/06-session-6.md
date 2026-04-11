@@ -129,6 +129,6 @@ Plan Z 的核心内容包括：
 - [Wikipedia：希腊债务危机](https://en.wikipedia.org/wiki/Greek_government-debt_crisis)
 - [Wikipedia：欧洲债务危机](https://en.wikipedia.org/wiki/European_debt_crisis)
 - [Wikipedia：Mario Draghi "whatever it takes"](https://en.wikipedia.org/wiki/Whatever_it_takes)
-- YouTube：搜索 "Greek debt crisis explained"
-- YouTube：搜索 "Draghi whatever it takes speech"
-- YouTube：搜索 "Eurozone crisis documentary"
+- [YouTube：希腊债务危机全面解析](https://www.youtube.com/results?search_query=Greek+debt+crisis+explained+documentary)
+- [YouTube：德拉吉 "Whatever it Takes" 演讲](https://www.youtube.com/results?search_query=Draghi+whatever+it+takes+speech+ECB+2012)
+- [YouTube：欧元区危机纪录片](https://www.youtube.com/results?search_query=Eurozone+crisis+documentary+euro+debt)

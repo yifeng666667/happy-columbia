@@ -72,7 +72,7 @@ session: "7"
 
 ## 三、克拉里达的理论阐述
 
-副主席 **Richard Clarida**（即 SIPA 教授，Session 7 核心阅读来源之一）在2020年8月的演讲中更系统地阐释了这一框架的理论基础：
+时任美联储副主席 **Richard Clarida** 在2020年8月的演讲中更系统地阐释了这一框架的理论基础：
 
 **核心论点：**
 
@@ -123,7 +123,7 @@ session: "7"
 - "暂时性通胀"的判断失误，导致行动严重滞后
 - 超低利率时间过长，资产泡沫和金融脆弱性积累（Eggertsson & Kohn, 2023）
 
-> **教授的观点（来自课堂）**：这次框架调整体现了美联储真正深刻地思考了政策有效性问题，但在执行层面，"等待通胀平均值"的策略在面对历史性供给冲击时反应过慢。政策框架的优化是有意义的，但没有框架能够完美适应所有情景。
+> **一个值得思考的视角**：这次框架调整体现了美联储真正深刻地思考了政策有效性问题，但在执行层面，"等待通胀平均值"的策略在面对历史性供给冲击时反应过慢。政策框架的优化是有意义的，但没有框架能够完美适应所有情景——这也许是宏观政策最核心的教训之一。
 
 ## 六、核心教训
 
@@ -140,6 +140,6 @@ session: "7"
 - [Wikipedia：平均通胀目标制](https://en.wikipedia.org/wiki/Average_inflation_targeting)
 - [Wikipedia：美联储政策框架](https://en.wikipedia.org/wiki/Federal_Reserve)
 - [Wikipedia：2021-2023年通胀](https://en.wikipedia.org/wiki/Post-COVID-19_inflation)
-- YouTube：搜索 "Fed average inflation targeting explained"
-- YouTube：搜索 "Powell Jackson Hole 2020 speech"
-- YouTube：搜索 "Fed 2022 rate hikes inflation"
+- [YouTube：美联储平均通胀目标制解析](https://www.youtube.com/results?search_query=Fed+average+inflation+targeting+explained+AIT)
+- [YouTube：鲍威尔 2020 杰克逊霍尔演讲](https://www.youtube.com/results?search_query=Powell+Jackson+Hole+2020+speech+Federal+Reserve)
+- [YouTube：2022 美联储激进加息全程回顾](https://www.youtube.com/results?search_query=Federal+Reserve+2022+rate+hikes+inflation+history)

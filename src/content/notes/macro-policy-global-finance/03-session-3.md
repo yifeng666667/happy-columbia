@@ -130,5 +130,5 @@ session: "3"
 - [Wikipedia：1994年墨西哥经济危机](https://en.wikipedia.org/wiki/1994_economic_crisis_in_Mexico)
 - [Wikipedia：Tesobono](https://en.wikipedia.org/wiki/Tesobono)
 - [Wikipedia：龙舌兰效应](https://en.wikipedia.org/wiki/Tequila_effect)
-- YouTube：搜索 "Mexico peso crisis 1994 tequila effect"
-- YouTube：搜索 "Mexican peso crisis explained"
+- [YouTube：墨西哥比索危机 1994 龙舌兰效应](https://www.youtube.com/results?search_query=Mexican+peso+crisis+1994+tequila+effect+explained)
+- [YouTube：新兴市场货币危机传染机制](https://www.youtube.com/results?search_query=emerging+market+currency+crisis+contagion+1990s)

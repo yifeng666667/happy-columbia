@@ -14,7 +14,7 @@ session: "4"
 
 1994年1月1日，中国实施汇率并轨改革，将官方汇率与外汇调剂市场汇率合并，人民币**一次性贬值约50%**（从约5.8元兑1美元调整至约8.7元）。
 
-这个时间点至关重要——它比泰铢崩溃早了整整三年，但教授认为这是理解亚洲危机的真正起点。
+这个时间点至关重要——它比泰铢崩溃早了整整三年，但从宏观传导的角度来看，这可能才是理解亚洲危机的真正起点。
 
 ### 1.2 传导机制
 
@@ -151,6 +151,6 @@ IMF 的方案受到 Joseph Stiglitz 等人的强烈批评：
 - [Wikipedia：1997年亚洲金融危机](https://en.wikipedia.org/wiki/1997_Asian_financial_crisis)
 - [Wikipedia：泰国货币危机](https://en.wikipedia.org/wiki/Thai_baht)
 - [Wikipedia：韩国外汇危机](https://en.wikipedia.org/wiki/1997_East_Asian_financial_crisis)
-- YouTube：搜索 "Asian financial crisis 1997 explained"
-- YouTube：搜索 "IMF Asia 1997 controversy"
-- YouTube：搜索 "1997 Asian crisis Thailand baht"
+- [YouTube：亚洲金融危机纪录片（DW Documentary，1h24m）](https://www.youtube.com/watch?v=O2pD_y61jx4)
+- [YouTube：马哈蒂尔 vs IMF - 1997 亚洲金融危机（CNA Insider）](https://www.youtube.com/watch?v=-5baey9Ey9g)
+- [YouTube：更多亚洲金融危机相关视频](https://www.youtube.com/results?search_query=Asian+financial+crisis+1997+explained+documentary)

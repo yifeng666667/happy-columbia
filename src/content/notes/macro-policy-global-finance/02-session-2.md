@@ -127,6 +127,6 @@ session: "2"
 
 - [Wikipedia：1990年代芬兰经济危机](https://en.wikipedia.org/wiki/Finnish_economic_crisis_of_the_1990s)
 - [Wikipedia：瑞典金融危机（1990年代）](https://en.wikipedia.org/wiki/Swedish_banking_rescue)
-- YouTube：搜索 "Nordic banking crisis 1990s"
-- YouTube：搜索 "Sweden fiscal consolidation 1990s"
-- YouTube：搜索 "Finland great depression 1990"
+- [YouTube：北欧银行危机 1990s](https://www.youtube.com/results?search_query=Nordic+banking+crisis+1990s+Finland+Sweden)
+- [YouTube：瑞典财政整顿经验](https://www.youtube.com/results?search_query=Sweden+banking+crisis+1990s+fiscal+consolidation)
+- [YouTube：芬兰经济危机与复苏](https://www.youtube.com/results?search_query=Finland+economic+crisis+1990+recession+recovery)
