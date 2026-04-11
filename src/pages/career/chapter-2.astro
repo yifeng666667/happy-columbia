@@ -94,23 +94,27 @@ import Base from '../../layouts/Base.astro';
         <!-- 年份标题行 -->
         <div class="bt-year-row">
           <div class="bt-label-col"></div>
-          <div class="bt-year-block y1">
-            <span>YEAR 1 &nbsp;·&nbsp; 研一</span>
-          </div>
-          <div class="bt-summer-block">
-            <span>暑假</span>
-          </div>
-          <div class="bt-year-block y2">
-            <span>YEAR 2 &nbsp;·&nbsp; 研二</span>
+          <div class="bt-years-grid">
+            <div class="bt-year-block y1" style="grid-column:1/10">
+              <span>YEAR 1 &nbsp;·&nbsp; 研一</span>
+            </div>
+            <div class="bt-summer-block" style="grid-column:10/13">
+              <span>暑假</span>
+            </div>
+            <div class="bt-year-block y2" style="grid-column:13/23">
+              <span>YEAR 2 &nbsp;·&nbsp; 研二</span>
+            </div>
           </div>
         </div>
 
         <!-- 月份标题行 -->
         <div class="bt-month-row">
           <div class="bt-label-col"></div>
-          {['9','10','11','12','1','2','3','4','5','6','7','8','9','10','11','12','1','2','3','4','5','6'].map((m, i) => (
-            <div class={`bt-month ${i === 0 ? 'first-y1' : ''} ${i === 12 ? 'first-y2' : ''}`}>{m}月</div>
-          ))}
+          <div class="bt-months-grid">
+            {['9','10','11','12','1','2','3','4','5','6','7','8','9','10','11','12','1','2','3','4','5','6'].map((m, i) => (
+              <div class={`bt-month ${i === 0 ? 'first-y1' : ''} ${i === 12 ? 'first-y2' : ''}`}>{m}月</div>
+            ))}
+          </div>
         </div>
 
         <!-- 美国行 -->
@@ -171,7 +175,7 @@ import Base from '../../layouts/Base.astro';
             <div class="bt-bar cn-prep" style="grid-column:4/7">寒假实习</div>
             <!-- col 6-9: Feb-May Y1: 暑期实习申请开放 -->
             <div class="bt-bar cn-summer-app" style="grid-column:7/10">
-              <span class="bt-bar-tag">2–4月开放</span>
+              <span class="bt-bar-tag">3–5月开放</span>
               国内暑期实习申请
             </div>
             <!-- col 10-12: Jun-Aug: 暑期实习 → 转正 + 头部秋招开放 -->
@@ -727,6 +731,14 @@ import Base from '../../layouts/Base.astro';
     min-width: 0;
   }
 
+  /* shared grid for year header and month row — must match bt-bars-grid exactly */
+  .bt-years-grid, .bt-months-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 3px;
+  }
+
   /* year header row */
   .bt-year-row {
     display: flex;
@@ -749,10 +761,9 @@ import Base from '../../layouts/Base.astro';
     border-radius: 0.35rem 0.35rem 0 0;
     color: white;
   }
-  .bt-year-block.y1 { background: rgba(91,155,213,0.25); flex: 9; margin-right: 2px; }
-  .bt-year-block.y2 { background: rgba(91,155,213,0.15); flex: 10; }
+  .bt-year-block.y1 { background: rgba(91,155,213,0.25); }
+  .bt-year-block.y2 { background: rgba(91,155,213,0.15); }
   .bt-summer-block {
-    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -761,7 +772,6 @@ import Base from '../../layouts/Base.astro';
     color: #fbbf24;
     background: rgba(251,191,36,0.12);
     border-radius: 0.35rem 0.35rem 0 0;
-    margin: 0 2px;
   }
 
   /* month row */
@@ -770,14 +780,8 @@ import Base from '../../layouts/Base.astro';
     align-items: center;
     margin-bottom: 8px;
   }
-  .bt-bars-grid,
-  .bt-month-row > .bt-month {
-    /* nothing – see grid below */
-  }
-  .bt-month-row { gap: 0; }
   .bt-month-row .bt-label-col { width: 4.5rem; }
   .bt-month {
-    flex: 1;
     text-align: center;
     font-size: 0.62rem;
     color: rgba(255,255,255,0.35);
