@@ -15,14 +15,14 @@ import Base from '../../layouts/Base.astro';
   </a>
 
   <!-- ── Article Header ─────────────────────────────── -->
-  <header class="mb-14 pb-10 border-b border-stone-200">
+  <header class="mb-10 sm:mb-14 pb-8 sm:pb-10 border-b border-stone-200">
     <div class="flex items-center gap-2 mb-5">
       <span class="text-[10px] uppercase tracking-[0.25em] bg-columbia-light text-columbia-navy font-semibold px-3 py-1 rounded-full">
         Career Guide
       </span>
       <span class="text-[10px] text-stone-400 uppercase tracking-widest">Resume · Internship · Job Search</span>
     </div>
-    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
+    <h1 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
       简历与实习<br/>
       <span class="text-columbia-blue">如何在最短时间内建立最有效的履历</span>
     </h1>
@@ -45,7 +45,7 @@ import Base from '../../layouts/Base.astro';
   </header>
 
   <!-- ── Coffee Chat Banner ────────────────────────── -->
-  <div class="mb-10 flex items-center gap-3 bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4">
+  <div class="mb-8 flex flex-wrap items-start gap-3 bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4">
     <span class="text-xl shrink-0">☕</span>
     <p class="text-columbia-navy/80 text-sm leading-relaxed" style="margin:0">
       简历不知道怎么写、实习路径不知道怎么规划？欢迎发邮件 <a href="mailto:yh3811@columbia.edu" class="font-semibold text-columbia-navy underline underline-offset-2 hover:text-columbia-blue transition-colors">yh3811@columbia.edu</a> 约 10–15 分钟 online coffee chat，也提供 1v1 深度职业咨询。
@@ -53,7 +53,7 @@ import Base from '../../layouts/Base.astro';
   </div>
 
   <!-- ── Table of Contents ──────────────────────────── -->
-  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-6">
+  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6">
     <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">目录</p>
     <ol class="space-y-2 text-sm text-stone-600">
       <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">00</span><a href="#intro" class="hover:text-columbia-navy transition-colors no-underline">引言：250份简历之后，我学到的最重要一件事</a></li>
@@ -227,7 +227,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 关键词库 -->
-      <div class="bg-stone-50 rounded-2xl p-6">
+      <div class="bg-stone-50 rounded-2xl p-4 sm:p-6">
         <h3 class="font-semibold text-stone-800 mb-4 text-sm">各行业关键词信号（初筛时HR扫描的词）</h3>
         <div class="grid md:grid-cols-3 gap-4 text-xs">
           {[
@@ -259,7 +259,7 @@ import Base from '../../layouts/Base.astro';
 
       <h3 class="font-semibold text-stone-800 mb-4 text-sm">为什么一定要定制？HR是怎么看你的</h3>
 
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <div class="space-y-4">
           {[
             { n: '1', title: 'ATS系统的关键词过滤', desc: '大公司（尤其互联网大厂、外资行）普遍使用招聘管理系统，系统会自动扫描简历与JD的关键词匹配度。如果你的简历里没有出现岗位要求的核心词汇，人可能都看不到你的简历。' },
@@ -294,7 +294,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <h3 class="font-semibold text-stone-800 mb-4 text-sm">操作系统：简历母版 + 快速定制</h3>
-      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6">
         <div class="space-y-4">
           {[
             { icon: '🗂️', title: '建立简历母版', desc: '一个文件，按"能力维度"（分析能力/项目管理/研究写作/跨文化沟通……）把所有经历的多个描述版本都储备进去。每段经历写2–3个版本，分别侧重不同能力。' },
@@ -320,7 +320,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- 中文 -->
       <h3 class="font-semibold text-stone-800 mb-4 text-sm">中文简历（国内秋招 / 实习投递）</h3>
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">推荐结构顺序</div>
         <div class="grid md:grid-cols-2 gap-3 mb-6">
           {[
@@ -455,7 +455,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- 北美 -->
       <h3 class="font-semibold text-stone-800 mb-4 text-sm">北美 Résumé（美国校招 / 海外投递）</h3>
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-2">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-2">
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">格式要点</div>
@@ -613,7 +613,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- 投递节奏 -->
       <h3 class="font-semibold text-stone-800 mb-4 text-sm">秋招时间窗口（国内）</h3>
-      <div class="bg-stone-50 rounded-2xl p-6 mb-8">
+      <div class="bg-stone-50 rounded-2xl p-4 sm:p-6 mb-8">
         <div class="space-y-3">
           {[
             { period: '7月–8月', label: '提前批', color: 'text-amber-600', desc: '部分大厂和金融机构开放提前批，竞争相对小，但要求候选人准备充分。有相关实习经历务必先投提前批。' },
@@ -635,7 +635,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 追踪系统 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6">
         <h3 class="font-semibold text-stone-800 mb-4 text-sm">失败数据管理：建一张投递追踪表</h3>
         <p class="text-stone-500 text-xs leading-relaxed mb-4">
           投递量上来之后，没有追踪系统会陷入混乱——不记得投过哪些、哪些到了面试、哪些被拒绝了都没反馈。
@@ -798,7 +798,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- Checklist -->
       <h3 class="font-semibold text-stone-800 mb-4 text-sm">投递前 Checklist（10项）</h3>
-      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6">
         <div class="space-y-3">
           {[
             { done: true, item: '已仔细读完JD，圈出3–5个关键词', note: '必须' },
@@ -835,7 +835,7 @@ import Base from '../../layouts/Base.astro';
         后来慢慢意识到，履历这件事很难靠短期突击，更多是在日常的每个选择里慢慢积累的。
       </p>
 
-      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 mb-8">
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6 mb-8">
         <div class="text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">三条可以现在就开始的行动</div>
         <div class="space-y-4">
           {[
@@ -903,7 +903,7 @@ import Base from '../../layouts/Base.astro';
   </div>
 
   <!-- ── Share CTA ─────────────────────────────────── -->
-  <div class="mt-8 mb-4 bg-columbia-navy rounded-2xl p-8 text-white text-center max-w-3xl">
+  <div class="mt-8 mb-4 bg-columbia-navy rounded-2xl p-5 sm:p-8 text-white text-center max-w-3xl">
     <p class="font-display font-semibold text-lg mb-2">分享您的求职，求学，人生故事？</p>
     <p class="text-white/60 text-sm leading-relaxed mb-5 max-w-sm mx-auto">
       加入我们，一起点亮迷茫路上的那盏灯。<br />每一个真实的声音，都值得被听见。❤️

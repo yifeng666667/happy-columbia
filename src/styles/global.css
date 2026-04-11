@@ -18,28 +18,45 @@ body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
   .table-wrapper,
   .overflow-x-auto {
     -webkit-overflow-scrolling: touch;
+    position: relative;
+  }
+
+  /* Scroll hint for tables */
+  .table-wrapper::after {
+    content: '← 左右滑动 →';
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #a8a29e;
+    margin-top: 0.4rem;
+    letter-spacing: 0.05em;
   }
 
   /* Slightly smaller reading font on phones */
   .prose-reading {
-    font-size: 0.9625rem;
+    font-size: 0.9375rem;
     line-height: 1.8;
   }
 
   /* Tighter article headings on mobile */
-  h1 { font-size: clamp(1.5rem, 6vw, 2.25rem) !important; }
+  h1 { font-size: clamp(1.6rem, 6.5vw, 2.25rem) !important; }
+  h2 { font-size: clamp(1.2rem, 5vw, 1.75rem) !important; }
 
   /* Prevent any element from causing horizontal scroll */
   main > .max-w-3xl,
-  main > article {
-    overflow-x: hidden;
-  }
+  main > article,
+  main { overflow-x: hidden; }
 
-  /* Career article page: tighten horizontal padding */
-  .prose-reading.max-w-3xl {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  /* Tighter TOC padding */
+  nav.rounded-2xl { padding: 1rem !important; }
+
+  /* Article header spacing */
+  header.border-b { margin-bottom: 2.5rem !important; padding-bottom: 1.75rem !important; }
+}
+
+/* ── Extra-small phones (< 400px) ── */
+@media (max-width: 400px) {
+  .prose-reading { font-size: 0.9rem; }
 }
 
 /* Header scroll shadow */

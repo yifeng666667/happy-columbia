@@ -15,14 +15,14 @@ import Base from '../../layouts/Base.astro';
   </a>
 
   <!-- ── Article Header ─────────────────────────────── -->
-  <header class="mb-14 pb-10 border-b border-stone-200">
+  <header class="mb-10 sm:mb-14 pb-8 sm:pb-10 border-b border-stone-200">
     <div class="flex items-center gap-2 mb-5">
       <span class="text-[10px] uppercase tracking-[0.25em] bg-columbia-light text-columbia-navy font-semibold px-3 py-1 rounded-full">
         Career Guide
       </span>
       <span class="text-[10px] text-stone-400 uppercase tracking-widest">Securities Research</span>
     </div>
-    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
+    <h1 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
       券商研究所深度解析
     </h1>
     <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
@@ -43,7 +43,7 @@ import Base from '../../layouts/Base.astro';
   </header>
 
   <!-- ── Coffee Chat Banner ────────────────────────── -->
-  <div class="mb-10 flex items-center gap-3 bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4">
+  <div class="mb-8 flex flex-wrap items-start gap-3 bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4">
     <span class="text-xl shrink-0">☕</span>
     <p class="text-columbia-navy/80 text-sm leading-relaxed" style="margin:0">
       对卖方研究感兴趣，但不确定自己适不适合？欢迎发邮件 <a href="mailto:yh3811@columbia.edu" class="font-semibold text-columbia-navy underline underline-offset-2 hover:text-columbia-blue transition-colors">yh3811@columbia.edu</a> 约 10–15 分钟 online coffee chat，也提供 1v1 深度职业咨询。
@@ -51,7 +51,7 @@ import Base from '../../layouts/Base.astro';
   </div>
 
   <!-- ── Table of Contents ──────────────────────────── -->
-  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-6">
+  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6">
     <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">目录</p>
     <ol class="space-y-2 text-sm text-stone-600">
       <li class="flex items-start gap-2.5"><span class="text-columbia-blue font-medium shrink-0 w-5">01</span><a href="#overview" class="hover:text-columbia-navy transition-colors no-underline">研究所在券商版图中扮演什么角色</a></li>
@@ -80,7 +80,7 @@ import Base from '../../layouts/Base.astro';
         <strong>分仓佣金</strong>。
       </p>
 
-      <div class="bg-columbia-navy rounded-2xl p-6 text-white mb-8">
+      <div class="bg-columbia-navy rounded-2xl p-4 sm:p-6 text-white mb-8">
         <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">一句话定义</div>
         <p class="text-white/85 text-sm leading-relaxed">
           研究所是券商里少数不需要大量资本金就能运转的业务线——靠牌照和服务赚钱，
@@ -126,7 +126,7 @@ import Base from '../../layouts/Base.astro';
       </p>
 
       <!-- 运转机制 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-5 text-sm">从一笔股票成交到研究所账上：四步走</h3>
         <div class="space-y-4">
           {[
@@ -147,7 +147,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 佣金结构 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-4 text-sm">佣金收入的内部结构</h3>
         <p class="text-stone-500 text-xs leading-relaxed mb-4">
           历史上，一笔分仓佣金往往不是100%用于研究服务费——通常只有约 30%–40% 真正流向投研条线，
@@ -171,7 +171,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 派点制问题 -->
-      <div class="border border-amber-200 bg-amber-50 rounded-2xl p-6 mb-6">
+      <div class="border border-amber-200 bg-amber-50 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-amber-900 mb-4 text-sm">这套机制内置的三个矛盾（行业公认）</h3>
         <div class="space-y-3">
           {[
@@ -191,7 +191,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 2024新规 -->
-      <div class="bg-white border border-columbia-blue/30 rounded-2xl p-6">
+      <div class="bg-white border border-columbia-blue/30 rounded-2xl p-4 sm:p-6">
         <div class="flex items-center gap-2 mb-4">
           <span class="text-[10px] bg-columbia-light text-columbia-navy font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">2024年7月起实施</span>
           <h3 class="font-semibold text-stone-800 text-sm">公募费率新规：改了什么、影响有多大</h3>
@@ -238,7 +238,7 @@ import Base from '../../layouts/Base.astro';
       </p>
 
       <!-- 职级晋升 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-5 text-sm">四级台阶：从零到首席</h3>
         <div class="relative">
           <div class="absolute left-4 top-5 bottom-5 w-0.5 bg-stone-200"></div>
@@ -267,7 +267,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 一天的工作 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-4 text-sm">一天的真实节奏（根据多位从业者描述整理）</h3>
         <div class="space-y-2">
           {[
@@ -293,7 +293,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 行业分布 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-4 text-sm">进哪个行业组，很大程度上决定你的市场价值</h3>
         <div class="grid md:grid-cols-2 gap-4">
           {[
@@ -318,7 +318,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 人才流动 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-4 text-sm">人才流动：进来的少了，出去的多了</h3>
         <div class="grid md:grid-cols-3 gap-4 mb-4 text-center">
           {[
@@ -376,7 +376,7 @@ import Base from '../../layouts/Base.astro';
       </p>
 
       <!-- 一天的工作 -->
-      <div class="bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <h3 class="font-semibold text-stone-800 mb-5 text-sm">机构销售的一天：三段节奏</h3>
         <div class="space-y-4">
           {[
@@ -641,7 +641,7 @@ import Base from '../../layouts/Base.astro';
       <div class="space-y-5">
 
         <!-- 冲击一 -->
-        <div class="border-l-4 border-red-400 bg-white rounded-2xl p-6 border border-stone-200">
+        <div class="border-l-4 border-red-400 bg-white rounded-2xl p-4 sm:p-6 border border-stone-200">
           <div class="flex items-center gap-2 mb-3">
             <span class="text-[10px] bg-red-50 text-red-700 border border-red-100 font-medium px-2.5 py-1 rounded-full">压力一</span>
             <h3 class="font-semibold text-stone-800 text-sm">收入蛋糕在缩小，但场内选手没有减少</h3>
@@ -659,7 +659,7 @@ import Base from '../../layouts/Base.astro';
         </div>
 
         <!-- 冲击二 -->
-        <div class="border-l-4 border-amber-400 bg-white rounded-2xl p-6 border border-stone-200">
+        <div class="border-l-4 border-amber-400 bg-white rounded-2xl p-4 sm:p-6 border border-stone-200">
           <div class="flex items-center gap-2 mb-3">
             <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-100 font-medium px-2.5 py-1 rounded-full">压力二</span>
             <h3 class="font-semibold text-stone-800 text-sm">AI 正在接管助理的工作，但这件事比想象中复杂</h3>
@@ -678,7 +678,7 @@ import Base from '../../layouts/Base.astro';
         </div>
 
         <!-- 冲击三 -->
-        <div class="border-l-4 border-columbia-navy bg-white rounded-2xl p-6 border border-stone-200">
+        <div class="border-l-4 border-columbia-navy bg-white rounded-2xl p-4 sm:p-6 border border-stone-200">
           <div class="flex items-center gap-2 mb-3">
             <span class="text-[10px] bg-columbia-light text-columbia-navy border border-columbia-blue/20 font-medium px-2.5 py-1 rounded-full">压力三</span>
             <h3 class="font-semibold text-stone-800 text-sm">马太效应加速：强者越来越强，弱者出清加快</h3>
@@ -761,7 +761,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 免责声明 -->
-      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 sm:p-6">
         <div class="flex items-start gap-3">
           <span class="text-xl shrink-0 mt-0.5">⚠</span>
           <div>

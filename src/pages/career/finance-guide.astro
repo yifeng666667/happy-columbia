@@ -15,14 +15,14 @@ import Base from '../../layouts/Base.astro';
   </a>
 
   <!-- ── Article Header ─────────────────────────────── -->
-  <header class="mb-14 pb-10 border-b border-stone-200">
+  <header class="mb-10 sm:mb-14 pb-8 sm:pb-10 border-b border-stone-200">
     <div class="flex items-center gap-2 mb-5">
       <span class="text-[10px] uppercase tracking-[0.25em] bg-columbia-light text-columbia-navy font-semibold px-3 py-1 rounded-full">
         Career Guide
       </span>
       <span class="text-[10px] text-stone-400 uppercase tracking-widest">Finance Industry</span>
     </div>
-    <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
+    <h1 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-stone-900 leading-tight mb-5">
       金融行业方向与岗位深度解析
     </h1>
     <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
@@ -39,7 +39,7 @@ import Base from '../../layouts/Base.astro';
   </header>
 
   <!-- ── Coffee Chat Banner ────────────────────────── -->
-  <div class="mb-10 flex items-center gap-3 bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4">
+  <div class="mb-8 flex flex-wrap items-start gap-3 bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4">
     <span class="text-xl shrink-0">☕</span>
     <p class="text-columbia-navy/80 text-sm leading-relaxed" style="margin:0">
       看完行业全图，还是选不好方向？欢迎发邮件 <a href="mailto:yh3811@columbia.edu" class="font-semibold text-columbia-navy underline underline-offset-2 hover:text-columbia-blue transition-colors">yh3811@columbia.edu</a> 约 10–15 分钟 online coffee chat，也提供 1v1 深度职业咨询。
@@ -47,7 +47,7 @@ import Base from '../../layouts/Base.astro';
   </div>
 
   <!-- ── Table of Contents ──────────────────────────── -->
-  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-6">
+  <nav class="mb-16 bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6">
     <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-4 font-medium">目录</p>
     <ol class="space-y-2 text-sm text-stone-600">
       <li class="flex items-start gap-2.5">
@@ -97,7 +97,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- 一级 vs 二级市场 -->
       <div class="grid md:grid-cols-2 gap-4 mb-10">
-        <div class="bg-columbia-navy rounded-2xl p-6 text-white">
+        <div class="bg-columbia-navy rounded-2xl p-4 sm:p-6 text-white">
           <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">Primary Market</div>
           <h3 class="font-display font-bold text-xl mb-3">一级市场</h3>
           <p class="text-white/75 text-sm leading-relaxed mb-4">
@@ -114,7 +114,7 @@ import Base from '../../layouts/Base.astro';
           </div>
         </div>
 
-        <div class="bg-stone-800 rounded-2xl p-6 text-white">
+        <div class="bg-stone-800 rounded-2xl p-4 sm:p-6 text-white">
           <div class="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">Secondary Market</div>
           <h3 class="font-display font-bold text-xl mb-3">二级市场</h3>
           <p class="text-white/75 text-sm leading-relaxed mb-4">
@@ -191,7 +191,7 @@ import Base from '../../layouts/Base.astro';
       </p>
 
       <!-- 头部公司分类 -->
-      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 mb-10">
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-6 mb-10">
         <h3 class="font-semibold text-stone-800 text-sm mb-5">头部卖方机构分类</h3>
         <div class="space-y-4">
           <div>
@@ -443,7 +443,7 @@ import Base from '../../layouts/Base.astro';
       </p>
 
       <!-- PE -->
-      <div class="border-l-4 border-columbia-navy bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="border-l-4 border-columbia-navy bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
           <div>
             <h3 class="font-display font-bold text-xl text-stone-900">私募股权 PE</h3>
@@ -489,7 +489,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- VC -->
-      <div class="border-l-4 border-columbia-blue bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="border-l-4 border-columbia-blue bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
           <div>
             <h3 class="font-display font-bold text-xl text-stone-900">风险投资 VC</h3>
@@ -530,7 +530,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 公募基金 -->
-      <div class="border-l-4 border-emerald-600 bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="border-l-4 border-emerald-600 bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
           <div>
             <h3 class="font-display font-bold text-xl text-stone-900">公募基金</h3>
@@ -569,7 +569,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 对冲基金/私募 -->
-      <div class="border-l-4 border-stone-700 bg-white border border-stone-200 rounded-2xl p-6 mb-6">
+      <div class="border-l-4 border-stone-700 bg-white border border-stone-200 rounded-2xl p-4 sm:p-6 mb-6">
         <div class="flex items-start justify-between mb-4 flex-wrap gap-3">
           <div>
             <h3 class="font-display font-bold text-xl text-stone-900">对冲基金 / 私募证券</h3>
@@ -706,7 +706,7 @@ import Base from '../../layouts/Base.astro';
       </p>
 
       <div class="space-y-4 mb-10">
-        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+        <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6">
           <div class="flex items-start gap-4">
             <div class="shrink-0 w-10 h-10 rounded-full bg-columbia-light flex items-center justify-center font-display font-bold text-columbia-navy">1</div>
             <div>
@@ -722,7 +722,7 @@ import Base from '../../layouts/Base.astro';
           </div>
         </div>
 
-        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+        <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6">
           <div class="flex items-start gap-4">
             <div class="shrink-0 w-10 h-10 rounded-full bg-columbia-light flex items-center justify-center font-display font-bold text-columbia-navy">2</div>
             <div>
@@ -739,7 +739,7 @@ import Base from '../../layouts/Base.astro';
           </div>
         </div>
 
-        <div class="bg-white border border-stone-200 rounded-2xl p-6">
+        <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-6">
           <div class="flex items-start gap-4">
             <div class="shrink-0 w-10 h-10 rounded-full bg-columbia-light flex items-center justify-center font-display font-bold text-columbia-navy">3</div>
             <div>
@@ -757,7 +757,7 @@ import Base from '../../layouts/Base.astro';
       </div>
 
       <!-- 免责声明卡片 -->
-      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 sm:p-6">
         <div class="flex items-start gap-3">
           <span class="text-xl shrink-0 mt-0.5">⚠</span>
           <div>

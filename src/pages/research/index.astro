@@ -59,15 +59,15 @@ const dotColors: {[k:string]:string} = {
   <section class="research-hero relative min-h-[68vh] flex flex-col justify-end overflow-hidden">
 
     <!-- Text content -->
-    <div class="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-32">
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 w-full pb-14 pt-20 sm:pb-20 sm:pt-32">
       <p class="text-[11px] uppercase tracking-[0.3em] text-white/50 mb-3">
         Finance &amp; Research
       </p>
       <h1 class="font-display font-bold text-white leading-tight mb-4"
-          style="font-size: clamp(2.2rem, 5vw, 3.8rem);">
+          style="font-size: clamp(1.75rem, 6vw, 3.8rem);">
         金融投研
       </h1>
-      <p class="text-white/65 text-lg leading-relaxed mb-8 max-w-lg">
+      <p class="text-white/65 text-sm sm:text-lg leading-relaxed mb-8 max-w-lg">
         汇总宏观分析、政策追踪与行业板块研究<br/>
         整理自在读期间的市场观察与学习积累
       </p>
@@ -103,7 +103,7 @@ const dotColors: {[k:string]:string} = {
   <!-- ══════════════════════════════════════════════════ -->
   <!--  CATEGORIES                                         -->
   <!-- ══════════════════════════════════════════════════ -->
-  <section class="bg-[#f8f7f4] px-6 pt-16 pb-20">
+  <section class="bg-[#f8f7f4] px-4 sm:px-6 pt-10 sm:pt-16 pb-14 sm:pb-20">
     <div class="max-w-5xl mx-auto">
 
       <!-- ── China 2026 Featured Article Banner ── -->
@@ -188,7 +188,7 @@ const dotColors: {[k:string]:string} = {
       </div>
 
       <!-- Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-10">
 
         <!-- Two public-category cards per row, grouped by... just flat list -->
         <div class="space-y-3">
@@ -336,7 +336,7 @@ const dotColors: {[k:string]:string} = {
   <!-- ══════════════════════════════════════════════════ -->
   <!--  LATEST ARTICLES                                    -->
   <!-- ══════════════════════════════════════════════════ -->
-  <section class="bg-white px-6 py-20">
+  <section class="bg-white px-4 sm:px-6 py-12 sm:py-20">
     <div class="max-w-5xl mx-auto">
 
       <div class="mb-10 text-center">
@@ -522,13 +522,22 @@ const dotColors: {[k:string]:string} = {
   .china-banner-body {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.2rem;
+    gap: 1rem;
   }
   .china-banner-right {
     align-items: flex-start;
   }
   .china-banner-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .china-banner-desc {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+  .china-banner {
+    min-height: auto;
   }
 }
 </style>
