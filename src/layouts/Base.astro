@@ -51,7 +51,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
     <header
       id="site-header"
       data-hero={hero ? "true" : "false"}
-      class="sticky top-0 z-50 transition-all duration-300 border-b site-header"
+      class="top-0 z-50 w-full transition-all duration-300 border-b site-header"
     >
       <div class="max-w-6xl mx-auto px-4 sm:px-5 py-3 sm:py-4 flex items-center justify-between gap-4">
 
@@ -60,8 +60,8 @@ const siteUrl = 'https://happy-columbia.pages.dev';
           <div class="logo-main font-display font-semibold tracking-tight text-lg transition-colors">
             HappyColumbia
           </div>
-          <div class="logo-sub hidden sm:block text-[10px] tracking-widest uppercase mt-0.5">
-            经济 · 金融 · 政策
+          <div class="logo-sub block text-[10px] tracking-widest uppercase mt-0.5">
+            经济 · 金融 · 职场
           </div>
         </a>
 
@@ -123,6 +123,11 @@ const siteUrl = 'https://happy-columbia.pages.dev';
     </header>
 
     <style>
+      /* ── Position ── */
+      .site-header                                                     { position: sticky; }
+      .site-header[data-hero="true"]                                   { position: absolute; }
+      .site-header[data-hero="true"][data-scrolled="true"]             { position: fixed; }
+
       /* ── Default (non-hero) ── */
       .site-header                          { background: white; border-color: rgb(231,229,228); }
       .site-header .logo-main               { color: rgb(28,25,23); }

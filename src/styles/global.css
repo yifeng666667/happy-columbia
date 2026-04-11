@@ -73,13 +73,13 @@ header.scrolled {
   background-position: center 40%;
 }
 
-/* Mobile: lighter top gradient + shift image up to show mountains */
+/* Mobile: gradient starts dark for logo readability, fades to lighter over mountains */
 @media (max-width: 767px) {
   .hero-img {
     background-image:
-      linear-gradient(180deg, rgba(6,24,40,0.28) 0%, rgba(8,32,60,0.50) 35%, rgba(11,44,86,0.65) 75%, rgba(11,44,86,0.75) 100%),
+      linear-gradient(180deg, rgba(6,24,40,0.82) 0%, rgba(8,32,60,0.60) 25%, rgba(11,44,86,0.45) 55%, rgba(11,44,86,0.60) 100%),
       url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85');
-    background-position: center 30%;
+    background-position: center 35%;
   }
 }
 
