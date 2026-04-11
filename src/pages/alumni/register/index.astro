@@ -1,0 +1,339 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="校友登记 · SIPA 校友圈">
+
+<style>
+  .reg-hero {
+    background: #0B2C56;
+    padding: 3.5rem 1.5rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .reg-hero::before {
+    content: '';
+    position: absolute;
+    top: -20%; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(91,155,213,0.15) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  /* form wrapper */
+  .form-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  /* field group */
+  .field-group {
+    margin-bottom: 1.5rem;
+  }
+  .field-label {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+  }
+  .field-label .req {
+    color: #5B9BD5;
+    margin-left: 2px;
+  }
+  .field-hint {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 0.3rem;
+  }
+
+  /* inputs */
+  .field-input,
+  .field-select,
+  .field-textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 0.9375rem;
+    color: #1f2937;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .field-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239ca3af' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+  }
+  .field-input:focus,
+  .field-select:focus,
+  .field-textarea:focus {
+    border-color: #5B9BD5;
+    box-shadow: 0 0 0 3px rgba(91,155,213,0.12);
+  }
+  .field-textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+
+  /* two columns */
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  @media (max-width: 520px) {
+    .field-row { grid-template-columns: 1fr; }
+  }
+
+  /* checkboxes */
+  .check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 0.2rem;
+  }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .check-item:hover {
+    border-color: #5B9BD5;
+    background: #f0f7ff;
+  }
+  .check-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    accent-color: #5B9BD5;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .check-item input[type="checkbox"]:checked + .check-label-wrap {
+    color: #0B2C56;
+  }
+  .check-label-wrap {
+    flex: 1;
+  }
+  .check-label-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    line-height: 1.4;
+  }
+  .check-label-desc {
+    font-size: 0.78rem;
+    color: #9ca3af;
+    margin-top: 0.15rem;
+    line-height: 1.5;
+  }
+
+  /* divider */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #f0ede8;
+    margin: 2rem 0;
+  }
+  .section-heading {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #aaa;
+    margin-bottom: 1.25rem;
+  }
+
+  /* submit */
+  .submit-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: #0B2C56;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 0.5rem;
+  }
+  .submit-btn:hover {
+    background: #0d3668;
+    transform: translateY(-1px);
+  }
+  .submit-note {
+    text-align: center;
+    font-size: 0.78rem;
+    color: #bbb;
+    margin-top: 0.9rem;
+  }
+</style>
+
+<!-- Hero -->
+<section class="reg-hero">
+  <div class="relative z-10">
+    <a href="/alumni/"
+       class="inline-flex items-center gap-1.5 text-white/40 hover:text-white/70 text-xs transition-colors no-underline mb-6 group">
+      <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+      SIPA 校友圈
+    </a>
+    <h1 class="font-display font-bold text-3xl text-white mb-2">校友登记</h1>
+    <p style="color:rgba(255,255,255,0.5); font-size:0.9375rem; max-width:420px; margin:0 auto; line-height:1.7;">
+      留下你的信息，加入正在建设中的 SIPA 校友社区。<br/>不打扰，不骚扰，只在合适的时候联系你。
+    </p>
+  </div>
+</section>
+
+<!-- Form -->
+<div style="background:#f8f7f4; min-height:60vh;">
+  <div class="form-wrap">
+
+    <!-- Formspree: 替换 YOUR_FORM_ID 为你的 Formspree 表单 ID -->
+    <form
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      method="POST"
+    >
+      <!-- 隐藏字段：表单来源标识 -->
+      <input type="hidden" name="_subject" value="【SIPA校友圈】新校友登记" />
+      <input type="hidden" name="_next" value="https://happy-columbia.pages.dev/alumni/register/thanks/" />
+
+      <!-- ── 基本信息 ── -->
+      <p class="section-heading">基本信息</p>
+
+      <div class="field-row">
+        <div class="field-group">
+          <label class="field-label" for="name">姓名 <span class="req">*</span></label>
+          <input class="field-input" type="text" id="name" name="name" placeholder="你的名字" required />
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="grad_year">毕业年份 <span class="req">*</span></label>
+          <select class="field-select" id="grad_year" name="grad_year" required>
+            <option value="" disabled selected>选择年份</option>
+            {Array.from({length: 14}, (_, i) => 2026 - i).map(y => (
+              <option value={y}>{y}</option>
+            ))}
+            <option value="2012前">2012 年及以前</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field-group">
+          <label class="field-label" for="program">在 SIPA 的项目 <span class="req">*</span></label>
+          <select class="field-select" id="program" name="program" required>
+            <option value="" disabled selected>选择项目</option>
+            <option>MPA（公共行政）</option>
+            <option>MIA（国际事务）</option>
+            <option>MPA-DP（发展实践）</option>
+            <option>MPA-ESP（环境科学与政策）</option>
+            <option>EMPA（在职公共行政）</option>
+            <option>PhD</option>
+            <option>其他</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="city">目前所在城市</label>
+          <input class="field-input" type="text" id="city" name="city" placeholder="如：北京 / 纽约 / 香港" />
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="job">目前的职业 / 公司（选填）</label>
+        <input class="field-input" type="text" id="job" name="job" placeholder="如：高盛 IBD 分析师 / 麦肯锡咨询顾问" />
+        <p class="field-hint">不方便透露可以只填行业，如「买方」「咨询」「公共部门」</p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- ── 联系方式 ── -->
+      <p class="section-heading">联系方式</p>
+
+      <div class="field-row">
+        <div class="field-group">
+          <label class="field-label" for="wechat">微信号</label>
+          <input class="field-input" type="text" id="wechat" name="wechat" placeholder="微信 ID" />
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="email">邮箱</label>
+          <input class="field-input" type="email" id="email" name="email" placeholder="your@email.com" />
+        </div>
+      </div>
+      <p class="field-hint" style="margin-top:-0.8rem; margin-bottom:1.5rem;">微信或邮箱填一个即可</p>
+
+      <hr class="section-divider" />
+
+      <!-- ── 参与方向 ── -->
+      <p class="section-heading">你希望怎么参与？（可多选）</p>
+
+      <div class="check-group">
+        <label class="check-item">
+          <input type="checkbox" name="involvement" value="加入校友活动群" />
+          <div class="check-label-wrap">
+            <div class="check-label-title">🎉 加入校友活动群</div>
+            <div class="check-label-desc">接收城市聚会、线上活动、行业分享等通知，不定期更新</div>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" name="involvement" value="接受校友采访" />
+          <div class="check-label-wrap">
+            <div class="check-label-title">🎙️ 接受校友采访，分享职业经历</div>
+            <div class="check-label-desc">参与「100位校友采访计划」，把你的真实路径发布在网站上</div>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" name="involvement" value="为学弟学妹提供内推或咨询" />
+          <div class="check-label-wrap">
+            <div class="check-label-title">🤝 为学弟学妹提供内推或 1v1 咨询</div>
+            <div class="check-label-desc">在力所能及的范围内，帮助后辈少走弯路</div>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" name="involvement" value="参与播客录制" />
+          <div class="check-label-wrap">
+            <div class="check-label-title">🎧 参与小宇宙播客录制</div>
+            <div class="check-label-desc">聊求职、聊留学，也聊生活里那些说不清楚的迷茫</div>
+          </div>
+        </label>
+
+        <label class="check-item">
+          <input type="checkbox" name="involvement" value="协助建设网站内容" />
+          <div class="check-label-wrap">
+            <div class="check-label-title">✍️ 协助建设网站内容</div>
+            <div class="check-label-desc">投稿课程笔记、求职经验，或帮忙校对翻译排版</div>
+          </div>
+        </label>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- ── 补充 ── -->
+      <div class="field-group">
+        <label class="field-label" for="note">其他想说的（选填）</label>
+        <textarea class="field-textarea" id="note" name="note" placeholder="有什么特别想聊的方向，或者对校友圈的想法，都可以写在这里"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">提交登记 →</button>
+      <p class="submit-note">信息只用于校友圈建设，不会对外公开或转发给第三方。</p>
+
+    </form>
+  </div>
+</div>
+
+</Base>
