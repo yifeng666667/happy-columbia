@@ -169,7 +169,7 @@ session: "3"
 
 **SVB 破产的核心教训（2023 年）**：硅谷银行持有大量长期国债和 MBS。2022–2023 年利率飙升后，这些债券**浮亏数百亿美元**。当存款人开始挤兑，银行被迫卖出这些债券**实现**了损失，最终破产。
 
-> **教授的警告**：银行持有"到期持有"（HTM）债券时，账面上不显示浮亏。但一旦需要出售，浮亏就变成真损失。SVB 的故事告诉你：**长期固定收益资产的久期风险永远存在，只是有时候被会计处理隐藏了。**
+> ⚠️ **关键提示**：银行持有"到期持有"（HTM）债券时，账面上不显示浮亏。但一旦需要出售，浮亏就变成真损失。SVB 的故事告诉你：**长期固定收益资产的久期风险永远存在，只是有时候被会计处理隐藏了。**
 
 ## 六、浮动利率债券（Floating Rate Notes, FRN）
 
@@ -274,7 +274,7 @@ session: "3"
 - [Wikipedia：Duration (finance)](https://en.wikipedia.org/wiki/Bond_duration)
 - [Wikipedia：Yield to maturity](https://en.wikipedia.org/wiki/Yield_to_maturity)
 - [Wikipedia：TRACE (FINRA)](https://en.wikipedia.org/wiki/Trade_Reporting_and_Compliance_Engine)
-- YouTube：搜索 "How bonds work"
-- YouTube：搜索 "Bond duration explained"
-- YouTube：搜索 "Treasury auction process"
-- YouTube：搜索 "Why SVB collapsed duration risk"
+- [Investing Basics: Bonds — Charles Schwab](https://www.youtube.com/watch?v=vAdn7aLHpO0)
+- [Bond Duration Explained Simply — Ryan O'Connell CFA](https://www.youtube.com/watch?v=fU7NnRW66vw)
+- [How Do U.S. Treasury Auctions Actually Work? — Financially Aware](https://www.youtube.com/watch?v=FwW65XHp7zw)
+- [The Silicon Valley Bank Collapse, Explained — WSJ](https://www.youtube.com/watch?v=YDwDMF_f5rM)

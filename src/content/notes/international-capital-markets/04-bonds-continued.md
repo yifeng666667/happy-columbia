@@ -13,7 +13,7 @@ session: "4"
 3. **Eurobond 到底是什么？（和"欧洲债"完全不是一回事）**
 4. **怎么读全球主要国家的收益率曲线？**
 
-教授还穿插了一段非常精彩的"法律边界"讨论：**当你想通过发报告影响市场时，法律允许你说什么、不允许你说什么？** Hindenburg、Citron、SEC 的故事把这个问题讲得极为生动。
+这里还有一段关于"法律边界"的关键讨论：**当你想通过发报告影响市场时，法律允许你说什么、不允许你说什么？** Hindenburg、Citron、SEC 的故事把这个问题讲得极为生动。
 
 ## 一、美国债券的税务处理
 
@@ -92,7 +92,7 @@ session: "4"
 - 2012 年只有 17 亿美元违约，远低于预期
 - 接下来几年多数时间零违约
 
-> **教授点评**：这是一个"名声 + 媒体平台 + 错误预测 = 市场混乱"的典型案例。但 Whitney 没有违法，她只是**错了**。
+> **市场视角**：这是一个"名声 + 媒体平台 + 错误预测 = 市场混乱"的典型案例。但 Whitney 没有违法，她只是**错了**。
 
 **案例 2：波多黎各的真实崩溃**
 
@@ -106,7 +106,7 @@ session: "4"
 
 ## 三、激进型做空：法律边界在哪？
 
-这是本节课最精彩的一段讨论，涉及数字时代的法律与经济学边界。教授通过两个真实案例，把"合法做空"和"证券欺诈"的区别讲得清清楚楚。
+这是一段涉及数字时代的法律与经济学边界的重要讨论。以下两个真实案例，把"合法做空"和"证券欺诈"的区别讲得清清楚楚。
 
 ### 3.1 Hindenburg Research 与 Adani 案（2023）
 
@@ -295,7 +295,7 @@ Andrew Left 的问题不是内幕交易，而是**证券欺诈（securities frau
 
 这和普通的经济周期倒挂（短端利率高是因为央行加息）完全不同，这是"信用恐慌"的信号，意味着市场担心近期违约。
 
-> **教授的洞见**：倒挂的主权债曲线几乎总是"信用恐慌"的信号，而不是经济周期的预测。
+> **一个重要洞察**：倒挂的主权债曲线几乎总是"信用恐慌"的信号，而不是经济周期的预测。
 
 ## 七、核心要点回顾
 
@@ -315,7 +315,7 @@ Andrew Left 的问题不是内幕交易，而是**证券欺诈（securities frau
 - [Wikipedia：Eurobond](https://en.wikipedia.org/wiki/Eurobond)
 - [Wikipedia：Hindenburg Research](https://en.wikipedia.org/wiki/Hindenburg_Research)
 - [Wikipedia：European sovereign debt crisis](https://en.wikipedia.org/wiki/European_debt_crisis)
-- YouTube：搜索 "Municipal bonds explained"
-- YouTube：搜索 "Hindenburg Adani report"
-- YouTube：搜索 "Euro crisis bond spreads"
-- YouTube：搜索 "How Eurobonds work"
+- [What Is A Municipal Bond? — Investopedia](https://www.youtube.com/watch?v=owh2e_M6DNU)
+- [Why Hindenburg Research Is Shutting Down — Mint](https://www.youtube.com/watch?v=CwwQKOn0Nl0)
+- [The Greek Debt Crisis — The Plain Bagel](https://www.youtube.com/watch?v=g_yiQBe8yiQ)
+- [Eurobonds Explained — explainity](https://www.youtube.com/watch?v=tMd7EfFsPIc)

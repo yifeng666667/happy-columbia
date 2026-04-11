@@ -62,7 +62,7 @@ Moody's 的正式定义：
 4. **道德义务**——有些国家把"不还债"视为耻辱
 5. **海外资产风险**——外国法院可能判定你欠钱，进而扣押海外资产（如阿根廷海军舰艇）
 
-> **教授的重点**：这 5 条里**第 1 条（声誉）最实际**。违约不是终点，而是**6+ 年的资本市场隔离**。
+> **值得注意的是**：这 5 条里**第 1 条（声誉）最实际**。违约不是终点，而是**6+ 年的资本市场隔离**。
 
 ## 三、违约后的回收率与重返市场
 
@@ -111,7 +111,7 @@ Moody's 的正式定义：
 - 另加 **$23 GDP 挂钩债券**——如果 GDP 增速高于 IMF 预期 3%，本金增至 $35
 - **97% 投资者同意**（远超需要的 66%）
 
-**为什么这么快**：教授强调，这次重组之所以快，是因为**乌克兰的债务问题不是因为政策失误，而是因为俄罗斯入侵**——债权人明白情况，所以合作。
+**为什么这么快**：一个关键点是，这次重组之所以快，是因为**乌克兰的债务问题不是因为政策失误，而是因为俄罗斯入侵**——债权人明白情况，所以合作。
 
 ## 四、Elliott Management vs. Argentina：14 年传奇
 
@@ -183,7 +183,7 @@ Moody's 的正式定义：
 - 让真正陷入困境的国家无法从债务中解脱
 - "秃鹫"般利用别人的痛苦
 
-**教授的立场**：**"就算你觉得他们是坏人，你有办法阻止他们吗？"**
+**从实战角度看**：**"就算你觉得他们是坏人，你有办法阻止他们吗？"**
 
 ### 4.7 CAC 的诞生
 
@@ -323,7 +323,7 @@ S&P 自 2018 年起：**最多只允许 1 档差距**。
 - [Wikipedia：Greek government-debt crisis](https://en.wikipedia.org/wiki/Greek_government-debt_crisis)
 - [Wikipedia：Collective action clause](https://en.wikipedia.org/wiki/Collective_action_clause)
 - [Wikipedia：Elliott Management Corporation](https://en.wikipedia.org/wiki/Elliott_Investment_Management)
-- YouTube：搜索 "Argentina debt default Elliott Management"
-- YouTube：搜索 "Sovereign debt crisis explained"
-- YouTube：搜索 "Greek debt PSI restructuring"
-- YouTube：搜索 "ARA Libertad Ghana seized"
+- [The Argentina Default: How Paul Singer's Hedge Fund Brought Down a Nation — Flawless Finance](https://www.youtube.com/watch?v=_--b_5bV55Y)
+- [The Greek Debt Crisis — The Plain Bagel](https://www.youtube.com/watch?v=g_yiQBe8yiQ)
+- [The Greek Debt Crisis — The Plain Bagel](https://www.youtube.com/watch?v=g_yiQBe8yiQ)
+- [The Argentina Default — Flawless Finance](https://www.youtube.com/watch?v=_--b_5bV55Y)

@@ -6,7 +6,7 @@ session: "5"
 
 ## 本文概述
 
-期货（Futures）是华尔街每天用得最多、但普通读者最容易混淆的工具之一。Robb 教授开门见山地警告：**Investopedia 和《华尔街日报》对期货的定义都是错的**。这节课的核心目标是：
+期货（Futures）是华尔街每天用得最多、但普通读者最容易混淆的工具之一。值得注意的是，**Investopedia 和《华尔街日报》对期货的定义都是错的**。这节课的核心目标是：
 
 1. **把期货和远期（Forward）、期权（Option）彻底区分开**
 2. **搞清楚保证金（margin）如何让期货不需要信任对手方**
@@ -19,7 +19,7 @@ session: "5"
 
 **Investopedia 的定义**："期货是衍生品合约，**迫使双方**在未来某一约定日期按约定价格进行交易。"
 
-**Robb 教授的评论**：这段话里有两处严重错误：
+这段话里有两处严重错误：
 
 1. 这其实是**远期合约（forward）**的定义，不是期货的定义
 2. **期货的持有者绝大多数时候不会实际交割标的资产**——他们会在到期前平仓
@@ -30,7 +30,7 @@ session: "5"
 
 ### 1.2 期货的准确定义
 
-**期货合约具有以下六个特征**（这是教授给的"速查卡"）：
+**期货合约具有以下六个特征**（速查卡）：
 
 1. **以市场决定的价格在未来某段日期范围内买入或卖出**
 2. **条款标准化**（contract size、到期月、品级等都是交易所统一规定的）
@@ -122,7 +122,7 @@ session: "5"
 6. **4 月 25 日交割**：假设最终结算价 $2650.10，Tiffany 付 $13,250,500 现货买入黄金
 7. **总成本**：$13,250,500 + 总亏损 $250,000 = $13,500,500 = **$2,700.10 / oz**（正是她当初锁定的价格）
 
-**教授反复强调**：无论未来黄金价格如何波动，**Tiffany 最终锁定的单价永远是初始买入价 $2700.10**。期货的 mark-to-market 机制确保这一点。
+特别值得关注的是：无论未来黄金价格如何波动，**Tiffany 最终锁定的单价永远是初始买入价 $2700.10**。期货的 mark-to-market 机制确保这一点。
 
 ### 3.2 初始保证金 vs 变动保证金
 
@@ -169,7 +169,7 @@ session: "5"
 
 **2020 年 4 月**，CME 黄金期货比伦敦金一度**高出 70 美元**——因为疫情封锁期间，伦敦到纽约的实物黄金交割困难，套利链条断了。
 
-> **教授的警告**：套利只在**套利可行**的时候工作。极端市场压力下，物理、法律、融资方面的摩擦会让"看起来完美的套利"失灵。
+> ⚠️ 风险提示：套利只在**套利可行**的时候工作。极端市场压力下，物理、法律、融资方面的摩擦会让"看起来完美的套利"失灵。
 
 ## 五、"负油价"：2020 年 4 月 20 日的历史时刻
 
@@ -191,9 +191,9 @@ session: "5"
 
 **结果**：价格崩到 -$40，意思是"**你要付我 40 美元，我才愿意从你那里拿走原油**"。
 
-### 5.3 教授的反思
+### 5.3 反思
 
-> "投机者以为 **'零以下不可能再跌'** 是安全赌注。当他们发现**确实可能跌破零**时，变成了被迫卖方。"
+> 投机者以为 **"零以下不可能再跌"** 是安全赌注。当他们发现**确实可能跌破零**时，变成了被迫卖方。
 
 **事后套利**：理论上，你可以以 -$25 买入 + 租一艘油轮储油 + 等价格回升。但这在当时**完全不明显**，充满风险：
 - 疫情可能持续更久，油轮租金涨到无法承受
@@ -273,7 +273,7 @@ SOFR 期货是用来对冲或押注短期利率走势的核心工具。它的报
 
 空头可以选择用任何符合规格的国债来交割——他们会选"最便宜"的那一只。**2024 年 12 月合约的 CTD 是 4.25% 2031 年 6 月 30 日到期的国债**，剩余期限约 7 年。
 
-> **教授的警告**：**不要把 10 年国债期货当成 10 年 6% 债来建模**——它比那复杂得多。
+> ⚠️ 风险提示：**不要把 10 年国债期货当成 10 年 6% 债来建模**——它比那复杂得多。
 
 **规模**：日均 200 万手 ≈ 2000 亿美元名义本金；未平仓约 500 万手。
 
@@ -339,7 +339,7 @@ SOFR 期货是用来对冲或押注短期利率走势的核心工具。它的报
 - [Wikipedia：MF Global](https://en.wikipedia.org/wiki/MF_Global)
 - [Wikipedia：Margin (finance)](https://en.wikipedia.org/wiki/Margin_(finance))
 - [Wikipedia：Commodity Futures Trading Commission](https://en.wikipedia.org/wiki/Commodity_Futures_Trading_Commission)
-- YouTube：搜索 "How futures contracts work"
-- YouTube：搜索 "Negative oil price explained"
-- YouTube：搜索 "Futures vs forwards"
-- YouTube：搜索 "MF Global collapse"
+- [What are Futures? — The Plain Bagel](https://www.youtube.com/watch?v=1Mhk4UHJsRc)
+- [Crude Oil Prices Are Negative — Patrick Boyle](https://www.youtube.com/watch?v=dfqmjSOD7pQ)
+- [What are Futures? — The Plain Bagel](https://www.youtube.com/watch?v=1Mhk4UHJsRc)
+- [MF Global Collapse — Democracy Now!](https://www.youtube.com/watch?v=zy3FfKzmEJg)

@@ -12,7 +12,7 @@ session: "6"
 2. **利率互换（IRS, Interest Rate Swap）**——把固定利率换成浮动利率，反之亦然
 3. **外汇互换（FX Swap）**——把一种货币的现金流换成另一种货币
 
-教授的核心教学目标：**让你理解这些工具之所以存在，是因为不同的参与者想要不同的现金流。衍生品是"市场拼图"的连接器。** 而且最后你会发现——**一家公司的信用风险是"一维的"**，无论它以哪种形式呈现（固定利率、浮动利率、不同币种、FRN、CDS），套利会把这些都拉到同一个水平。
+核心框架：**这些工具之所以存在，是因为不同的参与者想要不同的现金流。衍生品是"市场拼图"的连接器。** 而且最后你会发现——**一家公司的信用风险是"一维的"**，无论它以哪种形式呈现（固定利率、浮动利率、不同币种、FRN、CDS），套利会把这些都拉到同一个水平。
 
 ## 一、一个惊人的事实：发达国家大公司几乎都用衍生品
 
@@ -144,7 +144,7 @@ session: "6"
 
 ### 2.9 从 CDS 看真实的信用状况
 
-教授反复强调：**CDS spread 是市场对信用风险的"实时定价"，比信用评级机构灵敏得多**。
+特别值得关注的是：**CDS spread 是市场对信用风险的"实时定价"，比信用评级机构灵敏得多**。
 
 **一些 2024 年典型的 5 年 CDS spread**（越高表示市场认为风险越高）：
 
@@ -164,7 +164,7 @@ session: "6"
 | Pemex | 能源（墨西哥国企） | 515 |
 | Greentown China | 中国地产 | 810 |
 
-**教授点评**：**市场不太尊重评级机构**——欧洲 BBB 评级的公司 CDS spread 差异巨大，从 29 bps（Wolters Kluwer）到 116 bps（Smiths Group）。评级机构有影响力，但市场自有判断。
+**市场不太尊重评级机构**——欧洲 BBB 评级的公司 CDS spread 差异巨大，从 29 bps（Wolters Kluwer）到 116 bps（Smiths Group）。评级机构有影响力，但市场自有判断。
 
 ### 2.10 Index CDS：一篮子 CDS
 
@@ -191,7 +191,7 @@ session: "6"
 - 2022 年能源危机 ≈ 138 bps
 - 2024 年平稳期 ≈ 53 bps
 
-**教授的计算**：如果 iTraxx Europe 在 138 bps，假设 50% 回收率，买方需要 1.38% ÷ (50% × 0.80%) ≈ **3.4 次违约/年**才能打平——意味着 5 年内需要 17 家高评级欧洲公司违约才能回本。要**赚 2 倍**需要 34 家违约。这种事"一般不会发生"，所以 CDS 卖方是稳赚的生意？——**并不**，因为尾部风险：一旦发生大规模违约，损失呈指数级。
+如果 iTraxx Europe 在 138 bps，假设 50% 回收率，买方需要 1.38% ÷ (50% × 0.80%) ≈ **3.4 次违约/年**才能打平——意味着 5 年内需要 17 家高评级欧洲公司违约才能回本。要**赚 2 倍**需要 34 家违约。这种事"一般不会发生"，所以 CDS 卖方是稳赚的生意？——**并不**，因为尾部风险：一旦发生大规模违约，损失呈指数级。
 
 ## 三、利率互换（IRS）：把固定换成浮动
 
@@ -247,7 +247,7 @@ Lockheed → Citibank：SOFR 浮动（IRS）
 
 **相比直接发 FRN（SOFR + 100 bps）**，每年**节省 55 bps × $100M = $550,000**，五年总共节省 $2.75M。
 
-> **教授的核心观察**：**套利让所有的融资形式最终收敛到同一水平**。Lockheed 的信用成本是"一维的"——无论它借固定、借浮动、借 USD、借 EUR，最终的信用差额大致相同。
+> 一个核心洞察：**套利让所有的融资形式最终收敛到同一水平**。Lockheed 的信用成本是"一维的"——无论它借固定、借浮动、借 USD、借 EUR，最终的信用差额大致相同。
 
 ### 3.4 Swap rate 是怎么决定的
 
@@ -398,7 +398,7 @@ Investor → €5M → Swap 对手方
 - [Wikipedia：Currency swap](https://en.wikipedia.org/wiki/Currency_swap)
 - [Wikipedia：ISDA Master Agreement](https://en.wikipedia.org/wiki/ISDA_Master_Agreement)
 - [Wikipedia：CDX (index)](https://en.wikipedia.org/wiki/Credit_default_swap_index)
-- YouTube：搜索 "Credit default swap explained"
-- YouTube：搜索 "Interest rate swap example"
-- YouTube：搜索 "Currency swap explained"
-- YouTube：搜索 "The Big Short CDS"
+- [What is a Credit Default Swap? — Patrick Boyle](https://www.youtube.com/watch?v=X_FaPuqG_PU)
+- [Interest Rate Swap — Khan Academy](https://www.youtube.com/watch?v=PLjyj1FJqig)
+- [Interest Rate Swap — Khan Academy](https://www.youtube.com/watch?v=PLjyj1FJqig)
+- [How The Big Short Actually Worked — How Money Works](https://www.youtube.com/watch?v=3xC1a5r0zNY)
