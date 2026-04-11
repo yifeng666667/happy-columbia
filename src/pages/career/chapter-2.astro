@@ -90,6 +90,7 @@ import Base from '../../layouts/Base.astro';
 
       <!-- ── 两年完整时间线图 ── -->
       <div class="big-timeline">
+      <div class="bt-inner">
 
         <!-- 年份标题行 -->
         <div class="bt-year-row">
@@ -205,7 +206,9 @@ import Base from '../../layouts/Base.astro';
           </div>
         </div>
 
-      </div>
+      </div><!-- end bt-inner -->
+      <p class="bt-scroll-hint">← 左右滑动查看完整时间线 →</p>
+      </div><!-- end big-timeline -->
 
       <!-- 图例 -->
       <div class="bt-legend">
@@ -728,7 +731,24 @@ import Base from '../../layouts/Base.astro';
     padding: 1.75rem 1.5rem 1.25rem;
     margin: 1.5rem 0;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     min-width: 0;
+  }
+  .bt-inner {
+    min-width: 700px;
+  }
+  .bt-scroll-hint {
+    display: none;
+    text-align: center;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.28);
+    letter-spacing: 0.05em;
+    margin: 0.6rem 0 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+  @media (max-width: 767px) {
+    .bt-scroll-hint { display: block; }
   }
 
   /* shared grid for year header and month row — must match bt-bars-grid exactly */

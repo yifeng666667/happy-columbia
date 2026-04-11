@@ -7,26 +7,38 @@
 html { scroll-behavior: smooth; overflow-x: hidden; }
 body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
-/* Mobile: all scrollable table containers */
+/* ── Mobile optimizations ── */
 @media (max-width: 768px) {
+  /* Scrollable tables */
   .prose table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  /* Ensure smooth native scroll on iOS for career article tables */
   .table-wrapper,
   .overflow-x-auto {
     -webkit-overflow-scrolling: touch;
   }
-}
 
-/* Mobile (≤640px): career article tables go full-width */
-@media (max-width: 640px) {
-  /* Base layout: tighten side padding slightly */
+  /* Slightly smaller reading font on phones */
+  .prose-reading {
+    font-size: 0.9625rem;
+    line-height: 1.8;
+  }
+
+  /* Tighter article headings on mobile */
+  h1 { font-size: clamp(1.5rem, 6vw, 2.25rem) !important; }
+
+  /* Prevent any element from causing horizontal scroll */
   main > .max-w-3xl,
   main > article {
     overflow-x: hidden;
+  }
+
+  /* Career article page: tighten horizontal padding */
+  .prose-reading.max-w-3xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
