@@ -724,7 +724,7 @@ import Base from '../../layouts/Base.astro';
   .big-timeline {
     background: #0c1e35;
     border-radius: 1rem;
-    padding: 1.5rem 1.25rem 1rem;
+    padding: 1.75rem 1.5rem 1.25rem;
     margin: 1.5rem 0;
     overflow-x: auto;
     min-width: 0;
@@ -782,9 +782,9 @@ import Base from '../../layouts/Base.astro';
   .bt-month {
     flex: 1;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.62rem;
     color: rgba(255,255,255,0.35);
-    min-width: 2.2rem;
+    min-width: 2.8rem;
   }
   .bt-month.first-y1 { color: #93c5fd; font-weight: 600; }
   .bt-month.first-y2 { color: #93c5fd; font-weight: 600; }
@@ -793,8 +793,8 @@ import Base from '../../layouts/Base.astro';
   .bt-track-row {
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
-    min-height: 2.6rem;
+    margin-bottom: 8px;
+    min-height: 3.4rem;
   }
   .bt-track-row .bt-label-col {
     width: 4.5rem;
@@ -812,8 +812,8 @@ import Base from '../../layouts/Base.astro';
     flex: 1;
     display: grid;
     grid-template-columns: repeat(22, 1fr);
-    gap: 2px;
-    height: 2.6rem;
+    gap: 3px;
+    height: 3.4rem;
   }
 
   /* individual bars */
@@ -821,20 +821,20 @@ import Base from '../../layouts/Base.astro';
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.58rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.62rem;
     color: white;
-    line-height: 1.3;
+    line-height: 1.35;
     overflow: hidden;
     position: relative;
   }
   .bt-bar-tag {
-    font-size: 0.5rem;
+    font-size: 0.52rem;
     font-weight: 700;
     letter-spacing: 0.03em;
-    margin-bottom: 1px;
-    opacity: 0.9;
+    margin-bottom: 2px;
+    opacity: 1;
   }
   .bt-bar-tag.hot  { color: #fbbf24; }
   .bt-bar-tag.star { color: #fde68a; }
@@ -842,25 +842,25 @@ import Base from '../../layouts/Base.astro';
 
   /* US */
   .usa-hot    { background: #1e3f7a; }
-  .usa-offer  { background: #16a34a; font-weight: 700; font-size: 0.62rem; text-align: center; justify-content: center; }
-  .usa-light  { background: #1e3f7a; opacity: 0.45; }
+  .usa-offer  { background: #16a34a; font-weight: 700; font-size: 0.65rem; text-align: center; justify-content: center; }
+  .usa-light  { background: #162d56; color: rgba(255,255,255,0.65); }
   .usa-intern { background: #b45309; }
-  .usa-ft     { background: #1a3560; opacity: 0.7; }
+  .usa-ft     { background: #172e58; color: rgba(255,255,255,0.75); }
 
   /* HK */
-  .hk-early  { background: #065f46; opacity: 0.7; }
+  .hk-early  { background: #0a4a36; color: rgba(255,255,255,0.75); }
   .hk-hot    { background: #047857; }
-  .hk-offer  { background: #059669; font-weight: 700; font-size: 0.6rem; text-align: center; justify-content: center; }
-  .hk-light  { background: #065f46; opacity: 0.45; }
+  .hk-offer  { background: #059669; font-weight: 700; font-size: 0.65rem; text-align: center; justify-content: center; }
+  .hk-light  { background: #0a3d2e; color: rgba(255,255,255,0.65); }
 
   /* CN */
-  .cn-prep         { background: #44403c; opacity: 0.5; font-size: 0.55rem; }
-  .cn-summer-app   { background: #78350f; opacity: 0.75; }
+  .cn-prep         { background: #2e2b28; color: rgba(255,255,255,0.65); }
+  .cn-summer-app   { background: #6b3009; color: rgba(255,255,255,0.85); }
   .cn-summer-intern{ background: #b45309; }
   .cn-early        { background: #92400e; }
   .cn-hot          { background: #b45309; }
-  .cn-offer        { background: #d97706; font-weight: 600; font-size: 0.6rem; }
-  .cn-spring       { background: #92400e; opacity: 0.5; }
+  .cn-offer        { background: #d97706; font-weight: 600; }
+  .cn-spring       { background: #6b3009; color: rgba(255,255,255,0.65); }
 
   /* divider row */
   .bt-divider-row {
