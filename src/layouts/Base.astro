@@ -25,32 +25,23 @@ const { title, description = '面向中文读者的经济金融政策知识博�
     <!-- ── Header ─────────────────────────────────────── -->
     <header
       id="site-header"
-      class={`sticky top-0 z-50 transition-all duration-300 ${
-        hero
-          ? 'bg-transparent border-b border-white/10'
-          : 'bg-white border-b border-stone-200'
-      }`}
+      data-hero={hero ? "true" : "false"}
+      class="sticky top-0 z-50 transition-all duration-300 border-b site-header"
     >
       <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
 
         <!-- Logo -->
         <a href="/" class="no-underline leading-tight group shrink-0">
-          <div class={`font-display font-semibold tracking-tight text-lg transition-colors ${
-            hero ? 'text-white group-hover:text-columbia-light' : 'text-stone-900 group-hover:text-columbia-navy'
-          }`}>
+          <div class="logo-main font-display font-semibold tracking-tight text-lg transition-colors">
             HappyColumbia
           </div>
-          <div class={`hidden sm:block text-[10px] tracking-widest uppercase mt-0.5 ${
-            hero ? 'text-white/50' : 'text-stone-400'
-          }`}>
+          <div class="logo-sub hidden sm:block text-[10px] tracking-widest uppercase mt-0.5">
             经济 · 金融 · 政策
           </div>
         </a>
 
         <!-- Desktop Nav -->
-        <nav class={`hidden md:flex items-center gap-1 text-sm shrink-0 ${
-          hero ? 'text-white/80' : 'text-stone-600'
-        }`}>
+        <nav class="hidden md:flex items-center gap-1 text-sm shrink-0">
           {[
             { href: '/about-sipa/', label: '关于 SIPA' },
             { href: '/#courses', label: '专题笔记' },
@@ -59,48 +50,26 @@ const { title, description = '面向中文读者的经济金融政策知识博�
             { href: '/alumni/', label: 'SIPA校友圈' },
             { href: '/join/',    label: '一起做这件事' },
           ].map(({ href, label }) => (
-            <a
-              href={href}
-              class={`nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline ${
-                hero
-                  ? 'hover:bg-white/10 hover:text-white'
-                  : 'hover:bg-stone-100 hover:text-stone-900'
-              }`}
-            >
+            <a href={href} class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline">
               {label}
             </a>
           ))}
-          <a
-            href="/join/"
-            class={`ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline ${
-              hero
-                ? 'border-white/40 text-white hover:bg-white hover:text-columbia-navy'
-                : 'border-stone-300 text-stone-700 hover:border-columbia-navy hover:text-columbia-navy'
-            }`}
-          >
+          <a href="/join/" class="nav-cta ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline">
             联系我
           </a>
         </nav>
 
         <!-- Mobile Hamburger -->
-        <button
-          id="mobile-menu-btn"
-          aria-label="打开菜单"
-          class={`md:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 rounded-md transition-colors ${
-            hero ? 'hover:bg-white/10' : 'hover:bg-stone-100'
-          }`}
-        >
-          <span id="ham-1" class={`block w-5 h-0.5 rounded transition-all duration-300 ${hero ? 'bg-white' : 'bg-stone-700'}`}></span>
-          <span id="ham-2" class={`block w-5 h-0.5 rounded transition-all duration-300 ${hero ? 'bg-white' : 'bg-stone-700'}`}></span>
-          <span id="ham-3" class={`block w-5 h-0.5 rounded transition-all duration-300 ${hero ? 'bg-white' : 'bg-stone-700'}`}></span>
+        <button id="mobile-menu-btn" aria-label="打开菜单"
+          class="md:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 rounded-md transition-colors ham-btn">
+          <span id="ham-1" class="ham-line block w-5 h-0.5 rounded transition-all duration-300"></span>
+          <span id="ham-2" class="ham-line block w-5 h-0.5 rounded transition-all duration-300"></span>
+          <span id="ham-3" class="ham-line block w-5 h-0.5 rounded transition-all duration-300"></span>
         </button>
       </div>
 
       <!-- Mobile Menu Drawer -->
-      <div
-        id="mobile-menu"
-        class="md:hidden hidden border-t border-stone-200/20 bg-white"
-      >
+      <div id="mobile-menu" class="md:hidden hidden border-t border-stone-200/20 bg-white">
         <nav class="flex flex-col px-5 py-4 gap-1">
           {[
             { href: '/about-sipa/', label: '关于 SIPA' },
@@ -110,22 +79,51 @@ const { title, description = '面向中文读者的经济金融政策知识博�
             { href: '/alumni/',    label: 'SIPA校友圈' },
             { href: '/join/',      label: '一起做这件事' },
           ].map(({ href, label }) => (
-            <a
-              href={href}
-              class="block px-3 py-2.5 rounded-lg text-stone-700 text-sm font-medium hover:bg-stone-100 hover:text-columbia-navy transition-colors no-underline"
-            >
+            <a href={href} class="block px-3 py-2.5 rounded-lg text-stone-700 text-sm font-medium hover:bg-stone-100 hover:text-columbia-navy transition-colors no-underline">
               {label}
             </a>
           ))}
-          <a
-            href="/join/"
-            class="mt-2 block text-center px-4 py-2.5 rounded-full text-sm font-semibold border border-columbia-navy text-columbia-navy hover:bg-columbia-navy hover:text-white transition-all no-underline"
-          >
+          <a href="/join/" class="mt-2 block text-center px-4 py-2.5 rounded-full text-sm font-semibold border border-columbia-navy text-columbia-navy hover:bg-columbia-navy hover:text-white transition-all no-underline">
             联系我
           </a>
         </nav>
       </div>
     </header>
+
+    <style>
+      /* ── Default (non-hero) ── */
+      .site-header                          { background: white; border-color: rgb(231,229,228); }
+      .site-header .logo-main               { color: rgb(28,25,23); }
+      .site-header .logo-sub                { color: rgb(168,162,158); }
+      .site-header .nav-link                { color: rgb(87,83,78); }
+      .site-header .nav-link:hover          { background: rgb(245,245,244); color: rgb(28,25,23); }
+      .site-header .nav-cta                 { border-color: rgb(214,211,209); color: rgb(68,64,60); }
+      .site-header .nav-cta:hover           { border-color: #0B2C56; color: #0B2C56; }
+      .site-header .ham-line                { background: rgb(68,64,60); }
+      .site-header .ham-btn:hover           { background: rgb(245,245,244); }
+
+      /* ── Hero top ── */
+      .site-header[data-hero="true"]                    { background: transparent; border-color: rgba(255,255,255,0.1); }
+      .site-header[data-hero="true"] .logo-main         { color: white; }
+      .site-header[data-hero="true"] .logo-sub          { color: rgba(255,255,255,0.5); }
+      .site-header[data-hero="true"] .nav-link          { color: rgba(255,255,255,0.8); }
+      .site-header[data-hero="true"] .nav-link:hover    { background: rgba(255,255,255,0.1); color: white; }
+      .site-header[data-hero="true"] .nav-cta           { border-color: rgba(255,255,255,0.4); color: white; }
+      .site-header[data-hero="true"] .nav-cta:hover     { background: white; color: #0B2C56; }
+      .site-header[data-hero="true"] .ham-line          { background: white; }
+      .site-header[data-hero="true"] .ham-btn:hover     { background: rgba(255,255,255,0.1); }
+
+      /* ── Hero scrolled ── */
+      .site-header[data-hero="true"][data-scrolled="true"]                 { background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-color: rgb(231,229,228); }
+      .site-header[data-hero="true"][data-scrolled="true"] .logo-main      { color: rgb(28,25,23); }
+      .site-header[data-hero="true"][data-scrolled="true"] .logo-sub       { color: rgb(168,162,158); }
+      .site-header[data-hero="true"][data-scrolled="true"] .nav-link       { color: rgb(87,83,78); }
+      .site-header[data-hero="true"][data-scrolled="true"] .nav-link:hover { background: rgb(245,245,244); color: rgb(28,25,23); }
+      .site-header[data-hero="true"][data-scrolled="true"] .nav-cta        { border-color: rgb(214,211,209); color: rgb(68,64,60); }
+      .site-header[data-hero="true"][data-scrolled="true"] .nav-cta:hover  { border-color: #0B2C56; color: #0B2C56; }
+      .site-header[data-hero="true"][data-scrolled="true"] .ham-line       { background: rgb(68,64,60); }
+      .site-header[data-hero="true"][data-scrolled="true"] .ham-btn:hover  { background: rgb(245,245,244); }
+    </style>
 
     <!-- ── Main ───────────────────────────────────────── -->
     <main class={hero ? '' : 'max-w-5xl mx-auto px-6 py-14'}>
@@ -204,21 +202,15 @@ const { title, description = '面向中文读者的经济金融政策知识博�
   <script>
     const header = document.getElementById('site-header');
     if (header) {
-      const onScroll = () => {
+      const update = () => {
         if (window.scrollY > 60) {
-          header.classList.add('scrolled');
-          header.classList.remove('bg-transparent');
-          header.classList.add('bg-white/95', 'backdrop-blur-md');
-          // swap text colours when transitioning from hero
-          header.querySelectorAll('.text-white\\/80').forEach(el =>
-            el.classList.replace('text-white/80', 'text-stone-600'));
-          header.querySelectorAll('.text-white').forEach(el =>
-            el.classList.replace('text-white', 'text-stone-900'));
-          header.querySelectorAll('.hover\\:bg-white\\/10').forEach(el =>
-            el.classList.replace('hover:bg-white/10', 'hover:bg-stone-100'));
+          header.dataset.scrolled = 'true';
+        } else {
+          delete header.dataset.scrolled;
         }
       };
-      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('scroll', update, { passive: true });
+      update();
     }
   </script>
 </html>
