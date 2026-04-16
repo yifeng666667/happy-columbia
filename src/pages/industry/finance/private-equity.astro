@@ -1,0 +1,677 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="私募股权（PE）深度解析" description="PE是什么、怎么进、真实工作是什么样——从历史起源到中美职场对比，私募股权全景指南">
+
+  <a href="/industry/finance/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    金融行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-3 py-1 rounded-full">Private Equity</span>
+      <span class="text-[10px] text-red-600 bg-red-50 border border-red-200 font-semibold px-3 py-1 rounded-full">入行难度：极难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      🏗️ 私募股权（Private Equity）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      PE是买方里最令人向往的赛道之一——收入高、地位高、直接管钱。但它的门槛之高、筛选之残酷，也远超大多数人的预期。这里不讲神话，只讲真相。
+    </p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#history" class="hover:text-columbia-navy no-underline">01 · PE的起源与演变</a></li>
+      <li><a href="#model" class="hover:text-columbia-navy no-underline">02 · 商业模式：2-and-20怎么赚钱</a></li>
+      <li><a href="#types" class="hover:text-columbia-navy no-underline">03 · 细分策略：Buyout vs Growth vs Others</a></li>
+      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美PE市场深度对比</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径全图</a></li>
+      <li><a href="#daily" class="hover:text-columbia-navy no-underline">06 · 真实工作日常</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">07 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">08 · 招聘：最残酷的买方筛选</a></li>
+      <li><a href="#trends" class="hover:text-columbia-navy no-underline">09 · 2025–2030 行业趋势</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">10 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <!-- 1. History -->
+  <section id="history" class="mb-16 scroll-mt-24">
+    <h2 class="flex items-center gap-2">01 · PE的起源与演变</h2>
+
+    <p>私募股权的本质，是用不公开募集的资金，对未上市公司（或上市后私有化的公司）进行投资，通过改善经营、财务工程、或等待市场时机，最终退出变现。</p>
+
+    <h3>1.1 美国PE的起源：从风险资本到杠杆收购</h3>
+    <p>PE的源头可以追溯到1946年，Georges Doriot在哈佛商学院创立了 American Research and Development Corporation (ARD)——这是第一家系统性地向未上市科技公司投资的机构，也是现代风险资本和私募股权的共同祖先。1957年ARD投资了数字设备公司（DEC），70万美元的投资最终价值超过3.5亿，奠定了"高风险高回报"的PE神话基础。</p>
+
+    <p>真正意义上的现代PE诞生于1970年代。1976年，Jerome Kohlberg、Henry Kravis和George Roberts从贝尔斯登独立出来，创立了<strong>KKR（Kohlberg Kravis Roberts &amp; Co.）</strong>。他们系统性地开发了杠杆收购（Leveraged Buyout，LBO）策略：用少量股权加大量债务收购一家公司，用被收购公司的现金流来偿还债务。这是一种高效的财务工程——本质上是"用别人的钱买东西，赚了算自己的"。</p>
+
+    <h3>1.2 LBO时代与"贪婪是好的"</h3>
+    <p>1980年代是LBO的黄金时代。垃圾债券之王迈克尔·米尔肯（Michael Milken）在德崇证券发明了高收益债券市场，为LBO提供了廉价杠杆资金。这十年里，大量美国老牌企业被PE基金收购、重组、再上市。</p>
+    <p>1988年，KKR以250亿美元收购雷诺兹-纳贝斯克（RJR Nabisco）——这是当时历史上最大的LBO交易，被写进了《门口的野蛮人》（Barbarians at the Gate）这本经典商业书籍。整个故事被拍成电影，PE由此深入美国大众文化。</p>
+
+    <h3>1.3 机构化与全球化（1990–2008）</h3>
+    <p>2000年代初，随着养老金、主权财富基金、大学捐赠基金大规模进入PE作为LP（有限合伙人），PE行业完成了机构化。Blackstone、Carlyle、Apollo等"Mega Fund"（大型PE基金）相继成立并快速扩张，管理规模从十亿级跃升至千亿级。</p>
+    <p>这一时期的代表性交易包括：</p>
+    <ul>
+      <li>2007年，Blackstone以390亿美元收购Equity Office Properties（历史最大LBO之一）</li>
+      <li>KKR参与的TXU（Energy Future Holdings）450亿美元交易，最终破产——PE史上最惨烈的失败之一</li>
+    </ul>
+
+    <h3>1.4 后危机时代与中国PE的崛起</h3>
+    <p>2008年金融危机重创PE行业：杠杆枯竭、退出渠道关闭、多个基金大幅亏损。但危机也带来了机遇——资产价格暴跌，提供了极好的进场窗口。2010年代，随着IPO市场和并购市场的复苏，PE进入新一轮繁荣。</p>
+    <p>同期，中国PE市场从无到有急速发展。2005年前后，KKR、Blackstone、凯雷相继设立亚洲基金；本土机构如高瓴资本（2005）、红杉中国（2005）、IDG资本（1993，较早）陆续壮大。2015–2020年是中国PE的黄金期，互联网、消费、医疗赛道估值疯涨，但随后遭遇监管收紧与经济下行，行业进入深度调整。</p>
+
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-8">
+      <p class="font-semibold text-stone-800 mb-2">📌 一个关键概念：PE vs. VC的区别</p>
+      <p>PE（私募股权）通常指投资成熟期、有现金流的企业，通过杠杆收购或控股投资，重点在财务工程+运营改善。VC（风险资本）投早期高成长公司，赌未来。两者在中国语境下经常被混用，但这是完全不同的逻辑。</p>
+    </div>
+  </section>
+
+  <!-- 2. Business Model -->
+  <section id="model" class="mb-16 scroll-mt-24">
+    <h2>02 · 商业模式：2-and-20怎么赚钱</h2>
+
+    <p>PE的收费结构被简称为"<strong>2-and-20</strong>"：2%的管理费（Management Fee）+ 20%的超额收益提成（Carried Interest，简称Carry）。</p>
+
+    <h3>2.1 基金结构：LP与GP</h3>
+    <p>一个PE基金由两类人构成：</p>
+    <ul>
+      <li><strong>LP（有限合伙人，Limited Partners）</strong>：出钱的人。通常是养老金、主权财富基金、大学捐赠基金（哈佛、耶鲁、斯坦福）、保险公司、富裕家族等。他们出资但不参与管理，收益按出资比例分配，损失也以出资额为上限。</li>
+      <li><strong>GP（普通合伙人，General Partners）</strong>：管钱的人。即PE基金管理公司（Blackstone/高瓴/KKR等）。GP承担无限责任，负责基金的日常运营、投资决策和退出管理。</li>
+    </ul>
+
+    <h3>2.2 收入来源拆解</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">收入类型</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">说明</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">典型数字</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">管理费</td>
+            <td class="p-3 border border-stone-200 text-stone-600">按照承诺资本的1.5%-2%收取，不论投资结果如何。维持GP日常运营。</td>
+            <td class="p-3 border border-stone-200">$100亿基金 → 每年$1.5-2亿管理费</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Carry（超额收益提成）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">超过"门槛收益率"（Hurdle Rate，通常8%）的收益中，GP获得20%。这是GP真正的财富来源。</td>
+            <td class="p-3 border border-stone-200">$100亿基金赚了$80亿净利润 → GP拿走$16亿Carry</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">交易费/监控费</td>
+            <td class="p-3 border border-stone-200 text-stone-600">向被投公司收取的顾问费，在大基金中仍有，中小基金逐渐减少。</td>
+            <td class="p-3 border border-stone-200">每笔交易$500万-$3000万</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>2.3 基金生命周期</h3>
+    <p>典型的PE基金期限为<strong>10年</strong>（可延期2-3年）：</p>
+    <ul>
+      <li><strong>募资期（1-2年）</strong>：GP向LP募集资金，签署有限合伙协议</li>
+      <li><strong>投资期（3-5年）</strong>：完成80%-100%的资金部署，每笔交易通常持有3-7年</li>
+      <li><strong>退出期（5-10年）</strong>：通过IPO、并购出售、或卖给另一家PE（Secondary）等方式退出</li>
+    </ul>
+
+    <h3>2.4 PE的价值创造三大杠杆</h3>
+    <p>PE投资的本质是通过以下三种方式创造回报：</p>
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">① 财务工程</p>
+        <p class="text-xs text-stone-600 leading-relaxed">用杠杆放大股权回报。以$3亿股权+$7亿债务买$10亿公司，公司增值到$15亿时，股权回报率=（$15亿-$7亿-$3亿）/$3亿 = 167%，远超无杠杆的50%。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">② 运营改善</p>
+        <p class="text-xs text-stone-600 leading-relaxed">100天计划、更换管理层、成本削减、战略聚焦。好的PE不只是金融游戏，也是真正参与企业改造的。KKR有专门的运营改善团队（Capstone）。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">③ 倍数扩张</p>
+        <p class="text-xs text-stone-600 leading-relaxed">以低估值买入，高估值卖出。低迷市场6x EBITDA买入，牛市时10x卖出——单靠倍数扩张就能赚钱。但这受市场周期影响，最不可控。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Types -->
+  <section id="types" class="mb-16 scroll-mt-24">
+    <h2>03 · 细分策略：Buyout vs Growth vs Others</h2>
+
+    <p>PE不是单一策略，内部差异极大。从投资阶段、风险收益特征、所需技能都有本质不同：</p>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">策略</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">投资标的</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">典型机构</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">核心技能</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">回报目标</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Large-Cap Buyout（大型杠杆收购）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">成熟企业，有稳定现金流，可以承载大量债务</td>
+            <td class="p-3 border border-stone-200">Blackstone, KKR, Apollo, Carlyle</td>
+            <td class="p-3 border border-stone-200">LBO建模、债务结构、并购谈判</td>
+            <td class="p-3 border border-stone-200">15-25% IRR</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Middle Market Buyout（中型收购）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中型企业，EBITDA $5M-$100M，更依赖运营改善</td>
+            <td class="p-3 border border-stone-200">Warburg Pincus, Providence, Vista</td>
+            <td class="p-3 border border-stone-200">运营改善、add-on并购整合</td>
+            <td class="p-3 border border-stone-200">20-30% IRR</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Growth Equity（成长型股权）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">高成长期企业，已有收入但需要资本加速扩张，通常不控股</td>
+            <td class="p-3 border border-stone-200">General Atlantic, TA Associates, 高瓴, 红杉增长</td>
+            <td class="p-3 border border-stone-200">行业研究、成长性判断、商业模式分析</td>
+            <td class="p-3 border border-stone-200">25-40% IRR</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Venture Capital（风险投资）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">早期/种子期公司，无收入或亏损，高风险高潜力</td>
+            <td class="p-3 border border-stone-200">Sequoia, a16z, 红杉中国, IDG</td>
+            <td class="p-3 border border-stone-200">创业生态判断、团队评估、技术趋势</td>
+            <td class="p-3 border border-stone-200">3-10x回报</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Secondaries（二级市场）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">在二级市场买卖已存在的PE基金份额或投资组合</td>
+            <td class="p-3 border border-stone-200">Lexington Partners, Ardian, Hamilton Lane</td>
+            <td class="p-3 border border-stone-200">NAV定价、基金评估、流动性管理</td>
+            <td class="p-3 border border-stone-200">12-18% IRR</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Real Assets/Infrastructure</td>
+            <td class="p-3 border border-stone-200 text-stone-600">基础设施、房地产、能源等实物资产</td>
+            <td class="p-3 border border-stone-200">Brookfield, Macquarie, GIC</td>
+            <td class="p-3 border border-stone-200">资产估值、监管分析、长期现金流</td>
+            <td class="p-3 border border-stone-200">10-15% IRR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-2">💡 重要提示：中国背景下的"PE"概念</p>
+      <p>在中国，"PE"和"VC"的边界比美国模糊得多。高瓴资本早期定位是Growth Equity，后来做了大量VC和二级市场投资；红杉中国同时管理种子基金、早期基金和成长基金。本文接下来的内容主要聚焦 Buyout 和 Growth Equity 策略，VC将单独详细讨论。</p>
+    </div>
+  </section>
+
+  <!-- 4. China vs US -->
+  <section id="china-us" class="mb-16 scroll-mt-24">
+    <h2>04 · 中美PE市场深度对比</h2>
+
+    <h3>4.1 市场规模与结构差异</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">维度</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇺🇸 美国PE</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇨🇳 中国PE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">市场成熟度</td>
+            <td class="p-3 border border-stone-200 text-stone-600">高度成熟，机构化、体系完善，二级市场发达</td>
+            <td class="p-3 border border-stone-200 text-stone-600">快速发展但仍不成熟，合规监管体系在建设中</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">主流策略</td>
+            <td class="p-3 border border-stone-200 text-stone-600">Buyout为主（约60%），VC和成长型各20%</td>
+            <td class="p-3 border border-stone-200 text-stone-600">成长型和VC为主，真正意义的Buyout较少（控股收购受政策限制）</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">退出渠道</td>
+            <td class="p-3 border border-stone-200 text-stone-600">IPO（纽交所/纳斯达克）+ Strategic Sale + Secondary Sale 都发达</td>
+            <td class="p-3 border border-stone-200 text-stone-600">曾经以A股IPO为主；2021年后IPO收紧，退出通道受阻成核心问题</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">LP结构</td>
+            <td class="p-3 border border-stone-200 text-stone-600">养老金（CalPERS等）+ 大学捐赠（耶鲁模型）+ 主权财富基金</td>
+            <td class="p-3 border border-stone-200 text-stone-600">国资背景母基金（政府引导基金）+ 银行理财 + 高净值个人</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">监管环境</td>
+            <td class="p-3 border border-stone-200 text-stone-600">SEC监管，ILPA标准，相对稳定透明</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中基协备案+地方监管，政策不确定性高（VIE架构、反垄断、数据安全）</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">外资PE地位</td>
+            <td class="p-3 border border-stone-200 text-stone-600">本土机构主导</td>
+            <td class="p-3 border border-stone-200 text-stone-600">外资PE（黑石、KKR、凯雷）在华存在感下降，本土机构崛起</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">当前状态（2024-2025）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">高利率压缩LBO回报，但私人信贷（Private Credit）繁荣，结构调整中</td>
+            <td class="p-3 border border-stone-200 text-stone-600">退出困难、募资难、行业出清，部分头部机构撑过寒冬，中小机构大量倒闭</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>4.2 中国顶级PE机构全景</h3>
+    <p>中国PE行业的生态圈，与美国截然不同：</p>
+
+    <p><strong>外资头部机构（在华本土化运营）：</strong></p>
+    <ul>
+      <li><strong>Warburg Pincus（华平投资）</strong>：美国第三大PE，在华最活跃的外资PE之一，深耕消费、科技、医疗，投资过联想、百丽等</li>
+      <li><strong>KKR、Blackstone、Carlyle</strong>：在华有业务但规模有限；Blackstone以房地产为主；KKR有本土成长基金</li>
+      <li><strong>General Atlantic（通用大西洋）</strong>：成长型股权专家，投资过蚂蚁金服、字节跳动</li>
+    </ul>
+
+    <p><strong>本土顶级机构：</strong></p>
+    <ul>
+      <li><strong>高瓴资本</strong>：张磊2005年创立，从耶鲁捐赠基金的$2000万起步，管理规模一度超过$600亿；投资了京东、百度、腾讯、美团、宁德时代；是中国最具影响力的长期价值投资机构，但近年因市场下行和监管压力承压</li>
+      <li><strong>红杉资本中国</strong>：沈南鹏主导，2005年独立运营，投资阿里巴巴、美团、滴滴、字节跳动；2023年与红杉美国完全分拆，更名HongShan（红杉中国）</li>
+      <li><strong>IDG资本</strong>：熊晓鸽，中国最早的外资VC之一，1993年进入中国，投资百度、腾讯；现本土化运营</li>
+      <li><strong>中信资本、中信产业基金</strong>：国资背景，专注并购重组和产业整合，政府关系是核心优势</li>
+      <li><strong>弘毅投资</strong>：联想系，聚焦企业转型与国企改革，在中国做Buyout的为数不多的机构之一</li>
+    </ul>
+
+    <h3>4.3 政府引导基金的特殊角色</h3>
+    <p>中国PE生态里独特的一环：<strong>政府引导基金</strong>。由各省市政府出资，扶持特定产业发展。规模合计超过10万亿人民币，是中国PE最重要的LP来源。</p>
+    <p>参与政府引导基金意味着GP需要接受"引导投资本地"的对赌条款，部分机构出现"注册在某地但实际不投当地"的空转问题。2024年，各地政府收紧对引导基金的管理，要求更严格的本地落地率，PE募资难度进一步上升。</p>
+  </section>
+
+  <!-- 5. Career Path -->
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径全图</h2>
+
+    <h3>5.1 美国PE职级体系</h3>
+    <p>PE的职级体系与投行相似，但晋升比投行更慢、更残酷，每个级别的淘汰率都很高：</p>
+
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { title: 'Analyst（分析师）', years: '0–2年', bg: 'bg-stone-50', desc: '本科或2年IB后直接入行，负责建模、数据分析、DD支持。在大型PE（Blackstone/KKR）极难直接从本科招聘，更多是2+2模式（IB2年→PE2年）。', comp: '$150k–$250k all-in（含carry分配极少）' },
+        { title: 'Associate（副总裁/助理）', years: '2–4年', bg: 'bg-amber-50', desc: '核心执行角色。主导建模、尽职调查、IC材料准备、银行家和律师的主要对接人。大多数PE associate来自顶级IB的analyst项目。', comp: '$250k–$400k all-in（开始有小额carry）' },
+        { title: 'VP / Senior Associate', years: '4–7年', bg: 'bg-stone-50', desc: '开始负责交易执行的整体协调，管理associate；在组合公司有更多exposure。有些基金在这里分叉：留下的走向Principal/Partner，走掉的去战略/CFO。', comp: '$350k–$600k（carry占比提升）' },
+        { title: 'Principal / Director', years: '7–10年', bg: 'bg-amber-50', desc: '半合伙人。独立带交易，开始有自己的deal flow和LP关系。这一关是最关键的晋升卡点——能否成为Partner往往取决于能否证明独立sourcing能力。', comp: '$600k–$1.5M（carry是主要收入）' },
+        { title: 'Managing Director / Partner', years: '10年+', bg: 'bg-columbia-light', desc: '真正的合伙人。主要精力在LP关系管理（募资）、IC投票、战略方向和组合公司董事会席位。顶级MF合伙人的carry收入可达数千万至上亿美元。', comp: '$1M–$10M+（主要来自carry）' },
+      ].map(r => (
+        <div class={`${r.bg} border border-stone-200 rounded-xl p-4`}>
+          <div class="flex items-start justify-between mb-1.5">
+            <span class="font-semibold text-stone-800">{r.title}</span>
+            <span class="text-[11px] text-stone-400 bg-white px-2 py-0.5 rounded-full border border-stone-200">{r.years}</span>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed mb-1.5">{r.desc}</p>
+          <p class="text-xs text-columbia-navy font-medium">💰 {r.comp}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>5.2 从IB跳PE：最主流的路径</h3>
+    <p>PE的associate职位，超过70%来自顶级投行的analyst（Goldman Sachs、Morgan Stanley、JPMorgan、Evercore、Lazard等）。投行background被视为进PE的"标配"，原因是：</p>
+    <ul>
+      <li>PE的核心工作（建模、DD、交易执行）与IB高度重叠</li>
+      <li>IB会和客户接触大量行业数据和并购逻辑</li>
+      <li>PE基金认为IB训练了分析师的工作强度适应性和商业判断力</li>
+    </ul>
+    <p>除IB外，管理咨询（McKinsey/BCG/Bain）背景也被部分成长型PE和运营导向型PE认可，但建模能力是弱项需要补。</p>
+
+    <h3>5.3 中国PE的职业路径差异</h3>
+    <p>中国PE的职级与美国类似，但有几个本土特色：</p>
+    <ul>
+      <li><strong>国资背景PE的晋升更慢</strong>：中信产业基金、弘毅等会受到国企晋升机制影响，VP级别可能要10年</li>
+      <li><strong>本土市场化PE更看重关系网络</strong>：能带来政府资源、产业方资源的人受到重视</li>
+      <li><strong>海外背景回国的定位</strong>：哥大/沃顿/LBS背景往往对应中等及以上外资PE的Associate/VP职位</li>
+      <li><strong>CFA/CPA有用但不决定性</strong>：技术技能是基础，投资判断力和关系才是晋升关键</li>
+    </ul>
+  </section>
+
+  <!-- 6. Daily Life -->
+  <section id="daily" class="mb-16 scroll-mt-24">
+    <h2>06 · 真实工作日常</h2>
+
+    <p>PE的工作强度低于投行，但"低于"是相对的——尤其是deal execution阶段，同样需要连轴转。</p>
+
+    <h3>6.1 时间分配（Associate级别）</h3>
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// PE Associate的一周时间分配（活跃交易期）</p>
+      <p>📊 建模与分析: ~40%</p>
+      <p>   - LBO模型构建与压力测试</p>
+      <p>   - 市场调研、竞争对手分析</p>
+      <p>   - IC材料（投资备忘录）起草</p>
+      <p></p>
+      <p>🔍 尽职调查: ~25%</p>
+      <p>   - 财务DD：审计报告、财务报表深挖</p>
+      <p>   - 商业DD：与管理层面谈、客户调研</p>
+      <p>   - 法律/税务DD：协调外部律所和四大</p>
+      <p></p>
+      <p>📞 内外部沟通: ~20%</p>
+      <p>   - 与IB团队的日常沟通（他们是你的deal flow来源）</p>
+      <p>   - 组合公司月度/季度运营更新</p>
+      <p>   - 内部IC讨论和senior review</p>
+      <p></p>
+      <p>📁 组合公司管理: ~15%</p>
+      <p>   - 跟进已投公司的战略执行</p>
+      <p>   - 参与董事会会议准备</p>
+      <p>   - 协助退出准备（IPO/M&A）</p>
+    </div>
+
+    <h3>6.2 PE vs IB：生活质量对比</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-3">🏛️ 投行（参考）</p>
+        <ul class="space-y-1.5 text-sm text-stone-600">
+          <li>⏰ 工作时长：80-100小时/周</li>
+          <li>📅 周末：几乎没有</li>
+          <li>📍 出差：频繁（客户路演、DD）</li>
+          <li>🎯 工作性质：执行为主，重复性高</li>
+          <li>💬 自主性：极低，服务于客户需求</li>
+        </ul>
+      </div>
+      <div class="border border-columbia-blue/30 bg-columbia-light rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-3">🏗️ PE（活跃交易期）</p>
+        <ul class="space-y-1.5 text-sm text-stone-600">
+          <li>⏰ 工作时长：60-80小时/周（高峰110+）</li>
+          <li>📅 周末：看交易节奏，淡季相对自由</li>
+          <li>📍 出差：中等，主要在DD阶段</li>
+          <li>🎯 工作性质：投资判断+执行，创造感更强</li>
+          <li>💬 自主性：中等，有自己的投资观点空间</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>6.3 来自知乎/脉脉的真实声音</h3>
+    <div class="not-prose space-y-3 my-6">
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "PE比IB好在你能真正思考一个投资是否值得做，而不只是帮客户做任何他要求的事。但Portfolio管理期也有相当多琐事——每个月跟组合公司开电话会、跟进KPI，感觉不像投资人更像运营顾问。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 知乎匿名用户，某美资大型PE Associate，北京</cite>
+      </blockquote>
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "中国PE现在最难的是退出——A股IPO几乎停了，美股上市受阻，并购又没有美国那么发达的市场。大量基金到期延期，LP在催，GP在愁，整个行业都在过冬。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 脉脉用户，本土成长型PE VP，上海</cite>
+      </blockquote>
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "最真实的感受：PE并不是个'投资工作'，至少前5年是个'金融分析+项目管理'工作。真正的投资判断力要到VP/Principal才开始培养。如果你奔着'炒股'感觉去的，会很失望。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 一亩三分地，某美国中型PE Associate，纽约</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 7. Salary -->
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>07 · 薪酬结构</h2>
+
+    <h3>7.1 美国PE薪酬（2024–2025，Mega Fund / Large Cap）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">基本工资</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">现金奖金</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">Carry分配（估值）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">全现金收入参考</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Analyst</td>
+            <td class="p-3 border border-stone-200">$130k–$160k</td>
+            <td class="p-3 border border-stone-200">$50k–$100k</td>
+            <td class="p-3 border border-stone-200 text-stone-400">极少或无</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$180k–$260k</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Associate</td>
+            <td class="p-3 border border-stone-200">$175k–$225k</td>
+            <td class="p-3 border border-stone-200">$75k–$200k</td>
+            <td class="p-3 border border-stone-200 text-stone-400">少量（$0-$50k估值）</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$250k–$425k</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">VP / Sr. Associate</td>
+            <td class="p-3 border border-stone-200">$225k–$300k</td>
+            <td class="p-3 border border-stone-200">$150k–$300k</td>
+            <td class="p-3 border border-stone-200">$100k–$500k估值</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$375k–$600k+</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Principal / Director</td>
+            <td class="p-3 border border-stone-200">$300k–$450k</td>
+            <td class="p-3 border border-stone-200">$300k–$600k</td>
+            <td class="p-3 border border-stone-200">$500k–$2M估值</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$600k–$1M+</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Partner / MD</td>
+            <td class="p-3 border border-stone-200">$500k–$1M+</td>
+            <td class="p-3 border border-stone-200">$1M–$5M+</td>
+            <td class="p-3 border border-stone-200 text-green-700 font-medium">数百万–数亿美元</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$2M–无上限</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">数据参考来源：Wall Street Oasis 2024 PE Compensation Report, Mercer, 及匿名行业数据。Mega Fund指Blackstone/KKR/Apollo/Carlyle/Warburg Pincus等。中型PE（Middle Market）基础薪资约降20-30%，但业绩好的基金carry可以弥补差距。</p>
+
+    <h3>7.2 中国PE薪酬（2024–2025）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">头部外资PE（北上）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">本土头部PE（高瓴/红杉等）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">国资背景PE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">分析师/助理</td>
+            <td class="p-3 border border-stone-200">40–70万/年</td>
+            <td class="p-3 border border-stone-200">35–60万/年</td>
+            <td class="p-3 border border-stone-200">25–40万/年</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">投资经理/副总裁</td>
+            <td class="p-3 border border-stone-200">70–150万/年</td>
+            <td class="p-3 border border-stone-200">60–120万/年</td>
+            <td class="p-3 border border-stone-200">40–80万/年</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">总监/执行董事</td>
+            <td class="p-3 border border-stone-200">150–400万/年+carry</td>
+            <td class="p-3 border border-stone-200">120–300万/年+carry</td>
+            <td class="p-3 border border-stone-200">80–150万/年</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">合伙人</td>
+            <td class="p-3 border border-stone-200" colspan="3" class="text-center">Carry为主，差异极大，好年份数百万至数千万元</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">注：2022-2024年中国PE行业整体薪酬下行，头部机构仍维持高薪，中小机构冻结招聘或降薪。数据参考知乎专栏、脉脉薪酬数据及行业公开信息，仅供参考。</p>
+
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-2">⚡ Carry是PE的真正激励机制</p>
+      <p>不像IB的现金奖金，PE的真正财富积累来自Carry——需要等待基金退出才能兑现，通常周期8-12年。这意味着：即使你级别不低，在前5-7年看到的账面carry价值可能很高，但实际到手的钱很少。PE是一个"延迟满足"极强的赛道。</p>
+    </div>
+  </section>
+
+  <!-- 8. Recruiting -->
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>08 · 招聘：最残酷的买方筛选</h2>
+
+    <h3>8.1 美国PE招聘：猎头驱动、时间极短</h3>
+    <p>美国PE的associate招聘是金融行业里最特殊的流程。不同于投行的校园招聘（走校招系统），PE主要通过<strong>猎头公司（Headhunters/Recruiters）</strong>来运作，且时间轴在近年来变得越来越疯狂：</p>
+
+    <p><strong>On-Cycle Recruiting（预招聘，超前招聘）：</strong></p>
+    <ul>
+      <li>Mega Fund（Blackstone、KKR、Apollo等）和顶级中型PE的associate位置，主要在"on-cycle"流程中填满</li>
+      <li>时间轴：你在IB做了3-6个月分析师时，猎头就开始联系你，整个流程可能在3-4天内完成</li>
+      <li>2021-2023年出现了"超级提前"现象——部分基金在analyst第一年刚开始甚至入职前就开始招associate，引发全行业批评</li>
+      <li>猎头公司：Henkel Search、CPI、Amity Search、Dynamics Search是美国PE招聘的主要猎头</li>
+    </ul>
+
+    <p><strong>Off-Cycle Recruiting（正常招聘）：</strong></p>
+    <ul>
+      <li>中型PE和一些成长型PE在全年不定期招聘</li>
+      <li>节奏较慢，流程2-4周，面试轮次更多</li>
+      <li>MBA毕业生往往走off-cycle，或直接以post-MBA associate身份加入</li>
+    </ul>
+
+    <h3>8.2 面试内容：PE面试考什么</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">技术考核</p>
+        <ul class="space-y-1 text-sm text-stone-600">
+          <li>✅ LBO建模（纸面测试，2-3小时）</li>
+          <li>✅ 案例研究（给一家公司，评估是否值得投）</li>
+          <li>✅ 估值方法（DCF、EV/EBITDA、交易倍数）</li>
+          <li>✅ 杠杆收购逻辑（债务偿还、回报计算）</li>
+          <li>✅ 会计基础（财报之间的逻辑关系）</li>
+        </ul>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">投资判断与文化契合</p>
+        <ul class="space-y-1 text-sm text-stone-600">
+          <li>✅ 说一个你看好的行业/公司，为什么？</li>
+          <li>✅ 你做过的最好/最差的交易是什么？</li>
+          <li>✅ 评估一家公司的竞争优势</li>
+          <li>✅ 什么样的公司是好的LBO标的？</li>
+          <li>✅ 文化适配（PE团队很小，选人很谨慎）</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>8.3 中国PE招聘特点</h3>
+    <p>中国PE招聘没有美国那么系统化，有更多"关系导向"的成分：</p>
+    <ul>
+      <li><strong>外资PE中国区</strong>：通常要求顶级IB背景（高盛/摩根/中金投行部），有时接受顶级咨询背景；面试包含英文和中文，可能有建模测试</li>
+      <li><strong>本土头部PE</strong>：重视行业研究能力，产业方背景（科技/医疗/消费）越来越被认可；关系和推荐比美国更重要</li>
+      <li><strong>国资PE</strong>：有一定的"系统内部推荐"文化，有时通过校招（985/211顶校金融硕士）</li>
+      <li><strong>海外留学生回国</strong>：顶美本/研究生+IB暑期实习经历是最强组合；直接海外PE经历回国的，有时被认为缺乏本土关系网络</li>
+    </ul>
+
+    <h3>8.4 SIPA学生进PE的实际路径</h3>
+    <div class="not-prose bg-columbia-light border border-columbia-blue/20 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-3">🎓 哥大SIPA背景进PE的现实路径</p>
+      <ul class="space-y-2">
+        <li><strong>最直接路径</strong>：SIPA → 顶级IB 2年 → PE。这是绝大多数成功案例的路径。</li>
+        <li><strong>Growth Equity例外</strong>：部分成长型PE（General Atlantic, TA Associates等）有时直接招MBA/MPA/MIA背景的人，特别是有强烈产业背景（医疗、科技）的候选人。</li>
+        <li><strong>战略咨询跳板</strong>：MBB咨询 → PE也是可行路径，对运营导向型PE（KKR Capstone、Bain Capital等）更友好。</li>
+        <li><strong>中国PE更友好</strong>：回国的海归在本土PE找位置，背景要求比美国本土更灵活，但竞争也不低。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. Trends -->
+  <section id="trends" class="mb-16 scroll-mt-24">
+    <h2>09 · 2025–2030 行业趋势</h2>
+
+    <h3>9.1 私人信贷（Private Credit）的崛起</h3>
+    <p>当前全球PE最重要的结构性变化之一：<strong>Private Credit（私人信贷）的爆发</strong>。传统银行在2008年后受到巴塞尔协议约束，向中型企业贷款的能力下降；PE机构填补了这个空白，推出私人直接贷款（Direct Lending）和特殊情况信贷（Distressed Credit）产品。</p>
+    <p>Apollo、Ares、Blackstone的信贷业务规模已超越其PE股权业务。2024年全球Private Credit资产管理规模超过$2万亿，预计到2030年将突破$3.5万亿（Preqin数据）。这不只是市场机会，也是人才机会——传统的PE建模技能在信贷分析中高度复用。</p>
+
+    <h3>9.2 高利率环境对LBO的冲击</h3>
+    <p>2022-2024年，美联储加息周期将基准利率推至5%+，直接压缩了LBO的经济性：</p>
+    <ul>
+      <li>债务融资成本从SOFR+400bps上升到SOFR+600-700bps</li>
+      <li>LBO的IRR从20-25%区间下降到15-18%</li>
+      <li>很多交易无法以原计划价格成交，buyout活动量2023年同比下降约40%</li>
+    </ul>
+    <p>2024年下半年开始降息后，并购活动逐步恢复，2025年预计交易量将反弹。但"廉价债务时代"（2010-2021）可能一去不复返。</p>
+
+    <h3>9.3 AI对PE的影响</h3>
+    <p>PE受AI的影响比投行更间接，但也在发生：</p>
+    <ul>
+      <li><strong>Deal Sourcing</strong>：AI辅助系统（如Sourcescrub、Grata）可以扫描数百万家私人公司，自动标记符合投资标准的目标，将sourcing效率提升10倍</li>
+      <li><strong>DD加速</strong>：AI合同审查（Kira Systems, Luminance）、财务数据提取大幅降低DD成本</li>
+      <li><strong>Portfolio监控</strong>：AI实时分析组合公司的经营数据，提前预警风险</li>
+      <li><strong>AI赛道投资本身</strong>：几乎所有大型PE都在布局AI相关企业，AI成为PE最热门的投资主题之一</li>
+    </ul>
+    <p>短期内，AI不会削减PE的招聘需求，反而会让同样人数的团队完成更多交易。</p>
+
+    <h3>9.4 中国PE的结构性挑战</h3>
+    <p>中国PE面临的困境比全球更深：</p>
+    <ul>
+      <li><strong>退出渠道受阻</strong>：A股IPO审核趋严（2023年暂停，2024年部分恢复）；港股流动性差；美股上市因VIE审查和政治风险几乎停滞</li>
+      <li><strong>募资困难</strong>：政府引导基金附带本地落地要求；险资PE投资受到比例限制；外资LP对中国信心下降</li>
+      <li><strong>估值倒挂</strong>：大量2018-2021年按高估值进入的项目，现在实际价值远低于当时，DPI（实际回报）与TVPI（账面回报）背离严重</li>
+      <li><strong>行业出清</strong>：全国私募基金管理人数量从高峰的1.4万家缩减到8000余家（2024年），行业洗牌仍在进行</li>
+    </ul>
+    <p>但这也意味着：寒冬过后，少数留下来的机构将获得更好的市场地位。对求职者来说，中国PE行业仍然是高质量就业机会，但需要更精准地选择机构。</p>
+
+    <h3>9.5 Continuation Vehicles（延续基金）的兴起</h3>
+    <p>由于退出困难，美国PE出现了新型退出工具——<strong>Continuation Fund</strong>：GP将旗下优质资产从旧基金转移到新设的延续基金，原LP可以选择套现离场或跟投。这为退出提供了新渠道，但也引发关于GP利益冲突的争议（自己给自己定价）。预计这一趋势将在2025-2030年进一步发展，并可能影响PE基金的结构设计。</p>
+  </section>
+
+  <!-- 10. Fit -->
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>10 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+        <p class="font-semibold text-emerald-800 mb-3">✅ PE可能适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>🎯 对投资和企业价值判断有真正的好奇心</li>
+          <li>📊 擅长并热爱财务分析和建模</li>
+          <li>⏳ 有极强的延迟满足能力（等待carry）</li>
+          <li>🤝 希望对被投企业有实质性影响</li>
+          <li>🧠 喜欢深度研究特定行业或企业</li>
+          <li>🏆 愿意长期在一个小团队中工作（PE团队通常10-30人）</li>
+          <li>💡 有独立的投资观点，能为自己的判断负责</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ PE可能不适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>🚫 你觉得"搞定客户关系"比分析更重要</li>
+          <li>🚫 希望多样性高的工作（PE专注度极强）</li>
+          <li>🚫 对3-5年后的carry没有耐心</li>
+          <li>🚫 无法忍受在顶级IB先熬2年（PE的前提）</li>
+          <li>🚫 希望早年就有很强的个人品牌（PE很低调）</li>
+          <li>🚫 想频繁换赛道探索（PE是深耕赛道）</li>
+          <li>🚫 对"买公司"的兴奋感不如对"做交易"的兴奋感</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed">
+      <p class="font-semibold text-stone-800 mb-2">💬 一个诚实的提醒</p>
+      <p>很多人进PE是因为"比IB钱多还工作少"——这两个假设都值得质疑。PE的基础薪资确实比IB高，但前几年的工作强度并不低，而且真正的财富积累（carry）需要10年+的时间。如果你的动力只是更好的薪酬/工作生活平衡，可能会在第3-4年就开始困惑为什么要继续。真正在PE长期做好的人，通常是真的对"投资"和"价值创造"这件事本身上瘾的人。</p>
+    </div>
+  </section>
+
+  </div>
+
+  <!-- Sources -->
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    <p class="font-medium text-stone-500 mb-1">数据来源与参考</p>
+    <p>薪酬数据参考：Wall Street Oasis PE Compensation Survey 2024, Mercer Financial Services Survey, 知乎匿名薪酬讨论, 脉脉职场数据。市场规模数据：Preqin Global Private Equity Report 2024, Bain & Company Global PE Report 2025。中国PE数据：中国证券投资基金业协会（AMAC）公开数据, Bloomberg China PE Coverage。以上数据仅供参考，实际情况因机构、年份、个人背景差异较大。</p>
+  </div>
+
+  <!-- Bottom nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between items-center text-sm">
+    <a href="/industry/finance/investment-banking/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+      上一篇：投资银行（IB）
+    </a>
+    <a href="/industry/finance/venture-capital/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      下一篇：风险投资（VC）
+      <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span>
+    </a>
+  </div>
+</Base>

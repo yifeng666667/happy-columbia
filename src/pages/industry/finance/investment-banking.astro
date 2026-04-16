@@ -1,0 +1,545 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="投资银行深度解析" description="投行是什么、怎么进、真实工作是什么样——从历史起源到中美职场对比，IB全景指南">
+
+  <a href="/industry/finance/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    金融行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-3 py-1 rounded-full">Investment Banking</span>
+      <span class="text-[10px] text-red-600 bg-red-50 border border-red-200 font-semibold px-3 py-1 rounded-full">入行难度：极难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      🏛️ 投资银行（Investment Banking）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      金融里最光鲜的名片，也是熬夜最多的赛道。从J.P.Morgan到中金，投行究竟在做什么、为什么薪酬这么高、真实工作是什么样——这里给你一个不美化的完整答案。
+    </p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#history" class="hover:text-columbia-navy no-underline">01 · 投行的起源与100年演变</a></li>
+      <li><a href="#model" class="hover:text-columbia-navy no-underline">02 · 商业模式：钱从哪里来</a></li>
+      <li><a href="#divisions" class="hover:text-columbia-navy no-underline">03 · 内部结构：IBD、ECM、DCM</a></li>
+      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美投行市场对比</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径全图</a></li>
+      <li><a href="#daily" class="hover:text-columbia-navy no-underline">06 · 真实工作日常</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">07 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">08 · 招聘流程与入行路径</a></li>
+      <li><a href="#trends" class="hover:text-columbia-navy no-underline">09 · 2025–2030 行业趋势</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">10 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <!-- 1. History -->
+  <section id="history" class="mb-16 scroll-mt-24">
+    <h2 class="flex items-center gap-2">01 · 投行的起源与100年演变</h2>
+
+    <p>投资银行的历史，本质上是资本主义融资需求演变的历史。</p>
+
+    <h3>1869年：J.P.Morgan与"组织资本"的诞生</h3>
+    <p>现代投资银行的雏形出现于19世纪末的美国。J.P.Morgan（小摩根）在1869年成立的Morgan & Company，最早做的是跨大西洋债券销售——帮助欧洲（主要是英国和德国）的有钱人，把钱投到美国快速扩张的铁路网络。这个业务模式的核心是：<strong>信息不对称套利</strong>。欧洲投资者不了解美国铁路公司的真实状况，Morgan的价值在于他同时了解双方，能够撮合交易并担保信用。</p>
+
+    <p>这个逻辑今天仍然成立——投行存在的核心价值是<strong>降低资本市场的信息摩擦成本</strong>。</p>
+
+    <h3>1933年：格拉斯-斯蒂格尔法案——投行与商业银行强制分离</h3>
+    <p>1929年大崩盘之后，美国国会通过了划时代的<a href="https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_Act" target="_blank">格拉斯-斯蒂格尔法案</a>（Glass-Steagall Act），强制要求商业银行（吸收存款、发放贷款）和投资银行（承销证券、做自营交易）彻底分离。</p>
+    <p>这创造了现代意义上"纯粹"的投行：Morgan Stanley从J.P.Morgan分拆出来，Merrill Lynch专注于零售经纪，Goldman Sachs专注于机构业务。这个格局维持了60年，直到1999年格拉斯-斯蒂格尔被废除（Gramm-Leach-Bliley Act），商业银行才被允许重新开展投行业务——这也是为什么今天J.P.Morgan Chase既是商业银行也是顶级投行。</p>
+
+    <h3>1980–2000年代：杠杆收购与垃圾债券的黄金时代</h3>
+    <p>1980年代是投行的第一个黄金时代。迈克尔·米尔肯（Michael Milken）在Drexel Burnham Lambert发明了高收益债券（即"垃圾债券"）市场，为杠杆收购（LBO）提供了资金来源。KKR于1988年以250亿美元收购RJR Nabisco，成为当时历史上最大的企业收购案——这笔交易被写进了《门口的野蛮人》（Barbarians at the Gate），成为金融史的标志性事件。</p>
+    <p>这个时代塑造了投行文化的核心特征：<strong>高强度工作、高薪酬回报、极度精英化的文化</strong>。</p>
+
+    <h3>2008年：金融危机与行业重组</h3>
+    <p>2008年金融危机彻底改变了华尔街的格局。贝尔斯登（Bear Stearns）被J.P.Morgan以每股2美元收购；雷曼兄弟（Lehman Brothers）宣告破产；美林（Merrill Lynch）被美国银行紧急收购。原本的"五大投行"中，独立存在的只剩下Goldman Sachs和Morgan Stanley，且两者都在危机中转型为银行控股公司，接受美联储监管。</p>
+    <p>后危机时代，《多德-弗兰克法案》（Dodd-Frank Act）大幅限制了投行的自营交易（Volcker Rule），行业整体规模收缩，但顶级投行的竞争优势反而进一步集中。</p>
+
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm not-prose mb-4">
+      <p class="font-semibold text-amber-800 mb-1">📚 推荐阅读</p>
+      <ul class="text-amber-700 space-y-1 text-xs">
+        <li>《说谎者的扑克牌》（Liar's Poker）- Michael Lewis，1980s所罗门兄弟投行文化第一手记录</li>
+        <li>《门口的野蛮人》（Barbarians at the Gate）- KKR收购RJR Nabisco的完整经过</li>
+        <li>《大空头》（The Big Short）- Michael Lewis，2008危机前夜的华尔街</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2. Business Model -->
+  <section id="model" class="mb-16 scroll-mt-24">
+    <h2>02 · 商业模式：钱从哪里来</h2>
+
+    <p>很多人以为投行是"用钱赚钱"，其实不对——<strong>传统投行赚的是服务费，不是投资收益</strong>（自营交易是另一回事，且后危机时代受到严格限制）。</p>
+
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6">
+      {[
+        {
+          title: '承销费（Underwriting Fee）',
+          pct: '占收入约35–45%',
+          desc: 'IPO、增发、债券发行时，投行帮助企业向市场销售证券，收取发行规模的1–7%作为费用。大型IPO承销费可达数亿美元。',
+          example: 'Arm Holdings 2023年IPO，承销团队收费约7,000万美元',
+        },
+        {
+          title: '顾问费（Advisory Fee）',
+          pct: '占收入约30–40%',
+          desc: '并购重组（M&A）咨询费，按交易规模的0.3–1%收取。大型交易顾问费可达数亿美元。',
+          example: 'Microsoft收购Activision（690亿美元），双方投行顾问费合计超5亿美元',
+        },
+        {
+          title: '交易佣金（Trading Commission）',
+          pct: '占收入约20–30%',
+          desc: '做市商（Market Making）业务——投行同时报买价和卖价，赚取买卖价差。机构客户的大宗交易佣金也归入此类。',
+          example: 'Goldman Sachs全球市场业务（GSAM）每季度收入约40–60亿美元',
+        },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 text-sm mb-1">{item.title}</p>
+          <p class="text-[11px] text-columbia-blue font-medium mb-2">{item.pct}</p>
+          <p class="text-xs text-stone-500 leading-relaxed mb-2">{item.desc}</p>
+          <p class="text-[10px] text-stone-400 italic">{item.example}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-sm text-stone-500">数据来源：各大投行年报，Bloomberg，2023-2024年数据</p>
+  </section>
+
+  <!-- 3. Divisions -->
+  <section id="divisions" class="mb-16 scroll-mt-24">
+    <h2>03 · 内部结构：IBD、ECM、DCM是什么</h2>
+
+    <p>进投行前必须搞清楚内部的业务划分，不同部门文化、工作内容差异极大：</p>
+
+    <h3>Investment Banking Division (IBD) — 最核心的并购团队</h3>
+    <p>IBD是狭义上的"投行"，负责<strong>并购重组（M&A）和股权融资顾问</strong>。分析师80%的时间在做两件事：建财务模型（DCF、LBO模型、比较公司分析）和做PPT（Pitch Book）。</p>
+    <p>IBD内部通常按<strong>行业组</strong>划分：TMT（科技媒体电信）、Healthcare、Energy、Consumer Retail、Financial Institutions Group（FIG）等。行业组分析师会深度专注某一行业，了解行业逻辑和关键玩家。</p>
+
+    <h3>Equity Capital Markets (ECM) — IPO和股权融资</h3>
+    <p>ECM负责股权类产品的发行：IPO、增发（Follow-on Offering）、可转债（Convertible Bond）等。ECM是IBD和Sales & Trading之间的桥梁——一方面与公司谈融资需求，另一方面与机构投资者沟通定价。</p>
+    <p><strong>ECM的工作节奏</strong>比IBD更有可预测性，因为交易有明确的时间节点（路演、定价、上市日），通宵情况相对少。</p>
+
+    <h3>Debt Capital Markets (DCM) — 债券发行</h3>
+    <p>DCM负责各类债券的发行：investment grade债券、高收益债（High Yield）、结构化产品等。DCM分析师需要深入理解信用市场和利率环境，工作内容偏向数量化和金融工程。</p>
+    <p>相比IBD的并购项目，DCM的工作节奏更稳定，但上升空间和薪酬天花板也相对较低。</p>
+
+    <h3>Leveraged Finance (LevFin) — 杠杆收购融资</h3>
+    <p>LevFin是DCM和IBD的交叉地带，专门为杠杆收购（LBO）提供债务融资方案。这个部门与PE基金合作最密切，也是转去PE的热门跳板之一。工作强度在所有投行部门中属于最高级别。</p>
+
+    <div class="not-prose overflow-x-auto">
+      <table class="w-full text-xs border-collapse my-6">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="border border-stone-200 px-3 py-2 text-left">部门</th>
+            <th class="border border-stone-200 px-3 py-2 text-left">核心工作</th>
+            <th class="border border-stone-200 px-3 py-2 text-left">工作强度</th>
+            <th class="border border-stone-200 px-3 py-2 text-left">跳PE难度</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            ['IBD（M&A）', '并购财务模型 + Pitch Book', '⭐⭐⭐⭐⭐', '最容易'],
+            ['ECM', 'IPO路演 + 股权定价', '⭐⭐⭐⭐', '中等'],
+            ['DCM', '债券发行文档 + 信用分析', '⭐⭐⭐', '较难'],
+            ['LevFin', 'LBO融资结构 + 债券销售', '⭐⭐⭐⭐⭐', '容易'],
+            ['S&T（销售交易）', '做市 + 客户交易执行', '⭐⭐⭐', '不直接转PE'],
+          ].map(([dept, work, intensity, pe]) => (
+            <tr class="hover:bg-stone-50">
+              <td class="border border-stone-200 px-3 py-2 font-medium text-stone-800">{dept}</td>
+              <td class="border border-stone-200 px-3 py-2 text-stone-500">{work}</td>
+              <td class="border border-stone-200 px-3 py-2">{intensity}</td>
+              <td class="border border-stone-200 px-3 py-2 text-stone-500">{pe}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 4. China vs US -->
+  <section id="china-us" class="mb-16 scroll-mt-24">
+    <h2>04 · 中美投行市场对比</h2>
+
+    <h3>市场规模与格局</h3>
+    <p>美国投行市场是全球最成熟的资本市场，以<strong>Goldman Sachs、Morgan Stanley、J.P.Morgan、Bank of America、Citigroup</strong>为第一梯队（俗称Bulge Bracket），加上精品投行（Boutique）如Evercore、Lazard、Centerview等，构成了竞争最激烈的金融生态。</p>
+
+    <p>中国投行市场则以中信证券、中金（CICC）、华泰、海通、中信建投等为主要玩家，外资投行（高盛、摩根士丹利等）在中国的业务受到一定的监管限制，主要聚焦在跨境并购和境外上市（如港股IPO、美股ADR）。</p>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-5">
+        <p class="font-semibold text-blue-900 mb-3">🇺🇸 美国投行</p>
+        <ul class="text-xs text-blue-800 space-y-1.5">
+          <li>• 顶级投行Analyst起薪约 <strong>$110,000 base</strong>（2024年，已历经多轮提薪）</li>
+          <li>• 奖金（Bonus）通常为base的50–100%，好年景可达150%</li>
+          <li>• 纽约市场最集中，伦敦、香港、新加坡为主要国际中心</li>
+          <li>• 文化：高度结果导向，等级分明但相对直接</li>
+          <li>• 工作时长：Analyst平均每周80–100小时，通宵是常态</li>
+        </ul>
+        <p class="text-[10px] text-blue-600 mt-3">数据来源：Wall Street Oasis 2024薪酬报告, Bloomberg</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+        <p class="font-semibold text-red-900 mb-3">🇨🇳 中国投行</p>
+        <ul class="text-xs text-red-800 space-y-1.5">
+          <li>• 中金CICC北京/上海分析师起薪约 <strong>30–45万人民币</strong> base</li>
+          <li>• 奖金波动极大，牛市可达base的200%，熊市接近零</li>
+          <li>• A股监管政策对IPO节奏影响显著（2023年IPO收紧）</li>
+          <li>• 文化：等级更严格，资历文化浓厚，加班更系统化</li>
+          <li>• 工作时长：通宵文化更普遍，"251"（凌晨2点前必须回复）是行业传说</li>
+        </ul>
+        <p class="text-[10px] text-red-600 mt-3">数据来源：知乎、脉脉公开讨论，2023–2024年数据</p>
+      </div>
+    </div>
+
+    <h3>外资投行 vs 中资投行</h3>
+    <p>在中国区工作，选择外资还是中资投行，是很多人面临的现实问题：</p>
+
+    <div class="not-prose overflow-x-auto">
+      <table class="w-full text-xs border-collapse my-4">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="border border-stone-200 px-3 py-2 text-left">维度</th>
+            <th class="border border-stone-200 px-3 py-2 text-left">外资投行（高盛、MS等）</th>
+            <th class="border border-stone-200 px-3 py-2 text-left">中资头部（中金、中信）</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            ['薪酬', '基本与纽约同级（因全球薪酬体系），约50–80万RMB', '略低，约30–60万RMB，但奖金弹性更大'],
+            ['业务', '跨境M&A、港/美股IPO、债券发行', '以A股IPO、国内并购、债券承销为主'],
+            ['晋升', '较慢但有国际流动机会', '较快，但内部政治生态更复杂'],
+            ['工作语言', '英文主导，双语环境', '中文主导'],
+            ['出路', '跳国际PE、海外机会更好', '跳国内PE、创业、监管机构'],
+          ].map(([dim, foreign, local]) => (
+            <tr class="hover:bg-stone-50">
+              <td class="border border-stone-200 px-3 py-2 font-medium text-stone-800">{dim}</td>
+              <td class="border border-stone-200 px-3 py-2 text-stone-500">{foreign}</td>
+              <td class="border border-stone-200 px-3 py-2 text-stone-500">{local}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm not-prose">
+      <p class="font-semibold text-stone-800 mb-2">📌 一位中金前分析师的分享（来源：知乎高赞回答）</p>
+      <blockquote class="text-stone-600 text-xs leading-relaxed border-l-2 border-stone-300 pl-3 italic">
+        "中金的工作强度确实很高，但学到东西也多。最值钱的不是那点工资，是2年里建的模型量和接触到的交易类型。但如果你想要生活质量，第三年不跳走会很痛苦。"
+      </blockquote>
+      <p class="text-stone-400 text-[10px] mt-2">来源：知乎问题"在中金公司工作是什么感受"，2023年</p>
+    </div>
+  </section>
+
+  <!-- 5. Career Path -->
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径全图</h2>
+
+    <p>投行的职级体系是全球金融行业中最标准化的，也是行业内部文化最重要的坐标系：</p>
+
+    <div class="not-prose space-y-3 my-6">
+      {[
+        {
+          level: 'Analyst（分析师）',
+          years: '0–2年',
+          age: '22–24岁',
+          us: '$110k base + $50–110k bonus',
+          cn: '30–45万',
+          work: '建模、做PPT（Pitch Book）、尽调整理、CIM起草。是整个体系的"劳动力"，几乎所有基础工作都在这个级别完成。',
+          note: '大多数顶级投行Analyst是2年制，之后跳PE或读MBA',
+        },
+        {
+          level: 'Associate（副总裁前级）',
+          years: '2–4年',
+          age: '24–28岁（直接晋升或MBA后）',
+          us: '$175k base + $100–200k bonus',
+          cn: '50–80万',
+          work: '管理Analyst的工作质量，开始独立负责部分客户关系，参与交易执行的核心决策。MBA后直接进来的Associate起点在这里。',
+          note: '是整个职级体系中"最累且最不受重视"的阶段——压力来自上下两端',
+        },
+        {
+          level: 'Vice President (VP)',
+          years: '4–7年',
+          age: '28–33岁',
+          us: '$250k base + $200–400k bonus',
+          cn: '80–150万',
+          work: '主要负责执行层面的项目管理，开始培养自己的客户关系网络。是IBD的"中间管理层"，需要平衡上级（MD）的要求和下级（Analyst/Associate）的产出。',
+          note: '这个阶段跳槽窗口最多——去PE、去基金、去企业战略都是常见出路',
+        },
+        {
+          level: 'Director / Executive Director',
+          years: '7–10年',
+          age: '33–38岁',
+          us: '$300k base + $500k–1M bonus',
+          cn: '150–300万',
+          work: '主要负责维护现有客户关系，开发新客户，参与重要交易的商务谈判。是MD的"培养对象"，也是最多人"卡住"的关卡。',
+          note: '能到Director的人已经相当优秀，但不是每个人都能成为MD',
+        },
+        {
+          level: 'Managing Director (MD)',
+          years: '10年+',
+          age: '38岁+',
+          us: '$500k base + $1M–5M+ bonus',
+          cn: '300万–千万级',
+          work: '本质上是"做生意"——核心KPI是带来多少交易收入（revenue generation）。MD的薪酬与其直接带来的业务量强相关，没有业务就没有奖金，有业务天花板极高。',
+          note: '能做到MD的人极少，且大多数MD的真正财富积累来自奖金而非base',
+        },
+      ].map((level) => (
+        <div class="border border-stone-200 rounded-xl p-5 bg-white">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="font-bold text-stone-900 text-sm">{level.level}</span>
+            <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded-full">{level.years} · {level.age}</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3 mb-3">
+            <div class="text-xs"><span class="text-stone-400">🇺🇸 美国：</span><span class="font-medium text-stone-700">{level.us}</span></div>
+            <div class="text-xs"><span class="text-stone-400">🇨🇳 中国：</span><span class="font-medium text-stone-700">{level.cn}</span></div>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed mb-2">{level.work}</p>
+          <p class="text-[11px] text-columbia-blue">💡 {level.note}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>毕业后的常见出路</h3>
+    <p>投行分析师2年后最常见的三条路：</p>
+    <ol>
+      <li><strong>去PE/VC（"上买方"）</strong>——最主流，尤其是IBD背景，是顶级PE的标配招聘来源</li>
+      <li><strong>读MBA再回来（或转行）</strong>——Harvard/Wharton/Booth是最常见选择，MBA后可以以Associate身份回投行，或者转咨询/科技</li>
+      <li><strong>去企业做Corp Dev/Corp Finance</strong>——Google、Amazon、Apple等科技公司的企业战略/并购部门，工作生活平衡好很多</li>
+    </ol>
+  </section>
+
+  <!-- 6. Daily Life -->
+  <section id="daily" class="mb-16 scroll-mt-24">
+    <h2>06 · 真实工作日常（不美化版）</h2>
+
+    <div class="not-prose bg-stone-900 text-stone-100 rounded-2xl p-6 my-6 font-mono text-xs leading-relaxed">
+      <p class="text-stone-400 mb-3"># 一个典型的投行Analyst工作日（纽约，并购旺季）</p>
+      <p><span class="text-green-400">09:00</span> — 到办公室，回复昨晚Model上的评论，修改Deck</p>
+      <p><span class="text-green-400">10:30</span> — 参加内部会议，VP布置任务：更新Comps，加三个scenario</p>
+      <p><span class="text-green-400">12:00</span> — 工位上吃外卖，继续改模型</p>
+      <p><span class="text-green-400">15:00</span> — MD突然有个新想法，需要重做Pitch Book第三页</p>
+      <p><span class="text-green-400">18:00</span> — "今晚8点前给我看"，开始冲刺</p>
+      <p><span class="text-green-400">20:00</span> — 提交第一版，"这个数字哪来的？"，继续改</p>
+      <p><span class="text-green-400">23:00</span> — VP说"好多了"，但Associate有新评论</p>
+      <p><span class="text-yellow-400">01:30</span> — 最终版提交，"明天早上给客户看"</p>
+      <p><span class="text-yellow-400">02:00</span> — 离开办公室，打Uber回家</p>
+      <p><span class="text-red-400">08:30</span> — 手机响，"Deck有个typo，马上改"</p>
+    </div>
+
+    <p>这不是夸张——这是大量投行人在Reddit的<a href="https://www.reddit.com/r/FinancialCareers/" target="_blank">r/FinancialCareers</a>、知乎等平台分享的真实写照。</p>
+
+    <h3>好的部分</h3>
+    <ul>
+      <li><strong>学习曲线极陡</strong>：第一年建的模型量和看到的交易类型，超过很多人职业生涯的总和</li>
+      <li><strong>薪酬远超同龄人</strong>：22岁年薪15万美元，这个事实无法否认</li>
+      <li><strong>品牌背书极强</strong>：Goldman/MS/中金的名字，在后续跳槽、读书、创业都是硬通货</li>
+      <li><strong>人脉网络高质量</strong>：同事、客户、交易对手方——几年投行建立的网络质量非常高</li>
+    </ul>
+
+    <h3>真实的坏部分</h3>
+    <ul>
+      <li><strong>生活完全不存在</strong>：不是"忙"，是系统性地没有个人时间</li>
+      <li><strong>工作内容高度重复</strong>：70%是Excel和PPT，知识含量不如你想象的高</li>
+      <li><strong>职场政治复杂</strong>：谁的项目、谁的客户、谁带你——这些比能力更重要</li>
+      <li><strong>心理健康风险真实存在</strong>：Bank of America 2021年有分析师因长期过劳去世，此后全行业加强了对工时的限制（但执行参差不齐）</li>
+    </ul>
+
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm not-prose mt-4">
+      <p class="font-semibold text-amber-800 mb-2">来自一亩三分地的真实分享</p>
+      <blockquote class="text-amber-700 text-xs leading-relaxed border-l-2 border-amber-300 pl-3 italic">
+        "投行的价值在于前两年。如果你打算在投行待超过4年，一定要想清楚你是在等什么。等VP？等MD？还是已经习惯了这个节奏走不出去了？后者是最危险的。"
+      </blockquote>
+      <p class="text-amber-500 text-[10px] mt-2">来源：一亩三分地 Finance版块，2023年</p>
+    </div>
+  </section>
+
+  <!-- 7. Salary -->
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>07 · 薪酬结构（2024–2025年数据）</h2>
+
+    <h3>美国市场</h3>
+    <p>投行薪酬在2021–2022年经历了大幅提升（应对科技公司抢人），此后趋于稳定。目前Analyst级别的标准薪酬：</p>
+
+    <div class="not-prose overflow-x-auto">
+      <table class="w-full text-xs border-collapse my-4">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="border border-stone-200 px-3 py-2">职级</th>
+            <th class="border border-stone-200 px-3 py-2">Base Salary</th>
+            <th class="border border-stone-200 px-3 py-2">奖金范围（好年景）</th>
+            <th class="border border-stone-200 px-3 py-2">全薪预估（好年景）</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            ['Analyst 1', '$110,000', '$50,000–$80,000', '$160,000–$190,000'],
+            ['Analyst 2', '$110,000', '$70,000–$110,000', '$180,000–$220,000'],
+            ['Analyst 3', '$110,000', '$90,000–$130,000', '$200,000–$240,000'],
+            ['Associate 1', '$175,000', '$100,000–$175,000', '$275,000–$350,000'],
+            ['Associate 2', '$175,000', '$125,000–$225,000', '$300,000–$400,000'],
+            ['VP', '$250,000', '$200,000–$400,000', '$450,000–$650,000'],
+            ['Director', '$300,000', '$400,000–$800,000', '$700,000–$1,100,000'],
+            ['MD', '$400,000–500,000', '$500,000–5,000,000+', '个人业务量决定'],
+          ].map(([level, base, bonus, total]) => (
+            <tr class="hover:bg-stone-50">
+              <td class="border border-stone-200 px-3 py-2 font-medium">{level}</td>
+              <td class="border border-stone-200 px-3 py-2 text-emerald-700 font-medium">{base}</td>
+              <td class="border border-stone-200 px-3 py-2 text-amber-700">{bonus}</td>
+              <td class="border border-stone-200 px-3 py-2 text-columbia-navy font-semibold">{total}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">数据来源：Wall Street Oasis 2024 Investment Banking Compensation Report, Mergers & Inquisitions</p>
+
+    <h3>中国市场（头部券商）</h3>
+    <p>中国投行薪酬波动性极大，与资本市场景气度高度相关。2023年A股IPO收紧期间，多家头部券商有分析师奖金大幅缩水甚至归零。</p>
+
+    <div class="not-prose overflow-x-auto">
+      <table class="w-full text-xs border-collapse my-4">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="border border-stone-200 px-3 py-2">职级</th>
+            <th class="border border-stone-200 px-3 py-2">Base（大致区间）</th>
+            <th class="border border-stone-200 px-3 py-2">奖金（牛市）</th>
+            <th class="border border-stone-200 px-3 py-2">备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            ['应届分析师', '25–40万', '10–40万', '头部如中金可达40万以上base'],
+            ['高级分析师 (2–3年)', '35–55万', '20–60万', '项目经验积累关键期'],
+            ['项目经理/VP级', '60–100万', '50–150万', '开始独立负责项目'],
+            ['董事/高级VP', '100–200万', '100–300万', '客户开发能力决定薪酬'],
+            ['执行董事/MD', '200万+', '200万–千万', '与带来的项目收入挂钩'],
+          ].map(([level, base, bonus, note]) => (
+            <tr class="hover:bg-stone-50">
+              <td class="border border-stone-200 px-3 py-2 font-medium">{level}</td>
+              <td class="border border-stone-200 px-3 py-2 text-emerald-700">{base}</td>
+              <td class="border border-stone-200 px-3 py-2 text-amber-700">{bonus}</td>
+              <td class="border border-stone-200 px-3 py-2 text-stone-400 text-[10px]">{note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">数据来源：脉脉、知乎等公开平台讨论，2023–2024年数据，已做模糊化处理</p>
+  </section>
+
+  <!-- 8. Recruiting -->
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>08 · 招聘流程与入行路径</h2>
+
+    <h3>美国投行招聘：时间线是一切</h3>
+    <p>美国顶级投行的Summer Analyst（暑期实习）招聘已经提前到大二暑假前后（即大三秋季开始投递），是全球金融招聘中节奏最早的市场之一。</p>
+
+    <div class="not-prose space-y-2 my-4">
+      {[
+        { time: '大一暑假', action: '参加Diversity实习（Goldman、MS、JPM等均有面向大一的项目）', important: true },
+        { time: '大二秋季（9–10月）', action: 'Bulge Bracket开放Summer Analyst申请，Superday开始', important: true },
+        { time: '大二春季（1–3月）', action: '精品投行（Evercore、Lazard等）招聘高峰', important: false },
+        { time: '大二暑假（6–8月）', action: '完成Summer Internship，拿到Return Offer', important: true },
+        { time: '大三秋季（9月）', action: '开始Full-time Recruiting（没有Summer Offer的情况下）', important: false },
+      ].map(item => (
+        <div class={`flex gap-3 p-3 rounded-lg text-xs ${item.important ? 'bg-amber-50 border border-amber-200' : 'bg-stone-50 border border-stone-100'}`}>
+          <span class={`font-semibold shrink-0 w-32 ${item.important ? 'text-amber-700' : 'text-stone-500'}`}>{item.time}</span>
+          <span class="text-stone-600">{item.action}</span>
+        </div>
+      ))}
+    </div>
+
+    <h3>面试内容</h3>
+    <ul>
+      <li><strong>技术面（Technical）</strong>：三大报表、DCF估值、LBO基础、Accretion/Dilution分析——这些是硬门槛，没有准备好会直接挂掉</li>
+      <li><strong>行为面（Behavioral）</strong>：Why IBD, Why this bank, Tell me about a time when...——需要准备充分的STAR故事</li>
+      <li><strong>市场认知</strong>：近期发生的大型并购或IPO，需要能说出基本逻辑</li>
+    </ul>
+
+    <h3>中国投行招聘特点</h3>
+    <p>中国头部券商（中金、中信、华泰等）的校招通常在每年<strong>9–11月</strong>集中进行，与美国不同的是：</p>
+    <ul>
+      <li>更看重<strong>实习经历</strong>（几乎所有offer都给过有该行或同类机构实习的人）</li>
+      <li>笔试（金融基础、行测）是常见的第一关</li>
+      <li>内推渠道非常重要——很多岗位实际上通过内推优先筛选</li>
+      <li>学历背景要求高：国内985/211或海外名校，清北复交是中金的核心来源</li>
+    </ul>
+
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl p-4 text-sm not-prose mt-4">
+      <p class="font-semibold text-columbia-navy mb-1">📌 SIPA背景的机会窗口</p>
+      <p class="text-columbia-navy/80 text-xs leading-relaxed">哥大SIPA背景在中国境内投行的跨境业务团队（如中金国际、海通国际的香港/纽约office）具有较强竞争力，尤其是有中国本科背景+SIPA硕士的组合。在美国本地，SIPA的MPA/MIA背景进入纯金融岗位有一定劣势（相比Columbia Business School或NYU Stern），需要通过实习和CFA/CAIA认证来补充金融技术背景。</p>
+    </div>
+  </section>
+
+  <!-- 9. Trends -->
+  <section id="trends" class="mb-16 scroll-mt-24">
+    <h2>09 · 2025–2030 行业趋势</h2>
+
+    <h3>AI对投行工作的冲击</h3>
+    <p>AI正在改变投行的基础工作，但尚未威胁到核心职位。目前已经被AI大幅自动化的工作包括：数据抓取整理、Comps初步构建、财务模型的标准化部分、尽调文档汇总。Goldman Sachs已在内部部署了AI助手工具，有报道称可以替代部分Analyst级别的基础工作。</p>
+    <p>但<strong>AI无法替代的是客户关系、交易判断和商务谈判</strong>——而这些恰恰是MD级别的核心价值。短期内，AI的影响更可能体现在：每个Analyst能处理更多项目，而不是Analyst数量减少。长期来看，初级岗位（1–2年级）的价值会被压缩。</p>
+
+    <h3>M&A周期性复苏</h3>
+    <p>2022–2023年是M&A的低谷期（利率快速上升导致LBO成本飙升，并购交易量大幅下滑）。随着美联储降息周期开启，2024年开始M&A活动出现明显复苏。<a href="https://www.bloomberg.com/news/articles/2024-01-02/global-m-a-poised-for-rebound-after-2023-slump" target="_blank">Bloomberg数据</a>显示2024年全球M&A交易量同比增长约20%，预计2025–2026年将继续回暖。</p>
+
+    <h3>中国投行：监管周期的影响</h3>
+    <p>2023年证监会收紧A股IPO节奏，大量待上市项目堰塞，直接导致中国投行承销收入下滑。这种监管周期性波动是中国投行与美国市场最大的结构性差异——中国投行收入高度依赖A股IPO市场的开放程度，而这受到政策影响远大于市场供需。</p>
+
+    <h3>私人信贷（Private Credit）崛起</h3>
+    <p>这是近年来最重要的结构性趋势：传统银行在监管约束下减少了对中等企业的贷款，Ares、Blackstone、Apollo等私人信贷基金填补了这个空间，成为增长最快的资产类别之一。这为有信贷背景的投行人（DCM、LevFin）打开了新的买方机会。</p>
+  </section>
+
+  <!-- 10. Fit -->
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>10 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+        <p class="font-semibold text-emerald-800 mb-3">✅ 适合投行的特质</p>
+        <ul class="text-xs text-emerald-700 space-y-2">
+          <li>• <strong>对数字天然敏感</strong>——不必是数学天才，但要能长时间在Excel里找乐趣</li>
+          <li>• <strong>高压下仍能精确输出</strong>——凌晨2点改Pitch Book时，typo是不被原谅的</li>
+          <li>• <strong>能忍受高度重复性工作</strong>——前2年大量基础工作，需要耐心积累</li>
+          <li>• <strong>对金融交易本身感兴趣</strong>——单纯为了钱进来，很难撑过第一年</li>
+          <li>• <strong>社交能力强，擅长管理关系</strong>——到VP/MD阶段，客户关系是核心资产</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ 不适合投行的信号</p>
+        <ul class="text-xs text-red-700 space-y-2">
+          <li>• <strong>把工作生活平衡排在很高优先级</strong>——这条路上，前3–5年生活平衡基本不存在</li>
+          <li>• <strong>希望工作有高度自主权</strong>——执行层级服从性要求极高</li>
+          <li>• <strong>对所在行业业务本身不感兴趣</strong>——只是"帮别人做决定"，自己不下场</li>
+          <li>• <strong>无法接受模糊的晋升时间线</strong>——从Analyst到MD没有保证，高度依赖机遇</li>
+          <li>• <strong>心理韧性较弱</strong>——批评密集、反馈即时，需要较强的抗压能力</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-stone-50 border border-stone-200 rounded-xl p-5 text-sm not-prose">
+      <p class="font-semibold text-stone-800 mb-2">💬 一个真实的建议</p>
+      <p class="text-stone-600 text-xs leading-relaxed">投行的价值高度集中在前2年的学习和出路的optionality。如果你的目标是PE/VC，或者想要一个金融行业最强的品牌背书起点，投行是当之无愧的第一选择。但如果你的目标是最终"做自己的事"（创业、投资、研究），投行只是起点，不是终点——很多人在投行待太久，反而错过了更适合自己的窗口。</p>
+    </div>
+  </section>
+
+  </div><!-- end prose -->
+
+  <!-- Bottom nav -->
+  <div class="mt-16 pt-8 border-t border-stone-200 flex flex-wrap justify-between gap-4 text-sm">
+    <a href="/industry/finance/" class="text-stone-400 hover:text-columbia-navy no-underline transition-colors">← 金融行业总览</a>
+    <a href="/industry/finance/private-equity/" class="text-columbia-blue hover:text-columbia-navy no-underline transition-colors font-medium">下一篇：私募股权（PE）→</a>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="mt-8 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 本文内容来源于公开资料（Wall Street Oasis, Bloomberg, 知乎, 脉脉, 一亩三分地等），仅供参考。薪酬数据为区间估算，实际薪酬因机构、年份、个人背景差异较大。不构成职业建议。
+  </div>
+</Base>

@@ -1,0 +1,418 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="证券研究（Equity Research）深度解析" description="卖方研究员真实日常、买方研究、行业分析——证券研究行业全景解析">
+
+  <a href="/industry/finance/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    金融行业
+  </a>
+
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-3 py-1 rounded-full">Equity Research</span>
+      <span class="text-[10px] text-amber-600 bg-amber-50 border border-amber-200 font-semibold px-3 py-1 rounded-full">入行难度：较难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      🔍 证券研究（Equity Research）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      卖方研究员是金融圈里最能写报告的人——市场动态、财报解读、行业深度报告，全是他们出的。但在AI颠覆、佣金萎缩的时代，这个职业究竟还有多大价值？
+    </p>
+  </header>
+
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#history" class="hover:text-columbia-navy no-underline">01 · 卖方研究的起源与商业逻辑</a></li>
+      <li><a href="#model" class="hover:text-columbia-navy no-underline">02 · 商业模式：佣金经济的运作</a></li>
+      <li><a href="#types" class="hover:text-columbia-navy no-underline">03 · 卖方 vs 买方研究的本质区别</a></li>
+      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美证券研究行业对比</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径全图</a></li>
+      <li><a href="#daily" class="hover:text-columbia-navy no-underline">06 · 真实工作日常</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">07 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">08 · 招聘路径</a></li>
+      <li><a href="#trends" class="hover:text-columbia-navy no-underline">09 · AI时代的行业危机与转型</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">10 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <section id="history" class="mb-16 scroll-mt-24">
+    <h2>01 · 卖方研究的起源与商业逻辑</h2>
+
+    <h3>1.1 为什么投行要出研究报告？</h3>
+    <p>证券研究的起源，来自一个再简单不过的商业需求：<strong>机构投资者需要信息，愿意为此支付对价</strong>。投资银行（卖方）将研究作为"赠品"提供给基金/保险等机构投资者（买方），换取后者将股票交易佣金导给自己的经纪部门。这就是卖方研究的底层逻辑——研究报告不是直接售卖的产品，而是交叉补贴佣金收入的工具。</p>
+    <p>1970-80年代，美国证券市场机构化程度提升，大型养老金、共同基金开始主导交易量。卖方研究员作为"连接机构投资者与上市公司的信息中介"，地位快速上升。明星研究员可以影响股价，主导行业定价，是当时华尔街最有话语权的人之一。</p>
+
+    <h3>1.2 Regulation FD（公平披露规则）与研究的转型</h3>
+    <p>2000年，美国SEC推出<strong>Regulation FD（Regulation Fair Disclosure）</strong>，要求上市公司不能选择性地向特定分析师披露信息——必须同时公开给所有人。这一规定直接削弱了卖方研究员通过私下渠道获取信息优势的能力。研究的竞争壁垒从"信息获取"转向"信息解读"。</p>
+    <p>2003年，美国司法部和SEC签署了著名的"全球研究分析师和解协议"——多家大型投行被指控研究报告存在利益冲突（股票分析师在IPO承销期间夸大评级），被罚款并强制分离研究部门与投行部门。这是卖方研究走向独立合规方向的重要节点。</p>
+  </section>
+
+  <section id="model" class="mb-16 scroll-mt-24">
+    <h2>02 · 商业模式：佣金经济的运作</h2>
+
+    <h3>2.1 软佣金机制（Soft Dollar Arrangements）</h3>
+    <p>传统卖方研究的商业模式建立在"软佣金"上：</p>
+    <ol>
+      <li>机构投资者（基金/保险）通过卖方券商交易股票，产生经纪佣金（美国约0.03-0.05%/股）</li>
+      <li>券商将部分佣金分配给研究部门，作为内部资源</li>
+      <li>研究团队为对应的机构客户提供研究报告、分析师访谈、路演安排等服务</li>
+      <li>机构客户根据研究质量，决定将多少佣金"分配"给某家券商（Commission Voting）</li>
+    </ol>
+    <p>这套系统的核心问题：佣金与研究质量挂钩，而不是直接按价值付费，导致研究定价失真。</p>
+
+    <h3>2.2 MiFID II的冲击：研究收费分离（Unbundling）</h3>
+    <p>2018年，欧盟推出<strong>MiFID II</strong>（金融工具指令修订版），要求欧洲基金将研究费用与交易佣金完全分离——买方必须单独付钱购买研究报告，而不能再用交易佣金"换取"。这直接引发了欧洲卖方研究收入的大幅缩减，进而影响到全球主要投行：</p>
+    <ul>
+      <li>大型投行（Goldman、Morgan Stanley）在欧洲研究团队规模缩减20-30%</li>
+      <li>研究报告的"定价"变得透明——大型机构客户每年单独支付$20-100万购买研究</li>
+      <li>小型/专注型独立研究公司的生存空间被进一步压缩</li>
+    </ul>
+    <p>美国SEC最终在2024年也开始讨论类似的研究解绑规则，卖方研究的收费模式正在全面重构。</p>
+  </section>
+
+  <section id="types" class="mb-16 scroll-mt-24">
+    <h2>03 · 卖方 vs 买方研究的本质区别</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">维度</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">卖方研究（Sell-Side）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">买方研究（Buy-Side）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">雇主</td>
+            <td class="p-3 border border-stone-200">投行、券商（Goldman, 中信证券）</td>
+            <td class="p-3 border border-stone-200">基金公司、对冲基金（买方机构内部研究团队）</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">输出</td>
+            <td class="p-3 border border-stone-200">公开研究报告、评级（Buy/Hold/Sell）、目标价</td>
+            <td class="p-3 border border-stone-200">内部投资备忘录，不对外公开</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">服务对象</td>
+            <td class="p-3 border border-stone-200">机构客户（基金、保险），有时也面向零售</td>
+            <td class="p-3 border border-stone-200">只服务于自己所在的基金</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">独立性</td>
+            <td class="p-3 border border-stone-200">存在利益冲突（IPO承销、做市商关系）；受合规约束</td>
+            <td class="p-3 border border-stone-200">更独立，直接服务于基金的投资决策</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">工作节奏</td>
+            <td class="p-3 border border-stone-200">高频率报告产出（财报季极忙）；客户路演多</td>
+            <td class="p-3 border border-stone-200">深度研究为主，节奏相对自主</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">薪酬</td>
+            <td class="p-3 border border-stone-200">中等，顶级分析师较高；基础薪酬稳定</td>
+            <td class="p-3 border border-stone-200">与基金业绩挂钩；顶级买方研究员薪酬高于卖方</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">影响力</td>
+            <td class="p-3 border border-stone-200">公开影响力大（报告被广泛引用）</td>
+            <td class="p-3 border border-stone-200">内部影响力大（直接影响仓位决策）</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">职业天花板</td>
+            <td class="p-3 border border-stone-200">顶级卖方分析师（II-ranked）有较高地位但增长受限</td>
+            <td class="p-3 border border-stone-200">可以向PM（基金经理/Portfolio Manager）晋升</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-2">💡 为什么很多人把卖方当跳板？</p>
+      <p>卖方研究是买方（对冲基金/公募基金）的主要人才来源之一。原因是：卖方研究员训练了深度行业分析能力、财务建模技能、以及与公司管理层沟通的经验。3-5年优秀的卖方研究员，通常可以跳到同行业的买方机构，担任研究员或助理PM，薪酬往往提升50%以上。</p>
+    </div>
+  </section>
+
+  <section id="china-us" class="mb-16 scroll-mt-24">
+    <h2>04 · 中美证券研究行业对比</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">维度</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇺🇸 美国</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇨🇳 中国</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">主要卖方机构</td>
+            <td class="p-3 border border-stone-200">Goldman Sachs, Morgan Stanley, JPMorgan, Evercore ISI</td>
+            <td class="p-3 border border-stone-200">中信证券、中金公司、海通证券、国泰君安、方正证券</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">研究员排行榜</td>
+            <td class="p-3 border border-stone-200">Institutional Investor（II）排名，是最权威的卖方研究员评选</td>
+            <td class="p-3 border border-stone-200">新财富最佳分析师排名，是中国最权威的排名；《水晶球》等也有影响</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">竞争格局</td>
+            <td class="p-3 border border-stone-200">AI冲击+MiFID影响全球，美国卖方研究员数量从峰值缩减约30%</td>
+            <td class="p-3 border border-stone-200">行业规模庞大，研究员数量多，竞争激烈；新财富排名驱动强烈的个人品牌竞争</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">研究质量与独立性</td>
+            <td class="p-3 border border-stone-200">经历2003年整改后合规标准高，但仍有微妙利益关系</td>
+            <td class="p-3 border border-stone-200">独立性受质疑——"买入"评级占比过高（超过90%），"卖出"评级极少见</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">特色</td>
+            <td class="p-3 border border-stone-200">专家网络（Expert Networks）是重要信息来源；监管对内幕交易查处严格</td>
+            <td class="p-3 border border-stone-200">渠道调研、草根调研是核心竞争力；线下关系网络重要</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>4.1 中国新财富排名的特殊作用</h3>
+    <p><strong>新财富最佳分析师</strong>是中国卖方研究行业最重要的荣誉。每年由买方投资者（公募/私募/保险资管等）投票选出各行业前三名分析师，上榜者几乎可以立即获得薪酬大幅提升和行业知名度。</p>
+    <p>因此，中国卖方研究员存在强烈的"冲榜"动机：密集路演、频繁与买方客户互动、快速发布及时性报告。这在提升研究影响力的同时，也带来了一定的研究质量浮躁化问题。2022年后，部分新财富改革规则，降低了排名对短期互动频次的权重，开始更重视研究深度。</p>
+  </section>
+
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径全图</h2>
+
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { title: '研究助理（Research Associate）', years: '0–2年', bg: 'bg-stone-50', desc: '协助首席分析师做数据整理、财务建模、报告格式化。在美国，研究助理通常是MBA学生的暑期实习或应届毕业生起点；在中国，更多是硕士直接入行。', comp: '$80k–$130k（美）/ 15–30万（中）' },
+        { title: '初级~高级研究分析师', years: '2–8年', bg: 'bg-amber-50', desc: '独立覆盖行业内若干家公司，撰写深度报告，发布买/卖/持有评级和目标价。美国通过CFA持续学习；中国冲新财富排名。这一阶段建立专业声誉最关键。', comp: '$150k–$350k（美）/ 40–150万（中）' },
+        { title: '首席分析师（MD级别）', years: '8年+', bg: 'bg-stone-50', desc: '管理整个行业研究团队，扛起团队的II/新财富排名，与大机构客户维护关系，参与公司重大交易的研究支持。这是卖方研究的顶端。', comp: '$400k–$1M+（美）/ 200–600万（中）' },
+        { title: '跳买方（终极出路）', years: '3-6年后跳跃', bg: 'bg-columbia-light', desc: '优秀卖方研究员的主要出路：跳到公募基金/对冲基金担任买方研究员或助理PM，薪酬和发展空间大幅提升。这是很多人把卖方当跳板的原因。', comp: '视机构而定，通常+50-100%' },
+      ].map(r => (
+        <div class={`${r.bg} border border-stone-200 rounded-xl p-4`}>
+          <div class="flex items-start justify-between mb-1.5">
+            <span class="font-semibold text-stone-800">{r.title}</span>
+            <span class="text-[11px] text-stone-400 bg-white px-2 py-0.5 rounded-full border border-stone-200">{r.years}</span>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed mb-1.5">{r.desc}</p>
+          <p class="text-xs text-columbia-navy font-medium">💰 {r.comp}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="daily" class="mb-16 scroll-mt-24">
+    <h2>06 · 真实工作日常</h2>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 卖方研究员（初级~中级）的一天</p>
+      <p>06:30 — 起床看盘前新闻，快速整理行业动态</p>
+      <p>07:00 — 写"晨报"：快速点评当日影响覆盖股票的消息</p>
+      <p>08:30 — 发布晨报给机构客户（有时电话逐个briefing）</p>
+      <p>09:30 — A股/美股开盘，跟踪异动</p>
+      <p>10:00 — 上市公司调研电话（公司IR/CFO）</p>
+      <p>11:00 — 写深度报告（行业报告周期约2-4周一份）</p>
+      <p>13:00 — 去见机构客户（基金公司面对面路演）</p>
+      <p>15:00 — 更新财务模型，盯财报数据</p>
+      <p>18:00 — 行业草根调研（渠道商/经销商电话）</p>
+      <p>20:00 — 继续写报告，整理DD材料</p>
+      <p class="text-stone-400 mt-3">// 财报季（每季度一次）：从5点起床，到凌晨2点</p>
+    </div>
+
+    <h3>6.1 带客户路演：最具体的日常</h3>
+    <p>卖方研究员的重要职能之一是"带客户路演"——协助上市公司管理层与机构投资者见面。研究员作为中间人，一边维护机构客户关系（基金经理愿不愿意见这家公司），一边维护被研究公司的关系（公司愿不愿意配合路演）。这是关系管理的核心。</p>
+
+    <div class="not-prose space-y-3 my-6">
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "做卖方研究员，技术能力只是基础。真正决定你好不好的，是你能不能和基金经理建立真正的信任关系。他们非常忙，如果觉得你的东西没价值，下次就不接你电话了。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 知乎用户，某头部券商科技行业研究员，上海</cite>
+      </blockquote>
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "在美国做卖方，最大的满足感是发一篇报告引发市场广泛讨论，或者被Bloomberg/WSJ引用。这个行业的公开影响力还是挺独特的——不像PE，你的工作完全不透明。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— Wall Street Oasis，美国某卖方研究员，纽约</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>07 · 薪酬结构</h2>
+
+    <h3>7.1 美国卖方研究薪酬（2024）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">基本工资</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">奖金</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">All-in</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Research Associate</td>
+            <td class="p-3 border border-stone-200">$80k–$130k</td>
+            <td class="p-3 border border-stone-200">$20k–$50k</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$100k–$180k</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Analyst（初~中级）</td>
+            <td class="p-3 border border-stone-200">$130k–$200k</td>
+            <td class="p-3 border border-stone-200">$50k–$150k</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$180k–$350k</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Senior Analyst / MD</td>
+            <td class="p-3 border border-stone-200">$200k–$400k</td>
+            <td class="p-3 border border-stone-200">$200k–$800k</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">$400k–$1M+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">注：美国II-ranked（机构投资者排名）的顶级研究员薪酬可超过$1M，但这只是极少数。大多数中级分析师全现金$200-350k，与同等级IB相比低约30%。数据来源：Wall Street Oasis, Glassdoor。</p>
+
+    <h3>7.2 中国卖方研究薪酬（2024）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">头部券商（中信/中金）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">中型券商</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">新财富冠军</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">研究助理</td>
+            <td class="p-3 border border-stone-200">20–40万/年</td>
+            <td class="p-3 border border-stone-200">15–25万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-400">—</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">研究员（1-5年）</td>
+            <td class="p-3 border border-stone-200">40–120万/年</td>
+            <td class="p-3 border border-stone-200">25–70万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-400">—</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">首席分析师</td>
+            <td class="p-3 border border-stone-200">150–400万/年</td>
+            <td class="p-3 border border-stone-200">80–200万/年</td>
+            <td class="p-3 border border-stone-200 font-medium text-columbia-navy">500万+（稀少）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">注：2022年以来证券行业薪酬整体受压，佣金收入下滑影响研究奖金池。新财富冠军的薪酬溢价明显，但该体制改革后溢价有所收窄。数据来源：知乎，脉脉，行业公开信息。</p>
+  </section>
+
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>08 · 招聘路径</h2>
+
+    <h3>8.1 美国卖方研究招聘</h3>
+    <ul>
+      <li><strong>本科/硕士校招</strong>：Goldman、Morgan Stanley有结构化研究助理培训项目；需要经济/金融/相关行业背景+强写作能力</li>
+      <li><strong>MBA进入</strong>：Wharton、Booth、Kellogg是主要来源；MBA后直接进研究员/Associate级别</li>
+      <li><strong>行业背景转型</strong>：科技公司工程师、医疗行业专家、消费品公司分析师跳进对应行业的卖方研究——这是非传统金融背景的有效切入路径</li>
+      <li><strong>CFA加分</strong>：比IB/PE更看重CFA，很多研究部门会将CFA作为晋升要求</li>
+    </ul>
+
+    <h3>8.2 中国卖方研究招聘</h3>
+    <ul>
+      <li><strong>校招主力</strong>：清北/985/211理工科硕士（行业研究更看重行业背景）+金融/经济类</li>
+      <li><strong>海归背景</strong>：顶美英硕士+国内金融实习，进中信/中金研究部门有竞争力</li>
+      <li><strong>行业专家路线</strong>：做TMT研究最好有CS或电子工程背景；医药研究最好有生命科学背景；新能源研究欢迎化工/材料背景</li>
+      <li><strong>面试特点</strong>：几乎必考一个行业深度分析题（给你一个行业/公司，说你的看法），重视独立判断能力和写作表达</li>
+    </ul>
+
+    <div class="not-prose bg-columbia-light border border-columbia-blue/20 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-3">🎓 SIPA背景进入证券研究的路径</p>
+      <ul class="space-y-2">
+        <li><strong>宏观/策略研究（Macro/Strategy）</strong>：这是SIPA最自然的切入点。大型投行（Goldman Economics、Morgan Stanley Research）的宏观策略研究团队会招政策/经济类硕士，分析GDP、利率、汇率、政策动向——和SIPA的训练高度匹配。</li>
+        <li><strong>新兴市场研究</strong>：专注中国、东南亚、新兴市场的研究团队；国际政治经济背景是差异化优势。</li>
+        <li><strong>ESG/可持续研究</strong>：快速增长的新方向，结合政策分析和公司治理，SIPA背景有独特价值。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trends" class="mb-16 scroll-mt-24">
+    <h2>09 · AI时代的行业危机与转型</h2>
+
+    <h3>9.1 AI对卖方研究的冲击</h3>
+    <p>证券研究是金融行业中受AI冲击最直接的领域之一。传统研究员的很多工作可以被AI工具部分替代：</p>
+    <ul>
+      <li><strong>财报解读</strong>：AI可以在秒级内处理完整季报，标注关键数字变化，远快于人工阅读</li>
+      <li><strong>行业新闻整合</strong>：AI聚合、摘要全球新闻，取代了晨报写作的大量时间</li>
+      <li><strong>估值模型</strong>：AI辅助建模工具（如微软Copilot for Finance）可以自动提取财报数据填充模型</li>
+      <li><strong>报告生成</strong>：简单的更新类报告（如财报速评）已经有机构尝试AI自动生成</li>
+    </ul>
+    <p>结果：高盛、摩根士丹利等机构近年陆续削减初级研究助理岗位；整个行业的研究员数量处于净减少状态（美国CFA协会数据显示，2019-2024年卖方研究员总量减少约20%）。</p>
+
+    <h3>9.2 研究的护城河转向何处</h3>
+    <p>但AI无法替代的部分，反而变得更有价值：</p>
+    <ul>
+      <li><strong>一手调研</strong>：实地走访工厂、与供应链谈话、在行业会议上积累人脉——这需要时间和关系，AI做不到</li>
+      <li><strong>独特判断与投资观点</strong>：AI可以整合信息，但"反共识判断"（Variant Perception）需要人的思考框架</li>
+      <li><strong>关系价值</strong>：与管理层、机构客户的深度信任关系，是卖方研究员最难被替代的资产</li>
+      <li><strong>行业深度专家化</strong>：越来越多机构要求研究员成为单一赛道的真正专家，而不是浅度覆盖多个行业</li>
+    </ul>
+    <p>对求职者的建议：如果选择进卖方研究，要尽快建立在某个行业的真正专业深度，同时投资自己的一手渠道网络。纯靠处理公开信息的"通才研究员"将面临越来越大的AI替代压力。</p>
+  </section>
+
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>10 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+        <p class="font-semibold text-emerald-800 mb-3">✅ 证券研究可能适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>✍️ 喜欢写作，能清晰传达复杂分析</li>
+          <li>🔍 对特定行业有真正的好奇心和积累</li>
+          <li>🗣️ 享受与公司管理层和机构投资者交流</li>
+          <li>📊 有金融分析基础，建模不是问题</li>
+          <li>🚀 想把卖方当跳板，3-5年后进买方</li>
+          <li>🌐 有独特的行业专长（科技/医疗/新能源）</li>
+          <li>📈 对市场有真实兴趣，每天看盘不觉烦</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ 证券研究可能不适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>🚫 不喜欢写作或沟通表达</li>
+          <li>🚫 没有耐心做深度行业调研</li>
+          <li>🚫 想快速高薪（初级薪酬比IB/PE低）</li>
+          <li>🚫 不愿意长期关注某个行业/个股</li>
+          <li>🚫 讨厌客户服务属性（卖方本质是服务买方）</li>
+          <li>🚫 财报季的极高强度让你望而生畏</li>
+          <li>🚫 希望工作只靠个人努力，不靠关系</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    <p class="font-medium text-stone-500 mb-1">数据来源与参考</p>
+    <p>薪酬数据：Wall Street Oasis ER Compensation Survey 2024, Glassdoor, 知乎匿名薪酬。行业数据：Institutional Investor, CFA Institute 2024 Research Industry Survey, Bloomberg Intelligence。中国数据：新财富最佳分析师历年数据，中国证券业协会，脉脉匿名数据。以上仅供参考。</p>
+  </div>
+
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between items-center text-sm">
+    <a href="/industry/finance/asset-management/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+      上一篇：资产管理 / 公募基金
+    </a>
+    <a href="/industry/finance/commercial-banking/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      下一篇：商业银行
+      <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span>
+    </a>
+  </div>
+</Base>

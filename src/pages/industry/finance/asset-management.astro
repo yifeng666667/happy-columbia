@@ -1,0 +1,468 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="资产管理 / 公募基金深度解析" description="公募基金、私募基金、家族办公室——资产管理行业全景解析，CFA到基金经理的完整路径">
+
+  <a href="/industry/finance/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    金融行业
+  </a>
+
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-3 py-1 rounded-full">Asset Management</span>
+      <span class="text-[10px] text-amber-600 bg-amber-50 border border-amber-200 font-semibold px-3 py-1 rounded-full">入行难度：较难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      🏦 资产管理 / 公募基金（Asset Management）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      资产管理是金融里最"广"的赛道——从贝莱德管理的$10万亿到邻居大妈买的货币基金，都属于这个范畴。但管钱的生意本质是什么？从分析师到基金经理的路有多漫长？
+    </p>
+  </header>
+
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#history" class="hover:text-columbia-navy no-underline">01 · 资管行业的历史与演变</a></li>
+      <li><a href="#model" class="hover:text-columbia-navy no-underline">02 · 商业模式：管理费的逻辑</a></li>
+      <li><a href="#types" class="hover:text-columbia-navy no-underline">03 · 细分类型：公募/私募/FOF/家办</a></li>
+      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美资管市场对比</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径与CFA的价值</a></li>
+      <li><a href="#daily" class="hover:text-columbia-navy no-underline">06 · 真实工作日常</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">07 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">08 · 招聘路径</a></li>
+      <li><a href="#trends" class="hover:text-columbia-navy no-underline">09 · 2025–2030 行业趋势</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">10 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <section id="history" class="mb-16 scroll-mt-24">
+    <h2>01 · 资管行业的历史与演变</h2>
+
+    <h3>1.1 从信托到基金：现代资管的起源</h3>
+    <p>资产管理的核心理念——"受托人为他人管钱"——可以追溯到英国19世纪的信托法律体系。1868年，英国成立了第一只面向普通投资者的集合投资产品"Foreign and Colonial Government Trust"，被认为是现代共同基金的雏形，允许中产阶级通过分散投资降低单一证券风险。</p>
+    <p>1924年，美国第一只现代共同基金"Massachusetts Investors Trust"在波士顿成立，开放式基金的概念正式确立——投资者可以随时申购赎回，基金按NAV（净值）清算。此后数十年，随着美国战后经济繁荣和中产阶级储蓄意识增强，共同基金行业快速扩张。</p>
+
+    <h3>1.2 指数基金的革命（1976）</h3>
+    <p>资管行业最重要的范式转变发生在1976年：先锋基金（Vanguard）创始人约翰·博格尔（John Bogle）推出了第一只面向个人投资者的<strong>指数基金（Index Fund）</strong>——Vanguard 500 Index Fund，追踪标普500指数，费率极低（当时约0.16%，现在降至0.04%）。</p>
+    <p>博格尔的核心论点是：<strong>大多数主动管理基金长期跑不赢市场，而低费率的指数基金在复利效应下会大幅跑赢高费率主动基金</strong>。这个简单的道理用了几十年才被广泛接受，但一旦被接受，引发了资管行业有史以来最大的结构性颠覆。到2024年，美国指数基金管理规模已超过主动管理基金。</p>
+
+    <h3>1.3 贝莱德的崛起与ETF时代</h3>
+    <p>1988年，拉里·芬克（Larry Fink）创立贝莱德（BlackRock），专注于固定收益风险管理。2009年，贝莱德收购巴克莱全球投资者（包括iShares ETF业务），一跃成为全球最大资产管理公司，管理规模超$10万亿。</p>
+    <p>ETF（交易所交易基金）是贝莱德发展的核心引擎：既有指数基金的低费率优势，又可以像股票一样在交易所实时交易。2024年，全球ETF资产管理规模超过$12万亿，是过去20年增长最快的金融产品之一。</p>
+
+    <h3>1.4 中国资管的发展历程</h3>
+    <p>中国公募基金行业从1998年起步（华夏基金、嘉实基金等首批公募），经历了2007年牛市的第一波爆发（总规模超3万亿）、2008-2013年的低迷，以及2014年至今的快速扩张。截至2024年，中国公募基金管理规模超过31万亿元人民币，是全球第三大资管市场，仅次于美国和欧洲。</p>
+  </section>
+
+  <section id="model" class="mb-16 scroll-mt-24">
+    <h2>02 · 商业模式：管理费的逻辑</h2>
+
+    <h3>2.1 主动管理 vs 被动管理</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">主动管理（Active）</p>
+        <ul class="space-y-1 text-xs text-stone-600">
+          <li>✓ 基金经理主动选股/择时</li>
+          <li>✓ 目标：超越基准指数（Alpha）</li>
+          <li>✓ 管理费：0.5%-1.5%/年（股票型）</li>
+          <li>✓ 代表：富达（Fidelity）、景顺（Invesco）、中国主动权益基金</li>
+          <li>❗ 问题：大多数主动基金长期跑不赢指数</li>
+        </ul>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">被动管理（Passive）</p>
+        <ul class="space-y-1 text-xs text-stone-600">
+          <li>✓ 跟踪指数，不做主动选择</li>
+          <li>✓ 目标：以最低成本复制市场回报（Beta）</li>
+          <li>✓ 管理费：0.03%-0.2%/年（ETF）</li>
+          <li>✓ 代表：Vanguard、贝莱德iShares、华夏沪深300ETF</li>
+          <li>✓ 优势：长期来看，费率差积累成显著回报优势</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>2.2 资管公司的收入结构</h3>
+    <p>资管公司的收入几乎全部来自<strong>AUM（资产管理规模）× 管理费率</strong>。这是一个规模效应极强的行业：</p>
+    <ul>
+      <li>固定成本（研究团队、系统、合规）相对稳定</li>
+      <li>AUM翻倍 → 收入翻倍，但成本增加不到50%</li>
+      <li>因此规模越大，利润率越高——这解释了为什么资管行业的兼并整合从未停歇</li>
+    </ul>
+    <p>贝莱德以$10万亿AUM、约0.07%的平均费率，每年收取约$70亿管理费，净利润率约30%。主动管理基金（富达）的费率高但AUM增长受被动替代压力。</p>
+  </section>
+
+  <section id="types" class="mb-16 scroll-mt-24">
+    <h2>03 · 细分类型：公募/私募/FOF/家办</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">类型</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">面向人群</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">代表机构</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">特点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">公募基金（Mutual Fund/ETF）</td>
+            <td class="p-3 border border-stone-200">普通投资者</td>
+            <td class="p-3 border border-stone-200">Vanguard, 贝莱德, 易方达, 华夏基金</td>
+            <td class="p-3 border border-stone-200 text-stone-600">监管严格、高流动性、信息披露充分</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">私募基金（Private Funds）</td>
+            <td class="p-3 border border-stone-200">合格投资者（≥$200k收入或≥$1M净资产）</td>
+            <td class="p-3 border border-stone-200">对冲基金、PE基金、国内百亿私募</td>
+            <td class="p-3 border border-stone-200 text-stone-600">监管宽松、策略灵活、可以做空</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">FOF（基金中的基金）</td>
+            <td class="p-3 border border-stone-200">机构/高净值</td>
+            <td class="p-3 border border-stone-200">Vanguard LifeStrategy, 招商银行FOF, Hamilton Lane</td>
+            <td class="p-3 border border-stone-200 text-stone-600">投资多支基金，提供分散化+专业筛选；费用有两层</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">家族办公室（Family Office）</td>
+            <td class="p-3 border border-stone-200">超高净值家族（通常$100M+）</td>
+            <td class="p-3 border border-stone-200">Walton家族办公室, Bezos Expeditions, 国内数千家单一家办</td>
+            <td class="p-3 border border-stone-200 text-stone-600">最高度定制化，兼顾投资/税务/遗产规划/慈善</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">主权财富基金（SWF）</td>
+            <td class="p-3 border border-stone-200">国家政府</td>
+            <td class="p-3 border border-stone-200">GIC（新加坡）, ADIA（阿布扎比）, CIC（中国投资公司）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">规模庞大，长期视角，政治考量与投资并存</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">大学捐赠基金（Endowment）</td>
+            <td class="p-3 border border-stone-200">大学机构</td>
+            <td class="p-3 border border-stone-200">耶鲁、哈佛、斯坦福捐赠基金</td>
+            <td class="p-3 border border-stone-200 text-stone-600">耶鲁模型：大量另类资产（PE/VC/HF），长期超额回报</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="china-us" class="mb-16 scroll-mt-24">
+    <h2>04 · 中美资管市场对比</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">维度</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇺🇸 美国</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇨🇳 中国</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">市场规模</td>
+            <td class="p-3 border border-stone-200">~$50万亿（全球最大）</td>
+            <td class="p-3 border border-stone-200">~31万亿人民币（公募，约$4.3万亿）</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">产品结构</td>
+            <td class="p-3 border border-stone-200">被动（ETF/指数）占>50%，主动基金持续萎缩</td>
+            <td class="p-3 border border-stone-200">主动基金仍占主导，ETF快速增长但比例仍低；债基/货基占比大</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">散户 vs 机构</td>
+            <td class="p-3 border border-stone-200">机构投资者主导（养老金、捐赠基金）</td>
+            <td class="p-3 border border-stone-200">散户持基占比仍高；机构化程度正在提升</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">头部格局</td>
+            <td class="p-3 border border-stone-200">贝莱德、Vanguard、State Street三巨头，高度集中</td>
+            <td class="p-3 border border-stone-200">易方达、华夏、富国、广发前几大公司，但行业分散度仍高</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">基金经理文化</td>
+            <td class="p-3 border border-stone-200">明星基金经理文化弱（被指数基金削弱）；机构品牌重于个人</td>
+            <td class="p-3 border border-stone-200">明星基金经理文化强：张坤（易方达）、葛兰（中欧）曾有数千亿AUM</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">养老金接入</td>
+            <td class="p-3 border border-stone-200">401(k)/IRA是公募基金最大资金来源，超$15万亿</td>
+            <td class="p-3 border border-stone-200">个人养老金（2022年推出）规模仍小；社保基金委托规模有限</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">当前挑战</td>
+            <td class="p-3 border border-stone-200">主动基金持续失血；费率压力；AI对研究职能的冲击</td>
+            <td class="p-3 border border-stone-200">A股熊市影响主动权益基金业绩；投资者体验差导致赎回潮</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>4.1 中国公募明星基金经理现象</h3>
+    <p>中国资管行业有一个独特现象：<strong>明星基金经理的个人品牌价值极大</strong>。2020-2021年牛市期间，易方达蓝筹精选基金经理张坤管理的规模一度超过1000亿元人民币，被粉丝称为"坤坤"，在微博有大量讨论。中欧医疗健康基金经理葛兰、广发基金刘格菘等均有类似的"粉丝经济"现象。</p>
+    <p>这一现象背后是中国散户投资者对专业判断的依赖，以及公募基金在2020年大牛市中的强势营销。但2022-2024年市场下行后，这些明星基金普遍大幅亏损，引发投资者的强烈不满，也带来了行业对"规模与业绩平衡"的深刻反思。</p>
+  </section>
+
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径与CFA的价值</h2>
+
+    <h3>5.1 主动管理的职业路径</h3>
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { title: '研究助理 / 初级研究员', years: '0–2年', bg: 'bg-stone-50', desc: '数据整理、行业跟踪、协助高级研究员写报告。在大型机构（贝莱德、富达），通常是从应届生培养的。', comp: '$80k–$150k（美国）/ 20–40万（中国）' },
+        { title: '研究分析师（初级~高级）', years: '2–8年', bg: 'bg-amber-50', desc: '独立覆盖若干行业/个股，产出投资建议。最重要的阶段——需要在这里建立独立的投资框架和业绩记录（Track Record）。', comp: '$150k–$400k（美国）/ 40–150万（中国）' },
+        { title: '基金经理（Portfolio Manager）', years: '8年+', bg: 'bg-columbia-light', desc: '主导投资决策，对基金业绩负完全责任。大型机构PM往往专注于某一特定类别（高成长、价值、固收）；中国公募基金经理在牛市期间管理规模可达数百亿元。', comp: '$300k–$2M+（美国）/ 100–500万+（中国）' },
+      ].map(r => (
+        <div class={`${r.bg} border border-stone-200 rounded-xl p-4`}>
+          <div class="flex items-start justify-between mb-1.5">
+            <span class="font-semibold text-stone-800">{r.title}</span>
+            <span class="text-[11px] text-stone-400 bg-white px-2 py-0.5 rounded-full border border-stone-200">{r.years}</span>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed mb-1.5">{r.desc}</p>
+          <p class="text-xs text-columbia-navy font-medium">💰 {r.comp}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>5.2 CFA在资管行业的价值</h3>
+    <p>资管行业是CFA（特许金融分析师）含金量最高的地方之一。CFA协会数据显示，全球超过40%的CFA持有者在资产管理行业工作。</p>
+    <p>CFA对资管职业的价值：</p>
+    <ul>
+      <li><strong>知识体系</strong>：三级考试体系覆盖证券分析、组合管理、道德标准，与实际工作高度契合</li>
+      <li><strong>信号价值</strong>：在竞争性招聘中，CFA证书是"勤奋+专业承诺"的信号</li>
+      <li><strong>晋升加速</strong>：很多机构将CFA作为基金经理升职的要求条件之一</li>
+      <li><strong>局限性</strong>：顶级HF/PE不太在意CFA；量化岗位更看重数学/CS</li>
+    </ul>
+    <p>实际建议：如果职业目标是公募基金分析师/基金经理路径，考CFA值得；如果目标是对冲基金或买方量化，CFA的边际价值有限。</p>
+
+    <h3>5.3 家族办公室的独特职业路径</h3>
+    <p>家族办公室（Family Office）在职业市场里是个隐形但有吸引力的存在：</p>
+    <ul>
+      <li><strong>Single Family Office（单一家办）</strong>：服务一个超高净值家族，通常15-50人，涉及投资、税务、遗产、房产、慈善多个维度。工作多样、压力适中，但待遇和职业成长不如大型机构</li>
+      <li><strong>Multi Family Office（多家办）</strong>：服务多个家族，类似于高端私人银行+投资咨询。规模更大，职业发展路径更清晰</li>
+      <li><strong>入行路径</strong>：通常来自私人银行（UBS/瑞银）、IB、律所或会计师事务所；有专业资质（CFA+CPA/律师）最受青睐</li>
+    </ul>
+  </section>
+
+  <section id="daily" class="mb-16 scroll-mt-24">
+    <h2>06 · 真实工作日常</h2>
+
+    <h3>6.1 公募基金研究员的一天</h3>
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 公募基金行业研究员的工作节奏</p>
+      <p>08:00 — 看国内外市场动态，整理当日行业新闻</p>
+      <p>09:00 — 晨会：基金经理分享市场观点，研究员汇报</p>
+      <p>09:30 — A股开盘，跟踪持仓股走势</p>
+      <p>10:00 — 上市公司调研（实地或电话），核查经营情况</p>
+      <p>12:00 — 整理路演笔记，更新财务模型</p>
+      <p>13:30 — A股午盘后恢复交易</p>
+      <p>14:00 — 写研究报告/投资建议书</p>
+      <p>15:00 — A股收盘，分析量价异动原因</p>
+      <p>16:00 — 参加上市公司业绩说明会（线上）</p>
+      <p>18:00 — 行业渠道调研（与经销商/消费者对话）</p>
+      <p>20:00 — 写研究备忘录，更新估值模型</p>
+      <p class="text-stone-400 mt-3">// 财报季：以上全部×1.5，加班至23点以上</p>
+    </div>
+
+    <h3>6.2 资管 vs 对冲基金：生活质量差别</h3>
+    <p>公募基金/传统资管与对冲基金相比，有几个典型差异：</p>
+    <ul>
+      <li><strong>工作强度</strong>：通常低于顶级对冲基金（60-70小时/周 vs 70-90小时），但财报季峰值相近</li>
+      <li><strong>决策自主性</strong>：研究员的建议需要基金经理拍板，自主性相对有限；但也意味着个人风险更小</li>
+      <li><strong>收入上限</strong>：顶级基金经理的收入远低于顶级PM（无绩效费杠杆，依赖AUM管理费）</li>
+      <li><strong>稳定性</strong>：公募基金的工作相对稳定，不像多策略HF那样随时被裁撤</li>
+    </ul>
+
+    <div class="not-prose space-y-3 my-6">
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "做公募研究员最大的满足感是和公司管理层深度交流，真正理解一家公司。最大的挫败感是你写了一篇很好的报告，基金经理没看，或者看了不建仓，结果股票涨了。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 知乎用户，某头部公募基金研究员，上海</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>07 · 薪酬结构</h2>
+
+    <h3>7.1 美国资管薪酬</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">大型主动管理（Fidelity/Capital Group）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">被动/ETF（贝莱德/Vanguard）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">初级研究员</td>
+            <td class="p-3 border border-stone-200">$100k–$160k</td>
+            <td class="p-3 border border-stone-200">$90k–$130k</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">高级研究员</td>
+            <td class="p-3 border border-stone-200">$200k–$400k</td>
+            <td class="p-3 border border-stone-200">$150k–$280k</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">基金经理（PM）</td>
+            <td class="p-3 border border-stone-200">$400k–$2M+</td>
+            <td class="p-3 border border-stone-200">$350k–$1M+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">注：与同等级别的对冲基金相比，传统资管（主动/被动）薪酬低约30-50%，但工作稳定性更高，流动性更好。数据来源：Institutional Investor, eFinancialCareers。</p>
+
+    <h3>7.2 中国公募基金薪酬（2024）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">头部公募（易方达/华夏/广发）</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">中型公募</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">研究助理</td>
+            <td class="p-3 border border-stone-200">25–50万/年</td>
+            <td class="p-3 border border-stone-200">15–30万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">固定工资为主</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">行业研究员</td>
+            <td class="p-3 border border-stone-200">50–120万/年</td>
+            <td class="p-3 border border-stone-200">30–70万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">年终奖弹性大</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">基金经理（助理~独立管理）</td>
+            <td class="p-3 border border-stone-200">120–400万/年</td>
+            <td class="p-3 border border-stone-200">80–200万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">2022年后公募降薪，限薪政策影响</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">注：2022年起，中国证监会出台公募基金薪酬限制政策，明星基金经理薪酬上限约在1500-2000万元/年，整体降薪趋势明显。数据来源：知乎，脉脉，基金业公开信息。</p>
+  </section>
+
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>08 · 招聘路径</h2>
+
+    <h3>8.1 美国资管招聘</h3>
+    <p>美国大型资管公司（贝莱德、富达、先锋、Capital Group）有相对结构化的校招项目：</p>
+    <ul>
+      <li><strong>分析师项目（Analyst Program）</strong>：面向顶校本科/研究生，2-3年轮岗</li>
+      <li><strong>MBA直接进入研究员/助理PM</strong>：Kellogg、Booth、Wharton等商学院有较强输送</li>
+      <li><strong>CFA是加分项</strong>：Level 1或以上在简历筛选阶段有明显帮助</li>
+      <li><strong>卖方研究员跳买方</strong>：3-5年优秀卖方研究员是主流来源</li>
+    </ul>
+
+    <h3>8.2 中国公募基金招聘</h3>
+    <p>中国公募基金的主要进入路径：</p>
+    <ul>
+      <li><strong>校招</strong>：清北/复旦/交大/人大金融类硕士是主要来源；CFA L1/L2加分</li>
+      <li><strong>卖方研究员转买方</strong>：2-4年优秀卖方研究员是最常见路径，有成熟的行业跳槽传统</li>
+      <li><strong>海归背景</strong>：美国/英国顶校金融/经济类硕士+国内实习经历，是中等以上公募的欢迎背景</li>
+      <li><strong>国际学生挑战</strong>：外籍身份在中国公募基金就业有限制（持有合法工作证明即可，但关系网络和本地经验更重要）</li>
+    </ul>
+
+    <div class="not-prose bg-columbia-light border border-columbia-blue/20 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-3">🎓 SIPA学生进入资管行业的建议</p>
+      <ul class="space-y-2">
+        <li><strong>主权财富基金/大学捐赠基金</strong>：GIC（新加坡）、ADIA（阿布扎比）、Yale Investment Office等会招政策/经济分析背景；国际宏观和政策判断是真正的差异化。</li>
+        <li><strong>ESG/Impact Investing</strong>：结合政策背景的可持续投资赛道，贝莱德、Nuveen、Calvert等有专属ESG投资团队；SIPA的政策分析技能高度相关。</li>
+        <li><strong>Multi-Asset/宏观团队</strong>：大型资管的多资产组合管理需要宏观/地缘政治判断能力，SIPA的国际经济背景有优势。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trends" class="mb-16 scroll-mt-24">
+    <h2>09 · 2025–2030 行业趋势</h2>
+
+    <h3>9.1 主动管理的AI转型</h3>
+    <p>资管行业正在被AI从根本上改变。贝莱德的Aladdin平台、富达的AI研究工具、国内公募的智能选股系统，正在将传统分析师工作自动化：</p>
+    <ul>
+      <li>AI可以在分钟内处理数千份财报、新闻和研报，提取关键信息</li>
+      <li>自然语言处理工具可以实时分析管理层电话会议的情绪和措辞变化</li>
+      <li>AI量化选股模型正在渗透传统主动管理基金</li>
+    </ul>
+    <p>对入行者的影响：纯靠信息处理速度建立护城河的初级研究员职位面临压力；有独特行业认知、渠道调研能力、定性判断能力的研究员价值更难被替代。</p>
+
+    <h3>9.2 被动化浪潮持续</h3>
+    <p>2024年，美国主动型股票基金连续19年遭遇资金净流出，同期ETF和指数基金年流入超$1万亿。这一趋势不会逆转：</p>
+    <ul>
+      <li>费率差在复利效应下对主动管理形成巨大压力</li>
+      <li>数据显示90%+的主动管理基金长期跑不赢对应指数（SPIVA报告）</li>
+      <li>机构LP（养老金、捐赠基金）不断降低主动管理的配置比例</li>
+    </ul>
+    <p>这意味着：传统主动管理的研究员/基金经理岗位总量会萎缩；但真正优秀的主动管理者仍有高需求和高薪酬。</p>
+
+    <h3>9.3 中国公募的政策收紧与转型</h3>
+    <p>2022年起，中国证监会开始对公募基金行业进行系统性整顿：</p>
+    <ul>
+      <li>明星基金经理薪酬限制（上限约1500-2000万/年）</li>
+      <li>基金销售费率下调（申购费不超过0.1%，管理费压缩至1%以内）</li>
+      <li>权益类基金业绩考核周期延长（从一年改为三年）</li>
+    </ul>
+    <p>这些政策降低了短期的明星基金经理效应，向行业注入更多长期主义。对求职者意味着：进入头部机构的重要性进一步上升，中小公募的竞争力下降，而固收/货币/指数类基金经理的相对价值提升。</p>
+  </section>
+
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>10 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+        <p class="font-semibold text-emerald-800 mb-3">✅ 资管可能适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>📊 喜欢深度研究行业和公司基本面</li>
+          <li>🧘 能接受较慢的职业上升节奏</li>
+          <li>🌱 追求工作与生活的相对平衡</li>
+          <li>📈 对长期价值投资有信仰</li>
+          <li>🎓 CFA对你有学习动力（考试驱动自我提升）</li>
+          <li>🌍 有ESG/可持续投资的价值取向</li>
+          <li>🤝 更喜欢投资决策的深思熟虑过程而非快节奏交易</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ 资管可能不适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>🚫 想要快速积累财富（资管薪酬爬升比HF慢）</li>
+          <li>🚫 追求高强度的决策感和市场博弈感</li>
+          <li>🚫 不愿意等8-10年才能独立管理资金</li>
+          <li>🚫 希望工作有非常清晰的量化绩效指标</li>
+          <li>🚫 对行业/公司基本面分析没有耐心</li>
+          <li>🚫 不喜欢财报和数字（必备技能）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    <p class="font-medium text-stone-500 mb-1">数据来源与参考</p>
+    <p>薪酬数据：Institutional Investor, eFinancialCareers, 知乎专栏, 脉脉匿名数据。行业规模：Investment Company Institute（ICI）2024 Fact Book, 中国证券投资基金业协会2024年报。CFA数据：CFA Institute Global Survey。以上仅供参考。</p>
+  </div>
+
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between items-center text-sm">
+    <a href="/industry/finance/hedge-funds/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+      上一篇：对冲基金
+    </a>
+    <a href="/industry/finance/equity-research/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      下一篇：证券研究
+      <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span>
+    </a>
+  </div>
+</Base>

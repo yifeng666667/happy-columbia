@@ -1,0 +1,194 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/finance/investment-banking/',
+    emoji: '🏛️',
+    title: '投资银行',
+    titleEn: 'Investment Banking',
+    desc: '并购重组、IPO承销、债券发行——最光鲜也最高压的金融赛道，从Goldman到中金的全景解析',
+    tags: ['M&A', 'ECM', 'DCM', 'Leveraged Finance'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$110k–$200k+',
+    salary_cn: '30–80万',
+  },
+  {
+    href: '/industry/finance/private-equity/',
+    emoji: '🏗️',
+    title: '私募股权',
+    titleEn: 'Private Equity',
+    desc: 'Buyout、成长型投资、二级市场基金——PE是出路还是围城？从KKR到高瓴的职业真相',
+    tags: ['Buyout', 'Growth Equity', 'Secondaries', 'Portfolio'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$150k–$300k+',
+    salary_cn: '40–120万',
+  },
+  {
+    href: '/industry/finance/venture-capital/',
+    emoji: '🚀',
+    title: '风险投资',
+    titleEn: 'Venture Capital',
+    desc: '早期投资的艺术与运气——VC行业的真实面貌、中美VC生态差异与入行路径',
+    tags: ['Early Stage', 'Series A/B', 'Scout', 'LP/GP'],
+    difficulty: '很难',
+    diffColor: 'text-orange-600 bg-orange-50 border-orange-200',
+    salary_us: '$80k–$200k',
+    salary_cn: '20–80万',
+  },
+  {
+    href: '/industry/finance/hedge-funds/',
+    emoji: '📈',
+    title: '对冲基金',
+    titleEn: 'Hedge Funds',
+    desc: '多空策略、宏观基金、量化CTA——对冲基金究竟在做什么，为什么工资这么高',
+    tags: ['Long/Short', 'Global Macro', 'Event Driven', 'Multi-Strat'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$150k–$500k+',
+    salary_cn: '50–200万',
+  },
+  {
+    href: '/industry/finance/asset-management/',
+    emoji: '🏦',
+    title: '资产管理 / 公募基金',
+    titleEn: 'Asset Management',
+    desc: '公募基金、私募基金、家族办公室——管钱的生意，从CFA到基金经理的完整路径',
+    tags: ['公募基金', '私募基金', 'FOF', 'Family Office'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '$90k–$250k',
+    salary_cn: '25–100万',
+  },
+  {
+    href: '/industry/finance/equity-research/',
+    emoji: '🔍',
+    title: '证券研究',
+    titleEn: 'Equity Research',
+    desc: '卖方研究员的真实生活——写报告、路演、带客户，以及在AI时代这个岗位的未来',
+    tags: ['卖方研究', '买方研究', '行业分析', '量化研究'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '$80k–$200k',
+    salary_cn: '20–80万',
+  },
+  {
+    href: '/industry/finance/commercial-banking/',
+    emoji: '🏧',
+    title: '商业银行',
+    titleEn: 'Commercial Banking',
+    desc: '零售银行、企业银行、风险管理——最稳定的金融方向，四大行vs外资行的选择',
+    tags: ['Corporate Banking', 'Retail', '四大行', '外资行'],
+    difficulty: '中等',
+    diffColor: 'text-blue-600 bg-blue-50 border-blue-200',
+    salary_us: '$70k–$150k',
+    salary_cn: '15–50万',
+  },
+  {
+    href: '/industry/finance/quant-fintech/',
+    emoji: '⚡',
+    title: '量化金融 / Fintech',
+    titleEn: 'Quant & Fintech',
+    desc: 'Jane Street、Citadel、Two Sigma——量化交易的门槛与天花板，以及Fintech的职业机会',
+    tags: ['Quant Researcher', 'Algo Trading', 'Risk Tech', 'Fintech PM'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$200k–$600k+',
+    salary_cn: '60–300万',
+  },
+];
+---
+
+<Base title="金融行业深度解析" description="投行、PE、VC、对冲基金、资产管理、商业银行、证券研究、量化——金融行业8大方向全景解析，中美职场对比">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    行业解析
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-3 py-1 rounded-full">Finance</span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">8 个细分方向</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-5">
+      金融行业深度解析
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      金融是最多文商科学生向往的方向，也是最容易"看起来懂、实际不懂"的行业。这里不是招聘广告，而是一个从业者视角的完整拆解——每个方向的历史、商业逻辑、真实日常、中美差异和未来走向。
+    </p>
+
+    <!-- Quick stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '细分方向', value: '8个' },
+        { label: '覆盖市场', value: '美国 + 中国' },
+        { label: '薪酬数据', value: '2024-2025' },
+        { label: '内容来源', value: '公开数据 + 论坛' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- Overview: Finance ecosystem -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">先看懂金融行业的全局地图</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>金融行业最常见的误解，是把它当作一个整体。实际上，<strong class="text-stone-800">一级市场和二级市场是完全不同的生意</strong>，买方和卖方的利益结构截然不同，投行分析师和对冲基金分析师虽然名字相近，工作内容可能差10万八千里。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">卖方（Sell-Side）</p>
+          <p class="text-xs leading-relaxed">投资银行、证券经纪、卖方研究。<strong>为客户提供服务收取费用</strong>——承销IPO收承销费，撮合M&A收顾问费，写研究报告吸引机构客户交佣金。</p>
+          <p class="text-xs text-stone-400 mt-2">代表机构：Goldman Sachs, Morgan Stanley, 中金, 中信证券</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">买方（Buy-Side）</p>
+          <p class="text-xs leading-relaxed"><strong>用自己管理的资金直接投资赚钱</strong>——PE/VC买未上市公司股权，对冲基金做多空套利，资管公募买股票债券。</p>
+          <p class="text-xs text-stone-400 mt-2">代表机构：Blackstone, Bridgewater, 高瓴, 景林资产</p>
+        </div>
+      </div>
+      <p class="text-xs text-stone-400 pt-2">💡 一般认为买方地位更高（直接管钱），但卖方（尤其是顶级投行）是进入买方的主要跳板——很多PE要求IB背景。</p>
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">8 个细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {sectors.map((s) => (
+        <a href={s.href} class="group block rounded-2xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:-translate-y-1 transition-all no-underline">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{s.emoji}</span>
+            <span class={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${s.diffColor}`}>
+              入行难度：{s.difficulty}
+            </span>
+          </div>
+          <h3 class="font-display font-bold text-stone-900 text-lg mb-0.5 group-hover:text-columbia-navy transition-colors">{s.title}</h3>
+          <p class="text-[11px] text-stone-400 mb-3">{s.titleEn}</p>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            {s.tags.map(t => (
+              <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-200 font-medium px-2 py-0.5 rounded-full">{t}</span>
+            ))}
+          </div>
+          <div class="flex gap-4 text-xs text-stone-500 pt-3 border-t border-stone-100">
+            <span>🇺🇸 {s.salary_us}</span>
+            <span>🇨🇳 {s.salary_cn}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 Wall Street Oasis、Glassdoor、知乎、脉脉等公开平台，仅供参考。中国区数据已做模糊化处理，实际薪酬因机构、年份、个人背景差异较大。
+  </div>
+</Base>

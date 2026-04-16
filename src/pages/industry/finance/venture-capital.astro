@@ -1,0 +1,592 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="风险投资（VC）深度解析" description="VC是什么、怎么进、真实工作是什么样——从硅谷起源到中美生态对比，风险投资全景指南">
+
+  <a href="/industry/finance/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    金融行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-3 py-1 rounded-full">Venture Capital</span>
+      <span class="text-[10px] text-orange-600 bg-orange-50 border border-orange-200 font-semibold px-3 py-1 rounded-full">入行难度：很难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      🚀 风险投资（Venture Capital）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      VC是最神话化的金融职业之一——投中Uber、押注OpenAI，听起来像是"凭直觉改变世界"。但现实是，VC是一个概率游戏，是一个关系游戏，也是一个比任何人告诉你的都更难入场的游戏。
+    </p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#history" class="hover:text-columbia-navy no-underline">01 · VC的起源：从战后美国到硅谷神话</a></li>
+      <li><a href="#model" class="hover:text-columbia-navy no-underline">02 · 商业模式：概率游戏与幂律分布</a></li>
+      <li><a href="#stages" class="hover:text-columbia-navy no-underline">03 · 投资阶段与策略细分</a></li>
+      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美VC生态深度对比</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径全图</a></li>
+      <li><a href="#daily" class="hover:text-columbia-navy no-underline">06 · 真实工作日常</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">07 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">08 · 入行路径：比PE更难预测</a></li>
+      <li><a href="#trends" class="hover:text-columbia-navy no-underline">09 · 2025–2030 行业趋势</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">10 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <!-- 1. History -->
+  <section id="history" class="mb-16 scroll-mt-24">
+    <h2>01 · VC的起源：从战后美国到硅谷神话</h2>
+
+    <p>VC的历史，是美国战后技术繁荣与风险资本机制共同演化的历史。</p>
+
+    <h3>1.1 起点：ARD与第一笔风险投资</h3>
+    <p>如果非要找一个VC的起点，那是1946年。哈佛商学院教授Georges Doriot创立了 American Research and Development Corporation（ARD）——这是第一家有组织地向未上市技术公司进行股权投资的机构。ARD的逻辑很简单：战后的美国有大量军事技术转民用的机会，需要有人愿意在没有确定性回报的情况下提供资金支持。</p>
+    <p>1957年，ARD向一家名叫 Digital Equipment Corporation（DEC）的小公司投入了$70万。11年后，这笔投资价值超过$3.5亿——回报率超过500倍。这笔交易成为VC行业的奠基神话，证明了高风险投资有可能产生超乎想象的回报。</p>
+
+    <h3>1.2 硅谷的形成：斯坦福、半导体与Route 128的对比</h3>
+    <p>1950-60年代，北加州的特殊生态开始形成。斯坦福大学工程学院院长Frederick Terman主动将大学土地租给科技创业公司（斯坦福工业园），形成了学术界与产业界的紧密联结。</p>
+    <p>1959年，仙童半导体（Fairchild Semiconductor）由"八叛逆"（Traitorous Eight）创立，其中包括后来创立英特尔的Robert Noyce和Gordon Moore。仙童是硅谷创业文化的DNA来源——它的离职者（"仙童之子"）后来创办了超过100家公司，其中包括Intel、AMD、Kleiner Perkins等。</p>
+    <p>与此同时，波士顿的Route 128技术走廊虽然同样有麻省理工的支撑，却因为更保守的东岸文化、更垂直整合的公司架构，最终在创业生态上输给了硅谷。这一对比成为后来研究"创业生态如何形成"的经典案例。</p>
+
+    <h3>1.3 有限合伙制度的确立（1978）</h3>
+    <p>现代VC的法律基础在1978年确立。美国劳工部澄清了ERISA（养老金法案）中的"谨慎人规则"，允许养老金将一小部分资产投入高风险资产类别——这等于打开了大规模机构资金进入VC的大门。同年，有限合伙（LP/GP结构）的税务待遇得到澄清，VC行业的现代运作框架正式成形。</p>
+    <p>1978年，全美VC行业管理资本约$50亿；到1990年代末互联网泡沫顶峰时，这一数字超过$1000亿。</p>
+
+    <h3>1.4 互联网时代、泡沫与重生</h3>
+    <p>1990年代互联网浪潮是VC历史上最戏剧化的时期。Netscape 1995年上市后，几乎所有"dotcom"公司都能融到钱、上市套现。Kleiner Perkins、Sequoia押注了亚马逊、Google、eBay；但同时，数千家没有商业模式的公司也获得了数亿美元融资。2000年泡沫破裂，NASDAQ从5048点跌至1114点，很多VC基金亏损超过50%。</p>
+    <p>泡沫之后的重建奠定了现代VC的投资纪律：<strong>商业模式验证、单位经济学、烧钱速度控制</strong>成为核心考量指标。Sequoia 2005年投资YouTube，2009年投资WhatsApp；2010年前后，移动互联网浪潮开启了VC的新黄金期。</p>
+
+    <h3>1.5 中国VC的兴起</h3>
+    <p>中国VC市场从1990年代后期开始，2000-2010年代快速壮大。最初由外资VC（IDG、Sequoia China、GGV）主导，后来本土机构（经纬中国、真格基金）崛起。中国VC的独特之处在于：互联网渗透率快速提升、监管套利空间大、国内市场体量够大支撑本土化模式，使得很多"中国版X"（中国版亚马逊、中国版Uber）都能成为独角兽。</p>
+    <p>2015-2018年是中国VC的巅峰——共享单车、直播、新零售各赛道疯狂融资，估值高歌猛进。2021年开始的监管收紧（反垄断、教育双减、数据安全）和经济放缓，使中国VC进入长达数年的寒冬。</p>
+  </section>
+
+  <!-- 2. Business Model -->
+  <section id="model" class="mb-16 scroll-mt-24">
+    <h2>02 · 商业模式：概率游戏与幂律分布</h2>
+
+    <h3>2.1 幂律分布：VC回报的核心逻辑</h3>
+    <p>VC和PE最根本的区别在于<strong>回报分布的形态</strong>。PE追求每笔交易都赚钱（1.5-3x），通过大量中等回报叠加来实现基金目标。VC的逻辑完全不同：</p>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-3">📊 典型早期VC基金的投资组合分布（10年后）</p>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-3 text-center">
+          <div class="text-2xl font-bold text-red-600">~50%</div>
+          <div class="text-xs text-stone-500 mt-1">全损（归零）</div>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-center">
+          <div class="text-2xl font-bold text-amber-600">~30%</div>
+          <div class="text-xs text-stone-500 mt-1">小赚或持平（1-2x）</div>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 text-center">
+          <div class="text-2xl font-bold text-blue-600">~15%</div>
+          <div class="text-xs text-stone-500 mt-1">中等回报（3-10x）</div>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-center">
+          <div class="text-2xl font-bold text-emerald-600">~5%</div>
+          <div class="text-xs text-stone-500 mt-1">Home run（10x+）</div>
+        </div>
+      </div>
+      <p class="text-xs text-stone-500 mt-3">关键：那5%的"本垒打"贡献了整个基金80%以上的回报。这就是幂律分布（Power Law Distribution）——VC是"不在乎打不中，只要中一个就赢"的游戏。</p>
+    </div>
+
+    <p>这意味着VC的核心竞争力不是"避免错误"，而是<strong>找到那个不会错过的机会</strong>。错过Google、错过Facebook、错过OpenAI，才是VC最大的失败——而不是投了一百个失败的项目。这一逻辑被a16z创始人Marc Andreessen表述为："宁愿打出一次本垒打，也不要一百次安打。"</p>
+
+    <h3>2.2 VC的费用结构</h3>
+    <p>和PE一样，VC通常采用2-and-20结构：2%管理费 + 20%超额收益提成（Carry）。但在实际操作中有几个细节差异：</p>
+    <ul>
+      <li><strong>管理费基数</strong>：早期VC的管理费通常基于"承诺资本"，但在投资期结束后，有些基金转为基于"净资产价值"计算，避免对已亏损资产收管理费</li>
+      <li><strong>Carry门槛</strong>：VC基金的门槛收益率（Hurdle Rate）普遍低于PE（有些没有），因为早期投资的流动性更差、时间更长</li>
+      <li><strong>基金规模更小</strong>：典型早期VC基金$1-5亿，管理费绝对额远低于大型PE；LP机构更看重carry，对管理费不那么敏感</li>
+    </ul>
+
+    <h3>2.3 投资逻辑：什么是VC看的"好项目"</h3>
+    <p>不同VC有不同的投资框架，但普遍共识是看四个维度：</p>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">① 团队（Team）</p>
+        <p class="text-xs text-stone-600 leading-relaxed">早期投资核心。创始人的执行力、行业认知、应变能力，以及团队的互补性。很多VC说"投人不投项目"——因为早期的商业模式会变，但优秀的创始人会找到路。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">② 市场（Market）</p>
+        <p class="text-xs text-stone-600 leading-relaxed">市场要足够大（TAM通常要求$10B+），且处于快速增长阶段。小市场里的好公司，也很难给VC足够的回报空间。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">③ 产品/技术（Product）</p>
+        <p class="text-xs text-stone-600 leading-relaxed">是否解决了真实痛点？产品有多差异化？技术壁垒多高？B2B SaaS看NRR（净收入留存率），消费产品看DAU/MAU和留存曲线。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <p class="font-semibold text-stone-800 mb-2">④ 商业模式（Business）</p>
+        <p class="text-xs text-stone-600 leading-relaxed">单位经济学是否健康？CAC/LTV比例如何？增长路径是否可持续？早期可以亏损，但逻辑要说得通。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Stages -->
+  <section id="stages" class="mb-16 scroll-mt-24">
+    <h2>03 · 投资阶段与策略细分</h2>
+
+    <p>VC不是一个均质的行业，不同阶段的基金逻辑、技能要求、风险特征都截然不同：</p>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">阶段</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">典型融资规模</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">代表机构</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">核心判断维度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Pre-Seed / Angel</td>
+            <td class="p-3 border border-stone-200">$10万–$50万</td>
+            <td class="p-3 border border-stone-200">天使投资人、YC等加速器</td>
+            <td class="p-3 border border-stone-200 text-stone-600">创始人判断、想法可行性，几乎无数据</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Seed</td>
+            <td class="p-3 border border-stone-200">$50万–$300万</td>
+            <td class="p-3 border border-stone-200">First Round, Founder Collective, 真格基金</td>
+            <td class="p-3 border border-stone-200 text-stone-600">早期产品反馈、初步PMF信号、团队完整性</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Series A</td>
+            <td class="p-3 border border-stone-200">$300万–$2000万</td>
+            <td class="p-3 border border-stone-200">Sequoia, a16z, 经纬中国, IDG</td>
+            <td class="p-3 border border-stone-200 text-stone-600">产品市场契合度（PMF）、早期增长指标、商业模式雏形</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Series B/C</td>
+            <td class="p-3 border border-stone-200">$2000万–$1亿</td>
+            <td class="p-3 border border-stone-200">General Catalyst, Tiger Global, 高瓴, GGV</td>
+            <td class="p-3 border border-stone-200 text-stone-600">规模化路径、单位经济学、市场份额竞争态势</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Late Stage / Pre-IPO</td>
+            <td class="p-3 border border-stone-200">$1亿+</td>
+            <td class="p-3 border border-stone-200">Coatue, Tiger Global, 软银愿景基金</td>
+            <td class="p-3 border border-stone-200 text-stone-600">收入增速、路径至盈利、IPO时机、竞争格局</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>3.1 特殊策略：CVC与加速器</h3>
+    <p><strong>CVC（Corporate Venture Capital，企业风险投资）</strong>：科技巨头的投资部门——Google Ventures (GV)、Intel Capital、腾讯投资、阿里巴巴资本。战略目标为主，财务回报为辅，往往看被投公司与母公司的生态协同价值。</p>
+    <p><strong>加速器/孵化器</strong>：Y Combinator（YC）是全球最著名的加速器，以7%股权换$12.5万投资+3个月培训+Demo Day。YC校友包括Airbnb、Dropbox、Stripe、Coinbase等。国内类似机构：创业工场、微软加速器、BAT各系孵化器。</p>
+  </section>
+
+  <!-- 4. China vs US -->
+  <section id="china-us" class="mb-16 scroll-mt-24">
+    <h2>04 · 中美VC生态深度对比</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">维度</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇺🇸 美国/硅谷</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">🇨🇳 中国</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">热门赛道（2024-2025）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">AI/LLM、生物科技、气候科技、国防科技（Anduril, Shield AI）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">硬科技（半导体、新能源）、AI应用、机器人、生物医药</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">退出环境</td>
+            <td class="p-3 border border-stone-200 text-stone-600">IPO市场回暖（2024），并购活跃，Secondary市场发达</td>
+            <td class="p-3 border border-stone-200 text-stone-600">A股IPO受限；港股流动性差；美股上市受阻；并购不成熟</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">估值文化</td>
+            <td class="p-3 border border-stone-200 text-stone-600">经历2022年下调后趋于理性，Early stage估值仍高</td>
+            <td class="p-3 border border-stone-200 text-stone-600">大幅缩水，2022-2024年整体估值下调30-50%</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">LP结构</td>
+            <td class="p-3 border border-stone-200 text-stone-600">大学捐赠基金（耶鲁模型）、养老金、主权财富基金</td>
+            <td class="p-3 border border-stone-200 text-stone-600">政府引导基金、上市公司、高净值个人、国有险资（比例受限）</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">生态系统厚度</td>
+            <td class="p-3 border border-stone-200 text-stone-600">斯坦福/MIT/哈佛知识溢出；连续创业者文化；律所/猎头/PR完整生态</td>
+            <td class="p-3 border border-stone-200 text-stone-600">BAT系创业者；清北系技术人才；政府关系是隐形竞争力</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">创始人与VC关系</td>
+            <td class="p-3 border border-stone-200 text-stone-600">创始人友好（Founder-Friendly）文化；VC竞争激烈，创始人有选择权</td>
+            <td class="p-3 border border-stone-200 text-stone-600">优质项目仍是VC抢的，但整体VC更有话语权；创始人保护条款较弱</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">OpenAI效应</td>
+            <td class="p-3 border border-stone-200 text-stone-600">AI融资占2024年全美VC总量约35%；估值通胀明显</td>
+            <td class="p-3 border border-stone-200 text-stone-600">百模大战后冷静，资金向少数有商业化落地的AI公司集中</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>4.1 中国顶级VC机构全景</h3>
+    <p><strong>外资系（在华独立运营）：</strong></p>
+    <ul>
+      <li><strong>红杉中国（HongShan）</strong>：沈南鹏，2005年成立，2023年与红杉全球分拆；投资阿里、美团、滴滴、字节跳动、微众银行等；管理规模约$500亿；定位从VC延伸到成长期投资</li>
+      <li><strong>IDG资本</strong>：熊晓鸽，中国VC元老，1993年最早进中国；投资百度、腾讯、爱奇艺、猎聘；走"陪伴式"长期投资路线</li>
+      <li><strong>GGV Capital（纪源资本）</strong>：专注中美两国，投资小红书、Grab、Airbnb；2024年宣布分拆为独立中国基金和美国基金</li>
+    </ul>
+
+    <p><strong>本土独立机构：</strong></p>
+    <ul>
+      <li><strong>经纬中国</strong>：张颖，2008年设立，以"不投概念，投数据"著称；投资陌陌、猎聘、Boss直聘、SHEIN；管理规模超$100亿</li>
+      <li><strong>真格基金</strong>：徐小平，新东方联合创始人，以种子期和天使投资为主；投资了知乎、爱回收、瓜子二手车；对创始人极度友好</li>
+      <li><strong>源码资本</strong>：曹毅，聚焦早期科技和消费；投资字节跳动（A轮）、美菜网、柔宇科技</li>
+    </ul>
+
+    <p><strong>产业系CVC：</strong></p>
+    <ul>
+      <li><strong>腾讯投资</strong>：最大CVC之一，以少数股权+生态协同为主，战略投资超700家公司；投资美团、拼多多、京东、Sea Limited</li>
+      <li><strong>阿里巴巴资本</strong>：战略投资部门，聚焦新零售、物流、金融科技</li>
+      <li><strong>字节跳动</strong>：近年崛起的CVC，投资AI、教育、游戏、出海赛道</li>
+    </ul>
+  </section>
+
+  <!-- 5. Career Path -->
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径全图</h2>
+
+    <h3>5.1 美国VC职级体系</h3>
+    <p>VC的职级比PE更扁平，团队更小（通常6-15人），职称各家不一，但大致如下：</p>
+
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { title: 'Analyst / Associate', years: '0–3年', bg: 'bg-stone-50', desc: '执行层。负责sourcing（筛选deal流）、建模、market map整理、DD。很多VC这个层级不常见，因为团队太小——有些基金直接从Principal/Partner层做所有决策。', comp: '$100k–$180k（美国）' },
+        { title: 'Senior Associate / Principal', years: '3–6年', bg: 'bg-amber-50', desc: '开始独立看项目，有自己的判断并能推动IC讨论。在小基金，这个级别已经是主要决策人；在大基金，仍主要是执行和分析支撑。', comp: '$150k–$300k' },
+        { title: 'Partner / General Partner', years: '6年+', bg: 'bg-columbia-light', desc: '真正的合伙人。主要工作：sourcing高质量交易（依靠个人关系和声誉）、管理组合公司（董事会席位）、LP关系维护（募资）。这一层的carry是主要收入来源。', comp: '$300k–$2M+（carry为主）' },
+      ].map(r => (
+        <div class={`${r.bg} border border-stone-200 rounded-xl p-4`}>
+          <div class="flex items-start justify-between mb-1.5">
+            <span class="font-semibold text-stone-800">{r.title}</span>
+            <span class="text-[11px] text-stone-400 bg-white px-2 py-0.5 rounded-full border border-stone-200">{r.years}</span>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed mb-1.5">{r.desc}</p>
+          <p class="text-xs text-columbia-navy font-medium">💰 {r.comp}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>5.2 VC的隐形天花板：Franchise Value</h3>
+    <p>VC行业有一个关键的职业壁垒——<strong>Franchise Value（个人品牌/声誉价值）</strong>。在PE，你可以通过优秀的执行工作一路晋升；但在VC，从Principal到Partner有一道几乎无法通过努力突破的墙：你是否有独立带来优质deal flow的能力？</p>
+    <p>这个能力的来源只有两个：</p>
+    <ol>
+      <li><strong>个人创业背景</strong>：自己创业过（无论成败），创业者社区的人会信任你</li>
+      <li><strong>长年积累的创始人关系网络</strong>：你认识足够多的优秀创始人，他们愿意第一时间把信息给你</li>
+    </ol>
+    <p>这就是为什么很多VC合伙人来自创始人（Zuck投资了很多硅谷朋友）、前运营者（Facebook、Google高管）、或学术界（斯坦福教授）——而不是从分析师一路做上来。</p>
+  </section>
+
+  <!-- 6. Daily Life -->
+  <section id="daily" class="mb-16 scroll-mt-24">
+    <h2>06 · 真实工作日常</h2>
+
+    <h3>6.1 Analyst/Associate的一周</h3>
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// VC Associate的时间分配（无活跃交易时）</p>
+      <p>📥 Deal Sourcing: ~40%</p>
+      <p>   - 筛选inbound（邮件、推荐、Deck）：每周50-200份</p>
+      <p>   - Outbound sourcing：主动寻找目标公司（LinkedIn, AngelList）</p>
+      <p>   - 参加meetup/conference，维护创业者关系</p>
+      <p></p>
+      <p>🔍 DD与分析: ~30%</p>
+      <p>   - 市场调研（市场规模、竞争格局）</p>
+      <p>   - 与创始人的深度交流</p>
+      <p>   - 客户调研、背景调查</p>
+      <p>   - IC备忘录写作</p>
+      <p></p>
+      <p>📊 Portfolio支持: ~20%</p>
+      <p>   - 跟进组合公司运营数据</p>
+      <p>   - 帮助对接潜在客户/合伙人/员工</p>
+      <p>   - 协助后续融资（介绍给后轮投资人）</p>
+      <p></p>
+      <p>🗂️ 内容/品牌/LP: ~10%</p>
+      <p>   - 写行业观察文章（VC靠内容建声誉）</p>
+      <p>   - 参与LP报告准备</p>
+      <p>   - 维护基金的行业地图/研究</p>
+    </div>
+
+    <h3>6.2 "VC很轻松"是最大的误解之一</h3>
+    <p>VC的工作时长通常比IB少（50-60小时/周，高峰时70+），但这不意味着工作轻松。VC的难点在于另一个维度：</p>
+    <ul>
+      <li><strong>极高的模糊性（Ambiguity）</strong>：没有明确的对错，所有判断都是概率性的</li>
+      <li><strong>漫长的反馈周期</strong>：一笔投资好不好，要5-10年才知道。没有月度KPI衡量你的工作质量</li>
+      <li><strong>大量无效会议</strong>：筛选100个项目，可能只投1-2个。99%的工作产出是"不投"</li>
+      <li><strong>永远都在社交</strong>：VC的本质是关系业务，边界感差的人会感到身心俱疲</li>
+    </ul>
+
+    <h3>6.3 真实声音</h3>
+    <div class="not-prose space-y-3 my-6">
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "VC的日常其实不够性感。很多时间花在看烂项目、写被拒的理由、更新数据库。真正exciting的——见到一个让你觉得'这个人要改变世界'的创始人——每年大概发生5次。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 知乎匿名，某早期VC Associate，北京</cite>
+      </blockquote>
+      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
+        "最难的不是分析，是不确定性。你投了一个公司，3年没消息，也没亏没赚，你不知道自己是天才还是蠢货。这种心理压力比IB的清晰KPI更难扛。"
+        <cite class="block text-xs text-stone-400 not-italic mt-2">— 一亩三分地，美国某中型VC Principal，硅谷</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 7. Salary -->
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>07 · 薪酬结构</h2>
+
+    <p>VC的薪酬在金融行业里是个异类——<strong>比PE低、比投行可能也低</strong>，尤其在初级阶段。但这是VC行业的公开秘密，也是很多人在选择时需要想清楚的。</p>
+
+    <h3>7.1 美国VC薪酬（2024，各基金差异很大）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">基本工资</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">年终奖金</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">Carry</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Analyst</td>
+            <td class="p-3 border border-stone-200">$80k–$130k</td>
+            <td class="p-3 border border-stone-200">$20k–$50k</td>
+            <td class="p-3 border border-stone-200 text-stone-400">极少/无</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">部分基金不设此级别</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Associate</td>
+            <td class="p-3 border border-stone-200">$120k–$180k</td>
+            <td class="p-3 border border-stone-200">$30k–$80k</td>
+            <td class="p-3 border border-stone-200 text-stone-400">少量（0.1-0.5%）</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">大基金略高，小基金可能更低</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">Principal / VP</td>
+            <td class="p-3 border border-stone-200">$200k–$350k</td>
+            <td class="p-3 border border-stone-200">$100k–$200k</td>
+            <td class="p-3 border border-stone-200">0.5-2%</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">Carry价值取决于基金表现，存在巨大不确定性</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">Partner / GP</td>
+            <td class="p-3 border border-stone-200">$300k–$600k</td>
+            <td class="p-3 border border-stone-200">$200k–$1M</td>
+            <td class="p-3 border border-stone-200 text-emerald-700 font-medium">2-10%（潜在数百万）</td>
+            <td class="p-3 border border-stone-200 text-stone-500 text-xs">基金业绩好时，carry可超过$10M</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">数据来源：Venture Capital Journal, Kauffman Fellows Program薪酬报告, 一亩三分地匿名薪酬数据。注：Sequoia、a16z等顶级VC的薪酬高于行业平均；小型早期基金的薪酬可能只有中位数的50%。</p>
+
+    <h3>7.2 中国VC薪酬（2024）</h3>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 border border-stone-200 font-semibold">职级</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">头部外资/顶级本土VC</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">中型本土VC</th>
+            <th class="text-left p-3 border border-stone-200 font-semibold">CVC（BAT系）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">分析师/助理</td>
+            <td class="p-3 border border-stone-200">25–50万/年</td>
+            <td class="p-3 border border-stone-200">15–30万/年</td>
+            <td class="p-3 border border-stone-200">30–60万/年</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">投资经理</td>
+            <td class="p-3 border border-stone-200">50–100万/年</td>
+            <td class="p-3 border border-stone-200">30–60万/年</td>
+            <td class="p-3 border border-stone-200">60–120万/年</td>
+          </tr>
+          <tr>
+            <td class="p-3 border border-stone-200 font-medium">副总裁/总监</td>
+            <td class="p-3 border border-stone-200">100–300万+carry</td>
+            <td class="p-3 border border-stone-200">60–150万+carry</td>
+            <td class="p-3 border border-stone-200">120–250万</td>
+          </tr>
+          <tr class="bg-stone-50">
+            <td class="p-3 border border-stone-200 font-medium">合伙人</td>
+            <td class="p-3 border border-stone-200" colspan="3">Carry为主，好年份数百万至数千万元人民币</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-stone-400">注：2022-2024年中国VC行业寒冬，整体薪酬下行明显。部分VC裁员或降薪，CVC（BAT系）受益于母公司现金流，薪酬稳定性更高。数据来源：知乎专栏，脉脉匿名薪酬，仅供参考。</p>
+
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-2">⚡ 为什么VC的基础薪酬低于PE？</p>
+      <p>VC基金规模比PE小，管理费收入有限。一个$3亿的早期VC基金，2%管理费只有$600万/年，要支付5-8人团队的薪酬、办公室租金、差旅等，留给每人的薪资空间自然有限。真正的钱在Carry——但Carry需要至少8-10年的等待和基金成功退出。</p>
+    </div>
+  </section>
+
+  <!-- 8. Recruiting -->
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>08 · 入行路径：比PE更难预测</h2>
+
+    <h3>8.1 VC没有标准招聘路径</h3>
+    <p>这是VC与IB/PE最大的区别：<strong>VC没有标准化的招聘流程</strong>。很多VC职位从不公开招聘，完全通过个人网络内推；有些基金几年才招一次人；有些小基金合伙人直接招他们认识的有趣的人，不管简历。</p>
+
+    <p><strong>进入VC的几条主要路径（概率从高到低）：</strong></p>
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { num: '①', title: '创业背景', desc: '自己创过业（无论成败），是进VC最被认可的背景。VC投资创始人，创业者理解创始人，这是天然的信任基础。尤其进入种子期和A轮VC。' },
+        { num: '②', title: '行业专家背景', desc: '在某个热门VC赛道有深度从业经历（AI工程师、生物技术博士、医院医生）。"行业洞察比金融技能更难复制"是很多VC的选人逻辑。' },
+        { num: '③', title: '顶级IB/PE背景', desc: '传统金融背景，在大型PE或顶级投行工作2-4年后。这一路径在成长型VC（General Atlantic类）和以财务分析见长的基金更受欢迎。' },
+        { num: '④', title: '顶级咨询背景', desc: 'MBB咨询+特定行业专长，适合运营型VC或以行业研究见长的基金。McK私人投资部门（MIO）是个特殊入口。' },
+        { num: '⑤', title: '顶校MBA/MPA直接进', desc: '哈佛/斯坦福/沃顿MBA后有一定机会，但竞争极激烈。SIPA/Columbia的公共政策背景进入政策相关赛道的VC（气候、医疗、公共政策驱动产业）相对有差异化。' },
+      ].map(r => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 flex gap-3">
+          <span class="text-xl font-bold text-columbia-navy flex-shrink-0">{r.num}</span>
+          <div>
+            <p class="font-semibold text-stone-800 mb-1">{r.title}</p>
+            <p class="text-sm text-stone-600 leading-relaxed">{r.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <h3>8.2 SIPA学生的VC入行建议</h3>
+    <div class="not-prose bg-columbia-light border border-columbia-blue/20 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed my-6">
+      <p class="font-semibold text-stone-800 mb-3">🎓 SIPA背景如何差异化切入VC？</p>
+      <ul class="space-y-2">
+        <li><strong>气候/深科技VC</strong>：SIPA的政策分析背景在气候科技VC（Breakthrough Energy、Lux Capital等）是真正的差异化优势——监管环境判断、政府关系、政策风险是这类VC极需的视角。</li>
+        <li><strong>国际化/新兴市场VC</strong>：东南亚、中东、非洲的成长VC（如Sequoia Southeast Asia、Vertex Ventures）会对有国际政策/经济背景的候选人感兴趣。</li>
+        <li><strong>CVC路径</strong>：通过IB/咨询积累行业知识，再进入科技公司的战略投资部门（阿里/腾讯CVC，Google Ventures等）。</li>
+        <li><strong>Scout Program</strong>：部分VC（包括a16z、First Round）有Scout Program，让大学生/研究生推荐早期项目，以小量carry作为激励——这是零门槛接触VC的方式。</li>
+      </ul>
+    </div>
+
+    <h3>8.3 中国VC招聘特点</h3>
+    <p>中国VC招聘比美国更依赖"圈子"和内推。求职策略：</p>
+    <ul>
+      <li>顶级VC（红杉、经纬）：要求名校背景+互联网/科技行业实习+逻辑清晰的行业观点；有时接受直接校招研究生</li>
+      <li>产业系CVC（BAT）：更系统化，走校招+实习转正路径，金融和产品背景都可</li>
+      <li>早期VC：最难预测，最好的方式是融入创业者圈子，让基金合伙人认识你</li>
+    </ul>
+  </section>
+
+  <!-- 9. Trends -->
+  <section id="trends" class="mb-16 scroll-mt-24">
+    <h2>09 · 2025–2030 行业趋势</h2>
+
+    <h3>9.1 AI重构VC行业本身</h3>
+    <p>AI不只是VC的投资标的，也在重塑VC的运作方式。AI工具已经被用于：</p>
+    <ul>
+      <li><strong>Deal Sourcing自动化</strong>：Mattermark、Grata、Sourcescrub等工具扫描数百万家公司，自动识别潜在投资标的</li>
+      <li><strong>市场研究加速</strong>：VC associate可以在数小时内完成以前需要一周的市场调研</li>
+      <li><strong>组合公司监控</strong>：实时跟踪组合公司的增长指标、竞争动态、人才流失信号</li>
+    </ul>
+    <p>但这也意味着：VC的差异化越来越不来自"分析能力"（AI会做），而来自<strong>判断力、关系和接触优秀创始人的能力</strong>。VC的护城河在上移。</p>
+
+    <h3>9.2 AI独角兽估值泡沫？</h3>
+    <p>2023-2024年，AI创业公司的估值出现明显泡沫化迹象：</p>
+    <ul>
+      <li>OpenAI估值超过$1000亿，同期收入约$20亿——P/S倍数超50x</li>
+      <li>大量AI应用公司在无产品/无收入阶段融到$5000万+</li>
+      <li>很多VC对AI赛道的FOMO（错过恐惧）驱动了非理性竞争</li>
+    </ul>
+    <p>2025年，市场开始分化：有真实商业化落地的AI公司继续获得高估值融资；没有差异化的"Wrapper"公司（只是OpenAI API的封装）估值大幅缩水。VC在AI领域的投资纪律重新回归基本面。</p>
+
+    <h3>9.3 硬科技的长期主义</h3>
+    <p>互联网VC时代（2010-2020）的特征是：快速迭代、短周期验证、重网络效应。下一个十年，VC行业的重心正在转向需要更长周期的"硬科技"赛道：</p>
+    <ul>
+      <li><strong>生物科技/基因治疗</strong>：资金门槛高（$5亿+）、时间周期长（10-15年），需要科学家型VC</li>
+      <li><strong>气候科技/能源转型</strong>：政策驱动+技术突破，需要政策判断能力</li>
+      <li><strong>国防科技</strong>：Anduril、Shield AI的成功带动了Defense Tech投资浪潮</li>
+      <li><strong>机器人/自动化</strong>：AI+硬件，周期比纯软件更长</li>
+    </ul>
+
+    <h3>9.4 中国VC：熬过寒冬，聚焦硬科技</h3>
+    <p>中国VC的战略重心已从消费互联网全面转向：</p>
+    <ul>
+      <li><strong>半导体国产替代</strong>：政府大力支持，资金涌入，但真正的技术突破需要时间</li>
+      <li><strong>新能源产业链</strong>：动力电池、光伏、储能，宁德时代系创业者成为新热门标的</li>
+      <li><strong>AI应用本土化</strong>：大模型层基本被BAT/华为占据，应用层仍有机会</li>
+      <li><strong>机器人（工业+服务）</strong>：2024-2025年最热门的中国VC赛道之一，对标特斯拉Optimus</li>
+    </ul>
+  </section>
+
+  <!-- 10. Fit -->
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>10 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+        <p class="font-semibold text-emerald-800 mb-3">✅ VC可能适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>🎯 真的对技术趋势和创业生态有持续的好奇心</li>
+          <li>🤝 享受认识有趣的人并建立长期关系</li>
+          <li>🧠 能在极度不确定性中保持判断力</li>
+          <li>💡 有自己独特的"见解"——对某个行业有别人没有的洞察</li>
+          <li>⏳ 接受10年后才知道自己做对了还是做错了</li>
+          <li>🌱 愿意帮助创始人，不只是评判他们</li>
+          <li>🌍 对特定领域（AI/生物/气候）有深度知识积累</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ VC可能不适合你，如果……</p>
+        <ul class="space-y-2 text-sm text-stone-700">
+          <li>🚫 你主要被"高薪"吸引（VC早年薪酬不高）</li>
+          <li>🚫 喜欢明确的工作成果和可量化的KPI</li>
+          <li>🚫 不喜欢社交和维护关系（VC本质是关系业务）</li>
+          <li>🚫 没有特别专注的领域，什么都感兴趣但不深入</li>
+          <li>🚫 期待3-5年内快速晋升（VC晋升慢、职位少）</li>
+          <li>🚫 希望工作有清晰的方法论（VC无法被算法化）</li>
+          <li>🚫 对创业者的异想天开缺乏耐心</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm text-stone-700 leading-relaxed">
+      <p class="font-semibold text-stone-800 mb-2">💬 一个值得深思的问题</p>
+      <p>VC是一个"见者很多，做好者极少"的行业。在美国，超过60%的VC基金长期回报低于标普500。成功的VC合伙人通常具备的共同特征不是顶级名校背景或金融技能，而是：<strong>对某个领域有真正深刻的理解，以及建立可信任关系的能力</strong>。如果你的目标是"进金融圈"，VC可能不是最好的选择；如果你的目标是"影响下一代技术的方向"，VC可能是最有意思的游戏。</p>
+    </div>
+  </section>
+
+  </div>
+
+  <!-- Sources -->
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    <p class="font-medium text-stone-500 mb-1">数据来源与参考</p>
+    <p>薪酬数据参考：Venture Capital Journal 2024, Kauffman Fellows Program Annual Report, 一亩三分地匿名薪酬讨论, 脉脉职场数据。行业数据：PitchBook-NVCA Venture Monitor 2024, Preqin Global VC Report, CB Insights State of Venture 2024。中国市场数据：清科研究院2024年中国VC/PE报告, 中国证券投资基金业协会公开数据。以上数据仅供参考，实际情况差异较大。</p>
+  </div>
+
+  <!-- Bottom nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between items-center text-sm">
+    <a href="/industry/finance/private-equity/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+      上一篇：私募股权（PE）
+    </a>
+    <a href="/industry/finance/hedge-funds/" class="flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy no-underline group">
+      下一篇：对冲基金（Hedge Funds）
+      <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span>
+    </a>
+  </div>
+</Base>
