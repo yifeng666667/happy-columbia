@@ -1,0 +1,148 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/education-consulting/study-abroad/',
+    emoji: '✈️',
+    title: '留学申请咨询',
+    titleEn: 'Study Abroad Consulting',
+    desc: '帮助学生申请海外大学/研究生项目——中国最具规模的教育服务细分市场。从文书写作到签证辅导，SIPA学生有独特的亲历优势。',
+    tags: ['文书辅导', '选校策略', '面试准备', '签证'],
+    status: 'published',
+  },
+  {
+    href: '/industry/education-consulting/edtech/',
+    emoji: '💻',
+    title: '教育科技 / EdTech',
+    titleEn: 'EdTech & Online Education',
+    desc: 'Coursera、Duolingo、VIPKID等——用技术规模化教育。产品、运营、增长、内容各类岗位，科技公司的工作方式与教育赛道结合。',
+    tags: ['产品运营', '增长黑客', '在线教育', 'B端销售'],
+    status: 'published',
+  },
+  {
+    href: '/industry/education-consulting/intl-education/',
+    emoji: '🏫',
+    title: '国际教育项目管理',
+    titleEn: 'International Education Programs',
+    desc: '大学国际办公室、交换项目管理、国际学校——在机构内部做教育项目设计与运营，相对稳定但晋升路径偏窄。',
+    tags: ['项目管理', '学生服务', '政策合规', '国际关系'],
+    status: 'published',
+  },
+];
+---
+
+<Base title="教育咨询与留学行业" description="留学申请、EdTech、国际教育项目——教育行业的职业路径与现实挑战">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    所有行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-teal-50 text-teal-700 border border-teal-200 font-semibold px-3 py-1 rounded-full">Education & Consulting</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      教育咨询 / 留学行业
+    </h1>
+    <p class="text-stone-500 text-sm leading-relaxed max-w-2xl mb-8">
+      教育是最具中国特色的刚性需求行业之一。高考内卷、留学热潮、职场技能培训——每个阶段都催生了庞大的市场。对于SIPA毕业生来说，留学经历本身就是最有说服力的简历资产。
+    </p>
+
+    <!-- Industry context -->
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+      {[
+        { label: '中国留学顾问市场', value: '500亿+', sub: '2023年，机构端市场规模（新东方/启德/艾德等）' },
+        { label: '全球EdTech市场', value: '$340B', sub: '2025年预计规模，AI课程、在线学习平台驱动' },
+        { label: '中国留学生规模', value: '150万+', sub: '年在外留学人数，申请需求持续旺盛' },
+      ].map(s => (
+        <div class="bg-teal-50 border border-teal-200 rounded-xl px-5 py-4 text-center">
+          <div class="font-bold text-teal-800 text-xl mb-0.5">{s.value}</div>
+          <div class="text-teal-700 text-xs font-medium mb-1">{s.label}</div>
+          <div class="text-teal-600/70 text-[10px]">{s.sub}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Honest framing -->
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-900 leading-relaxed">
+      <strong>先说清楚：</strong>教育咨询的薪资天花板通常低于金融和咨询，但工作与生活的平衡更好，且"帮助别人改变人生轨迹"的成就感是真实的。留学顾问行业有大量中小机构，头部机构竞争激烈。EdTech经历了2021年后中国"双减"政策的行业性打击——了解这段历史对判断当前机会至关重要。
+    </div>
+  </header>
+
+  <!-- Sector cards -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">细分方向</h2>
+    <div class="space-y-4">
+      {sectors.map(s => (
+        <a href={s.href} class="block bg-white border border-stone-200 rounded-2xl p-6 hover:border-teal-300 hover:shadow-sm transition-all no-underline card-lift">
+          <div class="flex items-start gap-4">
+            <span class="text-3xl shrink-0">{s.emoji}</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2 mb-1">
+                <span class="font-bold text-stone-900 text-base">{s.title}</span>
+                <span class="text-stone-400 text-xs">{s.titleEn}</span>
+              </div>
+              <p class="text-xs text-stone-500 leading-relaxed mb-3">{s.desc}</p>
+              <div class="flex flex-wrap gap-1.5">
+                {s.tags.map(t => (
+                  <span class="text-[10px] bg-teal-50 text-teal-700 border border-teal-200 px-2 py-0.5 rounded-full">{t}</span>
+                ))}
+              </div>
+            </div>
+            <span class="text-stone-300 text-lg shrink-0">→</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SIPA angle -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">为什么 SIPA 背景在这里有优势</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        { title: '亲历即产品', desc: 'SIPA申请过程、录取过程、在校学习体验——这些都是留学顾问最宝贵的第一手素材。能帮Top School的申请者，说服力远超纯理论顾问。' },
+        { title: '政策分析能力', desc: '移民政策（OPT/H1B）、留学签证变化、目标国高校政策——这些都需要能快速读懂政策文本的能力，SIPA训练直接适配。' },
+        { title: '网络资源', desc: '哥大校友网络跨行业覆盖。帮学生找到对口校友做信息性访谈（Information Interview），是高端留学服务的核心价值之一。' },
+        { title: '全球视野', desc: '帮助学生判断：美国、英国、欧洲、香港——哪个项目更适合哪种career goal？这种判断需要真正的国际经验，不是百度能解决的。' },
+      ].map(item => (
+        <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl p-5">
+          <p class="font-bold text-columbia-navy text-sm mb-2">{item.title}</p>
+          <p class="text-xs text-columbia-navy/70 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- China EdTech context -->
+  <section class="mb-12">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">中国教育行业的历史背景（必读）</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-3">
+      <p>2021年7月，中国出台"双减"政策，全面禁止K9阶段学科类课外培训机构以营利性方式运营。这场政策地震让<strong class="text-stone-800">新东方、好未来等头部EdTech公司市值蒸发超过70%</strong>，数十万从业人员失业。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-2">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+          <p class="font-bold text-red-800 mb-2 text-xs">受冲击最大的方向</p>
+          <ul class="text-xs text-red-700 space-y-1">
+            <li>• K12学科培训（英语、数学、语文）</li>
+            <li>• 线下补习班连锁</li>
+            <li>• 直播课大班模式</li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+          <p class="font-bold text-emerald-800 mb-2 text-xs">相对不受影响的方向</p>
+          <ul class="text-xs text-emerald-700 space-y-1">
+            <li>• 高等教育/职业培训（合法）</li>
+            <li>• 留学申请咨询（不受限）</li>
+            <li>• 国际学校（外籍/港澳台学生）</li>
+            <li>• 企业培训/B端EdTech</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-xs text-stone-500">新东方在危机中转型：俞敏洪带领公司转向农产品直播带货（东方甄选），意外做成了爆款。这个案例说明了教育创业者的韧性，也说明了中国政策风险对行业的实质影响。</p>
+    </div>
+  </section>
+
+</Base>

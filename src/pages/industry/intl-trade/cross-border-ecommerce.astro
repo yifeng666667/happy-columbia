@@ -1,0 +1,144 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="跨境电商深度解析" description="Amazon、Shopify、Temu、TikTok Shop——跨境电商的职业路径与平台规则全景">
+
+  <a href="/industry/intl-trade/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    外贸与国际贸易
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-indigo-50 text-indigo-700 border border-indigo-200 font-semibold px-3 py-1 rounded-full">Intl Trade · Cross-Border E-Com</span>
+      <span class="text-[10px] font-medium text-emerald-600 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">入行难度：低（但竞争激烈）</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      跨境电商
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Cross-Border E-Commerce — 中国制造直达全球消费者，绕过传统中间商</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '中国跨境电商规模', value: '2.38万亿' },
+        { label: '主平台', value: 'Amazon/Temu/TikTok' },
+        { label: '核心能力', value: '运营+数据+选品' },
+        { label: '创业门槛', value: '低（可独立起步）' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. Platform landscape -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 平台格局（2025）</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        { platform: 'Amazon', model: 'FBA / 第三方卖家', desc: '全球最大电商平台，规则严格，封号风险高。竞争最激烈，利润率受到价格竞争和广告费挤压，但规模天花板最高。中国卖家占Amazon第三方卖家的40%+。', challenge: '账号安全+广告成本控制' },
+        { platform: 'Temu（拼多多海外版）', model: '托管模式（完全托管/半托管）', desc: '极低价格策略冲击市场，平台掌控物流和定价，卖家只需供货。利润薄但流量大，适合大批量低客单价商品。2023年底在北美市场用户数超过Amazon部分品类。', challenge: '价格竞争导致利润极低' },
+        { platform: 'Shopify独立站', model: 'DTC（直接面向消费者）', desc: '自建品牌生态，通过Meta Ads/Google Ads/TikTok引流。全面掌控用户数据和品牌定位，利润率高但流量获取成本高。适合中高客单价、有品牌化意愿的卖家。', challenge: '获客成本高，需要强运营能力' },
+        { platform: 'TikTok Shop', model: '内容电商（直播+短视频带货）', desc: '2023–2024年快速扩张，美国市场后来居上。内容驱动，达人合作是核心流量来源。但美国TikTok立法（2025年禁令风险）带来政策不确定性。', challenge: '平台政策不稳定，内容创作成本高' },
+        { platform: '速卖通（AliExpress）', model: '批发+零售混合', desc: '阿里系出海平台，深耕欧洲和中东。全球速卖通转型"Choice模式"后，向快时尚靠近。在欧洲和拉美市场有较强基础。', challenge: '品牌认知弱，物流速度不稳定' },
+        { platform: 'SHEIN', model: '快时尚 + 平台开放', desc: '从自营快时尚转向开放平台（SHEIN Marketplace）。供应链极度高效，从设计到上架可以在7天内完成。2024年IPO在即，但供应链劳工议题持续受关注。', challenge: '监管压力（劳工/知识产权）' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-center justify-between mb-2">
+            <p class="font-bold text-stone-900 text-sm">{item.platform}</p>
+            <span class="text-[10px] bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full">{item.model}</span>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed mb-2">{item.desc}</p>
+          <p class="text-[10px] text-amber-700">核心挑战：{item.challenge}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. Career roles -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 行业岗位类型</h2>
+    <div class="space-y-3">
+      {[
+        { role: '跨境电商运营', desc: 'Amazon/Shopify店铺运营——选品、上架优化（Listing）、广告投放（PPC）、库存管理、客服。是最常见的入行路径，上手快但竞争激烈。', salary: '国内10–30万/年，优秀运营可更高' },
+        { role: '选品分析师', desc: '分析市场趋势、竞争格局、利润空间，决定下一个主推产品。需要数据工具（Jungle Scout、Helium 10）能力+供应链理解。', salary: '国内15–35万/年' },
+        { role: 'Amazon广告专家（PPC）', desc: '专职管理Amazon Ads，优化ACoS（广告销售成本比）和ROAS。数字营销能力在电商场景的专业化版本。', salary: '国内15–40万/年（资深运营）' },
+        { role: 'DTC品牌增长经理', desc: '负责独立站用户获取（Facebook/TikTok广告）、邮件营销、用户留存。需要全渠道整合营销能力，是跨境电商中最接近科技公司工作方式的岗位。', salary: '国内25–60万/年' },
+        { role: '跨境电商合规专员', desc: '处理海外平台规则合规（侵权申诉、账号申诉）、海外进口税务（VAT注册）、产品安全认证（CE/FCC）。合规+法律背景，需求快速增长。', salary: '国内15–30万/年' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <span class="font-bold text-stone-900 text-sm block mb-1">{l.role}</span>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{l.desc}</p>
+            <p class="text-[10px] text-indigo-600">薪资参考：{l.salary}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3. 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">跨境电商运营的工作节奏：数据是你的仪表盘，平台算法是你的老板。</p>
+
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4">场景 A · Amazon 运营 · 黑五大促前冲刺</p>
+        <p class="text-stone-400 text-xs mb-4">11月初，黑五前三周，最重要的销售窗口</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">看昨天的广告数据：ACoS从22%涨到31%——竞品在关键词上加价抢排名。要不要跟？计算一下：利润空间还剩多少，超过35%就要暂停</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-500">检查FBA库存：黑五前30天，某款主推产品库存只剩800件，按目前销速还有45天。补货船期需要35天，计算紧急航运 vs 正常海运的成本差——航运运费贵3倍，值不值</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">Listing优化：A+内容图片重新设计（黑五主题），调整标题关键词密度，更新Bullet Points强调"Limited Holiday Offer"</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">一个1星差评出现：买家说"颜色与图片不符"。这是产品图片的问题。回复用户，申请删除Feedback的同时联系摄影师重拍主图</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">黑五Lightning Deal申请提交：5款产品申请，平台审核期5天。折扣设置要考虑：促销价是否仍有利润？促销期间广告预算需要扩大几倍？</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4">场景 B · Shopify 独立站增长经理</p>
+        <p class="text-stone-400 text-xs mb-4">DTC家居品牌，主打北美市场，月营业额$20万目标</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">检查Meta Ads后台：昨天三组广告ROAS分别是3.1/2.4/1.8。ROAS1.8的组明显亏钱——关停，预算转移到3.1那组，并复制其受众做新变体</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">分析购物车弃单率（Cart Abandonment Rate）：昨天68%，太高。查看录屏工具（Hotjar）——用户在运费出现那一刻离开。和老板讨论是否改成"$50以上免运费"策略</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">TikTok达人合作邮件：联系了5个家居类KOC（5万–20万粉丝），提供免费产品换原生内容视频。其中3个回复，一个要求额外费用——谈判中</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">邮件营销：设计"感恩节特别礼盒"的Email Flow：3封序列邮件（预热→促销→最后机会），配合自动化工具Klaviyo分组发送给不同客户群</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:30</span><span class="text-stone-300">月度报告：对比MoM指标——新客获取成本$28→$31（上涨，需要改善），回购率22%（持平），AOV $89（上涨，捆绑销售有效）</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: 'Amazon 账号封禁风险：一夜回到解放前', desc: 'Amazon是全球最严格的电商平台之一。违反政策（刷评、跟卖侵权、标题堆关键词）会被直接封号，几百万的库存被冻结，账户余额暂扣30–90天。这种风险不是小概率事件——中国卖家在2021年的集体封号风波中，数千个账号被关闭。', color: 'border-indigo-400' },
+        { n: '02', title: '平台政策随时可能改变规则', desc: 'TikTok可能被美国封禁（2025年一度执行）；Amazon更新FBA费率结构；Meta调整广告数据隐私政策——这些变化可以在一夜之间改变你的商业模式。依赖单一平台是最大的风险，但做好多平台运营又需要大量资源。', color: 'border-red-400' },
+        { n: '03', title: '利润被广告费和平台佣金侵蚀', desc: 'Amazon平台费用约15%佣金 + FBA物流费 + 广告成本（通常占营业额的15%–25%）。加上产品成本和运费，很多卖家的净利润低于10%。在行业竞争激烈时，利润空间可以薄到忽略不计，一次价格战就能让你亏损。', color: 'border-amber-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/intl-trade/trading-companies/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 外贸企业/进出口</a>
+    <a href="/industry/intl-trade/supply-chain/" class="text-columbia-blue hover:underline no-underline">供应链与采购 →</a>
+  </div>
+</Base>

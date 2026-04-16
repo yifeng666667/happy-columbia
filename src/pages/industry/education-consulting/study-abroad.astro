@@ -1,0 +1,218 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="留学申请咨询顾问深度解析" description="留学顾问的真实日常、薪资路径、如何用SIPA经历建立高端咨询竞争力">
+
+  <a href="/industry/education-consulting/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    教育咨询 / 留学行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-teal-50 text-teal-700 border border-teal-200 font-semibold px-3 py-1 rounded-full">Education · Study Abroad</span>
+      <span class="text-[10px] font-medium text-teal-600 bg-teal-50 border border-teal-200 px-2.5 py-1 rounded-full">入行难度：低至中</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      留学申请咨询顾问
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Study Abroad Consulting — 用亲身经历帮别人走你走过的路</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '中国市场规模', value: '500亿+' },
+        { label: '主要玩家', value: '新东方/启德/留学360' },
+        { label: '核心竞争力', value: '名校经历+文书能力' },
+        { label: '创业门槛', value: '低（个人顾问可起步）' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. Industry overview -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 留学咨询行业全景</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>中国留学咨询行业分三层：头部机构（新东方前途出国、启德教育、留学360）、中型区域机构（各省市中小品牌）、独立顾问/精品工作室（个人品牌驱动）。SIPA毕业生最适合从事的是第三类——名校亲历 + 个人品牌建立。</p>
+      <div class="grid sm:grid-cols-3 gap-3">
+        {[
+          { tier: '头部机构', desc: '标准化服务，服务几千名学生/年。文书有模板，顾问流动率高，客单价中等（$3k–$10k）。入职培训完善但上升空间有限。', pros: '平台大、稳定', cons: '个性化低、内卷' },
+          { tier: '中型区域机构', desc: '地方龙头，服务质量参差不齐。部分有专注某类院校的垂直专长（如英国、澳洲）。薪资中等，文化取决于创始人。', pros: '资源集中', cons: '发展受地域限制' },
+          { tier: '独立顾问/精品工作室', desc: '名校背景驱动，高客单价（$15k–$50k+）服务少数精准学生。需要建立个人品牌，初期获客难，但成熟后收入弹性极大。', pros: '高收入潜力、自主', cons: '初期获客难、不稳定' },
+        ].map(t => (
+          <div class="bg-white border border-stone-200 rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-900 mb-2 text-sm">{t.tier}</p>
+            <p class="text-stone-500 leading-relaxed mb-3">{t.desc}</p>
+            <div class="flex flex-col gap-1">
+              <span class="text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-2 py-0.5 text-[10px] w-fit">✓ {t.pros}</span>
+              <span class="text-red-700 bg-red-50 border border-red-200 rounded-full px-2 py-0.5 text-[10px] w-fit">✗ {t.cons}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Career path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 职业路径</h2>
+    <div class="space-y-3">
+      {[
+        { stage: '留学顾问助理 / 咨询顾问', years: '0–2年', salary: '国内8–20万/年', desc: '协助顾问对接学生，撰写文书初稿，了解目标院校和申请流程。在机构中是执行层。' },
+        { stage: '资深顾问 / 高级咨询师', years: '2–5年', salary: '国内20–50万/年', desc: '独立管理学生案例，负责从选校策略到材料准备的全流程。在中小机构可带团队。' },
+        { stage: '独立顾问 / 精品工作室合伙人', years: '3年+', salary: '视案例量，弹性大', desc: '依托个人品牌和口碑获客，每年服务10–30名精准学生。头部独立顾问年收入可超百万人民币。' },
+        { stage: 'SIPA专项方向：跨文化教育项目管理', years: '5年+', salary: '视机构而定', desc: '从个人咨询转向机构合作——与大学国际办公室、交流项目合作，做项目制服务而非个人对接。' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.stage}</span>
+              <span class="text-[10px] text-stone-400">{l.years}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed">{l.desc}</p>
+          </div>
+          <div class="shrink-0 text-right">
+            <div class="font-bold text-columbia-navy text-xs">{l.salary}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. SIPA advantage -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. SIPA 背景的具体竞争力</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-4">
+      <p>留学顾问市场最大的差异化点是：<strong class="text-columbia-navy">顾问自己是不是真的从名校申请过、读过、活过来的？</strong>哥大/SIPA的背书让你在Premium咨询市场中直接站在第一梯队。</p>
+      <div class="grid sm:grid-cols-2 gap-3">
+        {[
+          { title: '文书能力', desc: '政策分析类文书、逻辑严密的论证结构——SIPA训练的写作能力直接转移到Personal Statement、SOP写作辅导上。' },
+          { title: '选校策略判断', desc: 'SIPA、HKS、SAIS、LSE的差异——你有亲身经历。帮申请政策类研究生的学生判断哪个项目更适合，是SIPA学生的绝对优势。' },
+          { title: '校友网络激活', desc: '帮学生约到Columbia/Harvard/LSE校友做Information Interview，这本身就是高端服务的核心价值，非名校顾问无法复制。' },
+          { title: 'OPT/H1B政策理解', desc: 'SIPA政策课程的副产品——理解移民法规、签证政策变化，能给学生更完整的"申请后路径"建议，而不只是谈录取。' },
+        ].map(item => (
+          <div class="bg-white rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1">{item.title}</p>
+            <p class="text-stone-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">留学顾问的时间是被申请季主导的——10月到次年1月是高峰，夏天是相对淡季。</p>
+
+    <!-- Two scenario panels -->
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-teal-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 独立顾问 · 申请季冲刺日</p>
+        <p class="text-stone-400 text-xs mb-4">11月初，学生A的Columbia SIPA Early Decision材料截止日期还有72小时</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">视频会议：和学生A过第4稿Personal Statement。第二段"Why Policy"的逻辑还是太抽象，要求加入一个具体经历作为anchor</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-300">整理学生B（申请MBA）的文书材料包。检查Resume格式、两篇Essay字数、推荐信状态——还有一封没提交，WhatsApp催推荐老师</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">学生A发来第5稿。开篇改好了，但结尾弱。回复详细批注：结尾要呼应开篇，用哥大的具体课程/教授名字说明"fit"</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">新咨询来电：家长问"孩子GPA 3.2能申SIPA吗"。解释录取多维评估标准，推荐先做免费诊断评估。这是潜在客户的第一次接触</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">更新学生C的申请追踪表：哪些项目已提交、哪些等待补充材料、哪些推荐信还未确认——15个项目跨6个学生，全靠这张表不搞混</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">22:00</span><span class="text-stone-300">学生A发来第6稿："老师你看这样行吗"。改了之后好多了。告诉他明天再读一遍，睡前不要再改了——新鲜眼睛看文章才能抓到问题</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-teal-400 text-[10px] uppercase tracking-widest mb-4">场景 B · 机构顾问 · 学生入读前辅导日</p>
+        <p class="text-stone-400 text-xs mb-4">6月，收到Offer的学生开始准备入学。顾问转入"售后"服务阶段</p>
+        <div class="space-y-2.5 xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">学生小陈签证被拒——F1 214b条款。紧急查阅最新拒签原因分类，建议他补充资金证明和在职证明再次申请，同时联系院校国际办公室确认推迟入学政策</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">11:30</span><span class="text-stone-300">哥大SIPA新生群答疑：宿舍选择、课程注册时间线、International Student Orientation——这些信息你都亲历过，回答起来比查文档更有温度</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">14:00</span><span class="text-stone-300">和新客户（高三学生家长）做初次咨询。了解学生背景：GPA 3.8、托福105、无科研无实习。制定15个月申请路线图，讨论暑期实习规划</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">16:00</span><span class="text-stone-300">更新朋友圈和小红书：一位学生拿到Georgetown McCourt的Offer，附上她申请过程中的努力和录取通知书截图。这是最真实的获客内容</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">18:00</span><span class="text-stone-500">整理今年申请季数据：服务15名学生，哥大2人、Georgetown 3人、NYU 5人，录取率高于行业均值。准备写成案例简介，更新官网</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key insight -->
+    <div class="bg-teal-50 border border-teal-200 rounded-xl px-5 py-4 text-xs text-teal-900 mb-8 leading-relaxed">
+      <strong>留学顾问工作的本质：</strong>你同时是文书编辑、选校策略师、心理支持者、签证政策专家。最难的部分不是文书——而是管理学生和家长的情绪，在他们焦虑的时候保持冷静，在他们高估自己的时候说出实话。
+    </div>
+
+    <!-- Weekly breakdown -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">申请季（10月–1月）一周节奏</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+      {[
+        { day: '周一', mood: '文书推进', tasks: ['各学生文书进度追踪', '批注反馈发出', '新一轮修改收稿'] },
+        { day: '周二', mood: '新客咨询', tasks: ['电话/视频咨询1-2个', '背景评估报告', '方案提案准备'] },
+        { day: '周三', mood: '材料管理', tasks: ['各系统申请状态检查', '推荐信催收', '成绩单/语言成绩核查'] },
+        { day: '周四', mood: '策略讨论', tasks: ['紧急学生约谈', '选校策略调整', '文书内容深度讨论'] },
+        { day: '周五', mood: '市场内容', tasks: ['小红书/公众号内容', '录取案例整理', '下周日程安排'] },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-xs mb-0.5">{d.day}</p>
+          <p class="text-[10px] text-teal-600 mb-2">{d.mood}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-[10px] text-stone-400">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">每周最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '学生被拒后的情绪处理', desc: '学生为这个录取准备了两年，家长花了大几万块的咨询费，结果是一封Rejection Letter。这时候你需要在自己也很失落的情况下，给他们解释下一步怎么办。留学顾问没有人教你怎么处理这种时刻，但它一定会发生。', color: 'border-teal-400' },
+        { n: '02', title: '获客压力：口碑比能力更重要', desc: '独立顾问最大的挑战是流量。小红书、微信朋友圈、校友转介绍——你的客户从哪里来？没有稳定获客渠道的顾问，再专业也撑不过两年。建立口碑需要时间，而那段时间的收入往往不稳定。', color: 'border-orange-400' },
+        { n: '03', title: '申请季与平时的巨大收入落差', desc: '10月到1月是高峰，5月到8月可能几乎没有新签单。现金流管理是独立顾问最大的商业挑战之一。机构工作虽然稳定，但薪资天花板明显低于独立路线。', color: 'border-amber-400' },
+        { n: '04', title: '家长介入与学生意愿的冲突', desc: '学生想申人类学，家长要他/她申商科。家长付钱，学生是你的直接服务对象——这种三角关系让顾问夹在中间非常难受。如何在不得罪家长的情况下保护学生的申请策略，是资深顾问才能掌握的艺术。', color: 'border-stone-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 4. How to start -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 如何切入这个行业</h2>
+    <div class="space-y-3 text-sm">
+      {[
+        { step: '在校期间积累写作样本', desc: '用帮师弟师妹改文书的机会建立案例库。每一封改过的SOP都是你的作品集。' },
+        { step: '建立小红书/公众号内容', desc: '分享SIPA申请过程、在校生活、政策项目课程——这些内容本身就是最好的招牌。入学第一天就可以开始。' },
+        { step: '毕业初期用低价建立口碑', desc: '第一批学生可以以较低费用服务，换取后续转介绍和案例授权。录取结果说话。' },
+        { step: '2年后提高客单价', desc: '有了5–10个成功案例，定价权就到了你手里。精品顾问每案例$5k–$20k是市场正常区间。' },
+      ].map((s, i) => (
+        <div class="flex gap-4 bg-stone-50 border border-stone-200 rounded-xl p-4 text-xs">
+          <span class="shrink-0 w-6 h-6 rounded-full bg-teal-100 text-teal-700 text-xs font-bold flex items-center justify-center">{i+1}</span>
+          <div>
+            <p class="font-semibold text-stone-800 mb-1">{s.step}</p>
+            <p class="text-stone-500 leading-relaxed">{s.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/education-consulting/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 教育咨询总览</a>
+    <a href="/industry/education-consulting/edtech/" class="text-columbia-blue hover:underline no-underline">教育科技 / EdTech →</a>
+  </div>
+</Base>

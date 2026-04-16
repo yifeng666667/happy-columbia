@@ -1,0 +1,207 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="教育科技 / EdTech 深度解析" description="Coursera、Duolingo、VIPKID——教育科技的职业路径、AI冲击与2025年行业现状">
+
+  <a href="/industry/education-consulting/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    教育咨询 / 留学行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-teal-50 text-teal-700 border border-teal-200 font-semibold px-3 py-1 rounded-full">Education · EdTech</span>
+      <span class="text-[10px] font-medium text-teal-600 bg-teal-50 border border-teal-200 px-2.5 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      教育科技 / EdTech
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Education Technology — 用技术规模化教育，AI时代的最大机会与最大风险并存</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '全球市场', value: '$340B (2025)' },
+        { label: '代表公司', value: 'Coursera / Duolingo' },
+        { label: 'AI冲击', value: '极高（机会+威胁）' },
+        { label: '中国教训', value: '双减让行业重置' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. EdTech landscape -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. EdTech的核心细分</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        {
+          icon: '🎓',
+          title: 'MOOCs / 在线学历教育',
+          desc: 'Coursera、edX、Udemy——大学课程和专业证书的线上化。商业模式以Subscription + Certificate为主。AI正在大规模压低内容制作成本。',
+          examples: 'Coursera, edX, Udemy, 网易云课堂',
+        },
+        {
+          icon: '🗣️',
+          title: '语言学习',
+          desc: 'Duolingo用游戏化改变了语言学习体验；Busuu、Babbel走订阅路线；中国的VIPKID/51Talk在双减后大幅收缩。AI实时口语对练是下一个增长点。',
+          examples: 'Duolingo, Babbel, HelloTalk',
+        },
+        {
+          icon: '💼',
+          title: '职业技能培训 / B端EdTech',
+          desc: '企业员工培训、职业资格认证——受双减影响最小，B端签单稳定。LinkedIn Learning、Pluralsight是代表。国内道具有百度智能云学习等。',
+          examples: 'LinkedIn Learning, Pluralsight, Cornerstone',
+        },
+        {
+          icon: '🤖',
+          title: 'AI辅助学习工具',
+          desc: '2023年后爆发的新赛道——Khan Academy Khanmigo、Synthesis AI、Quizlet AI等。让AI充当个性化教学助手。投资热度高但盈利模式仍在探索中。',
+          examples: 'Khanmigo, Synthesis, Quizlet AI',
+        },
+        {
+          icon: '📊',
+          title: '学习管理系统（LMS）',
+          desc: '为学校和企业提供教学管理平台——Canvas、Blackboard、Moodle。B端SaaS销售逻辑，稳定但增长慢，有大量政府/教育机构采购需求。',
+          examples: 'Canvas, Blackboard, Moodle, 学堂在线',
+        },
+        {
+          icon: '🧒',
+          title: 'K12（美国市场）',
+          desc: '美国中小学EdTech相对稳定——没有中国"双减"式政策风险。学区采购SaaS、学生使用学习应用。Renaissance Learning、IXL等是代表。',
+          examples: 'IXL Learning, Renaissance, ClassDojo',
+        },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-2xl shrink-0">{item.icon}</span>
+            <p class="font-bold text-stone-900 text-sm">{item.title}</p>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed mb-3">{item.desc}</p>
+          <p class="text-[10px] text-columbia-blue">代表平台：{item.examples}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. Roles in EdTech -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. EdTech 公司的岗位类型</h2>
+    <div class="space-y-3">
+      {[
+        { role: '课程/内容运营', desc: '负责课程质量、内容更新、讲师管理。需要教育理解+项目管理能力，技术门槛不高，是文科背景入行的常见路径。', salary: '中等，$55k–$90k（美国）' },
+        { role: 'B2B 销售 / 客户成功', desc: '向学区、企业HR、大学销售EdTech产品。高收入潜力（底薪+提成），需要理解客户采购逻辑，政策理解能力是加分项。', salary: '$70k–$150k（含提成）' },
+        { role: '产品经理（EdTech PM）', desc: '设计学习体验、功能迭代——需要懂教育学理论+用户研究+技术沟通。MBA或技术背景都能进，SIPA背景需要补技术沟通能力。', salary: '$100k–$160k（美国）' },
+        { role: '增长/数字营销', desc: 'Duolingo这样的消费者EdTech公司有完整的增长团队——用户获取、激活、留存。与科技公司增长岗位无本质差别。', salary: '$70k–$130k' },
+        { role: '政策与合规（美国高等教育）', desc: '大学EdTech合规岗位——确保在线项目符合教育部认证要求（如SACSCOC）。SIPA政策分析背景高度匹配，但市场小众。', salary: '$60k–$110k' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.role}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{l.desc}</p>
+            <p class="text-[10px] text-teal-700">薪资参考：{l.salary}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. AI impact -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. AI 正在如何重构 EdTech</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>GPT-4和Claude等大语言模型出现后，EdTech面临两个截然相反的命运：<strong class="text-stone-800">有护城河的平台获得超级工具，没有差异化的内容平台直接被替代。</strong></p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+          <p class="font-bold text-red-800 mb-2 text-sm">AI正在替代</p>
+          <ul class="text-xs text-red-700 space-y-1.5">
+            <li>• 标准化内容生产（题库、解析、课件）</li>
+            <li>• 基础语言纠错和口语评分</li>
+            <li>• 传统人工辅导的低端需求</li>
+            <li>• 内容搜索和FAQ回答</li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+          <p class="font-bold text-emerald-800 mb-2 text-sm">AI创造的新机会</p>
+          <ul class="text-xs text-emerald-700 space-y-1.5">
+            <li>• 个性化学习路径（真正的1对1）</li>
+            <li>• 实时口语/写作AI对练伙伴</li>
+            <li>• 自动课程内容生成与更新</li>
+            <li>• 学习数据分析和效果追踪</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+        <strong>2024–2025年观察：</strong>Duolingo已宣布用AI部分替代合同制内容创作者；Khan Academy Khanmigo作为AI辅导工具快速扩展；国内的作业帮、猿辅导在双减后转型AI工具，逐步恢复增长。真正的"个性化AI教师"是行业下一个10年的核心赛道。
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">EdTech的工作节奏更接近科技公司，而不是传统教育机构——数据驱动，快速迭代。</p>
+
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-teal-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 课程运营 @ Coursera-style 平台</p>
+        <p class="text-stone-400 text-xs mb-4">新AI数据分析课程上线前最后一个月，讲师是一位Google工程师</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">和讲师视频会议：第三模块"机器学习基础"的讲义太学术——学生完成率数据显示类似课程在这里流失率最高。要求讲师加入更多代码实战练习</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-300">审核第一模块视频脚本：检查学习目标是否清晰、知识点顺序是否合理、有无涉及版权图片的问题。标注15条修改意见</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">数据分析会：上线的Python入门课本月完成率62%，行业基准55%。找出哪一节视频流失率最高——是第7节，时长22分钟，太长了</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">讨论新课定价策略：是单独购买$49，还是纳入月订阅包？和Product team对齐，需要收入团队的数据支持决策</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">更新课程上线时间表：讲师延迟交付第4模块，整体推迟两周。通知营销团队调整预热节奏</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-teal-400 text-[10px] uppercase tracking-widest mb-4">场景 B · B2B 销售 @ 企业培训EdTech</p>
+        <p class="text-stone-400 text-xs mb-4">负责大型企业客户，今天是与一家500人科技公司HR Director的最终提案会</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">准备演示材料：整理该公司员工技能现状（HR发来的岗位分布数据），标注平台上哪些课程与他们的培训需求最匹配</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">提案会议（1小时）：演示学习平台功能，展示另一家同规模科技公司的ROI案例——员工技能评估分数提升18%，留存率提高。对方HR追问证书认证方式</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">11:30</span><span class="text-stone-300">后续跟进邮件：发送定制版提案PDF + 免费试用账号链接。把对方HR的疑虑点（数据隐私合规）转交给产品团队准备书面答复</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">14:00</span><span class="text-stone-300">Pipeline review：这个客户从Lead到今天是第11周，合同金额$85k/年。如果本季度没签，要不要提供额外折扣？和Sales Manager讨论底线</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">16:00</span><span class="text-stone-300">新lead：一家咨询公司HR发来询价。快速背调：200人规模，前CTO刚离职，可能有大规模技能提升需求。写了一封定制化冷邮件</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: 'AI替代焦虑是行业内部的共识', desc: 'EdTech公司的员工比任何行业的从业者都更清楚地看到AI对自己工作的冲击。Coursera已经大量用AI生成课程测验题；Duolingo裁减合同制内容创作者。如果你做的是内容制作类岗位，这种冲击感是真实的。', color: 'border-teal-400' },
+        { n: '02', title: '中国市场的政策不可预测性', desc: '双减之前，K12 EdTech是最热的赛道之一。政策出台72小时内，行业市值蒸发了超过70%。这段历史提醒所有从业者：依赖中国C端教育市场的商业模式有结构性政策风险，需要提前在思维框架里标注这个风险。', color: 'border-red-400' },
+        { n: '03', title: 'B2B销售周期长、签单难预测', desc: 'EdTech B端销售的一个合同往往需要3–6个月的决策周期，涉及HR、财务、IT、CEO多个决策层。你以为快签了，对方说"需要再开一次内部会议"——这种延迟是常态。季度末冲KPI的压力很真实。', color: 'border-amber-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/education-consulting/study-abroad/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 留学申请咨询</a>
+    <a href="/industry/education-consulting/intl-education/" class="text-columbia-blue hover:underline no-underline">国际教育项目管理 →</a>
+  </div>
+</Base>

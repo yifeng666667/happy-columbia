@@ -1,0 +1,141 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/manufacturing/operations-management/',
+    emoji: '⚙️',
+    title: '制造业运营管理',
+    titleEn: 'Manufacturing Operations',
+    desc: '工厂运营、精益生产、品质管理——制造业的核心职能，宝洁/西门子/ABB等跨国公司的重要人才需求方向',
+    tags: ['精益生产', '六西格玛', '工厂运营', 'MES系统'],
+    status: 'published',
+  },
+  {
+    href: '/industry/manufacturing/industrial-policy/',
+    emoji: '🏛️',
+    title: '产业政策与政府关系',
+    titleEn: 'Industrial Policy & Government Affairs',
+    desc: '制造业与政府的接口——产业补贴申请、政策分析、政府关系管理。SIPA学生最有竞争力的制造业细分方向',
+    tags: ['产业政策', '政府关系', '补贴申请', '碳中和'],
+    status: 'published',
+  },
+  {
+    href: '/industry/manufacturing/smart-manufacturing/',
+    emoji: '🤖',
+    title: '智能制造与工业4.0',
+    titleEn: 'Smart Manufacturing & Industry 4.0',
+    desc: 'AI+机器人+IoT在制造业的应用——工业互联网、数字孪生、柔性制造。需要技术理解+商业落地能力的复合型人才',
+    tags: ['工业互联网', '数字孪生', '机器人', 'AI质检'],
+    status: 'published',
+  },
+];
+---
+
+<Base title="制造业与工业管理" description="跨国制造业管理、智能制造、产业政策——被低估的传统行业与工业4.0时代的机会">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    所有行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-3 py-1 rounded-full">Manufacturing & Industry</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      制造业与工业管理
+    </h1>
+    <p class="text-stone-500 text-sm leading-relaxed max-w-2xl mb-8">
+      制造业是被求职者最低估的行业之一。它不够"光鲜"，但薪资竞争力强、职业稳定性高，且在全球供应链重构、智能制造升级的大背景下，制造业的国际化管理人才极度稀缺。宝洁、西门子、博世、GE、比亚迪、华为——这些公司的运营、供应链、政策团队，是SIPA学生常常忽视的机会。
+    </p>
+
+    <!-- Key data -->
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+      {[
+        { label: '中国制造业增加值', value: '27%', sub: '占全球制造业比重（2023年），全球第一' },
+        { label: '工业4.0市场规模', value: '$1570亿', sub: '2025年全球智能制造市场预测，年增长16%' },
+        { label: '制造业岗位薪资', value: '被低估', sub: '资深运营/供应链管理者薪资可媲美咨询公司' },
+      ].map(s => (
+        <div class="bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 text-center">
+          <div class="font-bold text-slate-800 text-xl mb-0.5">{s.value}</div>
+          <div class="text-slate-700 text-xs font-medium mb-1">{s.label}</div>
+          <div class="text-slate-600/70 text-[10px]">{s.sub}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Honest framing -->
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-900 leading-relaxed">
+      <strong>先说清楚：</strong>大多数制造业管理岗位的入职前几年需要驻厂或驻外（东南亚、欧洲、中国二三线城市）。如果你对"城市生活"有强依赖，这个代价需要提前想清楚。但对于愿意接受这个条件的人，制造业提供的晋升速度和薪资增长，并不比金融慢。
+    </div>
+  </header>
+
+  <!-- Why manufacturing is underrated -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">为什么制造业被低估</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        { title: '薪资不比金融差', desc: '宝洁、西门子、博世等跨国公司的管理培训生（MT）项目起薪与咨询公司接近。工厂管理层（Plant Manager级别）的全球薪资在$150k–$300k+，不低于大部分咨询Manager。' },
+        { title: '晋升路径清晰', desc: '制造业有明确的层级晋升——班组长→工厂经理→事业部总监→COO。每一步都有可量化的KPI（产能利用率、良品率、成本优化）。比很多"资深IC"路线更可预期。' },
+        { title: '全球化机会真实', desc: '跨国制造企业的外籍管理者可以派驻全球各地。工厂在越南、泰国、印度、东欧——对于想真正"全球化"工作的人，制造业比很多金融岗位有更多出差和驻外机会。' },
+        { title: '中国制造业升级红利', desc: '"中国制造2025"以来，自动化、智能制造投资持续。比亚迪、宁德时代等中国制造业巨头已成为全球竞争者——这些公司需要懂国际化的管理人才。' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-bold text-stone-900 text-sm mb-2">{item.title}</p>
+          <p class="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">细分方向</h2>
+    <div class="space-y-4">
+      {sectors.map(s => (
+        <a href={s.href} class="block bg-white border border-stone-200 rounded-2xl p-6 hover:border-slate-400 hover:shadow-sm transition-all no-underline card-lift">
+          <div class="flex items-start gap-4">
+            <span class="text-3xl shrink-0">{s.emoji}</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2 mb-1">
+                <span class="font-bold text-stone-900 text-base">{s.title}</span>
+                <span class="text-stone-400 text-xs">{s.titleEn}</span>
+              </div>
+              <p class="text-xs text-stone-500 leading-relaxed mb-3">{s.desc}</p>
+              <div class="flex flex-wrap gap-1.5">
+                {s.tags.map(t => (
+                  <span class="text-[10px] bg-slate-50 text-slate-700 border border-slate-200 px-2 py-0.5 rounded-full">{t}</span>
+                ))}
+              </div>
+            </div>
+            <span class="text-stone-300 text-lg shrink-0">→</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SIPA connection -->
+  <section class="mb-12">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">SIPA 背景的切入方式</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>SIPA背景直接适配制造业中与政策、国际关系、ESG相关的岗位，但也需要主动补充对制造业运营的理解。</p>
+      <div class="grid sm:grid-cols-2 gap-3">
+        {[
+          { title: '产业政策分析', desc: '政府对制造业的补贴政策、碳中和路径、产业安全战略——这些议题需要政策分析能力。工业协会、政策研究部门、政府事务团队都需要SIPA类型的背景。' },
+          { title: 'ESG与供应链合规', desc: '跨国制造商的ESG合规部门——供应链碳排放、劳工标准、有害物质法规。国际政策理解+中文能力在这里是稀缺组合。' },
+          { title: '国际化管理培训生', desc: '宝洁、西门子、ABB等跨国公司有专门招募国际化背景的管理培训生（MT）项目，轮岗包括工厂、供应链、市场——不要因为不懂制造而放弃申请。' },
+          { title: '中国制造业出海', desc: '比亚迪/宁德时代/华为在东南亚/欧洲建厂，需要懂当地政策和语言的本地化团队。SIPA的国际关系背景+中文母语组合，是这类公司最需要的。' },
+        ].map(item => (
+          <div class="bg-white rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1">{item.title}</p>
+            <p class="text-stone-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Base>

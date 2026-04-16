@@ -1,0 +1,171 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="供应链与采购管理深度解析" description="全球供应链重构、ESG合规、近岸外包——供应链管理的职业路径与中美博弈背景下的机遇">
+
+  <a href="/industry/intl-trade/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    外贸与国际贸易
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-indigo-50 text-indigo-700 border border-indigo-200 font-semibold px-3 py-1 rounded-full">Intl Trade · Supply Chain</span>
+      <span class="text-[10px] font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-full">入行难度：中至高</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      供应链与采购管理
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Supply Chain & Procurement — 后疫情时代最紧迫的全球商业议题</p>
+
+    <div class="bg-indigo-50 border border-indigo-200 rounded-xl px-5 py-4 text-sm text-indigo-900 leading-relaxed mb-6">
+      <strong>为什么现在是好时机：</strong>COVID-19暴露了全球供应链的脆弱性（口罩、芯片、药品短缺），中美贸易战加速"中国+1"产业转移，ESG监管推动供应链透明化——这三股力量叠加，让"供应链"从幕后走向董事会议程的中心。具备跨文化理解和政策分析能力的人才在这个领域极为稀缺。
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '全球供应链市场', value: '$19.3万亿' },
+        { label: '热点话题', value: '近岸外包/友岸外包' },
+        { label: 'SIPA相关度', value: '★★★★★' },
+        { label: '薪资潜力', value: '中高（资深可高）' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. What is supply chain management -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 供应链管理包括什么</h2>
+    <div class="grid sm:grid-cols-3 gap-4 text-sm">
+      {[
+        { area: '采购与供应商管理', icon: '🔗', desc: '选择和管理供应商、谈判合同、评估供应商风险——供应链的"入口"。ESG合规要求让供应商审计成为核心工作。' },
+        { area: '物流与运输', icon: '🚢', desc: '货物从A到B的全流程——海运、空运、铁路、最后一公里。关键指标：成本、时效、可见性。数字化物流平台正在改变这个环节。' },
+        { area: '仓储与库存', icon: '📦', desc: '在正确的时间、在正确的地点、有正确的库存量——听起来简单但极难做到。JIT（准时制）vs 安全库存，不同行业有截然不同的策略。' },
+        { area: '供应链风险管理', icon: '⚠️', desc: '地缘政治风险（芯片战）、自然灾害（台积电位于地震带）、单一来源依赖——识别、评估、缓解供应链中断风险。' },
+        { area: 'ESG合规与可持续采购', icon: '🌱', desc: '碳足迹核算、劳工标准核查、冲突矿产审核——欧美买家对供应链透明度要求持续提升，这是增长最快的子方向。' },
+        { area: '供应链数字化', icon: '💻', desc: 'ERP系统（SAP/Oracle）、供应链可视化平台、AI预测分析——技术理解+业务理解的交叉点，高薪岗位集中地。' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <div class="flex items-start gap-2 mb-2">
+            <span class="text-xl shrink-0">{item.icon}</span>
+            <p class="font-bold text-stone-900 text-sm">{item.area}</p>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. The reshoring megatrend -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 全球供应链重构：最重要的结构性变化</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>过去30年，全球供应链的核心逻辑是"哪里便宜去哪里"——中国成为"世界工厂"。但这个逻辑正在被打破：</p>
+      <div class="grid sm:grid-cols-3 gap-3">
+        {[
+          { concept: '近岸外包（Nearshoring）', desc: '将生产移到地理上更近的地方——美国将工厂从中国迁至墨西哥/哥斯达黎加，运输时间从30天缩短到5天，降低供应链风险。', example: '墨西哥蒙特雷的制造业大规模扩张' },
+          { concept: '友岸外包（Friendshoring）', desc: '将生产集中在政治上"可信赖"的盟国——美国的CHIPS法案要求芯片在盟国生产，推动台积电/三星在美国建厂。', example: '台积电亚利桑那工厂，$400亿投资' },
+          { concept: '中国+1战略（China+1）', desc: '不完全撤出中国，但在越南/泰国/印度增加备用产能，分散单一来源风险。苹果、耐克等大品牌已率先实施。', example: '越南已成为耐克最大生产国（35%）' },
+        ].map(t => (
+          <div class="bg-white border border-stone-200 rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1 text-sm">{t.concept}</p>
+            <p class="text-stone-500 leading-relaxed mb-2">{t.desc}</p>
+            <p class="text-[10px] text-indigo-600">案例：{t.example}</p>
+          </div>
+        ))}
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+        <strong>对人才的影响：</strong>企业需要能同时理解中国制造业、东南亚工厂、美墨贸易规则（USMCA）的人才，以及能评估地缘政治风险对采购决策影响的分析师。这是SIPA学生可以直接竞争的高价值岗位。
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Jobs -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. 核心岗位类型</h2>
+    <div class="space-y-3">
+      {[
+        { role: '采购专员 / 采购经理', desc: '管理供应商关系、谈判合同、评估价格和质量。制造业、零售、科技公司都大量需要。CPSM（认证专业供应管理师）是进阶资质。', salary: '美国$60k–$130k，中国20–60万/年' },
+        { role: '供应链分析师', desc: '用数据分析优化库存、运输成本、需求预测。Python/SQL+供应链知识组合，是数字化转型中需求增长最快的岗位之一。', salary: '美国$70k–$120k' },
+        { role: 'ESG供应链专员', desc: '供应商碳排放核查、劳工标准审计、可持续采购报告。欧美品牌对供应链ESG披露的要求持续上升，这个方向2020年后需求爆发式增长。', salary: '美国$65k–$110k' },
+        { role: '供应链风险经理', desc: '评估地缘政治、自然灾害、供应商倒闭等风险，制定应急预案。往往在大型跨国公司和咨询公司的供应链咨询团队存在。', salary: '美国$90k–$160k（资深）' },
+        { role: '物流/贸易合规经理', desc: '确保货物移动符合海关法规、出口管制、关税优化。专业壁垒高，CUSECO/CHB（美国海关认证经纪人）等资质有价值。', salary: '美国$75k–$130k' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <span class="font-bold text-stone-900 text-sm block mb-1">{l.role}</span>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{l.desc}</p>
+            <p class="text-[10px] text-indigo-600">薪资参考：{l.salary}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">供应链工作最考验的是：在信息不完整的情况下，做出有足够依据的采购决策。</p>
+
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 供应链分析师 @ 消费电子公司</p>
+        <p class="text-stone-400 text-xs mb-4">台湾某原材料供应商疑似产能受限，影响Q3备货计划</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">收到供应商邮件：因工厂用电配额削减（台湾限电政策），8月交货周期延迟3周。这影响公司的iPhone新品上市节奏——立即升级到供应链总监层级</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">紧急召集备选供应商名单：3家有认证但从未启用的备用厂商。发送RFQ（询价单），要求48小时内报价和交期确认</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">构建风险矩阵：如果延迟3周，各SKU的库存情况如何？用Excel模型计算：哪些产品会断货？哪些有安全库存？把结论整理成一页纸给VP</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">电话会议（中英双语）：和台湾供应商VP确认情况，了解是否有可能空运部分关键组件以缩短延迟。计算空运成本 vs 断货损失，建议部分空运</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:30</span><span class="text-stone-300">更新供应链风险追踪文件，记录事件始末、决策过程、联系人信息——下次遇到类似情况时，这份记录是最重要的参考</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4">场景 B · ESG采购专员 @ 欧洲零售品牌驻华办公室</p>
+        <p class="text-stone-400 text-xs mb-4">准备对中国供应商的劳工标准进行年度审计</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">查看去年审计报告：广东某工厂在"加班超时"和"工资记录透明度"两项得分低于基准。这次重点跟进这两项</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-300">准备审计问卷：30个问题，涵盖工资单样本、招聘记录、安全培训证书、消防逃生演练记录。中英双语版本，发给工厂负责人</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">和第三方审计机构（Bureau Veritas）沟通现场审计安排：日期确认、工厂提前不通知（突击审计），避免造假</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">供应商来电：工厂HR问"哪些文件必须提供？可以先看看我们的整改方案吗？"——这是常见的提前"打招呼"。解释审计是独立的，无法提前透露重点检查项</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">整理欧盟CSRD（企业可持续发展报告指令）新要求：明年开始，母公司需要在财报中披露供应链碳足迹——这意味着需要给中国所有供应商建立碳排放核算体系</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '地缘政治风险的不可预测性', desc: '今天中美关系还稳定，明天可能出现新制裁或出口管制。台海紧张局势影响半导体供应链。俄乌战争推高能源价格影响全球物流成本。供应链分析师必须在宏观政治和商业决策之间建立实时连接——SIPA的政治风险分析能力在这里是真实的竞争优势。', color: 'border-indigo-400' },
+        { n: '02', title: '多方利益冲突：成本 vs 合规 vs 速度', desc: '采购部门要低成本，销售要快交货，合规部门要全文件，财务要低库存——这四个需求是天然冲突的。供应链经理每天在这些张力中找平衡点，很少有一个"完美"的决策，只有"最小化损失"的决策。', color: 'border-red-400' },
+        { n: '03', title: '信息不对称下的决策压力', desc: '你要在供应商提供的数据（可能不完整/不真实）、市场报价（可能过时）、内部需求预测（可能不准）三组不可靠信息中做出百万美元级别的采购决策。这种在不确定性中保持判断力的能力，是资深供应链人的核心竞争力。', color: 'border-amber-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/intl-trade/cross-border-ecommerce/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 跨境电商</a>
+    <a href="/industry/intl-trade/" class="text-columbia-blue hover:underline no-underline">返回外贸与国际贸易 →</a>
+  </div>
+</Base>

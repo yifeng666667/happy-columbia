@@ -1,0 +1,188 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="外贸企业 / 进出口贸易深度解析" description="传统外贸企业、贸易合规、汇率风险——外贸行业的职业路径与中美贸易战背景下的机遇">
+
+  <a href="/industry/intl-trade/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    外贸与国际贸易
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-indigo-50 text-indigo-700 border border-indigo-200 font-semibold px-3 py-1 rounded-full">Intl Trade · Import-Export</span>
+      <span class="text-[10px] font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-full">入行难度：低至中</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      外贸企业 / 进出口贸易
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Import-Export Trading — 连接中国制造与全球市场的枢纽</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '中国出口总额', value: '$3.38万亿' },
+        { label: '主要市场', value: 'ASEAN/EU/US' },
+        { label: '核心技能', value: '英语+贸易合规' },
+        { label: '政策风险', value: '高（关税/制裁）' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. What do trading companies do -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 外贸企业做什么</h2>
+    <div class="prose-custom space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>外贸企业是中国制造业与全球市场之间的枢纽——从工厂采购商品，通过贸易流程（报关、运输、保险、结汇）将产品出口至海外买家。随着直接外贸（工厂自己做外贸）的普及，纯中间商的空间在收窄，但具备服务能力（质检、融资、合规）的综合外贸公司仍然有市场。</p>
+      <div class="grid sm:grid-cols-3 gap-3">
+        {[
+          { type: '综合外贸公司', desc: '代理多品类出口，提供报关、物流、融资一站式服务。利润率低但规模大，适合快速积累行业知识。', examples: '中国五矿、中粮集团、中化集团' },
+          { type: '专业贸易商', desc: '聚焦特定品类（化工原料、电子元器件、纺织品）或特定市场（非洲、中东、东南亚）。专业壁垒高，人脉网络重要。', examples: '行业垂直贸易公司' },
+          { type: '驻华采购办公室', desc: '跨国零售商/品牌在华设立的采购中心（如沃尔玛、Target的中国采购中心）。英语为主工作语言，稳定且薪资较高。', examples: 'Li & Fung，跨国采购公司' },
+        ].map(t => (
+          <div class="bg-white border border-stone-200 rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-900 mb-2 text-sm">{t.type}</p>
+            <p class="text-stone-500 leading-relaxed mb-2">{t.desc}</p>
+            <p class="text-[10px] text-indigo-600">代表：{t.examples}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Key job functions -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 核心岗位类型</h2>
+    <div class="space-y-3">
+      {[
+        { role: '外贸业务员 / 国际销售', desc: '开发海外客户，管理询盘和报价，跟进订单执行。英语是最基本要求，多语言（西班牙语、阿拉伯语、俄语）是稀缺加分项。初期收入来源于底薪+提成。', salary: '国内8–25万/年（含提成弹性大）' },
+        { role: '报关员 / 物流协调', desc: '负责进出口报关、海关合规、货运代理协调。持证岗位（报关员资格证），技术性强，是外贸公司的核心运营岗位。', salary: '国内8–18万/年' },
+        { role: '外贸合规专员', desc: '确保出口商品符合目标市场法规（如欧盟CE认证、美国FDA、RoHS指令）。合规背景+产品知识组合，是近年来需求增长最快的方向之一。', salary: '国内15–35万/年（资深合规）' },
+        { role: '采购管理（驻华采购）', desc: '代表跨国买家在中国工厂采购，负责供应商开发、质量管控、价格谈判。英语工作环境，文化桥梁角色。', salary: '视公司规模，中等偏上' },
+        { role: '贸易融资 / 信用证', desc: '涉及信用证（LC）、保理、出口信贷等金融工具——结合金融和贸易知识。银行外贸金融部、大型贸易公司的财务部都有需求。', salary: '国内20–50万/年（金融背景者）' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.role}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{l.desc}</p>
+            <p class="text-[10px] text-indigo-600">薪资参考：{l.salary}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. Trade war context -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. 中美贸易战：外贸从业者必须理解的背景</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>2018年以来，中美贸易摩擦已成为所有涉及中美贸易从业者无法回避的背景。理解这段历史，是在这个行业生存的基础。</p>
+      <div class="space-y-3">
+        {[
+          { year: '2018', event: '美国对中国商品加征25%关税（约2500亿美元），涵盖钢铁、铝、电子、机械等品类。中国反制，对美国大豆、汽车征税。' },
+          { year: '2020', event: '"第一阶段协议"：中国承诺增加购买美国商品，双方暂缓加税。但结构性问题未解决。' },
+          { year: '2022–24', event: '中美技术脱钩加速：芯片出口管制（CHIPS Act）、华为供应链限制、TikTok立法——从关税战延伸到技术战和数据主权战。' },
+          { year: '2025+', event: '关税维持高位，部分商品（如中国电动车进入欧盟）面临新一轮关税壁垒。"中国+1"产业转移加速越南/印度/墨西哥产能扩张。' },
+        ].map(e => (
+          <div class="flex gap-4 text-xs">
+            <span class="shrink-0 font-mono text-indigo-700 font-bold w-12">{e.year}</span>
+            <p class="text-stone-600">{e.event}</p>
+          </div>
+        ))}
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800 mt-2">
+        <strong>对从业者的影响：</strong>贸易合规成为核心能力——知道哪些商品受出口管制、如何判断客户是否在制裁名单上、如何合法规避关税（第三国转口 vs. 合法产地证明）。这些知识过去是大公司法务才关心的，现在是每一个外贸业务员必须掌握的基本功。
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">外贸工作的时差地狱：欧洲客户在你早上上班时刚刚开始工作，美国客户在你下班后才出现。</p>
+
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 外贸业务员 · 欧洲客户订单冲刺</p>
+        <p class="text-stone-400 text-xs mb-4">11月，圣诞节货期前最后窗口，一个德国采购商的50万美元订单在谈</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">检查昨晚的邮件（德国客户在欧洲时间下午回的）：对方要求CE认证报告原件扫描件 + 更新产品责任保险证明。转发给质检部门跟进</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">工厂来电：50万订单生产进度正常，但原料价格上涨了8%，需要重新报价。计算利润空间：如果让步3%还有合理利润，超过3%就要和客户谈</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">起草Price Adjustment邮件：用数据说明原材料涨价（附钢材价格指数截图），提出涨价2%的建议。措辞要专业但不失礼貌</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">新询盘：澳大利亚买家问不锈钢厨具，要求FOB上海价格。查工厂报价，考虑海运周期（到悉尼约18天），给出有效期30天的报价单</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:30</span><span class="text-stone-300">德国客户回复：接受涨价1.5%。立刻发Order Confirmation，要求工厂优先安排这批货的发货时间，赶11月30日出运截止</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">21:00</span><span class="text-stone-300">美国客户上线（他们中午才上班）：询问去年的同款产品是否还有库存，是否受301关税影响。解释产品HS编码和对应税率，建议他用Section 301排除清单申请</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4">场景 B · 外贸合规专员 · 出口管制日常</p>
+        <p class="text-stone-400 text-xs mb-4">科技公司外贸部，新业务涉及半导体设备出口东南亚</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">查询美国商务部BIS更新：Entity List新增了3家中国半导体公司。检查我们供应商名单——有一家名字相似的，联系采购确认是否同一家</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-300">新客户KYC（了解你的客户）审查：越南客户申请购买精密测量设备。查ECCN编号（出口管制分类号），判断是否需要申请出口许可证</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">内部培训准备：给销售团队讲"出口管制基础——什么情况下不能卖给谁"。用三个真实案例（违规被罚款的外贸公司）说明合规的重要性</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">欧盟CBAM（碳边境调节机制）合规问题：出口欧洲的钢铁产品需要提供碳排放数据。联系工厂：他们还没有按照EU标准核算碳足迹。这是今年最大的合规挑战</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">整理合规月报：本月审查的出口许可证申请、KYC案例、拒绝的客户名单。发给法务总监和CEO</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly breakdown -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">外贸业务员的一周</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+      {[
+        { day: '周一', mood: '跟进已有订单', tasks: ['生产进度追踪', '付款状态确认', '客户问题回复'] },
+        { day: '周二', mood: '新客户开发', tasks: ['LinkedIn/Made-in-China开发', '发询盘跟进邮件', '视频会议准备'] },
+        { day: '周三', mood: '报价与谈判', tasks: ['新询盘报价', '价格谈判', '合同条款讨论'] },
+        { day: '周四', mood: '文件处理', tasks: ['信用证核查', 'PI/CI/PL制作', '报关资料准备'] },
+        { day: '周五', mood: '工厂协调', tasks: ['生产验货安排', '样品寄送跟进', '客户投诉处理'] },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-xs mb-0.5">{d.day}</p>
+          <p class="text-[10px] text-indigo-600 mb-2">{d.mood}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-[10px] text-stone-400">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '汇率波动和利润侵蚀', desc: '你以6.9的汇率报了价，合同签完美元贬值到7.2——你的利润直接缩水。外贸公司的利润率本就薄（通常3%–8%），汇率一波动就可能从赚钱变成亏本。锁汇工具（远期合约）是必学内容，但中小外贸公司往往没有这个能力，只能硬扛。', color: 'border-indigo-400' },
+        { n: '02', title: '信用风险：买家不付钱', desc: '信用证（LC）可以保护你，但很多买家要T/T付款（电汇），要求先发货后付款。一旦买家跑路或倒闭，货已经发出去了，很难追回来。外贸业务员的噩梦是：货到了，钱没了。', color: 'border-red-400' },
+        { n: '03', title: '合规风险越来越真实', desc: '出口受制裁国家（伊朗、俄罗斯、朝鲜）的商品会触发美国OFAC制裁。很多小外贸公司因为不懂而违规，一旦被美国制裁就是毁灭性打击（无法使用美元结算）。这个风险在2022年以后大幅上升。', color: 'border-amber-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/intl-trade/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 外贸与国际贸易</a>
+    <a href="/industry/intl-trade/cross-border-ecommerce/" class="text-columbia-blue hover:underline no-underline">跨境电商 →</a>
+  </div>
+</Base>

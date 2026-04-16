@@ -1,0 +1,148 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="国际教育项目管理深度解析" description="大学国际办公室、交换项目、国际学校——教育机构内部的项目管理与行政职业路径">
+
+  <a href="/industry/education-consulting/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    教育咨询 / 留学行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-teal-50 text-teal-700 border border-teal-200 font-semibold px-3 py-1 rounded-full">Education · International Programs</span>
+      <span class="text-[10px] font-medium text-stone-600 bg-stone-100 border border-stone-200 px-2.5 py-1 rounded-full">入行难度：中等（院校背景重要）</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      国际教育项目管理
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">International Education Programs — 在机构内部运营跨境教育项目</p>
+
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-900 leading-relaxed mb-6">
+      <strong>先说清楚：</strong>大学国际办公室和交换项目管理是稳定但薪资增速较慢的职业路径。它的核心优势是工作意义感强、工作生活平衡好、有机会在全球各地生活工作。如果你对钱不是首要考量，这个方向值得认真考虑。
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '美国起步薪资', value: '$45k–$65k' },
+        { label: '工作稳定性', value: '高（院校背景）' },
+        { label: '核心场景', value: '大学/NGO/国际组织' },
+        { label: '晋升路径', value: '偏慢但可预期' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. Who hires -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 哪些机构在招聘</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        { org: '大学国际事务办公室', icon: '🏛️', desc: '负责留学生服务（International Student Services）、海外交换项目管理、签证合规。直接与学生接触，工作内容多元。哥大、MIT、UCLA等都有完整团队。', roles: '国际学生顾问 / 项目协调员' },
+        { org: '暑期/短期国际项目', icon: '☀️', desc: '语言学校（如Middlebury）、商学院暑期项目（如哈佛Extension）、STEM营地——招募和管理跨国学生，需要活动策划和危机处理能力。', roles: '项目主任 / 招募专员' },
+        { org: '国际学校（双语/全英文）', icon: '📚', desc: '北京上海深圳的国际学校——外籍和港澳台学生学校。行政岗位包括招生、学生事务、项目协调。薪资因学校而异，高端国际学校薪资有竞争力。', roles: '招生顾问 / 学务主任' },
+        { org: '非营利/NGO教育项目', icon: '🌍', desc: 'Peace Corps、Teach For America、美国国务院的教育项目（Fulbright项目管理）——意义感强，薪资偏低，有志愿者管理和跨文化协调经验。', roles: '项目协调 / 驻外项目官员' },
+        { org: 'IIE / NAFSA 等行业组织', icon: '🤝', desc: '美国国际教育研究所（IIE）负责富布赖特奖学金等项目管理；NAFSA是国际教育从业者协会。这些机构招募有实际项目管理经验的人。', roles: '项目专员 / 研究员' },
+        { org: '中国高校国际化项目', icon: '🇨🇳', desc: '国内985/211高校扩大国际化合作——中外合作办学、留学生招募、与海外高校的合作项目。外语能力+国际化背景是核心门槛。', roles: '国际合作专员 / 外事秘书' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-2xl shrink-0">{item.icon}</span>
+            <div>
+              <p class="font-bold text-stone-900 text-sm">{item.org}</p>
+              <p class="text-[10px] text-teal-700 mt-0.5">{item.roles}</p>
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. SIPA specific paths -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. SIPA 毕业生的具体机会</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>SIPA在国际教育领域有几个天然优势：哥大校园本身就是国际教育的实验室，你在校期间接触的各国同学和项目就是资源。</p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-2">
+        {[
+          { title: '美国国务院教育文化项目', desc: 'Fulbright、English Language Fellow等项目需要项目管理人员——SIPA的政策分析和国际事务背景完美匹配。ECA（教育文化局）是重要雇主。' },
+          { title: '哥大校内机会', desc: 'Columbia Global Centers、SIPA自身的Executive Education项目都需要项目协调人员。实习期间积累经验，毕业后转正是可行路径。' },
+          { title: '孔子学院/中美教育合作', desc: '中美教育合作机构——汉办、中美富布赖特、中美人才交流基金等。政治敏感度在上升，但项目需求仍然存在。' },
+          { title: '国际组织教育司', desc: '联合国教科文组织（UNESCO）、世界银行教育组、亚开行教育项目——需要政策分析能力+项目执行经验，SIPA双背景有竞争力。' },
+        ].map(item => (
+          <div class="bg-white rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1">{item.title}</p>
+            <p class="text-stone-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3. 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">国际教育项目管理的节奏：以学年为周期，招募季高峰，入学前后密集服务。</p>
+
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-teal-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 大学国际学生服务顾问</p>
+        <p class="text-stone-400 text-xs mb-4">开学第一周，新生入学密集服务期，每天预约满排</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">接待刚到纽约的中国新生：检查护照、I-20、签证页；录入SEVIS系统；解释法律身份的基本要求——不能全职工作、不能无故退课</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-300">电话处理：一个学生CPT申请材料不全，解释还需要补交导师签字的实习Description表格。她下午要开始实习了——帮她联系导师紧急处理</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">OPT申请研讨会（30人）：讲解OPT申请时间线、STEM OPT延期资格、Gap Risk——听众都是博士生，问题专业。提前查好了最新的USCIS Processing Times</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">处理紧急case：学生签证过期回国探亲，现在在北京被签证官要求补充材料，不知道是否能赶回来参加期末考试。联系使馆热线，告知学生处理流程</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">更新办公室FAQ文档：这周被问了三次的新问题——"旅行签证是不是可以用来等待新I-20"，写成标准解释加入数据库</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-teal-400 text-[10px] uppercase tracking-widest mb-4">场景 B · 暑期国际项目主任 @ 语言学校</p>
+        <p class="text-stone-400 text-xs mb-4">暑期6周英语强化项目，管理来自12个国家的80名学生</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:00</span><span class="text-stone-300">早会：今天有3名学生发烧，健康服务通知一人可能有传染性咽炎。启动隔离协议，通知宿舍管理和项目大使（Program Ambassadors）</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:30</span><span class="text-stone-300">处理保险理赔：一名学生在活动中摔伤，需要协助完成保险公司表格、收集医院账单英文版、跟踪理赔进度</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">周末活动策划会：这周末去Boston的大巴是否安全？路线确认、紧急联系人名单、活动协议书签字情况逐一检查</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">家长来电（国际长途）：日本家长担心孩子适应不好——用英语解释孩子这周的表现，分享老师反馈。需要同时照顾到家长情绪和准确传达情况</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">更新下届招募邮件：分析今年的国家来源分布，调整明年的目标市场——日本和韩国学生今年质量好，考虑加大在东亚的推广预算</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '签证政策变化带来的被动压力', desc: '你无法控制美国移民政策——OPT延期规则一改，你需要在48小时内更新所有的指导材料，并给几百个学生群发邮件解释。这种外部变量的应激处理是这个岗位的日常，积累久了会形成很强的政策阅读能力。', color: 'border-teal-400' },
+        { n: '02', title: '人力支持学生的情感消耗', desc: '处理文化冲击、孤独感、家庭压力——国际学生的心理健康问题比本地学生更隐蔽。你是他们最接近的支持系统之一，这在工作上很有意义，但也带来情感消耗（Emotional Labor）。', color: 'border-amber-400' },
+        { n: '03', title: '薪资与工作意义的长期张力', desc: '这个岗位的薪资增速远低于金融或咨询。你看到的世界很大，但银行账户的增长曲线很平缓。5年后和金融同学的收入差距会很显著——这种张力需要在入行前想清楚。', color: 'border-stone-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/education-consulting/edtech/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 教育科技 / EdTech</a>
+    <a href="/industry/education-consulting/" class="text-columbia-blue hover:underline no-underline">返回教育咨询总览 →</a>
+  </div>
+</Base>

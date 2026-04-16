@@ -1,0 +1,156 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="产业政策与政府关系深度解析" description="制造业与政府的接口——产业补贴、碳中和政策、ESG合规，SIPA背景最强的制造业切入点">
+
+  <a href="/industry/manufacturing/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    制造业与工业管理
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-3 py-1 rounded-full">Manufacturing · Policy & Gov Affairs</span>
+      <span class="text-[10px] font-medium text-columbia-blue bg-columbia-light border border-columbia-blue/30 px-2.5 py-1 rounded-full">SIPA最强匹配度</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      产业政策与政府关系
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Industrial Policy & Government Affairs — 制造业与政府之间的桥梁，SIPA的核心竞争力场景</p>
+
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl px-5 py-4 text-sm text-columbia-navy/80 leading-relaxed mb-6">
+      <strong>为什么SIPA学生在这里有优势：</strong>产业政策需要同时理解制造业经济学、政策制定逻辑、国际贸易规则和监管合规框架——这正是SIPA课程体系覆盖的核心内容。而大多数制造业从业者缺乏这种政策分析能力。
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '雇主类型', value: '企业政府关系+咨询' },
+        { label: '核心议题', value: '补贴/碳中和/贸易' },
+        { label: '薪资区间', value: '中高，政策价值高' },
+        { label: 'SIPA相关度', value: '★★★★★' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. What is industrial policy work -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 制造业的政策议题图谱</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        { topic: '产业补贴与政策激励', icon: '💰', desc: '中国各级政府对制造业有大量补贴——工业地产优惠、设备购置补贴、研发费用加计扣除、出口退税。企业需要专职人员识别、申请、合规使用这些政策。', who: '政府关系经理、政策分析师' },
+        { topic: '碳中和与绿色制造', icon: '🌱', desc: '中国2030碳达峰/2060碳中和目标，欧盟CBAM碳边境税——制造企业的碳排放正在变成真实的财务成本。需要能理解政策逻辑并帮企业制定合规路径的人才。', who: '可持续发展经理、ESG分析师' },
+        { topic: '中美技术脱钩应对', icon: '⚡', desc: '半导体出口管制、军民两用技术审查、供应链去中国化——跨国制造企业需要实时监测政策变化并制定应对策略。政治经济分析能力是核心。', who: '政策顾问、合规总监' },
+        { topic: '国际贸易合规', icon: '🌍', desc: 'WTO规则、双边贸易协定（RCEP、CPTPP）、反倾销调查应对——出口导向型制造企业的法规合规工作。法律+政策双背景高度稀缺。', who: '贸易合规经理、律师' },
+        { topic: '制造业区位选择与政策评估', icon: '📍', desc: '企业在哪里建厂受政策激励（税收优惠、地价、人才政策）和政治风险（地缘政治、劳工法、土地政策）双重影响。战略顾问公司为大型制造商提供这类分析。', who: '战略咨询师、风险分析师' },
+        { topic: '国防与产业安全', icon: '🛡️', desc: '美国《国防生产法》、中国军民融合政策——关键制造业与国家安全的交叉。政府机构、国防承包商、智库的专职分析岗位。', who: '安全分析师、政策研究员' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-2xl shrink-0">{item.icon}</span>
+            <div>
+              <p class="font-bold text-stone-900 text-sm">{item.topic}</p>
+              <p class="text-[10px] text-columbia-blue mt-0.5">相关岗位：{item.who}</p>
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. Key employers -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 主要雇主类型</h2>
+    <div class="space-y-3">
+      {[
+        { type: '跨国制造公司政府事务部（Government Affairs）', desc: '西门子、宝洁、3M、特斯拉等跨国公司在华设立的政府关系部门，负责监管沟通、政策倡导、政府合作项目洽谈。', salary: '国内30–80万/年（资深）' },
+        { type: '战略咨询公司（制造业专项）', desc: '麦肯锡、BCG、OC&C、罗兰贝格的制造业/工业实践——为制造商提供产业政策分析、选址评估、ESG战略。SIPA背景的Consultant在政策分析项目上有优势。', salary: '咨询行业标准' },
+        { type: '工业行业协会 / 商会', desc: '美国商会驻华办事处、欧盟商会中国分部、中国机械工业联合会——代表行业与政府沟通，需要政策解读+企业服务双能力。', salary: '国内25–50万，相对稳定' },
+        { type: '政府机构 / 国际开发机构', desc: '商务部、工信部相关研究机构、世界银行工业发展团队、UNIDO（联合国工发组织）——需要制造业经济学+政策分析。SIPA是强势申请背景。', salary: '视机构差异大' },
+        { type: '中国国企制造业的国际化部门', desc: '中国兵器、中船重工、华为、比亚迪等企业的国际合规和政府关系部门——需要同时理解中国政策环境和东道国政策环境，双语能力+政策分析能力结合。', salary: '国内25–60万' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <span class="font-bold text-stone-900 text-sm block mb-1">{l.type}</span>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{l.desc}</p>
+            <p class="text-[10px] text-columbia-blue">薪资参考：{l.salary}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. China industrial policy case study -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. 案例：中国产业政策如何改变制造业格局</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>理解中国产业政策对全球制造业的影响，是在这个领域工作的基础功课。以下几个政策案例直接重塑了行业格局：</p>
+      <div class="space-y-3">
+        {[
+          { policy: '中国制造2025（2015年）', impact: '明确提出10个重点领域（机器人、航空航天、新能源汽车等），引导大量国家资本涌入。被美国解读为"不公平竞争"，成为中美贸易战的导火索之一。' },
+          { policy: '新能源汽车补贴政策（2010–2023年）', impact: '累计补贴约1600亿元，催生了比亚迪、蔚来、小鹏等一批全球竞争者。2023年补贴结束，行业进入真正的市场竞争阶段。' },
+          { policy: '双碳政策（2021年）', impact: '"2030碳达峰、2060碳中和"——高耗能制造业面临碳配额约束，绿色制造转型成为强制要求，带来数万亿元级别的设备改造投资需求。' },
+          { policy: '半导体国产替代（芯片大基金）', impact: '通过国家集成电路产业投资基金（芯片大基金）投入数千亿，推动中芯国际、华为海思等本土企业发展，应对美国的芯片出口管制。' },
+        ].map(e => (
+          <div class="bg-white border border-stone-200 rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1 text-sm">{e.policy}</p>
+            <p class="text-stone-500 leading-relaxed">{e.impact}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">政府关系工作的节奏：平时是信息收集和关系维护，关键时刻是政策解读和快速响应。</p>
+
+    <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono mb-8">
+      <p class="text-slate-400 text-[10px] uppercase tracking-widest mb-4">场景 · 政府关系经理 @ 外资工业企业驻华</p>
+      <p class="text-stone-400 text-xs mb-4">工信部刚发布新版《外商投资准入负面清单》修订草案，影响公司核心业务</p>
+      <div class="space-y-2.5 text-xs">
+        <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">收到政策监测订阅邮件：工信部发布了《负面清单》修订稿征求意见（30天征求期）。你是公司最先看到这份文件的人——立刻阅读，找出对公司相关业务的条款</span></div>
+        <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:30</span><span class="text-stone-300">写一页内部快报：哪些条款与公司业务相关、潜在影响是什么、是否需要上报总部或区域VP。用中英文各写一版</span></div>
+        <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">11:00</span><span class="text-stone-300">和法务总监电话：讨论是否要提交公开评论意见。决定通过欧盟商会渠道提交集体意见——个别企业直接评论效果有限，行业协会的声音更受重视</span></div>
+        <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">14:00</span><span class="text-stone-300">起草意见稿：3条具体建议，每条附上数据支撑（受影响企业数量、投资规模），送给欧盟商会工业工作组审核</span></div>
+        <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">16:00</span><span class="text-stone-300">和主管政府关系的本地联络人（前政府官员）沟通：了解这次修订背后的政策意图——是技术安全考虑还是行业保护？信息有助于判断我们的策略</span></div>
+        <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">18:00</span><span class="text-stone-300">发布政策快报给全球总部相关部门：商业影响初步评估 + 公司立场 + 下一步行动计划。附上政策原文链接（中文）和我的摘要（英文）</span></div>
+      </div>
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '政策窗口期短暂，响应必须快', desc: '征求意见稿只有30天，新政策发布到执行有时候只有90天。政府关系工作最重要的能力是快速阅读政策文本、快速判断影响、快速整合内部资源做出响应。这种速度要求在政府关系岗位是真实的日常压力。', color: 'border-slate-400' },
+        { n: '02', title: '在政治敏感领域工作的谨慎性', desc: '中美关系紧张时，外资企业的政府关系工作需要极其谨慎——既不能被视为"亲中"而在总部失去信任，也不能被视为"政治不正确"而在中国市场受阻。这种双重身份的平衡，是每一个外资企业政策人的日常难题。', color: 'border-amber-400' },
+        { n: '03', title: '影响难以量化', desc: '你写了一份意见稿，政府采纳了你的一条建议——这算成功吗？还是政策本来就会往这个方向走？政府关系工作的影响力极难量化，这让KPI评定变得困难，也让向上管理变得更考验沟通技巧。', color: 'border-stone-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/manufacturing/operations-management/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 制造业运营管理</a>
+    <a href="/industry/manufacturing/smart-manufacturing/" class="text-columbia-blue hover:underline no-underline">智能制造与工业4.0 →</a>
+  </div>
+</Base>

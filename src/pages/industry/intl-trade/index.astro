@@ -1,0 +1,146 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/intl-trade/trading-companies/',
+    emoji: '🚢',
+    title: '外贸企业 / 进出口贸易',
+    titleEn: 'Import-Export Trading Companies',
+    desc: '传统外贸企业、中间商、贸易代理——中国作为全球制造业中心的核心枢纽。关税政策、供应链管理、汇率风险是日常课题。',
+    tags: ['进出口', '贸易合规', '汇率风险', '供应链'],
+    status: 'published',
+  },
+  {
+    href: '/industry/intl-trade/cross-border-ecommerce/',
+    emoji: '📦',
+    title: '跨境电商',
+    titleEn: 'Cross-Border E-Commerce',
+    desc: 'Amazon、Shopify、速卖通、Temu——中国卖家走向全球或外资品牌进入中国。流量获取、物流管控、平台政策是核心能力。',
+    tags: ['Amazon', '独立站', '跨境物流', 'DTC品牌'],
+    status: 'published',
+  },
+  {
+    href: '/industry/intl-trade/supply-chain/',
+    emoji: '🏭',
+    title: '供应链与采购管理',
+    titleEn: 'Supply Chain & Procurement',
+    desc: '全球供应链可视化、中国工厂采购、ESG合规——后疫情时代和中美博弈背景下，供应链重构是最紧迫的全球商业课题。',
+    tags: ['采购管理', '供应链韧性', 'ESG合规', '近岸外包'],
+    status: 'published',
+  },
+];
+---
+
+<Base title="外贸与国际贸易行业" description="进出口贸易、跨境电商、供应链管理——全球化重构时代的贸易职业路径">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    所有行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-indigo-50 text-indigo-700 border border-indigo-200 font-semibold px-3 py-1 rounded-full">International Trade</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      外贸与国际贸易
+    </h1>
+    <p class="text-stone-500 text-sm leading-relaxed max-w-2xl mb-8">
+      中国是全球最大的货物贸易国（2023年进出口总额约41.8万亿元人民币），外贸行业几乎渗透所有实体经济。从制造业供应商到跨境电商平台，从大宗商品贸易商到全球采购公司，这是最接近"真实世界商业运转"的行业之一。
+    </p>
+
+    <!-- Macro context -->
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+      {[
+        { label: '中国货物贸易总额', value: '41.8万亿', sub: '2023年，全球第一大货物贸易国（WTO数据）' },
+        { label: '中国跨境电商规模', value: '2.38万亿', sub: '2023年跨境电商进出口总额，年增长15.6%' },
+        { label: '全球供应链重组', value: '进行中', sub: '"中国+1"战略驱动越南/墨西哥产业转移，中美博弈结构性影响' },
+      ].map(s => (
+        <div class="bg-indigo-50 border border-indigo-200 rounded-xl px-5 py-4 text-center">
+          <div class="font-bold text-indigo-800 text-xl mb-0.5">{s.value}</div>
+          <div class="text-indigo-700 text-xs font-medium mb-1">{s.label}</div>
+          <div class="text-indigo-600/70 text-[10px]">{s.sub}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Context framing -->
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-900 leading-relaxed">
+      <strong>2025年的背景：</strong>中美贸易摩擦持续，部分商品关税超过100%；与此同时，东南亚（越南、印尼）和墨西哥承接大量产业转移。传统外贸公司面临压力，但有全球化视野和跨文化能力的人才在供应链重构中需求大增。这是一个挑战与机会并存的时代。
+    </div>
+  </header>
+
+  <!-- Sector cards -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">细分方向</h2>
+    <div class="space-y-4">
+      {sectors.map(s => (
+        <a href={s.href} class="block bg-white border border-stone-200 rounded-2xl p-6 hover:border-indigo-300 hover:shadow-sm transition-all no-underline card-lift">
+          <div class="flex items-start gap-4">
+            <span class="text-3xl shrink-0">{s.emoji}</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2 mb-1">
+                <span class="font-bold text-stone-900 text-base">{s.title}</span>
+                <span class="text-stone-400 text-xs">{s.titleEn}</span>
+              </div>
+              <p class="text-xs text-stone-500 leading-relaxed mb-3">{s.desc}</p>
+              <div class="flex flex-wrap gap-1.5">
+                {s.tags.map(t => (
+                  <span class="text-[10px] bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full">{t}</span>
+                ))}
+              </div>
+            </div>
+            <span class="text-stone-300 text-lg shrink-0">→</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Structural shifts -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">全球贸易格局正在重构</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+          <p class="font-bold text-red-800 mb-3">压力与挑战</p>
+          <ul class="text-xs text-red-700 space-y-2">
+            <li>• <strong>中美关税战</strong>：2018年起的关税博弈仍在持续，部分商品关税率超过100%，中国出口商被迫通过第三国转口贸易规避</li>
+            <li>• <strong>产业转移压力</strong>："中国+1"战略让大量外资将产能迁往越南、印尼、墨西哥，中国工厂的低成本竞争优势收窄</li>
+            <li>• <strong>ESG合规要求上升</strong>：欧盟碳边境调节机制（CBAM）对出口欧洲的产品施加碳成本，绿色合规成为外贸新门槛</li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+          <p class="font-bold text-emerald-800 mb-3">机遇与新赛道</p>
+          <ul class="text-xs text-emerald-700 space-y-2">
+            <li>• <strong>跨境电商爆发</strong>：Temu/Shein/TikTok Shop将中国制造直接连接全球消费者，绕过传统中间商</li>
+            <li>• <strong>东南亚市场扩张</strong>：中国制造商在越南/泰国/印尼建工厂，需要熟悉当地语言和政策的人才</li>
+            <li>• <strong>供应链可视化工具</strong>：区块链+AI在供应链追溯、合规核查中的应用创造了新的技术岗位</li>
+            <li>• <strong>RCEP红利</strong>：区域全面经济伙伴关系协定降低亚太内部贸易壁垒，推动区域内供应链整合</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIPA angle -->
+  <section class="mb-12">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">SIPA 背景的切入方式</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        { title: '贸易政策分析', desc: 'WTO争端解决、关税法规解读、双边贸易协定——这些是SIPA的核心课程内容。国际贸易律所、贸易合规咨询公司、政府贸易促进机构都是直接雇主。' },
+        { title: '跨境电商策略', desc: '帮助中国品牌进入北美/欧洲市场，或帮助外资品牌进入中国——需要语言能力+市场理解+平台规则知识。很多SIPA学生已经在做兼职电商顾问。' },
+        { title: '供应链风险咨询', desc: 'ESG合规、地缘政治风险评估——SIPA的政治风险分析课程与麦肯锡/BCG供应链咨询岗位的要求高度匹配。' },
+        { title: '国际贸易机构', desc: 'WTO、ITC（国际贸易中心）、UNCTAD等——需要对贸易统计数据、谈判逻辑、发展中国家贸易议题有深入理解。SIPA是最强入场券之一。' },
+      ].map(item => (
+        <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl p-5">
+          <p class="font-bold text-columbia-navy text-sm mb-2">{item.title}</p>
+          <p class="text-xs text-columbia-navy/70 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+</Base>

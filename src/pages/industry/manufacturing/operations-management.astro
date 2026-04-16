@@ -1,0 +1,166 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="制造业运营管理深度解析" description="工厂运营、精益生产、六西格玛——跨国制造业管理岗位的真实日常与职业路径">
+
+  <a href="/industry/manufacturing/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    制造业与工业管理
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-3 py-1 rounded-full">Manufacturing · Operations</span>
+      <span class="text-[10px] font-medium text-slate-600 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full">入行难度：中（工程/商科背景）</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      制造业运营管理
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Manufacturing Operations — 让工厂以最高效率运转的系统性工作</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '代表公司', value: '宝洁/西门子/ABB' },
+        { label: '核心方法论', value: '精益 + 六西格玛' },
+        { label: '薪资区间', value: '中高，增长稳定' },
+        { label: '驻外概率', value: '高（工厂多在二三线）' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. Core disciplines -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 制造业运营的核心方法论</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>制造业运营管理不是"盯着工人工作"——它是一套系统性的方法论，目标是在质量、成本、交期三者之间找到最优平衡。以下是核心框架：</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        {[
+          { method: '精益生产（Lean Manufacturing）', origin: '丰田生产方式（TPS）', desc: '消除浪费（Muda）——过度生产、等待、运输、过度加工、库存、动作、缺陷。5S（整理/整顿/清扫/清洁/素养）是最基础的落地工具。', cert: 'Lean Six Sigma Green/Black Belt' },
+          { method: '六西格玛（Six Sigma）', origin: '摩托罗拉/GE推广', desc: '用DMAIC流程（定义/测量/分析/改进/控制）系统性减少产品缺陷率，目标是每百万次机会中缺陷不超过3.4次。数据驱动，统计分析是核心。', cert: 'Six Sigma Green Belt / Black Belt' },
+          { method: '全面生产维护（TPM）', origin: '日本工厂管理', desc: '通过设备预防性维护最大化设备综合效率（OEE）。关键指标：设备可用率×性能效率×良品率。减少计划外停机是核心目标。', cert: 'TPM Coordinator认证' },
+          { method: '敏捷制造（Agile Manufacturing）', origin: '快时尚/电子行业', desc: '快速响应市场需求变化——SHEIN的7天新品上线周期就是极端敏捷制造案例。需要高度灵活的生产线和供应商管理体系。', cert: '无固定证书，重实战经验' },
+        ].map(item => (
+          <div class="bg-white border border-stone-200 rounded-xl p-5 text-xs">
+            <p class="font-bold text-stone-900 text-sm mb-0.5">{item.method}</p>
+            <p class="text-[10px] text-slate-500 mb-2">起源：{item.origin}</p>
+            <p class="text-stone-500 leading-relaxed mb-2">{item.desc}</p>
+            <p class="text-[10px] text-columbia-blue">相关证书：{item.cert}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Career path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 职业路径（跨国制造企业）</h2>
+    <div class="space-y-3">
+      {[
+        { stage: '管理培训生（MT）/ 生产主管', years: '0–2年', salary: '国内15–30万，美国$60k–$80k', desc: '轮岗于不同部门和工厂，了解端到端生产流程。宝洁、联合利华、3M等公司的MT项目是最好的制造业入门渠道。' },
+        { stage: '工艺工程师 / 质量工程师', years: '2–5年', salary: '国内25–50万', desc: '专注产品质量改进、生产工艺优化或设备维护管理。技术深度增加，开始主导小型改善项目（Kaizen活动）。' },
+        { stage: '生产经理 / 运营经理', years: '5–9年', salary: '国内40–80万，美国$100k–$150k', desc: '负责一个或多个生产线/车间的全面运营——产量目标、质量指标、成本预算、团队管理。这个层级的晋升速度取决于结果，不取决于年限。' },
+        { stage: '工厂厂长 / 运营总监', years: '10年+', salary: '国内80–200万，美国$150k–$300k+', desc: '负责整个工厂的P&L（损益）——从原材料采购到成品出库的全链路管理。跨国企业的植物/工厂总经理，通常是最受尊重的管理岗位之一。' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.stage}</span>
+              <span class="text-[10px] text-stone-400">{l.years}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{l.desc}</p>
+            <p class="text-[10px] text-columbia-blue">薪资：{l.salary}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3. 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">制造业运营管理的工作节奏：以轮班为节奏、以数字为语言、以问题驱动一天的工作。</p>
+
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-slate-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 生产经理 @ 跨国消费品工厂</p>
+        <p class="text-stone-400 text-xs mb-4">华南某工厂，今天是月末最后一天，产量目标还差8%</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">07:00</span><span class="text-stone-300">交接班会议：夜班报告——A线有2小时停机（PLC故障），影响昨晚产量约400件。问维修：已修好。问班长：今天能不能追回来？</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:00</span><span class="text-stone-300">走产线（Gemba Walk）：不坐在办公室，亲自走A/B/C三条线。发现C线有一个工位动作浪费——工人取料需要转身90度，建议调整料架位置，预计提升5%效率</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">质量异常处理：QC反映B线今天良品率只有96.2%，目标是98%。召集工艺和质量工程师：是原料问题还是设备问题？取样送检，B线临时降速</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">月度产量追平方案：和工厂总监汇报——今天需要加班4小时才能追上目标，加班成本约3万元。总监批准。通知HR安排加班餐和补贴</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">B线质量问题根因找到：某批次原料含水量偏高导致不良率升高。退货给供应商，同时更新入库检验标准——这批事故写入CAPA（纠正和预防措施）</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">21:00</span><span class="text-stone-300">加班结束，月产量目标完成101%。在微信群发通知表扬团队，明天早会正式总结。填写日报数据，上传ERP系统</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-slate-400 text-[10px] uppercase tracking-widest mb-4">场景 B · MT管培生 @ 宝洁华南工厂（轮岗中）</p>
+        <p class="text-stone-400 text-xs mb-4">第4个月轮岗至供应链部门，负责一个效率改善项目</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">早会：供应链总监布置本月重点——仓储成本超预算12%，需要在两周内找到至少3个改善方向。你作为项目负责人，从今天开始数据收集</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:30</span><span class="text-stone-300">现场观察（Gemba）：在仓库待了2小时，记录叉车行驶路径、货物存放逻辑、员工等待时间。手绘价值流图（Value Stream Map），标注每个环节的耗时</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">数据分析：提取最近3个月的仓库操作日志，用Excel分析：哪些SKU的存放位置导致最长的取货路径？ABC分析排序完成</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:30</span><span class="text-stone-300">和仓库主管访谈：他说"你们总是来改，改完没多久就变回去了"。这句话很关键——改善方案需要考虑可持续性和员工接受度，不能只做PPT好看</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">整理初步发现：3个改善方向（货位重新规划、动态标签系统、叉车路径优化），预计节省成本8–12%。准备下周给总监的汇报PPT框架</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly breakdown -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">制造业管理岗的一周节奏</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+      {[
+        { day: '周一', mood: '数据追踪', tasks: ['上周KPI复盘', '本周目标设定', '异常问题清单'] },
+        { day: '周二', mood: '现场改善', tasks: ['Gemba Walk', 'Kaizen活动', '设备点检'] },
+        { day: '周三', mood: '跨部门协调', tasks: ['供应链沟通', '质量评审', '采购跟进'] },
+        { day: '周四', mood: '项目推进', tasks: ['改善项目进度', 'CAPA追踪', '培训安排'] },
+        { day: '周五', mood: '汇报总结', tasks: ['周报数据整理', '向上汇报', '下周计划'] },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-xs mb-0.5">{d.day}</p>
+          <p class="text-[10px] text-slate-600 mb-2">{d.mood}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-[10px] text-stone-400">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '产量与质量永远是矛盾的', desc: '月末要冲产量——良品率往往会下降。良品率下降——需要返工——影响下月交期。这个循环是制造业管理者最熟悉的两难困境。真正优秀的运营经理能在不牺牲质量的情况下实现效率提升，但这需要系统性方法论，不是靠"拼"出来的。', color: 'border-slate-400' },
+        { n: '02', title: '驻厂生活的心理适应', desc: '很多工厂在广州郊区、苏州工业园、越南河内工业区——不是你想象中的城市生活。驻厂意味着周末可能要在工厂附近度过，社交圈主要是同事和供应商。这不是所有人都能接受的生活方式，但接受了就会发现效率极高。', color: 'border-stone-400' },
+        { n: '03', title: '跨文化团队管理', desc: '如果你在跨国公司的中国工厂，你要向中国总部汇报、向外籍区域总监汇报、还要管理一线工人——三套完全不同的沟通方式。如果在海外工厂（越南/印度），再加一层语言障碍。这是跨国制造业管理者最需要但学校最少教的能力。', color: 'border-amber-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/manufacturing/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 制造业总览</a>
+    <a href="/industry/manufacturing/industrial-policy/" class="text-columbia-blue hover:underline no-underline">产业政策与政府关系 →</a>
+  </div>
+</Base>
