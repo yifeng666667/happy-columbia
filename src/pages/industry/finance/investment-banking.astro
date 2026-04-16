@@ -375,46 +375,260 @@ import Base from '../../../layouts/Base.astro';
 
   <!-- 6. Daily Life -->
   <section id="daily" class="mb-16 scroll-mt-24">
-    <h2>06 · 真实工作日常（不美化版）</h2>
+    <h2>06 · 真实工作日常（越具体越好）</h2>
 
-    <div class="not-prose bg-stone-900 text-stone-100 rounded-2xl p-6 my-6 font-mono text-xs leading-relaxed">
-      <p class="text-stone-400 mb-3"># 一个典型的投行Analyst工作日（纽约，并购旺季）</p>
-      <p><span class="text-green-400">09:00</span> — 到办公室，回复昨晚Model上的评论，修改Deck</p>
-      <p><span class="text-green-400">10:30</span> — 参加内部会议，VP布置任务：更新Comps，加三个scenario</p>
-      <p><span class="text-green-400">12:00</span> — 工位上吃外卖，继续改模型</p>
-      <p><span class="text-green-400">15:00</span> — MD突然有个新想法，需要重做Pitch Book第三页</p>
-      <p><span class="text-green-400">18:00</span> — "今晚8点前给我看"，开始冲刺</p>
-      <p><span class="text-green-400">20:00</span> — 提交第一版，"这个数字哪来的？"，继续改</p>
-      <p><span class="text-green-400">23:00</span> — VP说"好多了"，但Associate有新评论</p>
-      <p><span class="text-yellow-400">01:30</span> — 最终版提交，"明天早上给客户看"</p>
-      <p><span class="text-yellow-400">02:00</span> — 离开办公室，打Uber回家</p>
-      <p><span class="text-red-400">08:30</span> — 手机响，"Deck有个typo，马上改"</p>
+    <p>很多人对投行的认知来自电影或招聘宣传，真实情况要具体得多——也复杂得多。下面拆解的是一个纽约投行IBD（投资银行部门）一年级Analyst真实的一天、一周和一个月。</p>
+
+    <!-- 一天：两个场景 -->
+    <h3>一天的样子：两个真实场景</h3>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <!-- 场景A：交易旺季 -->
+      <div class="bg-stone-900 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-red-400 font-bold mb-3 not-mono" style="font-family:inherit">🔴 场景A：交易进行中（Deal On）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">某并购交易签约前最后一周</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">08:45</span> 到办公室，还没放包就收到Associate的Slack：模型里有个数字要更新</p>
+          <p><span class="text-green-400">09:00</span> 更新Revenue Projections，因为客户昨晚发来了最新的Management Guidance</p>
+          <p><span class="text-green-400">10:30</span> 参加内部call：MD、VP、Associate + Analyst。MD说对手方在谈判桌上提了新条件，需要重跑三个估值scenario，"两小时内"</p>
+          <p><span class="text-green-400">10:35</span> 开始改LBO模型，调整leverage assumptions；同时收到律师团队的邮件要求核实某个数字</p>
+          <p><span class="text-green-400">12:30</span> 在工位上扒完一碗外卖，三个scenario跑出来，发给Associate review</p>
+          <p><span class="text-green-400">13:15</span> Associate：第二个scenario假设有问题，重做。同时VP说Fairness Opinion那页Deck格式要统一</p>
+          <p><span class="text-green-400">15:00</span> 参加与客户CFO的电话，自己不说话但要实时记录所有数字和Action Items</p>
+          <p><span class="text-green-400">16:30</span> 根据call记录，整理新的问题清单，发给Associate确认</p>
+          <p><span class="text-green-400">18:00</span> MD发来评论：Deck第7页的图表要改成bar chart，配色调整，"今晚7点前"</p>
+          <p><span class="text-green-400">19:45</span> 提交新版，MD回复"好"——这已经是今天最好的结果</p>
+          <p><span class="text-green-400">21:00</span> 以为可以走了，Associate说对手方的律师发来了新版SPA（收购协议），需要核对附录里的财务数字</p>
+          <p><span class="text-yellow-400">23:30</span> 核对完毕，发邮件确认，收拾东西</p>
+          <p><span class="text-yellow-400">00:15</span> 打Uber回家。手机静音但不关机</p>
+          <p><span class="text-red-400">07:30</span> 手机震动：MD发现Deck封面的日期还是上周的</p>
+        </div>
+      </div>
+      <!-- 场景B：淡季 -->
+      <div class="bg-stone-800 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-blue-400 font-bold mb-3 not-mono" style="font-family:inherit">🔵 场景B：相对平静期（Between Deals）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">两个项目之间的空档，主要是Pitch工作</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">09:30</span> 到办公室（旺季结束刚过去两周，大家默契地晚一点来）</p>
+          <p><span class="text-green-400">10:00</span> 周例会。组长介绍pipeline里几个潜在机会，分配Pitch任务：需要做一份针对某消费品公司的并购机会分析</p>
+          <p><span class="text-green-400">10:30</span> 开始做行业Research：翻Capital IQ、Bloomberg、公司10-K，找潜在收购标的</p>
+          <p><span class="text-green-400">12:00</span> 跟Associate去附近餐厅吃午饭——这种事在Deal On期间几乎不发生</p>
+          <p><span class="text-green-400">13:30</span> 继续做Pitch Book：每个潜在标的做一页，包括公司简介、估值区间（用Comps快速跑）、战略逻辑</p>
+          <p><span class="text-green-400">16:00</span> 发给Associate第一版，等反馈</p>
+          <p><span class="text-green-400">17:30</span> Associate说内容方向OK，但图表不够清晰，整体格式还需要对齐模板</p>
+          <p><span class="text-green-400">19:00</span> 改完格式，发给VP。VP说"周四前给我就行"</p>
+          <p><span class="text-green-400">19:30</span> 离开办公室。今晚不需要工作。这种日子大概一个月出现3–4次</p>
+          <p><span class="text-stone-400">（晚上）自由时间，但大多数Analyst会用来复盘模型或备考CFA</p>
+        </div>
+      </div>
     </div>
 
-    <p>这不是夸张——这是大量投行人在Reddit的<a href="https://www.reddit.com/r/FinancialCareers/" target="_blank">r/FinancialCareers</a>、知乎等平台分享的真实写照。</p>
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-800 mb-6">
+      <strong>关键认知：</strong>"旺季"和"淡季"不是季节性的，而是跟你手上的项目绑定的。一个Analyst同时可能在跑2–3个项目，每个处于不同阶段——有项目在签约冲刺、有项目在Pitch准备、有项目在初步尽调。"相对平静"随时可能被一个新的deal机会打断。
+    </div>
 
-    <h3>好的部分</h3>
-    <ul>
-      <li><strong>学习曲线极陡</strong>：第一年建的模型量和看到的交易类型，超过很多人职业生涯的总和</li>
-      <li><strong>薪酬远超同龄人</strong>：22岁年薪15万美元，这个事实无法否认</li>
-      <li><strong>品牌背书极强</strong>：Goldman/MS/顶级投行的名字，在后续跳槽、读书、创业都是硬通货</li>
-      <li><strong>人脉网络高质量</strong>：同事、客户、交易对手方——几年投行建立的网络质量非常高</li>
-    </ul>
+    <!-- 一周节奏 -->
+    <h3>一周的节奏</h3>
 
-    <h3>真实的坏部分</h3>
-    <ul>
-      <li><strong>生活完全不存在</strong>：不是"忙"，是系统性地没有个人时间</li>
-      <li><strong>工作内容高度重复</strong>：70%是Excel和PPT，知识含量不如你想象的高</li>
-      <li><strong>职场政治复杂</strong>：谁的项目、谁的客户、谁带你——这些比能力更重要</li>
-      <li><strong>心理健康风险真实存在</strong>：Bank of America 2021年有分析师因长期过劳去世，此后全行业加强了对工时的限制（但执行参差不齐）</li>
-    </ul>
+    <div class="not-prose space-y-3 my-6">
+      {[
+        {
+          day: '周一',
+          color: 'bg-blue-50 border-blue-200',
+          hdr: 'text-blue-800',
+          mood: '重新启动',
+          items: [
+            '早上9–10点：周例会（如果没有活跃交易），组长汇报pipeline，分配本周任务',
+            '回来处理周末积累的邮件——客户问题、律师的文件、上司的评论',
+            '如果有交易进行中：周末本来应该休息，但99%的Analyst周日下午都开过电脑',
+            '下午：重新进入各个项目的工作状态，更新进度',
+            '常见的周一额外任务：准备本周客户会议的材料、更新内部CRM系统的deal tracker',
+          ],
+        },
+        {
+          day: '周二 / 周三',
+          color: 'bg-stone-50 border-stone-200',
+          hdr: 'text-stone-700',
+          mood: '最密集的工作日',
+          items: [
+            '这两天是核心执行日：建模、写Deck、做分析——最长的连续工作时间通常在这两天',
+            '上午：专注深度工作（Excel模型、Comps、DDM/DCF更新）',
+            '下午：大概率有内部评审会或与客户的电话，会前要准备材料，会后要整理Action Items',
+            '晚上：处理当天评论，消化反馈，修改。周三晚上往往是最晚的——因为周四要给到review',
+            '如果有路演：周二三往往是连续出差，赶城市、赶会议，Analyst负责提前准备好材料包',
+          ],
+        },
+        {
+          day: '周四',
+          color: 'bg-amber-50 border-amber-200',
+          hdr: 'text-amber-800',
+          mood: '冲刺日',
+          items: [
+            '交付节奏的关键节点：很多内部review deadline是"周四给我"，因为周五是给客户看的',
+            '上午：赶最终版Deck，确认所有数字、格式、校对',
+            '下午：VP / MD最终review，逐页评论。Analyst对着评论实时修改',
+            '如果有客户会议在周五：周四下午到深夜是最后冲刺，改完再改，有时到凌晨',
+            '如果本周没有大deadline：周四相对"人道"，可能7–8点能走',
+          ],
+        },
+        {
+          day: '周五',
+          color: 'bg-emerald-50 border-emerald-200',
+          hdr: 'text-emerald-800',
+          mood: '客户日 + 伪周末',
+          items: [
+            '很多客户会议、Board Presentation安排在周五——MD带客户，Analyst在幕后备着随时修改',
+            '如果没有客户会议：可能6–7点走，这是"早"的标准',
+            '一般不会有新的大型任务在周五下午启动——除非MD突然想到"周一的Pitch还差一个分析"',
+            '周五晚上：很多人第一次真正放松，但手机始终开着',
+            '"周末保护制度"（Protected Weekend）：部分银行有政策周六不联系Analyst，但执行力度参差不齐，交易进行中基本形同虚设',
+          ],
+        },
+        {
+          day: '周末',
+          color: 'bg-red-50 border-red-200',
+          hdr: 'text-red-800',
+          mood: '理论上休息，实际上……',
+          items: [
+            '平静期：周六可能完全不需要工作，周日下午开始有Anxiety（明天要交什么？）',
+            '旺季：周六早上收到评论是正常的。"快速看一下就好"这句话通常意味着2小时工作',
+            '出差返程：如果路演在外地，周五夜机回来是常见情况',
+            '真正意义上完整的周末——一年大概10–15个，多发生在夏末和圣诞节前后',
+          ],
+        },
+      ].map(d => (
+        <div class={`rounded-xl border p-4 ${d.color}`}>
+          <div class="flex items-center gap-2 mb-2">
+            <span class={`font-bold text-sm ${d.hdr}`}>{d.day}</span>
+            <span class="text-[10px] text-stone-400">{d.mood}</span>
+          </div>
+          <ul class="space-y-1 text-xs text-stone-600">
+            {d.items.map(item => <li class="flex gap-1.5"><span class="shrink-0 text-stone-400">·</span><span>{item}</span></li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- 一个月的节奏 -->
+    <h3>一个月的节奏</h3>
+
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6">
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">月初（1–7号）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 上月交易如果完成，有一段"缓冲期"——相对喘气</li>
+          <li>· 开始新项目：拿到Engagement Letter，组建team，制定时间表</li>
+          <li>· 做行业Overview和初步估值框架（最有学习价值的阶段）</li>
+          <li>· MD开始开发新客户关系，Analyst负责准备背景材料</li>
+          <li>· 如果是Pitch阶段：大量做行业research，找潜在交易逻辑</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">月中（8–22号）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 项目推进最密集的阶段：模型建完，开始迭代和完善</li>
+          <li>· 客户沟通频繁：weekly update call，材料不断更新</li>
+          <li>· 如果有路演（IPO/债券发行）：可能连续出差7–10天，城市间飞</li>
+          <li>· Analyst学习最多的时期——开始看到交易全貌</li>
+          <li>· 也是工作最累的时期，连续熬夜多发生在这个窗口</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">月末（23–31号）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 如果有签约：最后冲刺，法律文件核对、数字最终确认、新闻稿准备</li>
+          <li>· 季度末：上市公司业绩季，需要用最新数据更新所有Comps</li>
+          <li>· 很多Pitch Book在月底完成提交（客户月末开董事会）</li>
+          <li>· 完成交易后有短暂放松感，但新项目很快跟上</li>
+          <li>· 奖金发放期（通常一月）：每年最关键的时刻，影响去留决策</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 最大的压力来源 -->
+    <h3>每周最大的压力和挑战：具体说</h3>
+
+    <div class="not-prose space-y-4 my-6">
+      {[
+        {
+          rank: '01',
+          title: '不可预测的需求爆炸',
+          color: 'border-red-300 bg-red-50',
+          textColor: 'text-red-800',
+          desc: '你以为今天可以正常下班，但MD在6点发来一条Slack："明早9点客户要看这个分析，今晚做出来。"这不是偶发情况，而是结构性的工作模式。投行的压力不来自稳定高强度，而来自高度不确定——你无法规划自己的晚上，更无法规划周末。对于习惯掌控节奏的人来说，这是最难适应的部分。',
+        },
+        {
+          rank: '02',
+          title: '反复修改带来的"无意义感"',
+          color: 'border-orange-300 bg-orange-50',
+          textColor: 'text-orange-800',
+          desc: '一份Deck可以被改20遍。第1版→VP意见→改→Associate意见→改→MD意见→改→客户反馈→全部重来。有时候改了12小时的东西，最终回到第3版的方案。Analyst必须从心理上接受：你的工作是"服务"，不是"创作"。能保持高执行力同时不在心里崩溃，是真正的核心能力。',
+        },
+        {
+          rank: '03',
+          title: '对数字的极致精确要求',
+          color: 'border-amber-300 bg-amber-50',
+          textColor: 'text-amber-800',
+          desc: '交易文件里出现一个错误的数字，可能导致整个交易被质疑。Analyst要检查所有来源（Capital IQ、Bloomberg、公司披露文件）的一致性，确保Deck里的每一个数字都有来源可追溯。这种压力是持续性的，需要极强的细心和系统性核查习惯。绝大多数Analyst第一个月都会因为数字错误被骂，这是几乎普遍的经历。',
+        },
+        {
+          rank: '04',
+          title: '职场层级压力',
+          color: 'border-blue-300 bg-blue-50',
+          textColor: 'text-blue-800',
+          desc: 'Analyst是最底层执行者。MD有最终决定权但不做具体工作；VP是真正的质量把关者；Associate是你最直接的上级，脾气和管理风格差异极大。"摊上一个好Associate"是投行圈流传的说法，因为差的Associate会让你的工作翻倍——要么指令不清、要么反馈混乱、要么甩锅。你的组合（MD+VP+Associate）几乎决定了你的投行生涯体验。',
+        },
+        {
+          rank: '05',
+          title: '出行和身体状态管理',
+          color: 'border-purple-300 bg-purple-50',
+          textColor: 'text-purple-800',
+          desc: '路演期间连续出差（波士顿→纽约→芝加哥→旧金山，4天6个城市）是真实发生的。飞机上改Deck，落地见客户，晚上继续改，隔天早飞。身体疲惫是低频但高强度的压力。加上日常睡眠不足，部分Analyst在第一年结束时已经有健康问题。这不是被夸大的警告——你的身体会诚实地告诉你它的极限在哪里。',
+        },
+      ].map(item => (
+        <div class={`rounded-xl border-l-4 p-5 ${item.color}`}>
+          <div class="flex items-start gap-3">
+            <span class={`font-bold text-2xl shrink-0 opacity-30 ${item.textColor}`}>{item.rank}</span>
+            <div>
+              <p class={`font-bold text-sm mb-2 ${item.textColor}`}>{item.title}</p>
+              <p class="text-xs text-stone-600 leading-relaxed">{item.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Good & Bad -->
+    <h3>值得的部分 vs 真实的代价</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+        <p class="font-bold text-emerald-800 mb-2 text-sm">真实值得的部分</p>
+        <ul class="space-y-2 text-xs text-emerald-700">
+          <li class="flex gap-2"><span>✓</span><span><strong>学习曲线无与伦比：</strong>两年内接触的交易规模和复杂度，超过大多数职业的前十年积累</span></li>
+          <li class="flex gap-2"><span>✓</span><span><strong>财务分析能力根基扎实：</strong>三张表、LBO模型、DCF——你从此不会看不懂任何财务文件</span></li>
+          <li class="flex gap-2"><span>✓</span><span><strong>品牌背书极强：</strong>Goldman/MS/JP Morgan三个字，在任何后续职业场合都打开门</span></li>
+          <li class="flex gap-2"><span>✓</span><span><strong>网络密度极高：</strong>你的同事和交易对手，将来会成为PE/VC的合伙人、上市公司CFO</span></li>
+          <li class="flex gap-2"><span>✓</span><span><strong>薪酬结构清晰：</strong>25岁年薪$180k，两年后跳PE薪资再翻倍，财务起点高</span></li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+        <p class="font-bold text-red-800 mb-2 text-sm">真实的代价</p>
+        <ul class="space-y-2 text-xs text-red-700">
+          <li class="flex gap-2"><span>✗</span><span><strong>没有生活：</strong>不是"很忙"，是结构性地无法规划生活——健身、朋友、关系，全部次优先</span></li>
+          <li class="flex gap-2"><span>✗</span><span><strong>工作内容重复性高：</strong>70%是Excel格式修改和Deck调色，真正有insight的分析占少数</span></li>
+          <li class="flex gap-2"><span>✗</span><span><strong>身份认同焦虑：</strong>离职的人很多，留下来的人开始怀疑自己是否只会做投行</span></li>
+          <li class="flex gap-2"><span>✗</span><span><strong>执行层不参与决策：</strong>你做了全部分析，但决策由MD和客户在你不在场的会议里做出</span></li>
+          <li class="flex gap-2"><span>✗</span><span><strong>心理健康有真实风险：</strong>长期睡眠剥夺、压力积累——行业已开始正视这个问题，但改变缓慢</span></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm not-prose mt-4">
-      <p class="font-semibold text-amber-800 mb-2">来自一亩三分地的真实分享</p>
+      <p class="font-semibold text-amber-800 mb-2">一个更清醒的视角</p>
       <blockquote class="text-amber-700 text-xs leading-relaxed border-l-2 border-amber-300 pl-3 italic">
-        "投行的价值在于前两年。如果你打算在投行待超过4年，一定要想清楚你是在等什么。等VP？等MD？还是已经习惯了这个节奏走不出去了？后者是最危险的。"
+        "投行的价值在于前两年。如果你打算在投行待超过四年，一定要想清楚你在等什么。等VP？等MD？还是已经习惯了这个节奏，不知道怎么走出去了？后者是最危险的。把它当跳板，清楚地知道自己要去哪里——这是大多数人最终认可的用法。"
       </blockquote>
-      <p class="text-amber-500 text-[10px] mt-2">来源：一亩三分地 Finance版块，2023年</p>
+      <p class="text-amber-500 text-[10px] mt-2">综合自 Wall Street Oasis、一亩三分地 Finance 版块的从业者分享</p>
     </div>
   </section>
 

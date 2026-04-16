@@ -284,26 +284,195 @@ import Base from '../../../layouts/Base.astro';
 
   <!-- 6. Daily life -->
   <section id="daily" class="mb-16 scroll-mt-24">
-    <h2>06 · 真实工作日常</h2>
+    <h2>06 · 真实工作日常（越具体越好）</h2>
 
-    <h3>6.1 一周的时间安排</h3>
-    <p>咨询顾问的工作模式高度不规律，但有一些基本规律：</p>
-    <ul>
-      <li><strong>周一</strong>：飞往客户所在城市（或跨时区电话会议）。如果是本地项目则在自己办公室。团队会议对齐本周目标。</li>
-      <li><strong>周二至周四</strong>：在客户现场。大量访谈（每天2-4个），整理访谈记录，建模，做PPT，深夜改稿。</li>
-      <li><strong>周四或周五</strong>：向客户做阶段性汇报（Readout），收集反馈，当场被挑战，需要即时回应。</li>
-      <li><strong>周五晚</strong>：飞回家（或者继续改PPT）。</li>
-    </ul>
+    <p>咨询顾问的工作节奏与项目阶段高度绑定。下面分两个场景，拆解一个MBB Business Analyst（本科/硕士应届，第一年）的真实一天，以及更完整的周节奏和月节奏。</p>
 
-    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm text-stone-700 my-6">
-      <p class="font-semibold text-stone-800 mb-2">来自WSO/知乎的真实描述</p>
-      <blockquote class="italic text-stone-500 text-xs border-l-4 border-stone-300 pl-4">
-        "最难熬的不是长时间工作，而是你永远不知道今天需要工作到几点——因为合伙人可能下午五点突然说'今晚把这个slide改了'，然后你就是十一点。"
-      </blockquote>
+    <!-- 一天：两个场景 -->
+    <h3>6.1 一天的样子：两个真实场景</h3>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <!-- 场景A：出差客户现场 -->
+      <div class="bg-stone-900 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-blue-400 font-bold mb-3" style="font-family:inherit">🛫 场景A：出差客户现场（周三，某零售企业战略项目）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">项目第5周，正在进行供应链成本分析</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">07:15</span> 酒店早餐，在iPad上看昨晚整理的访谈笔记，标注关键数据点</p>
+          <p><span class="text-green-400">08:30</span> 到客户办公室。和Partner打招呼，确认今天的访谈日程</p>
+          <p><span class="text-green-400">09:00</span> 第一个访谈：客户采购总监，45分钟。你负责问问题和记录，Manager主导谈话</p>
+          <p><span class="text-green-400">10:00</span> 整理访谈笔记，提炼3个关键洞察，更新数据追踪表</p>
+          <p><span class="text-green-400">11:00</span> 第二个访谈：仓储运营负责人。发现一个数字跟上午那个访谈对不上——记下来</p>
+          <p><span class="text-green-400">12:00</span> 工作午餐，团队内部同步：今天发现的洞察、数据矛盾、明天访谈的调整</p>
+          <p><span class="text-green-400">13:30</span> 独立工作：把今天的访谈内容转化成Slide的"evidence"，建Excel数据对比表</p>
+          <p><span class="text-green-400">16:00</span> 团队会议：Manager说周四的Readout要加一个"Implementation Roadmap"，需要今晚做</p>
+          <p><span class="text-green-400">16:30</span> 开始做Roadmap那页Slide，同时处理数字矛盾——给客户联系人发邮件核实</p>
+          <p><span class="text-green-400">19:30</span> 酒店餐厅吃晚饭（团队一起，30分钟），继续工作</p>
+          <p><span class="text-green-400">21:00</span> 发给Manager第一版。回复：格式OK，但逻辑顺序要调整，"重排一下"</p>
+          <p><span class="text-yellow-400">23:00</span> 发第二版。Manager："好，明天再看一遍。"</p>
+          <p><span class="text-yellow-400">23:30</span> 回房间，设好明天07:30的闹钟</p>
+        </div>
+      </div>
+      <!-- 场景B：办公室分析日 -->
+      <div class="bg-stone-800 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-emerald-400 font-bold mb-3" style="font-family:inherit">🏢 场景B：本地办公室深度分析日（项目中期）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">周五，整合所有访谈洞察，准备"Big Picture"框架</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">09:00</span> 到办公室，回复邮件（昨晚客户发来了补充数据）</p>
+          <p><span class="text-green-400">09:30</span> 团队站会（15分钟）：每人同步今天的任务，你负责"竞争格局分析"这一模块</p>
+          <p><span class="text-green-400">10:00</span> 开始做竞标格局分析：翻财报（10-K）、行业报告、Capital IQ数据，找关键对比指标</p>
+          <p><span class="text-green-400">12:00</span> 跟Manager在咖啡厅讨论：你整理出了5个竞争维度，他说其中3个相关，2个要换掉，解释逻辑</p>
+          <p><span class="text-green-400">12:30</span> 食堂吃饭，15分钟</p>
+          <p><span class="text-green-400">13:00</span> 根据上午讨论调整框架，开始做Slide：每个竞争维度一页，数据 + 含义（So What）</p>
+          <p><span class="text-green-400">15:30</span> 把初版发给Manager。他在15分钟后回来：内容方向对，但"结论不够sharp，每页最后一行要更有力"</p>
+          <p><span class="text-green-400">16:00</span> 改结论，从"数据描述"升级为"Implication"（这个技能是咨询核心）</p>
+          <p><span class="text-green-400">17:30</span> Manager认可，说"今天就这样，下周一再整合进完整Deck"</p>
+          <p><span class="text-green-400">18:00</span> 离开办公室。这算是早的——在咨询，18点走属于"今天不错"</p>
+          <p><span class="text-stone-400">（晚上）回顾明天要做的分析，在本子上列出3个问题，明天问Manager</p>
+        </div>
+      </div>
     </div>
 
-    <h3>6.2 出差文化</h3>
-    <p>MBB传统模式是"4-1"：一周有4天在客户现场，周五回家或在本地办公室工作。新冠后部分项目改为混合模式，但出差仍然是咨询生活的重要组成部分——尤其是对初级顾问。如果你不喜欢频繁出差，咨询不适合你。</p>
+    <div class="not-prose bg-blue-50 border border-blue-200 rounded-xl px-5 py-4 text-xs text-blue-800 mb-6">
+      <strong>核心认知：</strong>咨询BA的时间粗略分布——约30%访谈和沟通，40%分析和建模，30%PPT制作和修改。但这个比例在项目不同阶段变化很大：项目初期以访谈为主，中期以分析为主，收尾期以PPT冲刺为主。每个阶段的核心要求都不同。
+    </div>
+
+    <!-- 一周节奏 -->
+    <h3>6.2 一周的节奏（出差模式 vs 本地模式）</h3>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="space-y-3">
+        <p class="font-bold text-stone-800 text-sm">传统出差模式（4-1制）</p>
+        {[
+          { day: '周一', desc: '早上飞往客户城市。飞机上开电脑处理邮件。到了先开团队内部kick-off会议，明确本周目标、每人任务分工，以及要访谈哪些人。下午开始第一波访谈。', mood: '启动日' },
+          { day: '周二', desc: '最密集的访谈日：可能有4–5个访谈，对象从一线员工到中层管理者都有。访谈间隙整理笔记，晚上深度分析整理。通常是最晚的一天之一。', mood: '信息收集高峰' },
+          { day: '周三', desc: '访谈继续，同时开始整合分析：把两天的信息转化成框架和数据，找"So What"。下午可能有团队内部讨论，争论哪个假设更靠谱。', mood: '分析转化日' },
+          { day: '周四', desc: '向客户做Readout（阶段性汇报）：你做的Slide要在这天展示给客户高管，现场被挑战是必然的。Readout之后整理客户反馈，调整下周方向。飞回家（或留下）。', mood: '交付 + 反馈' },
+          { day: '周五', desc: '在自己的办公室。整合上周所有分析，更新主Deck，规划下周访谈。下午相对"人道"，多数情况6点前可以走。', mood: '整合 + 喘气' },
+        ].map(d => (
+          <div class="bg-white border border-stone-200 rounded-xl p-3">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="font-bold text-stone-800 text-sm w-8">{d.day}</span>
+              <span class="text-[10px] text-stone-400">{d.mood}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed">{d.desc}</p>
+          </div>
+        ))}
+      </div>
+      <div class="space-y-3">
+        <p class="font-bold text-stone-800 text-sm">混合/本地模式（疫情后新常态）</p>
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-xs text-stone-500 leading-relaxed space-y-2">
+          <p>后疫情时代，MBB的出差模式已经部分演变，很多项目转为"混合"——周一周二在本地远程，周三周四去客户现场，周五本地。</p>
+          <p>但这取决于项目性质和合伙人风格。有些合伙人坚持现场（认为访谈质量更高），有些项目本身是全球team，根本不可能全员出差。</p>
+          <p><strong class="text-stone-700">对应届BA来说：</strong>你的出差频率主要取决于被分配到的项目，入职时不确定。平均来说，第一年出差频率仍然很高，做好心理准备。</p>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <p class="font-bold text-amber-800 text-sm mb-2">出差生活的真实细节</p>
+          <ul class="text-xs text-amber-700 space-y-1.5">
+            <li>· 住的酒店通常不错（客户端费用），但你没有时间用任何设施</li>
+            <li>· 同一个城市连续出差4–6周后，会开始认识前台、记住餐厅菜单</li>
+            <li>· 飞行里程积累极快——有些顾问靠里程换了不少机票</li>
+            <li>· 和团队成员关系紧密：你们是最长时间一起工作的人</li>
+            <li>· 和本地朋友、伴侣的关系需要主动维护，否则很快就脱节</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 一个月的节奏 -->
+    <h3>6.3 一个月的节奏</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6">
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">项目第1–2周（Diagnostic）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· Kick-off：和客户高管见面，确认项目范围和假设</li>
+          <li>· 大量访谈：从CEO到一线员工，收集信息建立全貌</li>
+          <li>· 搭建"问题树"（Issue Tree）：把大问题分解成可验证的假设</li>
+          <li>· 数据收集：向客户索取内部数据，同时做行业benchmark</li>
+          <li>· 节奏感相对宽松，学习最多的时期</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">项目第3–7周（Analysis）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 深度分析阶段：Excel建模、数据清洗、竞争格局分析</li>
+          <li>· 每周向客户做阶段性Readout：展示进度，收集反馈</li>
+          <li>· 关键时刻："假设被推翻"——某个核心假设在数据中站不住脚，需要迅速调整方向</li>
+          <li>· 工作强度最高：访谈+分析+PPT同时进行</li>
+          <li>· 和客户的信任关系逐步建立</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">项目最后2周（Final Delivery）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 收尾冲刺：整合所有分析成"Final Deck"，这是客户最终看的东西</li>
+          <li>· Final Presentation：向董事会或CEO汇报，这是整个项目最重要的1–2小时</li>
+          <li>· 细节强迫症：每个数字核实，每个图表检查，每页逻辑自洽</li>
+          <li>· 最后一周连续熬夜是常态，有时到凌晨2–3点</li>
+          <li>· 交付后：短暂放松2–3天，然后下一个项目开始</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 最大压力 -->
+    <h3>6.4 每周最大的压力和挑战</h3>
+
+    <div class="not-prose space-y-4 my-6">
+      {[
+        {
+          rank: '01',
+          title: '把信息转化成洞察（"So What" 的压力）',
+          color: 'border-blue-300 bg-blue-50',
+          tc: 'text-blue-800',
+          desc: '这是咨询和其他行业最不同的地方。你访谈了10个人，收集了大量信息，但客户不要"我们发现了以下几点"——他们要的是"这意味着什么，你们建议我们怎么做"。把信息变成Insight再变成Recommendation，是BA最难掌握的技能，也是Engagement Manager每天都在逼你做的事。很多应届生第一个月都在被这个问题折磨。',
+        },
+        {
+          rank: '02',
+          title: '被客户当场质疑',
+          color: 'border-red-300 bg-red-50',
+          tc: 'text-red-800',
+          desc: 'Readout的时候，客户高管（有时是CEO）会当场挑战你的结论："你这个数字哪来的？"、"你说效率低，但我们去年刚优化过，你有没有看这个数据？"。你必须在30秒内有逻辑地回应，或者坦诚"这个我回去确认"并记下来。这种高压场合下的即时应对能力，是区分优秀顾问和普通顾问的分水岭。',
+        },
+        {
+          rank: '03',
+          title: '项目方向中途被推翻',
+          color: 'border-orange-300 bg-orange-50',
+          tc: 'text-orange-800',
+          desc: '做了两周的分析，发现核心假设是错的——这不是偶发事故，几乎每个项目都会经历至少一次。这时候合伙人会说"方向要调整"，你已经做的工作不会完全浪费，但需要快速重建框架。能在混乱中保持冷静、快速迭代，是真正的咨询能力，也是最难熬的压力时刻。',
+        },
+        {
+          rank: '04',
+          title: 'PPT的"最后一公里"问题',
+          color: 'border-purple-300 bg-purple-50',
+          tc: 'text-purple-800',
+          desc: '分析做完了，逻辑也是对的，但PPT的表达方式不够"sharp"——图表选择不当、文字太多、颜色不一致、某个数字的单位在第3页和第7页写法不一样。这些"最后一公里"的细节处理，会在交付前夕把你逼到深夜。MBB的Deck质量标准极高，新人花在格式和表达上的时间往往超出预期。',
+        },
+        {
+          rank: '05',
+          title: '项目间的"staffing焦虑"',
+          color: 'border-stone-300 bg-stone-50',
+          tc: 'text-stone-700',
+          desc: '一个项目结束到下一个项目开始之间有时有空档，有时无缝衔接。被分配到什么项目、在什么行业、和什么样的团队，你几乎没有选择权（尤其是第一年）。如果连续被分配到不感兴趣的行业，或者和管理风格不好的合伙人长期合作，会极大影响你的体验。"Staffing"是咨询内部的隐性焦虑来源。',
+        },
+      ].map(item => (
+        <div class={`rounded-xl border-l-4 p-5 ${item.color}`}>
+          <div class="flex items-start gap-3">
+            <span class={`font-bold text-2xl shrink-0 opacity-25 ${item.tc}`}>{item.rank}</span>
+            <div>
+              <p class={`font-bold text-sm mb-2 ${item.tc}`}>{item.title}</p>
+              <p class="text-xs text-stone-600 leading-relaxed">{item.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-xl p-5 text-sm text-stone-700 mt-6">
+      <p class="font-semibold text-stone-800 mb-2">来自从业者的真实分享</p>
+      <blockquote class="italic text-stone-500 text-xs border-l-4 border-stone-300 pl-4 leading-relaxed">
+        "最难熬的不是工作时间长，而是你永远不知道今天几点能走——合伙人可能下午五点说'今晚把这个Slide改了'，然后你就是十一点。学会在不确定性里保持高效，是咨询教给你的最重要的能力，也是代价最高的课。"
+      </blockquote>
+      <p class="text-stone-400 text-[10px] mt-2">综合自 Management Consulted、知乎咨询版、一亩三分地从业者分享</p>
+    </div>
   </section>
 
   <!-- 7. Salary -->
