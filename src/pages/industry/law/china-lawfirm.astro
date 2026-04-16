@@ -157,6 +157,82 @@ const practiceAreas = [
     </div>
   </section>
 
+  <!-- 3.5 Daily Life -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3.5 真实工作日常（越具体越好）</h2>
+    <p class="text-stone-500 text-sm leading-relaxed mb-6">中国律所（以红圈所跨境并购组为例）的工作节奏与BigLaw有相似之处，但业务语境、客户文化、团队结构完全不同。以下拆解一个入职1–2年的律师助理/助理律师的真实一天。</p>
+
+    <div class="grid sm:grid-cols-2 gap-4 mb-8">
+      <div class="bg-stone-900 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-red-400 font-bold mb-3" style="font-family:inherit">🔴 场景A：跨境并购项目冲刺期</p>
+        <p class="text-stone-400 mb-2 text-[10px]">某国企收购境外资产，交割在下周，你负责中方法律文件</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">09:00</span> 开电脑，查收昨晚境外律所发来的修改版SPA（190页英文），需要把变动部分整理成中文对照摘要给合伙人</p>
+          <p><span class="text-green-400">10:00</span> 用redline工具比对，标注对方新增/删改的15处条款，写一页中文要点Summary</p>
+          <p><span class="text-green-400">11:00</span> 参加电话会议（中英双语）：合伙人、客户（国企法务）、境外律所三方对线。你全程记录，并在会后整理Action Items</p>
+          <p><span class="text-green-400">12:30</span> 叫外卖，整理会议纪要，发给合伙人确认</p>
+          <p><span class="text-green-400">14:00</span> 起草中国法律意见书（Legal Opinion）的初稿——关于本次交易是否需要国内监管审批（商务部/发改委）</p>
+          <p><span class="text-green-400">17:00</span> 合伙人看完草稿，有详细评论：某个结论的法律依据引用不够充分，需要找到具体条款</p>
+          <p><span class="text-green-400">17:30</span> 查《外商投资安全审查办法》和商务部的最新解释性文件，找到支撑依据，更新Legal Opinion</p>
+          <p><span class="text-green-400">20:00</span> 发第二版给合伙人，等反馈</p>
+          <p><span class="text-yellow-400">22:30</span> 合伙人回复：OK，明天发给客户。今晚结束</p>
+        </div>
+      </div>
+      <div class="bg-stone-800 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-blue-400 font-bold mb-3" style="font-family:inherit">🔵 场景B：数据合规项目（相对平静期）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">某跨国公司聘请律所做PIPL合规审查，为期6周</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">09:30</span> 审查客户提供的100份内部数据处理协议，用Checklist逐项核对是否符合《个人信息保护法》要求</p>
+          <p><span class="text-green-400">11:00</span> 发现3份协议缺少"数据主体权利告知"条款，在Issue Log中标注并写修改建议</p>
+          <p><span class="text-green-400">12:00</span> 正常午饭——这个项目节奏相对规律</p>
+          <p><span class="text-green-400">13:30</span> 起草一份跨境数据传输机制的建议方案（标准合同条款 vs 安全评估 vs 认证三种路径比较）</p>
+          <p><span class="text-green-400">16:00</span> 与客户合规部门的周例会：汇报本周审查进度，回答他们关于某个业务场景的合规疑问</p>
+          <p><span class="text-green-400">17:30</span> 整理客户问题，起草书面法律意见回复</p>
+          <p><span class="text-green-400">19:00</span> 今天可以走了——数据合规项目相比并购节奏更规律</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="font-display font-bold text-lg text-stone-900 mb-4">一周的节奏</h3>
+    <div class="space-y-3 mb-8">
+      {[
+        { day: '周一', mood: '项目同步日', desc: '处理周末积累的邮件（境外律所的时差，周末发文件很常见）。与合伙人确认本周项目重心，参加组内周会。如果有新项目启动，这天会收到分配通知。' },
+        { day: '周二–周三', mood: '执行高峰', desc: '最密集的起草和谈判日：合同来回、电话会议（可能是中英双语）、法律研究。这两天往往是最晚的，尤其是有交割节点的项目。在中国律所，合伙人可能在深夜发微信评论——这是与BigLaw不同的沟通文化。' },
+        { day: '周四', mood: '交付节点', desc: '很多客户周五有内部汇报，所以律所的交付deadline往往在周四下午。这天下午集中处理最后的审阅意见，发出最终版本。如果有正式签约，周四深夜冲刺是常见情况。' },
+        { day: '周五', mood: '整合 + 新项目', desc: '整理本周项目进度，准备下周的工作计划。部分合伙人在周五安排客户拜访（关系维护型会议）。无活跃项目时，周五下午可以相对早走，但这种情况比你想象的少。' },
+        { day: '周末', mood: '视项目强度', desc: '红圈所的工作强度介于BigLaw和一般律所之间。活跃交易期，周六收到合伙人微信评论是真实发生的。相对平静期（如数据合规类项目），周末基本可以休息，但需要保持手机畅通。' },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="font-bold text-stone-800 text-sm">{d.day}</span>
+            <span class="text-[10px] text-stone-400">{d.mood}</span>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{d.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3 class="font-display font-bold text-lg text-stone-900 mb-4">每周最大的压力和挑战</h3>
+    <div class="space-y-3 mb-6">
+      {[
+        { n: '01', t: '语言切换的双重压力', c: 'border-red-300 bg-red-50 text-red-800', d: '中国涉外律所的核心工作是中英双语的——合同英文起草，内部沟通中文，客户汇报可能是中文，但境外对手方是全英文。在高压状态下保持两种语言的精确性（法律文件里的一个词差异可能改变整个条款含义），是真实的日常挑战。' },
+        { n: '02', t: '监管政策频繁变化带来的不确定性', c: 'border-orange-300 bg-orange-50 text-orange-800', d: '中国的监管环境变化快——数据安全（PIPL/DSL）、外资并购审查（商务部/发改委）、反垄断（SAMR）——法规解释和执行标准往往不明确。你经常需要在"法规还不清晰"的情况下给出法律意见，这比在成熟法律体系下工作难度更高，风险也更大。' },
+        { n: '03', t: '合伙人文化与微信工作边界', c: 'border-amber-300 bg-amber-50 text-amber-800', d: '国内律所普遍使用微信沟通工作，合伙人可能晚上11点发微信说"这个地方再看一下"。这种边界的模糊性比邮件文化（BigLaw）更难管理——你很难忽视微信消息，而又很难设定工作外的时间边界。这是在国内律所工作与海外律所最不同的文化体验之一。' },
+        { n: '04', t: '业务开发压力（中高级别）', c: 'border-blue-300 bg-blue-50 text-blue-800', d: '中国律所的收入主要靠合伙人的个人客户资源（Book of Business）。助理律师阶段，你不需要直接带来客户，但从入行第3年开始，开始有"认识更多客户"的期待。人脉资源的积累（校友网络、前同事、行业协会）是所有律师的长期功课，在国内律所体现得尤为明显。' },
+      ].map(item => (
+        <div class={`rounded-xl border-l-4 p-4 ${item.c}`}>
+          <div class="flex items-start gap-3">
+            <span class="font-bold text-xl opacity-20 shrink-0">{item.n}</span>
+            <div>
+              <p class="font-bold text-sm mb-1.5">{item.t}</p>
+              <p class="text-xs text-stone-600 leading-relaxed">{item.d}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- 4. For overseas Chinese law students -->
   <section class="mb-14">
     <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 海外留学背景的竞争力</h2>

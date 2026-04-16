@@ -360,42 +360,124 @@ import Base from '../../../layouts/Base.astro';
 
   <!-- 6. Daily Life -->
   <section id="daily" class="mb-16 scroll-mt-24">
-    <h2>06 · 真实工作日常</h2>
+    <h2>06 · 真实工作日常（越具体越好）</h2>
 
-    <h3>6.1 基本面L/S Equity Analyst的一天</h3>
-    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
-      <p class="text-stone-400 mb-3">// 典型基本面HF Analyst的工作节奏</p>
-      <p>06:30 — 起床看亚洲市场和隔夜新闻</p>
-      <p>07:00 — 读sell-side晨报，筛选相关研报</p>
-      <p>08:30 — 开盘前Morning Meeting：PM分享观点，Analyst汇报持仓更新</p>
-      <p>09:30 — 市场开盘，监控持仓个股走势</p>
-      <p>10:00 — 分析师电话（公司路演/业绩说明会）</p>
-      <p>11:00 — 深度研究：竞争对手分析、渠道核查、供应链调研</p>
-      <p>13:00 — 快速工作午餐（很少正式吃）</p>
-      <p>14:00 — IC讨论：某个新想法/建仓/止损决策</p>
-      <p>16:00 — 收盘，更新P&L，写交易日志</p>
-      <p>17:00 — 行业expert call，或与公司CFO的私下沟通</p>
-      <p>19:00 — 写投资备忘录，更新模型</p>
-      <p>21:00 — 看隔夜期货和美联储动态</p>
-      <p class="text-stone-400 mt-3">// 财报季节：以上时间全部×1.5</p>
+    <p>对冲基金的日常因策略类型差异极大——基本面多空（L/S Equity）、全球宏观（Global Macro）、量化（Quant/Systematic）的工作内容几乎没有交集。以下重点拆解两个最代表性的场景：基本面Analyst和宏观Analyst。</p>
+
+    <h3>6.1 一天的样子：两个真实场景</h3>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="bg-stone-900 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-green-400 font-bold mb-3" style="font-family:inherit">📈 场景A：基本面L/S Equity Analyst（纽约，财报季）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">某科技股核心持仓今晚发布Q3业绩</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">06:15</span> 起床，手机看亚洲市场收盘和欧洲开盘，快速扫Bloomberg标题。持仓里有一只欧洲股在跌——找原因</p>
+          <p><span class="text-green-400">07:00</span> 读3份卖方晨报（Goldman、MS、JPM），筛出今天与持仓相关的部分，标注有用的数据点</p>
+          <p><span class="text-green-400">08:30</span> 到办公室，开盘前Morning Meeting：PM分享今天的宏观背景，你汇报持仓公司昨天的渠道调研新发现</p>
+          <p><span class="text-green-400">09:30</span> 美股开盘，在Bloomberg/FactSet上盯持仓走势。今天没有特别操作，按计划持有</p>
+          <p><span class="text-green-400">10:30</span> 公司投资者关系电话（IR Call）：某供应链公司路演，你是第三个提问的，问了一个关于库存去化的尖锐问题，对方回答含糊——记录下来</p>
+          <p><span class="text-green-400">12:00</span> 工作午餐，边吃边看另一份行业数据报告</p>
+          <p><span class="text-green-400">13:00</span> 重头戏：今晚持仓公司的Q3财报，预期EPS是$1.45。你根据渠道调研估计实际可能是$1.38–1.50的区间，更新自己的预测模型，列出关键关注点（收入增长、毛利率、下季度Guidance）</p>
+          <p><span class="text-green-400">15:00</span> 与PM讨论：是否在业绩前调整仓位？你们决定保持现有仓位，设好止损线</p>
+          <p><span class="text-green-400">16:00</span> 收盘。更新今日P&L，写交易日志（每天必须做，记录当天的判断和市场反应）</p>
+          <p><span class="text-green-400">18:00</span> 吃晚饭（公司附近），保持状态</p>
+          <p><span class="text-yellow-400">21:00</span> 财报发布：EPS $1.41，略低于预期但Guidance上调。盘后股价+3%。你快速写一页总结发给PM，并更新明日的建议仓位</p>
+          <p><span class="text-yellow-400">23:00</span> 财报电话会议听完，标注关键管理层表态，发给团队。今晚完成</p>
+        </div>
+      </div>
+      <div class="bg-stone-800 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-blue-400 font-bold mb-3" style="font-family:inherit">🌍 场景B：全球宏观（Global Macro）Analyst（美联储议息会议日）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">FOMC利率决定在今天下午2点EST公布</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">05:30</span> 起床，看隔夜亚洲市场反应（昨天美国CPI数据超预期）</p>
+          <p><span class="text-green-400">06:30</span> 快速写一份"Pre-FOMC brief"：当前市场对加息路径的定价（CME FedWatch tool数据），以及极端情景下各资产的预期反应</p>
+          <p><span class="text-green-400">08:00</span> 团队会议：讨论今天的仓位是否需要在FOMC前做对冲。你建议在利率期货上做一个小额的尾部风险对冲，PM同意</p>
+          <p><span class="text-green-400">09:30</span> 开盘，执行对冲交易。监控国债收益率曲线变化</p>
+          <p><span class="text-green-400">11:00</span> 精读美联储最新发布的Beige Book（经济况况报告），找与官方预期不一致的地方</p>
+          <p><span class="text-green-400">13:30</span> 团队最后一次对齐：各人持仓确认，止损线设好。你的任务是在2:00声明发出的5分钟内给PM发一份一页纸的"即时解读"</p>
+          <p><span class="text-green-400">14:00</span> 美联储声明：维持利率不变，措辞偏hawkish。你迅速写下核心信号和市场影响，30秒内发给PM</p>
+          <p><span class="text-green-400">14:30</span> 鲍威尔新闻发布会：你一边听一边标注关键措辞变化（"appropriate"→"carefully"这种细节很重要）</p>
+          <p><span class="text-green-400">16:00</span> 收盘，更新持仓，确认对冲效果。写当天的市场总结</p>
+          <p><span class="text-green-400">20:00</span> 更新基本情景和压力情景的宏观模型，为明天的策略讨论做准备</p>
+        </div>
+      </div>
     </div>
 
-    <h3>6.2 HF文化的真实侧面</h3>
-    <p>对冲基金是金融里文化差异最大的细分：小型基金可能极度轻松（10人团队，每人独立管理一块），大型多策略平台可能极度高压（Citadel有"the pod shop"文化的名声——业绩差迅速清除）。</p>
-    <ul>
-      <li><strong>结果导向到极致</strong>：没有人在乎你工作多努力，只在乎你的P&L</li>
-      <li><strong>信息壁垒森严</strong>：很多HF对外保密程度极高，员工不能在社交媒体透露工作细节</li>
-      <li><strong>工作时长两极化</strong>：基本面HF通常比IB更自由（60-70小时/周）；量化HF工程师可能更接近科技公司节奏；宏观基金在重大事件期间压力极大</li>
-    </ul>
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-600 mb-6">
+      <strong class="text-stone-800">策略类型决定日常：</strong>量化HF的Analyst/Researcher更接近科技公司——大量时间在写Python/R代码、回测策略、分析因子有效性；几乎不开会，工作时间相对规律（但压力同样极高）。多策略平台（Citadel、Millennium）的Pod Analyst是最接近"纯粹P&L压力"的形态——你的Pod的盈亏决定你是否还有工作。
+    </div>
 
-    <h3>6.3 真实声音</h3>
+    <h3>6.2 一周的节奏（基本面L/S）</h3>
+    <div class="not-prose space-y-3 my-6">
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-blue-800 text-sm">周一</span><span class="text-[10px] text-stone-400">策略重置日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">早上团队会议回顾上周表现（P&L复盘）：哪个判断对了、哪个错了、为什么。下午整理本周需要关注的催化剂事件（Catalyst Calendar）：财报日程、宏观数据发布、行业会议。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-stone-700 text-sm">周二–周三</span><span class="text-[10px] text-stone-400">研究深挖日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">最密集的深度研究时间：做竞争格局分析、实地渠道调研（打给分销商/供应商了解真实情况）、参加公司IR Call。每天可能有2–4个分析师电话。这是一周中脑力消耗最大的两天，因为每次对话都需要极度专注和即时判断。</p>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-amber-800 text-sm">周四</span><span class="text-[10px] text-stone-400">策略整合日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">把本周研究整合成投资备忘录更新或新想法提案。下午可能有IC讨论：你向PM呈现某个建仓/减仓/建空想法，PM会从各个角度挑战你的逻辑——"如果你错了，最大风险是什么"是必答题。</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-emerald-800 text-sm">周五</span><span class="text-[10px] text-stone-400">收尾 + 周报</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">更新所有持仓的"Thesis跟踪"（投资逻辑是否仍然成立），写周报（覆盖的行业动态、本周学到什么、下周关注点）。无重大催化剂时，下午相对轻松。财报季周五则可能是最忙的一天。</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-red-800 text-sm">周末</span><span class="text-[10px] text-stone-400">比IB自由，但永远保持信息接收</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">HF通常不需要周末工作，这是吸引顶尖人才的原因之一。但"永远在线"是真实的——重大新闻随时可能要求你第一时间判断。财报季的周末，公司财报可能在任何时间发布，你需要快速反应。顶级HF的Analyst普遍说：周末是自由的，但你的脑子从来没有真正休息。</p>
+      </div>
+    </div>
+
+    <h3>6.3 每周最大的压力和挑战</h3>
+    <div class="not-prose space-y-4 my-6">
+      <div class="rounded-xl border-l-4 border-red-300 bg-red-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-red-800 opacity-25 shrink-0">01</span>
+          <div>
+            <p class="font-bold text-sm text-red-800 mb-1.5">P&L是唯一的KPI——错了就是错了</p>
+            <p class="text-xs text-stone-600 leading-relaxed">HF没有"过程分很好但结果不好"这回事。你的判断直接转化成仓位，仓位直接转化成P&L，P&L每天实时显示。多策略平台更极端——如果连续几个月表现不好，会直接清空你的Pod。这种赤裸裸的结果导向，是世界上对精英人才最有效也最残酷的筛选机制之一。数据来源：Morgan Stanley Institutional Equity，"Hedge Fund Monitor Q4 2024"</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-orange-300 bg-orange-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-orange-800 opacity-25 shrink-0">02</span>
+          <div>
+            <p class="font-bold text-sm text-orange-800 mb-1.5">市场打脸：正确的分析+错误的时机=亏钱</p>
+            <p class="text-xs text-stone-600 leading-relaxed">HF里最痛苦的体验之一：你的分析完全正确（公司基本面确实在恶化），但市场情绪推着股价继续涨，你的空仓在不断亏损。Keynes有句话："The market can stay irrational longer than you can stay solvent"。基本面判断正确但时机错误，在HF里是真实发生的事，而且会直接影响你的职业生涯。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-amber-300 bg-amber-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-amber-800 opacity-25 shrink-0">03</span>
+          <div>
+            <p class="font-bold text-sm text-amber-800 mb-1.5">信息竞赛的压力：你永远不知道谁比你知道得更多</p>
+            <p class="text-xs text-stone-600 leading-relaxed">当你在分析一家公司时，同时有数十个其他基金的Analyst在做同样的事，有些人比你有更好的专家资源、更快的数据、更大的网络。你的"edge"（优势）是否真实存在，每天都在被市场检验。在这种竞争强度下，持续保持信息和判断的领先，是HF从业者永恒的焦虑来源。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-blue-300 bg-blue-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-blue-800 opacity-25 shrink-0">04</span>
+          <div>
+            <p class="font-bold text-sm text-blue-800 mb-1.5">文化密度：小团队、无处遁形</p>
+            <p class="text-xs text-stone-600 leading-relaxed">HF团队通常很小（5–30人），你和PM的关系极为密切。这既是优势（直接向最顶级的投资人学习），也是压力（你所有的工作都在他/她眼皮底下）。如果PM的投资风格与你不兼容、或者他/她有管理问题，你几乎没有逃脱空间。选择基金时，对PM和团队文化的调查，比对策略的调查更重要。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="not-prose space-y-3 my-6">
       <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
         "对冲基金最爽的地方是你的想法真的影响实际仓位，真的有人押钱在你的判断上。最难的地方是你永远不知道自己是对了还是运气好，市场会打脸，而且打脸时你要在几秒钟内决策。"
         <cite class="block text-xs text-stone-400 not-italic mt-2">— 一亩三分地，美国某基本面L/S Analyst，纽约</cite>
       </blockquote>
       <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
-        "多策略平台的竞争文化是真实的。我们pod里有三个analyst，半年后两个被裁。生存压力很大，但如果你做好了，薪酬是其他行业几倍。这是一个高风险高回报的选择，不适合所有人。"
+        "多策略平台的竞争文化是真实的。我们Pod里有三个Analyst，半年后两个被裁。生存压力很大，但如果你做好了，薪酬是其他行业的几倍。这是高风险高回报的选择，不适合所有人。"
         <cite class="block text-xs text-stone-400 not-italic mt-2">— Wall Street Oasis匿名，某多策略平台Analyst，纽约</cite>
       </blockquote>
     </div>

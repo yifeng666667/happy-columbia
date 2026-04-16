@@ -148,6 +148,107 @@ import Base from '../../../layouts/Base.astro';
     </div>
   </section>
 
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">数字营销的工作节奏：数据、创意、算法，三者随时都在互相打架。</p>
+
+    <!-- Two scenario panels -->
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-pink-400 text-[10px] uppercase tracking-widest mb-4">场景 A · Growth Manager @ 科技初创公司</p>
+        <p class="text-stone-400 text-xs mb-4">用户获取季报冲刺周，Q4最后一个月，CMO盯着月活数字</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:00</span><span class="text-stone-300">打开Google Ads + Meta Ads Manager。昨晚AI素材组有3条广告ROAS低于1.8，暂停投放，新素材排队测试</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:30</span><span class="text-stone-300">Growth weekly meeting。带着一张漏斗图：Impression→Click→Install→Register→Pay。每一步转化率逐行解释，CMO追问为什么注册到付费卡了</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">12:00</span><span class="text-stone-300">A/B测试结果出来：版本B的注册率高11%，但样本量只有800——统计显著吗？打开计算器验p-value</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">14:00</span><span class="text-stone-300">和内容团队开会，给SEO文章写Brief：关键词、搜索意图、内链逻辑、CTA设计。写完还得过一遍brand voice checklist</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">16:30</span><span class="text-stone-300">Google突然推送算法更新通知。三篇排名第一的文章掉了两页，立刻开会讨论是否需要紧急更新内容</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">18:30</span><span class="text-stone-300">整理Weekly Performance Dashboard，汇总CAC、LTV、ROAS，写Executive Summary，发给CMO和Board</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-pink-400 text-[10px] uppercase tracking-widest mb-4">场景 B · SEM Manager @ 消费品品牌</p>
+        <p class="text-stone-400 text-xs mb-4">618大促前两周，数百万预算的广告冲刺备战日</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">检查昨天的Budget Pacing Report。发现某个关键词组花了日预算的140%，触发自动规则的异常——需要排查是意外还是竞品抢价</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">大促Landing Page走查：每个广告组对应的落地页加载速度、折扣信息是否更新、移动端按钮是否可点。一处错误可能导致整组预算打水漂</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">创意审查会议：设计团队提交15套素材，需要判断哪些符合平台规则（禁止绝对化用语），哪些CTA可能被审核拒绝，过滤后剩8套送审</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">电话会议：电商运营团队通知库存可能不够，要求压低某SKU的投放量。重新分配预算——5个广告组全部手动调整Bid Strategy</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:30</span><span class="text-stone-300">大促倒计时看板：竞品在同一关键词开始抢量，CPC上涨23%。要不要跟？还是转向长尾词？给Manager提方案</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">20:00</span><span class="text-stone-300">大促开始前最后检查：所有Campaign状态确认Active，Tracking Pixel验证正常。群里所有人盯着实时数据屏幕</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key insight -->
+    <div class="bg-pink-50 border border-pink-200 rounded-xl px-5 py-4 text-xs text-pink-900 mb-8 leading-relaxed">
+      <strong>数字营销的双重属性：</strong>它同时需要你是一个数据分析师（能看懂转化漏斗、统计显著性、归因模型）和一个创意策略师（能判断什么样的内容会打动人）。两种思维在同一张椅子上共存，就是这个职位的本质。
+    </div>
+
+    <!-- Weekly breakdown -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">一周节奏</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+      {[
+        { day: '周一', mood: '数据复盘', tasks: ['拉上周全渠道报告', '找到表现最差的3个广告', '更新预算分配表'] },
+        { day: '周二', mood: '执行优化', tasks: ['调整出价策略', 'A/B测试上线', '创意素材审核'] },
+        { day: '周三', mood: '内容配合', tasks: ['SEO内容brief对接', '社媒排期确认', 'Landing page复查'] },
+        { day: '周四', mood: '分析报告', tasks: ['渠道归因分析', '用户LTV队列分析', '向上汇报数据看板'] },
+        { day: '周五', mood: '策略规划', tasks: ['下周计划制定', '竞品监测报告', '新渠道测试提案'] },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-xs mb-0.5">{d.day}</p>
+          <p class="text-[10px] text-pink-600 mb-2">{d.mood}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-[10px] text-stone-400">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Monthly phases -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">一个月的三个阶段</h3>
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+      {[
+        { phase: '第一周', title: '策略规划', color: 'bg-pink-50 border-pink-200', tasks: ['制定月度预算分配', '确认本月测试重点', '整理上月归因模型'] },
+        { phase: '第二/三周', title: '执行与迭代', color: 'bg-stone-50 border-stone-200', tasks: ['密集A/B测试上线', '实时监控数据异常', '中期方向微调'] },
+        { phase: '第四周', title: '收尾与汇报', color: 'bg-columbia-light border-columbia-blue/20', tasks: ['月度Performance Review', 'Lessons Learned归档', '下月提案提交'] },
+      ].map(p => (
+        <div class={`border rounded-xl p-4 ${p.color}`}>
+          <p class="text-[10px] text-stone-400 mb-0.5">{p.phase}</p>
+          <p class="font-bold text-stone-800 text-sm mb-3">{p.title}</p>
+          <ul class="space-y-1.5">
+            {p.tasks.map(t => <li class="text-xs text-stone-600">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">每周最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: 'ROI数字实时可见，没地方藏', desc: '营销和其他职能不一样——你的成绩一张Dashboard就看完。ROAS从3.5掉到2.1，所有人都看得到，也都来找你问为什么。这种透明度既是动力也是压力。', color: 'border-pink-400' },
+        { n: '02', title: '平台算法随时可以让你的方案作废', desc: 'Google Core Update、Meta广告算法调整、TikTok新政策——这些都不在你控制之内。一觉醒来发现原来排名第一的页面掉到第五页，你需要立刻应对，但根本没有完整的解释。', color: 'border-orange-400' },
+        { n: '03', title: '创意判断没有标准答案', desc: '你认为这条文案很好，设计师认为那套视觉更强，销售说消费者不这么想——最终数据说了算，但跑出数据要时间，在数据出来之前每个人的意见都是对的。这种不确定性会一直伴随你。', color: 'border-amber-400' },
+        { n: '04', title: '数据隐私监管让归因越来越难', desc: 'iOS 14以后Facebook的归因数据缺口、第三方Cookie的消亡、GDPR/CCPA的数据限制——你在努力测量，但测量工具本身在变得越来越模糊。向上汇报时解释这些限制比解释好结果难多了。', color: 'border-violet-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- 4. China digital marketing -->
   <section class="mb-14">
     <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 中国数字营销：完全不同的战场</h2>

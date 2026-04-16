@@ -128,6 +128,107 @@ import Base from '../../../layouts/Base.astro';
     </div>
   </section>
 
+  <!-- 3.5 真实日常 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3.5 真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">新闻工作的本质：在信息不完整的情况下，用有限的时间做出有质量的判断。</p>
+
+    <!-- Two scenario panels -->
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-orange-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 财经记者 @ Bloomberg / Reuters</p>
+        <p class="text-stone-400 text-xs mb-4">财报季冲刺日：苹果下午4点发Q4财报</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">06:30</span><span class="text-stone-300">Bloomberg Terminal开机。盘前动态、亚洲市场收盘、Fed官员的发言——快速扫完。苹果分析师预测共识：EPS $1.61，收入$890亿</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">Morning editorial call：编辑问"苹果今天有什么角度"。你提出三个可能的框架：iPhone 16销量、中国市场份额下滑、AI功能商业化进展。编辑选了中国这条线</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-500">致电两位分析师，请求财报后第一时间接受采访。同时整理模板文章框架，把数字空格留着——财报出来直接填</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">16:00</span><span class="text-stone-300">财报发布。EPS $1.68，超预期。收入$890亿，符合预期。中国区收入下降——这是你的主线。30分钟内要发出初稿</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">16:25</span><span class="text-stone-300">初稿400字发出：标题、关键数字、最重要的"超/低预期"信息。这条稿子会被数百家媒体引用——每个字都不能错</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">18:00</span><span class="text-stone-300">完整分析稿1200字：采访分析师观点、加入CEO电话会议的引语、补充历史对比数据。这才是你真正想写的那篇文章</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-orange-400 text-[10px] uppercase tracking-widest mb-4">场景 B · 政策/国际记者 @ 驻华记者站</p>
+        <p class="text-stone-400 text-xs mb-4">北京，全国人大会议期间。信息获取有限，但全球媒体都盯着这里</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">07:00</span><span class="text-stone-300">读完国内三份主要报纸的政府工作报告解读。圈出与上年表述不同的措辞——"稳增长"变成"高质量增长"，这是方向信号还是措辞调整？</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:30</span><span class="text-stone-300">部长记者发布会。100多个记者，你的问题被选中的概率不高。提前准备好5个问题，随时切换——实际上你只有90秒</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">12:00</span><span class="text-stone-300">午饭约了一位经济学学者——能说的很有限，但"背景信息不能引用"的话往往比官方声明更有价值。你在判断哪些可以用，哪些只是印证了你已有的判断</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">15:00</span><span class="text-stone-300">写稿：主题是"GDP目标与实现路径的落差"。你有五个信息来源，每一个都需要交叉核实，无法核实的只能标注"据知情人士"</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">18:00</span><span class="text-stone-300">稿子发给编辑，被要求加一段"北京官方回应"。发邮件给国新办，大概率没有回复。在稿子里写"记者发出询问，截至发稿未获回复"</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">21:00</span><span class="text-stone-300">文章上线。Twitter/X上被转发，也有人说"又是西方媒体的偏见叙事"。看评论区是坏习惯，但很难不看</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key insight -->
+    <div class="bg-orange-50 border border-orange-200 rounded-xl px-5 py-4 text-xs text-orange-900 mb-8 leading-relaxed">
+      <strong>新闻工作的核心张力：</strong>速度和质量是天然对立的。财报记者要在30分钟内发出初稿，调查记者要花6个月核实每一个细节。同一个职业里，这两种截然不同的节奏都叫"记者"——你需要在入行时就判断自己更适合哪种工作方式。
+    </div>
+
+    <!-- Weekly breakdown -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">一周节奏（以财经媒体为例）</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+      {[
+        { day: '周一', mood: '线索梳理', tasks: ['本周重大发布日历', '上周pending故事follow-up', '与消息源定期接触'] },
+        { day: '周二', mood: '主力写作日', tasks: ['深度稿写作', '数据核实', '采访安排'] },
+        { day: '周三', mood: '外出采访', tasks: ['发布会/路演', '线下消息源', '实地信息收集'] },
+        { day: '周四', mood: '快稿冲刺', tasks: ['突发新闻响应', '数据快讯', '分析师快评'] },
+        { day: '周五', mood: '调研积累', tasks: ['深度选题头脑风暴', '背景资料整理', '下周选题提交'] },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-xs mb-0.5">{d.day}</p>
+          <p class="text-[10px] text-orange-600 mb-2">{d.mood}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-[10px] text-stone-400">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Monthly phases -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">一个月的节奏</h3>
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+      {[
+        { phase: '快讯密集期', title: '财报/数据/政策发布周', color: 'bg-orange-50 border-orange-200', tasks: ['密集发稿（日均2-4条）', '速度优先', '细节可以后续补充'] },
+        { phase: '深度写作期', title: '调查/专题报道', color: 'bg-stone-50 border-stone-200', tasks: ['3-7天一稿', '多渠道核实', '与编辑密集沟通'] },
+        { phase: '选题开发期', title: '建立信息源、储备故事', color: 'bg-columbia-light border-columbia-blue/20', tasks: ['消息源关系维护', '数据库建立', '下月选题方向确定'] },
+      ].map(p => (
+        <div class={`border rounded-xl p-4 ${p.color}`}>
+          <p class="text-[10px] text-stone-400 mb-0.5">{p.phase}</p>
+          <p class="font-bold text-stone-800 text-sm mb-3">{p.title}</p>
+          <ul class="space-y-1.5">
+            {p.tasks.map(t => <li class="text-xs text-stone-600">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">每周最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '截稿时间是一切的优先级', desc: '财报在4:00 PM发布，你的初稿要在4:30 PM前出来。这30分钟是新闻业最真实的考验——数字有没有错、引用有没有加、标题有没有误导。错误不只是让你难堪，可能影响市场和读者的判断，也可能让媒体被起诉。', color: 'border-orange-400' },
+        { n: '02', title: '核实每一个细节，但时间永远不够', desc: '好新闻需要三个独立来源。但你只有两小时，电话打不通，邮件没回复。你在用不完整的信息做判断——到底发还是等？这个决定每周都要做。出错的代价和拖延发布的代价，都是真实的。', color: 'border-red-400' },
+        { n: '03', title: '稿子被枪毙、被大改的自我消耗', desc: '你花了三天写的深度稿，编辑说"时效性不够了，先搁着"。你精心设计的角度，编辑说"太学术，受众看不懂"。新闻工作者的产品是文字，被否定就是被否定。这种消耗在资深记者里也普遍存在。', color: 'border-amber-400' },
+        { n: '04', title: '行业收缩带来的结构性不安全感', desc: '美国新闻媒体2024-2025年仍在裁员（Vice倒闭、Vox Media裁员、Sports Illustrated重组）。即使你工作表现很好，公司商业模式的问题也可能让你的岗位消失。这是选择这个行业之前需要正视的现实。', color: 'border-stone-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- 4. China media -->
   <section class="mb-14">
     <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 中国媒体行业</h2>

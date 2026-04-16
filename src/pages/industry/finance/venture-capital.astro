@@ -357,43 +357,147 @@ import Base from '../../../layouts/Base.astro';
 
   <!-- 6. Daily Life -->
   <section id="daily" class="mb-16 scroll-mt-24">
-    <h2>06 · 真实工作日常</h2>
+    <h2>06 · 真实工作日常（越具体越好）</h2>
 
-    <h3>6.1 Analyst/Associate的一周</h3>
-    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
-      <p class="text-stone-400 mb-3">// VC Associate的时间分配（无活跃交易时）</p>
-      <p>📥 Deal Sourcing: ~40%</p>
-      <p>   - 筛选inbound（邮件、推荐、Deck）：每周50-200份</p>
-      <p>   - Outbound sourcing：主动寻找目标公司（LinkedIn, AngelList）</p>
-      <p>   - 参加meetup/conference，维护创业者关系</p>
-      <p></p>
-      <p>🔍 DD与分析: ~30%</p>
-      <p>   - 市场调研（市场规模、竞争格局）</p>
-      <p>   - 与创始人的深度交流</p>
-      <p>   - 客户调研、背景调查</p>
-      <p>   - IC备忘录写作</p>
-      <p></p>
-      <p>📊 Portfolio支持: ~20%</p>
-      <p>   - 跟进组合公司运营数据</p>
-      <p>   - 帮助对接潜在客户/合伙人/员工</p>
-      <p>   - 协助后续融资（介绍给后轮投资人）</p>
-      <p></p>
-      <p>🗂️ 内容/品牌/LP: ~10%</p>
-      <p>   - 写行业观察文章（VC靠内容建声誉）</p>
-      <p>   - 参与LP报告准备</p>
-      <p>   - 维护基金的行业地图/研究</p>
+    <p>VC的工作节奏与PE和IB都不同——它的核心是<strong>关系网络 + 判断力</strong>，而不是精细建模或文件执行。以下拆解一个美国早期/成长期VC（Seed–Series B）的Associate真实一天和一周。</p>
+
+    <h3>6.1 一天的样子：两个真实场景</h3>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="bg-stone-900 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-emerald-400 font-bold mb-3" style="font-family:inherit">🟢 场景A：高密度会议日（Deal Evaluation）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">某AI基础设施公司寻求Series A，已经开第二次会</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">08:30</span> 翻昨天看的3份inbound Deck，在Notion里写下快速判断：哪个值得推进，哪个直接pass，理由是什么</p>
+          <p><span class="text-green-400">09:30</span> 与合伙人的周一站会：汇报本周pipeline状态。你负责介绍那家AI公司："团队背景强，产品有PMF迹象，竞争对手有3家，其中一家刚拿到$40M"</p>
+          <p><span class="text-green-400">10:30</span> 与AI公司创始人的第二次会（1.5小时）。这次你要主导技术和竞争格局的深挖，问更硬的问题："你的差异化技术壁垒是什么？为什么你能赢Google？"</p>
+          <p><span class="text-green-400">12:15</span> 会后快速记录两个关键发现，发Slack给合伙人："创始人对竞争格局回答含糊，需要再追问"</p>
+          <p><span class="text-green-400">13:00</span> 工作午餐：与另一家被投公司的CMO，他们在招增长VP，你帮忙介绍候选人——这是VC的Portfolio Value-Add日常</p>
+          <p><span class="text-green-400">14:30</span> 市场调研：把AI Infrastructure的TAM（总可达市场）做一个快速估算，找Gartner/IDC/Pitchbook数据，写成2段文字</p>
+          <p><span class="text-green-400">16:00</span> Expert Call：打给一位前Google AI工程师（通过Expert Connect平台约的），确认该公司技术方向的可行性</p>
+          <p><span class="text-green-400">17:30</span> 更新Investment Memo初稿：填入今天的新信息，标注还需要核实的3个关键问题</p>
+          <p><span class="text-green-400">19:00</span> 参加一个AI创业者meetup（自愿，但VC靠这个维护deal flow）。名片换了7张，其中2个看起来有意思</p>
+          <p><span class="text-yellow-400">21:30</span> 回到家，把今天meetup的人加到CRM数据库，写下简短备注。明天继续</p>
+        </div>
+      </div>
+      <div class="bg-stone-800 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-blue-400 font-bold mb-3" style="font-family:inherit">🔵 场景B：Sourcing + Portfolio日（无活跃Deal）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">本周没有进入正式评估的新项目，重点是主动寻找和组合支持</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">09:00</span> 处理inbound邮件：25封创始人发来的融资请求，快速扫描Deck。20封直接pass（方向不对/早期不够强），3封值得回复，2封有意思</p>
+          <p><span class="text-green-400">10:00</span> Outbound sourcing：在LinkedIn找某个垂直领域（今天是ClimateTech）最近一年内融过Pre-Seed的公司。建一个初步名单，找共同联系人</p>
+          <p><span class="text-green-400">11:30</span> 与已投公司A的创始人周会（30分钟电话）：跟进上个月说要解决的招聘问题，你帮他联系了3个候选人，今天确认进展</p>
+          <p><span class="text-green-400">12:00</span> 午饭，今天有人约，跟一个斯坦福MBA学生吃饭——他想进VC，你维护校友关系，顺便了解他看到的行业动态</p>
+          <p><span class="text-green-400">13:30</span> 写一篇行业研究（用于基金内部，也可能发布）："2025年B2B SaaS估值回归理性后的新机会"。VC靠内容建立行业声誉和deal flow</p>
+          <p><span class="text-green-400">16:00</span> 参加基金的LP Update准备会：合伙人需要你整理组合公司Q3数据，更新Fund Performance Summary</p>
+          <p><span class="text-green-400">18:00</span> 发出整理好的数据，今天可以走了</p>
+          <p><span class="text-stone-400">（晚上）没有强制工作，但很多VC Associate会用来看行业新闻和研究报告，保持对市场的敏感度</p>
+        </div>
+      </div>
     </div>
 
-    <h3>6.2 "VC很轻松"是最大的误解之一</h3>
-    <p>VC的工作时长通常比IB少（50-60小时/周，高峰时70+），但这不意味着工作轻松。VC的难点在于另一个维度：</p>
-    <ul>
-      <li><strong>极高的模糊性（Ambiguity）</strong>：没有明确的对错，所有判断都是概率性的</li>
-      <li><strong>漫长的反馈周期</strong>：一笔投资好不好，要5-10年才知道。没有月度KPI衡量你的工作质量</li>
-      <li><strong>大量无效会议</strong>：筛选100个项目，可能只投1-2个。99%的工作产出是"不投"</li>
-      <li><strong>永远都在社交</strong>：VC的本质是关系业务，边界感差的人会感到身心俱疲</li>
-    </ul>
+    <div class="not-prose bg-blue-50 border border-blue-200 rounded-xl px-5 py-4 text-xs text-blue-800 mb-6">
+      <strong>VC工作的本质认知：</strong>VC的时间分配大致是——Deal Sourcing 40%、Deal Evaluation 30%、Portfolio Support 20%、LP关系/内容/行政 10%。但这个比例在不同基金差异极大：早期基金靠关系sourcing，成长期基金靠数据分析。重要的是：你大部分时间的"产出"是拒绝——筛选100个项目，最终投1–2个。
+    </div>
 
-    <h3>6.3 真实声音</h3>
+    <h3>6.2 一周的节奏</h3>
+    <div class="not-prose space-y-3 my-6">
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-blue-800 text-sm">周一</span><span class="text-[10px] text-stone-400">Pipeline Review日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">全团队会议：每个人汇报手上跟进的项目状态（Stage、Conviction Level、下一步行动）。合伙人决定哪些值得推进，哪些暂时搁置。这是一周里最重要的对齐时刻。你要提前准备好每个项目的简短更新。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-stone-700 text-sm">周二–周三</span><span class="text-[10px] text-stone-400">会议密集日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">平均每天2–4个创始人会面，穿插Expert Call和Portfolio公司支持。这两天往往是最消耗社交能量的——每次会议都要迅速进入状态，提出有洞察的问题，同时判断创始人的质量。会后要快速整理笔记，趁热写下关键判断。</p>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-amber-800 text-sm">周四</span><span class="text-[10px] text-stone-400">深度分析日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">VC里最难得的"独立思考时间"。写Investment Memo、做市场分析、整理行业地图——这些需要连续的不被打断的时间。很多Associate把周四下午刻意留出来不安排会议。这是从信息收集进入判断形成的关键窗口。</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-emerald-800 text-sm">周五</span><span class="text-[10px] text-stone-400">Sourcing + 收尾</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">主动寻找新项目：给上周meetup认识的人发跟进邮件、在AngelList/LinkedIn做Outbound、整理本周看到的有意思的公司进CRM。下午收尾本周工作，确认下周的优先项目。VC通常没有严格的工作截止时间，但也因此需要极强的自律。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-stone-700 text-sm">周末</span><span class="text-[10px] text-stone-400">比IB自由，但边界模糊</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">VC通常不需要周末工作，这是比IB和PE明显好的地方。但"永远在线"的感觉真实存在——有意思的项目创始人会在周末发邮件，有紧急情况的Portfolio公司会在任何时间联系你。你需要自己决定边界，这反而比IB的强制高强度更需要自律。</p>
+      </div>
+    </div>
+
+    <h3>6.3 一个月的节奏</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6">
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">持续进行：Sourcing</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 每周处理50–200份inbound Deck</li>
+          <li>· 主动联系目标创始人（Outbound）</li>
+          <li>· 参加行业活动维护网络（每月2–4次）</li>
+          <li>· 维护CRM数据库，跟进有意思但还没准备好的公司</li>
+          <li>· 定期更新基金的"行业地图"（Landscape）</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">项目评估期（2–8周/项目）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 第一次会：了解公司和创始人，初步判断</li>
+          <li>· 第二次会：深挖产品、市场、竞争</li>
+          <li>· 客户调研：给3–5个真实客户打电话</li>
+          <li>· Reference Check：创始人背景核实</li>
+          <li>· IC Memo：写成Investment Committee可以决策的文件</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">Portfolio Support（持续）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 月度/季度运营数据整理，更新内部tracking</li>
+          <li>· 帮助组合公司招聘（介绍候选人）</li>
+          <li>· 帮助对接潜在客户、合作伙伴</li>
+          <li>· 协助后续融资（向后轮投资人热情推荐）</li>
+          <li>· LP报告准备（季度一次）</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>6.4 每周最大的压力和挑战</h3>
+    <div class="not-prose space-y-4 my-6">
+      <div class="rounded-xl border-l-4 border-purple-300 bg-purple-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-purple-800 opacity-25 shrink-0">01</span>
+          <div>
+            <p class="font-bold text-sm text-purple-800 mb-1.5">判断力的极度不确定性：没有标准答案</p>
+            <p class="text-xs text-stone-600 leading-relaxed">VC最核心的压力来自于：你做的每一个判断，5–10年后才知道对不对。你拒绝了一个创始人，两年后他融到了$200M；你力推了一个公司，三年后它倒闭了。没有月度KPI告诉你工作做得好不好，只有数年后的IRR。这种漫长的反馈周期，对习惯即时评估的人来说是最难适应的部分。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-red-300 bg-red-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-red-800 opacity-25 shrink-0">02</span>
+          <div>
+            <p class="font-bold text-sm text-red-800 mb-1.5">FOMO与反FOMO：错过deal的焦虑</p>
+            <p class="text-xs text-stone-600 leading-relaxed">你pass了一个公司，三个月后它完成了$50M的A轮，估值翻了三倍。这种"missed deal"的感觉在VC圈是普遍存在的。另一个方向的焦虑是：市场热的时候，你不投就被别人抢走，但投了又担心估值太高。在FOMO和discipline之间找平衡，是VC最难的心理修炼。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-amber-300 bg-amber-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-amber-800 opacity-25 shrink-0">03</span>
+          <div>
+            <p class="font-bold text-sm text-amber-800 mb-1.5">社交能量的持续消耗</p>
+            <p class="text-xs text-stone-600 leading-relaxed">VC是关系业务。每天见2–4个创始人，每周参加1–2个行业活动，每个月维护数百个联系人——这需要持续输出社交能量。对内向者来说，这是结构性的挑战。即使对外向者，长期维持高质量的人际互动也会累。很多VC人在3–5年后感到"社交疲劳"，开始降低networking频率。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-orange-300 bg-orange-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-orange-800 opacity-25 shrink-0">04</span>
+          <div>
+            <p class="font-bold text-sm text-orange-800 mb-1.5">中国VC的寒冬（2022–2026）</p>
+            <p class="text-xs text-stone-600 leading-relaxed">中国VC行业自2021年监管收紧（教育、互联网反垄断）后进入深度调整期。美元基金对中国的配置大幅减少，人民币基金面临LP出资放缓。根据清科数据，2023年中国VC/PE募资金额同比下降超30%。大量VC机构缩减团队，新入行机会减少。这是进入中国VC市场的候选人必须认清的现实。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="not-prose space-y-3 my-6">
       <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
         "VC的日常其实不够性感。很多时间花在看烂项目、写被拒的理由、更新数据库。真正exciting的——见到一个让你觉得'这个人要改变世界'的创始人——每年大概发生5次。"

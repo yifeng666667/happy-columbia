@@ -396,67 +396,164 @@ import Base from '../../../layouts/Base.astro';
 
   <!-- 6. Daily Life -->
   <section id="daily" class="mb-16 scroll-mt-24">
-    <h2>06 · 真实工作日常</h2>
+    <h2>06 · 真实工作日常（越具体越好）</h2>
 
-    <p>PE的工作强度低于投行，但"低于"是相对的——尤其是deal execution阶段，同样需要连轴转。</p>
+    <p>PE的工作节奏与投行最大的不同，是它的<strong>双轨制</strong>：新交易执行（Deal Execution）和组合公司管理（Portfolio Management）同时进行，对应完全不同的工作状态。以下拆解一个美国中型Buyout基金1–2年级Associate的真实日常。</p>
 
-    <h3>6.1 时间分配（Associate级别）</h3>
-    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
-      <p class="text-stone-400 mb-3">// PE Associate的一周时间分配（活跃交易期）</p>
-      <p>📊 建模与分析: ~40%</p>
-      <p>   - LBO模型构建与压力测试</p>
-      <p>   - 市场调研、竞争对手分析</p>
-      <p>   - IC材料（投资备忘录）起草</p>
-      <p></p>
-      <p>🔍 尽职调查: ~25%</p>
-      <p>   - 财务DD：审计报告、财务报表深挖</p>
-      <p>   - 商业DD：与管理层面谈、客户调研</p>
-      <p>   - 法律/税务DD：协调外部律所和四大</p>
-      <p></p>
-      <p>📞 内外部沟通: ~20%</p>
-      <p>   - 与IB团队的日常沟通（他们是你的deal flow来源）</p>
-      <p>   - 组合公司月度/季度运营更新</p>
-      <p>   - 内部IC讨论和senior review</p>
-      <p></p>
-      <p>📁 组合公司管理: ~15%</p>
-      <p>   - 跟进已投公司的战略执行</p>
-      <p>   - 参与董事会会议准备</p>
-      <p>   - 协助退出准备（IPO/M&A）</p>
-    </div>
+    <h3>6.1 一天的样子：两个真实场景</h3>
 
-    <h3>6.2 PE vs IB：生活质量对比</h3>
     <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
-      <div class="border border-stone-200 rounded-xl p-4">
-        <p class="font-semibold text-stone-800 mb-3">🏛️ 投行（参考）</p>
-        <ul class="space-y-1.5 text-sm text-stone-600">
-          <li>⏰ 工作时长：80-100小时/周</li>
-          <li>📅 周末：几乎没有</li>
-          <li>📍 出差：频繁（客户路演、DD）</li>
-          <li>🎯 工作性质：执行为主，重复性高</li>
-          <li>💬 自主性：极低，服务于客户需求</li>
+      <div class="bg-stone-900 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-amber-400 font-bold mb-3" style="font-family:inherit">🔴 场景A：新交易执行期（Deal Live）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">某消费品公司LBO收购，LOI已签，进入独家尽调</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">08:00</span> 到办公室，开电脑。昨晚四大发来了目标公司前三年审计工作底稿（约400页），今天要梳理核心财务数据</p>
+          <p><span class="text-green-400">08:30</span> 团队站会：VP分配任务——你负责收入拆分和EBITDA调整，另一个Associate负责营运资本和资本开支分析</p>
+          <p><span class="text-green-400">09:00</span> 开始翻审计底稿，把按产品线/地区/渠道拆分的收入数据填入Excel模型。发现两个分部之间有跨销售，需要标记</p>
+          <p><span class="text-green-400">11:00</span> 参加与目标公司CFO的DD call（1小时）：你提前准备了20个问题清单，VP主导提问，你记录答案并实时更新问题追踪表</p>
+          <p><span class="text-green-400">12:15</span> 工位上吃外卖，整理call notes，标注哪些问题没答清楚，列入follow-up清单</p>
+          <p><span class="text-green-400">13:00</span> 更新LBO模型：把新的EBITDA调整数字填入，重跑IRR/MOIC sensitivity table。在5x–7x EBITDA入场倍数下跑完所有scenario</p>
+          <p><span class="text-green-400">15:30</span> VP来看模型：说某个Working Capital假设过于保守，要求benchmark同行数据，解释合理性</p>
+          <p><span class="text-green-400">16:00</span> 去Capital IQ找5家可比公司的NWC/Revenue比率，更新模型，写一段注释说明假设依据</p>
+          <p><span class="text-green-400">18:00</span> 开始起草Investment Memo的"Financial Analysis"章节，把今天所有发现整理成2–3页结构化叙述</p>
+          <p><span class="text-green-400">21:30</span> 发给VP第一版。VP说内容OK但"risks section需要更sharp，把top 3 risks各写一段"</p>
+          <p><span class="text-yellow-400">23:30</span> 完成修改，发出。今晚算结束了</p>
+        </div>
+      </div>
+      <div class="bg-stone-800 text-stone-100 rounded-2xl p-5 font-mono text-xs leading-relaxed">
+        <p class="text-blue-400 font-bold mb-3" style="font-family:inherit">🔵 场景B：组合公司管理日（Portfolio Day）</p>
+        <p class="text-stone-400 mb-2 text-[10px]">本周无新交易，主要跟进已投的3家公司</p>
+        <div class="space-y-1">
+          <p><span class="text-green-400">09:00</span> 查收3家组合公司昨天发来的月度运营数据（MOR）。制作标准化dashboard，更新各公司的Revenue、EBITDA、现金流数字</p>
+          <p><span class="text-green-400">10:30</span> 与A公司CFO的月度同步电话（30分钟）：Q3收入低于预期8%，原因是某客户推迟了采购订单。记录并在内部报告中更新</p>
+          <p><span class="text-green-400">11:30</span> VP说要给A公司做一个"100-Day Plan Progress Review"，下周Board Meeting要用。开始搭框架：对照当初收购时的100天计划，逐项标注完成状态</p>
+          <p><span class="text-green-400">13:00</span> 午饭，今天有时间正常吃</p>
+          <p><span class="text-green-400">14:00</span> 与B公司的退出讨论：合伙人说明年准备出售，让你做一份潜在买家分析。搜索Strategic Buyer和PE sponsor名单，做初步匹配</p>
+          <p><span class="text-green-400">16:00</span> 内部IC会议：讨论一个新的潜在投资机会（IB发来的teaser），合伙人问你怎么看这个行业。你提前做了20分钟快速研究，给出初步判断</p>
+          <p><span class="text-green-400">17:30</span> 合伙人说这个机会值得继续看，让你明天发一份2页的"First Look"——市场规模、财务概览、初步估值。</p>
+          <p><span class="text-green-400">19:00</span> 开始做First Look，下班前完成框架</p>
+          <p><span class="text-green-400">20:30</span> 发给VP，说明天早上完善。今晚相对早</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-800 mb-6">
+      <strong>关键认知：</strong>PE Associate同时活在两个世界——新交易期间，工作强度接近投行（深夜、周末、高压）；没有活跃交易时，节奏相对可控。这种双轨制是PE与投行最本质的生活方式区别，但很多人入行时只看到了"比IB轻松"的那一面，忽视了Deal Live时同样的高强度。
+    </div>
+
+    <h3>6.2 一周的节奏</h3>
+
+    <div class="not-prose space-y-3 my-6">
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-blue-800 text-sm">周一</span><span class="text-[10px] text-stone-400">Deal Pipeline 综合日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">早上参加全体Investment Team会议：Partner汇报Pipeline状态，讨论正在跟进的潜在交易。你要提前准备好手上每个项目的最新状态更新。下午：整理上周DD发现，推进模型更新，处理组合公司报告。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-stone-700 text-sm">周二–周三</span><span class="text-[10px] text-stone-400">核心执行日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">最密集的建模和DD工作日。如果有活跃交易，这两天往往是最晚的——LBO模型迭代、Management Presentation准备、与律所和四大的协调沟通。如果没有活跃交易：First Look报告、行业研究、组合公司运营分析。周三下午通常有内部Investment Committee讨论。</p>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-amber-800 text-sm">周四</span><span class="text-[10px] text-stone-400">IC Prep + 外部会议日</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">Investment Memo的主要截止节点通常在周四，因为部分基金的IC会在周五开。这天下午往往有密集的外部会议——与目标公司管理层的见面、与IB的关系维护lunch、与专家顾问的Expert Call。</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-emerald-800 text-sm">周五</span><span class="text-[10px] text-stone-400">IC会议 + 收尾</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">部分基金在周五开IC（Investment Committee），这是全周最重要的一个会议——你做的Memo和模型在这里被合伙人逐条拆解质疑。如果没有IC：整理本周工作，更新Tracker，确认下周优先级。无活跃交易时，周五下午可以相对早走。</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1.5"><span class="font-bold text-red-800 text-sm">周末</span><span class="text-[10px] text-stone-400">视交易节奏而定</span></div>
+        <p class="text-xs text-stone-600 leading-relaxed">无活跃交易：大概率可以真正休息，这是PE比投行明显好的地方。活跃交易期：周六看DD材料、更新模型很正常，尤其是接近IC的前几天。"签约周末"（Closing Weekend）是最极端的情况——72小时连轴转处理法律文件。</p>
+      </div>
+    </div>
+
+    <h3>6.3 一个月的节奏</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6">
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">新Deal启动（Week 1–2）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 拿到CIM（信息备忘录），做初步快速分析（First Look）</li>
+          <li>· 如果感兴趣，提交IOI（意向函），进入第一轮</li>
+          <li>· 开始搭建初版LBO模型框架（用公开数据先做）</li>
+          <li>· 内部讨论：这个行业我们懂吗？竞争优势在哪里？</li>
+          <li>· 联系行业专家，预约Expert Call</li>
         </ul>
       </div>
-      <div class="border border-columbia-blue/30 bg-columbia-light rounded-xl p-4">
-        <p class="font-semibold text-stone-800 mb-3">🏗️ PE（活跃交易期）</p>
-        <ul class="space-y-1.5 text-sm text-stone-600">
-          <li>⏰ 工作时长：60-80小时/周（高峰110+）</li>
-          <li>📅 周末：看交易节奏，淡季相对自由</li>
-          <li>📍 出差：中等，主要在DD阶段</li>
-          <li>🎯 工作性质：投资判断+执行，创造感更强</li>
-          <li>💬 自主性：中等，有自己的投资观点空间</li>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">深度尽调（Week 3–6）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 进入VDR，系统性审核财务、法律、运营文件</li>
+          <li>· 与管理层深度面谈（Management Presentation）</li>
+          <li>· 客户调研：打电话给目标公司的真实客户</li>
+          <li>· LBO模型精细化：逐行核实每个假设</li>
+          <li>· Investment Memo起草，这是最考验综合能力的输出</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-4">
+        <p class="font-bold text-stone-800 text-sm mb-2">IC决策 + 签约（Week 7–10）</p>
+        <ul class="space-y-1.5 text-xs text-stone-500">
+          <li>· 向Investment Committee提交完整Memo，接受质疑</li>
+          <li>· IC批准后，出最终报价，进入独家谈判</li>
+          <li>· 与律所协调SPA（股权购买协议）谈判</li>
+          <li>· 融资安排：与债权人确认贷款条款</li>
+          <li>· Closing：所有文件签完，交割完成。开庆功晚餐</li>
         </ul>
       </div>
     </div>
 
-    <h3>6.3 来自知乎/脉脉的真实声音</h3>
+    <h3>6.4 每周最大的压力和挑战</h3>
+
+    <div class="not-prose space-y-4 my-6">
+      <div class="rounded-xl border-l-4 border-red-300 bg-red-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-red-800 opacity-25 shrink-0">01</span>
+          <div>
+            <p class="font-bold text-sm text-red-800 mb-1.5">Investment Committee的压力：你的判断被合伙人当场质疑</p>
+            <p class="text-xs text-stone-600 leading-relaxed">IC不是汇报会，是辩论会。合伙人会问："你的收入增长假设是8%，为什么不是5%？"、"这个行业有护城河吗，你能证明吗？"、"如果EBITDA下滑30%，IRR是多少？"你必须对每一个假设都能有有理有据的回答，而不是"我查了行业报告说是8%"。没有被IC质疑过的Associate，还不算真正经历过PE。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-orange-300 bg-orange-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-orange-800 opacity-25 shrink-0">02</span>
+          <div>
+            <p class="font-bold text-sm text-orange-800 mb-1.5">Deal Fatigue：投入几个月的项目突然"死了"</p>
+            <p class="text-xs text-stone-600 leading-relaxed">你在一个deal上花了3个月，建了几十版模型，写了80页Memo，最后卖方选择了另一个买家，或者谈判破裂。这笔deal死了，所有工作归零。这不是偶发情况——PE的成交率本来就低，大多数跟进的项目最终都不会成交。如何在这种高频失败中保持动力和判断力，是PE人心理韧性的真正考验。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-amber-300 bg-amber-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-amber-800 opacity-25 shrink-0">03</span>
+          <div>
+            <p class="font-bold text-sm text-amber-800 mb-1.5">组合公司"出了问题"：你要帮忙救火</p>
+            <p class="text-xs text-stone-600 leading-relaxed">已投公司的CEO突然说"这个季度收入可能差20%"，或者核心高管离职，或者出现法律纠纷。这种情况下，PE的合伙人会要求你深入了解情况，帮忙制定应对方案。你不再是分析师，要扮演"临时顾问"的角色——与你原本的核心能力（数字分析）有明显差异，需要快速学习。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-blue-300 bg-blue-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-blue-800 opacity-25 shrink-0">04</span>
+          <div>
+            <p class="font-bold text-sm text-blue-800 mb-1.5">Deal Flow焦虑：没有项目的空窗期</p>
+            <p class="text-xs text-stone-600 leading-relaxed">PE圈有一个不成文的压力：你在跟什么项目？如果连续一个月没有活跃的deal，会有"是不是被边缘化了"的焦虑。与投行不同，PE不会把所有人分配到项目上——你需要主动维护IB关系、主动寻找行业机会。在PE的前两年学会"主动带来deal flow"，是从普通Associate到优秀Associate的分水岭。</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl border-l-4 border-purple-300 bg-purple-50 p-5">
+        <div class="flex items-start gap-3">
+          <span class="font-bold text-2xl text-purple-800 opacity-25 shrink-0">05</span>
+          <div>
+            <p class="font-bold text-sm text-purple-800 mb-1.5">中国PE特有的退出压力（2023–2026）</p>
+            <p class="text-xs text-stone-600 leading-relaxed">对于在中国本土PE工作的人，当前退出环境是最大的结构性压力：A股IPO审核趋严（2023年底全面暂停后缓慢恢复）、美股赴美上市受地缘政治影响、港股流动性不足。大量基金LP到期而portfolio还未退出，GP面临延期压力。这个压力从合伙人传导到Associate——不是工作量的问题，是行业整体的困境感。数据来源：清科研究院《2024中国私募股权报告》</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="not-prose space-y-3 my-6">
       <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
         "PE比IB好在你能真正思考一个投资是否值得做，而不只是帮客户做任何他要求的事。但Portfolio管理期也有相当多琐事——每个月跟组合公司开电话会、跟进KPI，感觉不像投资人更像运营顾问。"
         <cite class="block text-xs text-stone-400 not-italic mt-2">— 知乎匿名用户，某美资大型PE Associate，北京</cite>
-      </blockquote>
-      <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
-        "中国PE现在最难的是退出——A股IPO几乎停了，美股上市受阻，并购又没有美国那么发达的市场。大量基金到期延期，LP在催，GP在愁，整个行业都在过冬。"
-        <cite class="block text-xs text-stone-400 not-italic mt-2">— 脉脉用户，本土成长型PE VP，上海</cite>
       </blockquote>
       <blockquote class="bg-stone-50 border-l-4 border-amber-400 rounded-r-xl pl-4 pr-4 py-3 text-sm text-stone-600 italic leading-relaxed">
         "最真实的感受：PE并不是个'投资工作'，至少前5年是个'金融分析+项目管理'工作。真正的投资判断力要到VP/Principal才开始培养。如果你奔着'炒股'感觉去的，会很失望。"

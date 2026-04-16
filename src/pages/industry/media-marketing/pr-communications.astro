@@ -123,33 +123,102 @@ import Base from '../../../layouts/Base.astro';
 
   <!-- 3. Real daily life -->
   <section class="mb-14">
-    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. PR 的真实日常</h2>
-    <div class="grid sm:grid-cols-2 gap-5">
-      <div class="space-y-3">
-        <div class="bg-stone-50 border border-stone-200 rounded-xl p-5 text-sm">
-          <p class="font-semibold text-stone-800 mb-3">甲方内部PR（企业传播部）</p>
-          <div class="space-y-2 text-xs text-stone-500">
-            <div class="flex gap-2"><span class="text-stone-400">日常</span><span>每日媒体监测，跟踪企业相关报道</span></div>
-            <div class="flex gap-2"><span class="text-stone-400">周级</span><span>撰写新闻稿、高管讲话稿、媒体简报</span></div>
-            <div class="flex gap-2"><span class="text-stone-400">月级</span><span>组织媒体发布会、行业活动、分析师沟通会</span></div>
-            <div class="flex gap-2"><span class="text-stone-400">危机</span><span>一切推翻重来，24小时待命</span></div>
-          </div>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-2">3. PR 的真实工作日常</h2>
+    <p class="text-stone-400 text-xs mb-6">平静时是文字工作者，危机时是救火队长。公关的日常就是这两种状态的轮换。</p>
+
+    <!-- Two scenario panels -->
+    <div class="grid sm:grid-cols-2 gap-5 mb-8">
+      <!-- Scenario A -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-pink-400 text-[10px] uppercase tracking-widest mb-4">场景 A · 企业传播部 PR Specialist</p>
+        <p class="text-stone-400 text-xs mb-4">新产品发布日，CEO将出席，提前三周筹备的媒体发布会</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:00</span><span class="text-stone-300">Morning media scan：打开Meltwater，检查今早有无企业相关报道。发现一篇科技媒体的负面评测——转发给团队，决定是否需要回应</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">09:30</span><span class="text-stone-300">新闻稿最终审核。法务改了第三段，品牌改了产品名称写法，CEO助理说第一句话太平。第6稿——发回给所有人再确认一遍</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">11:00</span><span class="text-stone-300">一对一媒体简报会（Media Briefing）：提前给Bloomberg记者30分钟独家时间，讲产品亮点，回答可能提的棘手问题，确认对方明日报道立场</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">14:00</span><span class="text-stone-300">发布会现场：CEO演讲稿提词器最后检查，与AV团队确认直播流稳定，安排摄影师站位，记者签到名单对照邀请列表</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">实时追踪媒体报道：NYT提了一句，TechCrunch写了300字，WSJ没跟。哪家漏报了，要不要主动pitch？跟上司汇报Coverage情况</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">20:00</span><span class="text-stone-300">整理媒体剪报报告（Clip Report），计算Earned Media Value。把今天所有报道截图+链接汇总，发给内部Leadership Team</span></div>
         </div>
       </div>
-      <div class="space-y-3">
-        <div class="bg-white border border-stone-200 rounded-xl p-5 text-sm">
-          <p class="font-semibold text-stone-800 mb-3">乙方PR代理公司</p>
-          <div class="space-y-2 text-xs text-stone-500">
-            <div class="flex gap-2"><span class="text-stone-400">日常</span><span>维护媒体关系，主动提供独家报道线索</span></div>
-            <div class="flex gap-2"><span class="text-stone-400">项目</span><span>为客户策划发布活动、媒体路演</span></div>
-            <div class="flex gap-2"><span class="text-stone-400">报告</span><span>撰写媒体覆盖报告，计算Media Value</span></div>
-            <div class="flex gap-2"><span class="text-stone-400">压力</span><span>客户满意度管理，续约压力</span></div>
-          </div>
+
+      <!-- Scenario B -->
+      <div class="bg-stone-900 rounded-2xl p-6 text-sm font-mono">
+        <p class="text-pink-400 text-[10px] uppercase tracking-widest mb-4">场景 B · 危机公关日 · 高管负面报道突发</p>
+        <p class="text-stone-400 text-xs mb-4">周五早上7点，Bloomberg记者的邮件。副标题：[独家] 公司CFO涉嫌财务数据误导</p>
+        <div class="space-y-2.5 text-xs">
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">07:05</span><span class="text-stone-300">电话打给CCO和法务负责人。"我们有多少时间？"——记者说今晚发。剩下不到12小时</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">08:30</span><span class="text-stone-300">危机会议：CCO、CFO、法务、外部PR顾问全部上线。讨论：承认、否认、"无可奉告"？每个选项的后果逐一推演</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">10:00</span><span class="text-stone-300">起草Holding Statement（过渡声明）。法务改了4次——"尽快核实"改成"正在了解情况"，"感谢记者关注"删掉，每个字都要过法律关</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">13:00</span><span class="text-stone-300">回复记者：发送正式声明，同时请求更多时间——被拒。社交媒体监测开启，跟踪Twitter/LinkedIn上的传播速度</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">17:00</span><span class="text-stone-300">Bloomberg文章上线。两小时内被Reuters和CNBC跟进。Stock price -8%。CEO要求5分钟内拿到"下一步怎么做"的方案</span></div>
+          <div class="flex gap-3"><span class="text-stone-500 shrink-0 w-12">22:00</span><span class="text-stone-300">最终更新声明发布。危机沟通顾问建议明天CEO主动出镜接受单独专访——讨论到凌晨</span></div>
         </div>
       </div>
     </div>
-    <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-800">
-      <strong>PR最大的现实挑战：</strong>传统媒体影响力下降，"在NYT/华尔街日报上刊登文章"的价值大幅缩水。公关人员现在需要同时驾驭传统媒体、LinkedIn、播客、社交媒体等多个渠道，同时还要应对真人/AI生成虚假信息的危机。
+
+    <!-- Key insight -->
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-900 mb-8 leading-relaxed">
+      <strong>PR最大的现实挑战：</strong>传统媒体影响力持续下降——在NYT发文章的价值大幅缩水，而社交媒体的危机传播速度是过去的10倍。公关人员现在必须同时驾驭传统媒体、LinkedIn、播客、短视频平台，还要应对AI生成虚假信息的威胁。这份工作对信息判断力的要求比10年前高出数倍。
+    </div>
+
+    <!-- Weekly breakdown -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">一周节奏</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+      {[
+        { day: '周一', mood: '监测+规划', tasks: ['週末媒体补录', '本周pitch计划', '编辑日历确认'] },
+        { day: '周二', mood: '内容生产', tasks: ['起草新闻稿', '博客/LinkedIn文章', '高管发言稿初稿'] },
+        { day: '周三', mood: '媒体关系', tasks: ['记者午饭或咖啡', '独家线索提供', '旧稿跟进follow-up'] },
+        { day: '周四', mood: '内部对齐', tasks: ['与市场团队同步', '法务审核内容', '向上汇报覆盖率'] },
+        { day: '周五', mood: '收尾备战', tasks: ['发布Clip Report', '下周媒体准备', '社媒content排期'] },
+      ].map(d => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-xs mb-0.5">{d.day}</p>
+          <p class="text-[10px] text-pink-600 mb-2">{d.mood}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-[10px] text-stone-400">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Monthly phases -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">一个月的三个状态</h3>
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+      {[
+        { phase: '常规期', title: '关系建立', color: 'bg-stone-50 border-stone-200', tasks: ['主动pitch故事线索', '媒体关系维护', '内容策划储备'] },
+        { phase: '发布期', title: '冲刺执行', color: 'bg-pink-50 border-pink-200', tasks: ['新闻稿撰写审核', '媒体briefing密集', '活动组织协调'] },
+        { phase: '危机期（随时可能）', title: '救火模式', color: 'bg-red-50 border-red-200', tasks: ['24小时监测', '声明快速起草', '多方利益协调'] },
+      ].map(p => (
+        <div class={`border rounded-xl p-4 ${p.color}`}>
+          <p class="text-[10px] text-stone-400 mb-0.5">{p.phase}</p>
+          <p class="font-bold text-stone-800 text-sm mb-3">{p.title}</p>
+          <ul class="space-y-1.5">
+            {p.tasks.map(t => <li class="text-xs text-stone-600">· {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- Pressure sources -->
+    <h3 class="font-semibold text-stone-700 text-sm mb-4">每周最大的压力来源</h3>
+    <div class="space-y-3">
+      {[
+        { n: '01', title: '成果难以量化的焦虑', desc: '市场团队能给你看ROAS，销售团队能给你看成交额——PR给领导看什么？Media Value是自己算的，Sentiment Score是估的。在一个所有人都用数据说话的时代，解释"公关的价值"是每季度都要经历一次的煎熬。', color: 'border-pink-400' },
+        { n: '02', title: '危机随时会打断所有计划', desc: '你可能精心准备了一次完美的产品发布，但周五上午一条推特或Bloomberg邮件就能让一切作废。PR没有真正的"下班"——手机必须24小时开着。越是做到高级职位，随叫随到的心理负担越重。', color: 'border-red-400' },
+        { n: '03', title: '媒体关系是人情网络，需要持续投入', desc: '公关靠关系，关系靠时间投入。记者需要你平时持续提供有价值的线索，到你真正需要他们配合时才有筹码。入行头两年没有这张网，做什么都比别人难一倍。', color: 'border-orange-400' },
+        { n: '04', title: '夹在上级期望与媒体逻辑之间', desc: 'CEO说"我们要上NYT头版"，你知道这个故事并没有足够新闻价值；记者说"这个公告太平了我不写"，你又要向上司解释为什么媒体不买账。PR的工作很大程度上是在管理内部对"外部结果"的预期——而这两边的逻辑根本不同。', color: 'border-violet-400' },
+      ].map(p => (
+        <div class={`bg-white border-l-4 ${p.color} border border-stone-100 rounded-r-xl px-5 py-4`}>
+          <div class="flex items-start gap-3">
+            <span class="text-stone-300 font-mono text-xs shrink-0 mt-0.5">{p.n}</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm mb-1">{p.title}</p>
+              <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 
