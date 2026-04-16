@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 ---
 
-<Base title="战略与运营（BizOps）深度解析" description="Google Strategy & Operations、字节战略、Uber Ops——非技术背景进大厂最高效的路径，BizOps是什么、怎么进、往哪里走">
+<Base title="战略运营全景解析：美式BizOps与中国互联网运营" description="Google S&O、字节跳动、阿里巴巴——从美式BizOps到中国互联网六大运营岗位深度拆解，日常工作、KPI、工时、薪酬全覆盖">
 
   <a href="/industry/tech-business/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
     <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
@@ -12,57 +12,103 @@ import Base from '../../../layouts/Base.astro';
   <header class="mb-10 pb-8 border-b border-stone-200">
     <div class="flex items-center gap-2 mb-4">
       <span class="text-[10px] uppercase tracking-[0.25em] bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold px-3 py-1 rounded-full">Strategy & Operations</span>
-      <span class="text-[10px] text-blue-600 bg-blue-50 border border-blue-200 font-semibold px-3 py-1 rounded-full">入行难度：中等</span>
+      <span class="text-[10px] text-blue-600 bg-blue-50 border border-blue-200 font-semibold px-3 py-1 rounded-full">入行难度：中等偏低</span>
     </div>
     <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
-      ⚙️ 战略与运营（Strategy & Operations / BizOps）
+      ⚙️ 战略与运营（BizOps × 中国互联网运营）
     </h1>
     <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
-      BizOps是科技公司里最像咨询的岗位——用分析工具解决复杂业务问题，推动高优先级项目落地，直接对高管汇报。对于文科/商科背景的人，这是进入大厂最高效的路径，也是向PM、咨询、企业战略转型的最佳跳板。
+      同样叫"运营"，Google的Strategy & Operations和字节跳动的电商运营，是两个截然不同的职业。前者像内部咨询师，后者是KPI压身的业务执行者。这一页把两条路都讲清楚——不同细分方向的日常、数字、工时、优劣势，让你做真实的判断。
     </p>
   </header>
 
   <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
     <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
-    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
-      <li><a href="#what" class="hover:text-columbia-navy no-underline">01 · BizOps是什么：大厂的内部咨询</a></li>
-      <li><a href="#types" class="hover:text-columbia-navy no-underline">02 · 细分类型：Strategy vs Ops vs Corp Dev</a></li>
-      <li><a href="#work" class="hover:text-columbia-navy no-underline">03 · 真实工作内容</a></li>
-      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美BizOps对比</a></li>
-      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径：最好的跳板岗</a></li>
-      <li><a href="#salary" class="hover:text-columbia-navy no-underline">06 · 薪酬结构</a></li>
-      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">07 · 入行路径</a></li>
-      <li><a href="#fit" class="hover:text-columbia-navy no-underline">08 · 适合什么样的人</a></li>
+    <ol class="space-y-1.5 text-sm text-stone-600">
+      <li><a href="#overview" class="hover:text-columbia-navy no-underline">01 · 两条路：美式BizOps vs 中国互联网运营</a></li>
+      <li><a href="#bizops" class="hover:text-columbia-navy no-underline">02 · 美式BizOps详解（Google / Meta / Airbnb风格）</a></li>
+      <li><a href="#china-ops-intro" class="hover:text-columbia-navy no-underline">03 · 中国互联网"运营"体系总览</a></li>
+      <li><a href="#product-ops" class="hover:text-columbia-navy no-underline">04 · 产品运营（Product Ops）</a></li>
+      <li><a href="#ecom-ops" class="hover:text-columbia-navy no-underline">05 · 电商运营（E-commerce Ops）</a></li>
+      <li><a href="#kol-ops" class="hover:text-columbia-navy no-underline">06 · 达人/KOL运营（Influencer & Creator Ops）</a></li>
+      <li><a href="#user-ops" class="hover:text-columbia-navy no-underline">07 · 用户运营（User Ops）</a></li>
+      <li><a href="#content-ops" class="hover:text-columbia-navy no-underline">08 · 内容运营（Content Ops）</a></li>
+      <li><a href="#merchant-ops" class="hover:text-columbia-navy no-underline">09 · 供应链/商家运营（Merchant & Supply Chain Ops）</a></li>
+      <li><a href="#pros-cons" class="hover:text-columbia-navy no-underline">10 · 运营赛道的整体优劣势</a></li>
+      <li><a href="#hours" class="hover:text-columbia-navy no-underline">11 · 工时现实：996与10-9-6</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">12 · 薪酬结构（中美对比）</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">13 · 入行路径</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">14 · 适合什么样的人</a></li>
     </ol>
   </nav>
 
   <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
 
-  <section id="what" class="mb-16 scroll-mt-24">
-    <h2>01 · BizOps是什么：大厂的内部咨询</h2>
+  <section id="overview" class="mb-16 scroll-mt-24">
+    <h2>01 · 两条路：美式BizOps vs 中国互联网运营</h2>
 
-    <p>战略与运营（Strategy & Operations，通常简称S&O或BizOps）是科技公司里一个特殊的岗位类别——它的工作最像咨询公司，但在公司内部。</p>
+    <p>这两种职业虽然都叫"运营"，但文化基因、工作内容、职业发展路径差异巨大，先把框架建立起来。</p>
 
-    <p>一个简单的类比：如果说产品经理是"做什么产品"的人，工程师是"怎么实现"的人，那么BizOps是"这个公司/团队怎么运转得更好"的人。他们处理的问题包括：</p>
-
-    <ul>
-      <li>"我们应该进入哪个新市场？"（战略分析）</li>
-      <li>"司机端的取消率为什么上升了？"（运营问题排查）</li>
-      <li>"如何把客服效率提升30%？"（流程优化）</li>
-      <li>"这个新功能的国际化路径应该是什么？"（扩张规划）</li>
-    </ul>
-
-    <h3>1.1 Google S&O：BizOps的定义者</h3>
-    <p>谷歌是最早系统化BizOps职能的大型科技公司。谷歌的"Strategy & Operations"团队遍布产品线和职能部门，工作模式高度类似麦肯锡内部孵化器：每个项目3-6个月，和高管直接合作，产出数据驱动的建议和实施路径。Google S&O被认为是科技行业BizOps的黄金标准，进入这个团队被视为进入谷歌商业岗的最佳路径之一。</p>
-
-    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm my-6">
-      <p class="font-semibold text-stone-800 mb-2">📌 "BizOps"这个名字到底是什么</p>
-      <p class="text-stone-600 text-xs leading-relaxed">不同公司叫法不同，但本质相似：Google称为"Strategy & Operations"，Airbnb叫"Strategy & Finance"，Uber叫"Central Operations"或"Strategy"，字节叫"战略分析"，阿里叫"运营分析"。实质都是：结合数据和业务判断，推动高优先级项目落地的跨职能角色。</p>
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">维度</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇺🇸 美式BizOps / S&O</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇨🇳 中国互联网运营</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">典型雇主</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">Google, Meta, Airbnb, Stripe, Uber</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">字节跳动、阿里、京东、美团、小红书</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">核心工作</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">战略分析、跨部门项目管理、高管决策支持</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">日常业务执行、KPI追踪、增长拉动</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">工作节奏</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">项目制，3-6个月一个课题</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">日/周/月KPI驱动，节奏高频</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">技术门槛</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">需要SQL、数据分析能力，部分岗位要求较高</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">门槛相对低，文商科友好，部分子类需要数据能力</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">跳板价值</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">PM、Corp Dev、咨询方向跳板强</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">产品、BD、创业方向；但容易陷入执行层</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">工时</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">约50-55小时/周，相对可预测</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">字节/JD普遍10-9-6，高强度季节性冲刺</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    <p>简单说：如果你在美国找工作，目标是大厂商业岗，BizOps是最清晰的路径。如果你回国进互联网，那你要进的是"运营"体系——而这个体系内部又有六七个差别巨大的细分方向，不搞清楚就容易选错。</p>
   </section>
 
-  <section id="types" class="mb-16 scroll-mt-24">
-    <h2>02 · 细分类型：Strategy vs Ops vs Corp Dev</h2>
+  <section id="bizops" class="mb-16 scroll-mt-24">
+    <h2>02 · 美式BizOps详解（Google / Meta / Airbnb风格）</h2>
+
+    <h3>2.1 BizOps是什么：大厂的内部咨询</h3>
+    <p>战略与运营（Strategy & Operations，通常简称S&O或BizOps）是科技公司里最像咨询的岗位——它处理的问题包括："我们应该进入哪个新市场？""司机端的取消率为什么上升了？""如何把客服效率提升30%？"</p>
+    <p>Google S&O是BizOps的定义者。谷歌的Strategy & Operations团队工作模式高度类似麦肯锡内部孵化器：每个项目3-6个月，和高管直接合作，产出数据驱动的建议和实施路径。这是进入谷歌商业岗最受认可的路径之一。</p>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm my-6">
+      <p class="font-semibold text-stone-800 mb-2">各公司叫法不同，本质相似</p>
+      <p class="text-stone-600 text-xs leading-relaxed">Google称为"Strategy & Operations"，Airbnb叫"Strategy & Finance"，Uber叫"Central Operations"，Meta有"Business Operations"，Stripe叫"BizOps"。实质都是：结合数据和业务判断，推动高优先级项目落地的跨职能角色。</p>
+    </div>
+
+    <h3>2.2 三个主要分支</h3>
 
     <div class="not-prose space-y-4 my-6">
       <div class="border border-stone-200 rounded-2xl overflow-hidden">
@@ -73,7 +119,6 @@ import Base from '../../../layouts/Base.astro';
           <p class="text-xs text-stone-400">典型团队：Google Corporate Strategy、Apple Strategy、Meta Central Business Strategy</p>
         </div>
       </div>
-
       <div class="border border-stone-200 rounded-2xl overflow-hidden">
         <div class="bg-stone-700 text-white px-5 py-3 font-semibold text-sm">运营（Operations / Central Ops）</div>
         <div class="p-5 text-sm text-stone-600 leading-relaxed">
@@ -82,7 +127,6 @@ import Base from '../../../layouts/Base.astro';
           <p class="text-xs text-stone-400">典型团队：Uber Central Operations、Airbnb Operations、滴滴城市运营</p>
         </div>
       </div>
-
       <div class="border border-stone-200 rounded-2xl overflow-hidden">
         <div class="bg-blue-700 text-white px-5 py-3 font-semibold text-sm">企业发展（Corporate Development / Corp Dev）</div>
         <div class="p-5 text-sm text-stone-600 leading-relaxed">
@@ -92,214 +136,768 @@ import Base from '../../../layouts/Base.astro';
           <p class="text-xs text-stone-400">典型团队：Google Corp Dev、Meta M&A、字节跳动战略投资</p>
         </div>
       </div>
+    </div>
 
-      <div class="border border-stone-200 rounded-2xl overflow-hidden">
-        <div class="bg-emerald-700 text-white px-5 py-3 font-semibold text-sm">BizOps（综合型）</div>
-        <div class="p-5 text-sm text-stone-600 leading-relaxed">
-          <p class="mb-2">很多公司的BizOps是上述三种的混合体——前几个月做战略分析，然后负责落地执行，再去做下一个项目。这种轮转模式让BizOps成为积累多元经验最快的岗位之一。</p>
-        </div>
+    <h3>2.3 BizOps的真实工作节奏</h3>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// Google/Airbnb风格 BizOps的一天</p>
+      <p>09:00 — 看团队Slack，确认当前项目进度和阻塞点</p>
+      <p>09:30 — 与数据工程师对齐：需要新的SQL查询支持市场分析</p>
+      <p>10:30 — 写分析memo：新兴市场扩张的可行性框架，市场规模测算</p>
+      <p>12:00 — 午饭，通常和跨部门同事（PM/Finance）informal sync</p>
+      <p>13:30 — 与VP汇报中期项目发现，接受反馈，调整方向</p>
+      <p>15:00 — 撰写Excel/Slides：数据支撑战略建议</p>
+      <p>16:30 — 跨职能会议：协调销售、工程、法务，推动落地决策</p>
+      <p>18:00 — 整理会议记录，跟进action items</p>
+      <p class="text-stone-400 mt-3">// 周工时约50-55小时；部分项目冲刺周会到60+</p>
+    </div>
+
+    <h3>2.4 BizOps的跳板价值</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-stone-800 mb-1">→ 产品经理（PM）</p>
+        <span class="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-1.5 py-0.5 rounded-full">最常见</span>
+        <p class="text-xs text-stone-500 leading-relaxed mt-1.5">BizOps掌握了业务数据和跨部门经验，很多大厂明确允许内部从S&O转PM。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-stone-800 mb-1">→ Corp Dev / M&A</p>
+        <span class="text-[10px] bg-stone-200 text-stone-600 border border-stone-300 px-1.5 py-0.5 rounded-full">需财务底</span>
+        <p class="text-xs text-stone-500 leading-relaxed mt-1.5">有金融背景的BizOps，Corp Dev是自然延伸，了解公司内部运作是大优势。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-stone-800 mb-1">→ MBB咨询（MBA后）</p>
+        <span class="text-[10px] bg-stone-200 text-stone-600 border border-stone-300 px-1.5 py-0.5 rounded-full">可行</span>
+        <p class="text-xs text-stone-500 leading-relaxed mt-1.5">大厂BizOps经历+MBA，重新进入MBB做Associate是可行路径。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-stone-800 mb-1">→ 创业 / VC</p>
+        <span class="text-[10px] bg-stone-200 text-stone-600 border border-stone-300 px-1.5 py-0.5 rounded-full">高成功率</span>
+        <p class="text-xs text-stone-500 leading-relaxed mt-1.5">理解大公司如何运作、知道市场机会——BizOps背景的创始人综合素质强。</p>
       </div>
     </div>
   </section>
 
-  <section id="work" class="mb-16 scroll-mt-24">
-    <h2>03 · 真实工作内容</h2>
+  <section id="china-ops-intro" class="mb-16 scroll-mt-24">
+    <h2>03 · 中国互联网"运营"体系总览</h2>
 
-    <h3>3.1 一个BizOps项目的完整生命周期</h3>
-    <p>以"某电商平台在东南亚扩张"为例：</p>
-    <ol>
-      <li><strong>第1-2周（问题定义）</strong>：和业务负责人对齐目标——"我们想知道应该先进印尼还是越南"。梳理已知信息，列出需要回答的关键问题。</li>
-      <li><strong>第3-6周（数据分析）</strong>：市场规模测算、竞争对手分析（Grab、Shopee在各市场的现状）、消费者调研、政策环境梳理。大量SQL+Excel，可能有外部数据源付费购买。</li>
-      <li><strong>第7-8周（建议形成）</strong>：综合分析，形成"先进印尼，因为X、Y、Z"的清晰建议，并设计实施路径：Phase 1 → Phase 2。</li>
-      <li><strong>第9-10周（执行推进）</strong>：向高管汇报，获取资源批准，协调各团队按计划推进。监控关键指标，调整策略。</li>
-    </ol>
+    <p>在中国互联网公司，"运营"是使用最广泛、也最模糊的岗位标签之一。同样叫运营，字节跳动的达人运营和京东的电商运营，日常工作几乎没有交集。</p>
 
-    <h3>3.2 BizOps vs MBB咨询：最核心的区别</h3>
-    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
-      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm">
-        <p class="font-semibold text-stone-800 mb-2">✅ BizOps的优势</p>
-        <ul class="space-y-1.5 text-xs text-stone-600">
-          <li>深度——在一个公司持续工作，能看到建议真正落地的结果</li>
-          <li>数据——有公司内部数据，分析更有底气，不靠访谈猜测</li>
-          <li>执行权——BizOps可以直接推动项目，而不只是出报告</li>
-          <li>文化——不需要常年出差，工作节奏相对稳定</li>
-        </ul>
-      </div>
-      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm">
-        <p class="font-semibold text-stone-800 mb-2">⚠️ BizOps的局限</p>
-        <ul class="space-y-1.5 text-xs text-stone-600">
-          <li>广度——接触的行业和问题类型受限于一家公司</li>
-          <li>品牌——"Google BizOps"在外部的信号不如"McKinsey"</li>
-          <li>政治——在一家公司推动跨部门项目，内部政治复杂度高</li>
-          <li>上限——晋升路径相对于咨询不够清晰</li>
-        </ul>
-      </div>
+    <p>运营的本质，是用非技术手段连接产品和用户——拉新、激活、留存、变现。它是中国互联网增长机器的执行层。运营岗位有几个整体特点，不管哪个细分方向都适用：</p>
+
+    <ul>
+      <li><strong>KPI高度绑定</strong>：每个运营几乎都背具体数字指标——DAU、GMV、转化率、留存率。数字好看，你就安全；数字难看，下月就要被问责。</li>
+      <li><strong>迭代速度快</strong>：一个活动从策划到上线可能只有3天，复盘完马上开始下一个。节奏快是双刃剑：学东西快，但也容易陷入无止境的执行循环。</li>
+      <li><strong>入行门槛低</strong>：相比产品经理和数据分析师，运营是互联网里技术要求最低的岗位之一。文科、商科、传播背景都可以入行，这也是为什么竞争激烈。</li>
+      <li><strong>晋升路径不清晰</strong>：从初级运营到高级运营的路是有的，但从高级运营到运营总监，往往要求你能独立带团队、建立方法论——这一层的淘汰率很高。</li>
+    </ul>
+
+    <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-5 text-sm my-6">
+      <p class="font-semibold text-stone-800 mb-2">为什么运营适合文商科背景？</p>
+      <p class="text-stone-700 text-xs leading-relaxed">运营是互联网里门槛最低的正规军岗位之一。不需要写代码，不需要精通统计，需要的是：理解用户、策划活动、推动协作、追踪数据。SIPA的政策分析训练——利益相关方分析、项目推进、数据解读——和运营工作有实质重叠。但要注意：门槛低意味着竞争更激烈，能做出结果才是核心。</p>
     </div>
   </section>
 
-  <section id="china-us" class="mb-16 scroll-mt-24">
-    <h2>04 · 中美BizOps对比</h2>
+  <section id="product-ops" class="mb-16 scroll-mt-24">
+    <h2>04 · 产品运营（Product Ops）</h2>
+
+    <p>产品运营是运营岗位里离产品经理最近的方向。他们的工作是让产品功能真正"活起来"——新功能上线了，用户愿不愿意用？怎么提升用户使用深度？怎么降低用户流失？</p>
+
+    <h3>4.1 日常工作（非常具体）</h3>
+    <ul>
+      <li>监控产品核心漏斗：新用户注册→完成首单→7日留存→30日留存，找到流失节点</li>
+      <li>配合PM规划功能灰度方案——新功能先给5%用户，根据数据表现决定是否全量</li>
+      <li>策划产品内活动（比如"完成3次打卡解锁奖励"），推动DAU/MAU增长</li>
+      <li>写用户调研问卷，收集功能反馈，输出用户画像给产品团队</li>
+      <li>与数据团队合作，建立用户分层（新用户/活跃用户/沉默用户/流失用户）</li>
+      <li>设计并监控用户成长体系（积分/徽章/等级），提升用户粘性</li>
+    </ul>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 产品运营的一天（字节跳动风格）</p>
+      <p>10:00 — 看昨日数据仪表盘：DAU、次日留存、功能使用率；有异动立刻拉群对齐</p>
+      <p>11:00 — 与PM周会：新功能下周上线，讨论灰度计划和运营配套方案</p>
+      <p>12:30 — 午饭+处理消息</p>
+      <p>14:00 — 撰写活动方案：针对沉默7天用户的召回Push通知文案+激励机制</p>
+      <p>15:30 — 与数据分析师对齐：A/B测试结果解读，确认版本A留存高出版本B 3.2%</p>
+      <p>17:00 — 整理用户反馈（App Store评论+用户调研结果）给产品团队</p>
+      <p>19:00 — 复盘上周活动效果，写报告，看竞品动态</p>
+      <p>21:00 — 加班处理紧急数据异常排查，联系研发定位bug</p>
+      <p class="text-stone-400 mt-3">// 工时：10:00-21:00+ 常态，大版本上线周更长</p>
+    </div>
+
+    <h3>4.2 核心KPI</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">DAU / MAU</p>
+        <p class="text-xs text-stone-500 mt-1">日活/月活用户数</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">次日/7日留存</p>
+        <p class="text-xs text-stone-500 mt-1">用户次日/7天后还在用</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">功能渗透率</p>
+        <p class="text-xs text-stone-500 mt-1">使用某功能的用户占比</p>
+      </div>
+    </div>
+
+    <h3>4.3 优劣势</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-green-800 mb-2">优势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>离产品决策最近，影响力强</li>
+          <li>数据思维训练充分，跳PM路径最顺</li>
+          <li>字节/腾讯的产品运营是公认的转PM跳板</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-red-800 mb-2">劣势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>高度依赖产品方向，产品不增长你的功劳也难显现</li>
+          <li>需要一定SQL基础，否则数据依赖度太高</li>
+          <li>与PM的边界模糊，容易成为"做杂活的那个人"</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500">典型雇主：字节跳动（抖音/飞书/TikTok国内）、腾讯、网易。</p>
+  </section>
+
+  <section id="ecom-ops" class="mb-16 scroll-mt-24">
+    <h2>05 · 电商运营（E-commerce Ops）</h2>
+
+    <p>电商运营是最KPI导向、最"生死看数字"的运营方向之一。核心任务就一个字：GMV（商品交易总额）。他们管理的是店铺或类目在电商平台上的全盘运营——从货品选择到页面装修到广告投放到大促活动，每一个环节都影响销售数字。</p>
+
+    <h3>5.1 日常工作（非常具体）</h3>
+    <ul>
+      <li>盯后台数据：实时GMV、点击率（CTR）、加购率、支付转化率，每小时看一遍</li>
+      <li>竞品价格监控：竞品降价了要在30分钟内决定是否跟进，不跟会掉流量权重</li>
+      <li>管理直通车/超级推荐投放计划：每天调整关键词出价、人群定向、投产比（ROI）</li>
+      <li>策划促销活动：双十一、618、日常秒杀——从活动文案、优惠券设计到库存调配</li>
+      <li>店铺主图和详情页A/B测试：换一张主图CTR可能提升20%，每次测试都要快速迭代</li>
+      <li>处理差评、客服升级问题，维护店铺评分（DSR）</li>
+      <li>协调供应链：爆款断货要紧急补货，滞销款要清仓处理，影响现金流</li>
+    </ul>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 电商运营的一天（双十一大促前两周）</p>
+      <p>09:00 — 看昨日实时数据：GMV环比、转化率、退款率，标记异常</p>
+      <p>10:00 — 广告组会：投产比低于1.5的计划全部暂停，追加高ROI关键词预算</p>
+      <p>11:00 — 与设计同事确认大促主图方案，要求今天出三版供A/B测试</p>
+      <p>12:30 — 午饭，边吃边看竞品双十一预热页面</p>
+      <p>14:00 — 与供应链对齐备货：预测主推款需要备5万件，仓库确认库位</p>
+      <p>15:30 — 修改满减券发放规则，计算每个档位的毛利底线</p>
+      <p>17:00 — 客服部门反馈：某款产品投诉率异常高，紧急下架评估</p>
+      <p>19:30 — 写大促活动复盘方案，预测GMV目标</p>
+      <p>21:30 — 处理平台活动报名申请，提交选品和报价</p>
+      <p class="text-stone-400 mt-3">// 双十一当天：基本通宵；大促前两周：10:00-22:00常态</p>
+    </div>
+
+    <h3>5.2 核心KPI</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">GMV</p>
+        <p class="text-xs text-stone-500 mt-1">商品交易总额，一切之母</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">ROI</p>
+        <p class="text-xs text-stone-500 mt-1">广告投产比，花1元带来多少GMV</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">转化率</p>
+        <p class="text-xs text-stone-500 mt-1">访客→购买的比例</p>
+      </div>
+    </div>
+
+    <h3>5.3 优劣势</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-green-800 mb-2">优势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>学东西快、接触业务链路完整（货/流量/转化/供应链）</li>
+          <li>有创业价值：出来自己做店的路径极其清晰</li>
+          <li>晋升快：数字说话，做出GMV增长无需等待认可</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-red-800 mb-2">劣势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>压力极大，24小时随时可能被叫起来处理数据异常</li>
+          <li>大促期间基本通宵，身体消耗大</li>
+          <li>平台规则频繁变化，运营策略半年内可能全部失效</li>
+          <li>技能迁移性有限：懂淘宝直通车不等于懂其他平台</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500">典型雇主：阿里巴巴（天猫/淘宝平台侧）、京东、拼多多、抖音电商；大量品牌方也招品牌侧电商运营。</p>
+  </section>
+
+  <section id="kol-ops" class="mb-16 scroll-mt-24">
+    <h2>06 · 达人/KOL运营（Influencer & Creator Ops）</h2>
+
+    <p>达人运营是近五年因短视频和内容电商而爆发的新兴方向。他们的工作是找到、维护并激活平台上的内容创作者（达人/KOL/MCN机构），让这些创作者持续产出带动平台流量和商业转化的内容。</p>
+
+    <p>这个岗位在小红书、抖音、B站、快手的商业化团队需求量非常大，同时大量品牌方也有内部的KOL运营岗位（负责品牌侧的达人合作）。</p>
+
+    <h3>6.1 日常工作（非常具体）</h3>
+    <ul>
+      <li>达人招募：在平台上搜寻垂类达人（美食/美妆/穿搭），判断涨粉趋势、内容质量、合作意愿，发起签约谈判</li>
+      <li>合同管理与结算：谈合作费率（CPM/CPS/固定坑位费），处理达人报价，核对播放量数据后结款</li>
+      <li>内容监控：看达人发布的内容是否符合平台调性，违规内容及时处理</li>
+      <li>ROI分析：一个达人合作带来多少播放、多少点击、最终转化多少GMV，建立评估模型</li>
+      <li>维护关系：头部达人是稀缺资源，要定期沟通、提供独家资源扶持，防止被竞争平台挖走</li>
+      <li>策划达人专项活动：如"30天挑战""行业榜单"，激励达人参与，带动平台整体内容生态</li>
+    </ul>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 达人运营的一天（抖音/小红书商业化团队）</p>
+      <p>10:00 — 看达人数据周报：签约达人近7天播放量、粉丝涨幅，标记掉量的账号</p>
+      <p>10:30 — 刷平台内容，发现一个穿搭达人涨势凶猛，整理数据准备发合作邀请</p>
+      <p>11:00 — 与MCN机构代表电话：谈某头部达人的独家合作条款，对方要求提高分成比例</p>
+      <p>13:00 — 午饭</p>
+      <p>14:00 — 参加品牌方需求对接会：某快消品牌想做100个腰部达人投放，整理达人资源库</p>
+      <p>15:30 — 审核达人本月内容：3篇疑似违规，截图发给合规团队</p>
+      <p>17:00 — 整理月度达人ROI报告：CPM、转化率、商品点击率数据分析</p>
+      <p>19:00 — 与运营总监汇报：下季度重点扶持哪些垂类达人，需要什么平台资源</p>
+      <p class="text-stone-400 mt-3">// 工时10:00-20:00常态；品牌大促期间随时待命</p>
+    </div>
+
+    <h3>6.2 核心KPI</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">签约达人数</p>
+        <p class="text-xs text-stone-500 mt-1">活跃达人池规模</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">CPM / 转化率</p>
+        <p class="text-xs text-stone-500 mt-1">千次播放成本/内容→商业转化</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">达人GMV贡献</p>
+        <p class="text-xs text-stone-500 mt-1">达人带货产生的总销售额</p>
+      </div>
+    </div>
+
+    <h3>6.3 优劣势</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-green-800 mb-2">优势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>市场需求旺盛，内容电商还在高速增长</li>
+          <li>人脉积累价值高：掌握优质达人资源本身就是核心资产</li>
+          <li>外向性格的人在这里如鱼得水，社交能力直接等于产出</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-red-800 mb-2">劣势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>关系维护消耗大，有时更像"夹心饼干"（平台+达人+品牌三方博弈）</li>
+          <li>技能强度平台依赖性强：懂抖音达人运营不等于懂B站生态</li>
+          <li>顶部达人翻车风险：一个绑定太深的达人出事，你的业绩也跟着受冲击</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500">典型雇主：抖音商业化（字节跳动）、小红书商业化团队、快手磁力引擎；大量MCN机构、品牌方市场部也有KOL运营需求。</p>
+  </section>
+
+  <section id="user-ops" class="mb-16 scroll-mt-24">
+    <h2>07 · 用户运营（User Ops）</h2>
+
+    <p>用户运营是最接近"增长黑客"（Growth Hacking）理念的运营方向。他们用AARRR框架（获取/激活/留存/营收/推荐）管理用户生命周期，核心问题是：怎么以更低成本获得更多高价值用户，怎么让用户留下来并付费。</p>
+
+    <h3>7.1 日常工作（非常具体）</h3>
+    <ul>
+      <li>拉新渠道分析：各渠道（微信投放/抖音/ASO/裂变活动）的获客成本（CAC）和质量对比，优化投放预算分配</li>
+      <li>设计A/B测试：推送通知发"你有一条未读消息"还是"你的好友在等你"？两版哪个点击率更高，测完立刻上线</li>
+      <li>会员体系运营：设计会员等级规则、积分兑换体系，分析各等级付费率和留存差异</li>
+      <li>流失用户召回：对沉默30天的用户发定向优惠，分析不同召回策略的ROI</li>
+      <li>用户分层运营：VIP用户给专属福利；低价值用户用自动化工具运营，不过度投入人力</li>
+      <li>数据分析：每周用户漏斗、留存曲线、LTV（用户生命周期价值）追踪</li>
+    </ul>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 用户运营的一天（中等规模App，约500万MAU）</p>
+      <p>10:00 — 看昨日用户数据：注册量、次日留存、7日留存、付费转化</p>
+      <p>10:30 — A/B测试结论：版本B的新手引导留存提升2.1%，全量上线，通知PM更新</p>
+      <p>11:00 — 月度召回活动策划：对沉默用户发什么组合（Push+短信+优惠券）？写方案</p>
+      <p>13:30 — 与产品开会：会员V4等级的权益方案讨论，测算各档位毛利影响</p>
+      <p>15:00 — 数据分析：拉用户分层分布，发现"注册7-14天"流失率异常高，整理发现分享给PM</p>
+      <p>16:30 — 与广告投放同事对齐：这批拉来的用户次日留存只有18%，低于平均，质量有问题</p>
+      <p>19:00 — 写周报：重点指标变化、本周测试结论、下周计划</p>
+      <p class="text-stone-400 mt-3">// 工时：相对规律，10:00-20:00是常态；大促季节+/- 2小时</p>
+    </div>
+
+    <h3>7.2 核心KPI</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">留存率</p>
+        <p class="text-xs text-stone-500 mt-1">次日/7日/30日留存</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">CAC</p>
+        <p class="text-xs text-stone-500 mt-1">用户获取成本</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">LTV</p>
+        <p class="text-xs text-stone-500 mt-1">用户生命周期价值</p>
+      </div>
+    </div>
+
+    <h3>7.3 优劣势</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-green-800 mb-2">优势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>数据思维训练充分，转数据分析/产品路径最顺</li>
+          <li>增长方向的稀缺性高，会A/B测试+SQL的用户运营薪酬溢价明显</li>
+          <li>相比其他运营方向工时相对规律，不用随时处理突发</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-red-800 mb-2">劣势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>纯靠活动拉指标的方式边际效益递减，容易陷入"刷数据"内耗</li>
+          <li>依赖研发资源做测试，排期不到位会让运营计划一拖再拖</li>
+          <li>在用户增长见顶的成熟产品里，空间有限</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500">典型雇主：字节系（抖音/西瓜/剪映）、滴滴、美团、Keep、各类订阅制App。</p>
+  </section>
+
+  <section id="content-ops" class="mb-16 scroll-mt-24">
+    <h2>08 · 内容运营（Content Ops）</h2>
+
+    <p>内容运营是运营里最偏"编辑思维"的方向。他们的核心任务是：保证平台上有足够多、足够好的内容，让用户愿意来、愿意留。这包括自己生产内容、管理UGC质量、策划话题活动、监控内容生态健康度。</p>
+
+    <p>在小红书、B站、知乎、虎扑这类内容平台，内容运营是核心岗位。在字节系、腾讯等综合平台，内容运营负责垂直频道（如"搞笑内容""财经频道"）的内容质量。</p>
+
+    <h3>8.1 日常工作（非常具体）</h3>
+    <ul>
+      <li>内容排期管理：制定周/月选题计划，协调内部编辑和外部供稿者，确保内容持续产出</li>
+      <li>UGC质量管理：制定内容审核标准，抽查用户发布内容，处理低质/违规内容</li>
+      <li>话题策划：在热点事件（节假日/社会新闻/行业动态）前策划话题，引导用户创作内容</li>
+      <li>内容数据分析：哪类内容阅读完成率高？哪些话题带来的用户留存更好？用数据优化选题方向</li>
+      <li>与创作者合作：联系优质UGC创作者，激励他们持续产出，建立创作者激励机制</li>
+      <li>竞品内容追踪：观察竞品平台的内容趋势，及时识别新兴内容形态</li>
+    </ul>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 内容运营的一天（小红书/知乎风格内容平台）</p>
+      <p>09:30 — 刷平台热榜，看昨日内容消费数据：阅读量/完播率/互动率</p>
+      <p>10:30 — 内容审核：抽查昨日用户发布内容50篇，标记问题内容</p>
+      <p>11:00 — 策划下周话题：母亲节将至，策划"给妈妈写一封信"UGC活动，写活动方案</p>
+      <p>13:30 — 与设计确认话题活动的落地页视觉</p>
+      <p>14:30 — 与优质创作者沟通：邀请头部创作者参与平台专题合作，讨论独家首发权益</p>
+      <p>16:00 — 数据分析：近30天内容品类表现，发现"职场干货"类完读率比娱乐内容高40%</p>
+      <p>17:30 — 撰写月度内容报告：内容质量指数、用户互动率、优质内容案例分析</p>
+      <p>19:30 — 整理明日内容排期，确认各频道推送计划</p>
+      <p class="text-stone-400 mt-3">// 工时：10:00-20:00，热点事件发生时需随时响应（周末也可能被叫起来）</p>
+    </div>
+
+    <h3>8.2 核心KPI</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">内容消费量</p>
+        <p class="text-xs text-stone-500 mt-1">总阅读/播放/互动量</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">内容质量分</p>
+        <p class="text-xs text-stone-500 mt-1">完读率、分享率、收藏率</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">UGC发布量</p>
+        <p class="text-xs text-stone-500 mt-1">用户自发内容贡献量</p>
+      </div>
+    </div>
+
+    <h3>8.3 优劣势</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-green-800 mb-2">优势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>创意和文字能力强的人能做出差异化，有独特竞争力</li>
+          <li>工作本身有一定创造性，重复性低于电商运营</li>
+          <li>媒体/传播背景的人入行最自然，学习曲线短</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-red-800 mb-2">劣势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>KPI量化难：内容好坏有时主观，绩效评定争议大</li>
+          <li>薪酬天花板偏低：内容运营方向的高级职位比产品/电商少</li>
+          <li>AI内容生成工具冲击明显，内容生产效率革命会压缩部分岗位</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500">典型雇主：小红书、B站、知乎、快手、虎扑；腾讯/字节内各内容频道。</p>
+  </section>
+
+  <section id="merchant-ops" class="mb-16 scroll-mt-24">
+    <h2>09 · 供应链/商家运营（Merchant & Supply Chain Ops）</h2>
+
+    <p>商家运营负责平台和商家/供应商之间的关系。他们的任务是：让足够多、足够优质的商家在平台上开店，并且让这些商家活得好、卖得多。没有好商家，平台的选品质量就差，用户就跑掉。</p>
+
+    <p>这个方向在美团（餐饮商家）、京东（自营供应链）、拼多多（工厂/白牌商家）、饿了么都有大量需求。</p>
+
+    <h3>9.1 日常工作（非常具体）</h3>
+    <ul>
+      <li>商家招募：联系目标商家/品牌，介绍平台流量政策，推动入驻签约</li>
+      <li>商家健康度管理：追踪商家的GMV达标情况、投诉率、发货及时率，低于标准的商家要干预</li>
+      <li>大促备货协调：双十一前预测销量给商家，推动他们备足库存，防止爆单发不出货</li>
+      <li>商家培训：新商家入驻后培训如何使用平台工具、优化店铺页面、参加促销活动</li>
+      <li>选品分析：分析哪些品类增长快，主动去市场招募对应商家来补充品类空缺</li>
+      <li>与供应链部门协调：自营电商需要直接对接供应商谈采购价格、账期、独家货源</li>
+    </ul>
+
+    <div class="not-prose bg-stone-900 rounded-2xl p-6 my-6 font-mono text-sm text-green-400 leading-relaxed">
+      <p class="text-stone-400 mb-3">// 商家运营的一天（京东/美团风格平台）</p>
+      <p>09:30 — 看商家周报：重点类目GMV达成率，标记严重欠达成的商家</p>
+      <p>10:00 — 电话商家A：本月GMV只完成目标65%，对齐原因（竞品降价/货品问题），制定改善方案</p>
+      <p>11:00 — 招募会议：本季度重点引进的新品类（户外露营装备），整理目标商家名单</p>
+      <p>13:30 — 与供应链对账：某SKU缺货导致商家投诉，协调采购加急备货</p>
+      <p>15:00 — 商家培训会（线上）：讲解618大促报名规则、坑位资源申请流程</p>
+      <p>17:00 — 处理商家投诉升级：某商家认为平台扣款不合理，整理证据转法务</p>
+      <p>19:30 — 整理本周新入驻商家数据，更新商家健康度看板</p>
+      <p class="text-stone-400 mt-3">// 工时：大促期间10:00-22:00+；平时相对规律</p>
+    </div>
+
+    <h3>9.2 核心KPI</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4">
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">商家GMV</p>
+        <p class="text-xs text-stone-500 mt-1">所负责商家类目总销售额</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">商家满意度</p>
+        <p class="text-xs text-stone-500 mt-1">投诉率/续签率</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-3 text-center">
+        <p class="text-lg font-bold text-columbia-navy">新入驻商家数</p>
+        <p class="text-xs text-stone-500 mt-1">季度新引进商家目标</p>
+      </div>
+    </div>
+
+    <h3>9.3 优劣势</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-green-800 mb-2">优势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>供应链和商业谈判能力训练充分，市场价值高</li>
+          <li>BD（商业拓展）方向的天然跳板，沟通谈判经验直接复用</li>
+          <li>深度理解供应链上下游，创业价值高（自己做供应链/选品）</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-red-800 mb-2">劣势</p>
+        <ul class="space-y-1 text-xs text-stone-700">
+          <li>商家情绪管理耗神，处理投诉和纠纷消耗大量精力</li>
+          <li>处于平台和商家中间，两头受气，压力来源多元</li>
+          <li>GMV压力与商家能力不匹配时，往往是运营背锅</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm text-stone-500">典型雇主：京东（自营采购/POP平台）、美团（餐饮/闪购商家）、拼多多、饿了么、盒马。</p>
+  </section>
+
+  <section id="pros-cons" class="mb-16 scroll-mt-24">
+    <h2>10 · 运营赛道的整体优劣势</h2>
+
+    <p>把上面六个方向放在一起，整体运营赛道有一些共同的结构性特点，值得在选择前想清楚。</p>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-6 my-6">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+        <p class="font-semibold text-green-800 mb-3 text-base">整体优势</p>
+        <ul class="space-y-2.5 text-sm text-stone-700">
+          <li>
+            <strong class="text-stone-800">入行门槛低：</strong>文商科、传播、政治学背景都能入行，是互联网里对非理工科最友好的正规军岗位
+          </li>
+          <li>
+            <strong class="text-stone-800">学东西快：</strong>运营的工作直接暴露在业务一线，6-12个月内你对一个业务的理解深度会超过很多人
+          </li>
+          <li>
+            <strong class="text-stone-800">业务理解深：</strong>相比研发/数据，运营更全面地接触用户、产品、供应链、市场，是理解公司商业逻辑最快的路径
+          </li>
+          <li>
+            <strong class="text-stone-800">职业灵活性高：</strong>运营→产品、运营→BD、运营→创业，这些路径都有人走通过，可迁移的方向多
+          </li>
+          <li>
+            <strong class="text-stone-800">数字驱动，功劳可见：</strong>运营的结果是KPI数字，做得好就有数据支撑，不依赖主观评价
+          </li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3 text-base">整体劣势</p>
+        <ul class="space-y-2.5 text-sm text-stone-700">
+          <li>
+            <strong class="text-stone-800">容易陷入执行层：</strong>运营工作的80%可能都是执行和追踪，不主动积累方法论，很容易做了三年还在做初级工作
+          </li>
+          <li>
+            <strong class="text-stone-800">KPI文化高压：</strong>指标好的时候没人关注你，指标差的时候你首先被问责。与工作质量不完全相关的外部因素（平台政策变化/大盘下滑）也会影响你的数字
+          </li>
+          <li>
+            <strong class="text-stone-800">难以建立差异化：</strong>入行门槛低意味着竞争者多，做一样工作的人有一百个，如何脱颖而出需要刻意投入
+          </li>
+          <li>
+            <strong class="text-stone-800">燃尽风险高：</strong>10-9-6和高频KPI节奏的组合，是运营岗位换人率高的根本原因。两三年后身心俱疲转行的案例很常见
+          </li>
+          <li>
+            <strong class="text-stone-800">天花板模糊：</strong>初级到高级运营路径清晰，但高级运营到总监需要建立"方法论"和"团队管理"能力，这一层的断层很明显
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm my-4">
+      <p class="font-semibold text-stone-800 mb-2">一个现实的建议</p>
+      <p class="text-stone-600 text-xs leading-relaxed">运营赛道最容易出错的决策是"没有方向，随便进了一个运营岗"。建议在入行前想清楚：你要的是数据思维（用户运营/产品运营），还是商业判断（电商/商家运营），还是创意+社交（内容/KOL运营）？不同方向的核心技能和出路差异很大，方向选对了，三年后的选择权会多很多。</p>
+    </div>
+  </section>
+
+  <section id="hours" class="mb-16 scroll-mt-24">
+    <h2>11 · 工时现实：996与10-9-6</h2>
+
+    <p>不同赛道的工时差异很大，这里给你一个不加滤镜的参考。</p>
 
     <div class="not-prose overflow-x-auto my-6">
       <table class="w-full text-sm border-collapse">
         <thead>
           <tr class="bg-stone-100">
-            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">维度</th>
-            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇺🇸 美国大厂</th>
-            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇨🇳 中国大厂</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">方向</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">日常工时</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">冲刺期</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">周末</th>
           </tr>
         </thead>
         <tbody>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">岗位命名</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">Strategy & Ops, BizOps, Central Operations</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">战略分析、运营分析、增长运营、商业化运营</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">美式BizOps（Google/Airbnb）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">50-55小时/周，约9:00-19:00</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">项目截止周可达60-65h</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">一般不工作</td>
           </tr>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">工作重心</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">战略分析和跨职能项目并重，自主度高</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">执行导向更强，数据报表和业务支持占比更高</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">字节跳动（产品/用户运营）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">10:00-21:00，约55-60h/周</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">版本上线周或大促 65-70h+</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">周六常需上班（10-9-6）</td>
           </tr>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">汇报层级</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">通常汇报给高级VP或C-suite，曝光度高</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">汇报给业务负责人，层级感更强</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">阿里/京东（电商运营）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">09:00-21:00，约60h/周</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">双十一前后：基本通宵，连续多天</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">大促期间7天无休</td>
           </tr>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">背景要求</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">文理商科均有，看重框架思维和分析能力</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">偏好有数据分析能力，理工背景占比高</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">小红书/B站（内容运营）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">10:00-20:00，约50-55h/周</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">热点事件需随时响应</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">偶尔，遇突发事件</td>
           </tr>
           <tr>
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">跳转路径</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">PM、Corp Dev、Consulting（带MBA）是最常见出口</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">产品运营、BD、创业是常见路径</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">美团（商家运营）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">09:30-21:00，约55-60h/周</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">大促+节假日冲刺</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">周六有时上班</td>
           </tr>
         </tbody>
       </table>
     </div>
-  </section>
 
-  <section id="career" class="mb-16 scroll-mt-24">
-    <h2>05 · 职业路径：最好的跳板岗</h2>
-
-    <p>BizOps最大的价值，是它的"跳板功能"——在这个岗位上，你同时接触战略思维和执行落地，积累多元经验，为后续跳转开了很多扇门：</p>
-
-    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
-      {[
-        { to: '→ 产品经理（PM）', prob: '最常见', desc: 'BizOps掌握了业务数据和跨部门项目经验，加上对产品如何影响业务的直接理解，是PM的强力候选人。很多大厂明确允许内部从S&O转PM。' },
-        { to: '→ Corp Dev / M&A', prob: '需要财务底', desc: '对于有金融背景（或后来补了财务建模）的BizOps，Corp Dev是自然延伸。了解公司内部运作是大优势。' },
-        { to: '→ MBB咨询（MBA后）', prob: '可行', desc: '大厂BizOps经历+MBA，重新进入MBB做Associate是可行路径。大厂内部项目经历让Case Interview更有素材。' },
-        { to: '→ 创业', prob: '高成功率', desc: '理解大公司如何运作、知道市场机会在哪里、有执行落地经验——BizOps背景的创始人综合素质强。' },
-        { to: '→ 企业战略总监', prob: '自然路径', desc: '在大厂BizOps深耕5-8年，晋升为战略总监或VP是清晰的路径，尤其在公司快速增长期机会多。' },
-        { to: '→ 风险投资（VC）', prob: '偶发', desc: '有大厂战略+行业深度的人进入VC做行业研究/投后支持，路径存在但竞争激烈。' },
-      ].map(p => (
-        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
-          <div class="flex items-center gap-2 mb-1">
-            <p class="font-semibold text-stone-800">{p.to}</p>
-            <span class="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-1.5 py-0.5 rounded-full">{p.prob}</span>
-          </div>
-          <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
-        </div>
-      ))}
+    <div class="not-prose bg-stone-800 border border-stone-700 rounded-2xl p-5 text-sm my-6">
+      <p class="font-semibold text-white mb-3">关于996/10-9-6，说句直接的话</p>
+      <p class="text-stone-300 text-xs leading-relaxed mb-2">字节跳动的10-9-6（10点上班，9点下班，6天工作制）不是传言，是相当大比例员工的日常。阿里的"工号文化"和"永远在赶大促"也是真实存在的。这不是恐吓，而是决策的参考信息——你愿意用什么换取大厂的品牌、薪酬和学习速度，是个需要提前想清楚的问题。</p>
+      <p class="text-stone-300 text-xs leading-relaxed">相比之下，美式BizOps的工时更可预测：50-55小时是常态，极少有通宵或强制周末工作。如果你在选择上有灵活度，这是值得纳入考量的维度。</p>
     </div>
   </section>
 
   <section id="salary" class="mb-16 scroll-mt-24">
-    <h2>06 · 薪酬结构</h2>
+    <h2>12 · 薪酬结构（中美对比）</h2>
+
+    <h3>12.1 中国互联网运营薪酬（2024-2025）</h3>
 
     <div class="not-prose overflow-x-auto my-6">
       <table class="w-full text-sm border-collapse">
         <thead>
           <tr class="bg-stone-100">
             <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">职级 / 经验</th>
-            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇺🇸 美国（总包含RSU）</th>
-            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇨🇳 中国（年度总包）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">字节/阿里/JD（头部）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">中等规模互联网</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">初创/中小公司</th>
           </tr>
         </thead>
         <tbody>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Entry（0-2年，应届/转岗）</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">$90k–$120k</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">25–40万人民币</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">应届（0-1年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">25–40万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">15–25万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">10–18万元</td>
           </tr>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Mid-level（2-5年）</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">$120k–$180k</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">40–70万人民币</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">初级运营（1-3年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">30–55万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">20–35万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">15–25万元</td>
           </tr>
           <tr class="border-b border-stone-100">
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">FAANG S&O（L4-L5）</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">$150k–$220k</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">—</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">高级运营（3-5年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">40–70万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">30–50万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">20–35万元</td>
           </tr>
           <tr>
-            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Senior Manager / Director</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">$200k–$350k+</td>
-            <td class="px-4 py-3 text-stone-600 border border-stone-200">80–150万人民币</td>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">运营经理/总监（5年+）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">60–120万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">40–70万元</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">30–50万元</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <p class="text-sm text-stone-500">BizOps薪酬通常低于同级别PM，但高于纯数据分析师。<strong>它的真正价值在于跳板性——2-3年后转PM或Corp Dev可以获得明显的薪酬提升。</strong></p>
+    <p class="text-xs text-stone-400 mb-6">注：以上为年度总包（含奖金/期权估算），实际差异较大。电商运营因GMV奖金弹性大，高绩效人员有时超出上限；内容运营通常在下限附近。数据来源：脉脉匿名薪酬、BOSS直聘公开数据、知乎讨论，仅供参考。</p>
+
+    <div class="not-prose bg-columbia-light border border-columbia-blue/20 rounded-2xl p-4 text-sm my-4">
+      <p class="font-semibold text-stone-800 mb-1">运营 vs 产品经理 薪酬差距</p>
+      <p class="text-stone-600 text-xs leading-relaxed">同等经验、同等公司，产品经理薪酬普遍比运营高20-40%。这是运营岗"门槛低"的另一面——低门槛带来了供给过剩，压低了薪酬溢价。如果薪酬是核心优先项，做好2-3年运营后转产品是更优路径。</p>
+    </div>
+
+    <h3>12.2 美国BizOps薪酬（2024）</h3>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">职级 / 经验</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">总包（含RSU）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Entry（应届/0-2年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$90k–$130k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">FAANG Level 3-4</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Mid-level（2-5年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$130k–$190k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">FAANG Level 4-5</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Senior（5-8年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$180k–$250k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">FAANG Level 5-6</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Director+（8年+）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$250k–$400k+</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">Level 7+，含股票</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-xs text-stone-400">BizOps薪酬通常低于同级别SWE（软件工程师）和PM，但高于纯分析师岗位。真正的价值在于其跳板属性——2-3年后转PM或Corp Dev通常伴随30-50%的薪酬提升。数据来源：Levels.fyi, Glassdoor, Wall Street Oasis。</p>
   </section>
 
   <section id="recruiting" class="mb-16 scroll-mt-24">
-    <h2>07 · 入行路径</h2>
+    <h2>13 · 入行路径</h2>
 
-    <h3>7.1 最常见的入口</h3>
+    <h3>13.1 中国互联网运营：最低门槛的正规军入口</h3>
+
+    <p>运营是互联网里技术门槛最低的岗位之一，这对文商科背景的同学来说是好事，也意味着竞争激烈。实际上，运营岗的进入路径主要有以下几条：</p>
+
     <ul>
-      <li><strong>应届直接申请</strong>：顶尖学校（哈佛、耶鲁、哥大等）应届生可以直接申请大厂BizOps项目。Google、Airbnb、Stripe等公司有明确的应届BizOps招聘项目。</li>
-      <li><strong>咨询→BizOps</strong>：MBB或Big 4做2-3年后跳大厂BizOps，是最常见且最受认可的路径。咨询的框架思维直接映射BizOps工作。</li>
+      <li><strong>校招直入（最常见）</strong>：头部互联网公司（字节/阿里/美团/小红书）每年秋招大量招聘应届运营，文商科背景完全可行。关键在于：在简历和面试里体现你"理解用户"和"数据驱动"的能力，而不是泛泛说"对互联网有热情"。</li>
+      <li><strong>实习转正</strong>：互联网运营的入门级实习相对好拿，但拿到实习后要真正做出数据，不能只做杂事。很多人通过3个月实习留用正式岗。</li>
+      <li><strong>初创公司积累后跳槽</strong>：在小公司做1-2年，积累完整运营经验（从0到1建立增长体系），再带着成果和数字去投头部大厂。</li>
+      <li><strong>内部转岗</strong>：已经在大厂工作的同学（客服/BD/销售）内部转运营，时间通常6-12个月，了解公司业务是优势。</li>
+    </ul>
+
+    <h3>13.2 中国运营面试重点</h3>
+    <ul>
+      <li><strong>运营Case（核心）</strong>："如果你是某产品的用户运营，次日留存从35%下降到22%，你怎么排查？"——考察结构化思维和数据直觉</li>
+      <li><strong>活动方案设计</strong>：给你一个业务目标，让你设计一个运营活动，考察完整的策划能力</li>
+      <li><strong>数据解读</strong>：给你一张漏斗图，问你看到了什么，下一步优先做什么</li>
+      <li><strong>竞品分析</strong>：对比两款产品的运营策略，你怎么看，有什么建议</li>
+    </ul>
+
+    <h3>13.3 美式BizOps入行路径</h3>
+    <ul>
+      <li><strong>应届直接申请</strong>：哥大、哈佛、耶鲁等顶校应届生可以直接申请大厂BizOps项目。Google、Airbnb、Stripe等公司有明确的应届BizOps招聘项目，SIPA背景有竞争力。</li>
+      <li><strong>咨询→BizOps</strong>：MBB或Big 4做2-3年后跳大厂BizOps，是最常见且最受认可的路径。咨询的框架思维直接映射BizOps工作方式。</li>
       <li><strong>投行→Corp Dev</strong>：2-3年投行后进入大厂Corporate Development，是金融背景转科技的经典通道。</li>
       <li><strong>内部转岗</strong>：在大厂从数据分析或运营岗内部转到Strategy部门，时间1-2年。</li>
     </ul>
 
-    <h3>7.2 面试内容</h3>
+    <h3>13.4 美式BizOps面试内容</h3>
     <ul>
-      <li><strong>案例分析（最重要）</strong>："Uber的surging cancel rate，你怎么分析解决？"——开放性业务问题，考察结构化思维和数据直觉</li>
+      <li><strong>案例分析（最重要）</strong>："Uber的取消率上升了，你怎么分析解决？"——开放性业务问题，考察结构化思维</li>
       <li><strong>市场规模估算</strong>：类似咨询的Fermi estimation，"估算Google Maps在印度的月活"</li>
       <li><strong>数据解读</strong>：给你一个图表或数据集，问你能得出什么结论</li>
-      <li><strong>行为面试</strong>："你如何推动一个没有直接权力的项目落地"——跨职能协调能力</li>
+      <li><strong>行为面试</strong>："你如何推动一个没有直接权力的项目落地"</li>
     </ul>
 
-    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm not-prose my-4">
-      <p class="font-semibold text-blue-800 mb-1">📌 SIPA学生的竞争力</p>
-      <p class="text-blue-700 text-xs leading-relaxed">SIPA的政策分析训练——定量方法、利益相关者分析、政策影响评估——和BizOps的工作方式高度重叠。如果你有过政策研究或项目协调经历，把它们用BizOps的语言重新表述（"我协调了X个利益相关方，推动了Y决策，结果是Z"），是很有说服力的面试素材。</p>
+    <div class="not-prose bg-columbia-light border border-columbia-blue/20 rounded-2xl p-5 text-sm my-6">
+      <p class="font-semibold text-stone-800 mb-3">SIPA背景的差异化竞争力</p>
+      <ul class="space-y-2">
+        <li class="text-xs text-stone-700"><strong>美式BizOps：</strong>SIPA的政策分析训练——定量方法、利益相关者分析、项目推进——和BizOps的工作方式高度重叠。把政策研究经历用BizOps语言重新表述（"协调X个利益相关方，推动Y决策，结果是Z"），是很强的面试素材。</li>
+        <li class="text-xs text-stone-700"><strong>中国运营：</strong>SIPA毕业生的优势在于英文写作能力、国际化视野和分析框架——这在内容运营（做面向国际化的内容）、产品运营（有数据分析训练）和KOL运营（具备跨文化沟通能力）里有差异化价值。劣势是缺乏国内大厂实习背景，建议补一段实习经历再投校招。</li>
+      </ul>
     </div>
   </section>
 
   <section id="fit" class="mb-16 scroll-mt-24">
-    <h2>08 · 适合什么样的人</h2>
+    <h2>14 · 适合什么样的人</h2>
 
-    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+    <div class="not-prose grid sm:grid-cols-2 gap-6 my-6">
       <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
-        <p class="font-semibold text-green-800 mb-3">✅ BizOps适合你，如果</p>
+        <p class="font-semibold text-green-800 mb-3">运营岗适合你，如果</p>
         <ul class="space-y-1.5 text-sm text-green-700">
-          <li>你对科技公司的商业逻辑有好奇心，但不确定想做PM还是咨询</li>
-          <li>你既喜欢分析问题，也享受推动事情落地</li>
-          <li>你擅长跨部门沟通和协调，不怕在没有权力的情况下影响他人</li>
-          <li>你想用2-3年积累，再跳到PM或Corp Dev</li>
-          <li>你有咨询或金融背景，想进入科技行业</li>
+          <li>你想进互联网但没有技术背景，运营是最低门槛的入口</li>
+          <li>你喜欢节奏快、每天都有新问题解决的工作感</li>
+          <li>你能接受KPI考核，不怕被数字驱动</li>
+          <li>你有创业想法，运营是积累商业sense最快的路径</li>
+          <li>你外向善于沟通（KOL/商家运营方向尤其需要）</li>
+          <li>你想用2-3年运营经验跳转产品经理，这条路已有大量成功案例</li>
         </ul>
       </div>
       <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
-        <p class="font-semibold text-red-800 mb-3">❌ BizOps不适合你，如果</p>
+        <p class="font-semibold text-red-800 mb-3">运营岗不适合你，如果</p>
         <ul class="space-y-1.5 text-sm text-red-700">
-          <li>你明确知道自己想做PM，直接申请PM更高效</li>
-          <li>你希望工作职责清晰，不喜欢模糊的项目范围</li>
-          <li>你对内部政治和跨团队协调有强烈的抵触</li>
-          <li>你追求短期内最大化薪酬（IB/量化上限更高）</li>
+          <li>你对长期KPI高压和高工时有强烈抵触</li>
+          <li>你希望工作内容有清晰边界，不喜欢"什么都要管"的模糊感</li>
+          <li>你想快速最大化薪酬（同等背景进产品/数据薪酬更高）</li>
+          <li>你倾向深度专注单一方向，不喜欢高频切换任务</li>
+          <li>你明确确定要去美国大厂，那么直接申请BizOps比国内运营更对路</li>
         </ul>
       </div>
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm my-4">
+      <p class="font-semibold text-stone-800 mb-2">美式BizOps适合你，如果</p>
+      <ul class="space-y-1 text-xs text-stone-600">
+        <li>你对科技公司的商业逻辑有好奇心，但不确定想做PM还是咨询</li>
+        <li>你有咨询或金融背景，想通过科技公司内部岗位切换赛道</li>
+        <li>你既喜欢分析问题，也享受推动事情落地，不满足于只出报告</li>
+        <li>你擅长跨部门沟通和协调，不怕在没有权力的情况下影响他人</li>
+      </ul>
     </div>
   </section>
 
   </div>
 
   <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
-    ⚠️ 薪酬数据来源于 Levels.fyi、Glassdoor、知乎、脉脉等公开平台，仅供参考。实际薪酬因公司、职级、地区差异较大。
+    <p class="font-medium text-stone-500 mb-1">数据来源与参考</p>
+    <p>薪酬数据：Levels.fyi、Glassdoor、BOSS直聘公开数据、脉脉匿名薪酬、知乎。工时信息来源于各平台公开员工讨论（脉脉、知乎、Blind）及公开媒体报道。所有数据仅供参考，实际情况因公司、职级、地区和个人绩效差异较大。</p>
   </div>
 
 </Base>
