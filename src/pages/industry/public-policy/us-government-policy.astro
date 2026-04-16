@@ -157,28 +157,28 @@ import Base from '../../../../layouts/Base.astro';
             sub: 'Brookings Institution · 成立于1916年 · 华盛顿DC',
             tag: '旗舰综合智库',
             desc: '全球排名最高的智库之一（来回与宾大共享第一）。政治光谱偏中间偏左。下设外交政策、全球经济与发展、治理研究等多个项目组。招聘周期不规律，关注官网及 LinkedIn。SIPA 校友在此较多，有校友推荐渠道。',
-            salary: 'RA $45k–$58k / 政策分析师 $60k–$85k',
+            salary: '研究分析师（硕士入职）$65k–$90k（均值约 $78k）',
           },
           {
             name: '对外关系委员会',
             sub: 'Council on Foreign Relations (CFR) · 成立于1921年 · 纽约+华盛顿',
             tag: '精英外交政策圈',
             desc: '出版《外交事务》（Foreign Affairs）杂志。非常重视"圈子"和会员资格（会员需要邀请）。入职路径：研究助理（需要大量写作和研究支持能力），或通过 Stanton Fellow、International Affairs Fellow 等项目进入。哥大地缘优势明显（纽约总部）。',
-            salary: 'RA $48k–$62k / 研究员 $70k–$95k',
+            salary: '研究分析师（硕士入职）$65k–$85k',
           },
           {
             name: '战略与国际研究中心',
             sub: 'CSIS · 成立于1962年 · 华盛顿DC',
             tag: '两党平衡 / 亚太见长',
             desc: '亚太、中东、能源、网络安全等方向均有强项目。中国/亚太项目对中文能力有明确需求，是对 SIPA 中国背景学生最友好的智库之一。招聘相对稳定，官网有系统的职位发布。',
-            salary: 'RA $48k–$60k / 研究员 $65k–$90k',
+            salary: '研究分析师（硕士入职）$55k–$80k',
           },
           {
             name: '彼得森国际经济研究所',
             sub: 'PIIE · 成立于1981年 · 华盛顿DC',
             tag: '经济政策专门智库',
             desc: '全球顶级的国际经济政策研究机构，专注贸易、货币、国际金融、发展政策。大量与 IMF/Fed 的政策讨论在这里产生。对经济学量化背景要求较高，非经济学背景较难进核心研究岗。但有 Research Analyst 入门职位。',
-            salary: 'RA $50k–$65k / 研究分析师 $70k–$90k',
+            salary: '研究分析师（硕士入职）$65k–$90k',
           },
         ].map(t => (
           <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
@@ -236,13 +236,14 @@ import Base from '../../../../layouts/Base.astro';
           </thead>
           <tbody>
             {[
-              ['GS-7', '本科应届 / 荣誉学位', '$52,000–$57,000', '政策分析师初级、研究助理'],
-              ['GS-9', '硕士应届 / 2年经验', '$63,000–$69,000', '政策分析师、项目助理'],
-              ['GS-11', '博士 / 3年经验', '$75,000–$82,000', '高级分析师、项目专员'],
-              ['GS-12', '5–7年经验', '$90,000–$98,000', '资深分析师、项目主管'],
-              ['GS-13', '8–12年经验', '$107,000–$116,000', '处长级别、高级政策顾问'],
-              ['GS-14/15', '12年+经验', '$126,000–$163,000', '副处长、主任级别'],
-              ['Senior Executive Service (SES)', '15年+ / 政治任命', '$191,000–$221,000', '助理部长、副部长助理'],
+              ['GS-7', '本科应届 / 荣誉学位', '$57,007', '政策分析师初级、研究助理'],
+              ['GS-9', '硕士应届（无工作经验）', '$69,923', 'SIPA 应届最低入职档'],
+              ['GS-11', '硕士 + 少量经验 / PMF', '$84,601', 'SIPA 毕业典型入职档'],
+              ['GS-12', '3–5年经验', '$101,401', '资深分析师、项目主管'],
+              ['GS-13', '6–10年经验', '$120,579', '高级政策分析师、处长级别'],
+              ['GS-14', '10年+经验', '$142,488', '副主任、高级顾问'],
+              ['GS-15', '12年+经验', '$167,603', '主任级别（文职最高档）'],
+              ['SES（Senior Executive）', '15年+ / 政治任命', '$191,000–$221,000', '助理部长、副部长助理'],
             ].map(([gs, edu, salary, role]) => (
               <tr class="border-b border-stone-100 hover:bg-stone-50">
                 <td class="px-4 py-2.5 border border-stone-200 font-medium text-stone-800">{gs}</td>
@@ -254,12 +255,13 @@ import Base from '../../../../layouts/Base.astro';
           </tbody>
         </table>
       </div>
-      <p>智库薪酬不走 GS 体制，普遍低于政府同等职位，但差距没想象中大：</p>
+      <p>智库薪酬不走 GS 体制，需要区分职位层级：</p>
       <ul>
-        <li>研究助理（RA，应届硕士）：$48k–$65k</li>
-        <li>研究分析师 / 政策分析师：$65k–$95k</li>
-        <li>非常驻研究员（Nonresident Fellow，兼职）：honorarium 为主，不构成主要收入</li>
-        <li>高级研究员（Senior Fellow）：$120k–$200k，通常是前政府高官或知名学者</li>
+        <li><strong>研究助理（Research Assistant，本科应届）：</strong>$45k–$60k——基础支持岗，多为本科毕业生</li>
+        <li><strong>研究分析师（Research Analyst，硕士入职）：</strong>$65k–$90k（布鲁金斯均值约 $78k，CFR $65k–$85k）——SIPA 毕业生的典型切入职级</li>
+        <li><strong>政策分析师 / 项目协调员：</strong>$75k–$105k，2–5 年经验</li>
+        <li><strong>非常驻研究员（Nonresident Fellow，兼职）：</strong>honorarium 为主，不构成主要收入</li>
+        <li><strong>高级研究员（Senior Fellow）：</strong>$120k–$200k，通常是前政府高官或知名学者</li>
       </ul>
       <p class="text-sm text-stone-500 mt-2">⚠️ 政府职位的非薪资福利（养老金、医疗保险、带薪假期、工作稳定性）是对较低薪资的重要补偿，长期来看全薪比较需要把这些因素算进去。</p>
     </section>
