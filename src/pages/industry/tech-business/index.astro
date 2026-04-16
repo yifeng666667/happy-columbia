@@ -1,0 +1,144 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/tech-business/product-management/',
+    emoji: '🧭',
+    title: '产品经理（PM）',
+    titleEn: 'Product Management',
+    desc: '科技公司里最受文科生向往的岗位——Google APM、Meta RPM、字节PM，真实入行路径与日常全解析',
+    tags: ['Google APM', 'Meta RPM', '产品经理', 'Roadmap', 'PRD'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '$150k–$350k+',
+    salary_cn: '30–100万',
+  },
+  {
+    href: '/industry/tech-business/business-analyst/',
+    emoji: '📊',
+    title: '商业与数据分析',
+    titleEn: 'Business & Data Analysis',
+    desc: '大厂里最广阔的进入通道——BA、Product Analyst、Data Analyst，SQL+Excel+Python怎么配，出路怎么走',
+    tags: ['SQL', 'Tableau', 'A/B测试', 'BizOps', '数据驱动'],
+    difficulty: '中等',
+    diffColor: 'text-blue-600 bg-blue-50 border-blue-200',
+    salary_us: '$70k–$160k',
+    salary_cn: '20–60万',
+  },
+  {
+    href: '/industry/tech-business/strategy-ops/',
+    emoji: '⚙️',
+    title: '战略与运营（BizOps）',
+    titleEn: 'Strategy & Operations',
+    desc: 'Google S&O、字节战略、Uber Ops——这是非技术背景进大厂最高效的路径，也是向PM/咨询转型的最佳跳板',
+    tags: ['Strategy & Ops', 'BizOps', 'Ops Manager', '战略规划', '项目管理'],
+    difficulty: '中等',
+    diffColor: 'text-blue-600 bg-blue-50 border-blue-200',
+    salary_us: '$90k–$200k',
+    salary_cn: '25–70万',
+  },
+  {
+    href: '/industry/tech-business/bd-partnerships/',
+    emoji: '🤝',
+    title: '商业拓展与合作（BD）',
+    titleEn: 'Business Development & Partnerships',
+    desc: '科技公司如何拓展商业版图——BD Manager、Partnerships、Corp Dev，从签合同到整合并购的完整链条',
+    tags: ['BD', '商务合作', 'Corp Dev', 'GTM', '合作伙伴'],
+    difficulty: '中等',
+    diffColor: 'text-blue-600 bg-blue-50 border-blue-200',
+    salary_us: '$90k–$220k',
+    salary_cn: '25–80万',
+  },
+];
+---
+
+<Base title="科技行业商业岗深度解析" description="产品经理、商业分析、数据分析、战略运营、BD——文科生和商科生进大厂的真实路径全解析">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    行业解析
+  </a>
+
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold px-3 py-1 rounded-full">Tech — Business Roles</span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">4 个细分方向</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-5">
+      科技行业商业岗（Tech Business Roles）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      "进大厂"不只是工程师的事。Google、Meta、字节跳动、Airbnb——这些公司里有大量靠语言、分析、战略思维驱动的商业岗位，是文科生和商科生进入科技行业的真实通道。这里帮你搞清楚：产品经理、数据分析、战略运营、BD到底是什么、有什么区别、怎么进。
+    </p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '细分方向', value: '4个' },
+        { label: '覆盖市场', value: '美国 + 中国' },
+        { label: '薪酬数据', value: '2024-2025' },
+        { label: '数据来源', value: 'Levels.fyi/脉脉' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 先搞清楚：大厂商业岗的本质 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">先搞清楚：大厂商业岗的本质</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>科技公司的核心资产是代码和数据，但把这些能力转化成商业价值，靠的是<strong class="text-stone-800">商业判断力</strong>。产品经理决定"造什么"，数据分析师告诉团队"效果怎么样"，战略运营解决"如何规模化"，BD负责"怎么和外部世界连接"。</p>
+      <div class="grid sm:grid-cols-4 gap-3 mt-4">
+        {[
+          { role: '产品经理（PM）', desc: '定义产品方向，协调工程/设计/数据，对产品成败负责', icon: '🧭' },
+          { role: '数据/商业分析', desc: '用数据解答业务问题，支持决策，做A/B测试和指标分析', icon: '📊' },
+          { role: '战略运营（BizOps）', desc: '推动跨部门项目落地，优化运营效率，解决规模化问题', icon: '⚙️' },
+          { role: '商务拓展（BD）', desc: '建立外部合作关系，推进新市场和商业协议签署', icon: '🤝' },
+        ].map(r => (
+          <div class="bg-white border border-stone-200 rounded-xl p-3">
+            <p class="text-lg mb-1">{r.icon}</p>
+            <p class="font-semibold text-stone-800 text-xs mb-1">{r.role}</p>
+            <p class="text-[11px] leading-relaxed text-stone-500">{r.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-stone-400 mt-2">这四个方向有很多重叠，不同公司对同一职能的叫法也经常不同。最重要的是理解每个方向的核心逻辑，而不是纠结title。</p>
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">4 个细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {sectors.map((s) => (
+        <a href={s.href} class="group block rounded-2xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:-translate-y-1 transition-all no-underline">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{s.emoji}</span>
+            <span class={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${s.diffColor}`}>
+              入行难度：{s.difficulty}
+            </span>
+          </div>
+          <h3 class="font-display font-bold text-stone-900 text-lg mb-0.5 group-hover:text-columbia-navy transition-colors">{s.title}</h3>
+          <p class="text-[11px] text-stone-400 mb-3">{s.titleEn}</p>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            {s.tags.map(t => (
+              <span class="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-200 font-medium px-2 py-0.5 rounded-full">{t}</span>
+            ))}
+          </div>
+          <div class="flex gap-4 text-xs text-stone-500 pt-3 border-t border-stone-100">
+            <span>🇺🇸 {s.salary_us}</span>
+            <span>🇨🇳 {s.salary_cn}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 Levels.fyi、Glassdoor、知乎、脉脉等公开平台，仅供参考。实际薪酬因公司、职级、地区差异较大。
+  </div>
+</Base>

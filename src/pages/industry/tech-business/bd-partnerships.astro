@@ -1,0 +1,249 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="商务拓展与合作（BD）深度解析" description="BD Manager、Partnerships、Corp Dev——科技公司如何拓展商业版图，GTM战略、谈判、商业协议全解析">
+
+  <a href="/industry/tech-business/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    科技商业岗
+  </a>
+
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold px-3 py-1 rounded-full">Business Development</span>
+      <span class="text-[10px] text-blue-600 bg-blue-50 border border-blue-200 font-semibold px-3 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      🤝 商务拓展与合作（Business Development & Partnerships）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      BD是科技公司里最"社交"的商业岗位——负责建立外部合作关系、推进战略协议、开拓新市场。它既需要分析能力（识别哪个合作伙伴最有价值），也需要谈判和沟通能力（把协议推过终点线）。
+    </p>
+  </header>
+
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#what" class="hover:text-columbia-navy no-underline">01 · BD是什么：销售、谈判、还是战略</a></li>
+      <li><a href="#types" class="hover:text-columbia-navy no-underline">02 · 细分类型</a></li>
+      <li><a href="#work" class="hover:text-columbia-navy no-underline">03 · 真实工作内容</a></li>
+      <li><a href="#skills" class="hover:text-columbia-navy no-underline">04 · 核心能力要求</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径与出口</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">06 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">07 · 入行路径</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">08 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <section id="what" class="mb-16 scroll-mt-24">
+    <h2>01 · BD是什么：销售、谈判、还是战略</h2>
+
+    <p>BD（Business Development，商务拓展）是一个经常被误解的职位。它不是销售（Sales）——销售卖现有产品，BD建立新的合作关系和商业模式。它不只是谈判——谈判只是BD工作的一部分。BD的本质是：<strong>识别能让公司产品/业务指数级增长的外部合作机会，并将其从想法变成签署的协议</strong>。</p>
+
+    <h3>1.1 三种"BD"的区别</h3>
+    <p>在科技公司里，"BD"这个词指向三种不同的工作：</p>
+    <div class="not-prose grid sm:grid-cols-3 gap-4 my-6 text-sm">
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4">
+        <p class="font-semibold text-stone-800 mb-1">战略合作（Partnerships）</p>
+        <p class="text-xs text-stone-500 leading-relaxed">和外部公司建立互利合作——技术集成、联合营销、内容合作、生态系统建设。例：Spotify和Facebook的深度集成协议，Google和三星的安卓预装协议。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4">
+        <p class="font-semibold text-stone-800 mb-1">企业销售/拓展（Enterprise BD）</p>
+        <p class="text-xs text-stone-500 leading-relaxed">向企业客户销售平台/服务，但比普通销售更重视战略关系。例：AWS BD向大型企业推动云迁移，Stripe BD签下大型平台的支付集成。</p>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-4">
+        <p class="font-semibold text-stone-800 mb-1">Corp Dev（企业发展）</p>
+        <p class="text-xs text-stone-500 leading-relaxed">管理战略投资和并购。比普通BD更重财务建模和法律协议，通常需要投行背景。参见Strategy & Ops章节的Corp Dev部分。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="types" class="mb-16 scroll-mt-24">
+    <h2>02 · 细分类型</h2>
+
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { name: '平台合作（Platform Partnerships）', desc: '管理开发者生态系统和平台上的合作伙伴关系。例：Google Play Store的BD团队管理与app开发者的关系；Shopify的BD团队推动第三方插件开发者生态。需要理解技术API和开发者需求。' },
+        { name: '内容/媒体合作（Content Partnerships）', desc: 'Netflix与制片公司的版权谈判，Spotify与唱片公司的授权协议，YouTube与媒体公司的内容分发。需要理解内容行业的商业逻辑和版权体系。' },
+        { name: '渠道合作（Channel Partnerships / GTM）', desc: '通过合作伙伴渠道推广和销售产品。例：云服务公司和系统集成商（SI）的合作，SaaS公司通过经销商覆盖中小企业市场。重视GTM（Go-to-Market）战略。' },
+        { name: '国际拓展（International BD）', desc: '推动产品进入新市场，管理当地政府/监管关系，建立本地合作伙伴网络。这个方向对有国际背景和语言能力的人特别友好——SIPA学生在此有竞争优势。' },
+        { name: '战略投资BD（Investment BD）', desc: '识别战略投资标的，建立关系，推进投资协议。通常隶属于Corp Dev团队。重视财务分析和行业判断力。' },
+      ].map(t => (
+        <div class="flex gap-4 items-start bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
+          <div>
+            <p class="font-semibold text-stone-800 mb-1">{t.name}</p>
+            <p class="text-xs text-stone-500 leading-relaxed">{t.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="work" class="mb-16 scroll-mt-24">
+    <h2>03 · 真实工作内容</h2>
+
+    <h3>3.1 一个Partnership Deal的完整生命周期</h3>
+    <ol>
+      <li><strong>机会识别（Opportunity Identification）</strong>：分析市场，找到"如果和X合作，能给我们带来什么价值"。可能来自产品需求（"我们需要X数据"），也可能来自增长机会（"Y公司的用户和我们高度重叠"）。</li>
+      <li><strong>可行性分析（Deal Modeling）</strong>：这个合作值多少钱？双方的利益如何分配？做财务模型，估算合作对关键业务指标的影响（MAU、收入、成本）。</li>
+      <li><strong>关系建立（Relationship Building）</strong>：找到对方决策链上的关键人，建立信任，推动双方高管会谈。这是BD最靠"人际网络"的环节。</li>
+      <li><strong>谈判（Negotiation）</strong>：协议条款谈判——收入分成、数据共享范围、排他条款、合同期限。BD需要推动法务、财务、产品等内部团队，同时和外部谈判对手博弈。</li>
+      <li><strong>落地执行（Deal Execution）</strong>：合同签署后，推动技术集成、联合营销活动、内部培训——确保合作真正产生价值。</li>
+      <li><strong>关系管理（Relationship Management）</strong>：持续维护合作伙伴关系，监控合作表现，在出现问题时协调解决。</li>
+    </ol>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 text-sm my-6">
+      <p class="font-semibold text-stone-800 mb-2">来自大厂BD的描述</p>
+      <blockquote class="italic text-stone-500 text-xs border-l-4 border-stone-300 pl-4">
+        "BD的工作80%是关系建立和内部协调，只有20%是'谈判桌上的时刻'。外人以为BD天天在酒桌上谈大单，实际上更多时间在做内部对齐——说服自己的工程师为一个合作伙伴改需求，说服法务接受一个有风险的条款，说服CFO批准一个收入分成方案。"
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="skills" class="mb-16 scroll-mt-24">
+    <h2>04 · 核心能力要求</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6">
+      {[
+        { skill: '战略判断力', desc: '哪个合作机会值得追？为什么这个比那个更重要？这是BD的核心判断力，很难通过培训获得，依赖对行业的深度理解。' },
+        { skill: '关系建立与维护', desc: '在不同文化、层级、利益背景的人之间建立信任。BD需要和CEO谈，也需要和技术负责人谈——切换沟通风格的能力很重要。' },
+        { skill: '谈判技巧', desc: '理解双方利益底线，找到创造性的利益分配方案，在保持关系的前提下最大化己方利益。' },
+        { skill: '财务建模基础', desc: '能建立简单的Deal模型（收入预测、成本分析、NPV计算），这不需要投行级别的精度，但要能自洽。' },
+        { skill: '合同与法律基础', desc: '了解NDA、MOU、Master Agreement等常见合同结构，能和法务团队有效沟通，不需要自己写合同但要读懂关键条款。' },
+        { skill: '跨文化沟通（国际BD）', desc: '对于国际拓展BD，语言能力和对目标市场文化的理解是硬通货。SIPA学生的多语言和国际政策背景在这里非常有价值。' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm">
+          <p class="font-semibold text-stone-800 mb-1">{s.skill}</p>
+          <p class="text-xs text-stone-500 leading-relaxed">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径与出口</h2>
+
+    <div class="not-prose space-y-2 my-6 text-sm">
+      {[
+        ['BD Associate / Analyst', '0-2年', '支持高级BD完成deal流程，做市场分析、财务模型、合同审阅'],
+        ['BD Manager', '2-5年', '独立负责一类合作伙伴或一个地区，主导谈判，管理合作伙伴关系'],
+        ['Senior BD Manager / Director', '5-8年', '管理BD团队，参与战略规划，负责大型战略合作'],
+        ['VP of Partnerships / Head of BD', '8年+', '定义公司整体合作战略，直接对C-suite汇报，与CEO/CFO共同决策'],
+      ].map(([title, exp, desc]) => (
+        <div class="flex gap-3 items-start bg-stone-50 border border-stone-200 rounded-xl px-4 py-3">
+          <div class="min-w-[220px]">
+            <p class="font-semibold text-stone-800">{title}</p>
+            <p class="text-[11px] text-stone-400">{exp}</p>
+          </div>
+          <p class="text-stone-500 text-xs leading-relaxed pt-0.5">{desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>5.2 BD的出口</h3>
+    <ul>
+      <li><strong>Corp Dev / M&A</strong>：BD积累的行业关系网和交易谈判经验，是进入Corp Dev的直接跳板</li>
+      <li><strong>创业</strong>：BD最了解市场空白和潜在的合作伙伴生态，创业成功率高</li>
+      <li><strong>咨询</strong>：BD的战略分析和商业判断配上MBA，可以进入MBB做相关行业咨询</li>
+      <li><strong>VC</strong>：有行业人脉网络的BD是VC寻找的人才类型</li>
+    </ul>
+  </section>
+
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>06 · 薪酬结构</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">职级 / 经验</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇺🇸 美国（总包含RSU）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇨🇳 中国（年度总包）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">BD Analyst / Associate（应届）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$75k–$110k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">25–40万人民币</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">BD Manager（3-5年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$120k–$180k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">50–80万人民币</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">FAANG Senior BD（L5-L6）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$180k–$250k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">—</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Director / VP of BD</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$250k–$400k+</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">100–200万人民币</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>07 · 入行路径</h2>
+
+    <h3>7.1 常见入口</h3>
+    <ul>
+      <li><strong>咨询背景</strong>：MBB或Big 4的战略咨询经历被BD团队高度认可——框架思维+商业判断力直接映射BD核心技能</li>
+      <li><strong>应届直申</strong>：部分公司（Spotify、Airbnb、LinkedIn）有明确的应届BD Associate项目，竞争激烈但存在</li>
+      <li><strong>相关行业经验</strong>：在目标公司合作伙伴行业（媒体、金融、科技）有2-3年经验，可以带着行业人脉直接进BD</li>
+      <li><strong>内部转岗</strong>：从销售、运营、或策略分析转到BD，利用内部关系网络</li>
+    </ul>
+
+    <h3>7.2 面试特点</h3>
+    <ul>
+      <li><strong>Deal案例</strong>："你会如何为我们公司推进和X公司的合作？"——展示你能识别机会、分析价值、设计协议结构</li>
+      <li><strong>行为面试</strong>：谈判经历、说服高难度对象的故事、如何在没有权力的情况下推动复杂项目</li>
+      <li><strong>行业知识</strong>：对目标公司所在行业的理解——竞争格局、核心玩家、价值链</li>
+    </ul>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm not-prose my-4">
+      <p class="font-semibold text-blue-800 mb-1">📌 SIPA学生的特殊优势</p>
+      <p class="text-blue-700 text-xs leading-relaxed">国际BD和政府关系BD是SIPA背景最有竞争力的方向。科技公司在拓展亚洲、中东、欧洲市场时，需要有政策和政府关系背景的BD人才。你对监管环境、政府决策过程、国际关系的理解，是纯商科背景的BD缺乏的。重点关注：Google、Meta的政府关系BD岗，科技公司的新兴市场拓展团队，以及有大量国际业务的平台（Stripe、Airbnb、Booking.com）。</p>
+    </div>
+  </section>
+
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>08 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+        <p class="font-semibold text-green-800 mb-3">✅ BD适合你，如果</p>
+        <ul class="space-y-1.5 text-sm text-green-700">
+          <li>你享受和不同层级、背景的人建立关系</li>
+          <li>你有语言能力和国际视野（国际BD尤其需要）</li>
+          <li>你在处理模糊情况时有战略判断力</li>
+          <li>你享受谈判的过程，能在博弈中保持冷静</li>
+          <li>你对某个行业有深度兴趣（媒体、金融、医疗）——行业专深度是BD的核心竞争力</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ BD不适合你，如果</p>
+        <ul class="space-y-1.5 text-sm text-red-700">
+          <li>你不喜欢社交，维护长期关系让你感到疲惫</li>
+          <li>你需要清晰的量化KPI来衡量自己的工作价值</li>
+          <li>你希望独立执行，不依赖他人的配合</li>
+          <li>你对"deal没成功"的不确定性容忍度低</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 Levels.fyi、Glassdoor、知乎、脉脉等公开平台，仅供参考。实际薪酬因公司、职级、地区差异较大。
+  </div>
+
+</Base>

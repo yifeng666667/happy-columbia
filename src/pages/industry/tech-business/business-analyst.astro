@@ -1,0 +1,311 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="商业与数据分析深度解析" description="BA、Product Analyst、Data Analyst——大厂最广泛的非技术入口，SQL+Tableau+Python配置，职业路径与出口全解析">
+
+  <a href="/industry/tech-business/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    科技商业岗
+  </a>
+
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold px-3 py-1 rounded-full">Business & Data Analysis</span>
+      <span class="text-[10px] text-blue-600 bg-blue-50 border border-blue-200 font-semibold px-3 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      📊 商业与数据分析（Business & Data Analysis）
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      大厂里最宽泛的进入通道。BA（商业分析）、Data Analyst（数据分析）、Product Analyst——这三个方向经常被混在一起，但有本质差异。这里帮你搞清楚它们是什么、需要什么技能、怎么入行、往哪里走。
+    </p>
+  </header>
+
+  <nav class="mb-14 bg-stone-50 border border-stone-200 rounded-2xl p-5">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-stone-400 mb-3 font-medium">目录</p>
+    <ol class="space-y-1.5 text-sm text-stone-600 columns-2">
+      <li><a href="#what" class="hover:text-columbia-navy no-underline">01 · 三种分析师：区别在哪里</a></li>
+      <li><a href="#skills" class="hover:text-columbia-navy no-underline">02 · 技能栈：SQL、Python、Tableau怎么配</a></li>
+      <li><a href="#work" class="hover:text-columbia-navy no-underline">03 · 真实工作内容</a></li>
+      <li><a href="#china-us" class="hover:text-columbia-navy no-underline">04 · 中美对比</a></li>
+      <li><a href="#career" class="hover:text-columbia-navy no-underline">05 · 职业路径与出口</a></li>
+      <li><a href="#salary" class="hover:text-columbia-navy no-underline">06 · 薪酬结构</a></li>
+      <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">07 · 招聘路径</a></li>
+      <li><a href="#fit" class="hover:text-columbia-navy no-underline">08 · 适合什么样的人</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-h2:text-2xl prose-h3:text-lg prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline">
+
+  <section id="what" class="mb-16 scroll-mt-24">
+    <h2>01 · 三种分析师：区别在哪里</h2>
+
+    <p>这三个职位在名字上相近，但在工作内容、所需技能和职业出口上有显著差异：</p>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">维度</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">业务分析师（BA）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">数据分析师（DA）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">产品分析师（PA）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">核心问题</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">业务流程如何优化？需求是什么？</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">数据告诉我们什么？趋势是什么？</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">产品表现如何？用户行为是什么？</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">主要工具</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">Excel、PowerPoint、流程图、Jira</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">SQL、Python/R、Tableau/Looker</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">SQL、Amplitude/Mixpanel、A/B测试</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">合作对象</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">业务团队、管理层、IT部门</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">数据工程师、科学家、业务团队</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">产品经理、工程师、设计师</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">技术要求</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">最低，更偏沟通和逻辑分析</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">中高，SQL必须，Python加分</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">中，SQL必须，懂产品逻辑</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">典型出口</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">PM、策略分析、咨询</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">数据科学家、PM、Data Eng</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">PM（最直接）、增长PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 text-sm not-prose my-4">
+      <p class="font-semibold text-stone-800 mb-1">📌 实际情况：很多公司的职位名称和工作内容并不对应</p>
+      <p class="text-stone-600 text-xs leading-relaxed">同样叫"Business Analyst"，在Google可能是重数据的分析岗，在一家传统企业可能主要是写需求文档。面试前一定要看JD，理解这个岗位的具体工作是什么，而不是只看title。</p>
+    </div>
+  </section>
+
+  <section id="skills" class="mb-16 scroll-mt-24">
+    <h2>02 · 技能栈：SQL、Python、Tableau怎么配</h2>
+
+    <h3>2.1 核心技能优先级</h3>
+    <div class="not-prose space-y-3 my-6">
+      {[
+        { skill: 'SQL', priority: '必须', level: 'bg-red-100 text-red-800 border-red-200', desc: '所有数据分析类岗位的通用门票。能用SQL从数据库提取、聚合、过滤数据，是基本要求。常见操作：JOIN、GROUP BY、窗口函数、子查询。学习时间：认真学2-3个月可以达到工作用水平。' },
+        { skill: 'Python / R', priority: '强加分', level: 'bg-amber-100 text-amber-800 border-amber-200', desc: '用于更复杂的统计分析、数据清洗、可视化。不需要数据科学级别的深度，能用Pandas/NumPy处理数据集，用matplotlib/seaborn画图。对DA职位逐渐成为期望而非加分。' },
+        { skill: 'Tableau / Looker / Power BI', priority: '强加分', level: 'bg-amber-100 text-amber-800 border-amber-200', desc: '数据可视化工具。能把数据做成清晰的仪表盘，让非技术的业务同事理解。Tableau是最常考的，Looker在大型科技公司更常见。' },
+        { skill: 'Excel / Google Sheets', priority: '必须', level: 'bg-red-100 text-red-800 border-red-200', desc: '仍然是最高频使用的工具，尤其是快速数据整理和演示。VLOOKUP、数据透视表（Pivot Table）、IF公式需要熟练。' },
+        { skill: 'A/B测试统计基础', priority: '加分', level: 'bg-blue-100 text-blue-800 border-blue-200', desc: '理解假设检验、置信区间、p值的含义，能判断一次A/B测试的结论是否可靠。不需要推导公式，但要能解读结果。' },
+        { skill: 'PowerPoint / Google Slides', priority: '必须', level: 'bg-red-100 text-red-800 border-red-200', desc: 'BA的核心输出物之一。把复杂分析转化成清晰的叙述，给管理层汇报。叙事结构比图表漂亮更重要。' },
+      ].map(s => (
+        <div class="flex gap-3 items-start bg-stone-50 border border-stone-200 rounded-xl px-4 py-3">
+          <div class="min-w-[120px] flex flex-col gap-1">
+            <p class="font-semibold text-stone-800 text-sm">{s.skill}</p>
+            <span class={`text-[10px] font-medium px-2 py-0.5 rounded-full border w-fit ${s.level}`}>{s.priority}</span>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>2.2 对SIPA学生的学习路径建议</h3>
+    <p>SIPA的定量分析课程（QMSS、统计方法）是很好的基础，但直接进科技公司还需要补充：</p>
+    <ol>
+      <li><strong>先学SQL（优先级最高）</strong>：Mode Analytics的SQL教程或LeetCode Database题目，免费且直接对应面试</li>
+      <li><strong>学Python基础</strong>：用于数据处理（Pandas）和可视化，Kaggle有免费课程</li>
+      <li><strong>做一个项目</strong>：用公开数据集（Kaggle数据集、NYC Open Data、政府统计数据）做一个完整的数据分析，放到GitHub——这是面试最有力的佐证</li>
+    </ol>
+  </section>
+
+  <section id="work" class="mb-16 scroll-mt-24">
+    <h2>03 · 真实工作内容</h2>
+
+    <h3>3.1 数据分析师的一周</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-6 text-sm">
+      {[
+        { day: '周一', tasks: ['参加产品weekly，了解本周优先分析任务', '拉上周产品数据，写成数据报告（例行工作）', '发现某指标异常下降，开始调查原因'] },
+        { day: '周二', tasks: ['写SQL查询，提取用户行为分段数据', '和PM开会，确认分析思路（这个指标是什么原因导致的？）', '用Python/Pandas清洗数据，处理缺失值'] },
+        { day: '周三', tasks: ['建Tableau仪表盘，展示异常指标的分布', '复现问题：某个用户群体的留存率比其他群体低20%', '写分析文档，列出假设和数据证据'] },
+        { day: '周四', tasks: ['向PM和工程团队展示分析结论', '讨论如何通过产品改动解决这个问题', '协助设计A/B测试方案'] },
+        { day: '周五', tasks: ['A/B测试数据监控，检查是否达到显著性', '处理临时数据请求（"能帮我查一下这个用户的行为路径吗"）', '更新数据文档，写本周总结'] },
+      ].map(d => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 text-xs mb-2 uppercase tracking-wide">{d.day}</p>
+          <ul class="space-y-1">
+            {d.tasks.map(t => <li class="text-xs text-stone-500">• {t}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <h3>3.2 BA vs DA的工作氛围差异</h3>
+    <p><strong>BA（偏业务）</strong>：更多开会、更多和非技术同事沟通、更多写文档和PPT，工作产出是"建议"和"需求文档"。更像是翻译——把业务需求翻译成技术可实现的规格，把数据结论翻译成管理层能理解的故事。</p>
+    <p><strong>DA（偏技术）</strong>：大量时间在代码和数据里，输出是仪表盘、分析报告、A/B测试结论。合作对象更多是工程师和数据科学家，沟通密度低但技术深度要求高。</p>
+  </section>
+
+  <section id="china-us" class="mb-16 scroll-mt-24">
+    <h2>04 · 中美对比</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+        <p class="font-semibold text-stone-800 mb-3 text-sm">🇺🇸 美国大厂数据分析</p>
+        <ul class="space-y-1.5 text-xs text-stone-600">
+          <li>📊 数据文化极成熟：SQL查询自助化，分析师有完整的数据权限</li>
+          <li>🔬 A/B测试是标配：每个产品改动都要有测试结论</li>
+          <li>💬 分析师有较强话语权：数据结论能直接影响产品决策</li>
+          <li>🏖️ 工作节奏相对可控：45-55小时/周，有边界感</li>
+          <li>💰 FAANG薪酬有RSU：总包显著高于非FAANG</li>
+        </ul>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+        <p class="font-semibold text-stone-800 mb-3 text-sm">🇨🇳 中国大厂数据分析</p>
+        <ul class="space-y-1.5 text-xs text-stone-600">
+          <li>📊 数据体系更复杂：多个数据平台、数据一致性是挑战</li>
+          <li>⚡ 需求响应速度极快：临时数据请求很多，规划性工作被打断</li>
+          <li>📈 更多偏向BI（商业智能）：做报表、做仪表盘占大量时间</li>
+          <li>😓 工作强度高：大厂分析师60-70小时/周常见</li>
+          <li>🚀 晋升路径明确：从初级到资深分析师到数据总监，体系清晰</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="career" class="mb-16 scroll-mt-24">
+    <h2>05 · 职业路径与出口</h2>
+
+    <h3>5.1 内部晋升路径</h3>
+    <div class="not-prose space-y-2 my-6 text-sm">
+      {[
+        ['初级分析师（Analyst）', '0-2年', '执行具体分析任务，产出仪表盘、报告，回答数据请求'],
+        ['中级分析师（Senior Analyst）', '2-4年', '独立负责分析领域，影响产品决策，开始带初级成员'],
+        ['Lead Analyst / Staff Analyst', '4-7年', '定义分析框架，推动数据文化，参与战略讨论'],
+        ['数据分析经理 / 总监', '7年+', '管理分析团队，制定数据策略，对业务结果负责'],
+      ].map(([title, exp, desc]) => (
+        <div class="flex gap-3 items-start bg-stone-50 border border-stone-200 rounded-xl px-4 py-3">
+          <div class="min-w-[200px]">
+            <p class="font-semibold text-stone-800">{title}</p>
+            <p class="text-[11px] text-stone-400">{exp}</p>
+          </div>
+          <p class="text-stone-500 text-xs leading-relaxed pt-0.5">{desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>5.2 最常见的横向跳转</h3>
+    <ul>
+      <li><strong>→ 产品经理（PM）</strong>：最自然的跳转。产品分析师最有优势，因为已经深度理解产品数据逻辑</li>
+      <li><strong>→ 数据科学家</strong>：如果Python和统计基础强，加一些ML知识后可以转</li>
+      <li><strong>→ 战略/BizOps</strong>：BA背景配上MBA或几年经验，去公司战略部门做分析</li>
+      <li><strong>→ 咨询</strong>：商业分析背景配MBA，回流到咨询行业做项目</li>
+      <li><strong>→ 创业</strong>：理解数据和用户行为的人创业成功率更高</li>
+    </ul>
+  </section>
+
+  <section id="salary" class="mb-16 scroll-mt-24">
+    <h2>06 · 薪酬结构</h2>
+
+    <div class="not-prose overflow-x-auto my-6">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">职级 / 经验</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇺🇸 美国（总包）</th>
+            <th class="text-left px-4 py-3 font-semibold text-stone-700 border border-stone-200">🇨🇳 中国（年度总包）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Entry Analyst（0-2年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$70k–$100k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">20–35万人民币</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Mid-level（2-5年）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$90k–$130k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">35–60万人民币</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">Senior Analyst（5年+）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$110k–$160k</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">50–80万人民币</td>
+          </tr>
+          <tr class="border-b border-stone-100">
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">FAANG Data Analyst（L4-L5）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">$130k–$200k（含RSU）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">—</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-stone-700 border border-stone-200">字节/腾讯/阿里（资深分析师）</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">—</td>
+            <td class="px-4 py-3 text-stone-600 border border-stone-200">60–120万人民币</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-sm text-stone-500">数据分析师的薪酬在科技行业里属于中等偏下，<strong>但这是入行门槛最低、可以快速积累技能的起点</strong>。很多人以DA为跳板，在2-4年后转向PM或数据科学家，薪酬会大幅提升。</p>
+  </section>
+
+  <section id="recruiting" class="mb-16 scroll-mt-24">
+    <h2>07 · 招聘路径</h2>
+
+    <h3>7.1 面试通常考什么</h3>
+    <ul>
+      <li><strong>SQL测试（几乎必考）</strong>：给你一个数据库Schema，让你写查询回答问题。难度从基础的GROUP BY到复杂的窗口函数不等</li>
+      <li><strong>案例分析</strong>："某指标下降了20%，你怎么排查原因？"——考察你系统性分析问题的框架</li>
+      <li><strong>产品感知</strong>：尤其是Product Analyst职位，会问"你如何定义这个功能的成功指标？"</li>
+      <li><strong>统计/A/B测试</strong>：基础统计概念，什么是p值，如何判断A/B测试结论有效</li>
+      <li><strong>行为面试</strong>：STAR格式，数据驱动决策的经历，与非技术同事沟通复杂分析的经历</li>
+    </ul>
+
+    <h3>7.2 如何准备</h3>
+    <ol>
+      <li><strong>LeetCode（数据库题）</strong>：刷前50道SQL题，覆盖了面试90%的SQL考点</li>
+      <li><strong>做一个数据项目</strong>：用Kaggle或公开数据集，从数据清洗到可视化到结论建议，放到GitHub</li>
+      <li><strong>准备3-4个"数据故事"</strong>：你曾经用数据分析发现了什么、推动了什么决策——用STAR格式描述</li>
+      <li><strong>练习口头解释数据</strong>：把你的分析结论用1-2句话解释给外行听，这个能力比SQL更难培养</li>
+    </ol>
+  </section>
+
+  <section id="fit" class="mb-16 scroll-mt-24">
+    <h2>08 · 适合什么样的人</h2>
+
+    <div class="not-prose grid sm:grid-cols-2 gap-5 my-6">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+        <p class="font-semibold text-green-800 mb-3">✅ 分析师岗适合你，如果</p>
+        <ul class="space-y-1.5 text-sm text-green-700">
+          <li>你享受从数字里找规律，愿意花时间清洗和整理数据</li>
+          <li>你有耐心面对数据不一致和不确定性</li>
+          <li>你擅长把复杂的数字分析翻译成清晰的业务建议</li>
+          <li>你对科技产品有好奇心（"这个功能为什么这么设计？"）</li>
+          <li>你在寻找进入科技行业的入口，愿意用2-3年积累再跳到PM或数据科学</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <p class="font-semibold text-red-800 mb-3">❌ 分析师岗不适合你，如果</p>
+        <ul class="space-y-1.5 text-sm text-red-700">
+          <li>你对数字和统计完全没有兴趣</li>
+          <li>你期望短期内快速达到高薪（DA的起步薪酬低于IB、咨询、PM）</li>
+          <li>你不能接受大量重复性的数据整理工作</li>
+          <li>你希望独立输出大量创意，而不是支持他人决策</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 Levels.fyi、Glassdoor、Dice、知乎、脉脉等公开平台，仅供参考。实际薪酬因公司、职级、地区差异较大。
+  </div>
+
+</Base>
