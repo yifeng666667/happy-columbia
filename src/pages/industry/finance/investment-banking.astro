@@ -37,6 +37,7 @@ import Base from '../../../layouts/Base.astro';
       <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">08 · 招聘流程与入行路径</a></li>
       <li><a href="#trends" class="hover:text-columbia-navy no-underline">09 · 2025–2030 行业趋势</a></li>
       <li><a href="#fit" class="hover:text-columbia-navy no-underline">10 · 适合什么样的人</a></li>
+      <li><a href="#advance" class="hover:text-columbia-navy no-underline">11 · 如何快速晋升</a></li>
     </ol>
   </nav>
 
@@ -796,6 +797,61 @@ import Base from '../../../layouts/Base.astro';
     <div class="bg-stone-50 border border-stone-200 rounded-xl p-5 text-sm not-prose">
       <p class="font-semibold text-stone-800 mb-2">💬 一个真实的建议</p>
       <p class="text-stone-600 text-xs leading-relaxed">投行的价值高度集中在前2年的学习和出路的optionality。如果你的目标是PE/VC，或者想要一个金融行业最强的品牌背书起点，投行是当之无愧的第一选择。但如果你的目标是最终"做自己的事"（创业、投资、研究），投行只是起点，不是终点——很多人在投行待太久，反而错过了更适合自己的窗口。</p>
+    </div>
+  </section>
+
+  <!-- 11. How to advance -->
+  <section id="advance" class="mb-16 scroll-mt-24">
+    <h2>11 · 如何在投行快速晋升</h2>
+    <p>投行的晋升路径非常透明，但真正快速晋升的人，都在做别人没做的那几件事。</p>
+
+    <h3>入行前两年（Analyst阶段）：建立不可替代性</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4 text-sm">
+      {[
+        { title: '比要求的多做一层分析', desc: 'VP要求一张Comps表，你同时附上了行业趋势的2页分析。这不是讨好，是在建立"总能给额外洞察"的口碑。重复3次，VP开始主动找你做更复杂的工作。' },
+        { title: '成为某个领域的内部专家', desc: '选定一个行业（如医疗健康、SaaS）深入研究——追踪每一宗交易、建立自己的行业Comps数据库。6个月后，组里有相关项目时自然会找到你。' },
+        { title: '比任何人都快地交付高质量工作', desc: '速度+质量是Analyst最基本的竞争优势。找到你工作流程中最慢的3个环节，建立模板和快捷方式。节省的时间用来思考，而不是等待。' },
+        { title: '主动管理向上关系', desc: '在发给VP的邮件里，不只汇报结果，附上"我遇到了X问题，我的判断是Y，你是否同意？"——这让上级感到你在思考，而不只是执行。' },
+      ].map(item => (
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs">
+          <p class="font-bold text-amber-900 mb-1">{item.title}</p>
+          <p class="text-amber-800/80 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>3–5年（Associate/VP阶段）：从执行者到交易管理者</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4 text-sm">
+      {[
+        { title: '建立客户接触点', desc: 'Analyst做model，Associate做pitch，VP管客户——这个转换是晋升VP最关键的跨越。主动请求参加客户会议，哪怕只是坐在会议室角落。每次客户电话，发一封高质量的跟进邮件。' },
+        { title: '掌握交易执行的全流程', desc: '你不只需要会做DCF，还需要理解为什么这笔交易的定价是合理的、为什么对方会接受这个条款、这个行业的交易标准是什么。这种判断力只能靠真实交易积累。' },
+        { title: '管理下级的能力', desc: 'Associate最大的考验是：如何让Analyst高效地做出你要的结果，而不是自己做。清晰的brief、及时的反馈、对工作质量的高标准——是从个人贡献者变成团队领导者的关键。' },
+        { title: '开始建立行业人脉网络', desc: '参加行业会议（Healthcare Conference / TMT Forum），在LinkedIn上主动连接同行，和你覆盖的行业的CFO/IR建立关系。VP以上的晋升，靠网络而不靠模型。' },
+      ].map(item => (
+        <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl p-4 text-xs">
+          <p class="font-bold text-columbia-navy mb-1">{item.title}</p>
+          <p class="text-columbia-navy/70 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>转型路径（Exit Opportunities）</h3>
+    <p>投行最大的价值之一是它提供的出路——大多数顶级投行家并不打算一直做投行，他们把它当作进入更好地方的跳板。</p>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4 text-xs">
+      {[
+        { path: 'PE（私募股权）', timing: 'Analyst 2年后', desc: '最经典的exit路径。Analyst的LBO模型能力+交易经验是PE入场券。顶级PE（黑石/KKR/凯雷）的招募对投行背景有强烈偏好。', difficulty: '竞争激烈' },
+        { path: '对冲基金（L/S Equity）', timing: '任何阶段', desc: '需要同时具备投资判断力+行业深度。从公司侧分析转向投资侧，思维方式有本质不同。适合对具体公司研究有强烈兴趣的人。', difficulty: '偏差异化路径' },
+        { path: '企业发展（Corporate Dev）', timing: '3–5年后', desc: '到大公司做M&A和战略团队——工作生活平衡大幅改善，薪资略降，但可以更深入理解一个行业的商业运营。', difficulty: '相对容易' },
+        { path: 'VC（风险投资）', timing: '2–4年后', desc: '科技/金融背景的投行人可以转入VC——需要补充早期投资的判断框架，不只看财务模型。', difficulty: '需要主动建立网络' },
+        { path: '创业', timing: '任何时候', desc: '投行给了你对商业运作的全局视野和严格的职业训练——很多创业者来自投行背景。但要注意"大公司执行力"和"创业决策速度"之间的思维切换。', difficulty: '个人选择' },
+        { path: '继续留在投行', timing: 'VP→MD', desc: 'MD的晋升是纯客户关系的考验——你能不能自己bring in deals？能不能维持和CFO/CEO的长期关系？这是完全不同的能力集合。', difficulty: '10–15年长跑' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-sm mb-0.5">{item.path}</p>
+          <p class="text-[10px] text-stone-400 mb-1">{item.timing} · {item.difficulty}</p>
+          <p class="text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
     </div>
   </section>
 

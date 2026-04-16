@@ -37,6 +37,7 @@ import Base from '../../../layouts/Base.astro';
       <li><a href="#salary" class="hover:text-columbia-navy no-underline">07 · 薪酬结构</a></li>
       <li><a href="#case" class="hover:text-columbia-navy no-underline">08 · Case Interview 深度解析</a></li>
       <li><a href="#fit" class="hover:text-columbia-navy no-underline">09 · 适合什么样的人</a></li>
+      <li><a href="#advance" class="hover:text-columbia-navy no-underline">10 · 如何快速晋升</a></li>
     </ol>
   </nav>
 
@@ -587,6 +588,57 @@ import Base from '../../../layouts/Base.astro';
           <li>你追求的是短期最大化薪酬（投行和量化的上限更高）</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <!-- 10. How to advance -->
+  <section id="advance" class="mb-16 scroll-mt-24">
+    <h2>10 · 如何在咨询快速晋升</h2>
+    <p>咨询晋升的表面逻辑很简单：每2年升一级，从BA→Consultant→EM→Partner。但真正的差距在于：同一批进来的人，为什么有些人2年升了，有些人在第3年出局了？</p>
+
+    <h3>入行前两年（BA/Analyst阶段）：建立"可信赖的执行者"口碑</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4 text-sm">
+      {[
+        { title: '工作成果要超过预期一层', desc: 'EM给你说"分析这个问题"，你不只给分析——给分析+你的判断+下一步建议。每次都比要求多做那一层，三个月后你的名字就和"可以信任"挂钩了。' },
+        { title: '主动收集feedback，不要等正式评估', desc: '每个项目结束后，主动找EM说"我这次什么地方可以做得更好？"。大部分人不这么做，因为怕听到批评。但正是这个习惯让你每个项目都在进步。' },
+        { title: '学会在压力下保持工作质量', desc: '客户明天要deliverable，但数据有缺口，模型昨晚崩了——这时候你如何处理？保持冷静、快速判断优先级、主动沟通进展——这三点比任何技术技能更重要。' },
+        { title: '建立你的"专属领域"', desc: '选定一个行业或功能（如金融服务/运营效率），在这个方向上比团队里其他人多读10倍。6个月后，有相关项目你会被自然想到。' },
+      ].map(item => (
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs">
+          <p class="font-bold text-amber-900 mb-1">{item.title}</p>
+          <p class="text-amber-800/80 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>3–5年（Consultant/EM阶段）：从执行者到项目领导者</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4 text-sm">
+      {[
+        { title: '掌握管理客户期望的技巧', desc: '这是咨询最难的能力：当分析结论不如客户期望时，如何呈现？客户想要一个结论，但数据支持另一个——你如何在不失专业的情况下说实话？EM的核心价值之一就是管理这种张力。' },
+        { title: '学会培养和管理BA/Analyst', desc: '你管理别人的水平，直接影响你自己的晋升速度。一个能让初级成员快速成长的EM，会被看作"领导力"——这比你自己做多少工作更重要。' },
+        { title: '建立跨项目的客户关系', desc: '真正的Partner价值是"客户愿意找你回来"。EM阶段开始建立这种关系——记住客户的优先事项、年底给客户发一封有价值的行业观察邮件、在客户面前主动分享洞察而不只汇报工作进展。' },
+        { title: '寻找转型机会（如果要exit的话）', desc: 'EM是咨询exit的黄金时机——你有足够的经验，又不太老，Corp Dev、战略部门、基金都在这个时机积极招人。如果你打算转型，2–3年是最佳窗口，超过5年再转反而困难。' },
+      ].map(item => (
+        <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl p-4 text-xs">
+          <p class="font-bold text-columbia-navy mb-1">{item.title}</p>
+          <p class="text-columbia-navy/70 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>咨询出路：最常见的转型路径</h3>
+    <div class="not-prose grid sm:grid-cols-3 gap-3 my-4 text-xs">
+      {[
+        { path: '企业战略/Corp Dev', timing: '2–4年后', desc: '最常见的exit路径。把咨询思维带入企业内部。工作生活平衡改善明显，薪资略降但股权/奖金弥补。适合想在一个行业深耕的人。' },
+        { path: 'PE/VC（偏运营增值）', timing: '3–5年后', desc: '麦肯锡/BCG/Bain背景在PE的增值团队（Portfolio Operations）有竞争力。与纯财务出身的PE同事形成互补。' },
+        { path: '创业/自己创业', timing: '任何时候', desc: '咨询给了你最好的创业准备——问题拆解、快速学习新行业、PPT说服投资人。很多创业者来自咨询背景。' },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-900 text-sm mb-0.5">{item.path}</p>
+          <p class="text-[10px] text-stone-400 mb-1">{item.timing}</p>
+          <p class="text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
     </div>
   </section>
 

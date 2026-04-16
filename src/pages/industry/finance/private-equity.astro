@@ -809,6 +809,47 @@ import Base from '../../../layouts/Base.astro';
     </div>
   </section>
 
+  <!-- 11. How to advance in PE -->
+  <section id="advance" class="mb-16 scroll-mt-24">
+    <h2>11 · 如何在PE快速晋升</h2>
+    <p>PE的晋升比投行更不透明、更少人情，完全靠结果说话。因为PE的团队小（10–30人），每个人的贡献是可见的，表现好坏很难掩盖。</p>
+
+    <h3>前两年（Associate阶段）：建立"可以独立交付"的能力</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4 text-sm">
+      {[
+        { title: '成为团队里最快最准的financial modeler', desc: '三张报表、LBO、DCF、Waterfall——这些模型要熟练到"闭着眼睛建"。因为PE团队小，每一个人的模型能力都是可见的。错了一个公式，信誉就要重建。' },
+        { title: '对所覆盖行业建立真正的专业认知', desc: '不是"我看过10份行业报告"，而是"我能预测这个行业下一步会发生什么，并说出为什么"。每周追踪行业新闻、竞品财报、主要KPI，建立自己的行业数据库。' },
+        { title: '让合伙人放心把源自你分析的投资判断提交IC', desc: '你的分析memo如果质量够高，合伙人可以直接bring to IC而不大改——这是Associate最高的认可。意味着你的判断被信任，而不只是执行工具。' },
+        { title: '主动和被投企业管理层建立联系', desc: 'Visit portfolio companies不只是例行公事。和CEO/CFO建立真实的沟通关系，了解他们的挑战，带着有价值的信息反馈给合伙人——这是从Associate进阶到VP的核心能力差异。' },
+      ].map(item => (
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs">
+          <p class="font-bold text-amber-900 mb-1">{item.title}</p>
+          <p class="text-amber-800/80 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <h3>3–6年（VP/Principal阶段）：从执行者到交易主导者</h3>
+    <div class="not-prose grid sm:grid-cols-2 gap-4 my-4 text-sm">
+      {[
+        { title: '独立主导交易执行', desc: 'VP需要能在合伙人方向下自主推进一笔交易——协调法律/财务顾问、管理DD流程、谈判条款、推动IC汇报。每一笔你主导完成的交易，都是晋升合伙人的积累。' },
+        { title: '建立deal sourcing的能力', desc: '合伙人最终考验的是：你能不能自己找到好项目？主动拜访CEO、和行业中介建立关系、在业内会议上建立存在感——这些不是VP的工作，但是成为合伙人的必经之路。' },
+        { title: 'Portfolio management的真实价值创造', desc: '让一家被投企业从$50M EBITDA增长到$80M——你在其中起了什么作用？能讲清楚自己价值贡献的故事，是晋升合伙人的核心叙事。' },
+        { title: '学会管理LP关系（间接）', desc: 'VP阶段开始接触LP沟通材料准备。理解LP的期望逻辑（DPI、TVPI、IRR对他们意味着什么），能帮合伙人准备高质量的LP报告，是更高价值的贡献。' },
+      ].map(item => (
+        <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl p-4 text-xs">
+          <p class="font-bold text-columbia-navy mb-1">{item.title}</p>
+          <p class="text-columbia-navy/70 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="not-prose bg-stone-50 border border-stone-200 rounded-xl p-4 text-xs my-4">
+      <p class="font-semibold text-stone-800 mb-1">PE晋升的核心现实</p>
+      <p class="text-stone-600 leading-relaxed">大多数PE的合伙人位置是固定的——原有合伙人不退休，新的位置就不出现。顶级PE（黑石/KKR/凯雷）的合伙人是真正的稀缺资源。这意味着很多优秀的VP/Principal最终选择自己募资创办新基金，或者跳去中型机构做合伙人。PE的"职业天花板"来得比投行更早，但真正突破天花板的人，所能获得的财富也远超投行MD。</p>
+    </div>
+  </section>
+
   </div>
 
   <!-- Sources -->
