@@ -466,24 +466,22 @@ import Base from '../../../layouts/Base.astro';
         <thead>
           <tr class="bg-stone-100">
             <th class="border border-stone-200 px-3 py-2">职级</th>
-            <th class="border border-stone-200 px-3 py-2">Base（大致区间）</th>
+            <th class="border border-stone-200 px-3 py-2">Base 水平</th>
             <th class="border border-stone-200 px-3 py-2">奖金（牛市）</th>
-            <th class="border border-stone-200 px-3 py-2">备注</th>
           </tr>
         </thead>
         <tbody>
           {[
-            ['应届分析师', '25–40万', '10–40万', '头部如中金可达40万以上base'],
-            ['高级分析师 (2–3年)', '35–55万', '20–60万', '项目经验积累关键期'],
-            ['项目经理/VP级', '60–100万', '50–150万', '开始独立负责项目'],
-            ['董事/高级VP', '100–200万', '100–300万', '客户开发能力决定薪酬'],
-            ['执行董事/MD', '200万+', '200万–千万', '与带来的项目收入挂钩'],
-          ].map(([level, base, bonus, note]) => (
+            ['应届分析师', '行业基准水平', '可观'],
+            ['高级分析师 (2–3年)', '显著高于应届', '中等偏高'],
+            ['项目经理/VP级', '中高收入区间', '较高'],
+            ['董事/高级VP', '高收入区间', '高'],
+            ['执行董事/MD', '顶级收入区间', '与项目收入挂钩'],
+          ].map(([level, base, bonus]) => (
             <tr class="hover:bg-stone-50">
               <td class="border border-stone-200 px-3 py-2 font-medium">{level}</td>
               <td class="border border-stone-200 px-3 py-2 text-emerald-700">{base}</td>
               <td class="border border-stone-200 px-3 py-2 text-amber-700">{bonus}</td>
-              <td class="border border-stone-200 px-3 py-2 text-stone-400 text-[10px]">{note}</td>
             </tr>
           ))}
         </tbody>
