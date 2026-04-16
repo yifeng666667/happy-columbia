@@ -198,7 +198,7 @@ const sectors = [
         </div>
       </div>
       <div class="flex-1 h-px bg-stone-200"></div>
-      <span class="shrink-0 text-[11px] text-stone-400 bg-stone-100 px-3 py-1 rounded-full">2 篇</span>
+      <span class="shrink-0 text-[11px] text-stone-400 bg-stone-100 px-3 py-1 rounded-full">3 篇</span>
     </div>
 
     <div class="grid md:grid-cols-2 gap-4">
@@ -263,6 +263,37 @@ const sectors = [
           </div>
         </div>
       </a>
+      <!-- Securities Business Lines -->
+      <a
+        href="/industry/finance/securities-business-lines/"
+        class="card-lift relative block rounded-2xl overflow-hidden no-underline group min-h-[190px] sm:min-h-[220px]"
+        style="background-image: url('https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;"
+      >
+        <div class="absolute inset-0 transition-opacity duration-300"
+             style="background: linear-gradient(160deg, rgba(5,12,30,0.92) 0%, rgba(10,30,70,0.85) 60%, rgba(5,10,25,0.80) 100%);"></div>
+        <div class="relative z-10 p-5 sm:p-7 h-full flex flex-col justify-between">
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.25em] text-white/45 mb-3">Case Study · 中信证券模板</p>
+            <h3 class="font-display font-bold text-xl text-white leading-snug mb-3 group-hover:text-columbia-light transition-colors">
+              券商12条业务线<br/>全景深度解析
+            </h3>
+            <p class="text-sm text-white/60 leading-relaxed">
+              投行、机构销售、衍生品、资管、研究……每条线做什么、怎么赚钱、真实案例、职业路径。
+            </p>
+          </div>
+          <div class="mt-5 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap gap-1.5">
+              {['IBD', '机构销售', '衍生品', '研究', '期货'].map((tag) => (
+                <span class="text-[10px] bg-white/12 text-white/70 font-medium px-2.5 py-0.5 rounded-full border border-white/10">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <span class="text-white/40 group-hover:text-white/80 group-hover:translate-x-0.5 transition-all text-lg">→</span>
+          </div>
+        </div>
+      </a>
+
     </div>
   </section>
 
