@@ -134,6 +134,16 @@ export const courses: CourseMeta[] = [
     heroImage: 'https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?auto=format&fit=crop&w=1400&q=85',
     city: 'Brussels',
   },
+  {
+    slug: 'value-investing',
+    category: 'finance',
+    title: '价值投资',
+    titleEn: 'Value Investing: From Graham to the Global Stage',
+    description:
+      '从 Ben Graham 的三大基石到巴菲特-芒格的质量革命，再到李录的文明视角——系统理解价值投资的理论框架、估值方法与实践智慧，学会在全球最有活力的经济体中寻找被低估的优质公司。',
+    heroImage: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1400&q=85',
+    city: 'New York',
+  },
 ];
 
 export const getCourse = (slug: string): CourseMeta | undefined =>
