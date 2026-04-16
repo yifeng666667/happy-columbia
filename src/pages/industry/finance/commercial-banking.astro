@@ -265,10 +265,10 @@ import Base from '../../../layouts/Base.astro';
     <p>中国银行业的职级体系与国企管理体制融合，晋升路径与美国有明显差异：</p>
     <div class="not-prose space-y-3 my-6">
       {[
-        { title: '管培生 / 柜员 / 助理客户经理', years: '0–3年', bg: 'bg-stone-50', desc: '国内银行校招的主要入口。管培生通常轮岗6-12个月后分配岗位；柜员路径在部分股份制行有通道转客户经理。', comp: '15–30万/年（北上深）' },
-        { title: '客户经理 / 信贷分析师', years: '3–8年', bg: 'bg-amber-50', desc: '企业银行的核心执行层。负责维护企业客户关系，推荐信贷方案，参与银团贷款等业务。这一阶段的核心是积累客户资源和信贷判断经验。', comp: '30–80万/年' },
-        { title: '支行行长 / 部门负责人', years: '8–15年', bg: 'bg-stone-50', desc: '管理职位。在四大行体系下，支行行长是重要的管理晋升节点，偏行政管理；在股份制行，业务条线的部门经理更受重视。', comp: '80–200万/年（视支行规模）' },
-        { title: '分行行长 / 总行部门总经理', years: '15年+', bg: 'bg-columbia-light', desc: '高级管理层。在国有大行这一层级有较强的政治属性；在股份制银行更商业化。少数人能达到这一层级。', comp: '200万+（国有行受限薪政策）' },
+        { title: '管培生 / 柜员 / 助理客户经理', years: '0–3年', bg: 'bg-stone-50', desc: '国内银行校招的主要入口。管培生通常轮岗6-12个月后分配岗位；柜员路径在部分股份制行有通道转客户经理。', comp: '行业基准水平，固定薪酬为主' },
+        { title: '客户经理 / 信贷分析师', years: '3–8年', bg: 'bg-amber-50', desc: '企业银行的核心执行层。负责维护企业客户关系，推荐信贷方案，参与银团贷款等业务。这一阶段的核心是积累客户资源和信贷判断经验。', comp: '中等收入区间，视条线和绩效浮动' },
+        { title: '支行行长 / 部门负责人', years: '8–15年', bg: 'bg-stone-50', desc: '管理职位。在四大行体系下，支行行长是重要的管理晋升节点，偏行政管理；在股份制行，业务条线的部门经理更受重视。', comp: '中高收入区间，视支行规模差异较大' },
+        { title: '分行行长 / 总行部门总经理', years: '15年+', bg: 'bg-columbia-light', desc: '高级管理层。在国有大行这一层级有较强的政治属性；在股份制银行更商业化。少数人能达到这一层级。', comp: '较高，但国有行受限薪政策约束' },
       ].map(r => (
         <div class={`${r.bg} border border-stone-200 rounded-xl p-4`}>
           <div class="flex items-start justify-between mb-1.5">
@@ -385,27 +385,27 @@ import Base from '../../../layouts/Base.astro';
         <tbody>
           <tr>
             <td class="p-3 border border-stone-200 font-medium">四大国有银行（北上深）</td>
-            <td class="p-3 border border-stone-200">15–25万/年</td>
-            <td class="p-3 border border-stone-200">30–70万/年</td>
-            <td class="p-3 border border-stone-200">100–300万（限薪政策）</td>
+            <td class="p-3 border border-stone-200 text-stone-600">行业基准水平</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中等收入区间</td>
+            <td class="p-3 border border-stone-200 text-stone-600">受限薪政策约束</td>
           </tr>
           <tr class="bg-stone-50">
-            <td class="p-3 border border-stone-200 font-medium">招行/平安/兴业等股份制</td>
-            <td class="p-3 border border-stone-200">20–40万/年</td>
-            <td class="p-3 border border-stone-200">50–120万/年</td>
-            <td class="p-3 border border-stone-200">200万+</td>
+            <td class="p-3 border border-stone-200 font-medium">股份制商业银行</td>
+            <td class="p-3 border border-stone-200 text-stone-600">行业基准偏上</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中高收入区间</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中高收入，弹性较大</td>
           </tr>
           <tr>
             <td class="p-3 border border-stone-200 font-medium">外资银行中国区</td>
-            <td class="p-3 border border-stone-200">25–45万/年</td>
-            <td class="p-3 border border-stone-200">60–150万/年</td>
-            <td class="p-3 border border-stone-200">150-400万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-600">高于国内同级</td>
+            <td class="p-3 border border-stone-200 text-stone-600">具有竞争力</td>
+            <td class="p-3 border border-stone-200 text-stone-600">行业前列</td>
           </tr>
           <tr class="bg-stone-50">
             <td class="p-3 border border-stone-200 font-medium">城商行/农商行</td>
-            <td class="p-3 border border-stone-200">12–20万/年</td>
-            <td class="p-3 border border-stone-200">25–60万/年</td>
-            <td class="p-3 border border-stone-200">80–150万/年</td>
+            <td class="p-3 border border-stone-200 text-stone-600">相对偏低</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中等水平</td>
+            <td class="p-3 border border-stone-200 text-stone-600">中等偏高</td>
           </tr>
         </tbody>
       </table>

@@ -271,9 +271,9 @@ import Base from '../../../layouts/Base.astro';
     <h3>5.1 主动管理的职业路径</h3>
     <div class="not-prose space-y-3 my-6">
       {[
-        { title: '研究助理 / 初级研究员', years: '0–2年', bg: 'bg-stone-50', desc: '数据整理、行业跟踪、协助高级研究员写报告。在大型机构（贝莱德、富达），通常是从应届生培养的。', comp: '$80k–$150k（美国）/ 20–40万（中国）' },
-        { title: '研究分析师（初级~高级）', years: '2–8年', bg: 'bg-amber-50', desc: '独立覆盖若干行业/个股，产出投资建议。最重要的阶段——需要在这里建立独立的投资框架和业绩记录（Track Record）。', comp: '$150k–$400k（美国）/ 40–150万（中国）' },
-        { title: '基金经理（Portfolio Manager）', years: '8年+', bg: 'bg-columbia-light', desc: '主导投资决策，对基金业绩负完全责任。大型机构PM往往专注于某一特定类别（高成长、价值、固收）；中国公募基金经理在牛市期间管理规模可达数百亿元。', comp: '$300k–$2M+（美国）/ 100–500万+（中国）' },
+        { title: '研究助理 / 初级研究员', years: '0–2年', bg: 'bg-stone-50', desc: '数据整理、行业跟踪、协助高级研究员写报告。在大型机构（贝莱德、富达），通常是从应届生培养的。', comp: '$80k–$150k（美国）/ 国内行业基准水平' },
+        { title: '研究分析师（初级~高级）', years: '2–8年', bg: 'bg-amber-50', desc: '独立覆盖若干行业/个股，产出投资建议。最重要的阶段——需要在这里建立独立的投资框架和业绩记录（Track Record）。', comp: '$150k–$400k（美国）/ 国内中高收入区间' },
+        { title: '基金经理（Portfolio Manager）', years: '8年+', bg: 'bg-columbia-light', desc: '主导投资决策，对基金业绩负完全责任。大型机构PM往往专注于某一特定类别（高成长、价值、固收）；中国公募基金经理受限薪政策约束，薪酬较前期明显压缩。', comp: '$300k–$2M+（美国）/ 国内受限薪政策影响' },
       ].map(r => (
         <div class={`${r.bg} border border-stone-200 rounded-xl p-4`}>
           <div class="flex items-start justify-between mb-1.5">
@@ -464,7 +464,7 @@ import Base from '../../../layouts/Base.astro';
     <h3>9.3 中国公募的政策收紧与转型</h3>
     <p>2022年起，中国证监会开始对公募基金行业进行系统性整顿：</p>
     <ul>
-      <li>明星基金经理薪酬限制（上限约1500-2000万/年）</li>
+      <li>明星基金经理薪酬实施上限并要求递延发放</li>
       <li>基金销售费率下调（申购费不超过0.1%，管理费压缩至1%以内）</li>
       <li>权益类基金业绩考核周期延长（从一年改为三年）</li>
     </ul>
