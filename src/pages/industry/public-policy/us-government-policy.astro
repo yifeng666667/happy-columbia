@@ -1,0 +1,355 @@
+---
+import Base from '../../../../layouts/Base.astro';
+---
+
+<Base title="美国政府与智库职业路径深度解析" description="国务院、财政部、USAID、国家安全委员会，布鲁金斯、CFR、CSIS——美国政策圈真实生态与进入路径">
+
+  <a href="/industry/public-policy/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    公共政策与国际组织
+  </a>
+
+  <header class="mb-10 pb-8 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-purple-50 text-purple-700 border border-purple-200 font-semibold px-3 py-1 rounded-full">US Government & Think Tanks</span>
+      <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border text-amber-600 bg-amber-50 border-amber-200">入行难度：较难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      美国政府与智库：华盛顿 DC 政策圈
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl">
+      国务院、财政部、USAID、NSC——美国政府是全球最强大的政策机器，也是最难进入的机构之一（因为多数核心职位要求美国公民身份）。但智库和政策研究机构对国际学生相对开放，是切入华盛顿政策圈的重要路径。
+    </p>
+  </header>
+
+  <div class="prose prose-stone max-w-none prose-headings:font-display prose-a:text-columbia-blue">
+
+    <!-- TOC -->
+    <nav class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 mb-12 text-sm">
+      <p class="font-semibold text-stone-700 mb-3 text-xs uppercase tracking-wider">本页目录</p>
+      <ol class="space-y-1.5 text-stone-500 list-none pl-0">
+        <li><a href="#landscape" class="hover:text-columbia-navy no-underline">1. 美国政策圈的生态结构</a></li>
+        <li><a href="#legends" class="hover:text-columbia-navy no-underline">2. 塑造美国政策圈的传奇人物</a></li>
+        <li><a href="#government" class="hover:text-columbia-navy no-underline">3. 美国政府机构深度解析</a></li>
+        <li><a href="#thinktanks" class="hover:text-columbia-navy no-underline">4. 顶级智库图谱</a></li>
+        <li><a href="#daily" class="hover:text-columbia-navy no-underline">5. 真实日常：政策分析师的一天</a></li>
+        <li><a href="#salary" class="hover:text-columbia-navy no-underline">6. 薪酬（GS 体制详解）</a></li>
+        <li><a href="#career" class="hover:text-columbia-navy no-underline">7. 职业发展路径与"旋转门"</a></li>
+        <li><a href="#recruiting" class="hover:text-columbia-navy no-underline">8. 申请策略：国际学生如何切入</a></li>
+        <li><a href="#fit" class="hover:text-columbia-navy no-underline">9. 适合你吗？</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. Landscape -->
+    <section id="landscape" class="mb-16 scroll-mt-24">
+      <h2>1. 美国政策圈的生态结构</h2>
+      <p>华盛顿 DC 是全球最密集的政策生态系统——政府机构、智库、游说公司、国际组织、媒体、律所，形成了一个以政策影响力为核心的复杂生态。理解这个圈子，首先要理解它的几条内在逻辑：</p>
+      <ul>
+        <li><strong>"旋转门"（Revolving Door）：</strong>政府官员↔智库研究员↔大学教授↔企业顾问，这几个身份之间高度流动。John Bolton 在 NSC 和 AEI 之间来回，Lawrence Summers 在哈佛、克林顿/奥巴马政府、D.E. Shaw 之间循环——这是华盛顿的正常生态。</li>
+        <li><strong>政治任命 vs 职业文职：</strong>美国政府分两类职位——政治任命（随总统换届而更换的高级官员）和职业文职（Career Civil Servants，长期稳定的政策执行层）。对大多数申请者而言，目标是后者。</li>
+        <li><strong>智库的独特定位：</strong>美国智库不像中国智库那样依附政府，而是独立运作，通过研究报告和人才输送影响政策。但很多智库是意识形态有色的：布鲁金斯偏中间偏左，AEI/Heritage 偏右，CSIS/CFR 相对两党平衡。</li>
+      </ul>
+      <div class="not-prose bg-stone-50 border border-stone-200 rounded-2xl p-5 mt-4">
+        <p class="font-semibold text-stone-800 text-sm mb-3">关键机构速览</p>
+        <div class="grid sm:grid-cols-3 gap-3 text-xs">
+          {[
+            { cat: '外交 / 安全', orgs: ['国务院（State Dept）', '国家安全委员会（NSC）', '国防部（DOD）', '中情局（CIA，需公民）', '美国国际开发署（USAID）'] },
+            { cat: '经济 / 金融政策', orgs: ['财政部（Treasury）', '联邦储备委员会（Fed）', '白宫经济顾问委员会（CEA）', '商务部（Commerce）', '贸易代表办公室（USTR）'] },
+            { cat: '智库', orgs: ['布鲁金斯研究所（Brookings）', '对外关系委员会（CFR）', '战略与国际研究中心（CSIS）', '彼得森国际经济研究所（PIIE）', '美国企业研究所（AEI）', '卡内基国际和平基金会'] },
+          ].map(c => (
+            <div class="bg-white border border-stone-200 rounded-xl p-3">
+              <p class="font-semibold text-stone-700 mb-2">{c.cat}</p>
+              <ul class="space-y-1 list-none pl-0">
+                {c.orgs.map(o => <li class="text-stone-500">• {o}</li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Legends -->
+    <section id="legends" class="mb-16 scroll-mt-24">
+      <h2>2. 塑造美国政策圈的传奇人物</h2>
+      <div class="not-prose grid sm:grid-cols-2 gap-5 mt-4">
+        {[
+          {
+            name: '亨利·基辛格',
+            sub: 'Henry Kissinger · 1923–2023 · 国家安全顾问 / 国务卿',
+            tag: '地缘政治大师',
+            tagColor: 'text-blue-700 bg-blue-50 border-blue-200',
+            story: '基辛格的职业路径是"学术→政府→顾问"旋转门的经典样本：哈佛政治学教授，尼克松时代的国家安全顾问和国务卿（同时担任两职），之后创立 Kissinger Associates 成为全球最贵的地缘政治顾问。他的中美关系破冰、秘密外交、均势理论至今仍是 IR 课程的核心案例。在华盛顿，基辛格几乎重塑了"国家安全顾问"这个职位的功能。',
+            insight: '启示：在政策圈，学术理论 + 实操经验 + 持续影响力三者缺一不可；"退而不休"的顾问生涯往往比在位期间影响更广',
+          },
+          {
+            name: '劳伦斯·萨默斯',
+            sub: 'Lawrence Summers · 1954– · 财政部长 / 哈佛校长 / 经济顾问',
+            tag: '政学两界巨头',
+            tagColor: 'text-amber-700 bg-amber-50 border-amber-200',
+            story: '萨默斯28岁成为哈佛最年轻终身教授，后担任世界银行首席经济学家、克林顿时期财政部长（主导了1990年代的国际金融危机应对）、奥巴马政府国家经济委员会主席。他的职业是"旋转门"的极端案例，在顶级学术、政府核心决策层、私募基金顾问之间反复切换，至今仍是最受关注的宏观政策评论者之一。',
+            insight: '启示：在经济政策圈，能在学术、政府、市场三种语境之间自由切换的人有稀缺价值；不必选边站，三个领域的积累是互相强化的',
+          },
+          {
+            name: '苏珊·莱斯',
+            sub: 'Susan Rice · 1964– · 国家安全顾问 2013-2017 / 国务卿候选人',
+            tag: '职业外交官路径',
+            tagColor: 'text-emerald-700 bg-emerald-50 border-emerald-200',
+            story: '莱斯是典型的美国政策精英路径：斯坦福本科、牛津罗德奖学金、国家安全委员会分析师，后担任国务院非洲事务助理国务卿、联合国大使、国家安全顾问。她的职业几乎在政府和智库（布鲁金斯）之间交替进行。2020年曾被提名为拜登政府国务卿人选（最终落选），后担任国内政策委员会主席。',
+            insight: '启示：政府高级职位的攀登需要在多个机构积累信誉；每一次离开政府回到智库/学界，都是为下一次进入积累弹药',
+          },
+          {
+            name: '斯特罗布·塔尔博特',
+            sub: 'Strobe Talbott · 1946–2023 · 副国务卿 / 布鲁金斯所长',
+            tag: '智库-政府转换',
+            tagColor: 'text-purple-700 bg-purple-50 border-purple-200',
+            story: '塔尔博特的路径展示了美国特有的媒体-政府-智库三角：《时代》杂志外交编辑 → 克林顿副国务卿（主管俄罗斯政策，是美俄关系定义者之一）→ 布鲁金斯研究所所长（2002-2017）。他的故事说明美国政策圈的特殊之处：高质量的外交政策新闻写作可以直接成为政府任命的跳板。',
+            insight: '启示：写作和传播能力在华盛顿政策圈被严重低估；会写出有影响力的分析文章，往往比多一个学位更值钱',
+          },
+        ].map(p => (
+          <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <p class="font-display font-bold text-stone-900 text-base">{p.name}</p>
+                <p class="text-[11px] text-stone-400 mt-0.5">{p.sub}</p>
+              </div>
+              <span class={`text-[10px] font-semibold px-2 py-0.5 rounded-full border whitespace-nowrap ml-2 ${p.tagColor}`}>{p.tag}</span>
+            </div>
+            <p class="text-sm text-stone-600 leading-relaxed">{p.story}</p>
+            <p class="mt-3 text-xs text-columbia-navy font-medium border-t border-stone-200 pt-2">💡 {p.insight}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 3. Government -->
+    <section id="government" class="mb-16 scroll-mt-24">
+      <h2>3. 美国政府机构深度解析</h2>
+
+      <h3>3.1 国务院（State Department）</h3>
+      <p>国务院的核心职业路径是<strong>外交事务官（Foreign Service Officer, FSO）</strong>。FSO 考试是美国最难的公务员考试之一，通过率约 3%：笔试（FSOT）→ 书面材料评估（QEP）→ 口试（FSOA）→ 安全背调。整个流程历时 1–2 年，且必须是美国公民。</p>
+      <p>国务院还有<strong>Civil Service</strong>职位（非外交路线，如政策分析师、经济官员、公共事务）和<strong>外交学人（Franklin Fellows）</strong>等项目——后者对私营部门/非政府人员开放。</p>
+
+      <h3>3.2 财政部（Treasury Department）</h3>
+      <p>财政部是经济/金融政策核心机构，下设国内金融（税收、债务管理）、国际事务（汇率政策、G7/G20、国际金融）、恐怖主义与金融情报（TFFC）等职能。经济学、公共政策背景适合国际事务部门（Office of International Affairs），这是离 SIPA 最近的一块。</p>
+      <p>Honors 项目（Presidential Management Fellows, PMF）是进入财政部的重要渠道，专门面向应届硕士/博士毕业生，要求美国公民。</p>
+
+      <h3>3.3 美国国际开发署（USAID）</h3>
+      <p>USAID 是美国对外援助的主要机构，覆盖经济发展、农业、健康、教育、民主治理等领域。对国际学生相对友好的路径包括：</p>
+      <ul>
+        <li><strong>实习计划（Internship Program）：</strong>SIPA 学生可申请暑期实习（通常需要 OPT/EAD 或公民身份）</li>
+        <li><strong>发展领袖计划（Development Leadership Initiative, DLI）：</strong>面向经济学、国际发展背景的招募项目</li>
+        <li><strong>外包合同商（Implementing Partners）：</strong>IRD、Chemonics、DAI 等大型 USAID 合同商招募大量政策/项目专业人员，对国际学生签证限制更少</li>
+      </ul>
+
+      <h3>3.4 联邦储备委员会（Federal Reserve）</h3>
+      <p>美联储是独特的半政府机构，大量雇用经济学 PhD（纽约联储、国际金融研究部等）。对 SIPA 背景，更可能的入口是国际部门的研究分析师（Research Analyst）职位，要求强计量基础，是进博士项目的好跳板。</p>
+    </section>
+
+    <!-- 4. Think Tanks -->
+    <section id="thinktanks" class="mb-16 scroll-mt-24">
+      <h2>4. 顶级智库图谱</h2>
+      <p>华盛顿智库的职位结构大致分三层：研究助理（Research Assistant/Associate，本科或硕士应届）、研究分析师/政策分析师（Research Fellow 或 Policy Fellow）、高级研究员/非常驻研究员（Senior Fellow/Nonresident Fellow，多为学者或前官员）。大多数招聘集中在前两层。</p>
+
+      <div class="not-prose grid sm:grid-cols-2 gap-5 mt-4">
+        {[
+          {
+            name: '布鲁金斯研究所',
+            sub: 'Brookings Institution · 成立于1916年 · 华盛顿DC',
+            tag: '旗舰综合智库',
+            desc: '全球排名最高的智库之一（来回与宾大共享第一）。政治光谱偏中间偏左。下设外交政策、全球经济与发展、治理研究等多个项目组。招聘周期不规律，关注官网及 LinkedIn。SIPA 校友在此较多，有校友推荐渠道。',
+            salary: 'RA $45k–$58k / 政策分析师 $60k–$85k',
+          },
+          {
+            name: '对外关系委员会',
+            sub: 'Council on Foreign Relations (CFR) · 成立于1921年 · 纽约+华盛顿',
+            tag: '精英外交政策圈',
+            desc: '出版《外交事务》（Foreign Affairs）杂志。非常重视"圈子"和会员资格（会员需要邀请）。入职路径：研究助理（需要大量写作和研究支持能力），或通过 Stanton Fellow、International Affairs Fellow 等项目进入。哥大地缘优势明显（纽约总部）。',
+            salary: 'RA $48k–$62k / 研究员 $70k–$95k',
+          },
+          {
+            name: '战略与国际研究中心',
+            sub: 'CSIS · 成立于1962年 · 华盛顿DC',
+            tag: '两党平衡 / 亚太见长',
+            desc: '亚太、中东、能源、网络安全等方向均有强项目。中国/亚太项目对中文能力有明确需求，是对 SIPA 中国背景学生最友好的智库之一。招聘相对稳定，官网有系统的职位发布。',
+            salary: 'RA $48k–$60k / 研究员 $65k–$90k',
+          },
+          {
+            name: '彼得森国际经济研究所',
+            sub: 'PIIE · 成立于1981年 · 华盛顿DC',
+            tag: '经济政策专门智库',
+            desc: '全球顶级的国际经济政策研究机构，专注贸易、货币、国际金融、发展政策。大量与 IMF/Fed 的政策讨论在这里产生。对经济学量化背景要求较高，非经济学背景较难进核心研究岗。但有 Research Analyst 入门职位。',
+            salary: 'RA $50k–$65k / 研究分析师 $70k–$90k',
+          },
+        ].map(t => (
+          <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+            <div class="flex items-start justify-between mb-2">
+              <div>
+                <p class="font-display font-bold text-stone-900 text-base">{t.name}</p>
+                <p class="text-[11px] text-stone-400 mt-0.5">{t.sub}</p>
+              </div>
+              <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full border text-purple-700 bg-purple-50 border-purple-200 whitespace-nowrap ml-2">{t.tag}</span>
+            </div>
+            <p class="text-sm text-stone-600 leading-relaxed mb-3">{t.desc}</p>
+            <p class="text-xs text-columbia-navy font-medium border-t border-stone-200 pt-2">💰 {t.salary}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 5. Daily Life -->
+    <section id="daily" class="mb-16 scroll-mt-24">
+      <h2>5. 真实日常：政策分析师的一天</h2>
+      <p>以智库研究员（中国/亚太经济政策方向，华盛顿DC）为例：</p>
+      <div class="not-prose grid sm:grid-cols-2 gap-4 mt-4">
+        {[
+          { time: '08:30', task: '读 FT、WSJ、Bloomberg，标记今天可能需要跟进的政策动态（中国PMI数据出了，要更新数据库）' },
+          { time: '09:30', task: '写作时间：一篇关于中美贸易政策走向的 Policy Brief，今天是3000字版本，下周要出5页的 Expert Summary 版本' },
+          { time: '11:00', task: '项目会议：和 Project Director 讨论下个月要举办的中美贸易论坛的议程设计，联系可能的嘉宾' },
+          { time: '13:00', task: '工作午餐：和访问的中国学者一起，这是建立人脉的核心机会，也是获取第一手信息的渠道' },
+          { time: '14:30', task: '接受《外交事务》编辑的 revision comments，要在两天内改完一篇稿件' },
+          { time: '16:00', task: '参加机构内部分享：一位同事刚从北京回来，分享对当前政策环境的判断' },
+          { time: '17:30', task: '整理数据库，更新关税追踪表格，为明天与国会助理的简报准备材料' },
+          { time: '18:30–19:30', task: '参加晚上的政策活动或接待会（DC的社交发生在下班后，比午餐会还多）' },
+        ].map(item => (
+          <div class="flex gap-3 bg-stone-50 rounded-xl p-3 border border-stone-100">
+            <span class="font-mono text-[11px] text-columbia-navy font-bold w-12 shrink-0 pt-0.5">{item.time}</span>
+            <p class="text-sm text-stone-600 leading-relaxed">{item.task}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mt-6">智库工作的核心产出是<strong>政策影响力</strong>，而不是商业价值。这意味着你的"绩效"在于：报告被引用次数、国会证词邀请、媒体采访频率、政府官员主动来咨询——这些难以量化，但在这个圈子里是明确的货币。</p>
+    </section>
+
+    <!-- 6. Salary -->
+    <section id="salary" class="mb-16 scroll-mt-24">
+      <h2>6. 薪酬：GS 体制详解</h2>
+      <p>美国政府职员使用<strong>通用等级制度（General Schedule, GS）</strong>，从 GS-1 到 GS-15，每级有 10 个步级（Step）。华盛顿 DC 属于"华盛顿-巴尔的摩-阿灵顿局部工资区"，有约 33% 的地区差价（locality pay）加成。</p>
+      <div class="not-prose overflow-x-auto my-4">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-stone-100 text-left">
+              <th class="px-4 py-2.5 font-semibold text-stone-700 border border-stone-200">GS 职级</th>
+              <th class="px-4 py-2.5 font-semibold text-stone-700 border border-stone-200">对应学历/经验</th>
+              <th class="px-4 py-2.5 font-semibold text-stone-700 border border-stone-200">DC 区域年薪（Step 1）</th>
+              <th class="px-4 py-2.5 font-semibold text-stone-700 border border-stone-200">对应角色</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['GS-7', '本科应届 / 荣誉学位', '$52,000–$57,000', '政策分析师初级、研究助理'],
+              ['GS-9', '硕士应届 / 2年经验', '$63,000–$69,000', '政策分析师、项目助理'],
+              ['GS-11', '博士 / 3年经验', '$75,000–$82,000', '高级分析师、项目专员'],
+              ['GS-12', '5–7年经验', '$90,000–$98,000', '资深分析师、项目主管'],
+              ['GS-13', '8–12年经验', '$107,000–$116,000', '处长级别、高级政策顾问'],
+              ['GS-14/15', '12年+经验', '$126,000–$163,000', '副处长、主任级别'],
+              ['Senior Executive Service (SES)', '15年+ / 政治任命', '$191,000–$221,000', '助理部长、副部长助理'],
+            ].map(([gs, edu, salary, role]) => (
+              <tr class="border-b border-stone-100 hover:bg-stone-50">
+                <td class="px-4 py-2.5 border border-stone-200 font-medium text-stone-800">{gs}</td>
+                <td class="px-4 py-2.5 border border-stone-200 text-stone-600">{edu}</td>
+                <td class="px-4 py-2.5 border border-stone-200 text-stone-700 font-medium">{salary}</td>
+                <td class="px-4 py-2.5 border border-stone-200 text-stone-600">{role}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>智库薪酬不走 GS 体制，普遍低于政府同等职位，但差距没想象中大：</p>
+      <ul>
+        <li>研究助理（RA，应届硕士）：$48k–$65k</li>
+        <li>研究分析师 / 政策分析师：$65k–$95k</li>
+        <li>非常驻研究员（Nonresident Fellow，兼职）：honorarium 为主，不构成主要收入</li>
+        <li>高级研究员（Senior Fellow）：$120k–$200k，通常是前政府高官或知名学者</li>
+      </ul>
+      <p class="text-sm text-stone-500 mt-2">⚠️ 政府职位的非薪资福利（养老金、医疗保险、带薪假期、工作稳定性）是对较低薪资的重要补偿，长期来看全薪比较需要把这些因素算进去。</p>
+    </section>
+
+    <!-- 7. Career Path -->
+    <section id="career" class="mb-16 scroll-mt-24">
+      <h2>7. 职业发展与"旋转门"</h2>
+      <p>华盛顿政策圈最独特的地方是<strong>旋转门文化</strong>——在政府、智库、学界、私营部门之间反复切换被视为正常甚至理想的职业路径，而不是"跳槽"。理解这一点很重要：</p>
+      <div class="not-prose grid sm:grid-cols-3 gap-4 mt-4">
+        {[
+          {
+            path: '政府 → 智库',
+            desc: '最常见的"旋转"方向。离开政府（换届或自愿）后到智库做高级研究员，撰写回忆录/政策评论，同时保持与政界的联系，等待下次机会。布鲁金斯/CFR 是最常见的"停靠站"。',
+          },
+          {
+            path: '智库 → 政府',
+            desc: '新政府上台时，从智库或学术界大规模引入政治任命官员。奥巴马、拜登政府大量使用 Brookings/CSIS 人才；特朗普政府使用 Heritage Foundation 人才。政策倡导型写作是最好的简历。',
+          },
+          {
+            path: '政府/智库 → 私营',
+            desc: '国务院/财政部高级官员离职后常见去向：高盛/大摩（地缘政治顾问）、法律事务所（国际贸易/制裁合规）、跨国企业政府事务部。"旋转门"在华盛顿是合法且普遍的现象，但有等待期规定。',
+          },
+        ].map(p => (
+          <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+            <p class="font-semibold text-stone-800 text-sm mb-2">{p.path}</p>
+            <p class="text-xs text-stone-600 leading-relaxed">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 8. Recruiting -->
+    <section id="recruiting" class="mb-16 scroll-mt-24">
+      <h2>8. 申请策略：国际学生如何切入</h2>
+
+      <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-6">
+        <p class="font-semibold text-amber-800 text-sm mb-2">⚠️ 关键限制：公民身份要求</p>
+        <p class="text-sm text-amber-900 leading-relaxed">美国政府的绝大多数职位要求<strong>美国公民身份</strong>，且需要通过安全审查（Security Clearance）。这对国际学生是一道真实的门槛，尤其是中国护照持有者——很多需要 Top Secret 安全审查的岗位实际上很难获得清查。这不是歧视，是制度现实。</p>
+      </div>
+
+      <p>对非美国公民的 SIPA 学生，更实际的切入路径：</p>
+      <ol>
+        <li><strong>智库研究助理 / 分析师：</strong>智库不属于政府，雇用政策不受公民限制约束。CSIS、Brookings、CFR、PIIE 都有录用国际学生的记录。关键是建立差异化的研究专长（中国经济、东南亚、能源转型等），并有扎实的写作样本。</li>
+        <li><strong>国际组织驻 DC 机构：</strong>IMF/World Bank 总部在华盛顿，世界银行集团的一些项目对 SIPA 背景学生是优质切入点。见"国际组织"一页的详细策略。</li>
+        <li><strong>外国政府驻美机构：</strong>各国驻美大使馆、领事馆经常招募政策分析/研究人员，且明显偏好双语背景。</li>
+        <li><strong>实习建立圈子：</strong>政策圈靠人脉。SIPA 在读期间的实习（智库、国会助理、国际组织 DC 办公室）是建立关系的核心。毕业后才去找工作已经晚了半步。</li>
+        <li><strong>长期路径：入籍后进政府：</strong>对想在美国政府体制内发展的学生，绿卡 → 入籍是现实的时间规划，通常需要 5–7 年。</li>
+      </ol>
+
+      <div class="not-prose bg-columbia-light border border-columbia-blue/30 rounded-2xl p-5 mt-6">
+        <p class="font-semibold text-columbia-navy text-sm mb-2">🎓 SIPA 专属资源</p>
+        <ul class="space-y-1.5 text-sm text-columbia-navy/80 list-none pl-0">
+          <li>• <strong>Policy Trek（华盛顿 DC）：</strong>每年春季组织的 DC 实地走访项目，拜访 Brookings/CFR/State/Treasury，是建立第一印象和联系人的绝佳机会</li>
+          <li>• <strong>SIPA DC Alumni Network：</strong>哥大在华盛顿的 Alumni 组织活跃，有专门的 Policy Fellowship 项目</li>
+          <li>• <strong>Prof. connections：</strong>许多 SIPA 教授有现任或前任政府顾问背景，主动联系是可以的</li>
+          <li>• <strong>Columbia World Projects：</strong>哥大跨院系的政策参与项目，有时涉及与政府/智库的合作机会</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 9. Fit -->
+    <section id="fit" class="mb-16 scroll-mt-24">
+      <h2>9. 适合你吗？</h2>
+      <div class="not-prose grid sm:grid-cols-2 gap-5 mt-4">
+        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+          <p class="font-semibold text-emerald-800 mb-3">✅ 你可能很适合，如果……</p>
+          <ul class="space-y-2 text-sm text-emerald-900 list-none pl-0">
+            <li>• 有明确的政策议题兴趣（中美关系、气候政策、国际金融架构……），并愿意在这个领域深耕</li>
+            <li>• 写作能力强，可以快速生产有论点的 1–2 页 Policy Memo</li>
+            <li>• 对社交/建立人脉不排斥——华盛顿政策圈是 relationship-driven 的</li>
+            <li>• 能接受智库相对较低的起薪（$50–65k），愿意用时间换影响力</li>
+            <li>• 英语表达（尤其是书面）达到本地水平或接近</li>
+          </ul>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+          <p class="font-semibold text-red-800 mb-3">⚠️ 需要慎重考虑，如果……</p>
+          <ul class="space-y-2 text-sm text-red-900 list-none pl-0">
+            <li>• 想进美国政府核心决策层，但还没有（或短期内不会有）美国公民身份</li>
+            <li>• 主要目标是薪酬——智库起薪是同层次工作里偏低的</li>
+            <li>• 不喜欢写政策文件和接受外部评审——这是智库的日常</li>
+            <li>• 希望快速看到可量化的成果——政策影响力是长周期、低确定性的</li>
+            <li>• 对政治生态敏感但不擅长处理——华盛顿的"人际政治"比想象中复杂</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="mt-8 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 OPM（美国人事管理局）GS 薪酬表（2025年）、Glassdoor 智库职位数据、80,000 Hours 政策圈薪酬报告，仅供参考。
+  </div>
+</Base>

@@ -1,0 +1,165 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/public-policy/intl-organizations/',
+    emoji: '🌐',
+    title: '国际组织',
+    titleEn: 'International Organizations',
+    desc: 'IMF、世界银行、联合国、亚开行——全球最难进的组织，年薪12万美元+免税，申请路径与现实全解析',
+    tags: ['IMF YPP', 'World Bank JPP', 'UN JPO', 'ADB', '开发银行'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$75k–$180k（免税）',
+    salary_cn: '—',
+  },
+  {
+    href: '/industry/public-policy/us-government-policy/',
+    emoji: '🏛️',
+    title: '美国政府与智库',
+    titleEn: 'US Government & Think Tanks',
+    desc: '国务院、财政部、USAID、国家安全委员会，以及布鲁金斯、CFR、CSIS——美国政策圈的真实生态与进入路径',
+    tags: ['State Dept', 'Treasury', 'Brookings', 'CFR', 'CSIS'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '$55k–$130k（GS制）',
+    salary_cn: '—',
+  },
+  {
+    href: '/industry/public-policy/ngo-development/',
+    emoji: '🌱',
+    title: 'NGO与国际发展',
+    titleEn: 'NGO & International Development',
+    desc: '盖茨基金会、无国界医生、国际救援委员会——使命驱动与职业发展如何平衡，薪酬现实与上升通道全解析',
+    tags: ['Gates Foundation', 'USAID', 'UNDP', '国际发展', 'Development Finance'],
+    difficulty: '中等',
+    diffColor: 'text-blue-600 bg-blue-50 border-blue-200',
+    salary_us: '$50k–$110k',
+    salary_cn: '—',
+  },
+  {
+    href: '/industry/public-policy/china-public-sector/',
+    emoji: '🇨🇳',
+    title: '中国公共部门与智库',
+    titleEn: 'China Public Sector & Think Tanks',
+    desc: '外交部、发改委、商务部、国资委体系，以及社科院、清华智库——海归进入中国政策圈的真实路径与注意事项',
+    tags: ['外交部', '发改委', '商务部', '中国智库', '国际部门'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '—',
+    salary_cn: '20–80万（差异极大）',
+  },
+];
+---
+
+<Base title="公共政策与国际组织深度解析" description="IMF、世界银行、联合国、美国政府、智库、NGO、中国公共部门——SIPA学生进入政策圈的完整路径指南">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    行业解析
+  </a>
+
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-purple-50 text-purple-700 border border-purple-200 font-semibold px-3 py-1 rounded-full">Public Policy & Intl Orgs</span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">4 个细分方向</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-5">
+      公共政策与国际组织
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      SIPA 最传统的出路——IMF、世界银行、联合国、美国政府、DC 智库、国际 NGO。这条路有真实的吸引力（使命感、全球视野、超强履历），也有真实的代价（漫长的等待期、低于市场的起薪、极度竞争）。这里帮你把它看清楚。
+    </p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '细分方向', value: '4个' },
+        { label: '覆盖机构', value: '30+' },
+        { label: '薪酬数据', value: '2024-2025' },
+        { label: '特殊优势', value: 'SIPA直申' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 先搞清楚：这条路的本质 -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">先搞清楚：公共政策职业的本质逻辑</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>和金融、咨询不同，公共政策职业的底层逻辑是<strong class="text-stone-800">杠杆力</strong>：一个 IMF 经济学家的一份报告，可能影响一个国家的货币政策；一个 World Bank 项目经理设计的扶贫项目，影响几十万人的生计。这种影响力是私营部门很难复制的。</p>
+      <p>但代价也是真实的：入职门槛极高（国际组织普遍要求 PhD 或顶级学校硕士 + 相关工作经验），薪酬低于等级相当的私营岗位，晋升路径更漫长，政治生态更复杂。</p>
+      <div class="grid sm:grid-cols-4 gap-3 mt-4">
+        {[
+          { role: '国际组织', desc: '全球影响力，技术中立，稳定性极高，竞争激烈，薪资免税', icon: '🌐', note: '需要 PhD 或顶级硕士 + 经验' },
+          { role: '美国政府', desc: 'GS 体制，工作稳定，退休福利好，外交/政策核心，政治敏感', icon: '🏛️', note: '需要美国公民身份（多数岗位）' },
+          { role: 'NGO/发展', desc: '使命驱动，灵活多样，起薪偏低，成长空间视机构差异大', icon: '🌱', note: '国际学生友好度较高' },
+          { role: '中国公共部门', desc: '国内影响力，体制内晋升，海归有特定优势窗口，薪资差异极大', icon: '🇨🇳', note: '海归窗口逐渐收窄，需提前布局' },
+        ].map(r => (
+          <div class="bg-white border border-stone-200 rounded-xl p-3">
+            <p class="text-lg mb-1">{r.icon}</p>
+            <p class="font-semibold text-stone-800 text-xs mb-1">{r.role}</p>
+            <p class="text-[11px] leading-relaxed text-stone-500 mb-2">{r.desc}</p>
+            <p class="text-[10px] text-columbia-navy font-medium">{r.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SIPA特别说明 -->
+  <section class="mb-14">
+    <div class="bg-columbia-light border border-columbia-blue/30 rounded-2xl p-6">
+      <h3 class="font-display font-bold text-columbia-navy text-base mb-3">🎓 SIPA 的定位</h3>
+      <p class="text-sm text-columbia-navy/80 leading-relaxed mb-3">SIPA（School of International and Public Affairs）是全球公共政策领域最顶级的项目之一。哥大-联合国的地缘优势是真实的：SIPA 每年直接向联合国系统输送实习生，Career Services 有专门针对国际组织的 pipeline，不少教授本身就是 IMF/World Bank 前官员。</p>
+      <div class="grid sm:grid-cols-3 gap-3 text-sm">
+        {[
+          { point: 'UN系统', detail: '哥大离 UNHQ 步行15分钟，实习机会最密集，每学期有 UN seminar 系列' },
+          { point: 'IMF/World Bank', detail: 'SIPA MPA-DP 和 MIA 是公认的 feeder programs，校友网络强，推荐信资源充足' },
+          { point: 'DC政策圈', detail: 'SIPA DC alumni network + 每年 Policy Trek 直接接触 Brookings、CFR、State Dept' },
+        ].map(p => (
+          <div class="bg-white/70 rounded-xl px-4 py-3">
+            <p class="font-semibold text-columbia-navy text-xs mb-1">{p.point}</p>
+            <p class="text-[11px] text-stone-600 leading-relaxed">{p.detail}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">4 个细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {sectors.map((s) => (
+        <a href={s.href} class="group block rounded-2xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:-translate-y-1 transition-all no-underline">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{s.emoji}</span>
+            <span class={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${s.diffColor}`}>
+              入行难度：{s.difficulty}
+            </span>
+          </div>
+          <h3 class="font-display font-bold text-stone-900 text-lg mb-0.5 group-hover:text-columbia-navy transition-colors">{s.title}</h3>
+          <p class="text-[11px] text-stone-400 mb-3">{s.titleEn}</p>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            {s.tags.map(t => (
+              <span class="text-[10px] bg-purple-50 text-purple-700 border border-purple-200 font-medium px-2 py-0.5 rounded-full">{t}</span>
+            ))}
+          </div>
+          <div class="flex gap-4 text-xs text-stone-500 pt-3 border-t border-stone-100">
+            {s.salary_us !== '—' && <span>🇺🇸 {s.salary_us}</span>}
+            {s.salary_cn !== '—' && <span>🇨🇳 {s.salary_cn}</span>}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 国际组织薪酬数据来源于各机构公开薪酬表（IMF、UN、World Bank 官方发布）；美国政府数据来自 OPM GS 薪酬表；智库和 NGO 数据来自 Glassdoor、80000 Hours、公开 990 税表。实际薪酬因职级、地点、机构差异较大。
+  </div>
+</Base>
