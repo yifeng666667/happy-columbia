@@ -59,6 +59,63 @@ import Base from '../../../layouts/Base.astro';
     <p>中国公募基金行业从1998年起步（华夏基金、嘉实基金等首批公募），经历了2007年牛市的第一波爆发（总规模超3万亿）、2008-2013年的低迷，以及2014年至今的快速扩张。截至2024年，中国公募基金管理规模超过31万亿元人民币，是全球第三大资管市场，仅次于美国和欧洲。</p>
   </section>
 
+  <!-- Legends -->
+  <section id="legends" class="mb-16 scroll-mt-24">
+    <h2 class="flex items-center gap-2">★ 塑造资产管理行业的传奇人物</h2>
+    <p>从主动选股的时代到指数革命，资管行业的格局被少数几个人的洞见彻底改写——其中有些决定，当时看起来像是离经叛道。</p>
+    <div class="not-prose grid sm:grid-cols-2 gap-5 mt-6">
+
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <p class="font-display font-bold text-stone-900 text-base">约翰·博格尔</p>
+            <p class="text-[11px] text-stone-400 mt-0.5">John Bogle · 1929–2019 · Vanguard创始人</p>
+          </div>
+          <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 font-semibold px-2 py-0.5 rounded-full">指数革命</span>
+        </div>
+        <p class="text-sm text-stone-600 leading-relaxed">普林斯顿本科毕业论文就研究了共同基金行业，加入Wellington Management后一路做到CEO，却因为一次失败的合并决策被董事会解雇。被解雇后，他在1974年创立Vanguard，1976年推出全球第一只面向个人投资者的指数基金。核心逻辑极简单：大多数主动基金长期跑不赢市场，而高费率在复利效应下会吃掉巨大的财富积累。这一理念用了20年才被市场接受，如今指数基金管理规模已超越主动基金。</p>
+        <p class="mt-3 text-xs text-columbia-navy font-medium border-t border-stone-200 pt-2">💡 "不要在干草堆里找针，把整个干草堆都买下来"——简单的道理往往最难被接受</p>
+      </div>
+
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <p class="font-display font-bold text-stone-900 text-base">彼得·林奇</p>
+            <p class="text-[11px] text-stone-400 mt-0.5">Peter Lynch · 1944– · Fidelity Magellan</p>
+          </div>
+          <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-2 py-0.5 rounded-full">主动选股传奇</span>
+        </div>
+        <p class="text-sm text-stone-600 leading-relaxed">1977年接手富达麦哲伦基金（Fidelity Magellan），管理了13年，年化回报29.2%——在这13年里，基金规模从$2000万增长到$140亿，成为当时全球规模最大的主动管理基金。他的投资方法很生活化：从日常消费习惯中发现投资机会，比如"买你了解的公司"。1990年46岁主动退休，被认为是有史以来最伟大的选股者之一。著作《彼得·林奇的成功投资》至今是个人投资者必读书目。</p>
+        <p class="mt-3 text-xs text-columbia-navy font-medium border-t border-stone-200 pt-2">💡 普通人也能战胜华尔街——前提是你愿意花时间深度研究你买的东西</p>
+      </div>
+
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <p class="font-display font-bold text-stone-900 text-base">比尔·格罗斯</p>
+            <p class="text-[11px] text-stone-400 mt-0.5">Bill Gross · 1944– · PIMCO联合创始人</p>
+          </div>
+          <span class="text-[10px] bg-amber-50 text-amber-700 border border-amber-200 font-semibold px-2 py-0.5 rounded-full">债券之王</span>
+        </div>
+        <p class="text-sm text-stone-600 leading-relaxed">UCLA毕业后做了职业牌手（在拉斯维加斯打了4个月21点，用策略性赌博攒了起步资金），随后进入金融业。1971年与人共同创立PIMCO，把它建成全球最大的固定收益资产管理公司，旗下PIMCO Total Return基金曾管理规模超$2700亿，是全球最大的主动管理债券基金。被业界称为"The Bond King"。2014年因内部矛盾出人意料地离开了他亲手建立的PIMCO。</p>
+        <p class="mt-3 text-xs text-columbia-navy font-medium border-t border-stone-200 pt-2">💡 债券市场的规模远超股票——宏观利率判断能力，是资管里真正的稀缺能力</p>
+      </div>
+
+      <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <p class="font-display font-bold text-stone-900 text-base">张坤</p>
+            <p class="text-[11px] text-stone-400 mt-0.5">Zhang Kun · 1984– · 易方达基金经理</p>
+          </div>
+          <span class="text-[10px] bg-red-50 text-red-700 border border-red-200 font-semibold px-2 py-0.5 rounded-full">中国明星基金经理</span>
+        </div>
+        <p class="text-sm text-stone-600 leading-relaxed">中央财经大学毕业后加入易方达基金，多年深耕消费和医药赛道。2020-2021年A股消费牛市中，他管理的基金规模一度超过4000亿元人民币，成为中国公募基金史上管理规模最大的基金经理。在微博上被基民亲切称为"坤坤"，催生了"坤坤勇敢飞"等大量二次创作——这在中国公募历史上从未有过。但2022-2023年消费股大跌，他的基金净值腰斩，也让投资者对主动选股经理的局限有了切身体会。</p>
+        <p class="mt-3 text-xs text-columbia-navy font-medium border-t border-stone-200 pt-2">💡 明星基金经理的光环，往往在行情逆转时才能检验是否货真价实</p>
+      </div>
+
+    </div>
+  </section>
+
   <section id="model" class="mb-16 scroll-mt-24">
     <h2>02 · 商业模式：管理费的逻辑</h2>
 

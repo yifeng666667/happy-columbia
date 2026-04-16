@@ -1,0 +1,131 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/consulting/management-consulting/',
+    emoji: '🏆',
+    title: 'MBB管理咨询',
+    titleEn: 'Management Consulting (MBB)',
+    desc: 'McKinsey、BCG、Bain——咨询行业的顶端，真实日常、Case Interview、出路与天花板全解析',
+    tags: ['McKinsey', 'BCG', 'Bain', '管理咨询', 'Case Interview'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$110k–$200k+（硕士）',
+    salary_cn: '35–80万',
+  },
+  {
+    href: '/industry/consulting/big4-consulting/',
+    emoji: '🔷',
+    title: '四大咨询',
+    titleEn: 'Big 4 Consulting',
+    desc: '德勤、普华永道、安永、毕马威——战略、财务、科技、风险咨询，四大如何区别于MBB',
+    tags: ['Deloitte', 'PwC', 'EY', 'KPMG', 'Advisory'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '$80k–$160k',
+    salary_cn: '25–60万',
+  },
+  {
+    href: '/industry/consulting/economic-consulting/',
+    emoji: '📐',
+    title: '经济咨询',
+    titleEn: 'Economic Consulting',
+    desc: 'Cornerstone Research、Analysis Group、NERA——诉讼支持、反垄断分析、专家证人',
+    tags: ['经济分析', '反垄断', '诉讼支持', 'Expert Witness'],
+    difficulty: '较难',
+    diffColor: 'text-amber-600 bg-amber-50 border-amber-200',
+    salary_us: '$80k–$150k',
+    salary_cn: '25–60万',
+  },
+];
+---
+
+<Base title="咨询行业深度解析" description="MBB管理咨询、四大、战略咨询、经济咨询——咨询行业全景解析，中美职场对比">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    行业解析
+  </a>
+
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-blue-50 text-blue-700 border border-blue-200 font-semibold px-3 py-1 rounded-full">Consulting</span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">3 个细分方向</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-5">
+      咨询行业深度解析
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      咨询是最多文科生和商科生向往的方向，也是"看起来懂、实际是什么"这个问题最难回答的行业之一。这里不是求职攻略，而是帮你真正理解咨询的商业逻辑、真实工作、出路与天花板。
+    </p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '细分方向', value: '3个' },
+        { label: '覆盖市场', value: '美国 + 中国' },
+        { label: '薪酬数据', value: '2024-2025' },
+        { label: '数据来源', value: 'M&I/Glassdoor/脉脉' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">先搞清楚：咨询行业的本质是什么</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>咨询行业的本质是<strong class="text-stone-800">知识和判断力的商业化</strong>。企业付钱给咨询公司，不是因为咨询公司掌握独家信息，而是因为他们有更系统的分析框架、跨行业的比较经验、以及能说服董事会的外部权威性。</p>
+      <div class="grid sm:grid-cols-3 gap-4 mt-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">管理咨询（Strategy）</p>
+          <p class="text-xs leading-relaxed">帮客户做"应该做什么"的决策——战略方向、并购决策、组织重组、进入新市场。MBB主导，单项目咨询费$200万-$2000万。</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">四大咨询（Advisory）</p>
+          <p class="text-xs leading-relaxed">更广的服务范围——财务咨询、风险管理、科技实施、合规审计。规模更大，门槛更低，覆盖更多中小企业。</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">经济咨询（Economic）</p>
+          <p class="text-xs leading-relaxed">主要服务于诉讼、监管和反垄断——帮律所和政府做经济分析，出具专家证人报告。最重技术含量，最看经济学功底。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">3 个细分方向</h2>
+    <div class="grid sm:grid-cols-3 gap-5">
+      {sectors.map((s) => (
+        <a href={s.href} class="group block rounded-2xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:-translate-y-1 transition-all no-underline">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{s.emoji}</span>
+            <span class={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${s.diffColor}`}>
+              入行难度：{s.difficulty}
+            </span>
+          </div>
+          <h3 class="font-display font-bold text-stone-900 text-lg mb-0.5 group-hover:text-columbia-navy transition-colors">{s.title}</h3>
+          <p class="text-[11px] text-stone-400 mb-3">{s.titleEn}</p>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            {s.tags.map(t => (
+              <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 font-medium px-2 py-0.5 rounded-full">{t}</span>
+            ))}
+          </div>
+          <div class="flex gap-4 text-xs text-stone-500 pt-3 border-t border-stone-100">
+            <span>🇺🇸 {s.salary_us}</span>
+            <span>🇨🇳 {s.salary_cn}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 Mergers & Inquisitions、Glassdoor、Management Consulted、知乎、脉脉等公开平台，仅供参考。实际薪酬因机构、年份、个人背景差异较大。
+  </div>
+</Base>
