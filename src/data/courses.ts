@@ -135,6 +135,16 @@ export const courses: CourseMeta[] = [
     city: 'Brussels',
   },
   {
+    slug: 'china-foreign-relations',
+    category: 'geopolitics',
+    title: '中国对外关系史',
+    titleEn: "China's Foreign Relations: 1949 to the Present",
+    description:
+      '从1949年建国到习近平时代——系统梳理中华人民共和国对外政策的演变逻辑：中苏同盟与大分裂、朝鲜战争、万隆精神、尼克松破冰、改革开放外交、天安门后的重建、和平崛起，直到今日的大国博弈。',
+    heroImage: 'https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1400&q=85',
+    city: 'Beijing',
+  },
+  {
     slug: 'value-investing',
     category: 'finance',
     title: '价值投资',
