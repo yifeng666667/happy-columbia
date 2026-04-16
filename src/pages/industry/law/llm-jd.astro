@@ -1,0 +1,164 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="LLM vs JD：法律学位路径拆解" description="一年LLM还是三年JD？哪条路能真正进入美国法律市场，中国法学生的现实处境">
+
+  <a href="/industry/law/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    法律行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-red-50 text-red-700 border border-red-200 font-semibold px-3 py-1 rounded-full">Legal · Degree Guide</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      LLM vs JD：法律学位路径拆解
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">LLM vs JD — Which Path Opens Which Doors</p>
+
+    <div class="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-sm text-amber-800 leading-relaxed">
+      <strong>先说结论：</strong>如果你的目标是在美国以律师身份执业（尤其是进顶级BigLaw），JD几乎是唯一路径。LLM的价值是真实的，但它打开的是不同的门——很多中国学生对此存在系统性误解。
+    </div>
+  </header>
+
+  <!-- Comparison Table -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">LLM vs JD：核心对比</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-stone-100">
+            <th class="text-left p-3 text-stone-600 font-semibold border-b border-stone-200">维度</th>
+            <th class="text-left p-3 text-stone-600 font-semibold border-b border-stone-200">LLM（法学硕士）</th>
+            <th class="text-left p-3 text-stone-600 font-semibold border-b border-stone-200">JD（法律博士）</th>
+          </tr>
+        </thead>
+        <tbody class="text-stone-600">
+          {[
+            ['学制', '1年（少数2年）', '3年'],
+            ['入学要求', '法学本科 + 成绩单 + 推荐信', '本科任意专业 + LSAT + GPA'],
+            ['面向群体', '已有法律学位的外国律师', '想成为美国律师的人'],
+            ['美国执照', '可考纽约州Bar（外国律师资格）', '可考任意州Bar，成为Attorney'],
+            ['BigLaw OCI', '极少数律所（Cleary等）招LLM', '全部顶级律所通过OCI招JD'],
+            ['学费（哥大）', '约$7万/年', '约$7万/年 × 3年'],
+            ['奖学金', '极少（很少提供大额奖学金）', '顶校较多（T14有奖学金竞争）'],
+            ['LSAT要求', '不需要', '硬性门槛（Top 14要求170+）'],
+            ['就业出路', '回国律所 / 跨境业务 / 合规', '美国全类型法律职业'],
+            ['时间成本', '低（1年）', '高（3年+Bar备考）'],
+          ].map(([dim, llm, jd]) => (
+            <tr class="border-b border-stone-100 hover:bg-stone-50">
+              <td class="p-3 font-medium text-stone-700">{dim}</td>
+              <td class="p-3">{llm}</td>
+              <td class="p-3">{jd}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- LLM Value -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">LLM 真正有价值的方向</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        {
+          title: '跨境法律业务（最大价值）',
+          desc: '外资所北京/香港办公室、国内涉外律所——LLM学历+中国法律背景+双语能力是稀缺组合，处理跨境并购、香港上市、国际仲裁。',
+          star: true,
+        },
+        {
+          title: '纽约州Bar资格',
+          desc: '通过NY Bar考试后可以"外国法律顾问"身份在纽约执业，但不能以Attorney身份出庭，也无法做BigLaw Associate。适合在外资所做非诉业务。',
+          star: true,
+        },
+        {
+          title: '回国后的竞争力',
+          desc: '美国顶校LLM学历在国内红圈所招聘中有显著加分，尤其是Columbia、NYU、Harvard、Georgetown的LLM项目。',
+          star: true,
+        },
+        {
+          title: '政策 / 监管 / 国际组织',
+          desc: 'WTO争端解决机构、世界银行法律部、联合国法律处——需要国际法背景，LLM是合适的学历准备，但竞争非常激烈。',
+          star: false,
+        },
+        {
+          title: '金融机构合规岗',
+          desc: '法律+金融背景的合规人才短缺。LLM毕业后进银行/PE合规部门——不需要JD，看重法律分析能力和行业理解。',
+          star: false,
+        },
+        {
+          title: '企业内法（有限）',
+          desc: '部分大型跨国企业接受LLM背景进入法务部（非Attorney角色）。但美国本土企业的内法几乎都要求JD。',
+          star: false,
+        },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-2 mb-2">
+            {item.star && <span class="text-amber-500 text-sm shrink-0">★</span>}
+            <p class="font-semibold text-stone-800 text-sm">{item.title}</p>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- JD Decision -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">什么情况下应该考虑 JD</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>JD是重大的时间和金钱投入（3年学费+生活费，毕业后可能背负20–30万美元债务）。做这个决定之前，需要想清楚几个问题：</p>
+      <div class="space-y-3">
+        {[
+          { q: '你真的想做律师吗（而不只是"进法律行业"）？', a: 'JD打开的主要是律师职业，如果目标是政策、咨询、内法，不一定需要JD。' },
+          { q: '你的LSAT能考到多少？', a: 'Top 14法学院（唯一能进BigLaw的渠道）要求LSAT 168+，Harvard/Yale要求170+。LSAT备考需要6–12个月，不容忽视。' },
+          { q: '你能承受经济压力吗？', a: '顶级法学院学费每年约$7万+生活费$3万，三年约$30万。JD后的BigLaw薪资（$215k起）能快速还款，但压力巨大。' },
+          { q: '你打算长期在美国执业吗？', a: '如果最终打算回国，JD的边际价值相比LLM下降——国内律所并不特别优待JD（他们更关心中国法考和实务经验）。' },
+        ].map(item => (
+          <div class="bg-white border border-stone-200 rounded-xl p-4">
+            <p class="font-semibold text-stone-800 text-sm mb-1">Q: {item.q}</p>
+            <p class="text-xs text-stone-500">{item.a}</p>
+          </div>
+        ))}
+      </div>
+      <div class="bg-columbia-light border border-columbia-blue/20 rounded-xl px-4 py-3 text-xs text-columbia-navy/80">
+        <strong>SIPA学生的特殊情况：</strong>Columbia允许JD + MIA/MPA双学位项目。如果你在SIPA期间确定想做法律，可以申请JD（2L或3L双学位），一个学位的时间成本部分重叠，是最高效的路径。
+      </div>
+    </div>
+  </section>
+
+  <!-- Realistic Assessment for Chinese Students -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">中国法学生的现实处境</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+        <p class="font-bold text-red-800 mb-2">需要清醒认知的现实</p>
+        <ul class="space-y-2 text-xs text-red-700">
+          <li>• <strong>OPT限制：</strong>LLM只有一年OPT，毕业后几乎没有时间积累美国工作经验再回中国；JD有三年OPT（STEM豁免不适用法律）</li>
+          <li>• <strong>签证风险：</strong>H1B抽签不确定性极高，很多LLM毕业生最终无法留美工作</li>
+          <li>• <strong>身份歧视：</strong>美国法律市场对外国律师有隐性障碍，客户信任、工作授权都是现实挑战</li>
+          <li>• <strong>回报周期：</strong>LLM花费$10万+，如果回国就业，投资回报期可能较长</li>
+        </ul>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+        <p class="font-bold text-emerald-800 mb-2">真实存在的机会</p>
+        <ul class="space-y-2 text-xs text-emerald-700">
+          <li>• 外资所亚洲办公室（香港、新加坡）对中文+英文双语律师有持续需求</li>
+          <li>• 国内涉外律所对LLM背景持续青睐，尤其资本市场方向</li>
+          <li>• 中国企业出海（东南亚、中东、非洲）创造了大量涉外法律岗位</li>
+          <li>• 国际机构（WTO、UNCITRAL、仲裁机构）有法律岗位开放竞争</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/law/in-house/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 企业内法</a>
+    <a href="/industry/law/" class="text-columbia-blue hover:underline no-underline">返回法律行业概览 →</a>
+  </div>
+</Base>

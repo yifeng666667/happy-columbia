@@ -1,0 +1,165 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/media-marketing/brand-marketing/',
+    emoji: '🎯',
+    title: '品牌与市场营销',
+    titleEn: 'Brand & Marketing',
+    desc: '消费品牌、科技公司、奢侈品——品牌经理的核心职能、营销漏斗逻辑与职业发展路径',
+    tags: ['Brand Manager', 'CMO Track', '消费品', '营销策略'],
+    difficulty: '中等',
+    diffColor: 'text-pink-600 bg-pink-50 border-pink-200',
+    salary_us: '$60k–$180k',
+    salary_cn: '国内参考',
+  },
+  {
+    href: '/industry/media-marketing/digital-marketing/',
+    emoji: '📱',
+    title: '数字营销与增长',
+    titleEn: 'Digital Marketing & Growth',
+    desc: 'SEO、SEM、社交媒体、增长黑客——数据驱动的营销新范式，以及AI重塑这个行业的速度',
+    tags: ['Growth', 'SEO/SEM', '社媒运营', 'Performance'],
+    difficulty: '中等',
+    diffColor: 'text-pink-600 bg-pink-50 border-pink-200',
+    salary_us: '$55k–$150k',
+    salary_cn: '国内参考',
+  },
+  {
+    href: '/industry/media-marketing/pr-communications/',
+    emoji: '📣',
+    title: 'PR / 公关传播',
+    titleEn: 'PR & Communications',
+    desc: '企业公关、危机公关、政府公关——公关的真实职能、与营销的本质区别，以及媒体生态重构的冲击',
+    tags: ['Corporate PR', '危机公关', '媒体关系', '政府公关'],
+    difficulty: '中等',
+    diffColor: 'text-pink-600 bg-pink-50 border-pink-200',
+    salary_us: '$50k–$140k',
+    salary_cn: '国内参考',
+  },
+  {
+    href: '/industry/media-marketing/journalism-media/',
+    emoji: '📰',
+    title: '新闻媒体',
+    titleEn: 'Journalism & Media',
+    desc: '传统媒体、数字原生媒体、财经新闻——新闻行业的商业模式崩塌，以及为什么还有人义无反顾地进这行',
+    tags: ['财经记者', '数字媒体', '播客', '调查报道'],
+    difficulty: '较难',
+    diffColor: 'text-orange-600 bg-orange-50 border-orange-200',
+    salary_us: '$45k–$120k',
+    salary_cn: '国内参考',
+  },
+];
+---
+
+<Base title="传媒与市场营销深度解析" description="品牌营销、数字营销、PR公关、新闻媒体——传媒与市场营销4大方向全景解析，中美职场对比">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    行业解析
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-pink-50 text-pink-700 border border-pink-200 font-semibold px-3 py-1 rounded-full">Media & Marketing</span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">4 个细分方向</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-5">
+      传媒与市场营销深度解析
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      传媒是一个正在经历深刻重构的行业——旧的商业模式在崩塌，新的格局还在形成。营销则越来越依赖数据和算法。这两个方向对文科生有天然吸引力，但也最需要对现实保持清醒认知。
+    </p>
+
+    <!-- Quick stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '细分方向', value: '4个' },
+        { label: '覆盖市场', value: '美国 + 中国' },
+        { label: '核心趋势', value: 'AI重塑' },
+        { label: '内容来源', value: '公开数据 + 从业者' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">先理解传媒与营销的行业逻辑</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>传媒和营销常被混为一谈，但它们的商业逻辑截然不同。<strong class="text-stone-800">媒体是内容生产者，营销是品牌传播者</strong>——虽然都在和受众打交道，但激励结构、服务对象、职业路径完全不同。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">媒体（Media）</p>
+          <p class="text-xs leading-relaxed">生产内容吸引受众，向广告主出售注意力——这是传统媒体的商业模式，正在被数字化彻底颠覆。记者、编辑、内容策略师是核心岗位。</p>
+          <p class="text-xs text-stone-400 mt-2">代表：NYT, Bloomberg, Reuters, 财新, 第一财经</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">营销（Marketing）</p>
+          <p class="text-xs leading-relaxed"><strong>帮助品牌触达目标受众，推动消费者决策</strong>——可以在甲方（品牌方）做，也可以在乙方（广告代理、咨询公司）做，两条路的日常完全不同。</p>
+          <p class="text-xs text-stone-400 mt-2">代表：P&G品牌部, Google Marketing, WPP, Ogilvy</p>
+        </div>
+      </div>
+      <p class="text-xs text-stone-400 pt-2">💡 AI正在同时冲击这两个行业——内容生产效率提升让记者岗位减少，程序化广告让部分营销职能自动化。未来竞争力来自创意、策略判断与行业洞察，而非执行本身。</p>
+    </div>
+  </section>
+
+  <!-- Market reality -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">行业现状：机遇与挑战并存</h2>
+    <div class="grid sm:grid-cols-3 gap-4 text-sm">
+      <div class="bg-pink-50 border border-pink-200 rounded-xl p-5">
+        <p class="font-bold text-pink-800 mb-2">增长方向</p>
+        <p class="text-pink-700 text-xs leading-relaxed">数字营销、内容营销、品牌战略、增长黑客——需求旺盛，薪资涨幅明显。创作者经济（播客、Newsletter）提供了新的独立路径。</p>
+      </div>
+      <div class="bg-orange-50 border border-orange-200 rounded-xl p-5">
+        <p class="font-bold text-orange-800 mb-2">承压方向</p>
+        <p class="text-orange-700 text-xs leading-relaxed">传统平面媒体、广播电视、印刷广告——商业模式持续承压，裁员频繁。进这些方向需要有清醒认知和明确的热情驱动。</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+        <p class="font-bold text-emerald-800 mb-2">新兴机会</p>
+        <p class="text-emerald-700 text-xs leading-relaxed">AI内容工具、品牌播客、创作者经济平台、数据驱动PR——正在创造新的职业形态，适合有创业心态的人。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">4 个细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {sectors.map((s) => (
+        <a href={s.href} class="group block rounded-2xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:-translate-y-1 transition-all no-underline">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{s.emoji}</span>
+            <span class={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${s.diffColor}`}>
+              入行难度：{s.difficulty}
+            </span>
+          </div>
+          <h3 class="font-display font-bold text-stone-900 text-lg mb-0.5 group-hover:text-columbia-navy transition-colors">{s.title}</h3>
+          <p class="text-[11px] text-stone-400 mb-3">{s.titleEn}</p>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            {s.tags.map(t => (
+              <span class="text-[10px] bg-pink-50 text-pink-700 border border-pink-200 font-medium px-2 py-0.5 rounded-full">{t}</span>
+            ))}
+          </div>
+          <div class="flex gap-4 text-xs text-stone-500 pt-3 border-t border-stone-100">
+            <span>🇺🇸 {s.salary_us}</span>
+            <span>🇨🇳 {s.salary_cn}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 薪酬数据来源于 LinkedIn Salary、Glassdoor、BLS 等公开渠道，仅供参考。传媒与营销行业薪资差异悬殊，城市（纽约/LA vs 其他地区）、行业（科技/金融 vs 非营利）、公司规模对薪资影响极大。
+  </div>
+</Base>

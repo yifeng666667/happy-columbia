@@ -1,0 +1,255 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const levels = [
+  {
+    title: '1st Year Associate',
+    years: 'Year 1',
+    salary_us: '$215,000',
+    desc: '刚入职，大量document review、due diligence、备忘录撰写。几乎没有客户接触。',
+  },
+  {
+    title: '2nd–3rd Year Associate',
+    years: 'Year 2–3',
+    salary_us: '$235k–$295k',
+    desc: '开始独立负责交易组件，参与谈判，与客户有直接接触。工作量显著上升。',
+  },
+  {
+    title: '4th–6th Year Associate',
+    years: 'Year 4–6',
+    salary_us: '$345k–$390k',
+    desc: '高级Associate，开始管理初级Associate，主导部分交易。此阶段很多人选择跳槽至内法或买方。',
+  },
+  {
+    title: 'Senior Associate / Counsel',
+    years: 'Year 7–9',
+    salary_us: '$415k–$435k',
+    desc: '接近合伙人决策时间点（Up or Out）。若不晋升Partner则需选择离开，大多数人在这一阶段离开律所。',
+  },
+  {
+    title: 'Non-Equity / Equity Partner',
+    years: 'Year 10+',
+    salary_us: '$500k–$5M+',
+    desc: '合伙人收入与个人账单（book of business）直接挂钩。Equity Partner按利润分成，差距极大。',
+  },
+];
+
+const practiceGroups = [
+  { name: '并购（M&A）', desc: '最声望最忙，处理大型收购、合并、LBO交易', icon: '🏗️' },
+  { name: '资本市场（Capital Markets）', desc: 'IPO、债券发行、SEC合规，与投行高度协作', icon: '📈' },
+  { name: '诉讼（Litigation）', desc: '商业诉讼、证券诉讼、仲裁，节奏更不可预测', icon: '⚖️' },
+  { name: '私募（Private Equity）', desc: '服务PE基金收购、投资文件，关系最近基金圈', icon: '🏦' },
+  { name: '知识产权（IP）', desc: '专利、商标、版权，科技/制药领域需求旺', icon: '💡' },
+  { name: '税务（Tax）', desc: '交易税务结构设计，CPA背景更受青睐', icon: '📋' },
+  { name: '劳工与就业（Labor & Employment）', desc: '劳动合同、裁员、雇佣诉讼', icon: '👔' },
+  { name: '金融监管（Financial Regulatory）', desc: '银行/证券监管，与政府机构打交道', icon: '🏛️' },
+];
+---
+
+<Base title="美国大所（BigLaw）深度解析" description="BigLaw职业路径、Cravath薪资体系、实践领域选择——从哥大LLM到美国顶级律所的完整解析">
+
+  <a href="/industry/law/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    法律行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-red-50 text-red-700 border border-red-200 font-semibold px-3 py-1 rounded-full">Legal · BigLaw</span>
+      <span class="text-[10px] font-medium text-red-600 bg-red-50 border border-red-200 px-2.5 py-1 rounded-full">入行难度：极难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      美国大所（BigLaw）
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">BigLaw — US Law Firms</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+      {[
+        { label: '1年级起薪', value: '$215,000' },
+        { label: '薪资体系', value: 'Cravath Scale' },
+        { label: '标准工时', value: '2,000+ 计费时' },
+        { label: 'JD要求', value: 'Top 14必备' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+
+    <div class="bg-red-50 border border-red-200 rounded-xl px-5 py-4 text-sm text-red-800 leading-relaxed">
+      <strong>核心认知：</strong>BigLaw不是普通法律工作——它是全球最顶尖的法律服务机构，服务对象是Fortune 500、PE基金、跨国政府。进入门槛极高（几乎必须JD学历+Top Law School+Law Review），但一旦进入，薪资体系完全透明且极具竞争力。
+    </div>
+  </header>
+
+  <!-- 1. What is BigLaw -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 什么是 BigLaw</h2>
+    <div class="prose-custom space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>BigLaw泛指美国最大的律师事务所，通常指Am Law 100——即美国年收入最高的前100家律所。这些律所的共同特点：规模庞大（数百至数千名律师）、专注高端商业法律服务、全球设有办公室、以合伙人制（Partnership）为核心。</p>
+      <p>名字你大概听过的：Sullivan & Cromwell、Skadden Arps、Latham & Watkins、Weil Gotshal、Kirkland & Ellis（全美收入最高）、Cleary Gottlieb（以中国/跨境业务著称）、Davis Polk……这些律所处理的交易，少则数亿，多则数百亿美元。</p>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-5 mt-4">
+        <p class="font-semibold text-stone-800 mb-3">BigLaw 的商业模式</p>
+        <p class="text-xs leading-relaxed">律所赚钱的逻辑简单粗暴：<strong>时间就是金钱</strong>（billable hours）。每位律师的计费小时乘以小时费率（Partner可达$1,500–$2,500/小时），就是律所的收入来源。这直接解释了为什么工作量这么大——律所的激励系统要求每个人每年记录足够的计费时间（通常2,000–2,200小时，实际工作时间更多）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Practice Groups -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 主要实践领域（Practice Groups）</h2>
+    <p class="text-stone-500 text-sm mb-5 leading-relaxed">BigLaw按业务类型分为不同Practice Groups（实践组），进所后可以申请自己感兴趣的方向。选对方向对职业发展至关重要。</p>
+    <div class="grid sm:grid-cols-2 gap-3">
+      {practiceGroups.map(pg => (
+        <div class="flex gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4">
+          <span class="text-2xl shrink-0">{pg.icon}</span>
+          <div>
+            <p class="font-semibold text-stone-800 text-sm mb-1">{pg.name}</p>
+            <p class="text-xs text-stone-500 leading-relaxed">{pg.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-800">
+      <strong>如何选择：</strong>文科/政策背景→金融监管或资本市场；商科背景→M&A或私募；理工科背景→知识产权；有诉讼热情→Litigation。M&A是最声望也最忙的方向，但未必适合所有人。
+    </div>
+  </section>
+
+  <!-- 3. Career Path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. 职业路径与薪资（Cravath Scale）</h2>
+    <p class="text-stone-500 text-sm mb-6 leading-relaxed">Cravath Scale是美国BigLaw的行业薪资标准，由律所Cravath, Swaine & Moore率先设定，其他顶级律所跟随。薪资完全透明、完全统一——这在金融行业是不可想象的。</p>
+    <div class="space-y-3">
+      {levels.map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5 hover:border-red-200 transition-colors">
+          <div class="shrink-0 w-8 h-8 rounded-full bg-red-50 border border-red-200 text-red-700 font-bold text-sm flex items-center justify-center">
+            {i + 1}
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.title}</span>
+              <span class="text-[10px] text-stone-400">{l.years}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed mb-2">{l.desc}</p>
+          </div>
+          <div class="shrink-0 text-right">
+            <div class="font-bold text-columbia-navy text-sm">{l.salary_us}</div>
+            <div class="text-[10px] text-stone-400">基础薪</div>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="mt-4 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-500 leading-relaxed">
+      <strong>注：</strong>以上为基础薪资（base salary），不含年终奖金（bonus）。BigLaw年终奖通常与billable hours完成情况挂钩，一年级奖金约$20k–$30k，高年级更高。Partner收入以利润分成为主，差距极大。
+    </div>
+  </section>
+
+  <!-- 4. Daily Life -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 真实日常</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="space-y-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-semibold text-stone-800 mb-3 text-sm">典型工作日（交易期）</p>
+          <div class="space-y-2 text-xs text-stone-500">
+            <div class="flex gap-2"><span class="text-stone-400 w-14 shrink-0">9:00 AM</span><span>处理邮件、更新文件</span></div>
+            <div class="flex gap-2"><span class="text-stone-400 w-14 shrink-0">10:00</span><span>与Partner开会，分配当日任务</span></div>
+            <div class="flex gap-2"><span class="text-stone-400 w-14 shrink-0">11:00–7PM</span><span>起草合同、修改文件、Due Diligence</span></div>
+            <div class="flex gap-2"><span class="text-stone-400 w-14 shrink-0">7:00 PM</span><span>（如果幸运）吃饭</span></div>
+            <div class="flex gap-2"><span class="text-stone-400 w-14 shrink-0">8:00–12:00</span><span>继续处理紧急修改，回复客户</span></div>
+          </div>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-xs text-red-800">
+          <strong>工作强度现实：</strong>BigLaw Associate平均每年工作时间超过2,500小时（含非计费事务）。全年无休地工作是常态而非例外。很多人在3–5年后精疲力竭离开律所跳入内法。
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-semibold text-stone-800 mb-3 text-sm">BigLaw Associate 的心理状态</p>
+          <ul class="space-y-2 text-xs text-stone-500">
+            <li class="flex gap-2"><span class="text-emerald-500">✓</span><span>高薪、顶级平台背书、接触最复杂的商业交易</span></li>
+            <li class="flex gap-2"><span class="text-emerald-500">✓</span><span>3–5年经验是内法、PE、咨询的优质跳板</span></li>
+            <li class="flex gap-2"><span class="text-red-400">✗</span><span>工作时间极不可控，周末和假期随时被打断</span></li>
+            <li class="flex gap-2"><span class="text-red-400">✗</span><span>初年Associate几乎无任何自主性</span></li>
+            <li class="flex gap-2"><span class="text-red-400">✗</span><span>合伙人晋升率极低（&lt;10%），多数人注定离开</span></li>
+            <li class="flex gap-2"><span class="text-amber-400">△</span><span>作为跳板则价值极高——离开不代表失败</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. How to get in - JD vs LLM -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">5. 如何进入 BigLaw：JD 是唯一正路</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>这里需要说清楚一件让很多人失望的事：<strong class="text-stone-800">LLM几乎无法进入顶级BigLaw做律师。</strong></p>
+      <p>BigLaw的招聘逻辑是：通过On Campus Interview (OCI)，在Law School 2L（二年级）期间拿到Summer Associate（暑期实习）offer，实习结束后转为全职。OCI几乎只面向JD学生，顶级律所的OCI名单几乎只有T14法学院（Yale, Harvard, Columbia, NYU, Chicago等）。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-2">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">LLM 能做什么</p>
+          <ul class="space-y-1.5 text-xs text-stone-500">
+            <li>• 外国律师资格转换（通过NY Bar考试可以外国律师身份执业）</li>
+            <li>• 在外国律所的NY/London办公室做跨境业务</li>
+            <li>• 金融机构法务、合规部门</li>
+            <li>• 政府机构、国际组织法律岗位</li>
+            <li>• 回国后在涉外律所有竞争力</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">JD 才能做什么</p>
+          <ul class="space-y-1.5 text-xs text-stone-500">
+            <li>• 通过OCI进入顶级BigLaw做Associate</li>
+            <li>• 成为美国注册律师（Attorney at Law）</li>
+            <li>• 代理客户出庭诉讼</li>
+            <li>• 有合伙人晋升通道</li>
+            <li>• 在政府监管机构（SEC, DOJ）执法岗位</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+        <strong>例外情况：</strong>少数顶级律所（尤其是Cleary Gottlieb）会从LLM项目招收外国律师做Associate，专门处理跨境业务。但这些岗位极少，竞争也非常激烈，且通常要求所在国已有律师执照。
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Cross-border opportunity (Chinese speakers) -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">6. 中国法律背景的机会：跨境业务</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>尽管直接以LLM身份进BigLaw做Associate的路基本封闭，中国法律背景的候选人在以下方向仍有独特优势：</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-semibold text-stone-800 mb-2">外资所北京/香港办公室</p>
+          <p class="text-xs text-stone-500 leading-relaxed">Sullivan、Cleary、Skadden、Latham在北京/香港均设有办公室，处理跨境并购、资本市场、中概股相关事务。中文能力+美国LLM学历+中国法律背景是竞争优势。但注意：近年外资所在华业务受中美关系影响有所收缩。</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-semibold text-stone-800 mb-2">回国进红圈所/精品所</p>
+          <p class="text-xs text-stone-500 leading-relaxed">美国顶校LLM学历+中国法学背景，在国内涉外律所（中伦、君合、方达、汉坤等）有竞争力。特别是处理香港上市、跨境并购、外资进入中国等业务。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. SIPA Perspective -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">7. 从 SIPA 进入法律行业？</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>SIPA不是法学院，SIPA的MPA/MIA学位不能替代JD。但法律行业和公共政策有大量交叉点，SIPA背景在以下方向有价值：</p>
+      <ul class="space-y-2 text-xs list-disc list-inside">
+        <li><strong>政府法律岗位</strong>：DOJ、SEC、FTC等监管机构——需要法律+政策结合背景</li>
+        <li><strong>国际组织法律部门</strong>：WTO、世界银行法律顾问——国际法+政策背景受欢迎</li>
+        <li><strong>法规政策咨询</strong>：在咨询公司做监管战略——不需要JD，需要政策分析能力</li>
+        <li><strong>同时攻读 JD</strong>：Columbia允许双学位（JD + MIA/MPA），两者结合是竞争力最强的组合</li>
+      </ul>
+      <p class="text-xs text-columbia-navy/50 mt-2">如果目标是BigLaw，最可行路径是先完成SIPA，再申请JD项目（有研究生学位会是加分项但不是决定性因素，Top 14 GPA+LSAT才是关键）。</p>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/law/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 返回法律行业</a>
+    <a href="/industry/law/china-lawfirm/" class="text-columbia-blue hover:underline no-underline">中国律所 →</a>
+  </div>
+</Base>

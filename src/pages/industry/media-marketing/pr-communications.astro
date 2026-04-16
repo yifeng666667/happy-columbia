@@ -1,0 +1,182 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="PR / 公关传播深度解析" description="企业公关、危机公关、政府公关——PR职业的真实面貌与媒体生态重构">
+
+  <a href="/industry/media-marketing/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    传媒与市场营销
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-pink-50 text-pink-700 border border-pink-200 font-semibold px-3 py-1 rounded-full">Media & Marketing · PR</span>
+      <span class="text-[10px] font-medium text-pink-600 bg-pink-50 border border-pink-200 px-2.5 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      PR / 公关传播
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Public Relations & Communications — 从企业形象管理到危机应对</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '美国起步', value: '$45k–$65k' },
+        { label: '顶端', value: 'CCO / PR Director' },
+        { label: '核心能力', value: '写作 + 关系网络' },
+        { label: '甲乙方', value: '内部 vs 代理公司' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. What is PR -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 公关是什么（和营销的区别）</h2>
+    <div class="prose-custom space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>公关和营销经常被混淆，但有本质区别：<strong class="text-stone-800">营销是"我们为自己发声"，公关是"让别人为我们发声"</strong>。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <div class="bg-pink-50 border border-pink-200 rounded-xl p-4">
+          <p class="font-semibold text-pink-800 mb-2 text-sm">公关（PR）</p>
+          <ul class="text-xs text-pink-700 space-y-1">
+            <li>• 通过媒体、记者、分析师传播信息</li>
+            <li>• 媒体报道是"免费赚来的"（Earned Media）</li>
+            <li>• 核心是关系管理和可信度建立</li>
+            <li>• 效果难以精确量化</li>
+            <li>• 危机时是最重要的防线</li>
+          </ul>
+        </div>
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2 text-sm">营销（Marketing）</p>
+          <ul class="text-xs text-stone-600 space-y-1">
+            <li>• 通过付费渠道（广告）直接触达受众</li>
+            <li>• 花钱购买曝光（Paid Media）</li>
+            <li>• 核心是消费者行为和转化</li>
+            <li>• ROI相对可量化</li>
+            <li>• 直接影响销售</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Types of PR -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 公关的细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        {
+          title: '企业公关（Corporate PR）',
+          desc: '管理公司整体形象——媒体关系、年报发布、高管发言人训练、ESG传播。大型上市公司的PR部门是核心功能。',
+          icon: '🏢',
+          salary: '内部PR：$70k–$160k',
+        },
+        {
+          title: '危机公关（Crisis Communications）',
+          desc: '产品召回、高管丑闻、数据泄露——当公司面临危机时，PR团队是第一道防线。需要极强的压力承受能力和快速决策能力。',
+          icon: '🚨',
+          salary: '高级危机顾问：$150k+',
+        },
+        {
+          title: '科技/金融PR（Sector Specialist）',
+          desc: '专注科技或金融行业的PR——需要深度行业知识，帮助公司向分析师、媒体、投资者讲好故事。',
+          icon: '💡',
+          salary: '科技PR经理：$80k–$140k',
+        },
+        {
+          title: '政府公关 / 政府关系（Government Affairs）',
+          desc: '与政府机构、监管部门沟通——需要政策理解和政治网络。与咨询、智库工作交叉，SIPA背景高度相关。',
+          icon: '🏛️',
+          salary: '$80k–$200k（资深顾问）',
+        },
+        {
+          title: '国际传播（International PR）',
+          desc: '跨文化、跨语言的品牌传播——中国企业出海、外资进中国市场，都需要本地化的传播策略。双语能力是稀缺资产。',
+          icon: '🌍',
+          salary: '视地区和公司而定',
+        },
+        {
+          title: '公关代理公司',
+          desc: 'Edelman、Weber Shandwick、Ketchum等——乙方PR公司，服务多个客户。工作多元，成长快，但工资偏低，工作强度高。',
+          icon: '🏗️',
+          salary: '起步$40k–$60k，成长后更高',
+        },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-2xl shrink-0">{item.icon}</span>
+            <div>
+              <p class="font-bold text-stone-900 text-sm">{item.title}</p>
+              <p class="text-[10px] text-columbia-blue mt-0.5">{item.salary}</p>
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. Real daily life -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. PR 的真实日常</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="space-y-3">
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-5 text-sm">
+          <p class="font-semibold text-stone-800 mb-3">甲方内部PR（企业传播部）</p>
+          <div class="space-y-2 text-xs text-stone-500">
+            <div class="flex gap-2"><span class="text-stone-400">日常</span><span>每日媒体监测，跟踪企业相关报道</span></div>
+            <div class="flex gap-2"><span class="text-stone-400">周级</span><span>撰写新闻稿、高管讲话稿、媒体简报</span></div>
+            <div class="flex gap-2"><span class="text-stone-400">月级</span><span>组织媒体发布会、行业活动、分析师沟通会</span></div>
+            <div class="flex gap-2"><span class="text-stone-400">危机</span><span>一切推翻重来，24小时待命</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <div class="bg-white border border-stone-200 rounded-xl p-5 text-sm">
+          <p class="font-semibold text-stone-800 mb-3">乙方PR代理公司</p>
+          <div class="space-y-2 text-xs text-stone-500">
+            <div class="flex gap-2"><span class="text-stone-400">日常</span><span>维护媒体关系，主动提供独家报道线索</span></div>
+            <div class="flex gap-2"><span class="text-stone-400">项目</span><span>为客户策划发布活动、媒体路演</span></div>
+            <div class="flex gap-2"><span class="text-stone-400">报告</span><span>撰写媒体覆盖报告，计算Media Value</span></div>
+            <div class="flex gap-2"><span class="text-stone-400">压力</span><span>客户满意度管理，续约压力</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-800">
+      <strong>PR最大的现实挑战：</strong>传统媒体影响力下降，"在NYT/华尔街日报上刊登文章"的价值大幅缩水。公关人员现在需要同时驾驭传统媒体、LinkedIn、播客、社交媒体等多个渠道，同时还要应对真人/AI生成虚假信息的危机。
+    </div>
+  </section>
+
+  <!-- 4. SIPA & PR -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. SIPA 背景在 PR 领域的竞争力</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>公关是文科背景（传播、新闻、政治）最传统的去向之一，但SIPA的政策分析背景在以下细分方向有更强竞争力：</p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-2">
+        {[
+          { title: '政府关系 / 游说', desc: '需要政策知识+政治网络，SIPA的课程体系直接适配。大型公司的Government Affairs部门薪资不低于PR。' },
+          { title: '国际传播', desc: '中国企业出海、外资中国战略——需要语言能力+政策理解+传播技能，SIPA毕业生有独特竞争力。' },
+          { title: '金融/科技机构传播', desc: '服务金融机构或科技公司的PR——需要能看懂财报、理解监管逻辑，SIPA背景恰到好处。' },
+          { title: '智库/国际组织传播', desc: 'WEF、IMF、世界银行等机构的Communications部门——政策+传播双背景，SIPA是最匹配的学历。' },
+        ].map(item => (
+          <div class="bg-white rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1">{item.title}</p>
+            <p class="text-stone-600">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/media-marketing/digital-marketing/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 数字营销与增长</a>
+    <a href="/industry/media-marketing/journalism-media/" class="text-columbia-blue hover:underline no-underline">新闻媒体 →</a>
+  </div>
+</Base>

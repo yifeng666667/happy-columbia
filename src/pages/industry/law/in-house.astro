@@ -1,0 +1,173 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="企业内法（In-House Counsel）深度解析" description="从律所跳槽还是直接入职内法？企业法务的真实职能、职业发展与薪酬对比">
+
+  <a href="/industry/law/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    法律行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-red-50 text-red-700 border border-red-200 font-semibold px-3 py-1 rounded-full">Legal · In-House</span>
+      <span class="text-[10px] font-medium text-blue-600 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      企业内法（In-House Counsel）
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">In-House Legal Counsel · 企业法务 · General Counsel</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+      {[
+        { label: '美国起步', value: '$120k–$180k' },
+        { label: '工作节奏', value: '相对可控' },
+        { label: '常见背景', value: '律所2–5年' },
+        { label: '顶端', value: 'General Counsel' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. What is In-House -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 内法是什么</h2>
+    <div class="prose-custom space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>内法（In-House Counsel）是受雇于企业、专职为该企业提供法律服务的律师。与律所律师最大的区别：<strong class="text-stone-800">你只有一个客户，就是你的雇主。</strong></p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2 text-sm">内法的核心工作</p>
+          <ul class="space-y-1.5 text-xs text-stone-600">
+            <li>• 合同审查与谈判（供应商、客户、合作协议）</li>
+            <li>• 合规管理（行业监管、内控制度）</li>
+            <li>• 诉讼管理（对外聘律师指导）</li>
+            <li>• 并购尽调（配合外部律所）</li>
+            <li>• 知识产权保护</li>
+            <li>• 劳动用工合规</li>
+            <li>• 董事会及公司治理支持</li>
+          </ul>
+        </div>
+        <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2 text-sm">内法 vs 律所律师</p>
+          <div class="space-y-2 text-xs">
+            <div class="flex gap-2"><span class="text-emerald-500 shrink-0">✓</span><span>工作时间更可预测（通常无Billable Hours压力）</span></div>
+            <div class="flex gap-2"><span class="text-emerald-500 shrink-0">✓</span><span>更接近商业决策，理解业务全局</span></div>
+            <div class="flex gap-2"><span class="text-emerald-500 shrink-0">✓</span><span>福利通常更好（股权、退休金）</span></div>
+            <div class="flex gap-2"><span class="text-red-400 shrink-0">✗</span><span>薪资上限较低（很少超过律所顶级合伙人）</span></div>
+            <div class="flex gap-2"><span class="text-red-400 shrink-0">✗</span><span>法律技能退化风险（工作类型偏重谈判与管理）</span></div>
+            <div class="flex gap-2"><span class="text-red-400 shrink-0">✗</span><span>很少有机会"回炉"成为顶级律师</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Where to work -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 在哪类公司做内法</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        {
+          title: '科技公司（FAANG / 中国大厂）',
+          desc: '业务复杂度最高，涉及数据隐私（GDPR/PIPL）、反垄断、知识产权、监管合规，经常与全球监管机构打交道。薪资待遇最具竞争力。',
+          color: 'bg-blue-50 border-blue-200 text-blue-800',
+        },
+        {
+          title: '金融机构（银行、PE、资管）',
+          desc: '金融监管最为复杂，需要深入了解证券法、银行法。工作强度接近律所，但与投资团队更近，有机会参与战略决策。',
+          color: 'bg-amber-50 border-amber-200 text-amber-800',
+        },
+        {
+          title: '跨国企业（500强）',
+          desc: '稳定、结构化、福利好。国内法务部通常人员精简，业务范围宽但深度有限。晋升到区域法务总监需要7–10年。',
+          color: 'bg-emerald-50 border-emerald-200 text-emerald-800',
+        },
+        {
+          title: '初创公司 / 成长期企业',
+          desc: '薪资较低但股权有价值（赌对了收益丰厚）。法务往往一人独立负责所有法律事务，成长快但缺乏系统训练。',
+          color: 'bg-purple-50 border-purple-200 text-purple-800',
+        },
+      ].map(c => (
+        <div class={`rounded-xl border p-5 ${c.color}`}>
+          <p class="font-bold mb-2 text-sm">{c.title}</p>
+          <p class="text-xs leading-relaxed opacity-90">{c.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. Career Path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. 职业路径</h2>
+    <div class="space-y-3">
+      {[
+        { stage: '直接入职（应届 / 非JD）', desc: '部分企业（尤其是中国公司）接受非JD背景的法务助理岗位，处理合同审查、法规研究等基础工作。但晋升天花板明显。', note: '美国：通常要求JD或并行法学学位' },
+        { stage: 'Junior In-House Counsel', years: '律所0–3年后跳槽', desc: '最常见的入职路径：先在律所积累2–3年经验，再跳槽至企业法务。此时有具体的实务技能，谈判薪资有优势。', note: '美国起步：$120k–$160k' },
+        { stage: 'Senior Counsel / Assistant GC', years: '内法5–8年', desc: '带领小团队，管理外部律师，参与商业谈判。开始接触并购、重组等复杂事务。', note: '美国：$180k–$250k' },
+        { stage: 'General Counsel（法务总监 / 首席法律官）', years: '内法10年+', desc: 'GC是内法的终点——向CEO/董事会汇报，统管整个法律合规部门，是公司核心管理层的一员。顶级科技公司GC可达$500k–$1M+（含股权）。', note: '国内：大型公司法务总监' },
+      ].map((p, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{p.stage}</span>
+              {p.years && <span class="text-[10px] text-stone-400">{p.years}</span>}
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed mb-1">{p.desc}</p>
+            <p class="text-[10px] text-columbia-blue">{p.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 4. China in-house -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 中国企业法务现状</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>中国企业法务在过去十年经历了快速专业化——互联网大厂法务部从几十人扩张到数百人，职能从简单合同审查升级为复杂合规与监管应对。</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">当前热点需求</p>
+          <ul class="text-xs text-stone-500 space-y-1">
+            <li>• 数据安全与个人信息保护合规</li>
+            <li>• 反垄断合规（平台经济监管）</li>
+            <li>• 出海企业法律风险管理</li>
+            <li>• AI产品合规（生成式AI监管）</li>
+            <li>• 国际制裁与出口管制应对</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">国内内法薪资</p>
+          <p class="text-xs text-stone-500 leading-relaxed">受整体经济环境影响，大厂法务薪资增长放缓。头部互联网、金融科技公司的高级法务仍保持行业较高水平，但跟互联网最顶峰时期相比有所调整。具体数据请参考脉脉等平台最新信息。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SIPA + In-House -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">5. SIPA 背景进入内法</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>SIPA的政策分析背景在特定内法方向有竞争力：</p>
+      <ul class="space-y-2 text-xs list-disc list-inside">
+        <li><strong>监管事务（Government Affairs / Regulatory Affairs）</strong>：不需要JD，需要深度政策理解，SIPA完美匹配</li>
+        <li><strong>合规岗（Compliance Officer）</strong>：金融机构合规不要求JD，看重行业理解和风险意识</li>
+        <li><strong>国际政府关系（International Government Relations）</strong>：跨国公司的GR岗位与法律交叉，SIPA背景有优势</li>
+        <li><strong>并行法学学位</strong>：部分人选择SIPA+JD双学位，毕业后进入科技/金融内法</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/law/china-lawfirm/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 中国律所</a>
+    <a href="/industry/law/llm-jd/" class="text-columbia-blue hover:underline no-underline">LLM vs JD →</a>
+  </div>
+</Base>

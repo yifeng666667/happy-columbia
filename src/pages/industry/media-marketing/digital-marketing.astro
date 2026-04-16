@@ -1,0 +1,177 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="数字营销与增长深度解析" description="SEO、SEM、增长黑客、社交媒体——数字营销职业路径与AI时代的机遇">
+
+  <a href="/industry/media-marketing/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    传媒与市场营销
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-pink-50 text-pink-700 border border-pink-200 font-semibold px-3 py-1 rounded-full">Media & Marketing · Digital</span>
+      <span class="text-[10px] font-medium text-pink-600 bg-pink-50 border border-pink-200 px-2.5 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      数字营销与增长
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Digital Marketing & Growth — 数据驱动的营销新范式</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '美国起步', value: '$55k–$75k' },
+        { label: '成长快道', value: 'Growth Hacker' },
+        { label: '核心技能', value: '数据 + 创意' },
+        { label: 'AI冲击', value: '高（但也是机会）' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. Overview -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 数字营销的核心模块</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        {
+          icon: '🔍',
+          title: 'SEO（搜索引擎优化）',
+          desc: '通过内容和技术手段让网页在搜索结果中获得更高排名。长效但见效慢，需要内容策略+技术理解。AI工具正在改变SEO内容生产效率。',
+          skill: '内容写作、关键词研究、技术SEO',
+        },
+        {
+          icon: '💰',
+          title: 'SEM / Paid Ads（付费广告）',
+          desc: 'Google Ads、Facebook Ads、TikTok Ads——付费获取流量。数据分析能力是核心，需要不断A/B测试优化ROI。管理数百万美元预算是这个方向的常态。',
+          skill: 'Google Ads认证、数据分析、A/B测试',
+        },
+        {
+          icon: '📱',
+          title: '社交媒体营销',
+          desc: '内容策略、社区运营、创作者合作——在TikTok/Instagram/LinkedIn等平台建立品牌存在感。创意+平台算法理解缺一不可。',
+          skill: '内容策划、社区管理、KOL合作',
+        },
+        {
+          icon: '📧',
+          title: 'Email & CRM',
+          desc: '用户留存最高ROI的渠道之一。邮件营销自动化、用户分群、生命周期管理。数据分析和营销自动化工具（HubSpot, Klaviyo）是核心。',
+          skill: 'HubSpot/Salesforce、用户分群、自动化',
+        },
+        {
+          icon: '📊',
+          title: '增长（Growth）',
+          desc: '硅谷科技公司热衷的方法论——用数据驱动用户增长。结合产品、数据、营销，关注获客成本（CAC）和用户生命周期价值（LTV）。',
+          skill: 'SQL/Python基础、漏斗分析、实验设计',
+        },
+        {
+          icon: '🤖',
+          title: 'Marketing Analytics',
+          desc: '营销数据分析师——衡量各渠道ROI，建立归因模型，指导营销预算分配。与数据科学家工作最相近，Python/SQL能力越来越重要。',
+          skill: 'Python/SQL、GA4、Tableau/Looker',
+        },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-2xl shrink-0">{item.icon}</span>
+            <p class="font-bold text-stone-900 text-sm">{item.title}</p>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed mb-3">{item.desc}</p>
+          <p class="text-[10px] text-columbia-blue">核心技能：{item.skill}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. Career Path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 职业路径</h2>
+    <div class="space-y-3">
+      {[
+        { stage: 'Digital Marketing Specialist / Coordinator', years: '0–2年', salary: '$50k–$70k', desc: '执行层：管理某个渠道（如SEM或社交媒体），汇报数据，优化投放。' },
+        { stage: 'Digital Marketing Manager / Growth Manager', years: '2–5年', salary: '$80k–$120k', desc: '独立负责一个或多个渠道，设定策略，管理预算，带初级成员。' },
+        { stage: 'Head of Marketing / VP Growth', years: '5–9年', salary: '$130k–$200k', desc: '统管数字营销团队，对整体获客成本和收入增长目标负责。' },
+        { stage: 'CMO / CGO（首席增长官）', years: '10年+', salary: '$200k–$400k+', desc: '向CEO汇报，制定整体增长战略。科技公司CMO/CGO含股权薪资可大幅超过以上数字。' },
+      ].map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-pink-50 border border-pink-200 text-pink-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.stage}</span>
+              <span class="text-[10px] text-stone-400">{l.years}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed">{l.desc}</p>
+          </div>
+          <div class="shrink-0 text-right">
+            <div class="font-bold text-columbia-navy text-sm">{l.salary}</div>
+            <div class="text-[10px] text-stone-400">🇺🇸</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. AI impact -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. AI 正在重塑数字营销</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>数字营销是AI影响最深的职业方向之一——内容生产、广告文案、创意素材都可以被AI大幅加速。这既是威胁，也是机会。</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+          <p class="font-bold text-red-800 mb-2 text-sm">AI正在替代的工作</p>
+          <ul class="text-xs text-red-700 space-y-1">
+            <li>• 标准化内容写作（博客、社媒文案）</li>
+            <li>• A/B测试素材生成</li>
+            <li>• 基础数据报告整理</li>
+            <li>• 程序化广告投放优化</li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+          <p class="font-bold text-emerald-800 mb-2 text-sm">AI放大的人类价值</p>
+          <ul class="text-xs text-emerald-700 space-y-1">
+            <li>• 策略判断与创意方向</li>
+            <li>• 品牌一致性的把关</li>
+            <li>• 复杂消费者洞察</li>
+            <li>• 跨渠道整合营销规划</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+        <strong>建议：</strong>掌握AI工具（ChatGPT、Midjourney、Claude用于营销写作）本身就是竞争力。懂得"什么时候用AI、什么时候需要人"比单纯抵制或单纯依赖都更有价值。
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. China digital marketing -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 中国数字营销：完全不同的战场</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>中国数字营销与美国几乎完全不同——平台、算法、消费行为、KOL生态都是独立体系，需要单独学习。</p>
+      <div class="grid sm:grid-cols-3 gap-3">
+        {[
+          { platform: '小红书', role: '种草/内容营销', desc: 'UGC为主，KOC（普通用户）影响力有时超过KOL，适合美妆/食品/生活方式品牌' },
+          { platform: '抖音/TikTok', role: '短视频+直播带货', desc: '内容+电商一体化，直播带货已成核心销售渠道，需要专门的直播运营能力' },
+          { platform: '微信生态', role: '私域流量运营', desc: '公众号+小程序+企业微信组成私域体系，高ROI但搭建成本高，以老用户复购为核心' },
+        ].map(p => (
+          <div class="bg-white border border-stone-200 rounded-xl p-4">
+            <p class="font-bold text-stone-900 mb-1 text-sm">{p.platform}</p>
+            <p class="text-[10px] text-stone-400 mb-2">{p.role}</p>
+            <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/media-marketing/brand-marketing/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 品牌与市场营销</a>
+    <a href="/industry/media-marketing/pr-communications/" class="text-columbia-blue hover:underline no-underline">PR / 公关传播 →</a>
+  </div>
+</Base>

@@ -56,10 +56,10 @@ const industries = [
     emoji: '⚖️',
     title: '法律行业',
     titleEn: 'Legal',
-    desc: '美国律所、中国律所、企业法务内律——JD vs LLM，中美法律职业路径的本质差异',
-    tags: ['律所', '内法', 'JD', 'LLM', '合规'],
-    status: 'coming',
-    count: 0,
+    desc: '美国大所BigLaw、中国律所、企业内法——JD vs LLM，中美法律职业路径的本质差异',
+    tags: ['BigLaw', '内法', 'JD', 'LLM', '合规'],
+    status: 'published',
+    count: 4,
     color: 'red',
   },
   {
@@ -68,11 +68,47 @@ const industries = [
     emoji: '📢',
     title: '传媒与市场营销',
     titleEn: 'Media & Marketing',
-    desc: '新闻媒体、品牌公关、数字营销、内容创作——传统媒体衰退后的职业重构',
-    tags: ['新闻媒体', '品牌公关', '数字营销', '内容'],
+    desc: '品牌营销、数字营销、PR公关、新闻媒体——传统媒体衰退后的职业重构与AI冲击',
+    tags: ['品牌营销', 'PR公关', '数字营销', '新闻媒体'],
+    status: 'published',
+    count: 4,
+    color: 'pink',
+  },
+  {
+    id: 'education-consulting',
+    href: '/industry/education-consulting/',
+    emoji: '🎓',
+    title: '教育咨询 / 留学行业',
+    titleEn: 'Education & Study Abroad Consulting',
+    desc: '留学申请咨询、教育科技、职业培训——竞争激烈但需求刚性，帮助别人规划未来的职业',
+    tags: ['留学咨询', '教育科技', '职业规划', 'EdTech'],
     status: 'coming',
     count: 0,
-    color: 'pink',
+    color: 'teal',
+  },
+  {
+    id: 'intl-trade',
+    href: '/industry/intl-trade/',
+    emoji: '🚢',
+    title: '外贸与国际商务',
+    titleEn: 'International Trade & Commerce',
+    desc: '跨境电商、进出口贸易、供应链管理——全球化重构下的外贸职业机会与挑战',
+    tags: ['跨境电商', '进出口', '供应链', '贸易合规'],
+    status: 'coming',
+    count: 0,
+    color: 'indigo',
+  },
+  {
+    id: 'manufacturing',
+    href: '/industry/manufacturing/',
+    emoji: '🏭',
+    title: '制造业与供应链',
+    titleEn: 'Manufacturing & Supply Chain',
+    desc: '跨国制造业管理、供应链优化、智能制造——被低估的传统行业，国际化机会远超预期',
+    tags: ['供应链', '运营管理', '智能制造', '工厂管理'],
+    status: 'coming',
+    count: 0,
+    color: 'slate',
   },
 ];
 
@@ -83,6 +119,9 @@ const colorMap: Record<string, { bg: string; text: string; border: string; dot: 
   purple: { bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200', dot: 'bg-purple-400' },
   red:    { bg: 'bg-red-50',    text: 'text-red-700',    border: 'border-red-200',    dot: 'bg-red-400' },
   pink:   { bg: 'bg-pink-50',   text: 'text-pink-700',   border: 'border-pink-200',   dot: 'bg-pink-400' },
+  teal:   { bg: 'bg-teal-50',   text: 'text-teal-700',   border: 'border-teal-200',   dot: 'bg-teal-400' },
+  indigo: { bg: 'bg-indigo-50', text: 'text-indigo-700', border: 'border-indigo-200', dot: 'bg-indigo-400' },
+  slate:  { bg: 'bg-slate-50',  text: 'text-slate-700',  border: 'border-slate-200',  dot: 'bg-slate-400' },
 };
 ---
 
@@ -108,7 +147,7 @@ const colorMap: Record<string, { bg: string; text: string; border: string; dot: 
         从历史起源、商业模式、职业路径，到中美两个市场的真实差异——给每一个还在思考方向的你。
       </p>
       <p class="text-white/45 text-xs sm:text-sm leading-relaxed max-w-xl">
-        覆盖金融、咨询、科技商业岗、公共政策、法律、传媒等文科&商科主流方向。持续更新中。
+        覆盖金融、咨询、科技商业岗、公共政策、法律、传媒营销、教育咨询、外贸、制造业等文科&商科主流方向。持续更新中。
       </p>
     </div>
   </section>

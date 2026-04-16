@@ -1,0 +1,195 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const levels = [
+  { title: 'Marketing Coordinator / Associate', years: '0–2年', salary_us: '$45k–$65k', desc: '执行层：撰写推文、协调活动、整理报告、支持品牌活动。从这里开始建立对营销各环节的基础认知。' },
+  { title: 'Brand Manager / Marketing Manager', years: '3–6年', salary_us: '$70k–$120k', desc: '独立负责一条产品线的营销策略与执行。P&G、联合利华等消费品公司是品牌经理的黄埔军校。' },
+  { title: 'Senior Brand Manager / Director', years: '6–10年', salary_us: '$120k–$180k', desc: '带团队，管理更大预算，参与产品战略。开始影响产品定价、包装、渠道决策。' },
+  { title: 'VP of Marketing / CMO', years: '10年+', salary_us: '$200k–$500k+', desc: '首席营销官——制定全司品牌战略，管理整个营销部门，直接向CEO汇报。顶级科技/消费品CMO含股权可超百万美元。' },
+];
+---
+
+<Base title="品牌与市场营销深度解析" description="品牌经理职业路径、消费品vs科技公司营销、中美职场对比">
+
+  <a href="/industry/media-marketing/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    传媒与市场营销
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-pink-50 text-pink-700 border border-pink-200 font-semibold px-3 py-1 rounded-full">Media & Marketing · Brand</span>
+      <span class="text-[10px] font-medium text-pink-600 bg-pink-50 border border-pink-200 px-2.5 py-1 rounded-full">入行难度：中等</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      品牌与市场营销
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Brand & Marketing — 从品牌经理到 CMO</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '美国起步', value: '$45k–$65k' },
+        { label: '核心跳板', value: 'P&G / Unilever' },
+        { label: '热门行业', value: '消费品 / 科技' },
+        { label: '顶端路径', value: 'CMO Track' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. What is Brand Marketing -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 品牌营销是做什么的</h2>
+    <div class="prose-custom space-y-4 text-sm text-stone-600 leading-relaxed">
+      <p>品牌营销的核心职能是：<strong class="text-stone-800">让目标消费者认知、喜爱并选择你的产品</strong>。这听起来简单，但实际上涉及消费者心理研究、市场定位、传播策略、媒介计划、活动执行的完整链条。</p>
+      <div class="grid sm:grid-cols-3 gap-4 mt-4">
+        {[
+          { title: '品牌策略', items: ['目标人群定义', '品牌定位与差异化', '品牌故事与价值主张', '竞争对手分析'] },
+          { title: '营销传播', items: ['广告创意与制作', '媒介投放计划', '社交媒体内容', '活动与赞助'] },
+          { title: '市场分析', items: ['消费者调研（定量+定性）', '销售数据追踪', 'ROI评估', '新品上市支持'] },
+        ].map(g => (
+          <div class="bg-stone-50 border border-stone-200 rounded-xl p-4">
+            <p class="font-semibold text-stone-800 text-sm mb-2">{g.title}</p>
+            <ul class="space-y-1 text-xs text-stone-500">
+              {g.items.map(item => <li>• {item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Where to work -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 在哪里做品牌营销</h2>
+    <div class="space-y-4 text-sm">
+      <div class="bg-white border border-stone-200 rounded-xl p-5">
+        <div class="flex items-start gap-3">
+          <span class="text-2xl shrink-0">🎯</span>
+          <div>
+            <p class="font-bold text-stone-900 mb-1">甲方 · 品牌方（推荐）</p>
+            <p class="text-xs text-stone-500 leading-relaxed mb-2">直接在P&G、Unilever、L'Oreal、Apple、Nike等大型消费品或科技公司的市场部工作。预算大、资源足，职业晋升路径清晰（Associate → Brand Manager → Director → CMO）。</p>
+            <p class="text-[10px] text-stone-400">代表：Procter & Gamble（品牌经理圣地）、Unilever、Johnson & Johnson、Google Marketing、Apple Brand Marketing</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-5">
+        <div class="flex items-start gap-3">
+          <span class="text-2xl shrink-0">🏢</span>
+          <div>
+            <p class="font-bold text-stone-900 mb-1">乙方 · 广告代理（练手场）</p>
+            <p class="text-xs text-stone-500 leading-relaxed mb-2">WPP、Publicis、Omnicom等广告集团或独立创意公司。接触多个品牌客户，成长快但工作强度高、薪资偏低。通常作为跳板，2–3年后跳槽至甲方。</p>
+            <p class="text-[10px] text-stone-400">代表：Ogilvy、BBDO、Leo Burnett、McCann、本土：蓝色光标、华扬联众</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-5">
+        <div class="flex items-start gap-3">
+          <span class="text-2xl shrink-0">🚀</span>
+          <div>
+            <p class="font-bold text-stone-900 mb-1">初创公司（高风险高收益）</p>
+            <p class="text-xs text-stone-500 leading-relaxed mb-2">初创品牌的营销人员需要全栈——从内容到投放到公关一人扛。学习速度极快，但缺乏系统训练，股权回报不确定。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. P&G path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. P&G 系：品牌经理的黄埔军校</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-3">
+      <p>宝洁（P&G）被誉为品牌经理的起点学校——它发明了品牌经理制度，并培养了一代又一代消费品营销人才（许多现任Fortune 500 CMO都出自宝洁系）。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-2">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">P&G的培训体系</p>
+          <ul class="text-xs text-stone-500 space-y-1">
+            <li>• 入职即担任Brand Assistant，有真实预算和产品线</li>
+            <li>• 明确的晋升时间表（18–24个月/级）</li>
+            <li>• 密集的on-the-job training，快速积累决策经验</li>
+            <li>• 全球轮岗机会</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">后P&G去向</p>
+          <ul class="text-xs text-stone-500 space-y-1">
+            <li>• 跳槽至科技公司Marketing Director（薪资大幅上涨）</li>
+            <li>• 进入早期消费品公司担任CMO</li>
+            <li>• 转型至VC（消费品赛道投资判断）</li>
+            <li>• 自创消费品牌</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Career Path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 职业路径与薪资</h2>
+    <div class="space-y-3">
+      {levels.map((l, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5 hover:border-pink-200 transition-colors">
+          <div class="shrink-0 w-8 h-8 rounded-full bg-pink-50 border border-pink-200 text-pink-700 font-bold text-sm flex items-center justify-center">{i+1}</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{l.title}</span>
+              <span class="text-[10px] text-stone-400">{l.years}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed">{l.desc}</p>
+          </div>
+          <div class="shrink-0 text-right">
+            <div class="font-bold text-columbia-navy text-sm">{l.salary_us}</div>
+            <div class="text-[10px] text-stone-400">🇺🇸 base</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 5. China Market -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">5. 中国品牌营销市场</h2>
+    <div class="grid sm:grid-cols-2 gap-5 text-sm">
+      <div class="space-y-3">
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-bold text-stone-800 mb-2">国内品牌的崛起</p>
+          <p class="text-xs text-stone-500 leading-relaxed">完美日记、元气森林、花西子——国潮品牌爆发带来大量营销需求。这些公司营销预算充足，但节奏极快，对快速学习和执行能力要求高。</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <p class="font-bold text-stone-800 mb-2">平台营销特性</p>
+          <p class="text-xs text-stone-500 leading-relaxed">小红书、抖音、微博——中国社媒生态与美国完全不同。KOL/KOC营销、直播带货、私域流量是国内品牌的核心玩法，需要单独学习。</p>
+        </div>
+      </div>
+      <div class="bg-stone-50 border border-stone-200 rounded-xl p-5">
+        <p class="font-bold text-stone-800 mb-3 text-sm">国内薪资参考</p>
+        <p class="text-xs text-stone-500 leading-relaxed mb-3">国内品牌营销薪资差异较大：外资消费品（宝洁、联合利华）整体规范，头部互联网公司市场部薪资有竞争力；创业公司薪资基础偏低但有期权。受整体互联网行业调整影响，部分公司营销预算有所压缩。</p>
+        <p class="text-xs text-stone-400">具体数据请参考脉脉、拉勾网等渠道最新信息。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SIPA angle -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">6. SIPA 背景切入营销</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>SIPA的政策分析背景在传统品牌营销没有天然优势，但在以下方向有差异化竞争力：</p>
+      <ul class="space-y-2 text-xs list-disc list-inside">
+        <li><strong>国际市场/政府关系营销</strong>：服务政府、国际机构的机构营销，SIPA网络有帮助</li>
+        <li><strong>可持续/社会影响力品牌</strong>：ESG品牌传播、社会企业营销，公共政策视角是竞争力</li>
+        <li><strong>China Market Strategy</strong>：跨国公司的中国市场进入策略——需要政策+文化+营销三种能力结合</li>
+        <li><strong>内容/研究型营销</strong>：思想领导力内容（Thought Leadership）、白皮书、行业报告——政策研究背景完美匹配</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/media-marketing/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 传媒与市场营销</a>
+    <a href="/industry/media-marketing/digital-marketing/" class="text-columbia-blue hover:underline no-underline">数字营销与增长 →</a>
+  </div>
+</Base>

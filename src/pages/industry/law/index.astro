@@ -1,0 +1,167 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const sectors = [
+  {
+    href: '/industry/law/biglaw-us/',
+    emoji: '🏛️',
+    title: '美国大所（BigLaw）',
+    titleEn: 'BigLaw — US Law Firms',
+    desc: 'Sullivan & Cromwell、Skadden、Latham——顶级律所的真实门槛、工作强度与职业天花板，以及LLM能否真正敲开这扇门',
+    tags: ['M&A', 'Capital Markets', 'Litigation', 'Associate'],
+    difficulty: '极难',
+    diffColor: 'text-red-600 bg-red-50 border-red-200',
+    salary_us: '$215k–$435k (Cravath Scale)',
+    salary_cn: '外资所另计',
+  },
+  {
+    href: '/industry/law/china-lawfirm/',
+    emoji: '⚖️',
+    title: '中国律所',
+    titleEn: 'Chinese Law Firms',
+    desc: '红圈所、精品所、本土所——中国法律市场的生态结构、外资所萎缩背景下国内律所的崛起与机遇',
+    tags: ['红圈所', '精品所', 'A股上市', '跨境并购'],
+    difficulty: '较难',
+    diffColor: 'text-orange-600 bg-orange-50 border-orange-200',
+    salary_us: '外资所参考',
+    salary_cn: '行业基准水平',
+  },
+  {
+    href: '/industry/law/in-house/',
+    emoji: '🏢',
+    title: '企业内法（In-House）',
+    titleEn: 'In-House Counsel',
+    desc: '大厂法务、金融机构法务、跨国公司GC——从律所跳槽还是直接入职？内法与律师的本质区别',
+    tags: ['法务总监', 'General Counsel', '合规', '商业谈判'],
+    difficulty: '中等',
+    diffColor: 'text-blue-600 bg-blue-50 border-blue-200',
+    salary_us: '$120k–$300k+',
+    salary_cn: '国内参考',
+  },
+  {
+    href: '/industry/law/llm-jd/',
+    emoji: '🎓',
+    title: 'LLM vs JD：学位路径拆解',
+    titleEn: 'LLM vs JD — Degree Paths',
+    desc: '一年LLM还是三年JD？哪条路能真正进入美国法律市场？以及中国法学生的现实处境',
+    tags: ['LLM', 'JD', '纽约州Bar', '法律职业规划'],
+    difficulty: '参考资料',
+    diffColor: 'text-gray-600 bg-gray-50 border-gray-200',
+    salary_us: '—',
+    salary_cn: '—',
+  },
+];
+---
+
+<Base title="法律行业深度解析" description="BigLaw、中国律所、企业内法、LLM vs JD——法律行业4大方向全景解析，中美法律职场真实对比">
+
+  <a href="/industry/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    行业解析
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-red-50 text-red-700 border border-red-200 font-semibold px-3 py-1 rounded-full">Legal</span>
+      <span class="text-[10px] text-stone-400 uppercase tracking-widest">4 个细分方向</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-5">
+      法律行业深度解析
+    </h1>
+    <p class="text-stone-500 leading-loose text-[0.9375rem] max-w-2xl mb-6">
+      法律是文科生职业路径中最清晰、也最被误解的方向之一。进顶级律所的门极窄，内法的路宽却难以跳高，而LLM到底值不值得读，答案从来不简单。这里提供一个从业者视角的完整拆解。
+    </p>
+
+    <!-- Quick stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '细分方向', value: '4个' },
+        { label: '覆盖市场', value: '美国 + 中国' },
+        { label: '核心议题', value: 'LLM vs JD' },
+        { label: '内容来源', value: '公开数据 + 从业者' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">先读懂法律行业的地图</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>法律行业的核心分野，不是中国法还是美国法，而是<strong class="text-stone-800">律所（Law Firm）还是内法（In-House）</strong>。这两条路的激励机制、工作节奏、职业天花板完全不同——理解这个差异，是做职业规划的前提。</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">律所（Law Firm）</p>
+          <p class="text-xs leading-relaxed">向客户提供法律服务收取时间费（billable hours）或固定顾问费。顶级律所（BigLaw）以合伙人制为核心——Associate干活，Partner带业务。晋升路径漫长，竞争激烈。</p>
+          <p class="text-xs text-stone-400 mt-2">代表：Sullivan & Cromwell, Skadden, Latham & Watkins, 中伦, 君合</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-semibold text-stone-800 mb-2">内法（In-House Counsel）</p>
+          <p class="text-xs leading-relaxed"><strong>企业雇员，服务于雇主</strong>——处理合同、合规、诉讼管理、商业谈判。工作节奏相对可控，但很少能成为商业决策核心。通常需要律所背景作为跳板。</p>
+          <p class="text-xs text-stone-400 mt-2">代表：字节/腾讯法务部, 摩根大通法律合规, 跨国公司GC</p>
+        </div>
+      </div>
+      <p class="text-xs text-stone-400 pt-2">💡 中国学生进入美国法律行业最大的结构性壁垒：LLM毕业生通常不被视为与JD同等的法律资格，顶级BigLaw几乎全部要求JD学历。LLM的价值更多体现在跨境业务、政策领域、或回国执业上。</p>
+    </div>
+  </section>
+
+  <!-- US Legal Market Overview -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">美国法律市场结构</h2>
+    <div class="grid sm:grid-cols-3 gap-4 text-sm">
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+        <p class="font-bold text-red-800 mb-2">BigLaw（顶级律所）</p>
+        <p class="text-red-700 text-xs leading-relaxed">Am Law 100律所，年营收数亿至数十亿美元。一年级Associate基础薪资统一遵循Cravath Scale（$215k），工作强度极高（2000+ billable hours/年）。</p>
+      </div>
+      <div class="bg-orange-50 border border-orange-200 rounded-xl p-5">
+        <p class="font-bold text-orange-800 mb-2">Mid-Size & Boutique</p>
+        <p class="text-orange-700 text-xs leading-relaxed">专注特定领域（IP诉讼、破产、劳工法）的精品所。薪资略低于BigLaw但差距缩小，工作生活平衡相对更好，晋升至合伙人概率更高。</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-5">
+        <p class="font-bold text-blue-800 mb-2">Government & Nonprofit</p>
+        <p class="text-blue-700 text-xs leading-relaxed">司法部、SEC、联邦检察官办公室、法律援助机构。薪资远低于私人律所，但积累经验快，部分人后来进BigLaw或监管套利。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector cards -->
+  <section>
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">4 个细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {sectors.map((s) => (
+        <a href={s.href} class="group block rounded-2xl border border-stone-200 bg-white p-6 hover:shadow-lg hover:-translate-y-1 transition-all no-underline">
+          <div class="flex items-start justify-between mb-3">
+            <span class="text-3xl">{s.emoji}</span>
+            <span class={`text-[10px] font-semibold px-2.5 py-1 rounded-full border ${s.diffColor}`}>
+              {s.difficulty === '参考资料' ? s.difficulty : `入行难度：${s.difficulty}`}
+            </span>
+          </div>
+          <h3 class="font-display font-bold text-stone-900 text-lg mb-0.5 group-hover:text-columbia-navy transition-colors">{s.title}</h3>
+          <p class="text-[11px] text-stone-400 mb-3">{s.titleEn}</p>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            {s.tags.map(t => (
+              <span class="text-[10px] bg-red-50 text-red-700 border border-red-200 font-medium px-2 py-0.5 rounded-full">{t}</span>
+            ))}
+          </div>
+          {s.salary_us !== '—' && (
+            <div class="flex gap-4 text-xs text-stone-500 pt-3 border-t border-stone-100">
+              <span>🇺🇸 {s.salary_us}</span>
+              <span>🇨🇳 {s.salary_cn}</span>
+            </div>
+          )}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <div class="mt-12 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-400 leading-relaxed">
+    ⚠️ 美国律所薪资（Cravath Scale）为行业公开标准，数据来自律所官网及NALP等公开机构。中国律所及内法薪资因机构差异悬殊，仅作定性参考，实际待遇与执业地区、业务规模、个人资历密切相关。
+  </div>
+</Base>

@@ -1,0 +1,195 @@
+---
+import Base from '../../../layouts/Base.astro';
+
+const tiers = [
+  {
+    name: '红圈所（Magic Circle 类比）',
+    firms: '中伦、君合、方达、汉坤、环球、通力等',
+    color: 'red',
+    bgClass: 'bg-red-50 border-red-200',
+    textClass: 'text-red-800',
+    desc: '国内顶级律所，处理最复杂的跨境并购、资本市场、PE投资业务。招聘门槛最高，通常要求Top 5法学院或有海外学历。',
+    strengths: ['跨境并购、香港/美国上市', 'PE/VC投资协议', '国际仲裁', '业内最具声望'],
+    salary: '行业较高水平',
+  },
+  {
+    name: '精品所（Boutique）',
+    firms: '锦天城、金诚同达、申骏、道可特等',
+    color: 'orange',
+    bgClass: 'bg-orange-50 border-orange-200',
+    textClass: 'text-orange-800',
+    desc: '专注特定领域（房地产、破产重组、劳动法、IP）的专业化律所。规模小但在细分领域有极高声誉，工作生活平衡相对更好。',
+    strengths: ['领域深度积累', '合伙人距离更近', '相对可控的工作节奏', '提早担责机会'],
+    salary: '行业中等水平',
+  },
+  {
+    name: '外资所大陆/香港办公室',
+    firms: '美国和英国顶级律所在华/港机构',
+    color: 'blue',
+    bgClass: 'bg-blue-50 border-blue-200',
+    textClass: 'text-blue-800',
+    desc: '处理中国境外上市、外资进入、跨境并购等涉外业务。近年受中美关系影响，外资所在大陆规模普遍收缩，香港业务有所萎缩，但仍是跨境业务的重要平台。',
+    strengths: ['涉外/跨境业务', '国际化工作环境', '与境外资本市场对接', '英文法律文件'],
+    salary: '外资待遇标准',
+  },
+  {
+    name: '本土大所',
+    firms: '大成、盈科、德恒、京师等（全国连锁）',
+    color: 'gray',
+    bgClass: 'bg-stone-50 border-stone-200',
+    textClass: 'text-stone-700',
+    desc: '规模最大的本土律所（律师人数过万），覆盖全国各类法律服务。大量诉讼、政府项目、房地产法律业务。入行门槛相对低，但平台差距明显。',
+    strengths: ['广泛的业务覆盖', '全国化平台', '诉讼实战积累', '相对稳定的收入'],
+    salary: '因地区和业务差异较大',
+  },
+];
+
+const practiceAreas = [
+  { name: '资本市场', desc: 'A股上市、港股上市、债券发行，与监管机构（证监会、交易所）打交道', hot: true },
+  { name: '并购（M&A）', desc: '战略并购、国企改制、外资并购审查（商务部/SAMR）', hot: true },
+  { name: 'PE/VC 投资', desc: '投资协议起草、VIE架构设计、基金设立', hot: true },
+  { name: '争议解决/仲裁', desc: '国际商事仲裁（CIETAC, ICC）、外国投资争端', hot: false },
+  { name: '合规与监管', desc: '反垄断合规、数据隐私（PIPL）、跨境数据传输', hot: true },
+  { name: '知识产权', desc: '专利诉讼、商标保护、技术许可', hot: false },
+  { name: '房地产与基础设施', desc: '开发项目融资、不良资产处置、REITs结构', hot: false },
+  { name: '劳动与就业', desc: '裁员合规、劳动争议、高管薪酬设计', hot: false },
+];
+---
+
+<Base title="中国律所深度解析" description="红圈所、精品所、外资所——中国法律市场生态结构与职业路径解析">
+
+  <a href="/industry/law/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    法律行业
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-red-50 text-red-700 border border-red-200 font-semibold px-3 py-1 rounded-full">Legal · China</span>
+      <span class="text-[10px] font-medium text-orange-600 bg-orange-50 border border-orange-200 px-2.5 py-1 rounded-full">入行难度：较难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      中国律所
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Chinese Law Firms — 红圈所 · 精品所 · 外资所</p>
+
+    <div class="bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-sm text-stone-600 leading-relaxed">
+      中国法律市场正在经历深刻重构：外资所大陆业务收缩、头部国内所持续壮大、监管环境趋于复杂（数据安全、反垄断、国家安全审查）。对于有海外学历的候选人来说，跨境法律业务仍是最有竞争力的切入点。
+    </div>
+  </header>
+
+  <!-- 1. Market Structure -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-6">1. 中国律所市场四层结构</h2>
+    <div class="space-y-5">
+      {tiers.map(tier => (
+        <div class={`rounded-2xl border p-6 ${tier.bgClass}`}>
+          <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+            <div>
+              <p class={`font-bold text-lg ${tier.textClass}`}>{tier.name}</p>
+              <p class="text-xs text-stone-500 mt-0.5">{tier.firms}</p>
+            </div>
+            <span class="text-xs bg-white border border-stone-200 text-stone-600 px-2.5 py-1 rounded-full">{tier.salary}</span>
+          </div>
+          <p class="text-sm text-stone-600 leading-relaxed mb-3">{tier.desc}</p>
+          <div class="flex flex-wrap gap-1.5">
+            {tier.strengths.map(s => (
+              <span class="text-[10px] bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-full">{s}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 2. Hot Practice Areas -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 当前热门业务方向</h2>
+    <div class="grid sm:grid-cols-2 gap-3">
+      {practiceAreas.map(pa => (
+        <div class="bg-white border border-stone-200 rounded-xl p-4 flex gap-3">
+          <div class="shrink-0 mt-0.5">
+            {pa.hot ? (
+              <span class="inline-block w-2 h-2 rounded-full bg-red-400 mt-1.5"></span>
+            ) : (
+              <span class="inline-block w-2 h-2 rounded-full bg-stone-300 mt-1.5"></span>
+            )}
+          </div>
+          <div>
+            <p class="font-semibold text-stone-800 text-sm mb-1">
+              {pa.name}
+              {pa.hot && <span class="ml-1.5 text-[9px] text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded-full">热门</span>}
+            </p>
+            <p class="text-xs text-stone-500 leading-relaxed">{pa.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 text-xs text-amber-800">
+      <strong>2024–2025 结构性变化：</strong>数据安全与个人信息保护（PIPL）合规需求爆发式增长；境外上市（美股）受监管不确定性影响减少；反垄断调查活跃（科技、医药领域）；外资所大陆办公室普遍收缩——资本市场业务转至香港办公室。
+    </div>
+  </section>
+
+  <!-- 3. Career Path -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. 职业路径</h2>
+    <div class="space-y-3">
+      {[
+        { stage: '实习律师 / 助理律师', years: '0–3年', desc: '通过司法考试（法考）取得执业资格，在律师指导下工作，大量起草、调研、翻译，计费时间压力相对低' },
+        { stage: '律师 / 高级律师', years: '3–7年', desc: '独立承接业务，拓展客户关系，开始积累自己的资源（book of business）' },
+        { stage: '权益合伙人（Non-Equity → Equity Partner）', years: '7–15年', desc: '合伙人收入与带来的业务量直接挂钩，需要有稳定的客户资源，竞争极为激烈' },
+      ].map((p, i) => (
+        <div class="flex gap-4 bg-white border border-stone-200 rounded-xl p-5">
+          <div class="shrink-0 w-7 h-7 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold flex items-center justify-center">{i+1}</div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-bold text-stone-900 text-sm">{p.stage}</span>
+              <span class="text-[10px] text-stone-400">{p.years}</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed">{p.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="mt-4 bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 text-xs text-stone-500">
+      <strong>合规提示：</strong>中国律师行业薪酬差异极大，与业务方向、地区（北京/上海 vs 二三线）、律所规模、个人带客量高度相关。本文不提供具体数字，建议参考各律所官网发布的招聘信息。
+    </div>
+  </section>
+
+  <!-- 4. For overseas Chinese law students -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 海外留学背景的竞争力</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>在国内律所（尤其是红圈所和外资所），以下背景组合竞争力最强：</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-2">
+        <div class="bg-white rounded-xl p-4 text-xs">
+          <p class="font-bold text-stone-800 mb-2">强竞争力组合</p>
+          <ul class="space-y-1 text-stone-600">
+            <li>✓ 中国法学本科 + 美国/英国 LLM</li>
+            <li>✓ 中国法考通过 + 纽约州Bar</li>
+            <li>✓ 在外资所实习经历</li>
+            <li>✓ 中英文双语起草能力</li>
+            <li>✓ 跨境交易实务经验</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-4 text-xs">
+          <p class="font-bold text-stone-800 mb-2">目标岗位</p>
+          <ul class="space-y-1 text-stone-600">
+            <li>• 红圈所跨境并购/资本市场组</li>
+            <li>• 外资所大陆/香港联合培训</li>
+            <li>• 企业内法（跨国公司法务）</li>
+            <li>• 国际仲裁机构（CIETAC, HKIAC）</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-xs text-columbia-navy/50 mt-2">如果你目前在SIPA学习，可以考虑通过在校期间的法律相关实习（国际仲裁院、UN法律部、国际律所实习项目）积累经验，毕业后再回国进入法律市场。</p>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/law/biglaw-us/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← 美国大所（BigLaw）</a>
+    <a href="/industry/law/in-house/" class="text-columbia-blue hover:underline no-underline">企业内法 →</a>
+  </div>
+</Base>

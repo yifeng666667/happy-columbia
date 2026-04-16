@@ -1,0 +1,159 @@
+---
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base title="新闻媒体深度解析" description="财经记者、数字媒体、播客——新闻行业的商业模式重构与职业真相">
+
+  <a href="/industry/media-marketing/" class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-10 group">
+    <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+    传媒与市场营销
+  </a>
+
+  <!-- Header -->
+  <header class="mb-12 pb-10 border-b border-stone-200">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-[10px] uppercase tracking-[0.25em] bg-pink-50 text-pink-700 border border-pink-200 font-semibold px-3 py-1 rounded-full">Media & Marketing · Journalism</span>
+      <span class="text-[10px] font-medium text-orange-600 bg-orange-50 border border-orange-200 px-2.5 py-1 rounded-full">入行难度：较难</span>
+    </div>
+    <h1 class="font-display font-bold text-3xl sm:text-4xl text-stone-900 leading-tight mb-4">
+      新闻媒体
+    </h1>
+    <p class="text-stone-400 text-sm mb-6">Journalism & Media — 一个正在重构的行业</p>
+
+    <div class="bg-orange-50 border border-orange-200 rounded-xl px-5 py-4 text-sm text-orange-800 leading-relaxed mb-6">
+      <strong>先说清楚：</strong>新闻行业正在经历商业模式的根本性危机。美国本地新闻已大规模消亡，主流媒体裁员频繁。选择这条路需要清醒的认知和足够的热情——但它仍然是有意义的职业，对于想真正影响公共议程的人。
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {[
+        { label: '美国起步', value: '$35k–$55k' },
+        { label: '行业状态', value: '结构性收缩' },
+        { label: '强势方向', value: '财经/科技新闻' },
+        { label: '新机会', value: '独立媒体/播客' },
+      ].map(s => (
+        <div class="bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-center">
+          <div class="font-bold text-columbia-navy text-base sm:text-lg">{s.value}</div>
+          <div class="text-stone-400 text-xs mt-0.5">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </header>
+
+  <!-- 1. Industry Reality -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">1. 行业现实：正在发生什么</h2>
+    <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5">
+        <p class="font-bold text-red-800 mb-3">正在消失的</p>
+        <p class="text-xs text-red-700 leading-relaxed">美国本地日报大规模关闭（2005年至今减少约三分之一）；主流媒体（Vice, BuzzFeed News, Vox裁员）；广告收入持续向Google和Meta流失；AI生成内容进一步压低基础报道价格。</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+        <p class="font-bold text-emerald-800 mb-3">仍然坚挺的</p>
+        <ul class="text-xs text-emerald-700 space-y-1">
+          <li>• <strong>财经/商业媒体</strong>：Bloomberg、Wall Street Journal、FT——付费订阅模式相对稳定</li>
+          <li>• <strong>科技媒体</strong>：The Information、Wired——科技行业广告预算较充裕</li>
+          <li>• <strong>顶级报纸</strong>：NYT、Washington Post数字订阅模式已初步成立</li>
+          <li>• <strong>播客/Newsletter</strong>：个人媒体通过Substack、Patreon直接向读者收费</li>
+          <li>• <strong>中国财经媒体</strong>：财新、第一财经等仍是稳定平台</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Types -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">2. 细分方向</h2>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      {[
+        {
+          title: '财经/商业记者',
+          icon: '📊',
+          desc: '报道企业、市场、经济政策——是新闻行业中待遇最好、需求最稳定的方向。Bloomberg记者起步薪资在新闻行业属高位。分析能力强、懂财务是竞争优势。',
+          pros: ['待遇相对较好', '与金融行业高度互动', '积累后可转型投资者关系或研究'],
+        },
+        {
+          title: '政策/国际新闻',
+          icon: '🌐',
+          desc: 'SIPA学生最熟悉的方向——报道外交、地缘政治、国际组织。Reuters、AP、NYT国际版是代表。进入门槛高，通常需要多语言能力和实地报道经验。',
+          pros: ['影响力大', '学术与新闻结合', '国际化视野'],
+        },
+        {
+          title: '科技媒体',
+          icon: '💻',
+          desc: '报道AI、科技公司、创业生态——TechCrunch、The Verge、The Information。需要快速学习新技术的能力，记者本人要能看懂技术/商业逻辑。',
+          pros: ['快速成长', '接触前沿', '薪资在新闻行业较高'],
+        },
+        {
+          title: '独立媒体/Newsletter',
+          icon: '✉️',
+          desc: 'Substack、播客、YouTube——绕过传统媒体直接建立受众。天花板高但底线低，需要创业者心态。少数人能靠订阅收入生活，更多人将其作为副业。',
+          pros: ['完全自主', '与受众直接联系', '潜在高收益（少数）'],
+        },
+      ].map(item => (
+        <div class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl shrink-0">{item.icon}</span>
+            <p class="font-bold text-stone-900 text-sm">{item.title}</p>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed mb-3">{item.desc}</p>
+          <div class="flex flex-wrap gap-1.5">
+            {item.pros.map(p => (
+              <span class="text-[10px] bg-pink-50 text-pink-700 border border-pink-200 px-2 py-0.5 rounded-full">{p}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 3. SIPA + Journalism -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">3. SIPA 学生进入新闻行业</h2>
+    <div class="bg-columbia-light border border-columbia-blue/20 rounded-2xl p-6 text-sm text-columbia-navy/80 leading-relaxed space-y-3">
+      <p>Columbia有世界顶级的新闻学院（Columbia Journalism School），与SIPA地处同一校园。SIPA学生进入新闻行业有以下路径：</p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-2">
+        {[
+          { title: 'SIPA + J-School 双学位', desc: '国际新闻领域最强组合——政策分析能力+新闻报道技能，Financial Times、Reuters、Bloomberg认可度高。' },
+          { title: '财经/政策报道', desc: 'SIPA课程本身是很好的专业背景——理解利率、财政政策、国际关系的记者稀缺，这是大多数J-School毕业生的短板。' },
+          { title: '研究与写作转型', desc: 'SIPA毕业后先在智库或政府机构积累，再转型成为专栏作者/分析师——这是建立声誉的迂回路径。' },
+          { title: '中国财经报道', desc: '会中文+懂政策+理解市场的记者极为稀缺。Bloomberg、Reuters、FT的中国报道组是很好的切入点。' },
+        ].map(item => (
+          <div class="bg-white rounded-xl p-4 text-xs">
+            <p class="font-bold text-stone-800 mb-1">{item.title}</p>
+            <p class="text-stone-600">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-columbia-navy/50 mt-2">如果你认真考虑新闻方向，建议在SIPA期间选修J-School的课程（哥大允许学院间选课），同时在Bloomberg/Reuters/财经媒体实习积累clips（作品集）。</p>
+    </div>
+  </section>
+
+  <!-- 4. China media -->
+  <section class="mb-14">
+    <h2 class="font-display font-bold text-xl text-stone-900 mb-5">4. 中国媒体行业</h2>
+    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-600 leading-relaxed space-y-4">
+      <p>中国新闻媒体在政治环境、商业模式、内容边界上与美国有根本差异。这里简单梳理市场格局：</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">财经/商业媒体（相对独立空间）</p>
+          <ul class="text-xs text-stone-500 space-y-1">
+            <li>• 财新传媒——调查性报道，标杆地位</li>
+            <li>• 第一财经——央视系，规模大、稳定</li>
+            <li>• 36氪、虎嗅——科技创业媒体</li>
+            <li>• 界面新闻、每日经济新闻</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-xl p-4">
+          <p class="font-bold text-stone-800 mb-2 text-sm">薪资与职业前景</p>
+          <p class="text-xs text-stone-500 leading-relaxed">国内媒体薪资整体偏低，头部财经媒体资深记者/主编收入有竞争力但差距显著。内容创业（公众号、播客）是部分人的出口，但需要建立个人品牌。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nav -->
+  <div class="mt-12 pt-8 border-t border-stone-200 flex justify-between text-sm">
+    <a href="/industry/media-marketing/pr-communications/" class="text-stone-400 hover:text-columbia-navy transition-colors no-underline">← PR / 公关传播</a>
+    <a href="/industry/media-marketing/" class="text-columbia-blue hover:underline no-underline">返回传媒与市场营销 →</a>
+  </div>
+</Base>
