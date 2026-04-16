@@ -25,7 +25,7 @@ session: "8"
 - 对中国的"接触vs遏制"争论在华盛顿暂时降温
 - 中国可以通过配合反恐立场换取外交空间
 
-北京迅速表态支持反恐，配合了联合国安理会的相关决议。同时，中国借用"反恐"框架处理新疆问题——将新疆的分离主义活动定性为"东突恐怖主义"，获得了美国在一定程度上的默认。
+北京迅速表态支持反恐，配合了联合国安理会的相关决议。同时，中国明确将新疆极端主义暴力活动定性为"东突恐怖主义"，纳入反恐框架处理，获得了美国在一定程度上的默认。
 
 **这是中国利用外部事件重构自身叙事的典型案例。**
 
@@ -140,6 +140,6 @@ session: "8"
 ## 延伸阅读 / 公开资源
 
 - **Wikipedia - [上海合作组织](https://en.wikipedia.org/wiki/Shanghai_Cooperation_Organisation)**：SCO的建立背景、成员国和战略定位
-- **Wikipedia - [南海领土争端](https://en.wikipedia.org/wiki/South_China_Sea_disputes)**：争端各方的主张、历史背景和当前状态的综合分析
+- **Wikipedia - [南海主权问题](https://en.wikipedia.org/wiki/South_China_Sea_disputes)**：各方立场、历史背景和当前局势的综合分析
 - **Wikipedia - [亚太再平衡](https://en.wikipedia.org/wiki/Pivot_to_Asia)**：奥巴马政府战略转向的内容、动机与效果评估
 - **YouTube - [China's Rise and the Global Order](https://www.youtube.com/watch?v=ueAMKhx-hZc)**：分析中国崛起对现有国际秩序的挑战
