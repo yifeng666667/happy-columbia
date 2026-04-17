@@ -102,7 +102,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
       ></div>
 
       <!-- Mobile Menu Drawer -->
-      <div id="mobile-menu" class="md:hidden hidden border-t border-stone-200/20 bg-white">
+      <div id="mobile-menu" class="md:hidden hidden border-t border-stone-200 bg-white shadow-lg">
         <nav class="flex flex-col px-5 py-4 gap-1">
           {[
             { href: '/about-sipa/', label: '关于 SIPA' },
@@ -165,7 +165,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
     </style>
 
     <!-- ── Main ───────────────────────────────────────── -->
-    <main class={hero ? '' : 'max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14'}>
+    <main class={hero ? 'overflow-x-hidden' : 'max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14 overflow-x-hidden'}>
       <slot />
     </main>
 
@@ -231,20 +231,29 @@ const siteUrl = 'https://happy-columbia.pages.dev';
     const h2 = document.getElementById('ham-2');
     const h3 = document.getElementById('ham-3');
     let open = false;
-    btn?.addEventListener('click', () => {
-      open = !open;
+
+    const setOpen = (state: boolean) => {
+      open = state;
       menu?.classList.toggle('hidden', !open);
+      // Lock body scroll when menu is open so background doesn't scroll
+      document.body.style.overflow = open ? 'hidden' : '';
       if (h1 && h2 && h3) {
         h1.style.transform = open ? 'translateY(8px) rotate(45deg)' : '';
         h2.style.opacity   = open ? '0' : '1';
         h3.style.transform = open ? 'translateY(-8px) rotate(-45deg)' : '';
       }
-    });
+    };
+
+    btn?.addEventListener('click', () => setOpen(!open));
+
     menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      open = false;
-      menu.classList.add('hidden');
-      if (h1 && h2 && h3) { h1.style.transform = h3.style.transform = ''; h2.style.opacity = '1'; }
+      setOpen(false);
     }));
+
+    // Close menu on resize to desktop breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768 && open) setOpen(false);
+    });
   </script>
 
   <!-- ── Header scroll effect ───────────────────────── -->

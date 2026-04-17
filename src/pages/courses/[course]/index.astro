@@ -35,7 +35,7 @@ const overlay = catOverlay[meta.category] ?? catOverlay.finance;
 <Base title={meta.title}>
 
   <!-- Course hero banner -->
-  <div class="-mx-6 -mt-14 mb-0 text-white px-6 pt-14 pb-12 relative overflow-hidden"
+  <div class="-mx-4 sm:-mx-6 -mt-14 mb-0 text-white px-4 sm:px-6 pt-14 pb-12 relative overflow-hidden"
        style={`background-image: linear-gradient(160deg, ${overlay}), url('${heroImg}'); background-size: cover; background-position: center;`}>
 
 
@@ -45,10 +45,10 @@ const overlay = catOverlay[meta.category] ?? catOverlay.finance;
         所有专题
       </a>
 
-      <h1 class="font-display font-bold text-3xl md:text-4xl leading-tight text-white">
+      <h1 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight text-white">
         {meta.title}
       </h1>
-      <p class="text-white/60 mt-2 text-base font-sans">{meta.titleEn}</p>
+      <p class="text-white/60 mt-2 text-sm sm:text-base font-sans">{meta.titleEn}</p>
 
       <p class="mt-5 text-white/75 leading-relaxed text-[0.9375rem] max-w-2xl">
         {meta.description}

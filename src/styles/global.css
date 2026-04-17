@@ -4,8 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
-body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
+body { -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
 
 /* ── Mobile optimizations ── */
 @media (max-width: 768px) {
@@ -14,6 +14,7 @@ body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
   }
   .table-wrapper,
   .overflow-x-auto {
@@ -52,6 +53,32 @@ body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
   /* Article header spacing */
   header.border-b { margin-bottom: 2.5rem !important; padding-bottom: 1.75rem !important; }
+
+  /* Blockquote padding tighter on small screens */
+  .prose blockquote {
+    padding-left: 0.875rem !important;
+    padding-right: 0.875rem !important;
+  }
+
+  /* Ensure images never overflow */
+  .prose img {
+    max-width: 100% !important;
+    width: auto;
+    height: auto;
+  }
+
+  /* Table cells: allow wrapping so rows stay readable; the block container scrolls */
+  .prose td,
+  .prose th {
+    white-space: normal;
+    min-width: 6rem;
+  }
+
+  /* Negative-margin hero/header strips: add minimum horizontal padding */
+  .reading-strip {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 /* ── Extra-small phones (< 400px) ── */

@@ -36,8 +36,8 @@ const catDot: Record<string, string> = {
       </p>
 
       <!-- title -->
-      <h1 class="hero-child animate-fade-up font-display font-bold text-white leading-tight whitespace-nowrap"
-          style="font-size: clamp(1.8rem, 5vw, 4.2rem);">
+      <h1 class="hero-child animate-fade-up font-display font-bold text-white leading-tight"
+          style="font-size: clamp(1.6rem, 7vw, 4.2rem); word-break: keep-all; overflow-wrap: break-word;">
         经济金融 · 学习与分享
       </h1>
 
@@ -283,15 +283,15 @@ const catDot: Record<string, string> = {
   <!-- ═══════════════════════════════════════════════ -->
   <!--  CALL TO ACTION STRIP                           -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="bg-columbia-navy px-6 py-16">
+  <section class="bg-columbia-navy px-4 sm:px-6 py-16 overflow-x-hidden">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-      <div>
-        <h2 class="font-display font-bold text-white text-2xl">你也有学习笔记或者求职经验想分享？</h2>
+      <div class="text-center md:text-left">
+        <h2 class="font-display font-bold text-white text-xl sm:text-2xl">你也有学习笔记或者求职经验想分享？</h2>
         <p class="text-white/60 mt-2 text-sm leading-relaxed">
           欢迎投稿学习笔记、求职经验、行业见解，帮助更多迷茫中的学弟学妹们。
         </p>
       </div>
-      <div class="flex gap-3 shrink-0">
+      <div class="flex gap-3 shrink-0 flex-wrap justify-center">
         <a href="/join/"
            class="no-underline px-7 py-3 bg-white text-columbia-navy font-semibold text-sm rounded-full
                   hover:bg-columbia-light transition-all shadow hover:shadow-md">
