@@ -17,7 +17,7 @@ order: 5
 
 ---
 
-![尼克松基辛格访华](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nixon_and_Zhou_En-lai.jpg/1200px-Nixon_and_Zhou_En-lai.jpg)
+![尼克松基辛格访华](https://upload.wikimedia.org/wikipedia/commons/9/98/Nixon_and_Zhou_En-lai.jpg)
 *▲ 1972年2月，尼克松与周恩来握手——基辛格的秘密外交为这一历史时刻铺垫了整整8个月*
 
 ## 一、基辛格：最后一个19世纪外交家

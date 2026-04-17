@@ -154,7 +154,7 @@ order: 1
 
 ---
 
-![尼克松访华握手](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nixon_and_Zhou_En-lai.jpg/1200px-Nixon_and_Zhou_En-lai.jpg)
+![尼克松访华握手](https://upload.wikimedia.org/wikipedia/commons/9/98/Nixon_and_Zhou_En-lai.jpg)
 *▲ 1972年，尼克松与周恩来握手——"只有尼克松才能去中国"，领导者个人决定性时刻的最佳注脚*
 
 ## 五、"仅有尼克松才能去中国"的完整故事
