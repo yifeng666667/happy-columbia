@@ -17,6 +17,9 @@ order: 4
 
 ---
 
+![情报链](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80)
+*▲ 情报从搜集到决策，每个环节都可能失真*
+
 ## 一、情报链的完整结构
 
 情报从诞生到使用，要经过一个复杂的链条，每个环节都可能发生失真：
@@ -50,6 +53,9 @@ order: 4
 ### 2.2 政治化情报（Politicization of Intelligence）
 
 当政策制定者已经有了预期结论，情报系统会受到压力，倾向于提供支持这一结论的信息。
+
+![鲍威尔联合国陈述](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Secretary_Colin_Powell_Addresses_the_U.N._Security_Council.jpg/1200px-Secretary_Colin_Powell_Addresses_the_U.N._Security_Council.jpg)
+*▲ 2003年2月，国务卿鲍威尔在联合国安理会展示伊拉克"大规模杀伤性武器"证据——后来被证明是情报失败的最昂贵一刻*
 
 **伊拉克WMD案例的完整逻辑链**：
 

@@ -13,6 +13,9 @@ order: 1
 
 ---
 
+![棋盘博弈](https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80)
+*▲ 领导者是棋手，还是棋子？——国际政治最古老的争论*
+
 ## 一、两种世界观的对立
 
 ### 1.1 "伟人论"：领导者塑造历史
@@ -68,6 +71,9 @@ order: 1
 > 这个逻辑今天依然有效：特朗普能和朝鲜金正恩坐下来谈——因为他不怕被说"向独裁者示软"；而一个民主党总统这么做会被本党人撕碎。
 
 ---
+
+![尼克松访华握手](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nixon_and_Zhou_En-lai.jpg/1200px-Nixon_and_Zhou_En-lai.jpg)
+*▲ 1972年，尼克松与周恩来握手——"只有尼克松才能去中国"，领导者个人决定性时刻的最佳注脚*
 
 ## 三、三副眼镜：三位总统的领导力哲学
 

@@ -18,6 +18,9 @@ order: 8
 
 ---
 
+![美国国会](https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=900&q=80)
+*▲ 国内政治的棋局——华盛顿的游说、选举和党派博弈，常常比"国家利益"更能决定外交政策走向*
+
 ## 一、双层博弈理论（Two-Level Games）
 
 政治学家罗伯特·普特南（Robert Putnam）1988年提出了影响深远的**双层博弈（Two-Level Games）**框架：
@@ -55,6 +58,9 @@ order: 8
 ---
 
 ## 三、利益集团如何绑架外交政策
+
+![华盛顿游说](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80)
+*▲ 华盛顿的影响力工业：游说集团如何把国内选举逻辑注入外交政策*
 
 ### 3.1 古巴裔美国人与古巴政策：40年的案例
 

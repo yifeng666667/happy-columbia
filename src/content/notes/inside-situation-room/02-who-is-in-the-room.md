@@ -15,6 +15,9 @@ order: 2
 
 ---
 
+![奥巴马战情室](https://upload.wikimedia.org/wikipedia/commons/a/ac/Obama_and_Biden_await_updates_on_bin_Laden.jpg)
+*▲ 2011年5月1日，奥巴马、拜登、希拉里等人在白宫战情室实时观看海豹突击队猎杀本·拉登行动——这张照片成为"密室决策"的标志性影像*
+
 ## 一、"建制派集团"（The Blob）：谁是华盛顿外交圈
 
 ### 1.1 什么是 The Blob

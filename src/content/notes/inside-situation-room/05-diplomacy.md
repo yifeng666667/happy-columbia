@@ -15,6 +15,9 @@ order: 5
 
 ---
 
+![尼克松基辛格访华](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Nixon_and_Zhou_En-lai.jpg/1200px-Nixon_and_Zhou_En-lai.jpg)
+*▲ 1972年2月，尼克松与周恩来握手——基辛格的秘密外交为这一历史时刻铺垫了整整8个月*
+
 ## 一、外交的基本类型：从密室到广场
 
 ### 1.1 秘密外交 vs 公开外交
@@ -69,6 +72,9 @@ order: 5
 ---
 
 ## 三、案例深度：伊朗核协议的来龙去脉（2003-2018）
+
+![外交谈判](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80)
+*▲ 多边外交谈判：JCPOA的签署，是20年来最复杂的外交工程之一*
 
 这是近20年最复杂、最重要、也最被误解的外交案例之一。
 
