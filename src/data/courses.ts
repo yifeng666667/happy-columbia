@@ -145,6 +145,16 @@ export const courses: CourseMeta[] = [
     city: 'Beijing',
   },
   {
+    slug: 'inside-situation-room',
+    category: 'geopolitics',
+    title: '权力密室：国际危机决策学',
+    titleEn: 'Inside the Situation Room',
+    description:
+      '从总统危机决策室出发，解剖领导人在战争、外交与信息战中的心理博弈——政治心理学、权力生态、外交谈判与贸易战全景，读懂今天世界格局的底层逻辑。',
+    heroImage: 'https://images.unsplash.com/photo-1501466044931-62695aada8e9?auto=format&fit=crop&w=1400&q=85',
+    city: 'Washington D.C.',
+  },
+  {
     slug: 'value-investing',
     category: 'finance',
     title: '价值投资',
