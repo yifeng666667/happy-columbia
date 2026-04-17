@@ -209,7 +209,7 @@ const catDot: Record<string, string> = {
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 md:gap-y-12">
+      <div class="space-y-10 md:space-y-14">
         {grouped.map(({ category, items }) => (
           <div>
             <!-- category header -->
@@ -226,11 +226,11 @@ const catDot: Record<string, string> = {
                 整理中，敬请期待
               </div>
             ) : (
-              <div class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {items.map((c) => (
                   <a
                     href={`/courses/${c.slug}/`}
-                    class="group block relative rounded-2xl overflow-hidden no-underline h-[168px] shadow-md hover:shadow-xl transition-shadow duration-300"
+                    class="group block relative rounded-2xl overflow-hidden no-underline h-[168px] sm:h-[185px] shadow-md hover:shadow-xl transition-shadow duration-300"
                   >
                     {/* city background image */}
                     {c.heroImage && (
