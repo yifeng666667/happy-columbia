@@ -102,7 +102,7 @@ Win-Set越小，谈判越困难；Win-Set越大，越容易达成协议。而Win
 
 ## 三、利益集团如何绑架外交政策
 
-![华盛顿游说](https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=900&q=80)
+![华盛顿游说](https://images.unsplash.com/photo-1598134115217-a2fd543030f0?auto=format&fit=crop&w=900&q=80)
 *▲ 华盛顿的影响力工业：游说集团如何把国内选举逻辑注入外交政策*
 
 ### 3.1 古巴裔美国人与古巴政策：半个世纪的案例

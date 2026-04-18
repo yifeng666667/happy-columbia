@@ -8,7 +8,7 @@ session: "Overview"
 
 公司值多少钱？这个问题听起来简单，但它是整个金融行业存在的核心理由。IPO 定价、并购谈判、PE 投资、信贷授信——所有这些决策背后，都需要一套严肃的回答。这门课给你的，就是系统回答这个问题的完整工具箱：五个步骤，环环相扣，缺一不可。
 
-![公司估值框架](https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80)
+![公司估值框架](https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=900&q=80)
 
 ---
 

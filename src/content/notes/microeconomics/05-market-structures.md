@@ -8,7 +8,7 @@ session: "5"
 
 2023年，Nvidia一块H100 GPU的市价从官方售价约3万美元被炒到近7万美元，利润率超过70%——这在任何竞争激烈的市场都不可能发生。同期，中国白牌手机厂商之间价格战激烈，利润薄如刀片。同样是卖硬件，为什么结局天差地别？答案不在产品本身，而在市场结构。
 
-![市场竞争格局](https://images.unsplash.com/photo-1549421263-5ec394a5ad4c?auto=format&fit=crop&w=900&q=80)
+![市场竞争格局](https://images.unsplash.com/photo-1556767576-cf0a4a80e5b8?auto=format&fit=crop&w=900&q=80)
 *▲ 市场结构决定了定价权的边界——垄断者可以自由定价，完全竞争者只能接受市场价格*
 
 ## 本文概述

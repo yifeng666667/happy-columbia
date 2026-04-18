@@ -8,7 +8,7 @@ session: "4"
 
 未来的一块钱，不等于今天的一块钱——因为钱是有时间价值的，有风险的。WACC（加权平均资本成本）就是把未来现金流折算回今天价值时，用的那个折现率。它代表了公司所有资金提供者的平均回报要求。这节课解决的问题是：如何合理地计算这个折现率，让最终的估值既不过于乐观也不过于保守。
 
-![WACC 与资本成本计算](https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80)
+![WACC 与资本成本计算](https://images.unsplash.com/photo-1560221328-12fe60f83ab8?auto=format&fit=crop&w=900&q=80)
 
 ---
 
