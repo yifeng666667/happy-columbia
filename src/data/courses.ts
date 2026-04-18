@@ -164,6 +164,46 @@ export const courses: CourseMeta[] = [
     heroImage: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1400&q=85',
     city: 'New York',
   },
+  {
+    slug: 'international-trade',
+    category: 'economics',
+    title: '国际贸易：理论与政策',
+    titleEn: 'International Trade: Theory and Policy',
+    description:
+      '从大卫·李嘉图的比较优势到特朗普关税战——系统梳理国际贸易的三大理论支柱与政策工具，并直面"自由贸易是否伤害普通工人"这个当代最尖锐的政治经济学问题。',
+    heroImage: 'https://images.unsplash.com/photo-1562184552-997c461abbe6?auto=format&fit=crop&w=1400&q=85',
+    city: 'Geneva',
+  },
+  {
+    slug: 'trade-financial-markets',
+    category: 'finance',
+    title: '国际贸易与金融市场',
+    titleEn: 'International Trade and Financial Markets',
+    description:
+      '贸易战打响的那一天，债券收益率涨了、股市跌了——为什么？这门课打通宏观贸易政策与金融市场定价，从关税理论到跨国公司战略，理解贸易与资本之间的深层互动。',
+    heroImage: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=85',
+    city: 'Amsterdam',
+  },
+  {
+    slug: 'international-finance-monetary',
+    category: 'finance',
+    title: '国际金融与货币理论',
+    titleEn: 'International Finance and Monetary Theory',
+    description:
+      '汇率是怎么决定的？美联储加息为什么会让发展中国家货币崩溃？从外汇市场微观结构到 AA-DD 模型，建立分析开放经济体货币与金融现象的完整理论框架。',
+    heroImage: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1400&q=85',
+    city: 'Zurich',
+  },
+  {
+    slug: 'emerging-financial-systems',
+    category: 'finance',
+    title: '新兴市场金融体系',
+    titleEn: 'Emerging Financial Systems: Brazil, India, Indonesia and Mexico',
+    description:
+      '以巴西为锚，横向比较印度、印尼、墨西哥的金融体系——从银行结构、金融科技到主权债评级、国际债券市场，解读新兴经济体金融系统的演变逻辑与投资含义。',
+    heroImage: 'https://images.unsplash.com/photo-1553532434-5ab5b6b84993?auto=format&fit=crop&w=1400&q=85',
+    city: 'São Paulo',
+  },
 ];
 
 export const getCourse = (slug: string): CourseMeta | undefined =>
