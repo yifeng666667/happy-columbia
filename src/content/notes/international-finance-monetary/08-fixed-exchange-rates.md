@@ -272,10 +272,10 @@ session: "8"
 
 ## 图像：固定汇率的承诺与考验
 
-> ![伦敦金融城](https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80)
-> *图注：伦敦——1992年"黑色星期三"英镑危机的发生地，英格兰银行花费270亿英镑维护汇率但最终失败*
+> ![货币危机——投机攻击与汇率保卫战](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80)
+> *图注：固定汇率的承诺与考验——1992年"黑色星期三"英镑危机，英格兰银行花费270亿英镑维护汇率但最终失败*
 
-> ![全球地球](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+> ![全球金融网络——三元悖论的约束](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80)
 > *图注：三元悖论的约束在全球每个固定汇率制度中同步发挥作用——没有例外，只有时机不同*
 
 ---

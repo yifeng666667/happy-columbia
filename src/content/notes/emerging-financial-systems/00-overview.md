@@ -8,7 +8,7 @@ session: "Overview"
 
 新兴市场（Emerging Markets，简称EM）的金融体系，正在成为全球金融格局中最重要、也最容易被误读的一块拼图。这门课以**巴西**为核心锚点，系统比较**印度、印度尼西亚、墨西哥**四国的金融体系演变，并在特定议题上引入**中国和土耳其**作为对照。
 
-![新兴市场全球视角](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+![新兴市场城市——资本、风险与机遇同时流动](https://images.unsplash.com/photo-1623282033815-40b05d96c903?auto=format&fit=crop&w=900&q=80)
 *图注：全球金融网络连接着新兴市场与发达市场，资本、风险与机遇同时流动*
 
 学习对象涵盖：银行体系结构与改革历史、金融监管框架（尤其是巴塞尔协议在EM的落地）、资本市场的深度与广度、金融科技对传统金融的颠覆、可持续金融与ESG在发展中国家的特殊处境、主权债务评级的政治经济学，以及政策性银行在发展融资中的角色。
@@ -17,7 +17,7 @@ session: "Overview"
 
 ---
 
-![新加坡金融中心](https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=80)
+![亚洲金融中心夜景——制度建设的成功范本](https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=900&q=80)
 *图注：新加坡——从一无所有到亚洲金融中心，是新兴市场制度建设最成功的范本之一*
 
 > **李光耀（Lee Kuan Yew）的视角：**

@@ -290,10 +290,10 @@ session: "9"
 
 ## 图像：美元霸权与货币体系的未来
 
-> ![全球地球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+> ![数字货币与区块链——货币体系的未来](https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80)
 > *图注：美元的全球网络——88%的FX交易涉及美元，这个数字背后是60年积累的网络效应*
 
-> ![纽约金融区夜景](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80)
+> ![科技与金融融合——数字支付与CBDC的未来](https://images.unsplash.com/photo-1530099486328-e021101a494a?auto=format&fit=crop&w=900&q=80)
 > *图注：纽约——全球美元清算的最终节点，SWIFT体系的核心所在，也是金融制裁的权力中枢*
 
 ---

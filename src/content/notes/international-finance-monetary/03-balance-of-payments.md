@@ -237,11 +237,11 @@ EM（新兴市场）的资本流动有典型的周期性特征，经济学家Car
 
 ## 图像：国际收支的世界
 
-![全球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+![贸易货物流动——国际收支记录的起点](https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80)
 *图注：全球贸易与资本流动的夜间轨迹——每一条光线都是一笔国际收支记录的开始*
 
-![伦敦金融城](https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80)
-*图注：伦敦——欧洲最重要的资本流动枢纽，外资流入与流出在这里被记录为金融账户条目*
+![欧洲金融中心——外资流入与流出的记录](https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?auto=format&fit=crop&w=900&q=80)
+*图注：欧洲——最重要的资本流动枢纽，外资流入与流出在这里被记录为金融账户条目*
 
 ---
 

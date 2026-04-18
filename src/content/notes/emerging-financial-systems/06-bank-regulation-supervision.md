@@ -8,7 +8,7 @@ session: "6"
 
 在自由市场经济理论中，监管通常被视为市场失灵的补救工具。银行是一个监管必要性极为明显的行业，理由可以从三个层面理解：
 
-![金融监管与合规](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+![银行监管文件——巴塞尔协议在新兴市场的落地挑战](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80)
 *图注：巴塞尔协议是全球银行监管的共同语言，但将这个为发达市场设计的框架应用于新兴市场，始终是一个充满张力的工作*
 
 ### 1.1 系统性风险（Systemic Risk）

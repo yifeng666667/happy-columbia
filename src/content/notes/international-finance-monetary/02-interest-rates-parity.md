@@ -234,10 +234,10 @@ CIP是"硬核"无套利条件，近似完美（2008前）。UIP和PPP是"软性"
 
 ## 图像：利率、汇率与套利
 
-![全球地球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+![利率与货币——套息交易的逻辑](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80)
 *图注：全球资本的夜间迁徙——套息交易的资金流从低息国流向高息市场，规模以万亿计*
 
-![纽约金融区夜景](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80)
+![金融数据屏幕——美联储加息与全球利率平价](https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?auto=format&fit=crop&w=900&q=80)
 *图注：纽约——美元利率决策的中心，每一次美联储加息都在重新定价全球套息交易的方向*
 
 ---

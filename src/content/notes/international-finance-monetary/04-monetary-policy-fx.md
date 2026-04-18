@@ -237,10 +237,10 @@ FX互换的结构是：甲方和乙方同时在两个时间点交换两种货币
 
 ## 图像：央行、利率与汇率
 
-![全球地球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+![央行建筑——货币政策的制度基础](https://images.unsplash.com/photo-1529543544282-ea669407fca3?auto=format&fit=crop&w=900&q=80)
 *图注：美联储的一次加息，通过资本流动渠道在全球夜间市场同步传递*
 
-![纽约金融区](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80)
+![美联储利率决策——公开市场操作与全球资本流向](https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=80)
 *图注：纽约联储——美联储公开市场操作在这里执行，每笔交易都在影响全球资本流向*
 
 ---

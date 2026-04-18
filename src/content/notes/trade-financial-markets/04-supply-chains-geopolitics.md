@@ -4,7 +4,7 @@ order: 4
 session: "4"
 ---
 
-![全球网络](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+![工业生产线——供应链是现代全球化的物质基础](https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&w=900&q=80)
 *图注：全球供应链网络——每一个节点失效都可能引发系统性连锁反应*
 
 ## 这节课在回答什么
@@ -124,7 +124,7 @@ COVID和日本地震揭示的不只是个别供应链的管理问题，而是一
 
 这就是所谓的"硅盾（Silicon Shield）"——台湾的战略价值不是它的军事实力，而是它对全球经济不可或缺的程度使任何破坏者都要承担巨大代价。但这也是台湾最脆弱的地方：过于重要，反而成为了博弈的焦码。
 
-![新加坡港口](https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=80)
+![地图与战略布局——地缘政治重构供应链版图](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80)
 *图注：亚洲港口——全球供应链重构正在重新定义哪些港口、哪些地区将成为下一个关键节点*
 
 ## 三、地缘政治如何重构供应链

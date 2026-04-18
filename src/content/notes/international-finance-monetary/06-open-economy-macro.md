@@ -237,10 +237,10 @@ $$|\epsilon_{exports}| + |\epsilon_{imports}| > 1$$
 
 ## 图像：开放经济的宏观框架
 
-> ![全球地球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+> ![宏观经济政策会议——开放经济中的政策传导](https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?auto=format&fit=crop&w=900&q=80)
 > *图注：开放经济中，没有哪个国家是孤岛——每一个宏观政策决定都在向外传导*
 
-> ![伦敦金融城](https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80)
+> ![城市街景——贬值与贸易调整的现实时间跨度](https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80)
 > *图注：英国脱欧后英镑贬值约15%——J曲线在这里展示了贬值后贸易调整的现实时间跨度*
 
 ---

@@ -78,10 +78,10 @@ session: "Overview"
 
 ## 图像：国际货币体系的世界
 
-![全球地球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
-*图注：夜晚的地球——光线最亮的地方，往往是金融与贸易最活跃的地方*
+![货币与金融——国际货币体系的基础](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80)
+*图注：货币不只是交换媒介，它是国际政治经济权力的载体——谁控制了储备货币，谁就掌握了全球经济规则*
 
-![纽约金融区](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80)
+![现代摩天大楼——全球金融中心与美元体系](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80)
 *图注：纽约下曼哈顿——全球美元清算体系的地理中心*
 
 ---

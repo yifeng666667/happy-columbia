@@ -280,10 +280,10 @@ AA-DD模型是这门课的分析核心，也是理解当代宏观政策争论的
 
 ## 图像：AA-DD模型与宏观政策
 
-> ![全球地球夜景](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80)
+> ![经济学曲线图表——AA-DD模型的均衡分析](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80)
 > *图注：全球宏观政策的相互传导——一国的财政扩张通过汇率渠道影响贸易伙伴的均衡*
 
-> ![纽约金融区](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80)
+> ![汇率交易室——资产市场的毫秒级调整](https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=900&q=80)
 > *图注：纽约——AA-DD分析中"资产市场"调整最集中的地方，汇率在这里以毫秒速度重新定价*
 
 ---
