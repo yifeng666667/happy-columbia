@@ -12,7 +12,12 @@ session: "9"
 
 这节课是整门课的综合落点：将之前学过的所有工具——汇率、利率平价、国际收支、货币政策、三元悖论——用来分析国际货币体系的宏观结构和未来走向。
 
+![美元钞票——全球储备货币的实物象征](https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=900&q=80)
+*美元在全球外汇交易中占88%、储备货币中占约60%——这不是偶然，而是60年网络效应积累的结果。任何"替代美元"的讨论，都要先回答：谁能建立同等深度的金融基础设施？*
+
 ## 一、资本账户开放：理论与现实的落差
+
+> **一个重要的认识转变：** 在1990年代，"开放资本账户"被IMF和经济学主流视为发展中国家现代化的必要步骤——和开放贸易一样天经地义。但亚洲金融危机（1997）之后，这个共识发生了动摇：大量研究表明，资本账户开放对经济增长的好处在统计上不显著，但对危机风险的增加是显著的。这节课呈现的，是一次理论与现实碰撞后的"集体修正"——包括IMF自己。这与Session 8三元悖论的选择逻辑直接相连：越来越多的国家开始重新重视"角落C"（资本管制）的价值。
 
 ### 1.1 资本账户开放的理论逻辑
 
@@ -84,6 +89,8 @@ session: "9"
 
 ## 三、美元霸权：结构、来源与挑战
 
+> **为什么美元统治地位如此根深蒂固？** 这不是"美国很厉害"这么简单的答案。正如Session 1提到的，FX市场88%的交易都有美元参与——这是货币体系的"网络效应"：越多人用美元，就越没有理由停止用美元。改变这个体系，不只是找一种"更好的货币"那么简单，而是要同时替换掉60年积累的金融基础设施：美元清算网络、美元计价合同、美元对冲工具……这就是为什么"去美元化"讨论了几十年，美元份额从73%降到59%，慢到像温水煮青蛙。
+
 ### 3.1 美元的统治地位有多深
 
 美元的国际主导地位可以从多个维度衡量：
@@ -137,6 +144,8 @@ session: "9"
 > **特朗普的视角：** 美元是美国最强大的武器。任何试图建立美元替代货币体系的国家，都是在攻击美国。我会对任何放弃美元、建立替代货币联盟的BRICS国家征收100%关税。美元的主导地位不是偶然，而是美国经济、军事和政治实力的反映。要保护这个特权，就要保持这些实力。
 
 ## 四、人民币国际化：走了多远
+
+> **三元悖论的终极制约：** Session 8里我们学到，三元悖论要求每个国家在固定汇率、资本自由流动、独立货币政策三者中"三选二"。中国选的是"保留货币政策独立性"——这意味着资本账户不能完全开放。但人民币真正的国际化，需要非居民可以自由持有和交易人民币资产——这偏偏需要开放资本账户。这个根本矛盾，是人民币国际化最大的结构性障碍，不是技术问题，是政策选择的内在张力。
 
 ### 4.1 人民币的现状
 
@@ -327,5 +336,5 @@ session: "9"
 - **Wikipedia - [Reserve currency](https://en.wikipedia.org/wiki/Reserve_currency)**：储备货币的概念、历史、各货币份额变化的综合词条，是本节最重要的参考
 - **Wikipedia - [Renminbi internationalization](https://en.wikipedia.org/wiki/Renminbi_internationalization)**：人民币国际化的历史进程、现状和制约因素的详细记录
 - **Wikipedia - [Central bank digital currency](https://en.wikipedia.org/wiki/Central_bank_digital_currency)**：CBDC的全球进展、各国项目、潜在影响的综合说明
-- **YouTube - "Dollar Dominance Explained" (various policy channels)**：搜索"dollar dominance reserve currency explained"，Council on Foreign Relations等机构有高质量视频解释美元体系的结构和挑战
-- **YouTube - "De-dollarization: Is It Happening?" (various)**：搜索"de-dollarization 2023 2024"，多个分析视频对去美元化的进展和局限有清醒的评估，帮助避免被过度乐观或悲观的叙事影响
+- **YouTube — "Why the dollar is the dominant global currency" (CSIS)**：[https://www.youtube.com/watch?v=galabFsuBvg](https://www.youtube.com/watch?v=galabFsuBvg) — 解释美元全球主导地位的结构性来源与网络效应，是理解"过度特权"最好的视频入门
+- **YouTube — "De-dollarization: Practicality or Theory?" (CGTN)**：[https://www.youtube.com/watch?v=kIIHysp7Lc8](https://www.youtube.com/watch?v=kIIHysp7Lc8) — 冷静评估去美元化的真实进展与结构性局限，帮助避免被过度乐观或悲观的叙事影响

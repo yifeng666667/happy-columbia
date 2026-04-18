@@ -18,6 +18,9 @@ session: "6"
 
 但故事远比这复杂。
 
+![金融制裁与地缘政治](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80)
+*▲ 将俄罗斯踢出SWIFT是历史上最激进的金融制裁行动——支付基础设施首次成为大国博弈的主战场*
+
 ---
 
 ## 制裁的解剖：SWIFT 切断如何真正起作用

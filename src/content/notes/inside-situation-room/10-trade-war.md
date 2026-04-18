@@ -225,7 +225,7 @@ order: 10
 
 ## 五、2018 vs 2025：系统性对比
 
-![美中博弈](https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=900&q=80)
+![美中博弈](https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&w=900&q=80)
 *▲ 两场贸易战，同一个发起人，但世界已经截然不同*
 
 | 维度 | 2018年贸易战 | 2025年贸易战 |

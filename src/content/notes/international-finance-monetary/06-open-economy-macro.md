@@ -12,7 +12,12 @@ session: "6"
 
 这节课是AA-DD模型（下一讲的核心）的准备，同时也是理解汇率政策与贸易政策争论的宏观基础。
 
+![全球贸易网络——开放经济的连接与相互依赖](https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80)
+*开放经济意味着一国的储蓄可以流向全球任何地方——中国的工厂为美国消费者生产、日本的储蓄流向美国国债，每一条供应链都是一个宏观恒等式的具体实现*
+
 ## 一、从封闭经济到开放经济：GDP恒等式的扩展
+
+> **为什么要"打开"宏观模型？** 标准经济学课里学的GDP = C + I + G，暗含一个假设：一国的产出全部被本国消化，储蓄全部转化为本国投资。这在1950年代勉强成立，今天完全不现实。中国的工厂为美国消费者生产、日本的储蓄通过购买美国国债流向美国、欧洲的银行给东南亚企业发放贷款——一旦经济"打开"，储蓄可以在全球流动，国内的政策效果也会被跨境传导所改变。这是Session 7（AA-DD模型）的思想基础。
 
 ### 1.1 封闭经济的局限
 
@@ -64,6 +69,8 @@ $$CA = S_{private} + S_{government} - I$$
 **2023-2025年美国的孪生赤字新案例**：2023财年，美国联邦财政赤字达到约1.7万亿美元（GDP的6.3%），是疫情外正常时期的历史高点。同年，美国经常账户赤字约为9050亿美元（约GDP的3.3%）。储蓄-投资视角下，美国私人部门储蓄率虽然在疫情后有所回升，但被政府财政的巨额赤字完全抵消，外部赤字的结构性根源没有改变。更值得关注的是：美国国债持有人结构正在悄然改变——中国（2014年最高持有约1.3万亿美元美债）持续减持，2024年已降至约7500亿美元；日本虽然依然是最大外国持有人（约1.1万亿美元），但因日元贬值压力也在寻找减持时机。当传统的"自愿买家"减少时，谁来继续融通美国赤字，是2025年以后最重要的宏观问题之一。
 
 ## 二、汇率对贸易的影响：J曲线效应
+
+> **一个反直觉的现实：** 如果你问大多数人"本币贬值对出口好不好"，他们会说"好，出口变便宜了"。这是对的，但不完整——因为时间维度很重要。贬值发生后，进口商品的价格账单立刻变贵（以本币算），但进口量短期内减不下来；出口变便宜了，但外国买家切换供应商需要时间。结果是：贬值后的前几个月，贸易差额先恶化，然后才改善。这个"先跌后涨"的形状就是J曲线，它是很多国家汇率调整后政治压力集中爆发的根本原因——坏消息先来，好消息迟到。
 
 ### 2.1 直觉与矛盾
 
@@ -145,6 +152,8 @@ $$|\epsilon_{exports}| + |\epsilon_{imports}| > 1$$
 > **毛主席的视角：** 开放经济宏观学的核心假设是：自由贸易和资本流动带来效率。但效率是为谁服务的？当一个国家开放资本账户，往往是让外国资本决定本国的储蓄去哪里投资——这是主权的让渡。中国维持高储蓄率 + 国家主导投资，并不依赖国际资本市场来"配置资源"。结果是：中国可以在外国资本不愿意进入的领域（高速铁路、半导体、航天）持续投入——这是经常账户盈余 + 国家动员能力的结合。一个持续的顺差国比一个依赖外部融资的赤字国，对外部冲击有更强的免疫力。
 
 ## 四、开放经济的政策困境
+
+> **政策制定者的两难：** 理想中，一国政府可以同时让经济增长、物价稳定、汇率合理、贸易平衡。现实中，这些目标经常相互冲突。降息刺激经济，但可能引发货币贬值和资本外流；财政扩张拉动需求，但如果本国进口弹性高，很大一部分需求"漏"到国外去了。这节的政策分析框架，帮助你系统性地判断：在某个特定情境下，政策工具的效果会被什么机制放大或削弱。
 
 ### 4.1 内部均衡与外部均衡
 
@@ -248,7 +257,7 @@ $$|\epsilon_{exports}| + |\epsilon_{imports}| > 1$$
 ## 延伸视频
 
 - **Ray Dalio "How The Economic Machine Works"**：[https://www.youtube.com/watch?v=PHe0bXAIuk0](https://www.youtube.com/watch?v=PHe0bXAIuk0) — 理解开放经济宏观框架下信贷周期与经常账户关系的最佳入门视频
-- **"Mundell Fleming Model Explained" (Marginal Revolution University 搜索)**：[https://www.youtube.com/watch?v=uBaTPugw3M4](https://www.youtube.com/watch?v=uBaTPugw3M4) — 开放经济政策框架的系统讲解，与本节直接衔接
+- **"Mundell Fleming Model — Monetary Policy — Interest Rates, Money Supply & Exchange Rate"**：[https://www.youtube.com/watch?v=uBaTPugw3M4](https://www.youtube.com/watch?v=uBaTPugw3M4) — 开放经济政策框架的系统讲解，与本节直接衔接
 - **"Fixed vs Floating Exchange Rates (Arguments For and Against)"**：[https://www.youtube.com/watch?v=5FaNeRH-GLY](https://www.youtube.com/watch?v=5FaNeRH-GLY) — 汇率制度选择与开放经济政策效果的完整对比分析
 
 ---
@@ -268,5 +277,5 @@ $$|\epsilon_{exports}| + |\epsilon_{imports}| > 1$$
 - **Wikipedia - [Open economy](https://en.wikipedia.org/wiki/Open_economy)**：开放经济的基本定义和与封闭经济的对比，含储蓄-投资关系的说明
 - **Wikipedia - [J-curve](https://en.wikipedia.org/wiki/J-curve)**：J曲线在贸易和其他领域的应用，含马歇尔-勒纳条件的解释
 - **Wikipedia - [Marshall–Lerner condition](https://en.wikipedia.org/wiki/Marshall%E2%80%93Lerner_condition)**：贬值改善贸易差额的条件，实证证据综述
-- **YouTube - "Twin Deficits Explained" (various economics channels)**：搜索"twin deficits explained economics"，多个视频清晰解释孪生赤字的逻辑和美国案例
-- **YouTube - "Mundell-Fleming Model" (Marginal Revolution University)**：搜索"Mundell Fleming MRU"，Marginal Revolution University有简洁清晰的视频讲解开放经济政策模型，是本节和下一节课的最佳视频补充
+- **YouTube — "What Is The Twin Deficits Hypothesis?" (World Economy Watchers)**：[https://www.youtube.com/watch?v=1WI916hSvDA](https://www.youtube.com/watch?v=1WI916hSvDA) — 清晰解释孪生赤字假说：政府预算赤字如何与经常账户赤字挂钩，含美国和印度案例
+- **YouTube — "Open Economy Macroeconomics: The Mundell-Fleming Model"**：[https://www.youtube.com/watch?v=yRefsZdU1No](https://www.youtube.com/watch?v=yRefsZdU1No) — 蒙代尔-弗莱明模型的完整讲解，是本节和下一节课的最佳视频补充

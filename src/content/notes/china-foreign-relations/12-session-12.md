@@ -124,7 +124,7 @@ session: "12"
 
 美元制裁因此是真正的"战略核武器"——威慑力巨大，但几乎无法真正使用，除非已经进入战时或准战时状态。
 
-![经济战的武器图谱](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80)
+![经济战的武器图谱](https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80)
 *金融市场是中美博弈的另一个战场——美元体系既是美国最强的武器，也是最难动用的武器*
 
 ## 三、半导体战的全貌

@@ -27,6 +27,9 @@ session: "4"
 
 这条消息走的就是 **SWIFT 网络**。
 
+![跨境支付与SWIFT](https://images.unsplash.com/photo-1530973428-5bf2db2e4d71?auto=format&fit=crop&w=900&q=80)
+*▲ 每一笔国际汇款背后是一条穿越多家银行的消息链——SWIFT是连接全球11000家金融机构的神经网络*
+
 ---
 
 ## SWIFT 是什么

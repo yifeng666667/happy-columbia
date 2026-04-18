@@ -10,7 +10,12 @@ session: "3"
 
 但BOP不只是统计工具。它揭示了一个宏观经济的深层逻辑：**一国的对外净头寸，是本国储蓄与投资之差**。这个恒等式看似简单，却是理解全球失衡（global imbalances）、经常账户危机和汇率压力的核心框架。
 
+![集装箱港口——货物贸易是国际收支经常账户的起点](https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=900&q=80)
+*每一个集装箱的跨境流动，都在国际收支账本上留下一笔记录——中国出口到美国的货物，既是经常账户的盈余，也是资本账户资金流入的来源*
+
 ## 一、国际收支的基本结构
+
+> **为什么需要一套"账本"？** 当一个国家进口超过出口，钱是从哪里来的？当外资大规模涌入一个新兴市场，它在账面上反映在哪里？BOP（国际收支）就是回答这些问题的双式记账体系。正如企业的资产负债表能把所有财务活动汇总在一个框架里，BOP把一国所有跨境经济活动——商品、服务、资本、外汇储备——用一套一致的会计逻辑整合起来。搞懂BOP，就能看懂外汇危机是如何积累的。
 
 ### 1.1 三个账户
 
@@ -96,6 +101,8 @@ $$\text{经常账户赤字} = \text{金融账户盈余（资本净流入）} + \
 
 ## 三、金融账户：资本流动的分类
 
+> **为什么资本流动的"形式"很重要？** 同样是外资流入10亿美元，如果是建工厂的FDI，和如果是买短期国债的热钱，对一个国家的稳定性影响完全不同。前者即便市场不好也不会"跑路"，后者在信心稍有动摇时可以在24小时内撤离。1997年亚洲金融危机的核心就在于：各国依赖的是最不稳定的那类资本——短期银行贷款。
+
 ### 3.1 三种资本的稳定性层级
 
 资本流动按稳定性可以分为三类，稳定性依次递减：
@@ -128,6 +135,8 @@ EM（新兴市场）的资本流动有典型的周期性特征，经济学家Car
 这个周期与Session 1的Pettis流动性模型完全呼应，是同一机制在BOP账户上的反映。
 
 ## 四、全球失衡：美国赤字与中国盈余
+
+> **为什么失衡本身是个问题？** 你可能会想：如果美国想买，中国想卖，不是皆大欢喜吗？问题在于，这种失衡是靠债务维持的。美国的持续赤字意味着对外净负债不断积累；中国的持续盈余意味着把储蓄"借"给了美国——而且这种借贷关系是以美元计价的，存在巨大的汇率和地缘风险。2008年金融危机的很多根源，都可以追溯到这种全球失衡在金融市场内部的积聚。正如Session 2提到的套息交易有"缓慢积累，突然崩溃"的特征，全球失衡也遵循同样的逻辑。
 
 ### 4.1 会计恒等式的含义
 
@@ -298,5 +307,5 @@ EM（新兴市场）的资本流动有典型的周期性特征，经济学家Car
 - **Wikipedia - [Balance of payments](https://en.wikipedia.org/wiki/Balance_of_payments)**：BOP的完整定义、账户结构、历史失衡案例的综合词条，是本节最重要的参考
 - **Wikipedia - [Current account](https://en.wikipedia.org/wiki/Current_account)**：经常账户的详细说明，含各国数据对比和失衡分析
 - **Wikipedia - [Triffin dilemma](https://en.wikipedia.org/wiki/Triffin_dilemma)**：特里芬悖论的历史和当代意义，是理解美元霸权内在矛盾的必读词条
-- **YouTube - "Balance of Payments Explained" (IMF / Marginal Revolution University)**：搜索"balance of payments explained MRU"，Marginal Revolution University有简明清晰的视频系列，适合建立基本框架
-- **YouTube - "Global Imbalances" (various academic lectures)**：搜索"global imbalances lecture"，有多个大学公开课视频深入讨论美中失衡的成因与政策含义
+- **YouTube — "Analyze This! Global Imbalances" (IMF)**：[https://www.youtube.com/watch?v=B0_TycBDMyA](https://www.youtube.com/watch?v=B0_TycBDMyA) — IMF出品，解释什么是全球失衡及其重要性，适合建立国际收支的宏观框架
+- **YouTube — "Why global trade will have to change, the Great Rebalancing Explained" (Michael Pettis)**：[https://www.youtube.com/watch?v=np8gUd3Qvxk](https://www.youtube.com/watch?v=np8gUd3Qvxk) — 深入分析全球贸易失衡的结构性成因与美中经济关系的再平衡逻辑

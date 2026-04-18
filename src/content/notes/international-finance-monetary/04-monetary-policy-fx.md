@@ -10,7 +10,12 @@ session: "4"
 
 货币政策与外汇市场之间的关系，是当代国际金融最核心的实践问题之一。这节课的任务，是搭建一个清晰的分析框架：**央行的工具如何通过各种渠道传导至汇率，中央银行的干预有多大效力，以及这一机制在不同制度安排下有何差异。**
 
+![金融区天际线——央行决策与资本市场的传导](https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=900&q=80)
+*全球主要央行的每一次利率决定，都通过资本流动渠道在数秒内传递到全球外汇市场——金融中心的每一座高楼，都在时刻接收和传导这些信号*
+
 ## 一、中央银行基础：谁在管钱
+
+> **为什么央行和汇率如此紧密？** 在Session 2里，我们知道利率差驱动资本流动，资本流动影响汇率。而利率最重要的决定者，就是中央银行。这意味着：每次央行开会宣布利率决定，全球外汇市场的几万亿美元头寸都在同步重新定价。理解央行的目标、工具和独立性，是理解"货币政策如何通过汇率影响一切"的起点。
 
 ### 1.1 央行的目标
 
@@ -65,6 +70,8 @@ session: "4"
 YCC的退出，直接触发了2024年8月的套息交易崩盘（见02章）——这条传导链，完整展示了货币政策决策如何通过汇率、套息交易、再到全球资本市场，产生连锁反应。
 
 ## 二、货币政策影响汇率的传导渠道
+
+> **为什么要细分"传导渠道"？** 很多人会直觉地认为"加息=本币升值"就是货币政策影响汇率的全部故事。但实际上这个传导链有多条路径，有时甚至相互抵消：加息通过利率吸引外资（升值压力），同时可能让市场担心经济衰退（贬值压力）。不同渠道在不同情境下主导，这就是为什么同样的"加息"在土耳其引发货币崩溃，在美国引发美元超强——理解渠道，才能判断具体情境。
 
 货币政策影响汇率不是一步到位，而是通过多条路径传导：
 
@@ -137,6 +144,8 @@ FX互换的结构是：甲方和乙方同时在两个时间点交换两种货币
 但在压力时期，即便是算法交易员也会撤出，市场流动性枯竭，价格的形成变得混乱。这就是为什么大型机构在危机中常常发现：理论上应该有套利机会，但因为无法执行而无法获利。
 
 ## 四、中央银行干预：效力与局限
+
+> **现实问题：** 如果汇率由市场决定，央行能逆转市场吗？2022年日本财务省花了约650亿美元干预日元，但日元依然全年贬值32%。这说明了什么？本节的核心结论是：干预可以"买时间"、"管理节奏"，但无法逆转由基本面（利率差、通胀差）驱动的趋势——除非同步改变货币政策本身。理解这个局限，是评估所有汇率稳定承诺的基础。
 
 ### 4.1 为什么干预
 
@@ -283,6 +292,6 @@ FX互换的结构是：甲方和乙方同时在两个时间点交换两种货币
 
 - **Wikipedia - [Central bank](https://en.wikipedia.org/wiki/Central_bank)**：全球主要央行的使命、工具和历史的综合词条，含独立性讨论
 - **Wikipedia - [Exchange rate overshooting model](https://en.wikipedia.org/wiki/Exchange_rate_overshooting_model)**：Dornbusch超调模型的直觉解释和数学框架，是本节最重要的理论概念
-- **YouTube - "How the Fed Moves Markets" (various finance channels)**：搜索"how Federal Reserve affects exchange rate"，有多个高质量的直觉性解释视频
+- **YouTube — "How interest rates affect interest rates, financial flows, and exchange rates" (Khan Academy)**：[https://www.youtube.com/watch?v=_etdZ9G8D4A](https://www.youtube.com/watch?v=_etdZ9G8D4A) — 清晰讲解美联储利率变化如何通过资本流动渠道传导至汇率，是本节"利率渠道"最直观的配套视频
 - **Wikipedia - [Foreign exchange intervention](https://en.wikipedia.org/wiki/Foreign_exchange_intervention)**：外汇干预的类型、历史案例和实证研究综述
-- **YouTube - "Currency Wars Explained" (VisualPolitik EN)**：搜索"currency wars VisualPolitik"，该频道有关于汇率政治经济学的深度视频，帮助理解政策背后的博弈逻辑
+- **YouTube — "Currency Wars (Competitive Currency Devaluations) Explained in One Minute"**：[https://www.youtube.com/watch?v=HRwMeLjE3L0](https://www.youtube.com/watch?v=HRwMeLjE3L0) — 简洁解释竞争性贬值的政治逻辑，帮助理解各国货币政策博弈的背景

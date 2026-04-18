@@ -12,7 +12,12 @@ session: "7"
 
 从本节课开始，所有之前学过的内容——汇率基础、利率平价、国际收支、货币政策传导、开放经济宏观——都汇聚在这个模型里。
 
+![经济分析仪表板——AA-DD均衡的政策追踪](https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=900&q=80)
+*AA-DD模型的价值不在于给出答案，而在于系统地追踪政策冲击如何同时穿过商品市场和资产市场，最终在新的均衡点落地——就像这个仪表板，把复杂的系统简化为可追踪的指标*
+
 ## 一、模型架构：两条曲线，一个均衡
+
+> **为什么要建立这个模型？** Session 6告诉我们，开放经济的政策分析需要同时追踪商品市场和资本市场的反应——但两者是耦合的，一个变化会引发另一个的连锁调整。AA-DD正是为了处理这种耦合而设计的工具：DD曲线代表商品市场均衡，AA曲线代表资产市场（货币+外汇）均衡，两者的交点就是整体均衡——任何政策冲击都可以用"曲线移动"来追踪其传导路径，这比文字描述精确得多。
 
 ### 1.1 坐标系设定
 
@@ -92,6 +97,8 @@ $$i = i^* + (E^e - E)/E$$
 
 ## 二、浮动汇率下的政策分析
 
+> **蒙代尔-弗莱明的核心洞察：** 这节的分析会得出一个反直觉的结论——在浮动汇率+资本高度流动的情境下，财政政策效果会被汇率升值"部分抵消"，而货币政策则因为额外的汇率贬值渠道而效果更强。这个结论颠覆了封闭经济的常识，也直接影响政策制定者在不同汇率制度下如何选择刺激工具。正如Session 6提到的，开放经济的乘数效应比封闭经济小——AA-DD把这个道理的机制讲清楚了。
+
 ### 2.1 财政政策（浮动汇率 + 资本高度流动）
 
 **情景**：政府增加支出（G↑），货币政策不变。
@@ -139,6 +146,8 @@ $$i = i^* + (E^e - E)/E$$
 这展示了浮动汇率的一个重要优势：**外部冲击下，汇率自动调整部分吸收冲击**，使产出波动比固定汇率制度下更小。
 
 ## 三、Dornbusch超调：AA-DD框架下的完整理解
+
+> **超调的核心问题：** 为什么美联储加息后，美元的升值幅度往往远超"合理"的基本面能解释的范围？Session 4提到了超调，但没有讲清楚机制。AA-DD框架给出了最清晰的解释：资产市场（外汇）以毫秒速度调整，商品市场（贸易量、价格）需要数月。当两个市场调整速度不同，汇率就必然先"过冲"——不是因为市场非理性，而是理性预期在两速度调整框架下的必然结果。
 
 ### 3.1 两速度调整
 
@@ -292,7 +301,7 @@ AA-DD模型是这门课的分析核心，也是理解当代宏观政策争论的
 
 - **"Dornbusch Exchange Rate Overshooting Model"**：[https://www.youtube.com/watch?v=B6vLaEi3LoM](https://www.youtube.com/watch?v=B6vLaEi3LoM) — 超调模型的核心逻辑，是理解AA-DD框架中为什么汇率会先过冲再回归的必看视频
 - **"International Economics: The Dornbusch Overshooting Model"**：[https://www.youtube.com/watch?v=zBnwbVCAo94](https://www.youtube.com/watch?v=zBnwbVCAo94) — 国际经济学课程视角的完整超调模型讲解
-- **"Asian Financial Crisis" (相关纪录片)**：搜索 [https://www.youtube.com/watch?v=PHe0bXAIuk0](https://www.youtube.com/watch?v=PHe0bXAIuk0)（Ray Dalio宏观框架）配合了解1997年危机的AA-DD动态
+- **"How The Economic Machine Works" (Ray Dalio)**：[https://www.youtube.com/watch?v=PHe0bXAIuk0](https://www.youtube.com/watch?v=PHe0bXAIuk0) — 理解信贷周期与宏观调整机制，是理解1997年亚洲危机AA-DD动态的最佳宏观背景视频
 
 ---
 
@@ -318,6 +327,6 @@ AA-DD模型是这门课的分析核心，也是理解当代宏观政策争论的
 
 - **Wikipedia - [Mundell–Fleming model](https://en.wikipedia.org/wiki/Mundell%E2%80%93Fleming_model)**：AA-DD（蒙代尔-弗莱明）模型的完整推导、政策含义和历史背景，是本节最重要的参考词条
 - **Wikipedia - [Exchange rate overshooting model](https://en.wikipedia.org/wiki/Exchange_rate_overshooting_model)**：Dornbusch超调的完整解释，包括数学推导和实证评估
-- **YouTube - "Mundell Fleming Model Explained" (various academic channels)**：搜索"Mundell Fleming explained"，有多个大学课程和经济学频道的清晰讲解视频，含图形推导
+- **YouTube — "Open Economy Macroeconomics: The Mundell-Fleming Model"**：[https://www.youtube.com/watch?v=yRefsZdU1No](https://www.youtube.com/watch?v=yRefsZdU1No) — 系统讲解蒙代尔-弗莱明框架，含图形推导，与本节AA-DD分析直接衔接
 - **Wikipedia - [1997 Asian financial crisis](https://en.wikipedia.org/wiki/1997_Asian_financial_crisis)**：亚洲金融危机的完整历史记录，是本节案例分析的最佳背景资料
-- **YouTube - "Asian Financial Crisis" (Fall of Civilizations or economics channels)**：搜索"Asian financial crisis documentary"，有多个深度纪录片风格的视频解释危机的来龙去脉
+- **YouTube — "Argentina economic crisis documentary"**：[https://www.youtube.com/watch?v=6yqHhqt9ZkE](https://www.youtube.com/watch?v=6yqHhqt9ZkE) — 纪录片风格，通过阿根廷危机案例展示固定汇率崩溃与AA-DD失衡的现实动态

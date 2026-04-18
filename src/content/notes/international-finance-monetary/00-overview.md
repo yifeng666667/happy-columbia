@@ -81,7 +81,7 @@ session: "Overview"
 ![货币与金融——国际货币体系的基础](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80)
 *图注：货币不只是交换媒介，它是国际政治经济权力的载体——谁控制了储备货币，谁就掌握了全球经济规则*
 
-![现代摩天大楼——全球金融中心与美元体系](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80)
+![现代摩天大楼——全球金融中心与美元体系](https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=900&q=80)
 *图注：纽约下曼哈顿——全球美元清算体系的地理中心*
 
 ---
