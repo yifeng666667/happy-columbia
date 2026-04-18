@@ -291,7 +291,7 @@ AA-DD模型是这门课的分析核心，也是理解当代宏观政策争论的
 ## 延伸视频
 
 - **"Dornbusch Exchange Rate Overshooting Model"**：[https://www.youtube.com/watch?v=B6vLaEi3LoM](https://www.youtube.com/watch?v=B6vLaEi3LoM) — 超调模型的核心逻辑，是理解AA-DD框架中为什么汇率会先过冲再回归的必看视频
-- **"International Economics: The Dornbusch Overshooting Model"**：[https://www.youtube.com/watch?v=V9GfjsLNif0](https://www.youtube.com/watch?v=V9GfjsLNif0) — 国际经济学课程视角的完整超调模型讲解
+- **"International Economics: The Dornbusch Overshooting Model"**：[https://www.youtube.com/watch?v=zBnwbVCAo94](https://www.youtube.com/watch?v=zBnwbVCAo94) — 国际经济学课程视角的完整超调模型讲解
 - **"Asian Financial Crisis" (相关纪录片)**：搜索 [https://www.youtube.com/watch?v=PHe0bXAIuk0](https://www.youtube.com/watch?v=PHe0bXAIuk0)（Ray Dalio宏观框架）配合了解1997年危机的AA-DD动态
 
 ---

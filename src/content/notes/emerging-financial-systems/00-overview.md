@@ -113,8 +113,8 @@ ESG与可持续发展金融
 - [Emerging market — Wikipedia](https://en.wikipedia.org/wiki/Emerging_market)：新兴市场的定义、分类标准与主要特征
 - [1997 Asian financial crisis — Wikipedia](https://en.wikipedia.org/wiki/1997_Asian_financial_crisis)：亚洲金融危机的全景，理解EM金融脆弱性的必读材料
 - [YouTube — "How The Economic Machine Works" by Ray Dalio](https://www.youtube.com/watch?v=PHe0bXAIuk0)：30分钟理解信贷周期与经济运转，全课程最重要的基础视频
-- [YouTube — "Emerging Markets Explained" (Investopedia)](https://www.youtube.com/watch?v=jqxFxMqjBvQ)：新兴市场的定义与核心特征入门
-- [YouTube — "The Rise of Emerging Markets" (World Economic Forum)](https://www.youtube.com/watch?v=Uk9aaJUnuJo)：EM在全球经济格局中的崛起与未来趋势
+- [YouTube — "Emerging Markets Explained" (Investopedia)](https://www.youtube.com/watch?v=lHX_56RWtSw)：新兴市场的定义与核心特征入门
+- [YouTube — "The Rise of Emerging Markets" (World Economic Forum)](https://www.youtube.com/watch?v=BpcxhlU9PfA)：EM在全球经济格局中的崛起与未来趋势
 
 ## 关于这份笔记
 

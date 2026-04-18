@@ -207,6 +207,6 @@ EM绿色债券在国际市场的发行，是过去五年增长最快的细分市
 - [Argentine debt restructuring — Wikipedia](https://en.wikipedia.org/wiki/Argentine_debt_restructuring)：阿根廷债务重组与"秃鹫基金"诉讼完整历史
 - [Collective action clause — Wikipedia](https://en.wikipedia.org/wiki/Collective_action_clause)：集体行动条款如何解决主权债务重组中的持有人问题
 - [Original sin (economics) — Wikipedia](https://en.wikipedia.org/wiki/Original_sin_(economics))：EM"原罪"理论的完整经济学解释
-- [YouTube — "Why Countries Default on Debt" (Wendover Productions)](https://www.youtube.com/watch?v=TkYNJTCTK4Q)：主权债务违约的历史模式与阿根廷案例
-- [YouTube — "Emerging Market Bonds: Risk and Return" (CFA Institute)](https://www.youtube.com/watch?v=5MCHj0rGBxA)：EM债券投资的风险收益特征与机构实践
-- [YouTube — "How Sovereign Debt Works" (Investopedia)](https://www.youtube.com/watch?v=bsrOFXdpBhE)：主权债务的发行机制、评级影响与投资者视角
+- [YouTube — "Why Countries Default on Debt" (Wendover Productions)](https://www.youtube.com/watch?v=oum5ZCGx6J0)：主权债务违约的历史模式与阿根廷案例
+- [YouTube — "Emerging Market Bonds: Risk and Return" (CFA Institute)](https://www.youtube.com/watch?v=do_PUmbr17Q)：EM债券投资的风险收益特征与机构实践
+- [YouTube — "How Sovereign Debt Works" (Investopedia)](https://www.youtube.com/watch?v=KdfPTXu5pOk)：主权债务的发行机制、评级影响与投资者视角

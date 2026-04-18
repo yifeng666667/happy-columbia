@@ -201,7 +201,7 @@ session: "1"
 
 - **Wikipedia - [Comparative advantage](https://en.wikipedia.org/wiki/Comparative_advantage)**：完整的理论溯源与数学形式，包括 Ricardian 模型和现代扩展。
 - **Wikipedia - [David Ricardo](https://en.wikipedia.org/wiki/David_Ricardo)**：李嘉图的生平与思想背景，理解比较优势是如何在 19 世纪英国的政治经济背景下提出的。
-- **YouTube - ["Comparative Advantage" — Marginal Revolution University](https://www.youtube.com/watch?v=_9oVJRnSvAc)**：时长约 4 分钟。Tyler Cowen 用极简方式解释为什么比较优势是反直觉但强大的逻辑，是建立直觉最快的视频之一。
-- **YouTube - ["Gains from Trade and Comparative Advantage" — Khan Academy](https://www.youtube.com/watch?v=XX29jAkdHkA)**：时长约 9 分钟。通过数字例子手把手演示机会成本计算和贸易收益，适合初学者。
-- **YouTube - ["The China Shock" — David Autor MIT Lecture](https://www.youtube.com/watch?v=KaFy7eqRo5c)**：Autor 本人解释中国冲击研究，是比较优势"输家"问题最重要的实证视角。
+- **YouTube - ["Comparative Advantage" — Marginal Revolution University](https://www.youtube.com/watch?v=4rUfoU04QJM)**：时长约 4 分钟。Tyler Cowen 用极简方式解释为什么比较优势是反直觉但强大的逻辑，是建立直觉最快的视频之一。
+- **YouTube - ["Gains from Trade and Comparative Advantage" — Khan Academy](https://www.youtube.com/watch?v=xx9xNJlPOJo)**：时长约 9 分钟。通过数字例子手把手演示机会成本计算和贸易收益，适合初学者。
+- **YouTube - ["The China Shock" — David Autor MIT Lecture](https://www.youtube.com/watch?v=OQEJrBhvOWQ)**：Autor 本人解释中国冲击研究，是比较优势"输家"问题最重要的实证视角。
 - **Wikipedia - [Smoot-Hawley Tariff Act](https://en.wikipedia.org/wiki/Smoot%E2%80%93Hawley_Tariff_Act)**：1930 年代保护主义恶化大萧条的历史，是"比较优势被政治否决后会发生什么"的最重要案例。

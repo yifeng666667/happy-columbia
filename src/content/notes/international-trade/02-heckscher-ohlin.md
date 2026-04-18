@@ -216,6 +216,6 @@ Session 2 为 Session 8（贸易战）奠定了分配政治的理论基础：如
 - **Wikipedia - [Heckscher–Ohlin theorem](https://en.wikipedia.org/wiki/Heckscher%E2%80%93Ohlin_theorem)**：完整的 H-O 框架，包括四大定理的关系梳理。
 - **Wikipedia - [Leontief paradox](https://en.wikipedia.org/wiki/Leontief_paradox)**：悖论的详细描述和主要解释方向，是理解实证贸易研究的好起点。
 - **Wikipedia - [Stolper–Samuelson theorem](https://en.wikipedia.org/wiki/Stolper%E2%80%93Samuelson_theorem)**：分配效应定理的标准解释，直接链接政治经济学分析。
-- **YouTube - ["Heckscher-Ohlin Model" — Marginal Revolution University](https://www.youtube.com/watch?v=EmPBg3lCMKg)**：时长约 5 分钟。Tyler Cowen 解释要素禀赋如何决定贸易模式，配合图解，是最快建立直觉的方式。
-- **YouTube - ["The Stolper-Samuelson Theorem" — MRU](https://www.youtube.com/watch?v=LrXpLMNFQbw)**：时长约 4 分钟。直接演示为什么贸易会使丰裕要素受益、稀缺要素受损，政治联盟的底层逻辑一目了然。
-- **YouTube - ["Factor Price Equalization" — Economics Explained](https://www.youtube.com/watch?v=r_EFsNfJWdI)**：时长约 8 分钟。用具体案例解释要素价格均等化为什么在理论上成立、在现实中为何失败。
+- **YouTube - ["Heckscher-Ohlin Model" — Marginal Revolution University](https://www.youtube.com/watch?v=hPsKUJiw51E)**：时长约 5 分钟。Tyler Cowen 解释要素禀赋如何决定贸易模式，配合图解，是最快建立直觉的方式。
+- **YouTube - ["The Stolper-Samuelson Theorem" — MRU](https://www.youtube.com/watch?v=_vdSPqQdb1U)**：时长约 4 分钟。直接演示为什么贸易会使丰裕要素受益、稀缺要素受损，政治联盟的底层逻辑一目了然。
+- **YouTube - ["Factor Price Equalization" — Economics Explained](https://www.youtube.com/watch?v=CnYXoidFoCM)**：时长约 8 分钟。用具体案例解释要素价格均等化为什么在理论上成立、在现实中为何失败。

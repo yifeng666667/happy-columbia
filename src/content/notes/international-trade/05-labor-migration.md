@@ -236,6 +236,6 @@ session: "5"
 - **Wikipedia - [Immigration economics](https://en.wikipedia.org/wiki/Immigration_economics)**：移民经济影响的全面综述，包括工资效应、财政影响、主要学术争论的梳理。
 - **Wikipedia - [Mariel boatlift](https://en.wikipedia.org/wiki/Mariel_boatlift)**：卡德自然实验的历史背景，理解为什么这个事件成为移民经济学的经典案例。
 - **Wikipedia - [Hukou system](https://en.wikipedia.org/wiki/Hukou_system)**：中国户籍制度的详细介绍，帮助理解内部迁移的制度约束与发展含义。
-- **YouTube - ["Immigration and Wages" — Marginal Revolution University](https://www.youtube.com/watch?v=b5mxFnJKmMY)**：时长约 5 分钟。Tyler Cowen 解释移民对工资影响的经济学机制，为什么供给增加不一定压低工资。
-- **YouTube - ["The Economics of Immigration" — Vox](https://www.youtube.com/watch?v=QV6CcrqIDMA)**：时长约 7 分钟。用数据和视觉化解释移民对接收国 GDP、工资和财政的实际影响，去除情绪化讨论。
-- **YouTube - ["Brain Drain and Brain Gain" — TED-Ed](https://www.youtube.com/watch?v=gxzaKKE85Hc)**：时长约 5 分钟。解释为什么人才流失对发展中国家是双刃剑——既有代价，也有通过侨民网络带来回报的可能。
+- **YouTube - ["Immigration and Wages" — Marginal Revolution University](https://www.youtube.com/watch?v=gskVowr4b7k)**：时长约 5 分钟。Tyler Cowen 解释移民对工资影响的经济学机制，为什么供给增加不一定压低工资。
+- **YouTube - ["The Economics of Immigration" — Vox](https://www.youtube.com/watch?v=4XQXiCLzyAw)**：时长约 7 分钟。用数据和视觉化解释移民对接收国 GDP、工资和财政的实际影响，去除情绪化讨论。
+- **YouTube - ["Brain Drain and Brain Gain" — TED-Ed](https://www.youtube.com/watch?v=YYvLEbC3kn8)**：时长约 5 分钟。解释为什么人才流失对发展中国家是双刃剑——既有代价，也有通过侨民网络带来回报的可能。

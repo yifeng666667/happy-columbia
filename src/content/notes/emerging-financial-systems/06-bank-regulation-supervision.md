@@ -202,6 +202,6 @@ SVB倒闭的方式令人意外——不是因为坏账，而是因为"好资产"
 - [Bank for International Settlements — Wikipedia](https://en.wikipedia.org/wiki/Bank_for_International_Settlements)：BIS的历史与在国际货币体系中的角色
 - [Systemically important financial institution — Wikipedia](https://en.wikipedia.org/wiki/Systemically_important_financial_institution)：G-SIB认定标准与"大而不倒"问题
 - [Silicon Valley Bank — Wikipedia](https://en.wikipedia.org/wiki/Silicon_Valley_Bank)：SVB倒闭事件的完整历史与对监管体系的启示
-- [YouTube — "Basel Accords Explained Simply" (Investopedia)](https://www.youtube.com/watch?v=nYT7FKaBMlM)：从巴塞尔I到III的清晰视觉化解说
+- [YouTube — "Basel Accords Explained Simply" (Investopedia)](https://www.youtube.com/watch?v=g6VP2XEQ4vI)：从巴塞尔I到III的清晰视觉化解说
 - [YouTube — "How Banks Create Money (and Why It Matters)" (Positive Money)](https://www.youtube.com/watch?v=fTTGALaRZoc)：银行货币创造机制与监管的根本逻辑
-- [YouTube — "The Silicon Valley Bank Collapse Explained" (Wall Street Journal)](https://www.youtube.com/watch?v=5gZ5UlmEVzs)：SVB倒闭的详细复盘，是理解流动性风险的最新案例教学
+- [YouTube — "The Silicon Valley Bank Collapse Explained" (Wall Street Journal)](https://www.youtube.com/watch?v=YDwDMF_f5rM)：SVB倒闭的详细复盘，是理解流动性风险的最新案例教学
