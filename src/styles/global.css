@@ -4,8 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; font-size: 106.25%; }
 body { -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; }
+
+@media (max-width: 640px) {
+  html { font-size: 100%; }
+}
 
 /* ── Mobile optimizations ── */
 @media (max-width: 768px) {
