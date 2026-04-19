@@ -179,6 +179,43 @@ header.scrolled {
   padding: 0 0.5rem;
 }
 
+/* ── Hero image: the first image in the article ──────────── */
+/* Unifies portrait & landscape sources into a clean 21:9 banner */
+.prose-reading > p:first-of-type {
+  margin: 0 0 0.75rem 0;
+}
+.prose-reading > p:first-of-type img {
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  object-position: center 32%;
+  margin: 0;
+  border-radius: 1rem;
+  box-shadow: 0 14px 36px -10px rgba(11, 44, 86, 0.22);
+  background: #f5f4f1;
+}
+/* Hero caption — italic paragraph right after the hero image */
+.prose-reading > p:first-of-type + p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #57534e;        /* stone-600 */
+  font-style: italic;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  max-width: 44rem;
+}
+
+@media (max-width: 640px) {
+  .prose-reading > p:first-of-type img {
+    aspect-ratio: 16 / 9;
+    border-radius: 0.75rem;
+  }
+}
+
 /* Research page — Beijing Guomao night cityscape */
 .research-hero {
   background-image:
