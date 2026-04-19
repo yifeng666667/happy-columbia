@@ -348,7 +348,13 @@ const catDot: Record<string, string> = {
     if (hero) hero.dataset.time = isDay ? 'day' : 'night';
 
     const v = document.querySelector<HTMLVideoElement>('.hero-video');
-    if (v) { v.src = isDay ? '/videos/1.mp4' : '/videos/4.mp4'; v.load(); v.play().catch(() => {}); }
+    if (v) {
+      const isMobile = window.innerWidth < 768;
+      v.src = isMobile
+        ? (isDay ? '/videos/mobile-day.mp4' : '/videos/mobile-night.mp4')
+        : (isDay ? '/videos/1.mp4' : '/videos/4.mp4');
+      v.load(); v.play().catch(() => {});
+    }
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduced) {

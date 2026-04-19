@@ -129,6 +129,13 @@ header.scrolled {
     rgba(3,10,24,0.18) 100%);
 }
 
+/* Mobile portrait video */
+@media (max-width: 767px) {
+  .hero-video {
+    object-position: center center;
+  }
+}
+
 /* Mobile */
 @media (max-width: 767px) {
   .hero-bg {
