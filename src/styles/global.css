@@ -114,6 +114,118 @@ header.scrolled {
   }
 }
 
+/* ─── Hero aurora: animated floating orbs ─────────── */
+.hero-aurora {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px);
+  background-size: 58px 58px;
+}
+
+.orb-wrap {
+  position: absolute;
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hero-aurora .orb-wrap:nth-child(1) { top: -18%; left: -12%; }
+.hero-aurora .orb-wrap:nth-child(2) { top: 22%; right: -6%; }
+.hero-aurora .orb-wrap:nth-child(3) { bottom: -12%; left: 20%; }
+.hero-aurora .orb-wrap:nth-child(4) { top: 5%; right: 20%; }
+
+.orb {
+  display: block;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 660px; height: 660px;
+  background: radial-gradient(circle, rgba(91,155,213,0.44) 0%, transparent 68%);
+  filter: blur(90px);
+  animation: orb-drift-1 18s ease-in-out infinite alternate;
+}
+.orb-2 {
+  width: 530px; height: 530px;
+  background: radial-gradient(circle, rgba(79,195,247,0.26) 0%, transparent 68%);
+  filter: blur(82px);
+  animation: orb-drift-2 24s ease-in-out infinite alternate;
+  animation-delay: -7s;
+}
+.orb-3 {
+  width: 450px; height: 450px;
+  background: radial-gradient(circle, rgba(56,103,160,0.36) 0%, transparent 68%);
+  filter: blur(86px);
+  animation: orb-drift-3 21s ease-in-out infinite alternate;
+  animation-delay: -14s;
+}
+.orb-4 {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(147,197,253,0.24) 0%, transparent 68%);
+  filter: blur(65px);
+  animation: orb-drift-4 29s ease-in-out infinite alternate;
+  animation-delay: -9s;
+}
+
+@keyframes orb-drift-1 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(110px, 70px) scale(1.13); }
+}
+@keyframes orb-drift-2 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-80px, -55px) scale(1.08); }
+}
+@keyframes orb-drift-3 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(65px, -50px) scale(1.1); }
+}
+@keyframes orb-drift-4 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-45px, 62px) scale(0.88); }
+}
+
+/* Diagonal shimmer sweep */
+.hero-shimmer {
+  position: absolute;
+  top: -20%; left: -45%;
+  width: 45%; height: 140%;
+  background: linear-gradient(105deg,
+    transparent 30%,
+    rgba(255,255,255,0.048) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 3;
+  animation: shimmer-sweep 14s ease-in-out 6s infinite;
+}
+@keyframes shimmer-sweep {
+  0%, 100% { transform: translateX(0) skewX(-12deg); opacity: 0; }
+  8%        { opacity: 1; }
+  42%       { opacity: 1; }
+  50%       { transform: translateX(calc(100vw + 280px)) skewX(-12deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb, .hero-shimmer { animation: none !important; }
+}
+@media (max-width: 767px) {
+  .hero-grid { display: none; }
+  .orb-1 { width: 380px; height: 380px; filter: blur(60px); }
+  .orb-2 { width: 300px; height: 300px; filter: blur(55px); }
+  .orb-3 { width: 260px; height: 260px; filter: blur(58px); }
+  .orb-4 { width: 190px; height: 190px; filter: blur(45px); }
+}
+
 /* Card hover lift */
 .card-lift {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;

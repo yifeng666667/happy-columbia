@@ -41,6 +41,15 @@ const catDot: Record<string, string> = {
   <!-- ═══════════════════════════════════════════════ -->
   <section class="hero-img min-h-[100dvh] flex flex-col justify-center items-center text-center px-6 relative">
 
+    <!-- Aurora background -->
+    <div class="hero-aurora" aria-hidden="true">
+      <div class="orb-wrap" data-depth="0.25"><div class="orb orb-1"></div></div>
+      <div class="orb-wrap" data-depth="0.45"><div class="orb orb-2"></div></div>
+      <div class="orb-wrap" data-depth="0.20"><div class="orb orb-3"></div></div>
+      <div class="orb-wrap" data-depth="0.35"><div class="orb orb-4"></div></div>
+      <div class="hero-shimmer"></div>
+    </div>
+    <div class="hero-grid" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-3xl mx-auto space-y-8 pt-16 sm:pt-20">
 
@@ -325,3 +334,27 @@ const catDot: Record<string, string> = {
   </section>
 
 </Base>
+
+<script>
+  (() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const wraps = document.querySelectorAll<HTMLElement>('.hero-aurora .orb-wrap');
+    if (!wraps.length) return;
+    let ticking = false;
+    const cx = () => window.innerWidth / 2;
+    const cy = () => window.innerHeight / 2;
+    document.addEventListener('mousemove', (e) => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const dx = (e.clientX - cx()) / cx();
+        const dy = (e.clientY - cy()) / cy();
+        wraps.forEach((w) => {
+          const d = parseFloat(w.dataset.depth ?? '0.3');
+          w.style.transform = `translate(${dx * 38 * d}px, ${dy * 26 * d}px)`;
+        });
+        ticking = false;
+      });
+    });
+  })();
+</script>
