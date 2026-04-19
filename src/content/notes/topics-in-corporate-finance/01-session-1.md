@@ -14,7 +14,7 @@ session: "1"
 
 这节课的目标是把这个工具箱打开，逐件拆解：**每件工具是什么、谁在买、谁在卖、历史上什么时候被用过、为什么有时候 A 比 B 好、什么时候 A 突然变成毒药。**
 
-![华尔街——融资工具博物馆](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Wall_Street_Sign_%281-9%29.jpg/1200px-Wall_Street_Sign_%281-9%29.jpg)
+![华尔街——融资工具博物馆](/images/topics-in-corporate-finance/01-wallst-sign.jpg)
 *华尔街这条不到 400 米长的短街，托起了全球最复杂的融资机器。从 1792 年的梧桐树协议到今天的私募信贷，每一种融资工具都在这里被发明、滥用、修复、再发明。*
 
 ## 一、全球资本市场的规模感——先建立一个量级坐标

@@ -14,7 +14,7 @@ session: "7"
 
 这节课讲 ESG（Environmental, Social, Governance）的完整旅程：它是什么、为什么兴起、为什么被攻击、以及今天投资者应该如何理解这三个字母背后的真实逻辑。
 
-![风电场——ESG 时代最具象征意义的资产](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Windmills_D1-D4_%28Thornton_Bank%29.jpg/1400px-Windmills_D1-D4_%28Thornton_Bank%29.jpg)
+![风电场——ESG 时代最具象征意义的资产](/images/topics-in-corporate-finance/07-wind.jpg)
 *ESG 崛起时，华尔街把风电、光伏、储能包装成"未来十年的结构性机会"；ESG 反弹时，同样的资产被指责为"政治投资"。这三个字母从一套评估工具，变成了一场意识形态战争——而底层的风机依然在转，收益率也依然要算 DCF。*
 
 ## 一、ESG 的起源与定义

@@ -8,7 +8,7 @@ session: "13"
 
 2024 年的利润是"正常"的吗？一家公司去年赚了 100 亿，今年还能不能赚 100 亿？这看似简单的问题，实际上是投资中最致命的陷阱之一。如果你用 2007 年的银行利润估值银行股，2008 年会让你血本无归；如果你用 2021 年的 SaaS 公司利润估值科技股，2022 年会让你市值蒸发 70%。**跨周期预测（forecasting through cycles）**的本质，是回答一个核心问题：眼前的数字是周期顶部、周期底部，还是真正的"正常水平"（**normalized earnings**）？这节课教我们识别周期的位置，区分**结构性增长**和**周期性顶峰**，避免在错误的时点用错误的假设做错误的估值。
 
-![2007 年 Northern Rock 银行门口的取款长队——周期见顶的经典瞬间](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Northern_Rock_Queue.jpg/1200px-Northern_Rock_Queue.jpg)
+![2007 年 Northern Rock 银行门口的取款长队——周期见顶的经典瞬间](/images/topics-in-corporate-finance/13-northern-rock.jpg)
 *2007 年 9 月，英国 Northern Rock 银行门口排起了上百年没见过的取款长队——这是 2008 年金融危机最早的可视化信号。前一年（2006）这家银行刚交出史上最好的业绩、刚宣布大幅回购、分析师 consensus 上调了目标价。周期顶部的"优秀业绩"和崩盘之间，往往只隔 12-18 个月。*
 
 ## 一、为什么"去年的利润"不等于"正常利润"

@@ -17,7 +17,7 @@ session: "10"
 
 这节课讲清楚 PE 的历史、商业模式、经典案例、以及 "**PE 是不是真的跑赢市场**" 这个终极问题。
 
-![杠杆收购结构图——PE 的经典武器](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Leveraged_Buyout_Diagram.png/1200px-Leveraged_Buyout_Diagram.png)
+![杠杆收购结构图——PE 的经典武器](/images/topics-in-corporate-finance/10-lbo.png)
 *LBO 的核心逻辑非常简单：用 10-30% 的股权 + 70-90% 的债务买下一家成熟公司，让这家公司自己还债，5-7 年后以更高估值卖出。股权的杠杆被放大 3-10 倍。KKR 收购 RJR Nabisco、Blackstone 收购 Hilton、Apollo 收购 Twinkies 背后的 Hostess——都是这个模板的翻版。*
 
 ## 一、什么是私募股权？

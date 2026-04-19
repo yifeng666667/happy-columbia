@@ -16,7 +16,7 @@ session: "9"
 
 这节课讲财务造假的**套路（playbook）**：他们是怎么造假的？为什么审计师没发现？监管为什么总是事后才介入？作为投资者，我们如何识别财务造假的信号？
 
-![休斯敦 Enron 大楼——21 世纪公司金融监管的开端](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Enron_Complex.jpg/1200px-Enron_Complex.jpg)
+![休斯敦 Enron 大楼——21 世纪公司金融监管的开端](/images/topics-in-corporate-finance/09-enron.jpg)
 *Enron 在休斯敦的玻璃幕墙总部曾被当作"新经济"的象征。2001 年破产后，这栋大楼依然矗立在那里，成了一个关于表外实体、财务工程和审计独立性失败的纪念碑。Sarbanes-Oxley Act 就是在这栋大楼的阴影下写出来的。*
 
 ## 一、财务造假的四大类

@@ -12,7 +12,7 @@ session: "2"
 
 这节课讲的是一个在过去十年里从边缘走到中心的金融词汇——**另类数据（Alternative Data，简称 Alt Data）**。它的核心逻辑很简单：如果财报数据是所有人都有的公开情报，那么真正的 Alpha 就藏在"财报发布之前就能看到经济活动"的数据里。卫星图像、信用卡刷卡记录、门店 WiFi 停留时间、招聘广告数量、App 下载量、货运集装箱的 AIS 信号——每一个都是一个偷偷打开的"上帝视角"窗口。
 
-![另类数据的全景——从卫星图到消费刷卡记录](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Revised_NIST_Big_Data_Taxonomy.jpg/1200px-Revised_NIST_Big_Data_Taxonomy.jpg)
+![另类数据的全景——从卫星图到消费刷卡记录](/images/topics-in-corporate-finance/02-bigdata.jpg)
 *NIST 对大数据的官方分类。对冲基金在这张图上找"别人还没挖过的井"——先挖到的人拿 Alpha，后来的人只剩数据噪音。*
 
 ## 一、一个 400 年前的比喻：威尼斯商人的望远镜

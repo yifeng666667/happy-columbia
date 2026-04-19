@@ -14,7 +14,7 @@ session: "4"
 
 这节课把过去 400 年的八次最重要的资产泡沫摊开讲。不是让你"预测下一次泡沫"——没人能做到——而是让你学会**在泡沫开始形成时认出它的味道**。
 
-![Semper Augustus——1637 年荷兰郁金香泡沫中最贵的那朵](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Semper_Augustus_Tulip_17th_century.jpg/1000px-Semper_Augustus_Tulip_17th_century.jpg)
+![Semper Augustus——1637 年荷兰郁金香泡沫中最贵的那朵](/images/topics-in-corporate-finance/04-tulip.jpg)
 *1637 年郁金香狂热的顶峰，一支 Semper Augustus 球茎的价格相当于阿姆斯特丹运河边上的一套豪宅。几个月后它跌到只值几磅洋葱。这是人类金融史上第一个被记录下来的完整泡沫——也是之后每一次泡沫的模板。*
 
 ## 一、泡沫的结构：Minsky 的五阶段模型

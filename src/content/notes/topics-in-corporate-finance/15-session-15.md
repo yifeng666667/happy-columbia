@@ -8,7 +8,7 @@ session: "15"
 
 2024 年 1 月 10 日，美国 SEC 批准了 11 只**比特币现货 ETF**，Bitcoin 作为一类资产正式"进入主流"。BlackRock 的 IBIT 上线 11 个月吸引了 520 亿美元，成为历史上增长最快的 ETF 产品。同年 3 月，比特币价格突破 73000 美元历史新高，整个加密资产市场总市值超过 2.7 万亿美元。但在这个"主流化"的叙事背后，是 2022 年 FTX 崩塌的 80 亿美元用户资产、Terra/Luna 蒸发的 400 亿、Celsius 的冻结、Three Arrows Capital 的破产。数字资产这一场持续 15 年的实验，究竟是**人类货币史上最重要的革命**，还是**一次更漂亮的金融投机**？这节课要梳理数字资产的底层逻辑、生态格局、重大事件，以及传统金融机构如何重新定义它。
 
-![加拿大 Argo Blockchain 比特币挖矿中心——数字黄金的物理实体](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Argo_Blockchain_Mirabel_Facility.jpg/1200px-Argo_Blockchain_Mirabel_Facility.jpg)
+![加拿大 Argo Blockchain 比特币挖矿中心——数字黄金的物理实体](/images/topics-in-corporate-finance/15-argo.jpg)
 *比特币看起来是"虚拟"的，但它的共识是由成千上万台这样的机器 24 小时耗电维持的。2024 年全球比特币挖矿年耗电量约 150 TWh，超过阿根廷全年用电。这也是数字资产最大的悖论：一种号称"去中心化货币革命"的东西，需要大规模的实体基础设施、廉价电力和传统金融的 ETF 包装才能真正进入主流。*
 
 ## 一、数字资产的三层结构

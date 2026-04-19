@@ -23,7 +23,7 @@ session: "12"
 
 这节课讲资本配置的核心逻辑，以及几个代表性公司（Apple、Berkshire、GE、Exxon）在过去几十年是怎么做这个选择的。
 
-![Warren Buffett——把资本配置当成 CEO 第一要务的投资人](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/1200px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg)
+![Warren Buffett——把资本配置当成 CEO 第一要务的投资人](/images/topics-in-corporate-finance/12-buffett.jpg)
 *在奥马哈的办公室里，Buffett 每天做的核心决定只有一件——Berkshire 账上的现金应该投向哪里？再投资？收购？分红？回购？还是留着等下一次危机？过去 60 年的 Berkshire 年报其实就是一本最昂贵的资本配置教科书——每一页都在回答"这 10 亿应该怎么花"。*
 
 ## 一、资本配置的基本原则

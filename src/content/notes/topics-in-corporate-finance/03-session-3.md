@@ -12,7 +12,7 @@ session: "3"
 
 这节课把最常用的三大估值工具——PE、EV/EBITDA、DCF——摊开讲清楚：它们各自的适用场景、典型陷阱、以及什么时候该抛弃"数字精确感"接受"模糊的正确"。
 
-![股价每天跳动，但估值是一个观点，不是一个数字](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Philippine-stock-market-board.jpg/1200px-Philippine-stock-market-board.jpg)
+![股价每天跳动，但估值是一个观点，不是一个数字](/images/topics-in-corporate-finance/03-stockboard.jpg)
 *交易所的大屏每天给出"价格"，但"价值"是被分析师、投行、基金经理用不同模型推算出来的观点。同一家公司 Morgan Stanley 可能算出 $180，Goldman $120，JPMorgan $240——差异不在数据，在假设。*
 
 ## 一、估值的本质：比较 vs 预测

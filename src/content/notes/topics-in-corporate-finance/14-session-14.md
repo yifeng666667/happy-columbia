@@ -8,7 +8,7 @@ session: "14"
 
 2024 年，全球资产管理行业管理规模超过 **128 万亿美元**。贝莱德一家就管理 10.5 万亿，先锋基金（Vanguard）管理 9.4 万亿。但同时，行业内部正在经历一场**历史级的大迁徙**：主动管理（active management）在崩塌，被动管理（passive management）在吞噬一切；**ETF（Exchange-Traded Fund）**以每年 20% 的速度增长；对冲基金在跑输；ARK 这样的"明星基金"从封神到跌落只用了 18 个月。这节课要回答：**为什么被动投资能赢？主动管理还有活路吗？ETF 是资产管理的黄昏还是黎明？我们普通人应该怎么在 ETF 和基金之间选择？**
 
-![John Bogle——他 1975 年创办 Vanguard，发明了"大多数主动基金跑不赢指数"的数学证明](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Photo_of_a_John_C._Bogle_By_Bill_Cramer.jpg/1200px-Photo_of_a_John_C._Bogle_By_Bill_Cramer.jpg)
+![John Bogle——他 1975 年创办 Vanguard，发明了"大多数主动基金跑不赢指数"的数学证明](/images/topics-in-corporate-finance/14-bogle.jpg)
 *半个世纪前，Bogle 写下一个残酷的等式：市场的平均回报 = 主动投资者的平均回报（扣费前）。扣掉 1% 管理费后，主动基金作为整体必然跑输指数。这个看似简单的数学，颠覆了整个资产管理业——到 2024 年，美股 ETF 的规模第一次超过主动共同基金。他生前常说"不要去大海里捞针，直接买下整片大海"。*
 
 ## 一、资产管理行业的基本结构

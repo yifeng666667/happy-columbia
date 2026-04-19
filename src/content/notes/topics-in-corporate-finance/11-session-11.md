@@ -23,7 +23,7 @@ session: "11"
 
 这是华尔街在 2024-2026 年最激烈争论的话题之一——而且它的走向将决定下一个十年公司融资的形态。
 
-![Apollo 总部所在的 60 Wall Street——私募信贷"替代性银行"的象征](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/60_Wall_Street_building.jpg/1200px-60_Wall_Street_building.jpg)
+![Apollo 总部所在的 60 Wall Street——私募信贷"替代性银行"的象征](/images/topics-in-corporate-finance/11-60wall.jpg)
 *过去 10 年里，60 Wall Street 一带的玻璃大楼里诞生了一套全新的信贷体系：Apollo、Ares、Blackstone、Oaktree 不再等银行报价，而是直接给公司贷款。同一层楼里，既有 PE fund 做股权，又有 Direct Lending fund 做债权——这就是所谓的"替代性银行"在实体上的样子。*
 
 ## 一、什么是私募信贷？

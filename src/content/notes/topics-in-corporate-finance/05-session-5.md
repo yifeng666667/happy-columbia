@@ -19,7 +19,7 @@ session: "5"
 
 这节课讲 Biotech 估值的底层逻辑——**概率加权的期权思维**。你不是在给一家"经营业务"估值，而是在给一张"彩票"估值——只不过这张彩票的期望值计算有严肃的科学与市场依据。
 
-![FDA 药厂检查——Biotech 的命运就悬在这些监管审批上](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Inspecting_a_Drug_Manufacturer_%28FDA034%29_%286982162417%29.jpg/1200px-Inspecting_a_Drug_Manufacturer_%28FDA034%29_%286982162417%29.jpg)
+![FDA 药厂检查——Biotech 的命运就悬在这些监管审批上](/images/topics-in-corporate-finance/05-fda.jpg)
 *Biotech 估值的所有数字都挂在一条时间线上——候选药物通过 Phase I → II → III 临床、然后 FDA 审批、最后上市。每一道门槛的通过率都会改写公司市值——拿到批文当天可能涨 200%，被拒当天可能跌 80%。所有 Biotech 投资的本质都是：**概率乘以期望收益**。*
 
 ## 一、为什么 Biotech 是估值的"特殊赛道"

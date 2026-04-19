@@ -4,7 +4,7 @@ order: 0
 session: "Overview"
 ---
 
-![纽约证券交易所——全球资本市场的心脏](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_York_Stock_Exchange_Facade_2015.jpg/1200px-New_York_Stock_Exchange_Facade_2015.jpg)
+![纽约证券交易所——全球资本市场的心脏](/images/topics-in-corporate-finance/00-nyse.jpg)
 *公司金融的所有"实战现场"——融资、估值、并购、治理、泡沫、危机——最终都要经过资本市场这一关。这门课讲的就是那些建完模之后，真实发生在纽交所、并购会议室、董事会、破产法庭的故事。*
 
 ## 这门课在学什么

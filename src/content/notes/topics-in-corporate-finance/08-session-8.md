@@ -18,7 +18,7 @@ session: "8"
 
 这节课讲公司治理——从董事会到 proxy statement，从 CEO 薪酬到股东权利，从代理人问题到制度设计。
 
-![Elon Musk——那个让"公司治理"重新成为头条新闻的人](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop1%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop1%29.jpg)
+![Elon Musk——那个让"公司治理"重新成为头条新闻的人](/images/topics-in-corporate-finance/08-musk.jpg)
 *2024 年特拉华衡平法院推翻 Musk 的 $560 亿薪酬方案，是一次教科书级的公司治理判决：董事会是否真的独立？薪酬委员会是否走了正当程序？股东的批准是否建立在完整信息之上？Tesla 随后把注册地从 Delaware 迁到 Texas——这个决定本身也是一节治理课。*
 
 ## 一、什么是公司治理？
