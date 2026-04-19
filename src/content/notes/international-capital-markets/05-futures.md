@@ -341,5 +341,4 @@ SOFR 期货是用来对冲或押注短期利率走势的核心工具。它的报
 - [Wikipedia：Commodity Futures Trading Commission](https://en.wikipedia.org/wiki/Commodity_Futures_Trading_Commission)
 - [What are Futures? — The Plain Bagel](https://www.youtube.com/watch?v=1Mhk4UHJsRc)
 - [Crude Oil Prices Are Negative — Patrick Boyle](https://www.youtube.com/watch?v=dfqmjSOD7pQ)
-- [What are Futures? — The Plain Bagel](https://www.youtube.com/watch?v=1Mhk4UHJsRc)
 - [MF Global Collapse — Democracy Now!](https://www.youtube.com/watch?v=zy3FfKzmEJg)

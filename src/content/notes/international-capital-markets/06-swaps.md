@@ -400,5 +400,3 @@ Investor → €5M → Swap 对手方
 - [Wikipedia：CDX (index)](https://en.wikipedia.org/wiki/Credit_default_swap_index)
 - [What is a Credit Default Swap? — Patrick Boyle](https://www.youtube.com/watch?v=X_FaPuqG_PU)
 - [Interest Rate Swap — Khan Academy](https://www.youtube.com/watch?v=PLjyj1FJqig)
-- [Interest Rate Swap — Khan Academy](https://www.youtube.com/watch?v=PLjyj1FJqig)
-- [How The Big Short Actually Worked — How Money Works](https://www.youtube.com/watch?v=3xC1a5r0zNY)

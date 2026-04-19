@@ -364,4 +364,3 @@ Credit Suisse 被瑞士监管强制关闭是一个罕见的"**monetary**"类别�
 - [The Big Three Credit Rating Agencies — One Minute Economics](https://www.youtube.com/watch?v=goT1TWjqOnA)
 - [The Decline of Sears — Company Man](https://www.youtube.com/watch?v=Qws713t3HBY)
 - [Was Endless Shrimp to Blame for Red Lobster's Bankruptcy? — Patrick Boyle](https://www.youtube.com/watch?v=BEDFNcsC0JI)
-- [The Big Three Credit Rating Agencies — One Minute Economics](https://www.youtube.com/watch?v=goT1TWjqOnA)

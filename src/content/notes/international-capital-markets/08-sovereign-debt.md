@@ -325,5 +325,3 @@ S&P 自 2018 年起：**最多只允许 1 档差距**。
 - [Wikipedia：Elliott Management Corporation](https://en.wikipedia.org/wiki/Elliott_Investment_Management)
 - [The Argentina Default: How Paul Singer's Hedge Fund Brought Down a Nation — Flawless Finance](https://www.youtube.com/watch?v=_--b_5bV55Y)
 - [The Greek Debt Crisis — The Plain Bagel](https://www.youtube.com/watch?v=g_yiQBe8yiQ)
-- [The Greek Debt Crisis — The Plain Bagel](https://www.youtube.com/watch?v=g_yiQBe8yiQ)
-- [The Argentina Default — Flawless Finance](https://www.youtube.com/watch?v=_--b_5bV55Y)

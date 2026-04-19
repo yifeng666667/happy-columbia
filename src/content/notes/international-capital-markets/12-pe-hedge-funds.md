@@ -370,8 +370,8 @@ R_i - r_f = α + β × (R_m - r_f) + ε
 - [Distressed securities](https://en.wikipedia.org/wiki/Distressed_securities)
 
 **YouTube**
-- [How Private Equity Works — Investopedia](https://www.youtube.com/watch?v=Eqt0-BaKlkI)
-- [LBO Explained — Wall Street Prep](https://www.youtube.com/watch?v=yEfNh_9WKLA)
-- [Hedge Fund Strategies Explained — Patrick Boyle](https://www.youtube.com/watch?v=OmSlGFCYRcs)
-- [LTCM Collapse Documentary — Bloomberg](https://www.youtube.com/watch?v=zVGjhKniCcg)
-- [Venture Capital Explained — TechAltar](https://www.youtube.com/watch?v=Fm3vT8IKIEA)
+- [How Private Equity Works — Wall Street Simplified](https://www.youtube.com/watch?v=Px_US42YgDw)
+- [What Is A Leveraged Buyout? — Afzal Hussein](https://www.youtube.com/watch?v=KT1VVstb1fU)
+- [Retail Trading Explained — Patrick Boyle](https://www.youtube.com/watch?v=kgs9JHPxygo)
+- [The Rise and Fall of LTCM](https://www.youtube.com/watch?v=9KlVmtq7t_s)
+- [If You Know Nothing About Venture Capital, Watch This — Forbes](https://www.youtube.com/watch?v=a4aUX5u90oA)
