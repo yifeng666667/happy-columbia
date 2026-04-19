@@ -204,6 +204,16 @@ export const courses: CourseMeta[] = [
     heroImage: 'https://images.unsplash.com/photo-1553532434-5ab5b6b84993?auto=format&fit=crop&w=1400&q=85',
     city: 'São Paulo',
   },
+  {
+    slug: 'topics-in-corporate-finance',
+    category: 'finance',
+    title: '公司金融专题',
+    titleEn: 'Topics in Corporate Finance',
+    description:
+      '融资工具箱、另类数据、资产泡沫、生物科技估值、股东积极主义、ESG、财务造假、私募股权、私募信贷、资本配置、数字资产——15 个公司金融实战专题，案例驱动，理解 CFO 和投资人最核心的博弈现场。',
+    heroImage: 'https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=1400&q=85',
+    city: 'Toronto',
+  },
 ];
 
 export const getCourse = (slug: string): CourseMeta | undefined =>
