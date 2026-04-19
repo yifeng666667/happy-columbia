@@ -42,7 +42,7 @@ const catDot: Record<string, string> = {
   <section id="hero-section" class="hero-img min-h-[100dvh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
 
     <!-- Background video (day: 1.mp4 / night: 4.mp4, set by JS) -->
-    <video class="hero-video" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+    <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" aria-hidden="true"></video>
 
     <!-- Dark gradient overlay — intensity adjusts to day/night via data-time -->
     <div class="hero-bg"></div>
@@ -353,7 +353,12 @@ const catDot: Record<string, string> = {
       v.src = isMobile
         ? (isDay ? '/videos/mobile-day.mp4' : '/videos/mobile-night.mp4')
         : (isDay ? '/videos/1.mp4' : '/videos/4.mp4');
-      v.load(); v.play().catch(() => {});
+      v.load();
+      const tryPlay = () => v.play().catch(() => {});
+      v.addEventListener('canplay', tryPlay, { once: true });
+      tryPlay();
+      // fallback: retry on first touch (iOS WeChat sometimes blocks autoplay)
+      document.addEventListener('touchstart', () => { if (v.paused) v.play().catch(() => {}); }, { once: true });
     }
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
