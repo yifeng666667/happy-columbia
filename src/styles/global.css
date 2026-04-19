@@ -110,7 +110,7 @@ header.scrolled {
   pointer-events: none;
 }
 
-/* Gradient overlay on top of video */
+/* Gradient overlay on top of video — night default */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -119,11 +119,31 @@ header.scrolled {
     linear-gradient(160deg, rgba(6,24,40,0.72) 0%, rgba(11,44,86,0.62) 50%, rgba(19,67,110,0.56) 100%);
   z-index: 1;
   pointer-events: none;
+  transition: background 0.6s ease;
 }
 
+/* Day video: brighter scene needs a stronger dark veil */
+#hero-section[data-time="day"] .hero-bg {
+  background:
+    radial-gradient(ellipse 80% 70% at 50% 50%, rgba(3,10,24,0.62) 0%, transparent 100%),
+    linear-gradient(160deg, rgba(3,12,28,0.86) 0%, rgba(6,28,62,0.78) 50%, rgba(10,46,88,0.70) 100%);
+}
+
+/* Mobile: always use strong top-down gradient for text legibility */
 @media (max-width: 767px) {
   .hero-bg {
-    background: linear-gradient(180deg, rgba(6,24,40,0.88) 0%, rgba(8,32,60,0.68) 25%, rgba(11,44,86,0.52) 55%, rgba(11,44,86,0.65) 100%);
+    background: linear-gradient(180deg,
+      rgba(4,14,30,0.92) 0%,
+      rgba(6,24,52,0.80) 20%,
+      rgba(8,34,68,0.60) 55%,
+      rgba(8,34,68,0.72) 100%);
+  }
+  #hero-section[data-time="day"] .hero-bg {
+    background: linear-gradient(180deg,
+      rgba(2,8,22,0.95) 0%,
+      rgba(4,18,44,0.88) 20%,
+      rgba(6,28,60,0.70) 55%,
+      rgba(6,28,60,0.80) 100%);
   }
 }
 
@@ -247,7 +267,7 @@ header.scrolled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .orb, .hero-shimmer, .hero-bg { animation: none !important; }
+  .orb, .hero-shimmer { animation: none !important; }
 }
 @media (max-width: 767px) {
   .hero-grid { display: none; }

@@ -39,15 +39,13 @@ const catDot: Record<string, string> = {
   <!-- ═══════════════════════════════════════════════ -->
   <!--  HERO                                           -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="hero-img min-h-[100dvh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+  <section id="hero-section" class="hero-img min-h-[100dvh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
 
-    <!-- Animated mountain/cloud background video -->
-    <video
-      class="hero-video"
-      autoplay muted loop playsinline
-      aria-hidden="true"
-      poster="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
-    ></video>
+    <!-- Background video (day: 1.mp4 / night: 4.mp4, set by JS) -->
+    <video class="hero-video" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+
+    <!-- Dark gradient overlay — intensity adjusts to day/night via data-time -->
+    <div class="hero-bg"></div>
 
     <!-- Aurora background -->
     <div class="hero-aurora" aria-hidden="true">
@@ -343,11 +341,14 @@ const catDot: Record<string, string> = {
 
 <script>
   (() => {
-    // Time-based video: 06:00–18:00 = day (1.mp4), otherwise night (4.mp4)
+    // Day: 06:00–18:00 → 1.mp4 (bright),  Night → 4.mp4 (NYC skyline)
     const hour = new Date().getHours();
-    const src = (hour >= 6 && hour < 18) ? '/videos/1.mp4' : '/videos/4.mp4';
+    const isDay = hour >= 6 && hour < 18;
+    const hero = document.getElementById('hero-section');
+    if (hero) hero.dataset.time = isDay ? 'day' : 'night';
+
     const v = document.querySelector<HTMLVideoElement>('.hero-video');
-    if (v) { v.src = src; v.load(); v.play().catch(() => {}); }
+    if (v) { v.src = isDay ? '/videos/1.mp4' : '/videos/4.mp4'; v.load(); v.play().catch(() => {}); }
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduced) {
