@@ -117,6 +117,6 @@ Webvan 花了 8 亿美元才知道他们的方向是错的。Instacart 在花第
 
 - **Wikipedia - [Steve Blank](https://en.wikipedia.org/wiki/Steve_Blank)**：客户发展理论的完整框架和布兰克的创业背景
 - **Wikipedia - [Lean startup](https://en.wikipedia.org/wiki/Lean_startup)**：精益创业方法论的核心概念、批评和实践案例
-- **YouTube - "Customer discovery interviews how to" (搜索关键词)**：如何做有效客户访谈的实操演示
+- **YouTube - ["Customer discovery interviews how to"](https://www.youtube.com/watch?v=z1iF1c8w5Lg)**：如何做有效客户访谈的实操演示
 - **Wikipedia - [Dropbox](https://en.wikipedia.org/wiki/Dropbox)**：Dropbox 用 MVP 视频验证需求，再开发产品的完整故事
-- **YouTube - "The Mom Test Rob Fitzpatrick summary" (搜索关键词)**：妈妈测试框架精要——如何设计不会得到"礼貌答案"的客户访谈
+- **YouTube - ["The Mom Test Rob Fitzpatrick summary"](https://www.youtube.com/watch?v=j8nEqgo0LyM)**：妈妈测试框架精要——如何设计不会得到"礼貌答案"的客户访谈

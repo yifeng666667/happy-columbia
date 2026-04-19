@@ -99,6 +99,6 @@ session: "6"
 
 - **Wikipedia - [Russian financial sanctions after 2022 invasion of Ukraine](https://en.wikipedia.org/wiki/Russian_financial_sanctions_following_the_2022_invasion_of_Ukraine)**：制裁措施全汇总
 - **Wikipedia - [Russian oil price cap](https://en.wikipedia.org/wiki/Russian_oil_price_cap)**：价格上限机制的原理和效果
-- **YouTube - "Russia SWIFT ban explained"**：BBC、Reuters、The Economist 均有专题视频
-- **YouTube - "Oil price cap mechanism"**：多个经济学解读视频，解析其创新性和局限性
+- **YouTube - ["Russia SWIFT ban explained"](https://www.youtube.com/watch?v=iG1U-Qb38z0)**：切断俄罗斯银行 SWIFT 渠道的机制和市场压力解析（WSJ）
+- **YouTube - ["Oil price cap mechanism"](https://www.youtube.com/watch?v=FWO28SzS4ak)**：G7 对俄石油价格上限的设计逻辑和实际效果（DW Business）
 - **Wikipedia - [RUSAL](https://en.wikipedia.org/wiki/RUSAL)**：铝业制裁案例及其对全球铝市场的影响

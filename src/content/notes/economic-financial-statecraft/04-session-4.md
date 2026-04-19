@@ -93,6 +93,6 @@ session: "4"
 
 - **Wikipedia - [Annexation of Crimea by Russia](https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_Russia)**：克里米亚并吞的政治与法律背景
 - **Wikipedia - [Russia–Ukraine relations](https://en.wikipedia.org/wiki/Russia%E2%80%93Ukraine_relations)**：两国关系全史
-- **YouTube - "Russia sanctions 2014 explained"**：搜索 BBC 和 CNN 2014 年的制裁解读视频
-- **YouTube - "Russian economy under sanctions"**：经济学家对 2014-2022 年俄罗斯经济表现的分析
+- **YouTube - ["Russia sanctions 2014 explained"](https://www.youtube.com/watch?v=GtX1a81wGqI)**：西方制裁对俄罗斯经济冲击的完整分析
+- **YouTube - ["Russian economy under sanctions"](https://www.youtube.com/watch?v=LSg-NTRd6Jw)**：俄罗斯经济——崩溃还是反弹？经济学家的对照评估
 - **Wikipedia - [Mir (payment system)](https://en.wikipedia.org/wiki/Mir_(payment_system))**：俄罗斯自主支付系统的发展历程

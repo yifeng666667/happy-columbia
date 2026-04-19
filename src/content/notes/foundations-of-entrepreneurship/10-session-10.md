@@ -94,6 +94,6 @@ session: "10"
 
 - **Wikipedia - [Delaware General Corporation Law](https://en.wikipedia.org/wiki/Delaware_General_Corporation_Law)**：特拉华公司法的特点和为什么大多数初创公司选择在此注册
 - **Wikipedia - [Stock option](https://en.wikipedia.org/wiki/Stock_option)**：股票期权的基本结构、ISO vs NSO 区别和税务处理
-- **YouTube - "Startup legal basics incorporation equity" (搜索关键词)**：初创公司法律基础的实操讲解，含常见错误
+- **YouTube - ["Startup legal basics incorporation equity"](https://www.youtube.com/watch?v=sd9yLmJ1Jfk)**：初创公司法律基础的实操讲解，含常见错误
 - **Wikipedia - [Non-disclosure agreement](https://en.wikipedia.org/wiki/Non-disclosure_agreement)**：NDA 的结构、使用场景和限制
-- **YouTube - "Employee vs contractor misclassification startup" (搜索关键词)**：雇员与承包商错误分类的风险和正确处理方式
+- **YouTube - ["Employee vs contractor misclassification startup"](https://www.youtube.com/watch?v=BTShgZxiNV8)**：雇员与承包商错误分类的风险和正确处理方式

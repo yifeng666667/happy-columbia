@@ -109,6 +109,6 @@ TAM（Total Addressable Market）—— 如果你拿下所有市场，市场总�
 
 - **Wikipedia - [Airbnb](https://en.wikipedia.org/wiki/Airbnb)**：Airbnb 机会识别的过程、早期拒绝和增长路径
 - **Wikipedia - [Stripe (company)](https://en.wikipedia.org/wiki/Stripe_(company))**：Stripe 从开发者痛点切入支付市场的完整故事
-- **YouTube - "How to get startup ideas Paul Graham" (搜索关键词)**：保罗·格雷厄姆关于如何系统性寻找创业机会的著名演讲
+- **YouTube - ["How to get startup ideas Paul Graham"](https://www.youtube.com/watch?v=FlCWg-KkUN4)**：保罗·格雷厄姆关于如何系统性寻找创业机会的著名演讲
 - **Wikipedia - [Market segmentation](https://en.wikipedia.org/wiki/Market_segmentation)**：TAM/SAM/SOM 框架的分析方法
-- **YouTube - "Startup idea validation framework YC" (搜索关键词)**：Y Combinator 对机会评估方法的实操讲解
+- **YouTube - ["Startup idea validation framework YC"](https://www.youtube.com/watch?v=3BDwdZhdqJ8)**：Y Combinator 对机会评估方法的实操讲解

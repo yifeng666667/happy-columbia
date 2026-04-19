@@ -93,6 +93,6 @@ session: "3"
 
 - **Wikipedia - [Iran nuclear deal (JCPOA)](https://en.wikipedia.org/wiki/Joint_Comprehensive_Plan_of_Action)**：JCPOA 谈判历史、条款和后续
 - **Wikipedia - [Iran sanctions](https://en.wikipedia.org/wiki/Iran_sanctions)**：完整制裁历史和经济影响
-- **YouTube - "Iran sanctions explained" (Reuters / Al Jazeera)**：多个短片解析制裁机制和里亚尔崩溃
-- **YouTube - "JCPOA nuclear deal documentary"**：BBC 和 PBS 均有关于 P5+1 谈判过程的深度报道
+- **YouTube - ["Iran sanctions explained"](https://www.youtube.com/watch?v=oqvghou5m3U)**：伊朗核协议和制裁机制的 3 分钟入门解读
+- **YouTube - ["JCPOA nuclear deal documentary"](https://www.youtube.com/watch?v=cdhfHU-xmJA)**：伊朗核协议遗产与崩溃的深度分析（Al Jazeera Inside Story）
 - **Wikipedia - [Iranian rial](https://en.wikipedia.org/wiki/Iranian_rial)**：包含里亚尔汇率历史数据和崩溃背景

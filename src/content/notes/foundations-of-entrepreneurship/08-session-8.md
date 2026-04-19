@@ -92,6 +92,6 @@ Figma 的故事是一个很好的例子：在 2013-2016 年间，Figma 的创始
 
 - **Wikipedia - [Slack (software)](https://en.wikipedia.org/wiki/Slack_(software))**：Slack 从游戏公司内部工具到协作软件巨头的完整进化历程
 - **Wikipedia - [Agile software development](https://en.wikipedia.org/wiki/Agile_software_development)**：敏捷开发的原则、框架和与传统瀑布开发的对比
-- **YouTube - "Product market fit how to know" (搜索关键词)**：Marc Andreessen 和其他 VC 关于如何识别 PMF 的讨论
+- **YouTube - ["Product market fit how to know"](https://www.youtube.com/watch?v=7SnqmMfZ3Q4)**：Marc Andreessen 和其他 VC 关于如何识别 PMF 的讨论
 - **Wikipedia - [Scrum (software development)](https://en.wikipedia.org/wiki/Scrum_(software_development))**：Scrum 框架的详细介绍和实践指南
-- **YouTube - "Product prioritization RICE framework" (搜索关键词)**：RICE 优先级框架的实操应用和案例
+- **YouTube - ["Product prioritization RICE framework"](https://www.youtube.com/watch?v=NLdzE2Qw37A)**：RICE 优先级框架的实操应用和案例

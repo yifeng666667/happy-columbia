@@ -107,6 +107,6 @@ Apple：乔布斯 + 沃兹尼亚克 + 韦恩。Google：佩奇 + 布林。Micros
 
 - **Wikipedia - [Lean startup](https://en.wikipedia.org/wiki/Lean_startup)**：精益创业方法论的起源、核心概念和影响
 - **Wikipedia - [Steve Blank](https://en.wikipedia.org/wiki/Steve_Blank)**：客户发现（Customer Development）理论的创立者，硅谷创业教育的奠基人
-- **YouTube - "What is entrepreneurship really? Paul Graham" (搜索关键词)**：Y Combinator 创始人对创业本质的直接讲解
+- **YouTube - ["What is entrepreneurship really? Paul Graham"](https://www.youtube.com/watch?v=ii1jcLg-eIQ)**：Y Combinator 创始人对创业本质的直接讲解
 - **Wikipedia - [Effectuation](https://en.wikipedia.org/wiki/Effectuation)**：Sarasvathy 的创业思维模式研究，颠覆"目标驱动"的传统管理假设
-- **YouTube - "Startup myths debunked Silicon Valley" (搜索关键词)**：实际创业者对硅谷神话的反思
+- **YouTube - ["Startup myths debunked Silicon Valley"](https://www.youtube.com/watch?v=dlfjs_eEEzs)**：实际创业者对硅谷神话的反思

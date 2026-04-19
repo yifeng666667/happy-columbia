@@ -123,6 +123,6 @@ session: "11"
 
 - **Wikipedia - [Pivot (software)](https://en.wikipedia.org/wiki/Lean_startup#Pivot)**：精益创业框架中 Pivot 的定义和类型
 - **Wikipedia - [Slack (software)](https://en.wikipedia.org/wiki/Slack_(software))**：Stewart Butterfield 两次从失败游戏公司中创造成功产品的故事
-- **YouTube - "When to pivot vs persist startup" (搜索关键词)**：YC 和成功创始人关于 Pivot 决策时机的讨论
+- **YouTube - ["When to pivot vs persist startup"](https://www.youtube.com/watch?v=8pNxKX1SUGE)**：YC 和成功创始人关于 Pivot 决策时机的讨论
 - **Wikipedia - [Sunk cost](https://en.wikipedia.org/wiki/Sunk_cost)**：沉没成本谬误的定义和在创业决策中的危险表现
-- **YouTube - "Startup failure lessons serial entrepreneurship" (搜索关键词)**：连续创业者从失败中提取的真实教训和认知升级
+- **YouTube - ["Startup failure lessons serial entrepreneurship"](https://www.youtube.com/watch?v=l8uGqfi1YNw)**：连续创业者从失败中提取的真实教训和认知升级

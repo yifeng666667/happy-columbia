@@ -129,6 +129,6 @@ NRR < 80%：严重流失，新增客户无法弥补
 
 - **Wikipedia - [Burn rate](https://en.wikipedia.org/wiki/Burn_rate)**：Burn Rate 的定义、计算方法和对创业公司的意义
 - **Wikipedia - [Customer lifetime value](https://en.wikipedia.org/wiki/Customer_lifetime_value)**：LTV 的计算框架和在不同商业模式中的应用
-- **YouTube - "Unit economics startup LTV CAC explained" (搜索关键词)**：单位经济学的完整讲解和行业基准
+- **YouTube - ["Unit economics startup LTV CAC explained"](https://www.youtube.com/watch?v=8eHInIdNfa0)**：单位经济学的完整讲解和行业基准
 - **Wikipedia - [Rule of 40](https://en.wikipedia.org/wiki/Rule_of_40)**：Rule of 40 的来源、计算方法和适用场景
-- **YouTube - "Startup financial model template how to build" (搜索关键词)**：创始人如何建立驱动因素驱动的财务模型
+- **YouTube - ["Startup financial model template how to build"](https://www.youtube.com/watch?v=zvDl1z9D4x0)**：创始人如何建立驱动因素驱动的财务模型

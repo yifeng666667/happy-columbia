@@ -103,6 +103,6 @@ Y Combinator 的保罗·格雷厄姆有一句话："如果联合创始人冲突�
 
 - **Wikipedia - [PayPal Mafia](https://en.wikipedia.org/wiki/PayPal_Mafia)**：PayPal 创始团队的构成、内部张力和后续影响力
 - **Wikipedia - [Vesting](https://en.wikipedia.org/wiki/Vesting)**：股权归属计划的法律结构和创业实践
-- **YouTube - "How to split equity cofounders YC" (搜索关键词)**：Y Combinator 关于联合创始人股权分配的经典讲解
+- **YouTube - ["How to split equity cofounders YC"](https://www.youtube.com/watch?v=9NhEBVPlJs4)**：Y Combinator 关于联合创始人股权分配的经典讲解
 - **Wikipedia - [Cofounder](https://en.wikipedia.org/wiki/Cofounder)**：联合创始人关系的研究、常见模式和失败案例分析
-- **YouTube - "Cofounder breakup startup lessons" (搜索关键词)**：真实联合创始人破裂案例的复盘和教训
+- **YouTube - ["Cofounder breakup startup lessons"](https://www.youtube.com/watch?v=swbfsatafBU)**：真实联合创始人破裂案例的复盘和教训

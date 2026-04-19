@@ -101,6 +101,6 @@ Clayton Christensen 的"Jobs to Be Done"框架——人们不是在"购买产品
 
 - **Wikipedia - [Business Model Canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas)**：画布的 9 个构件、设计方法和案例应用
 - **Wikipedia - [Jobs to be done theory](https://en.wikipedia.org/wiki/Jobs_to_be_done_theory)**：Christensen 的需求理论框架，从客户"工作"角度理解价值主张
-- **YouTube - "Business model canvas explained" (搜索关键词)**：商业模式画布的实操填写演示，含常见错误
+- **YouTube - ["Business model canvas explained"](https://www.youtube.com/watch?v=QoAOzMTLP5s)**：商业模式画布的实操填写演示，含常见错误
 - **Wikipedia - [Freemium](https://en.wikipedia.org/wiki/Freemium)**：免费增值模式的转化逻辑、代表案例和陷阱
-- **YouTube - "Value proposition design Osterwalder" (搜索关键词)**：价值主张设计的深度讲解
+- **YouTube - ["Value proposition design Osterwalder"](https://www.youtube.com/watch?v=ReM1uqmVfP0)**：价值主张设计的深度讲解

@@ -86,6 +86,6 @@ session: "5"
 
 - **Wikipedia - [Huawei](https://en.wikipedia.org/wiki/Huawei)**：华为历史、5G 争议与制裁事件线
 - **Wikipedia - [TSMC](https://en.wikipedia.org/wiki/Taiwan_Semiconductor_Manufacturing_Company)**：台积电的技术优势与地缘政治角色
-- **YouTube - "Chip War documentary" (搜索关键词)**：基于 Chris Miller 同名著作的多个视频解读
-- **YouTube - "ASML EUV machine explained"**：极紫外线光刻机原理与全球唯一性的可视化解释
+- **YouTube - ["Chip War documentary"](https://www.youtube.com/watch?v=cTkWN1YYvvs)**：Chris Miller 亲讲芯片战争——半导体如何成为"21 世纪石油"
+- **YouTube - ["ASML EUV machine explained"](https://www.youtube.com/watch?v=B2482h_TNwg)**：2 亿美元极紫外线光刻机的原理与全球芯片制造依赖的可视化解释
 - **Wikipedia - [Export controls on advanced chips to China](https://en.wikipedia.org/wiki/Export_controls_on_advanced_chips_to_China)**：2022 年芯片管制的完整条款和背景

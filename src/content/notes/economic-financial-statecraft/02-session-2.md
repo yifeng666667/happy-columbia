@@ -88,5 +88,5 @@ CFIUS 权力在 2018 年通过《外国投资风险审查现代化法案》（FI
 - **Wikipedia - [Office of Foreign Assets Control](https://en.wikipedia.org/wiki/Office_of_Foreign_Assets_Control)**：OFAC 的历史、制裁项目和执法机制
 - **Wikipedia - [Export Administration Regulations](https://en.wikipedia.org/wiki/Export_Administration_Regulations)**：EAR 和实体清单制度
 - **Wikipedia - [Committee on Foreign Investment in the United States](https://en.wikipedia.org/wiki/Committee_on_Foreign_Investment_in_the_United_States)**：CFIUS 历史和重大案例
-- **YouTube - "How US Sanctions Work"**：PBS NewsHour 和 Vox 均有简明解释视频
-- **YouTube - "ZTE sanctions explained"**：多家财经媒体的案例解析，有助于理解出口管制的实际效果
+- **YouTube - ["How US Sanctions Work"](https://www.youtube.com/watch?v=y5vFZJZzhek)**：美国制裁机制的运作方式和政策力量解析
+- **YouTube - ["ZTE sanctions explained"](https://www.youtube.com/watch?v=MtTLA8-kCag)**：出口管制对中国科技企业实际效果分析（含华为与 ZTE 案例）
