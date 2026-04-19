@@ -14,7 +14,7 @@ session: "6"
 
 这节课系统分析负面筛选的逻辑、效果和局限。
 
-![烟草与ESG负面筛选](https://images.unsplash.com/photo-1572117536652-12a37d8b8f6b?auto=format&fit=crop&w=900&q=80)
+![烟草与ESG负面筛选](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80)
 *烟草是最广泛的 ESG 负面筛选对象，但在金融上它是个矛盾的案例：过去 50 年，全球主要烟草公司（奥驰亚、英美烟草、菲利普莫里斯）的年化总回报显著超过标普 500——"道德代价"在回报上是真实的。*
 
 ## 一、负面筛选的逻辑与类型

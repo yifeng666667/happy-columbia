@@ -21,7 +21,7 @@ session: "5"
 
 联合创始人关系是创业中最关键、也最容易被低估的决策。
 
-![联合创始人与团队建设](https://images.unsplash.com/photo-1525130413817-d1f71a3b7811?auto=format&fit=crop&w=900&q=80)
+![联合创始人与团队建设](https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80)
 *联合创始人之间的信任和分工，是创业公司早期最稀缺的资源。Stripe 的 Patrick 和 John Collison 兄弟，被反复引用为罕见的"完美联合创始人"案例——技术能力对等、但专注领域不同，都对产品有深度理解，沟通摩擦极低。*
 
 ## 一、为什么要找联合创始人？

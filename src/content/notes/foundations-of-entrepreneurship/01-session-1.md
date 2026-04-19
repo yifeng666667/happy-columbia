@@ -16,7 +16,7 @@ session: "1"
 
 真实的创业长什么样？
 
-![创业的真实面貌](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80)
+![创业的真实面貌](https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=900&q=80)
 *一台 MacBook、一个想法、一张信用卡——创业在外人眼里常常是这个样子。现实往往更混乱：从"我以为找到了好点子"到"客户真的愿意付钱"，中间有一段大多数创始人低估了的距离。*
 
 ## 一、被误解的创业定义

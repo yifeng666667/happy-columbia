@@ -14,7 +14,7 @@ session: "11"
 
 同一时期，有无数创始人面对失败，永远关闭了公司。差别不只是运气——而是他们如何面对失败、能否从失败中萃取出真正有价值的东西。
 
-![创业失败与韧性](https://images.unsplash.com/photo-1552581234-026c73d0e8a6?auto=format&fit=crop&w=900&q=80)
+![创业失败与韧性](https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=900&q=80)
 *创业路上"失败"的标志物——关门的贴纸和堆放的办公家具。但失败不等于终结：Instagram 的创始人 Kevin Systrom 的前一个项目 Burbn 失败了，Twitter 的创始人 Jack Dorsey 把 Twitter 之前的 Odeo 关了，Evan Williams 在做 Twitter 之前做过播客平台 Odeo 和博客平台 Blogger。*
 
 ## 一、创业失败的真实面貌
