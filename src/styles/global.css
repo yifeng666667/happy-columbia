@@ -122,11 +122,11 @@ header.scrolled {
   transition: background 0.6s ease;
 }
 
-/* Day video: brighter scene needs a stronger dark veil */
+/* Day video: light veil — let the video breathe */
 #hero-section[data-time="day"] .hero-bg {
   background:
-    radial-gradient(ellipse 80% 70% at 50% 50%, rgba(3,10,24,0.62) 0%, transparent 100%),
-    linear-gradient(160deg, rgba(3,12,28,0.86) 0%, rgba(6,28,62,0.78) 50%, rgba(10,46,88,0.70) 100%);
+    radial-gradient(ellipse 80% 70% at 50% 50%, rgba(3,10,24,0.28) 0%, transparent 100%),
+    linear-gradient(160deg, rgba(3,12,28,0.52) 0%, rgba(6,28,62,0.40) 50%, rgba(10,46,88,0.30) 100%);
 }
 
 /* Mobile: always use strong top-down gradient for text legibility */
@@ -140,10 +140,10 @@ header.scrolled {
   }
   #hero-section[data-time="day"] .hero-bg {
     background: linear-gradient(180deg,
-      rgba(2,8,22,0.95) 0%,
-      rgba(4,18,44,0.88) 20%,
-      rgba(6,28,60,0.70) 55%,
-      rgba(6,28,60,0.80) 100%);
+      rgba(2,8,22,0.78) 0%,
+      rgba(4,18,44,0.62) 20%,
+      rgba(6,28,60,0.44) 55%,
+      rgba(6,28,60,0.54) 100%);
   }
 }
 
