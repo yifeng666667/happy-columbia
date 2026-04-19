@@ -36,6 +36,7 @@ export const categories: Category[] = [
 export interface CourseMeta {
   slug: string;
   category: CategoryId;
+  subcat?: 'markets' | 'investing' | 'impact'; // finance sub-group
   title: string;
   titleEn: string;
   description: string;
@@ -47,6 +48,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'international-capital-markets',
     category: 'finance',
+    subcat: 'markets',
     title: '国际资本市场',
     titleEn: 'International Capital Markets',
     description:
@@ -57,6 +59,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'macro-policy-global-finance',
     category: 'finance',
+    subcat: 'markets',
     title: '宏观政策与全球金融市场',
     titleEn: 'Macroeconomic Policy and Global Financial Markets',
     description:
@@ -107,6 +110,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'corporate-finance',
     category: 'finance',
+    subcat: 'investing',
     title: '公司金融',
     titleEn: 'Corporate Finance',
     description:
@@ -117,6 +121,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'global-payments',
     category: 'finance',
+    subcat: 'markets',
     title: '全球支付体系',
     titleEn: 'The Global Payments Ecosystem',
     description:
@@ -157,6 +162,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'value-investing',
     category: 'finance',
+    subcat: 'investing',
     title: '价值投资',
     titleEn: 'Value Investing: From Graham to the Global Stage',
     description:
@@ -177,6 +183,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'trade-financial-markets',
     category: 'finance',
+    subcat: 'markets',
     title: '国际贸易与金融市场',
     titleEn: 'International Trade and Financial Markets',
     description:
@@ -187,6 +194,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'international-finance-monetary',
     category: 'finance',
+    subcat: 'markets',
     title: '国际金融与货币理论',
     titleEn: 'International Finance and Monetary Theory',
     description:
@@ -197,6 +205,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'emerging-financial-systems',
     category: 'finance',
+    subcat: 'markets',
     title: '新兴市场金融体系',
     titleEn: 'Emerging Financial Systems: Brazil, India, Indonesia and Mexico',
     description:
@@ -207,6 +216,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'topics-in-corporate-finance',
     category: 'finance',
+    subcat: 'investing',
     title: '公司金融专题',
     titleEn: 'Topics in Corporate Finance',
     description:
@@ -237,6 +247,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'impact-investing',
     category: 'finance',
+    subcat: 'impact',
     title: '影响力投资',
     titleEn: 'Impact Investing I: Foundations',
     description:
@@ -247,6 +258,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'esg-equity-investing',
     category: 'finance',
+    subcat: 'impact',
     title: 'ESG 股票投资',
     titleEn: 'ESG Investing in Equity Markets',
     description:
@@ -257,6 +269,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'foundations-of-entrepreneurship',
     category: 'finance',
+    subcat: 'impact',
     title: '创业学基础',
     titleEn: 'Foundations of Entrepreneurship',
     description:

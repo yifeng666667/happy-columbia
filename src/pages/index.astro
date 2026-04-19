@@ -8,10 +8,24 @@ const noteCountOf = (slug: string) =>
   allNotes.filter((n) => n.id.startsWith(slug + '/')).length;
 const totalNotes = allNotes.length;
 
-const grouped = categories.map((cat) => ({
-  category: cat,
-  items: courses.filter((c) => c.category === cat.id),
-}));
+const financeSubcats = [
+  { id: 'markets',   label: '金融市场与宏观' },
+  { id: 'investing', label: '投资与公司金融' },
+  { id: 'impact',    label: '可持续·影响力·创新' },
+] as const;
+
+const renderGroups = categories.map((cat) => {
+  const items = courses.filter((c) => c.category === cat.id);
+  if (cat.id === 'finance') {
+    return {
+      category: cat,
+      groups: financeSubcats
+        .map((sc) => ({ label: sc.label, items: items.filter((c) => c.subcat === sc.id) }))
+        .filter((g) => g.items.length > 0),
+    };
+  }
+  return { category: cat, groups: [{ label: undefined as string | undefined, items }] };
+});
 
 const catDot: Record<string, string> = {
   finance: 'cat-finance',
@@ -210,7 +224,7 @@ const catDot: Record<string, string> = {
       </div>
 
       <div class="space-y-10 md:space-y-14">
-        {grouped.map(({ category, items }) => (
+        {renderGroups.map(({ category, groups }) => (
           <div>
             <!-- category header -->
             <div class="flex items-center gap-3 mb-5">
@@ -221,59 +235,63 @@ const catDot: Record<string, string> = {
               </div>
             </div>
 
-            {items.length === 0 ? (
-              <div class="border border-dashed border-stone-200 rounded-xl px-5 py-10 text-xs text-stone-400 text-center">
-                整理中，敬请期待
-              </div>
-            ) : (
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {items.map((c) => (
-                  <a
-                    href={`/courses/${c.slug}/`}
-                    class="group block relative rounded-2xl overflow-hidden no-underline h-[168px] sm:h-[185px] shadow-md hover:shadow-xl transition-shadow duration-300"
-                  >
-                    {/* city background image */}
-                    {c.heroImage && (
-                      <div
-                        class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
-                        style={`background-image: url('${c.heroImage}')`}
-                      />
-                    )}
-                    {/* base color wash — kills image color noise */}
-                    <div class="absolute inset-0" style="background: rgba(8,20,40,0.45)" />
-                    {/* gradient overlay — heavier at bottom for text legibility */}
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent" />
-                    {/* subtle top vignette for badges */}
-                    <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent h-16" />
-
-                    {/* top badge — note count only */}
-                    <div class="absolute top-3 right-3">
-                      <span class="text-[11px] bg-white/15 backdrop-blur-sm text-white font-medium px-2.5 py-0.5 rounded-full border border-white/20">
-                        {noteCountOf(c.slug)} 篇
-                      </span>
+            <div class={groups.length > 1 ? 'space-y-7' : ''}>
+              {groups.map(({ label, items }) => (
+                <div>
+                  {label && (
+                    <div class="flex items-center gap-3 mb-3">
+                      <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 shrink-0 font-medium">{label}</span>
+                      <div class="flex-1 h-px bg-stone-200" />
                     </div>
-
-                    {/* bottom content */}
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                      <h4 class="font-display font-bold text-white text-[1.3rem] leading-snug">
-                        {c.title}
-                      </h4>
-                      <p class="text-[11px] text-white/50 mt-0.5 font-sans tracking-wide">
-                        {c.titleEn}
-                      </p>
-                      <p class="mt-2 text-[13px] text-white font-semibold leading-relaxed line-clamp-2">
-                        {c.description}
-                      </p>
-                      <div class="mt-2.5 flex items-center justify-end text-[11px] text-white/60">
-                        <span class="group-hover:translate-x-0.5 group-hover:text-white/90 transition-all inline-block">
-                          阅读笔记 →
-                        </span>
-                      </div>
+                  )}
+                  {items.length === 0 ? (
+                    <div class="border border-dashed border-stone-200 rounded-xl px-5 py-10 text-xs text-stone-400 text-center">
+                      整理中，敬请期待
                     </div>
-                  </a>
-                ))}
-              </div>
-            )}
+                  ) : (
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {items.map((c) => (
+                        <a
+                          href={`/courses/${c.slug}/`}
+                          class="group block relative rounded-2xl overflow-hidden no-underline h-[168px] sm:h-[185px] shadow-md hover:shadow-xl transition-shadow duration-300"
+                        >
+                          {c.heroImage && (
+                            <div
+                              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                              style={`background-image: url('${c.heroImage}')`}
+                            />
+                          )}
+                          <div class="absolute inset-0" style="background: rgba(8,20,40,0.45)" />
+                          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent" />
+                          <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent h-16" />
+                          <div class="absolute top-3 right-3">
+                            <span class="text-[11px] bg-white/15 backdrop-blur-sm text-white font-medium px-2.5 py-0.5 rounded-full border border-white/20">
+                              {noteCountOf(c.slug)} 篇
+                            </span>
+                          </div>
+                          <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="font-display font-bold text-white text-[1.3rem] leading-snug">
+                              {c.title}
+                            </h4>
+                            <p class="text-[11px] text-white/50 mt-0.5 font-sans tracking-wide">
+                              {c.titleEn}
+                            </p>
+                            <p class="mt-2 text-[13px] text-white font-semibold leading-relaxed line-clamp-2">
+                              {c.description}
+                            </p>
+                            <div class="mt-2.5 flex items-center justify-end text-[11px] text-white/60">
+                              <span class="group-hover:translate-x-0.5 group-hover:text-white/90 transition-all inline-block">
+                                阅读笔记 →
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
