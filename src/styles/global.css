@@ -95,8 +95,12 @@ header.scrolled {
   box-shadow: 0 1px 20px rgba(0,0,0,0.08);
 }
 
-/* Hero section wrapper */
-.hero-img { /* layout only */ }
+/* Hero section wrapper — NYC skyline fallback when video fails to load */
+.hero-img {
+  background-image: url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1920&q=85');
+  background-size: cover;
+  background-position: center 40%;
+}
 
 /* Video layer — fills hero, sits at bottom of stack */
 .hero-video {
