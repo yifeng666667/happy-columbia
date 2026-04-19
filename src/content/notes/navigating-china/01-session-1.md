@@ -101,6 +101,6 @@ session: "1"
 
 - **Wikipedia - [Chinese economic reform](https://en.wikipedia.org/wiki/Chinese_economic_reform)**：改革开放的完整历史时间线和政策演变
 - **Wikipedia - [Lerner symmetry theorem](https://en.wikipedia.org/wiki/Lerner_symmetry_theorem)**：对称定理的证明和政策含义
-- **YouTube - "China's economic miracle explained" (搜索关键词)**：The Economist、Vox 等机构的可视化解读
+- **YouTube - ["China's economic miracle explained"](https://www.youtube.com/watch?v=WTnPERxbhBA)**：The Economist、Vox 等机构的可视化解读
 - **Wikipedia - [Dual-track pricing](https://en.wikipedia.org/wiki/Dual-track_pricing)**：中国双轨制的历史和经济影响
-- **YouTube - "Savings glut China" (搜索关键词)**：Ben Bernanke 提出"全球储蓄过剩"理论的背景和争议
+- **YouTube - ["Savings glut China"](https://www.youtube.com/watch?v=0Pu27rq46gQ)**：Ben Bernanke 提出"全球储蓄过剩"理论的背景和争议

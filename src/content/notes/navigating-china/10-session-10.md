@@ -96,6 +96,6 @@ session: "10"
 
 - **Wikipedia - [Guanxi](https://en.wikipedia.org/wiki/Guanxi)**：关系网络在中国社会和商业中的角色
 - **Wikipedia - [Mianzi](https://en.wikipedia.org/wiki/Mianzi)**："面子"概念的文化解析
-- **YouTube - "Doing business in China cultural tips" (搜索关键词)**：实操层面的跨文化商务建议
+- **YouTube - ["Doing business in China cultural tips"](https://www.youtube.com/watch?v=QIkECIFd4R8)**：实操层面的跨文化商务建议
 - **Wikipedia - [High-context and low-context cultures](https://en.wikipedia.org/wiki/High-context_and_low-context_cultures)**：Edward Hall 的高/低语境文化理论及中美对比
-- **YouTube - "Hofstede China dimensions" (搜索关键词)**：霍夫斯泰德文化维度模型在中国商业语境中的应用
+- **YouTube - ["Hofstede China dimensions"](https://www.youtube.com/watch?v=H3btowx0E_Y)**：霍夫斯泰德文化维度模型在中国商业语境中的应用

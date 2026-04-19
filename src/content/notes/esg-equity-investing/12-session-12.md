@@ -115,6 +115,6 @@ CSRD、SFDR、EU Taxonomy 构成了一个互相咬合的强制框架。欧洲的
 
 - **Wikipedia - [Environmental, social, and corporate governance](https://en.wikipedia.org/wiki/Environmental,_social,_and_corporate_governance)**：ESG 的历史演变、主要批评和各方辩论的全面综述
 - **Wikipedia - [Task Force on Climate-related Financial Disclosures](https://en.wikipedia.org/wiki/Task_Force_on_Climate-related_Financial_Disclosures)**：TCFD 框架的设计、全球采纳和向 ISSB 的过渡
-- **YouTube - "ESG future 2024 debate" (搜索关键词)**：ESG 行业当前状态和未来走向的综合分析
+- **YouTube - ["ESG future 2024 debate"](https://www.youtube.com/watch?v=qKeV9NeYddQ)**：ESG 行业当前状态和未来走向的综合分析
 - **Wikipedia - [Greenwashing](https://en.wikipedia.org/wiki/Greenwashing)**：ESG 洗绿的定义、典型案例和监管应对
-- **YouTube - "ESG dead or evolving institutional investors" (搜索关键词)**：机构投资者对 ESG 前景的判断和策略调整
+- **YouTube - ["ESG dead or evolving institutional investors"](https://www.youtube.com/watch?v=4hk5gpB7CZg)**：机构投资者对 ESG 前景的判断和策略调整

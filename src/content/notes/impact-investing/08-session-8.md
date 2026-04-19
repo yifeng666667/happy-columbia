@@ -105,6 +105,6 @@ IFC、ADB、DFC 等机构是重要的职业路径。这些机构在招聘时，�
 
 - **Wikipedia - [International Finance Corporation](https://en.wikipedia.org/wiki/International_Finance_Corporation)**：IFC 的结构、使命和投资历史
 - **Wikipedia - [U.S. International Development Finance Corporation](https://en.wikipedia.org/wiki/U.S._International_Development_Finance_Corporation)**：DFC 的设立背景和战略定位
-- **YouTube - "IFC development finance" (搜索关键词)**：IFC 投资案例和开发性金融逻辑的解读
+- **YouTube - ["IFC development finance"](https://www.youtube.com/watch?v=CoP-0ih0Rd4)**：IFC 投资案例和开发性金融逻辑的解读
 - **Wikipedia - [M-KOPA](https://en.wikipedia.org/wiki/M-KOPA)**：M-Kopa 的商业模式和离网太阳能融资创新
-- **YouTube - "DFI vs BRI development finance competition" (搜索关键词)**：DFI 和 BRI 在全球基础设施融资中的竞争
+- **YouTube - ["DFI vs BRI development finance competition"](https://www.youtube.com/watch?v=J7EIpSJ3az4)**：DFI 和 BRI 在全球基础设施融资中的竞争

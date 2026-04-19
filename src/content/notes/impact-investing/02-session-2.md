@@ -110,6 +110,6 @@ session: "2"
 
 - **Wikipedia - [Social impact bond](https://en.wikipedia.org/wiki/Social_impact_bond)**：社会效益债券的机制、历史和效果评估
 - **Wikipedia - [Program-related investment](https://en.wikipedia.org/wiki/Program-related_investment)**：PRI 的法律定义和基金会使用方式
-- **YouTube - "Blended finance explained" (搜索关键词)**：混合融资的机制和在发展融资中的应用案例
+- **YouTube - ["Blended finance explained"](https://www.youtube.com/watch?v=5CewQ4d_zac)**：混合融资的机制和在发展融资中的应用案例
 - **Wikipedia - [Additionality](https://en.wikipedia.org/wiki/Additionality)**：加法性概念的经济学定义和评估方法
-- **YouTube - "Impact investing vs ESG" (搜索关键词)**：行业专家对两种策略的比较和批评
+- **YouTube - ["Impact investing vs ESG"](https://www.youtube.com/watch?v=5zr8PLtDjkc)**：行业专家对两种策略的比较和批评

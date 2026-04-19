@@ -108,6 +108,6 @@ session: "7"
 
 - **Wikipedia - [Blended finance](https://en.wikipedia.org/wiki/Blended_finance)**：混合融资的定义、结构和主要参与者
 - **Wikipedia - [International Finance Corporation](https://en.wikipedia.org/wiki/International_Finance_Corporation)**：IFC 的历史、规模和在发展融资中的角色
-- **YouTube - "Blended finance SDGs" (搜索关键词)**：混合融资如何弥合 SDG 融资缺口的案例解读
+- **YouTube - ["Blended finance SDGs"](https://www.youtube.com/watch?v=J7EIpSJ3az4)**：混合融资如何弥合 SDG 融资缺口的案例解读
 - **Wikipedia - [Development finance institution](https://en.wikipedia.org/wiki/Development_finance_institution)**：全球主要 DFI 的对比
-- **YouTube - "First loss tranche impact investing" (搜索关键词)**：第一损失机制和分层结构的可视化解释
+- **YouTube - ["First loss tranche impact investing"](https://www.youtube.com/watch?v=-GfNZcrylow)**：第一损失机制和分层结构的可视化解释

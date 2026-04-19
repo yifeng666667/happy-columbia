@@ -87,6 +87,6 @@ session: "8"
 
 - **Wikipedia - [Global value chain](https://en.wikipedia.org/wiki/Global_value_chain)**：全球价值链的理论框架和中国的位置
 - **Wikipedia - [CHIPS and Science Act](https://en.wikipedia.org/wiki/CHIPS_and_Science_Act)**：美国芯片法案的内容和产业政策意图
-- **YouTube - "Supply chain decoupling" (搜索关键词)**：The Economist、Bloomberg 关于脱钩现实与幻想的深度分析
+- **YouTube - ["Supply chain decoupling"](https://www.youtube.com/watch?v=3sgAa35E_xw)**：The Economist、Bloomberg 关于脱钩现实与幻想的深度分析
 - **Wikipedia - [Inflation Reduction Act](https://en.wikipedia.org/wiki/Inflation_Reduction_Act)**：IRA 的供应链条款和对全球产业链布局的影响
-- **YouTube - "China Plus One Vietnam India" (搜索关键词)**：越南、印度承接中国产能转移的案例和挑战
+- **YouTube - ["China Plus One Vietnam India"](https://www.youtube.com/watch?v=wpEP_bU0Qs0)**：越南、印度承接中国产能转移的案例和挑战

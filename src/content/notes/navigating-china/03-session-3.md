@@ -95,6 +95,6 @@ session: "3"
 
 - **Wikipedia - [Sex-selective abortion in China](https://en.wikipedia.org/wiki/Sex-selective_abortion_in_China)**：中国出生性别比失衡的成因和数据
 - **Wikipedia - [Competitive saving motive](https://en.wikipedia.org/wiki/Competitive_saving_motive)**：Wei & Zhang 竞争性储蓄假说的概述
-- **YouTube - "China gender imbalance" (搜索关键词)**：BBC、Bloomberg 关于中国性别比问题的纪录片
+- **YouTube - ["China gender imbalance"](https://www.youtube.com/watch?v=ndWuq6AznmQ)**：BBC、Bloomberg 关于中国性别比问题的纪录片
 - **Wikipedia - [Aging in China](https://en.wikipedia.org/wiki/Aging_in_China)**：中国老龄化数据、政策应对和国际比较
 - **YouTube - "China savings rate explained"**：中国高储蓄率多视角解读

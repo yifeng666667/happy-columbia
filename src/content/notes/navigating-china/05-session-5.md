@@ -89,6 +89,6 @@ session: "5"
 
 - **Wikipedia - [Multinational corporation](https://en.wikipedia.org/wiki/Multinational_corporation)**：跨国公司的理论框架和全球角色
 - **Wikipedia - [China Plus One](https://en.wikipedia.org/wiki/China_Plus_One)**：China+1 战略的背景和案例
-- **YouTube - "BYD vs Volkswagen China" (搜索关键词)**：比亚迪崛起与大众在华市场份额下滑的案例对比
+- **YouTube - ["BYD vs Volkswagen China"](https://www.youtube.com/watch?v=a1KLRdRnkvM)**：比亚迪崛起与大众在华市场份额下滑的案例对比
 - **Wikipedia - [Intellectual property in China](https://en.wikipedia.org/wiki/Intellectual_property_in_China)**：中国知识产权保护历史和现状
-- **YouTube - "Apple supply chain India" (搜索关键词)**：苹果向印度转移供应链的过程和挑战
+- **YouTube - ["Apple supply chain India"](https://www.youtube.com/watch?v=LvA0LAGRAjE)**：苹果向印度转移供应链的过程和挑战

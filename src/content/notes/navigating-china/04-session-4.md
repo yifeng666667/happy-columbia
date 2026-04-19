@@ -81,6 +81,6 @@ SOE 和 FDI 的讨论，最终都指向同一个问题：**中国经济能不能
 
 - **Wikipedia - [State-owned enterprises in China](https://en.wikipedia.org/wiki/State-owned_enterprises_in_China)**：中国国企的历史、规模和改革进程
 - **Wikipedia - [Foreign direct investment in China](https://en.wikipedia.org/wiki/Foreign_direct_investment_in_China)**：外资政策演变和数据
-- **YouTube - "China SOE reform" (搜索关键词)**：国企改革案例和争议的深度解读
+- **YouTube - ["China SOE reform"](https://www.youtube.com/watch?v=pcJn9BRdxfM)**：国企改革案例和争议的深度解读
 - **Wikipedia - [Tesla Shanghai Gigafactory](https://en.wikipedia.org/wiki/Gigafactory_Shanghai)**：特斯拉上海工厂的案例和意义
-- **YouTube - "China FDI trends" (搜索关键词)**：近年外资流入/流出趋势分析
+- **YouTube - ["China FDI trends"](https://www.youtube.com/watch?v=3Os-e52MDY4)**：近年外资流入/流出趋势分析

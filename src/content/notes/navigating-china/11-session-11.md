@@ -108,6 +108,6 @@ TikTok 在全球有 15 亿月活用户（2024），已经超越 Instagram 成为
 
 - **Wikipedia - [TikTok ban in the United States](https://en.wikipedia.org/wiki/TikTok_ban_in_the_United_States)**：TikTok 争议的完整时间线和法律背景
 - **Wikipedia - [Economy of China](https://en.wikipedia.org/wiki/Economy_of_China)**：中国经济综合数据和增长驱动分析
-- **YouTube - "China economic slowdown" (搜索关键词)**：Bloomberg、The Economist 对中国增长放缓的深度分析
+- **YouTube - ["China economic slowdown"](https://www.youtube.com/watch?v=mj9CMEeA5wY)**：Bloomberg、The Economist 对中国增长放缓的深度分析
 - **Wikipedia - [Middle income trap](https://en.wikipedia.org/wiki/Middle_income_trap)**：中等收入陷阱的理论基础和案例
-- **YouTube - "China EV battery dominance" (搜索关键词)**：中国新能源汽车和电池产业全球地位的可视化解读
+- **YouTube - ["China EV battery dominance"](https://www.youtube.com/watch?v=MRtpzU03lKA)**：中国新能源汽车和电池产业全球地位的可视化解读

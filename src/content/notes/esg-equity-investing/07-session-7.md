@@ -107,6 +107,6 @@ ESG 整合是一个技能而非口号。宣称"我们做 ESG 整合"的基金，
 
 - **Wikipedia - [Thematic investing](https://en.wikipedia.org/wiki/Thematic_investing)**：主题投资的框架和在 ESG 领域的应用
 - **Wikipedia - [ICLN](https://en.wikipedia.org/wiki/IShares_Global_Clean_Energy_ETF)**：iShares 清洁能源 ETF 的历史和 2020-2022 的大起大落
-- **YouTube - "ESG integration into valuation" (搜索关键词)**：基本面分析师如何将 ESG 纳入 DCF 模型的实际案例
+- **YouTube - ["ESG integration into valuation"](https://www.youtube.com/watch?v=Yv8CCErE1qM)**：基本面分析师如何将 ESG 纳入 DCF 模型的实际案例
 - **Wikipedia - [Best-in-class ESG investing](https://en.wikipedia.org/wiki/Best-in-class_ESG_investing)**：正面筛选策略的定义和批评
-- **YouTube - "Clean energy ETF 2021 bubble" (搜索关键词)**：清洁能源主题 ETF 的泡沫形成和破裂
+- **YouTube - ["Clean energy ETF 2021 bubble"](https://www.youtube.com/watch?v=ruXLhpXvhOE)**：清洁能源主题 ETF 的泡沫形成和破裂

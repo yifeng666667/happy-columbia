@@ -105,6 +105,6 @@ session: "8"
 
 - **Wikipedia - [NextEra Energy](https://en.wikipedia.org/wiki/NextEra_Energy)**：美国最大可再生能源公司的历史和估值争议
 - **Wikipedia - [Duration (finance)](https://en.wikipedia.org/wiki/Duration_(finance))**：久期的定义和在股票估值中的应用
-- **YouTube - "Green stocks valuation 2022 crash" (搜索关键词)**：2022 年清洁能源股大跌的分析
+- **YouTube - ["Green stocks valuation 2022 crash"](https://www.youtube.com/watch?v=pqdfZGXRm7E)**：2022 年清洁能源股大跌的分析
 - **Wikipedia - [Inflation Reduction Act](https://en.wikipedia.org/wiki/Inflation_Reduction_Act)**：IRA 对清洁能源行业估值的影响
-- **YouTube - "ESG bubble clean energy ETF" (搜索关键词)**：清洁能源主题 ETF 的泡沫形成、破裂和后续
+- **YouTube - ["ESG bubble clean energy ETF"](https://www.youtube.com/watch?v=9IDS8ezo_E0)**：清洁能源主题 ETF 的泡沫形成、破裂和后续

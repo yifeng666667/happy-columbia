@@ -109,6 +109,6 @@ session: "11"
 
 - **Wikipedia - [Task Force on Climate-related Financial Disclosures](https://en.wikipedia.org/wiki/Task_Force_on_Climate-related_Financial_Disclosures)**：TCFD 框架的内容和全球采纳情况
 - **Wikipedia - [Stranded asset](https://en.wikipedia.org/wiki/Stranded_asset)**：搁浅资产的概念和化石燃料估值影响
-- **YouTube - "Green premium Bill Gates" (搜索关键词)**：比尔·盖茨绿色溢价概念的解释和应用
+- **YouTube - ["Green premium Bill Gates"](https://www.youtube.com/watch?v=4hfcU6NZaPI)**：比尔·盖茨绿色溢价概念的解释和应用
 - **Wikipedia - [Climate finance](https://en.wikipedia.org/wiki/Climate_finance)**：气候融资的定义、规模和主要机构
-- **YouTube - "Transition finance explained" (搜索关键词)**：转型融资 vs 绿色融资的争论和实践
+- **YouTube - ["Transition finance explained"](https://www.youtube.com/watch?v=9jiGbwMocdw)**：转型融资 vs 绿色融资的争论和实践

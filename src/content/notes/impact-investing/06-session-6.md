@@ -112,6 +112,6 @@ session: "6"
 
 - **Wikipedia - [Green bond](https://en.wikipedia.org/wiki/Green_bond)**：绿色债券的历史、市场规模和主要标准
 - **Wikipedia - [Social impact bond](https://en.wikipedia.org/wiki/Social_impact_bond)**：社会效益债券的机制、全球案例和效果评估
-- **YouTube - "Green bond market 2024" (搜索关键词)**：最新绿色债券市场规模和趋势分析
+- **YouTube - ["Green bond market 2024"](https://www.youtube.com/watch?v=ruXLhpXvhOE)**：最新绿色债券市场规模和趋势分析
 - **Wikipedia - [Blue bond](https://en.wikipedia.org/wiki/Blue_bond)**：蓝色债券的起源（塞舌尔案例）和海洋融资
-- **YouTube - "Social impact bond UK Peterborough" (搜索关键词)**：全球第一个 SIB（英国彼得伯勒监狱项目）的详细介绍
+- **YouTube - ["Social impact bond UK Peterborough"](https://www.youtube.com/watch?v=sXQxoIviGdE)**：全球第一个 SIB（英国彼得伯勒监狱项目）的详细介绍

@@ -101,6 +101,6 @@ session: "2"
 
 - **Wikipedia - [Demographic dividend](https://en.wikipedia.org/wiki/Demographic_dividend)**：人口红利的经济学原理和跨国案例
 - **Wikipedia - [One-child policy](https://en.wikipedia.org/wiki/One-child_policy)**：独生子女政策的历史、争议和人口后果
-- **YouTube - "China aging population" (搜索关键词)**：Bloomberg、CNN 关于中国人口危机的深度报道
+- **YouTube - ["China aging population"](https://www.youtube.com/watch?v=gWhJhZYOCnU)**：Bloomberg、CNN 关于中国人口危机的深度报道
 - **Wikipedia - [Industrial policy](https://en.wikipedia.org/wiki/Industrial_policy)**：工业政策的理论争论和历史案例
-- **YouTube - "China solar industry subsidy" (搜索关键词)**：中国光伏产业崛起与全球贸易摩擦的案例分析
+- **YouTube - ["China solar industry subsidy"](https://www.youtube.com/watch?v=a6l4pIEHeD4)**：中国光伏产业崛起与全球贸易摩擦的案例分析

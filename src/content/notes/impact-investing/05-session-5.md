@@ -105,6 +105,6 @@ PE/VC 投资最终需要退出。影响力股权面临特殊的退出困境：
 
 - **Wikipedia - [Acumen (organization)](https://en.wikipedia.org/wiki/Acumen_(organization))**：Acumen 的历史、投资组合和耐心资本理念
 - **Wikipedia - [Rise Fund](https://en.wikipedia.org/wiki/Rise_Fund)**：TPG Rise Fund 的结构、IMM 方法论和主要投资
-- **YouTube - "Impact investing PE VC" (搜索关键词)**：主流 PE 进入影响力领域的动机和挑战
+- **YouTube - ["Impact investing PE VC"](https://www.youtube.com/watch?v=rhLH7NrVywY)**：主流 PE 进入影响力领域的动机和挑战
 - **Wikipedia - [Patient capital](https://en.wikipedia.org/wiki/Patient_capital)**：耐心资本的定义和在发展融资中的应用
-- **YouTube - "Ben and Jerry's Unilever mission drift" (搜索关键词)**：收购后使命保护的典型案例分析
+- **YouTube - ["Ben and Jerry's Unilever mission drift"](https://www.youtube.com/watch?v=jJf9DqdrDac)**：收购后使命保护的典型案例分析

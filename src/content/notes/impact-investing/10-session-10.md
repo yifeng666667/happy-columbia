@@ -89,6 +89,6 @@ session: "10"
 
 - **Wikipedia - [Family office](https://en.wikipedia.org/wiki/Family_office)**：家族办公室的类型、规模和全球分布
 - **Wikipedia - [Omidyar Network](https://en.wikipedia.org/wiki/Omidyar_Network)**：eBay 创始人的混合影响力投资架构
-- **YouTube - "Family office impact investing" (搜索关键词)**：家族办公室如何转向可持续和影响力投资
+- **YouTube - ["Family office impact investing"](https://www.youtube.com/watch?v=AzvifufvQSQ)**：家族办公室如何转向可持续和影响力投资
 - **Wikipedia - [Archegos Capital Management](https://en.wikipedia.org/wiki/Archegos_Capital_Management)**：Archegos 爆仓事件和家族办公室监管缺口
-- **YouTube - "Intergenerational wealth transfer millennials ESG" (搜索关键词)**：代际财富转移和年轻投资者的价值观驱动投资趋势
+- **YouTube - ["Intergenerational wealth transfer millennials ESG"](https://www.youtube.com/watch?v=tHbUxeDEjUQ)**：代际财富转移和年轻投资者的价值观驱动投资趋势

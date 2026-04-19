@@ -105,6 +105,6 @@ E、S、G 各有不同的量化难度和方法论成熟度，这直接影响了 
 
 - **Wikipedia - [Greenhouse Gas Protocol](https://en.wikipedia.org/wiki/Greenhouse_Gas_Protocol)**：Scope 1/2/3 排放框架的定义和应用
 - **Wikipedia - [Sustainability Accounting Standards Board](https://en.wikipedia.org/wiki/Sustainability_Accounting_Standards_Board)**：SASB 的行业特定重要性框架
-- **YouTube - "ESG materiality explained" (搜索关键词)**：重要性框架在 ESG 评估中的应用
+- **YouTube - ["ESG materiality explained"](https://www.youtube.com/watch?v=uZhbPasrL3g)**：重要性框架在 ESG 评估中的应用
 - **Wikipedia - [Corporate governance](https://en.wikipedia.org/wiki/Corporate_governance)**：公司治理的理论基础和实践
-- **YouTube - "ESG E S G pillars explained" (搜索关键词)**：三个维度的系统化解读
+- **YouTube - ["ESG E S G pillars explained"](https://www.youtube.com/watch?v=-WVdP9ssU2o)**：三个维度的系统化解读

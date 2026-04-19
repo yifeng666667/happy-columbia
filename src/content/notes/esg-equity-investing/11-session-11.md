@@ -129,6 +129,6 @@ Fink 在多个公开场合刻意回避使用"ESG"一词，称其"已经被政治
 
 - **Wikipedia - [ESG investing backlash](https://en.wikipedia.org/wiki/ESG_investing)**：反 ESG 运动的背景、州立法和法律论点
 - **Wikipedia - [Employee Retirement Income Security Act](https://en.wikipedia.org/wiki/Employee_Retirement_Income_Security_Act)**：ERISA 受托责任的法律框架和 ESG 争议
-- **YouTube - "Anti-ESG movement Texas Florida BlackRock" (搜索关键词)**：美国反 ESG 浪潮的政治经济分析
+- **YouTube - ["Anti-ESG movement Texas Florida BlackRock"](https://www.youtube.com/watch?v=-WVdP9ssU2o)**：美国反 ESG 浪潮的政治经济分析
 - **Wikipedia - [BlackRock](https://en.wikipedia.org/wiki/BlackRock)**：贝莱德在 ESG 争议中的角色和策略演变
-- **YouTube - "ESG politicization Republican Democrat" (搜索关键词)**：ESG 议题两党立场差异的深度解读
+- **YouTube - ["ESG politicization Republican Democrat"](https://www.youtube.com/watch?v=NkB1s4EBQaU)**：ESG 议题两党立场差异的深度解读

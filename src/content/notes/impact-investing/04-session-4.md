@@ -100,6 +100,6 @@ B Corp 讨论的核心不只是认证——它涉及一个更深层的问题：*
 
 - **Wikipedia - [B Corporation (certification)](https://en.wikipedia.org/wiki/B_Corporation_(certification))**：B Corp 认证的机制、历史和主要企业
 - **Wikipedia - [Patagonia](https://en.wikipedia.org/wiki/Patagonia_(retailer))**：Patagonia 的历史、使命和 2022 年所有权转让
-- **YouTube - "B Corp certification explained" (搜索关键词)**：B Lab 和认证企业对 B Corp 价值的解读
+- **YouTube - ["B Corp certification explained"](https://www.youtube.com/watch?v=b8VCkb9wEJk)**：B Lab 和认证企业对 B Corp 价值的解读
 - **Wikipedia - [Benefit corporation](https://en.wikipedia.org/wiki/Benefit_corporation)**：利益公司的法律框架和美国各州立法
-- **YouTube - "Yvon Chouinard Patagonia give away" (搜索关键词)**：Patagonia 所有权转让声明的背景和意义
+- **YouTube - ["Yvon Chouinard Patagonia give away"](https://www.youtube.com/watch?v=nbXc4qfAXUM)**：Patagonia 所有权转让声明的背景和意义

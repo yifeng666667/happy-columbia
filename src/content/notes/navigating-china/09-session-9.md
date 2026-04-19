@@ -98,6 +98,6 @@ session: "9"
 
 - **Wikipedia - [Belt and Road Initiative](https://en.wikipedia.org/wiki/Belt_and_Road_Initiative)**：一带一路的全球范围、项目清单和主要争议
 - **Wikipedia - [Renminbi internationalization](https://en.wikipedia.org/wiki/Renminbi_internationalization)**：人民币国际化进展和障碍的数据
-- **YouTube - "Belt and Road Initiative explained" (搜索关键词)**：CNBC、Bloomberg 对 BRI 的深度解读和批评
+- **YouTube - ["Belt and Road Initiative explained"](https://www.youtube.com/watch?v=j8zzL2aBo2M)**：CNBC、Bloomberg 对 BRI 的深度解读和批评
 - **Wikipedia - [Hambantota Port](https://en.wikipedia.org/wiki/Hambantota_Port)**：汉班托塔港争议的完整背景和不同分析角度
 - **YouTube - "Renminbi reserve currency"**：人民币与美元体系竞争的多方视角分析
