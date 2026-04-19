@@ -140,6 +140,14 @@ header.scrolled {
   }
 }
 
+/* Hide native video play button (shown when autoplay is blocked, e.g. WeChat) */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-panel,
+.hero-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 /* Mobile */
 @media (max-width: 767px) {
   .hero-bg {
