@@ -1,5 +1,5 @@
 ---
-title: "SESSION 5：影响力股权投资——VC 和 PE 如何做到"既要又要"？"
+title: 'SESSION 5：影响力股权投资——VC 和 PE 如何做到"既要又要"？'
 order: 5
 session: "5"
 ---

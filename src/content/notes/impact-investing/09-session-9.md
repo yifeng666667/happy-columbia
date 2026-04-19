@@ -1,5 +1,5 @@
 ---
-title: "SESSION 9：基金会资本——PRI、MRI 与慈善捐赠的"再利用""
+title: 'SESSION 9：基金会资本——PRI、MRI 与慈善捐赠的"再利用"'
 order: 9
 session: "9"
 ---

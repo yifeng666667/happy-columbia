@@ -1,5 +1,5 @@
 ---
-title: "SESSION 8：供应链重构——"脱钩"是真命题还是天方夜谭？"
+title: 'SESSION 8：供应链重构——"脱钩"是真命题还是天方夜谭？'
 order: 8
 session: "8"
 ---
