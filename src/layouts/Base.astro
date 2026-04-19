@@ -133,7 +133,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
       .site-header[data-hero="true"][data-scrolled="true"]             { position: fixed; }
 
       /* ── Default (non-hero) ── */
-      .site-header                          { background: white; border-color: rgb(231,229,228); }
+      .site-header                          { background: white; border-color: rgb(231,229,228); box-shadow: 0 1px 14px rgba(0,0,0,0.06); }
       .site-header .logo-main               { color: rgb(28,25,23); }
       .site-header .logo-sub                { color: rgb(168,162,158); }
       .site-header .nav-link                { color: rgb(87,83,78); }
@@ -155,7 +155,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
       .site-header[data-hero="true"] .ham-btn:hover     { background: rgba(255,255,255,0.1); }
 
       /* ── Hero scrolled ── */
-      .site-header[data-hero="true"][data-scrolled="true"]                 { background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-color: rgb(231,229,228); }
+      .site-header[data-hero="true"][data-scrolled="true"]                 { background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-color: transparent; box-shadow: 0 1px 20px rgba(0,0,0,0.10); }
       .site-header[data-hero="true"][data-scrolled="true"] .logo-main      { color: rgb(28,25,23); }
       .site-header[data-hero="true"][data-scrolled="true"] .logo-sub       { color: rgb(168,162,158); }
       .site-header[data-hero="true"][data-scrolled="true"] .nav-link       { color: rgb(87,83,78); }
@@ -275,8 +275,9 @@ const siteUrl = 'https://happy-columbia.pages.dev';
   <script>
     const bar = document.getElementById('reading-progress-bar');
     if (bar) {
+      const isHomePage = window.location.pathname === '/';
       const isLongPage = document.body.scrollHeight > window.innerHeight * 1.8;
-      if (isLongPage) {
+      if (!isHomePage && isLongPage) {
         bar.style.opacity = '1';
         const update = () => {
           const scrollable = document.body.scrollHeight - window.innerHeight;
