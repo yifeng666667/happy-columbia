@@ -1,5 +1,5 @@
 ---
-title: "SESSION 15：数字资产"
+title: "SESSION 15：数字资产——Bitcoin ETF 获批、FTX 崩塌，这次真的不一样了吗？"
 order: 15
 session: "15"
 ---

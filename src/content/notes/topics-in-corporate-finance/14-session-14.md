@@ -1,5 +1,5 @@
 ---
-title: "SESSION 14：资产管理"
+title: "SESSION 14：资产管理——贝莱德管了 10 万亿，为什么大多数主动基金还是跑输指数？"
 order: 14
 session: "14"
 ---
