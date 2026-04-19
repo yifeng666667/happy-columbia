@@ -241,7 +241,7 @@ export const courses: CourseMeta[] = [
     titleEn: 'Impact Investing I: Foundations',
     description:
       '"用投资解决社会问题"——1997 年这个想法被主流金融界嗤之以鼻，2024 年全球影响力投资规模已超 1.5 万亿美元。什么是影响力投资？它真的能改变世界，还是另一种漂绿包装？从债券到股权，从评估工具到批评声音，一门诚实的入门课。',
-    heroImage: 'https://images.unsplash.com/photo-1570168007204-ec6219e4e4e5?auto=format&fit=crop&w=1400&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1400&q=85',
     city: 'Mumbai',
   },
   {
@@ -261,7 +261,7 @@ export const courses: CourseMeta[] = [
     titleEn: 'Foundations of Entrepreneurship',
     description:
       '为什么 99% 的创业公司会死？为什么那 1% 能成为下一个 Airbnb？从最小可行产品到风险融资，从联合创始人选择到公司关闭决策——把创业神话拆解成可操作框架，无论你想创业还是在大公司里做创新。',
-    heroImage: 'https://images.unsplash.com/photo-1449824913935-b2ef9d45a728?auto=format&fit=crop&w=1400&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1400&q=85',
     city: 'San Francisco',
   },
 ];
