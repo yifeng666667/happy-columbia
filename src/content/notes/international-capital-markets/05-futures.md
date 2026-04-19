@@ -62,9 +62,9 @@ session: "5"
 
 ## 二、全球期货交易所的地图
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg/600px-NY_stock_exchange_traders_floor_LC-U9-10548-6.jpg" alt="交易所交易大厅" style="width:100%;max-width:600px;border-radius:8px;margin:1rem 0;" />
+![华尔街——全球期货与金融市场的中心](https://images.unsplash.com/photo-zizRk437LyA?auto=format&fit=crop&w=900&q=80)
 
-*纽约证券交易所的交易大厅。期货交易也曾经是这样的喊价现场，如今已基本电子化。*
+*华尔街路口。CME、CBOT等期货交易所正是在这片金融生态中生长起来，如今交易已从喊价大厅全面转向电子化。*
 
 ### 2.1 美国的两大巨头：CME 和 CBOT（都属于 CME Group）
 
