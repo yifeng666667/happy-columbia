@@ -8,7 +8,7 @@ session: "overview"
 
 **国际资本市场（International Capital Markets, ICM）** 是 SIPA 国际金融方向（IFEP）的核心课程，也是目前金融从业者公认最接近实战的学术课程之一。它不是一门教科书式的"金融学原理"，而是专门回答一个问题：
 
-> **全球资本市场里的人，到底是怎么把事情做成的？（How do participants in capital markets get things done?）**
+> **真实的资本市场是怎么运作的？钱从哪来、流向哪里、风险又是怎么被定价和转手的？**
 
 这份笔记整合了课程内容、市场公开资料和个人理解，关注的核心问题是：
 

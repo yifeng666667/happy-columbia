@@ -22,6 +22,9 @@ session: "Appendix"
 
 ---
 
+![主权债投资分析框架——从宏观到交易决策](https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=900&q=80)
+*图注：投资分析工作场景。UBS 的主权债分析框架，将一个看似复杂的"该不该买这个国家的债券"问题，分解为五个可操作的分析层级。这不是教科书上的理论框架——这是 Pedro Quintanilla-Dieck 在实际管理 EM 固定收益投资组合时使用的工具，每一层都有具体的问题清单和量化检验点。*
+
 ## 五层分析流程（Five-Layer Process）
 
 ### 第一层：宏观与政治经济分析
