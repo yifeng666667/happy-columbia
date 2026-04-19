@@ -214,6 +214,56 @@ export const courses: CourseMeta[] = [
     heroImage: 'https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&w=1400&q=85',
     city: 'Toronto',
   },
+  {
+    slug: 'economic-financial-statecraft',
+    category: 'geopolitics',
+    title: '经济与金融制裁',
+    titleEn: 'Economic and Financial Statecraft',
+    description:
+      '美国如何把美元、SWIFT 和芯片出口管制变成战略武器？从制裁伊朗到将俄罗斯踢出 SWIFT，从华为禁令到 2022 年芯片管制——解读"金融武器化"时代的底层逻辑与投资含义。',
+    heroImage: 'https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=1400&q=85',
+    city: 'Washington D.C.',
+  },
+  {
+    slug: 'navigating-china',
+    category: 'economics',
+    title: '解码中国经济',
+    titleEn: 'Navigating China',
+    description:
+      '中国是全球最大制造业国——但对大多数全球投资者来说依然充满谜题。用数据打破刻板印象：储蓄率为什么这么高？人口老龄化有多严重？性别失衡如何影响贸易顺差？关税战真正的赢家和输家是谁？',
+    heroImage: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=85',
+    city: 'Shenzhen',
+  },
+  {
+    slug: 'impact-investing',
+    category: 'finance',
+    title: '影响力投资',
+    titleEn: 'Impact Investing I: Foundations',
+    description:
+      '"用投资解决社会问题"——1997 年这个想法被主流金融界嗤之以鼻，2024 年全球影响力投资规模已超 1.5 万亿美元。什么是影响力投资？它真的能改变世界，还是另一种漂绿包装？从债券到股权，从评估工具到批评声音，一门诚实的入门课。',
+    heroImage: 'https://images.unsplash.com/photo-1570168007204-ec6219e4e4e5?auto=format&fit=crop&w=1400&q=85',
+    city: 'Mumbai',
+  },
+  {
+    slug: 'esg-equity-investing',
+    category: 'finance',
+    title: 'ESG 股票投资',
+    titleEn: 'ESG Investing in Equity Markets',
+    description:
+      '特斯拉被踢出 S&P 500 ESG 指数，而埃克森美孚还留在里面——这说明 ESG 评级体系有多混乱。从 MSCI 评级方法到 Engine No.1 对埃克森的代理权之战，读懂 ESG 投资的真相、局限与未来。',
+    heroImage: 'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1400&q=85',
+    city: 'Stockholm',
+  },
+  {
+    slug: 'foundations-of-entrepreneurship',
+    category: 'finance',
+    title: '创业学基础',
+    titleEn: 'Foundations of Entrepreneurship',
+    description:
+      '为什么 99% 的创业公司会死？为什么那 1% 能成为下一个 Airbnb？从最小可行产品到风险融资，从联合创始人选择到公司关闭决策——把创业神话拆解成可操作框架，无论你想创业还是在大公司里做创新。',
+    heroImage: 'https://images.unsplash.com/photo-1449824913935-b2ef9d45a728?auto=format&fit=crop&w=1400&q=85',
+    city: 'San Francisco',
+  },
 ];
 
 export const getCourse = (slug: string): CourseMeta | undefined =>
