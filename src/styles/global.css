@@ -95,43 +95,33 @@ header.scrolled {
   box-shadow: 0 1px 20px rgba(0,0,0,0.08);
 }
 
-/* Hero section wrapper — no background here any more */
-.hero-img { /* layout only — background moved to .hero-bg */ }
+/* Hero section wrapper */
+.hero-img { /* layout only */ }
 
-/* Animated background layer (Ken Burns cloud-breathing effect) */
-.hero-bg {
-  position: absolute;
-  inset: -8%;          /* oversized so edges don't show during scale/translate */
-  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2560&q=95');
-  background-size: cover;
-  background-position: center 42%;
-  animation: cloud-breathe 40s ease-in-out infinite;
-  will-change: transform;
-  z-index: 0;
-}
-
-/* Gradient overlay lives on ::after so it doesn't move with the photo */
-.hero-bg::after {
-  content: '';
+/* Video layer — fills hero, sits at bottom of stack */
+.hero-video {
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(6,24,40,0.72) 0%, rgba(11,44,86,0.60) 50%, rgba(19,67,110,0.55) 100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  z-index: 0;
+  pointer-events: none;
 }
 
-@keyframes cloud-breathe {
-  0%   { transform: scale(1.00) translate(0%,    0%   ); }
-  30%  { transform: scale(1.04) translate(-1.2%, -0.5%); }
-  65%  { transform: scale(1.02) translate( 0.9%,  0.4%); }
-  100% { transform: scale(1.00) translate(0%,    0%   ); }
+/* Gradient overlay on top of video */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(6,24,40,0.62) 0%, rgba(11,44,86,0.52) 50%, rgba(19,67,110,0.48) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 @media (max-width: 767px) {
   .hero-bg {
-    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85');
-    background-position: center 37%;
-  }
-  .hero-bg::after {
-    background: linear-gradient(180deg, rgba(6,24,40,0.82) 0%, rgba(8,32,60,0.60) 25%, rgba(11,44,86,0.45) 55%, rgba(11,44,86,0.60) 100%);
+    background: linear-gradient(180deg, rgba(6,24,40,0.80) 0%, rgba(8,32,60,0.58) 25%, rgba(11,44,86,0.42) 55%, rgba(11,44,86,0.58) 100%);
   }
 }
 
@@ -140,14 +130,14 @@ header.scrolled {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
 
 .hero-grid {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
   background-image:
     linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
@@ -226,7 +216,7 @@ header.scrolled {
     transparent 70%
   );
   pointer-events: none;
-  z-index: 3;
+  z-index: 4;
   animation: shimmer-sweep 14s ease-in-out 6s infinite;
 }
 @keyframes shimmer-sweep {

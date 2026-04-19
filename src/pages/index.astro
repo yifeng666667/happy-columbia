@@ -41,8 +41,15 @@ const catDot: Record<string, string> = {
   <!-- ═══════════════════════════════════════════════ -->
   <section class="hero-img min-h-[100dvh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
 
-    <!-- Animated mountain/cloud background -->
-    <div class="hero-bg" aria-hidden="true"></div>
+    <!-- Animated mountain/cloud background video -->
+    <video
+      class="hero-video"
+      autoplay muted loop playsinline
+      aria-hidden="true"
+      poster="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+    >
+      <source src="/videos/hero.mp4" type="video/mp4" />
+    </video>
 
     <!-- Aurora background -->
     <div class="hero-aurora" aria-hidden="true">
@@ -340,7 +347,12 @@ const catDot: Record<string, string> = {
 
 <script>
   (() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) {
+      const v = document.querySelector<HTMLVideoElement>('.hero-video');
+      if (v) { v.pause(); v.currentTime = 0; }
+      return;
+    }
     const wraps = document.querySelectorAll<HTMLElement>('.hero-aurora .orb-wrap');
     if (!wraps.length) return;
     let ticking = false;
