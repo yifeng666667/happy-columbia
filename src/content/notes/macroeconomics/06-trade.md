@@ -90,22 +90,40 @@ session: "6"
 
 ## 四、汇率变动的经济影响
 
-### 4.1 贬值的双面性
+### 4.1 贬值与升值的双面性
 
-**本币贬值（Depreciation）**：
+汇率的升降从来不是"好"或"坏"的二元问题，而是一场**受益者与受损者的重新分配**。用最朴素的两列对比看清它：
 
-```
-出口商品变便宜（以外币计价）→ 出口竞争力↑
-进口商品变贵（以本币计价）→ 进口成本↑
-                            → 进口型通胀（Imported Inflation）
-                            → 外币计价债务负担↑（新兴市场的噩梦）
-```
+<div class="not-prose my-6 grid md:grid-cols-2 gap-4">
+  <div class="border-2 border-red-200 rounded-xl p-5 bg-red-50/40">
+    <div class="flex items-baseline justify-between mb-3 pb-2 border-b border-red-200">
+      <h4 class="font-display font-bold text-red-700 text-lg m-0">本币贬值 ↓</h4>
+      <span class="text-xs text-red-600 font-mono">Depreciation</span>
+    </div>
+    <ul class="space-y-3 text-sm text-stone-700 leading-relaxed m-0 list-none pl-0">
+      <li class="flex gap-2"><span class="text-green-600 font-bold shrink-0">＋</span><span><strong>出口竞争力↑</strong>　本国商品在外币计价下变便宜，利好出口企业</span></li>
+      <li class="flex gap-2"><span class="text-red-600 font-bold shrink-0">－</span><span><strong>进口成本↑</strong>　买同样一罐奶粉、一桶油要花更多本币</span></li>
+      <li class="flex gap-2"><span class="text-red-600 font-bold shrink-0">－</span><span><strong>进口型通胀</strong>　成本上涨沿产业链传导至终端物价</span></li>
+      <li class="flex gap-2"><span class="text-red-600 font-bold shrink-0">－</span><span><strong>外债负担↑</strong>　以美元计价的债务在本币口径下变重——新兴市场的噩梦</span></li>
+    </ul>
+  </div>
+  <div class="border-2 border-emerald-200 rounded-xl p-5 bg-emerald-50/40">
+    <div class="flex items-baseline justify-between mb-3 pb-2 border-b border-emerald-200">
+      <h4 class="font-display font-bold text-emerald-700 text-lg m-0">本币升值 ↑</h4>
+      <span class="text-xs text-emerald-600 font-mono">Appreciation</span>
+    </div>
+    <ul class="space-y-3 text-sm text-stone-700 leading-relaxed m-0 list-none pl-0">
+      <li class="flex gap-2"><span class="text-red-600 font-bold shrink-0">－</span><span><strong>出口竞争力↓</strong>　外币计价变贵，出口企业利润承压</span></li>
+      <li class="flex gap-2"><span class="text-green-600 font-bold shrink-0">＋</span><span><strong>进口更便宜</strong>　消费者买海外商品、出国旅行更实惠</span></li>
+      <li class="flex gap-2"><span class="text-green-600 font-bold shrink-0">＋</span><span><strong>输入型通缩压力</strong>　进口价下跌反向压低 CPI</span></li>
+      <li class="flex gap-2"><span class="text-green-600 font-bold shrink-0">＋</span><span><strong>外债负担↓</strong>　外币债务在本币口径下变轻</span></li>
+    </ul>
+  </div>
+</div>
 
-2022 年美联储大幅加息，美元走强，很多新兴市场货币大幅贬值：巴基斯坦卢比贬值超过 30%，斯里兰卡外债无力偿还，引发主权债危机——这正是 EM 课里提到的"美联储加息 → 美元走强 → EM 资本外流 → 汇率贬值 → 外债危机"这条传导链的现实演绎。
+**现实案例 · 2022 美元强周期**：美联储大幅加息，美元走强，很多新兴市场货币大幅贬值：巴基斯坦卢比贬值超过 30%，斯里兰卡外债无力偿还，引发主权债危机——这正是 EM 课里"美联储加息 → 美元走强 → EM 资本外流 → 汇率贬值 → 外债危机"这条传导链的现实演绎。
 
-**本币升值（Appreciation）**：
-
-出口商品变贵 → 出口竞争力↓；进口商品变便宜 → 消费者受益、进口型通缩压力。2024 年人民币汇率承压，人民银行通过中间价引导和国有银行入场干预，防止人民币过快贬值，避免引发市场恐慌和资本外流压力叠加。
+**现实案例 · 2024 人民币承压**：外需疲软 + 中美利差倒挂，市场做空人民币预期浓厚。人民银行通过**中间价引导 + 国有银行入场干预 + 逆周期因子**多手组合，防止过快贬值引发恐慌和资本外流压力叠加。既不愿大贬（怕外债与通胀），也不愿大升（怕出口），**汇率政策的本质就是在这组双面效应里找平衡点**。
 
 ## 五、2025 年中美贸易摩擦：关税的逻辑与代价
 
