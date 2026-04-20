@@ -31,5 +31,14 @@ export default {
       },
     },
   },
+  safelist: [
+    // difficulty badge colours — used dynamically via JS object, must be safelisted
+    'bg-emerald-500/70', 'border-emerald-300/30',
+    'bg-sky-500/70',     'border-sky-300/30',
+    'bg-violet-600/70',  'border-violet-300/30',
+    'bg-emerald-500/80', 'border-emerald-300/40',
+    'bg-sky-500/80',     'border-sky-300/40',
+    'bg-violet-600/80',  'border-violet-300/40',
+  ],
   plugins: [typography],
 };
