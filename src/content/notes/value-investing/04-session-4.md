@@ -4,7 +4,7 @@ order: 4
 session: "4"
 ---
 
-## 这节课在回答什么
+## 2000年：Netflix 的 5000 万，百视达说"不值"
 
 2000 年，Netflix 的 CEO Reed Hastings 专程飞到达拉斯，敲开了百视达（Blockbuster）总部的大门。
 
