@@ -4,6 +4,7 @@
 // 新增分类：在 categories 里加一项即可，首页会自动出现新分组。
 
 export type CategoryId = 'finance' | 'economics' | 'geopolitics';
+export type Level = 'beginner' | 'intermediate' | 'advanced';
 
 export interface Category {
   id: CategoryId;
@@ -37,6 +38,7 @@ export interface CourseMeta {
   slug: string;
   category: CategoryId;
   subcat?: 'markets' | 'investing' | 'impact'; // finance sub-group
+  level: Level;
   title: string;
   titleEn: string;
   description: string;
@@ -49,6 +51,7 @@ export const courses: CourseMeta[] = [
     slug: 'international-capital-markets',
     category: 'finance',
     subcat: 'markets',
+    level: 'advanced',
     title: '国际资本市场',
     titleEn: 'International Capital Markets',
     description:
@@ -60,6 +63,7 @@ export const courses: CourseMeta[] = [
     slug: 'macro-policy-global-finance',
     category: 'finance',
     subcat: 'markets',
+    level: 'advanced',
     title: '宏观政策与全球金融市场',
     titleEn: 'Macroeconomic Policy and Global Financial Markets',
     description:
@@ -70,6 +74,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'emerging-capital-markets',
     category: 'economics',
+    level: 'intermediate',
     title: '新兴资本市场',
     titleEn: 'Emerging Capital Markets',
     description:
@@ -80,6 +85,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'microeconomics',
     category: 'economics',
+    level: 'beginner',
     title: '微观经济学',
     titleEn: 'Microeconomics',
     description:
@@ -90,6 +96,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'political-risk-analysis',
     category: 'geopolitics',
+    level: 'intermediate',
     title: '政治风险分析',
     titleEn: 'Political Risk Analysis',
     description:
@@ -100,6 +107,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'macroeconomics',
     category: 'economics',
+    level: 'beginner',
     title: '宏观经济学',
     titleEn: 'Macroeconomics',
     description:
@@ -111,6 +119,7 @@ export const courses: CourseMeta[] = [
     slug: 'corporate-finance',
     category: 'finance',
     subcat: 'investing',
+    level: 'beginner',
     title: '公司金融',
     titleEn: 'Corporate Finance',
     description:
@@ -122,6 +131,7 @@ export const courses: CourseMeta[] = [
     slug: 'global-payments',
     category: 'finance',
     subcat: 'markets',
+    level: 'intermediate',
     title: '全球支付体系',
     titleEn: 'The Global Payments Ecosystem',
     description:
@@ -132,6 +142,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'deglobalization',
     category: 'geopolitics',
+    level: 'intermediate',
     title: '逆全球化',
     titleEn: 'Deglobalisation: Trade, Politics and the Retreat from Integration',
     description:
@@ -142,6 +153,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'china-foreign-relations',
     category: 'geopolitics',
+    level: 'beginner',
     title: '中国对外关系史',
     titleEn: "China's Foreign Relations: 1949 to the Present",
     description:
@@ -152,6 +164,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'inside-situation-room',
     category: 'geopolitics',
+    level: 'beginner',
     title: '权力密室：国际危机决策学',
     titleEn: 'Inside the Situation Room',
     description:
@@ -163,6 +176,7 @@ export const courses: CourseMeta[] = [
     slug: 'value-investing',
     category: 'finance',
     subcat: 'investing',
+    level: 'beginner',
     title: '价值投资',
     titleEn: 'Value Investing: From Graham to the Global Stage',
     description:
@@ -173,6 +187,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'international-trade',
     category: 'economics',
+    level: 'beginner',
     title: '国际贸易：理论与政策',
     titleEn: 'International Trade: Theory and Policy',
     description:
@@ -184,6 +199,7 @@ export const courses: CourseMeta[] = [
     slug: 'trade-financial-markets',
     category: 'finance',
     subcat: 'markets',
+    level: 'advanced',
     title: '国际贸易与金融市场',
     titleEn: 'International Trade and Financial Markets',
     description:
@@ -195,6 +211,7 @@ export const courses: CourseMeta[] = [
     slug: 'international-finance-monetary',
     category: 'finance',
     subcat: 'markets',
+    level: 'advanced',
     title: '国际金融与货币理论',
     titleEn: 'International Finance and Monetary Theory',
     description:
@@ -206,6 +223,7 @@ export const courses: CourseMeta[] = [
     slug: 'emerging-financial-systems',
     category: 'finance',
     subcat: 'markets',
+    level: 'advanced',
     title: '新兴市场金融体系',
     titleEn: 'Emerging Financial Systems: Brazil, India, Indonesia and Mexico',
     description:
@@ -217,6 +235,7 @@ export const courses: CourseMeta[] = [
     slug: 'topics-in-corporate-finance',
     category: 'finance',
     subcat: 'investing',
+    level: 'advanced',
     title: '公司金融专题',
     titleEn: 'Topics in Corporate Finance',
     description:
@@ -227,6 +246,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'economic-financial-statecraft',
     category: 'geopolitics',
+    level: 'intermediate',
     title: '经济与金融制裁',
     titleEn: 'Economic and Financial Statecraft',
     description:
@@ -237,6 +257,7 @@ export const courses: CourseMeta[] = [
   {
     slug: 'navigating-china',
     category: 'economics',
+    level: 'intermediate',
     title: '解码中国经济',
     titleEn: 'Navigating China',
     description:
@@ -248,6 +269,7 @@ export const courses: CourseMeta[] = [
     slug: 'impact-investing',
     category: 'finance',
     subcat: 'impact',
+    level: 'beginner',
     title: '影响力投资',
     titleEn: 'Impact Investing I: Foundations',
     description:
@@ -259,6 +281,7 @@ export const courses: CourseMeta[] = [
     slug: 'esg-equity-investing',
     category: 'finance',
     subcat: 'impact',
+    level: 'intermediate',
     title: 'ESG 股票投资',
     titleEn: 'ESG Investing in Equity Markets',
     description:
@@ -270,6 +293,7 @@ export const courses: CourseMeta[] = [
     slug: 'foundations-of-entrepreneurship',
     category: 'finance',
     subcat: 'impact',
+    level: 'beginner',
     title: '创业学基础',
     titleEn: 'Foundations of Entrepreneurship',
     description:

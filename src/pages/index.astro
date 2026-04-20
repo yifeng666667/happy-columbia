@@ -14,23 +14,40 @@ const financeSubcats = [
   { id: 'impact',    label: '可持续·影响力·创新' },
 ] as const;
 
+const sortByLevel = (arr: typeof courses) =>
+  [...arr].sort((a, b) => levelOrder[a.level] - levelOrder[b.level]);
+
 const renderGroups = categories.map((cat) => {
   const items = courses.filter((c) => c.category === cat.id);
   if (cat.id === 'finance') {
     return {
       category: cat,
       groups: financeSubcats
-        .map((sc) => ({ label: sc.label, items: items.filter((c) => c.subcat === sc.id) }))
+        .map((sc) => ({ label: sc.label, items: sortByLevel(items.filter((c) => c.subcat === sc.id)) }))
         .filter((g) => g.items.length > 0),
     };
   }
-  return { category: cat, groups: [{ label: undefined as string | undefined, items }] };
+  return { category: cat, groups: [{ label: undefined as string | undefined, items: sortByLevel(items) }] };
 });
 
 const catDot: Record<string, string> = {
   finance: 'cat-finance',
   economics: 'cat-economics',
   geopolitics: 'bg-rose-400',
+};
+
+const levelOrder: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
+
+const levelBadge: Record<string, string> = {
+  beginner:     'bg-emerald-500/70 border-emerald-300/30',
+  intermediate: 'bg-sky-500/70 border-sky-300/30',
+  advanced:     'bg-violet-600/70 border-violet-300/30',
+};
+
+const levelLabel: Record<string, string> = {
+  beginner:     '入门',
+  intermediate: '进阶',
+  advanced:     '高阶',
 };
 ---
 
@@ -277,6 +294,11 @@ const catDot: Record<string, string> = {
                           <div class="absolute inset-0" style="background: rgba(8,20,40,0.45)" />
                           <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent" />
                           <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent h-16" />
+                          <div class="absolute top-3 left-3">
+                            <span class={`text-[10px] backdrop-blur-sm text-white font-semibold px-2 py-0.5 rounded-full border ${levelBadge[c.level]}`}>
+                              {levelLabel[c.level]}
+                            </span>
+                          </div>
                           <div class="absolute top-3 right-3">
                             <span class="text-[11px] bg-white/15 backdrop-blur-sm text-white font-medium px-2.5 py-0.5 rounded-full border border-white/20">
                               {noteCountOf(c.slug)} 篇
