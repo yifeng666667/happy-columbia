@@ -251,6 +251,21 @@ const levelLabel: Record<string, string> = {
             更新中
           </span>
         </div>
+
+        <!-- difficulty legend -->
+        <div class="flex items-center justify-center gap-3 sm:gap-5 flex-wrap mt-4">
+          <span class="text-[11px] text-stone-400 tracking-wide">难度：</span>
+          {[
+            { cls: 'bg-emerald-500/80 border-emerald-300/40', label: '入门', desc: '无需基础' },
+            { cls: 'bg-sky-500/80 border-sky-300/40',         label: '进阶', desc: '需基本概念' },
+            { cls: 'bg-violet-600/80 border-violet-300/40',   label: '高阶', desc: '需专业基础' },
+          ].map(({ cls, label, desc }) => (
+            <span class="flex items-center gap-1.5 text-[11px] text-stone-500">
+              <span class={`inline-block px-2 py-0.5 rounded-full border text-white font-semibold text-[10px] ${cls}`}>{label}</span>
+              {desc}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div class="space-y-10 md:space-y-14">
