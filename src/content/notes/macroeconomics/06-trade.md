@@ -18,7 +18,7 @@ session: "6"
 
 直觉上，"我做什么都比你做得好，为什么要和你交换？"这个问题引出了国际贸易理论里最重要的概念。
 
-**大卫·李嘉图（David Ricardo）**在 19 世纪初提出了**比较优势（Comparative Advantage）**：即使一个国家在所有商品的生产上都处于绝对劣势，只要它在某些商品上的相对劣势更小，通过专业化分工和贸易，双方都能获益。
+**David Ricardo** 在 19 世纪初提出了**比较优势（Comparative Advantage）**：即使一个国家在所有商品的生产上都处于绝对劣势，只要它在某些商品上的相对劣势更小，通过专业化分工和贸易，双方都能获益。
 
 用一个极简版例子：
 - 假设中国工人生产一台手机需要 2 天，生产一吨小麦需要 1 天
@@ -183,7 +183,7 @@ session: "6"
 
 ## 延伸阅读
 
-- **Wikipedia - [Comparative advantage](https://en.wikipedia.org/wiki/Comparative_advantage)**：李嘉图理论的完整解释和各种扩展
+- **Wikipedia - [Comparative advantage](https://en.wikipedia.org/wiki/Comparative_advantage)**：Ricardo 理论的完整解释和各种扩展
 - **Wikipedia - [Exchange rate](https://en.wikipedia.org/wiki/Exchange_rate)**：汇率的定义、制度类型和历史演变
 - **Wikipedia - [Petrodollar recycling](https://en.wikipedia.org/wiki/Petrodollar_recycling)**：美元霸权的石油-美元循环支柱
 - **YouTube - [Comparative Advantage and Trade | Khan Academy](https://www.youtube.com/watch?v=pEh7KFMbBp4)**：动画讲解比较优势，10 分钟内建立直觉
