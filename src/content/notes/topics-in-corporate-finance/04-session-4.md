@@ -4,7 +4,7 @@ order: 4
 session: "4"
 ---
 
-## 这节课在回答什么
+## 史上最贵的五个字：「This time is different」
 
 **This time is different**（这次不一样）——这是金融史上最昂贵的五个字。
 

@@ -4,7 +4,7 @@ order: 3
 session: "3"
 ---
 
-## 这节课在回答什么
+## 2019年诺贝尔奖：颁给了一个打破好故事的人
 
 **2019 年 10 月 14 日，诺贝尔经济学奖颁给了三位研究贫困的经济学家：Abhijit Banerjee、Esther Duflo 和 Michael Kremer。**
 
