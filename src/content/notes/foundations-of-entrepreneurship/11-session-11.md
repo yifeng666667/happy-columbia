@@ -4,7 +4,7 @@ order: 11
 session: "11"
 ---
 
-## 这节课在回答什么
+## Stewart Butterfield两次失败，两次从废墟里找到了Flickr和Slack
 
 **2008 年，Stewart Butterfield 第一次尝试关闭 Ludicorp，他花了好几年时间做的在线游戏公司。在关闭过程中，他把游戏里的照片共享功能剥离出来，做成了 Flickr——后来被 Yahoo 以 2200-3500 万美元收购。**
 

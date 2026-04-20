@@ -4,7 +4,7 @@ order: 2
 session: "2"
 ---
 
-## 这节课在回答什么
+## 2007年：Airbnb从客厅气垫床起步，同城数万人没看出这是机会
 
 **2007 年，Brian Chesky 和 Joe Gebbia 付不起旧金山公寓的租金，于是在客厅放了三个气垫床，向设计大会的参会者出租。他们称之为"Air Bed and Breakfast"。**
 

@@ -4,7 +4,7 @@ order: 8
 session: "9"
 ---
 
-## 本文概述
+## ESG浪潮下的新兴市场：机遇还是另一种形式的不公平？
 
 ESG（Environmental, Social, Governance）从边缘走向主流，再走向争议——这个演变对新兴市场意味着什么？这节课用一个更批判性的视角，而不是简单地说"ESG 是好事"，来探讨 EM 在 ESG 浪潮中的处境：
 
