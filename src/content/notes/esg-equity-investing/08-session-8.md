@@ -4,7 +4,7 @@ order: 8
 session: "8"
 ---
 
-## 这节课在回答什么
+## 2020年：ICLN涨140%，Plug Power市销率100x——绿色股票的估值泡沫
 
 **2020 年，ICLN（iShares 全球清洁能源 ETF）上涨了 140%。**
 
