@@ -14,6 +14,8 @@ const financeSubcats = [
   { id: 'impact',    label: '可持续·影响力·创新' },
 ] as const;
 
+const levelOrder: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
+
 const sortByLevel = (arr: typeof courses) =>
   [...arr].sort((a, b) => levelOrder[a.level] - levelOrder[b.level]);
 
@@ -35,8 +37,6 @@ const catDot: Record<string, string> = {
   economics: 'cat-economics',
   geopolitics: 'bg-rose-400',
 };
-
-const levelOrder: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
 
 const levelBadge: Record<string, string> = {
   beginner:     'bg-emerald-500/70 border-emerald-300/30',
@@ -415,8 +415,10 @@ const levelLabel: Record<string, string> = {
         ? (isDay ? '/videos/mobile-day.mp4' : '/videos/mobile-night.mp4')
         : (isDay ? '/videos/1.mp4' : '/videos/4.mp4');
       v.load();
+      const reveal = () => v.classList.add('is-ready');
       const tryPlay = () => v.play().catch(() => {});
-      v.addEventListener('canplay', tryPlay, { once: true });
+      v.addEventListener('loadeddata', reveal, { once: true });
+      v.addEventListener('canplay', () => { reveal(); tryPlay(); }, { once: true });
       tryPlay();
       // fallback: retry on first touch (iOS WeChat sometimes blocks autoplay)
       document.addEventListener('touchstart', () => { if (v.paused) v.play().catch(() => {}); }, { once: true });

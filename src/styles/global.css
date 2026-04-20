@@ -95,14 +95,19 @@ header.scrolled {
   box-shadow: 0 1px 20px rgba(0,0,0,0.08);
 }
 
-/* Hero section wrapper — NYC skyline fallback when video fails to load */
+/* Hero section wrapper — deep-blue base + NYC skyline fallback when video fails.
+   Dark overlay + matching tone avoids the "flash" when the video layer fades in. */
 .hero-img {
-  background-image: url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1920&q=85');
+  background-color: #061828;
+  background-image:
+    linear-gradient(180deg, rgba(6,24,40,0.55) 0%, rgba(6,24,40,0.45) 50%, rgba(6,24,40,0.70) 100%),
+    url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1920&q=85');
   background-size: cover;
   background-position: center 40%;
 }
 
-/* Video layer — fills hero, sits at bottom of stack */
+/* Video layer — fills hero, sits at bottom of stack.
+   Fades in once metadata is ready so we don't jump-cut from the fallback image. */
 .hero-video {
   position: absolute;
   inset: 0;
@@ -112,6 +117,11 @@ header.scrolled {
   object-position: center 35%;
   z-index: 0;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+}
+.hero-video.is-ready {
+  opacity: 1;
 }
 
 /* Gradient overlay on top of video */
