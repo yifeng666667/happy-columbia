@@ -1,3 +1,7 @@
 /industry/finance/galaxy-product-role      /industry/finance/   301
 /industry/finance/galaxy-product-role/     /industry/finance/   301
 /industry/finance/galaxy-product-role/*    /industry/finance/   301
+
+/courses/emerging-capital-markets/09-appendix-ubs      /courses/emerging-capital-markets/09-appendix/   301
+/courses/emerging-capital-markets/09-appendix-ubs/     /courses/emerging-capital-markets/09-appendix/   301
+/courses/emerging-capital-markets/09-appendix-ubs/*    /courses/emerging-capital-markets/09-appendix/   301
