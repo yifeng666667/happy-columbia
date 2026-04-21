@@ -48,7 +48,7 @@ session: "Overview"
 - **拆解主权利差（Sovereign Spread）**：理解 EM 主权债的超额收益从哪里来，以及为什么收益和风险并不总是匹配。
 - **比较华盛顿共识与北京共识**（Washington Consensus vs Beijing Consensus）：能在具体国家案例里判断两种发展范式的取舍。
 - **掌握主权债重组工具**：Brady Bonds、CACs（Collective Action Clauses，集体行动条款）、Exit Consents（退出同意）、FSIA 修正案（Foreign Sovereign Immunities Act）—— 知道这些工具是什么、为什么被发明、在什么案例里被使用。
-- **套用 UBS 的五层投资分析框架**：能像卖方研究员那样写一份主权债的投资建议书。
+- **套用成熟的五层主权债投资分析框架**：能像卖方研究员那样写一份主权债的投资建议书。
 
 ## 课程主线
 
@@ -67,7 +67,7 @@ session: "Overview"
 7. **Session 8** 讲后 GFC 的"低增长"年代、BRICs 的失望、COVID 冲击、以及 Buchheit 论文提出的主权债重组新挑战。
 8. **Session 9** 讲 ESG 与影响力投资对 EM 的机遇与争议。
 
-贯穿全课的是一个 **投资者视角**：UBS 的 Pedro Quintanilla-Dieck 所讲授的五层主权债分析框架，以及那个分析任何主权信用时都必须分开评估的问题——**有能力还（Capacity to Pay） vs 愿意还（Willingness to Pay）**。
+贯穿全课的是一个 **投资者视角**：由一位客座讲师分享的五层主权债分析框架，以及那个分析任何主权信用时都必须分开评估的问题——**有能力还（Capacity to Pay） vs 愿意还（Willingness to Pay）**。
 
 ## Session 速览
 
@@ -82,11 +82,11 @@ session: "Overview"
 | 8 | 后 GFC 世界、COVID 与 Buchheit 论文 | 传统的主权债重组机制为什么正在崩溃？ |
 | 9 | ESG 与影响力投资 | ESG 对 EM 到底是机遇还是另一种不公平？ |
 
-附录：**UBS 主权债投资框架**（Quintanilla-Dieck 五层流程）——全课唯一一个可以直接带进工作的工具。
+附录：**主权债投资分析框架**（五层流程）——全课唯一一个可以直接带进工作的工具。
 
 ## 关于这份笔记
 
-这份笔记整理自 Columbia SIPA 的 **IFEPIA7100 Emerging Capital Markets** 课程，授课教授是 **Alejo Czerwonko, PhD**（UBS 新兴市场首席投资官）。课堂主教材是 **Michael Pettis, 《The Volatility Machine》**，辅以大量现实案例、客座讲座和补充阅读。
+这份笔记整理自一门聚焦新兴资本市场的研究生课程，主教材是 **Michael Pettis, 《The Volatility Machine》**，辅以大量现实案例、客座讲座和补充阅读。
 
 - **颗粒度**：每篇 session 笔记大约 3000-5000 字，尽量对应一次课的完整逻辑。Session 4-5 因为是五次危机的对比，合并成一篇较长的笔记。
 - **语言处理**：中文为主，**关键术语第一次出现时用"中文（English）"格式标注**，方便读原文材料时对得上。
