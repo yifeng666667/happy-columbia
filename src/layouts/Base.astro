@@ -71,7 +71,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex items-center gap-1 text-sm shrink-0">
-          {lang === 'zh' ? [
+          {(lang === 'zh' ? [
             { href: '/about-sipa/', label: '关于 SIPA' },
             { href: '/#courses', label: '专题笔记' },
             { href: '/career/', label: '求职分享' },
@@ -83,7 +83,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
             { href: '/en/', label: 'Courses' },
             { href: '/about-sipa/', label: 'About SIPA' },
             { href: '/join/', label: 'Contact' },
-          ].map(({ href, label }) => (
+          ]).map(({ href, label }) => (
             <a href={href} class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline">
               {label}
             </a>
@@ -126,7 +126,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
       <!-- Mobile Menu Drawer -->
       <div id="mobile-menu" class="md:hidden hidden border-t border-stone-200 bg-white shadow-lg">
         <nav class="flex flex-col px-5 py-4 gap-1">
-          {lang === 'zh' ? [
+          {(lang === 'zh' ? [
             { href: '/about-sipa/', label: '关于 SIPA' },
             { href: '/#courses',   label: '专题笔记' },
             { href: '/career/',    label: '求职分享' },
@@ -138,7 +138,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
             { href: '/en/',         label: 'Courses' },
             { href: '/about-sipa/', label: 'About SIPA' },
             { href: '/join/',       label: 'Contact' },
-          ].map(({ href, label }) => (
+          ]).map(({ href, label }) => (
             <a href={href} class="block px-3 py-2.5 rounded-lg text-stone-700 text-sm font-medium hover:bg-stone-100 hover:text-columbia-navy transition-colors no-underline">
               {label}
             </a>
