@@ -1,0 +1,121 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { courses, getCourse } from '../../../../data/courses';
+import { getCollection } from 'astro:content';
+
+const slugOf = (id: string) => id.split('/')[1].replace(/\.mdx?$/, '');
+
+export async function getStaticPaths() {
+  const all = await getCollection('notes-en');
+  const slugsWithNotes = new Set(all.map(n => n.id.split('/')[0]));
+  return courses
+    .filter(c => slugsWithNotes.has(c.slug))
+    .flatMap((c) => {
+      const notes = all
+        .filter((n) => n.id.startsWith(c.slug + '/'))
+        .sort((a, b) => a.data.order - b.data.order);
+      return notes.map((note, i) => ({
+        params: { course: c.slug, slug: note.id.split('/')[1].replace(/\.mdx?$/, '') },
+        props: { note, prev: notes[i - 1] ?? null, next: notes[i + 1] ?? null, total: notes.length, index: i },
+      }));
+    });
+}
+
+const { course } = Astro.params;
+const { note, prev, next, total, index } = Astro.props;
+const meta = getCourse(course)!;
+const { Content } = await note.render();
+const progress = Math.round(((index + 1) / total) * 100);
+---
+
+<Base title={`${note.data.title} — ${meta.titleEn}`} lang="en">
+
+  <!-- Reading header strip -->
+  <div class="-mx-4 sm:-mx-6 -mt-14 mb-0 bg-white border-b border-stone-200 px-4 sm:px-6 pt-14 pb-5 reading-strip">
+    <div class="max-w-3xl">
+      <a href={`/en/courses/${course}/`}
+         class="inline-flex items-center gap-1.5 text-stone-400 hover:text-columbia-navy text-xs transition-colors no-underline mb-3 group">
+        <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+        {meta.titleEn}
+      </a>
+      <h1 class="font-display font-bold text-xl sm:text-2xl md:text-3xl text-stone-900 leading-tight">
+        {note.data.title}
+      </h1>
+      <div class="mt-4 flex items-center gap-3">
+        <div class="flex-1 h-1 bg-stone-100 rounded-full overflow-hidden">
+          <div class="h-full bg-columbia-blue rounded-full transition-all" style={`width: ${progress}%`}></div>
+        </div>
+        <span class="text-xs text-stone-400 shrink-0">{index + 1} / {total}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div class="max-w-3xl mt-6 mb-2 px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 text-xs text-stone-500 leading-relaxed">
+    <strong class="font-semibold text-stone-600">Disclaimer:</strong> These notes are a personal academic synthesis
+    compiled from publicly available sources — academic publications, news media, financial data, and AI-assisted research.
+    They are <strong>not</strong> transcripts or reproductions of any course lectures.
+    No instructor-specific content is reproduced here. All errors and interpretations are the author's own.
+    <a href={`/courses/${course}/${slugOf(note.id)}/`}
+       class="ml-2 text-columbia-blue hover:underline no-underline">也有中文版 →</a>
+  </div>
+
+  <!-- Article body -->
+  <article
+    class="prose-reading prose prose-stone max-w-3xl w-full overflow-x-hidden mt-8
+           prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+           prose-h1:text-3xl prose-h1:mb-6
+           prose-h2:text-xl prose-h2:mt-12 prose-h2:pb-2 prose-h2:border-b prose-h2:border-stone-200 prose-h2:text-columbia-navy
+           prose-h3:text-base prose-h3:mt-8 prose-h3:text-stone-800
+           prose-p:leading-[1.9]
+           prose-a:text-columbia-blue prose-a:no-underline hover:prose-a:underline
+           prose-strong:text-stone-900
+           prose-code:before:content-none prose-code:after:content-none
+           prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+           prose-code:text-stone-800 prose-code:font-normal prose-code:text-[0.85em]
+           prose-pre:bg-stone-900 prose-pre:overflow-x-auto
+           prose-blockquote:border-l-4 prose-blockquote:border-columbia-blue
+           prose-blockquote:bg-columbia-light/30 prose-blockquote:px-4 prose-blockquote:py-3 prose-blockquote:rounded-r-lg
+           prose-blockquote:text-stone-700 prose-blockquote:not-italic
+           prose-li:leading-[1.85]
+           prose-table:text-sm
+           prose-th:bg-columbia-light prose-th:text-columbia-navy
+           prose-img:max-w-full"
+  >
+    <Content />
+  </article>
+
+  <!-- Prev / Next navigation -->
+  <nav class="mt-16 pt-8 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
+    {prev ? (
+      <a href={`/en/courses/${course}/${slugOf(prev.id)}/`}
+         class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900">
+        <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1">
+          <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span> Previous
+        </span>
+        <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors">
+          {prev.data.title}
+        </span>
+      </a>
+    ) : <span />}
+    {next ? (
+      <a href={`/en/courses/${course}/${slugOf(next.id)}/`}
+         class="card-lift group flex flex-col bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900 sm:text-right sm:items-end">
+        <span class="text-[10px] uppercase tracking-widest text-stone-400 mb-1.5 flex items-center gap-1 sm:flex-row-reverse">
+          Next <span class="group-hover:translate-x-0.5 transition-transform inline-block">→</span>
+        </span>
+        <span class="font-medium text-sm leading-snug group-hover:text-columbia-navy transition-colors">
+          {next.data.title}
+        </span>
+      </a>
+    ) : <span />}
+  </nav>
+
+  <div class="mt-8 max-w-3xl text-center">
+    <a href={`/en/courses/${course}/`}
+       class="inline-flex items-center gap-2 text-xs text-stone-400 hover:text-columbia-navy transition-colors no-underline">
+      ↑ Back to {meta.titleEn}
+    </a>
+  </div>
+
+</Base>

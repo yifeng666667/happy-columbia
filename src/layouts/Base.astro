@@ -5,12 +5,14 @@ interface Props {
   description?: string;
   hero?: boolean;
   ogImage?: string;
+  lang?: 'zh' | 'en';
 }
 const {
   title,
   description = '面向中文读者的经济金融政策知识博客，个人学习整理与原创评论',
   hero = false,
   ogImage = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+  lang = 'zh',
 } = Astro.props;
 
 const fullTitle = `${title} · HappyColumbia`;
@@ -69,7 +71,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex items-center gap-1 text-sm shrink-0">
-          {[
+          {lang === 'zh' ? [
             { href: '/about-sipa/', label: '关于 SIPA' },
             { href: '/#courses', label: '专题笔记' },
             { href: '/career/', label: '求职分享' },
@@ -77,13 +79,31 @@ const siteUrl = 'https://happy-columbia.pages.dev';
             { href: '/research/', label: '金融投研' },
             { href: '/alumni/', label: 'SIPA校友圈' },
             { href: '/join/',    label: '一起做这件事' },
+          ] : [
+            { href: '/en/', label: 'Courses' },
+            { href: '/about-sipa/', label: 'About SIPA' },
+            { href: '/join/', label: 'Contact' },
           ].map(({ href, label }) => (
             <a href={href} class="nav-link px-3 py-1.5 rounded-md text-xs sm:text-sm transition-colors no-underline">
               {label}
             </a>
           ))}
+          <!-- Language toggle -->
+          <button
+            id="lang-toggle"
+            data-lang={lang}
+            title={lang === 'en' ? '切换到中文' : 'Switch to English'}
+            class="lang-toggle nav-link ml-1 flex items-center gap-1 px-3 py-1.5 rounded-md text-xs sm:text-sm font-medium border transition-all cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 shrink-0">
+              <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-1.05.75.75 0 00-1.094 1.022 20.901 20.901 0 001.187 1.243 32.486 32.486 0 01-4.236 2.657.75.75 0 10.668 1.341 33.968 33.968 0 004.587-2.888 20.866 20.866 0 003.502 2.388.75.75 0 10.736-1.305 19.383 19.383 0 01-3.095-2.107A20.875 20.875 0 009.235 9.56 20.882 20.882 0 0011 6.44a.75.75 0 00-.75-.75H6.5V2.75z"/>
+              <path d="M12.5 2.75a.75.75 0 00-1.5 0V5h-1a.75.75 0 000 1.5h1v1.25A.75.75 0 0012.5 8.5a.75.75 0 00.75-.75V6.5h1a.75.75 0 000-1.5h-1V2.75z"/>
+              <path d="M13.25 9.5a.75.75 0 00-.75.75v1.69l-1.68-1.682a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.06 0l2.5-2.5a.75.75 0 10-1.06-1.06L13.25 11.94V10.25a.75.75 0 00-.75-.75z"/>
+            </svg>
+            {lang === 'en' ? '中文' : 'EN'}
+          </button>
           <a href="/join/" class="nav-cta ml-1 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all no-underline">
-            联系我
+            {lang === 'en' ? 'Contact' : '联系我'}
           </a>
         </nav>
 
@@ -106,7 +126,7 @@ const siteUrl = 'https://happy-columbia.pages.dev';
       <!-- Mobile Menu Drawer -->
       <div id="mobile-menu" class="md:hidden hidden border-t border-stone-200 bg-white shadow-lg">
         <nav class="flex flex-col px-5 py-4 gap-1">
-          {[
+          {lang === 'zh' ? [
             { href: '/about-sipa/', label: '关于 SIPA' },
             { href: '/#courses',   label: '专题笔记' },
             { href: '/career/',    label: '求职分享' },
@@ -114,13 +134,27 @@ const siteUrl = 'https://happy-columbia.pages.dev';
             { href: '/research/',  label: '金融投研' },
             { href: '/alumni/',    label: 'SIPA校友圈' },
             { href: '/join/',      label: '一起做这件事' },
+          ] : [
+            { href: '/en/',         label: 'Courses' },
+            { href: '/about-sipa/', label: 'About SIPA' },
+            { href: '/join/',       label: 'Contact' },
           ].map(({ href, label }) => (
             <a href={href} class="block px-3 py-2.5 rounded-lg text-stone-700 text-sm font-medium hover:bg-stone-100 hover:text-columbia-navy transition-colors no-underline">
               {label}
             </a>
           ))}
+          <button
+            id="lang-toggle-mobile"
+            data-lang={lang}
+            class="mt-1 flex items-center gap-2 px-3 py-2.5 rounded-lg text-stone-700 text-sm font-medium hover:bg-stone-100 hover:text-columbia-navy transition-colors cursor-pointer w-full"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 shrink-0">
+              <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-1.05.75.75 0 00-1.094 1.022 20.901 20.901 0 001.187 1.243 32.486 32.486 0 01-4.236 2.657.75.75 0 10.668 1.341 33.968 33.968 0 004.587-2.888 20.866 20.866 0 003.502 2.388.75.75 0 10.736-1.305 19.383 19.383 0 01-3.095-2.107A20.875 20.875 0 009.235 9.56 20.882 20.882 0 0011 6.44a.75.75 0 00-.75-.75H6.5V2.75z"/>
+            </svg>
+            {lang === 'en' ? '切换到中文' : 'Switch to English'}
+          </button>
           <a href="/join/" class="mt-2 block text-center px-4 py-2.5 rounded-full text-sm font-semibold border border-columbia-navy text-columbia-navy hover:bg-columbia-navy hover:text-white transition-all no-underline">
-            联系我
+            {lang === 'en' ? 'Contact' : '联系我'}
           </a>
         </nav>
       </div>
@@ -302,6 +336,29 @@ const siteUrl = 'https://happy-columbia.pages.dev';
       }, { passive: true });
       topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
+  </script>
+
+  <!-- ── Language toggle ─────────────────────────── -->
+  <script>
+    function handleLangToggle(btn: HTMLElement | null) {
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        const path = window.location.pathname;
+        let target: string;
+        if (path.startsWith('/en/courses/')) {
+          target = path.replace('/en/courses/', '/courses/');
+        } else if (path.startsWith('/courses/')) {
+          target = path.replace('/courses/', '/en/courses/');
+        } else if (path.startsWith('/en')) {
+          target = path.replace(/^\/en/, '') || '/';
+        } else {
+          target = '/en/';
+        }
+        window.location.href = target;
+      });
+    }
+    handleLangToggle(document.getElementById('lang-toggle'));
+    handleLangToggle(document.getElementById('lang-toggle-mobile'));
   </script>
 
   <!-- ── TOC scroll spy (anchors) ─────────────────── -->

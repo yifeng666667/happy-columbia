@@ -42,6 +42,7 @@ export interface CourseMeta {
   title: string;
   titleEn: string;
   description: string;
+  descriptionEn?: string; // English course description (for /en/ pages)
   heroImage?: string; // Unsplash photo URL, falls back to category default
   city?: string;      // City name shown on card
 }
@@ -192,6 +193,8 @@ export const courses: CourseMeta[] = [
     titleEn: 'International Trade: Theory and Policy',
     description:
       '从 David Ricardo 的比较优势到特朗普关税战——系统梳理国际贸易的三大理论支柱与政策工具，并直面"自由贸易是否伤害普通工人"这个当代最尖锐的政治经济学问题。',
+    descriptionEn:
+      'From Ricardo\'s comparative advantage to the modern tariff wars — a systematic survey of trade theory, policy instruments, and the political economy of globalization. Covers the distributional effects of trade and why economists and voters disagree so fundamentally.',
     heroImage: 'https://images.unsplash.com/photo-1562184552-997c461abbe6?auto=format&fit=crop&w=1400&q=85',
     city: 'Geneva',
   },

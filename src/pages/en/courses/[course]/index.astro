@@ -1,0 +1,102 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { courses, getCourse } from '../../../../data/courses';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allEnNotes = await getCollection('notes-en');
+  const slugsWithNotes = new Set(allEnNotes.map(n => n.id.split('/')[0]));
+  return courses
+    .filter(c => slugsWithNotes.has(c.slug))
+    .map(c => ({ params: { course: c.slug } }));
+}
+
+const { course } = Astro.params;
+const meta = getCourse(course)!;
+const notes = (
+  await getCollection('notes-en', (n) => n.id.startsWith(course + '/'))
+).sort((a, b) => a.data.order - b.data.order);
+
+const slugOf = (id: string) => id.split('/')[1].replace(/\.mdx?$/, '');
+
+const catImage: Record<string, string> = {
+  finance:    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2560&q=95',
+  economics:  'https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?auto=format&fit=crop&w=2560&q=95',
+  geopolitics:'https://images.unsplash.com/photo-1541726260-e6b6d4e94285?auto=format&fit=crop&w=2560&q=95',
+};
+const heroImg = meta.heroImage ?? catImage[meta.category] ?? catImage.finance;
+
+const catOverlay: Record<string, string> = {
+  finance:    'rgba(6,18,40,0.82), rgba(11,44,86,0.75)',
+  economics:  'rgba(5,60,40,0.82), rgba(10,90,60,0.75)',
+  geopolitics:'rgba(80,10,10,0.82), rgba(120,20,20,0.75)',
+};
+const overlay = catOverlay[meta.category] ?? catOverlay.finance;
+---
+
+<Base title={`${meta.titleEn} — Course Notes`} lang="en">
+
+  <!-- Hero -->
+  <div class="-mx-4 sm:-mx-6 -mt-14 mb-0 text-white px-4 sm:px-6 pt-14 pb-12 relative overflow-hidden"
+       style={`background-image: linear-gradient(160deg, ${overlay}), url('${heroImg}'); background-size: cover; background-position: center;`}>
+    <div class="relative z-10 max-w-3xl">
+      <a href="/en/" class="inline-flex items-center gap-1.5 text-white/60 hover:text-white text-xs transition-colors no-underline mb-6 group">
+        <span class="group-hover:-translate-x-0.5 transition-transform inline-block">←</span>
+        All Courses
+      </a>
+      <h1 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight text-white">
+        {meta.titleEn}
+      </h1>
+      <p class="mt-5 text-white/75 leading-relaxed text-[0.9375rem] max-w-2xl">
+        {meta.descriptionEn ?? meta.description}
+      </p>
+      <div class="mt-6 flex flex-wrap gap-6 text-sm">
+        <div>
+          <span class="text-white/40 text-xs uppercase tracking-wider">Sessions</span>
+          <p class="text-white font-medium mt-0.5">{notes.length}</p>
+        </div>
+        <div>
+          <span class="text-white/40 text-xs uppercase tracking-wider">Also available in</span>
+          <p class="mt-0.5">
+            <a href={`/courses/${course}/`} class="text-white/80 hover:text-white text-sm no-underline underline-offset-2 hover:underline transition-colors">
+              中文版 →
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="mt-8 max-w-3xl p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-800 leading-relaxed">
+    <strong class="font-semibold">About these notes:</strong> These are an independent student's personal academic synthesis
+    compiled from publicly available sources — including academic publications, international news, financial research,
+    and AI-assisted research tools. They are <strong>not</strong> transcripts, summaries, or reproductions of any
+    course lectures or instructor materials. No proprietary course content is reproduced here.
+    All analytical frameworks and interpretations are the author's own.
+  </div>
+
+  <!-- TOC -->
+  <section class="mt-8">
+    <p class="text-[11px] uppercase tracking-[0.25em] text-stone-400 mb-5">Session List</p>
+    <div class="space-y-2 max-w-3xl">
+      {notes.map((n, i) => (
+        <a
+          href={`/en/courses/${course}/${slugOf(n.id)}/`}
+          class="card-lift flex items-center gap-5 bg-white border border-stone-200 rounded-xl px-5 py-4 no-underline text-stone-900 group"
+        >
+          <span class="shrink-0 w-8 h-8 rounded-full bg-stone-100 group-hover:bg-columbia-light flex items-center justify-center text-xs font-mono font-semibold text-stone-400 group-hover:text-columbia-navy transition-colors">
+            {String(i).padStart(2, '0')}
+          </span>
+          <span class="flex-1 font-medium leading-snug group-hover:text-columbia-navy transition-colors">
+            {n.data.title}
+          </span>
+          <span class="shrink-0 text-columbia-blue opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-sm">
+            Read →
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+</Base>

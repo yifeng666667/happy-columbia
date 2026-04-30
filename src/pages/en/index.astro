@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import { courses, categories } from '../../data/courses';
+import { getCollection } from 'astro:content';
+
+const allEnNotes = await getCollection('notes-en');
+const coursesWithEn = new Set(allEnNotes.map(n => n.id.split('/')[0]));
+
+const byCategory = categories.map(cat => ({
+  ...cat,
+  courses: courses.filter(c => c.category === cat.id && coursesWithEn.has(c.slug)),
+})).filter(cat => cat.courses.length > 0);
+---
+
+<Base title="Course Notes — HappyColumbia" lang="en"
+  description="English course notes: international trade, finance, economics, and geopolitics — compiled from publicly available academic sources.">
+
+  <!-- Hero -->
+  <div class="-mx-4 sm:-mx-6 -mt-14 mb-0 bg-[#0B2C56] text-white px-4 sm:px-6 pt-20 pb-14">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-columbia-blue text-xs uppercase tracking-[0.2em] mb-4 font-medium">English Mode</p>
+      <h1 class="font-display font-bold text-3xl sm:text-4xl leading-tight text-white">
+        Course Notes
+      </h1>
+      <p class="mt-4 text-white/70 text-base leading-relaxed max-w-xl">
+        Student-compiled study notes on international trade, finance, macroeconomics, and geopolitics.
+        Synthesized from publicly available academic sources.
+      </p>
+      <div class="mt-6 p-4 rounded-xl bg-white/10 border border-white/20 text-xs text-white/70 leading-relaxed max-w-xl">
+        <strong class="text-white/90">Note:</strong> These notes are an independent academic synthesis
+        compiled from published research, international media, and public data sources.
+        They are not affiliated with or endorsed by any educational institution or instructor.
+      </div>
+    </div>
+  </div>
+
+  <!-- Course grid -->
+  <div class="mt-14 space-y-14">
+    {byCategory.map(cat => (
+      <section>
+        <div class="mb-6">
+          <h2 class="font-display font-bold text-xl text-stone-900">{cat.subtitle}</h2>
+          <p class="text-sm text-stone-500 mt-1">{cat.description}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {cat.courses.map(c => (
+            <a
+              href={`/en/courses/${c.slug}/`}
+              class="card-lift group relative flex flex-col rounded-2xl overflow-hidden border border-stone-200 no-underline bg-white text-stone-900 h-56"
+            >
+              {c.heroImage && (
+                <img src={c.heroImage} alt="" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity" />
+              )}
+              <div class="relative z-10 flex flex-col h-full p-5 justify-between">
+                <div>
+                  <span class="inline-block text-[10px] uppercase tracking-widest text-columbia-blue font-semibold mb-2">{c.city ?? cat.subtitle}</span>
+                  <h3 class="font-display font-bold text-base leading-snug group-hover:text-columbia-navy transition-colors">{c.titleEn}</h3>
+                </div>
+                <p class="text-xs text-stone-500 line-clamp-2 mt-3">
+                  {c.descriptionEn ?? c.description}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    {byCategory.length === 0 && (
+      <div class="text-center py-20 text-stone-400">
+        <p class="text-lg font-medium">English notes coming soon.</p>
+        <p class="mt-2 text-sm">We're working on it — check back later.</p>
+        <a href="/" class="mt-6 inline-block text-columbia-blue hover:underline text-sm">← Back to Chinese version</a>
+      </div>
+    )}
+  </div>
+</Base>

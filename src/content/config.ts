@@ -1,13 +1,13 @@
 import { defineCollection, z } from 'astro:content';
 
-const notes = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    order: z.number(),
-    session: z.string().optional(),
-  }),
+const noteSchema = z.object({
+  title: z.string(),
+  order: z.number(),
+  session: z.string().optional(),
 });
+
+const notes = defineCollection({ type: 'content', schema: noteSchema });
+const notesEn = defineCollection({ type: 'content', schema: noteSchema });
 
 const research = defineCollection({
   type: 'content',
@@ -20,4 +20,4 @@ const research = defineCollection({
   }),
 });
 
-export const collections = { notes, research };
+export const collections = { notes, 'notes-en': notesEn, research };
